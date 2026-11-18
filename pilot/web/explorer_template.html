@@ -141,6 +141,7 @@ footer { font-size: .82rem; color: var(--muted); display: grid; gap: 4px; }
 
 <script>
 const GD = __GRAPH__;
+GD.G.forEach(g=>{ g.n=g.n.replace(/\bIii\b/g,"III").replace(/\bIi\b/g,"II"); });
 GD.G.forEach(g=>{ if(/^GOL-/.test(g.n)) g.n = g.n.replace(/^GOL-/,'').split('-').map(p=>p.replace(/_/g,' ').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase())).join(' / '); });
 const NS = "http://www.w3.org/2000/svg";
 const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();

@@ -95,7 +95,7 @@ code { font-family: var(--f-mono); font-size: .85em; }
 
   <div class="info" id="info">
     <h2>Klik sebuah node</h2>
-    <p class="meta">Node besar adalah penghubung: kategori, golongan, dokumen (Perbup), dan rumah sakit. Titik kecil adalah layanan. Biru dari Perbup Cianjur, oranye dari Perbup Rembang.</p>
+    <p class="meta">Harga layanan dan golongan muncul saat kursor diarahkan ke node, dan tabel lengkapnya muncul di sini setelah node diklik. Node besar adalah penghubung: kategori, golongan, dokumen (Perbup), dan rumah sakit. Titik kecil adalah layanan. Biru dari Perbup Cianjur, oranye dari Perbup Rembang.</p>
   </div>
   <p class="note">Edge TARIF ganda (satu per kelas) digambar sebagai satu garis, begitu juga TARIF_GOLONGAN (49 edge, 9 garis). Jumlah di kotak centang adalah jumlah edge di graf. Posisi node disusun per kategori, bukan hasil simulasi gaya, supaya kelompoknya terbaca. Data dari <code>out/graf_pilot.graphml</code>.</p>
 </div>
@@ -105,6 +105,21 @@ const GF = __FULL__;
 const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
 const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const TYPE = ["Layanan","Golongan","KategoriStd","Dokumen","RumahSakit"];
+const rp = v => "Rp" + Math.round(v).toLocaleString("id-ID");
+const bhpTxt = c => c==="tidak" ? "tidak termasuk BHP" : c==="ya" ? "termasuk BHP" : "BHP tidak jelas";
+const kel = k => k==="Non-kelas" ? "tanpa kelas" : "kelas "+k;
+function priceShort(i){ const p=GF.P[i]; if(!p) return "";
+  if(p.t){ const r=p.t.find(x=>x[0]==="III")||p.t[0]; return `${rp(r[1])} (${kel(r[0])})${p.t.length>1?` · ${p.t.length} harga`:""}`; }
+  if(p.g!=null){ const m=GF.P[p.g].m; const r=m.find(x=>x[0]==="III"); return r?`${rp(r[1])} (kelas III, lewat ${N[p.g].label})`:`lewat ${N[p.g].label}, tanpa matriks tarif`; }
+  if(p.m && p.m.length){ const r=p.m.find(x=>x[0]==="III")||p.m[0]; return `${rp(r[1])} (${kel(r[0])})`; }
+  return ""; }
+function priceTable(i){ const p=GF.P[i]; if(!p) return "";
+  const tbl=(head,rows)=>`<div style="overflow-x:auto"><table style="border-collapse:collapse;font-size:.85rem;min-width:260px">${'<tr>'+head.map(h=>`<th style="text-align:left;padding:4px 14px 4px 0;color:var(--fg-2);font-weight:600;border-bottom:1px solid var(--line)">${h}</th>`).join('')+'</tr>'}${rows.map(r=>'<tr>'+r.map((c,k)=>`<td style="padding:4px 14px 4px 0;border-bottom:1px solid var(--line);${k===1?'text-align:right;font-variant-numeric:tabular-nums':''}">${c}</td>`).join('')+'</tr>').join('')}</table></div>`;
+  if(p.t) return `<p class="meta">Harga dari edge TARIF</p>`+tbl(["Kelas","Tarif","BHP","Hlm."],p.t.map(([k,h,b,pg])=>[esc(k),rp(h),bhpTxt(b),pg]));
+  if(p.g!=null){ const m=GF.P[p.g].m; return m.length ? `<p class="meta">Tidak ada harga langsung. Harga diturunkan lewat golongan <b>${esc(N[p.g].label)}</b> (edge MASUK_GOLONGAN, lalu TARIF_GOLONGAN). Total jasa, di luar obat dan BHP.</p>`+tbl(["Kelas","Tarif golongan"],m.map(([k,h])=>[esc(k),rp(h)])) : `<p class="meta">Masuk golongan ${esc(N[p.g].label)}, tapi Perbup tidak memberi matriks tarif untuk golongan itu.</p>`; }
+  if(p.m && p.m.length) return `<p class="meta">Matriks tarif golongan (edge TARIF_GOLONGAN)</p>`+tbl(["Kelas","Tarif"],p.m.map(([k,h])=>[esc(k),rp(h)]));
+  return ""; }
+
 const REL = [
   {name:"TARIF", count:2497, on:false, desc:"Dokumen → Layanan"},
   {name:"KATEGORI", count:2322, on:true, desc:"Layanan → Kategori"},
@@ -114,7 +129,7 @@ const REL = [
   {name:"BERLAKU_UNTUK", count:2, on:true, desc:"Dokumen → RS"},
 ];
 const SIDE = ["Perbup Cianjur 3/2025","Perbup Rembang 16/2023"];
-const N = GF.N.map(([x,y,t,d,label],i)=>({i,x,y,t,d,label,nb:[]}));
+const N = GF.N.map(([x,y,t,d,label],i)=>({i,x,y,t,d,label:String(label).replace(/\bIii\b/g,"III").replace(/\bIi\b/g,"II"),nb:[]}));
 GF.E.forEach(([a,b,r])=>{ N[a].nb.push([b,r]); N[b].nb.push([a,r]); });
 const deg = n => n.nb.length;
 const radius = n => n.t===0 ? 2.4 : n.t===1 ? 6 + Math.min(6, Math.sqrt(deg(n))/2.5) : n.t===2 ? 8 + Math.min(8, Math.sqrt(deg(n))/3) : n.t===3 ? 11 : 9;
@@ -206,7 +221,7 @@ cv.addEventListener("pointermove",e=>{
   if(drag){ const dx=e.offsetX-drag.x, dy=e.offsetY-drag.y; if(Math.abs(dx)+Math.abs(dy)>3) moved=true; view.tx=drag.tx+dx; view.ty=drag.ty+dy; tip.hidden=true; draw(); return; }
   const h=nearest(e.offsetX,e.offsetY);
   if(h!==hover){ hover=h; draw(); }
-  if(h!=null){ const n=N[h]; tip.innerHTML=`<b>${esc(n.label)}</b><br>${TYPE[n.t]}${n.t===0||n.t===3?" · "+SIDE[n.d]:""} · ${deg(n)} edge`; tip.hidden=false;
+  if(h!=null){ const n=N[h]; const ps=priceShort(h); tip.innerHTML=`<b>${esc(n.label)}</b>${ps?`<br>${esc(ps)}`:""}<br>${TYPE[n.t]}${n.t===0||n.t===3?" · "+SIDE[n.d]:""} · ${deg(n)} edge`; tip.hidden=false;
     const tw=tip.offsetWidth; let x=e.offsetX+12; if(x+tw>W-6) x=e.offsetX-tw-12; tip.style.left=x+"px"; tip.style.top=(e.offsetY+12)+"px"; }
   else tip.hidden=true;
 });
@@ -232,7 +247,7 @@ function selectNode(i, center){
   const parts = Object.entries(groups).map(([rel,js])=>{ const uniq=[...new Set(js)];
     const shown=uniq.slice(0,40);
     return `<div><p class="meta">${rel} · ${uniq.length} node</p><div class="nb">${shown.map(j=>`<button data-j="${j}">${esc(N[j].label)}${N[j].t===0?` <span class="meta">(${N[j].d===0?"Cianjur":"Rembang"})</span>`:""}</button>`).join("")}${uniq.length>40?`<span class="meta">+${uniq.length-40} lainnya</span>`:""}</div></div>`; }).join("");
-  info.innerHTML = `<h2>${esc(n.label)}</h2><p class="meta">${TYPE[n.t]}${n.t===0||n.t===3?" · "+SIDE[n.d]:""} · ${deg(n)} edge. Klik node yang sama sekali lagi, atau area kosong, untuk melepas pilihan.</p>${parts}`;
+  info.innerHTML = `<h2>${esc(n.label)}</h2><p class="meta">${TYPE[n.t]}${n.t===0||n.t===3?" · "+SIDE[n.d]:""} · ${deg(n)} edge. Klik node yang sama sekali lagi, atau area kosong, untuk melepas pilihan.</p>${priceTable(sel)}${parts}`;
   info.querySelectorAll(".nb button").forEach(b=>b.addEventListener("click",()=>selectNode(+b.dataset.j,true)));
   draw();
 }
