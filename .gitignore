@@ -1,3 +1,4 @@
 pilot/raw_pdf/
 pilot/out/_*.npy
 __pycache__/
+Loinc_2.83/
