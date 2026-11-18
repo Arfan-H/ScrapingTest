@@ -1,0 +1,249 @@
+model,kamus,sistem,split,nama,hit1,hit5,top1
+e5-small,kamus v1,ICD-9-CM,seen,USG Transvaginal,True,True,88.79
+e5-small,kamus v1,ICD-9-CM,seen,Punksi Pleura,False,False,34.93
+e5-small,kamus v1,ICD-9-CM,seen,"Tumpatan sementara, pulpa",False,False,81.54
+e5-small,kamus v1,ICD-9-CM,seen,Photo Scapula,False,False,77.41
+e5-small,kamus v1,ICD-9-CM,seen,Adenoidektomi,False,True,28.3
+e5-small,kamus v1,ICD-9-CM,seen,USG GUIDING THORAX,True,True,88.73
+e5-small,kamus v1,ICD-9-CM,seen,hecting komea / sklera / konjungtiva,False,True,10.31
+e5-small,kamus v1,ICD-9-CM,seen,Pengambilan Sample Papsmear,False,False,75.33
+e5-small,kamus v1,ICD-9-CM,seen,Eksisi granuloma pyogenikum,False,False,54.62
+e5-small,kamus v1,ICD-9-CM,seen,Reparasi fistula vesiko vaginal,False,False,70.75
+e5-small,kamus v1,ICD-9-CM,seen,Prosedur Ekokardiografi Dewasa,False,False,37.28
+e5-small,kamus v1,ICD-9-CM,seen,Amputasi eksisi kista branchiogenik,True,True,29.2
+e5-small,kamus v1,ICD-9-CM,seen,Eksisi condiloma accuminata,False,False,41.93
+e5-small,kamus v1,ICD-9-CM,seen,HemostatisSCBA,False,False,39.95
+e5-small,kamus v1,ICD-9-CM,seen,Crown Lengthening,False,False,78.35
+e5-small,kamus v1,ICD-9-CM,seen,Sphenoimidektomi (THT),True,True,22.64
+e5-small,kamus v1,ICD-9-CM,seen,Dobutamin Stress Echocardiography,False,True,37.28
+e5-small,kamus v1,ICD-9-CM,seen,Hair removal,False,False,86.64
+e5-small,kamus v1,ICD-9-CM,seen,Repair fraktur penis,True,True,64.49
+e5-small,kamus v1,ICD-9-CM,seen,Pasang tampon vaginal,False,False,75.8
+e5-small,kamus v1,ICD-9-CM,fresh,Nasal,False,False,22.79
+e5-small,kamus v1,ICD-9-CM,fresh,Tambalan Komposit Posterior Sedang,False,False,81.03
+e5-small,kamus v1,ICD-9-CM,fresh,Uretrotrografi,True,True,87.76
+e5-small,kamus v1,ICD-9-CM,fresh,hecting margopalpebra / kantus palpebra,False,False,27.61
+e5-small,kamus v1,ICD-9-CM,fresh,CT SCAN CERVICAL NON KONTRAS,True,True,88.38
+e5-small,kamus v1,ICD-9-CM,fresh,Passing / Lepas Catheter,False,False,97.62
+e5-small,kamus v1,ICD-9-CM,fresh,Spirometri dengan provokasi bronkus,False,False,33.25
+e5-small,kamus v1,ICD-9-CM,fresh,Kateter blok saraf perifer,False,False,59.8
+e5-small,kamus v1,ICD-9-CM,fresh,Antebrachi Bilateral AP/Lateral,False,False,85.54
+e5-small,kamus v1,ICD-9-CM,fresh,Herniotomi bilateral,False,True,53.39
+e5-small,kamus v1,ICD-9-CM,fresh,Lopografi,False,False,88.42
+e5-small,kamus v1,ICD-9-CM,fresh,Pemeriksaan kesehatan untuk asuransi,False,True,89.31
+e5-small,kamus v1,ICD-9-CM,fresh,Shoulder Bilateral AP,False,False,81.83
+e5-small,kamus v1,ICD-9-CM,fresh,Pungsi sendi kecil,False,False,33.93
+e5-small,kamus v1,ICD-9-CM,fresh,Kemoterapi,False,False,11.73
+e5-small,kamus v1,ICD-9-CM,fresh,CT Scan Thorax,True,True,87.41
+e5-small,kamus v1,ICD-9-CM,fresh,Penutupan oroantral fistula,False,False,49.73
+e5-small,kamus v1,ICD-9-CM,fresh,Injeksi Haemorhoid (termasuk obat),True,True,49.42
+e5-small,kamus v1,ICD-9-CM,fresh,Cranium Ap/Lateral,False,False,49.51
+e5-small,kamus v1,ICD-9-CM,fresh,Peniahitan Luka Sederhanakurangdari 5 jahitan,False,False,64.41
+e5-small,kamus v1,LOINC,seen,PPTest,False,False,29891-9
+e5-small,kamus v1,LOINC,seen,Keton Urine,True,True,33903-6
+e5-small,kamus v1,LOINC,seen,Anti Toxoplasma Ig M,True,True,57770-0
+e5-small,kamus v1,LOINC,seen,Anti Trombin III,True,True,3175-7
+e5-small,kamus v1,LOINC,seen,Cholesterol LDL Biasa,True,True,2089-1
+e5-small,kamus v1,LOINC,seen,Bilirubin Direk/Indirek,True,True,34543-9
+e5-small,kamus v1,LOINC,seen,ANA,True,True,29953-7
+e5-small,kamus v1,LOINC,seen,SGOT,True,True,1920-8
+e5-small,kamus v1,LOINC,seen,HBA 1C,False,True,21687-9
+e5-small,kamus v1,LOINC,seen,Fibrinogen,True,True,3255-7
+e5-small,kamus v1,LOINC,seen,TSHS,False,True,29574-1
+e5-small,kamus v1,LOINC,fresh,CK-MB,True,True,49551-5
+e5-small,kamus v1,LOINC,fresh,Anti Helicobacter Ftylori IgG,True,True,16126-5
+e5-small,kamus v1,LOINC,fresh,Elektrolit + Ca ION,True,True,55231-5
+e5-small,kamus v1,LOINC,fresh,Dengue Blot IgM,True,True,41878-0
+e5-small,kamus v1,LOINC,fresh,SGPT,False,True,6020-2
+e5-small,kamus v1,LOINC,fresh,Thrombotest,False,True,3243-3
+e5-small,kamus v1,LOINC,fresh,Eritrosit,False,True,30341-2
+e5-small,kamus v1,LOINC,fresh,Complement 3 (C3),True,True,4485-9
+e5-small,kamus v1,LOINC,fresh,Syphilis (Rapid),False,False,49580-4
+e5-small,kamus v1,LOINC,fresh,TIBC (Total Iron Binding,True,True,2500-7
+e5-small,kamus v1,LOINC,fresh,Immuno Globulin E,False,False,34550-4
+e5-small,kamus v2,ICD-9-CM,seen,USG Transvaginal,True,True,88.79
+e5-small,kamus v2,ICD-9-CM,seen,Punksi Pleura,True,True,34.91
+e5-small,kamus v2,ICD-9-CM,seen,"Tumpatan sementara, pulpa",True,True,23.2
+e5-small,kamus v2,ICD-9-CM,seen,Photo Scapula,True,True,88.21
+e5-small,kamus v2,ICD-9-CM,seen,Adenoidektomi,False,True,28.3
+e5-small,kamus v2,ICD-9-CM,seen,USG GUIDING THORAX,True,True,88.73
+e5-small,kamus v2,ICD-9-CM,seen,hecting komea / sklera / konjungtiva,False,True,10.21
+e5-small,kamus v2,ICD-9-CM,seen,Pengambilan Sample Papsmear,False,True,90.26
+e5-small,kamus v2,ICD-9-CM,seen,Eksisi granuloma pyogenikum,False,False,24.31
+e5-small,kamus v2,ICD-9-CM,seen,Reparasi fistula vesiko vaginal,False,False,70.75
+e5-small,kamus v2,ICD-9-CM,seen,Prosedur Ekokardiografi Dewasa,True,True,88.72
+e5-small,kamus v2,ICD-9-CM,seen,Amputasi eksisi kista branchiogenik,False,True,84.11
+e5-small,kamus v2,ICD-9-CM,seen,Eksisi condiloma accuminata,False,False,83.32
+e5-small,kamus v2,ICD-9-CM,seen,HemostatisSCBA,False,False,44.49
+e5-small,kamus v2,ICD-9-CM,seen,Crown Lengthening,False,False,78.39
+e5-small,kamus v2,ICD-9-CM,seen,Sphenoimidektomi (THT),True,True,22.64
+e5-small,kamus v2,ICD-9-CM,seen,Dobutamin Stress Echocardiography,True,True,88.72
+e5-small,kamus v2,ICD-9-CM,seen,Hair removal,False,False,86.64
+e5-small,kamus v2,ICD-9-CM,seen,Repair fraktur penis,True,True,64.49
+e5-small,kamus v2,ICD-9-CM,seen,Pasang tampon vaginal,True,True,96.14
+e5-small,kamus v2,ICD-9-CM,fresh,Nasal,False,False,22.79
+e5-small,kamus v2,ICD-9-CM,fresh,Tambalan Komposit Posterior Sedang,True,True,23.2
+e5-small,kamus v2,ICD-9-CM,fresh,Uretrotrografi,True,True,87.76
+e5-small,kamus v2,ICD-9-CM,fresh,hecting margopalpebra / kantus palpebra,False,True,08.73
+e5-small,kamus v2,ICD-9-CM,fresh,CT SCAN CERVICAL NON KONTRAS,True,True,88.38
+e5-small,kamus v2,ICD-9-CM,fresh,Passing / Lepas Catheter,False,False,97.15
+e5-small,kamus v2,ICD-9-CM,fresh,Spirometri dengan provokasi bronkus,False,False,92.15
+e5-small,kamus v2,ICD-9-CM,fresh,Kateter blok saraf perifer,False,False,54.95
+e5-small,kamus v2,ICD-9-CM,fresh,Antebrachi Bilateral AP/Lateral,False,False,85.54
+e5-small,kamus v2,ICD-9-CM,fresh,Herniotomi bilateral,True,True,53.11
+e5-small,kamus v2,ICD-9-CM,fresh,Lopografi,False,False,88.42
+e5-small,kamus v2,ICD-9-CM,fresh,Pemeriksaan kesehatan untuk asuransi,False,False,95.04
+e5-small,kamus v2,ICD-9-CM,fresh,Shoulder Bilateral AP,False,False,81.83
+e5-small,kamus v2,ICD-9-CM,fresh,Pungsi sendi kecil,False,False,22.01
+e5-small,kamus v2,ICD-9-CM,fresh,Kemoterapi,False,True,00.10
+e5-small,kamus v2,ICD-9-CM,fresh,CT Scan Thorax,True,True,87.41
+e5-small,kamus v2,ICD-9-CM,fresh,Penutupan oroantral fistula,False,False,49.73
+e5-small,kamus v2,ICD-9-CM,fresh,Injeksi Haemorhoid (termasuk obat),True,True,49.42
+e5-small,kamus v2,ICD-9-CM,fresh,Cranium Ap/Lateral,False,False,49.51
+e5-small,kamus v2,ICD-9-CM,fresh,Peniahitan Luka Sederhanakurangdari 5 jahitan,False,False,64.41
+e5-small,kamus v2,LOINC,seen,PPTest,True,True,2106-3
+e5-small,kamus v2,LOINC,seen,Keton Urine,True,True,33903-6
+e5-small,kamus v2,LOINC,seen,Anti Toxoplasma Ig M,True,True,57770-0
+e5-small,kamus v2,LOINC,seen,Anti Trombin III,True,True,3175-7
+e5-small,kamus v2,LOINC,seen,Cholesterol LDL Biasa,True,True,2089-1
+e5-small,kamus v2,LOINC,seen,Bilirubin Direk/Indirek,True,True,34543-9
+e5-small,kamus v2,LOINC,seen,ANA,True,True,8061-4
+e5-small,kamus v2,LOINC,seen,SGOT,True,True,1920-8
+e5-small,kamus v2,LOINC,seen,HBA 1C,True,True,17856-6
+e5-small,kamus v2,LOINC,seen,Fibrinogen,True,True,3255-7
+e5-small,kamus v2,LOINC,seen,TSHS,True,True,3016-3
+e5-small,kamus v2,LOINC,fresh,CK-MB,True,True,49551-5
+e5-small,kamus v2,LOINC,fresh,Anti Helicobacter Ftylori IgG,True,True,16126-5
+e5-small,kamus v2,LOINC,fresh,Elektrolit + Ca ION,True,True,55231-5
+e5-small,kamus v2,LOINC,fresh,Dengue Blot IgM,True,True,41878-0
+e5-small,kamus v2,LOINC,fresh,SGPT,True,True,1742-6
+e5-small,kamus v2,LOINC,fresh,Thrombotest,False,True,3243-3
+e5-small,kamus v2,LOINC,fresh,Eritrosit,False,True,30341-2
+e5-small,kamus v2,LOINC,fresh,Complement 3 (C3),True,True,4485-9
+e5-small,kamus v2,LOINC,fresh,Syphilis (Rapid),False,False,49580-4
+e5-small,kamus v2,LOINC,fresh,TIBC (Total Iron Binding,True,True,2500-7
+e5-small,kamus v2,LOINC,fresh,Immuno Globulin E,False,False,34550-4
+e5-large,kamus v1,ICD-9-CM,seen,USG Transvaginal,True,True,88.79
+e5-large,kamus v1,ICD-9-CM,seen,Punksi Pleura,False,False,34.93
+e5-large,kamus v1,ICD-9-CM,seen,"Tumpatan sementara, pulpa",False,False,84.3
+e5-large,kamus v1,ICD-9-CM,seen,Photo Scapula,False,False,77.41
+e5-large,kamus v1,ICD-9-CM,seen,Adenoidektomi,False,True,28.3
+e5-large,kamus v1,ICD-9-CM,seen,USG GUIDING THORAX,True,True,88.73
+e5-large,kamus v1,ICD-9-CM,seen,hecting komea / sklera / konjungtiva,True,True,12.81
+e5-large,kamus v1,ICD-9-CM,seen,Pengambilan Sample Papsmear,False,True,75.33
+e5-large,kamus v1,ICD-9-CM,seen,Eksisi granuloma pyogenikum,False,False,54.62
+e5-large,kamus v1,ICD-9-CM,seen,Reparasi fistula vesiko vaginal,False,False,70.75
+e5-large,kamus v1,ICD-9-CM,seen,Prosedur Ekokardiografi Dewasa,False,False,37.28
+e5-large,kamus v1,ICD-9-CM,seen,Amputasi eksisi kista branchiogenik,True,True,29.2
+e5-large,kamus v1,ICD-9-CM,seen,Eksisi condiloma accuminata,False,False,04.01
+e5-large,kamus v1,ICD-9-CM,seen,HemostatisSCBA,False,False,39.95
+e5-large,kamus v1,ICD-9-CM,seen,Crown Lengthening,False,False,78.39
+e5-large,kamus v1,ICD-9-CM,seen,Sphenoimidektomi (THT),True,True,22.64
+e5-large,kamus v1,ICD-9-CM,seen,Dobutamin Stress Echocardiography,False,True,37.28
+e5-large,kamus v1,ICD-9-CM,seen,Hair removal,False,False,86.64
+e5-large,kamus v1,ICD-9-CM,seen,Repair fraktur penis,True,True,64.49
+e5-large,kamus v1,ICD-9-CM,seen,Pasang tampon vaginal,False,False,96.15
+e5-large,kamus v1,ICD-9-CM,fresh,Nasal,False,False,22.79
+e5-large,kamus v1,ICD-9-CM,fresh,Tambalan Komposit Posterior Sedang,False,False,81.03
+e5-large,kamus v1,ICD-9-CM,fresh,Uretrotrografi,True,True,87.76
+e5-large,kamus v1,ICD-9-CM,fresh,hecting margopalpebra / kantus palpebra,False,False,12.81
+e5-large,kamus v1,ICD-9-CM,fresh,CT SCAN CERVICAL NON KONTRAS,True,True,88.38
+e5-large,kamus v1,ICD-9-CM,fresh,Passing / Lepas Catheter,False,False,97.15
+e5-large,kamus v1,ICD-9-CM,fresh,Spirometri dengan provokasi bronkus,False,False,33.25
+e5-large,kamus v1,ICD-9-CM,fresh,Kateter blok saraf perifer,False,False,97.15
+e5-large,kamus v1,ICD-9-CM,fresh,Antebrachi Bilateral AP/Lateral,False,False,85.54
+e5-large,kamus v1,ICD-9-CM,fresh,Herniotomi bilateral,False,False,53.39
+e5-large,kamus v1,ICD-9-CM,fresh,Lopografi,False,False,88.42
+e5-large,kamus v1,ICD-9-CM,fresh,Pemeriksaan kesehatan untuk asuransi,False,True,89.31
+e5-large,kamus v1,ICD-9-CM,fresh,Shoulder Bilateral AP,False,False,81.83
+e5-large,kamus v1,ICD-9-CM,fresh,Pungsi sendi kecil,False,False,33.93
+e5-large,kamus v1,ICD-9-CM,fresh,Kemoterapi,True,True,99.25
+e5-large,kamus v1,ICD-9-CM,fresh,CT Scan Thorax,True,True,87.41
+e5-large,kamus v1,ICD-9-CM,fresh,Penutupan oroantral fistula,False,False,49.73
+e5-large,kamus v1,ICD-9-CM,fresh,Injeksi Haemorhoid (termasuk obat),True,True,49.42
+e5-large,kamus v1,ICD-9-CM,fresh,Cranium Ap/Lateral,False,False,49.51
+e5-large,kamus v1,ICD-9-CM,fresh,Peniahitan Luka Sederhanakurangdari 5 jahitan,False,False,64.41
+e5-large,kamus v1,LOINC,seen,PPTest,False,False,29891-9
+e5-large,kamus v1,LOINC,seen,Keton Urine,True,True,33903-6
+e5-large,kamus v1,LOINC,seen,Anti Toxoplasma Ig M,True,True,57770-0
+e5-large,kamus v1,LOINC,seen,Anti Trombin III,True,True,3175-7
+e5-large,kamus v1,LOINC,seen,Cholesterol LDL Biasa,True,True,2089-1
+e5-large,kamus v1,LOINC,seen,Bilirubin Direk/Indirek,True,True,34543-9
+e5-large,kamus v1,LOINC,seen,ANA,True,True,27200-5
+e5-large,kamus v1,LOINC,seen,SGOT,True,True,1920-8
+e5-large,kamus v1,LOINC,seen,HBA 1C,False,True,21687-9
+e5-large,kamus v1,LOINC,seen,Fibrinogen,True,True,3255-7
+e5-large,kamus v1,LOINC,seen,TSHS,False,True,29574-1
+e5-large,kamus v1,LOINC,fresh,CK-MB,True,True,49551-5
+e5-large,kamus v1,LOINC,fresh,Anti Helicobacter Ftylori IgG,True,True,16126-5
+e5-large,kamus v1,LOINC,fresh,Elektrolit + Ca ION,True,True,55231-5
+e5-large,kamus v1,LOINC,fresh,Dengue Blot IgM,True,True,41878-0
+e5-large,kamus v1,LOINC,fresh,SGPT,False,True,6020-2
+e5-large,kamus v1,LOINC,fresh,Thrombotest,False,True,3243-3
+e5-large,kamus v1,LOINC,fresh,Eritrosit,False,True,30341-2
+e5-large,kamus v1,LOINC,fresh,Complement 3 (C3),True,True,4485-9
+e5-large,kamus v1,LOINC,fresh,Syphilis (Rapid),False,False,49580-4
+e5-large,kamus v1,LOINC,fresh,TIBC (Total Iron Binding,True,True,2500-7
+e5-large,kamus v1,LOINC,fresh,Immuno Globulin E,False,False,34550-4
+e5-large,kamus v2,ICD-9-CM,seen,USG Transvaginal,True,True,88.79
+e5-large,kamus v2,ICD-9-CM,seen,Punksi Pleura,True,True,34.91
+e5-large,kamus v2,ICD-9-CM,seen,"Tumpatan sementara, pulpa",True,True,23.2
+e5-large,kamus v2,ICD-9-CM,seen,Photo Scapula,True,True,88.21
+e5-large,kamus v2,ICD-9-CM,seen,Adenoidektomi,False,True,28.3
+e5-large,kamus v2,ICD-9-CM,seen,USG GUIDING THORAX,True,True,88.73
+e5-large,kamus v2,ICD-9-CM,seen,hecting komea / sklera / konjungtiva,False,True,10.1
+e5-large,kamus v2,ICD-9-CM,seen,Pengambilan Sample Papsmear,False,True,90.26
+e5-large,kamus v2,ICD-9-CM,seen,Eksisi granuloma pyogenikum,False,False,83.32
+e5-large,kamus v2,ICD-9-CM,seen,Reparasi fistula vesiko vaginal,False,False,70.75
+e5-large,kamus v2,ICD-9-CM,seen,Prosedur Ekokardiografi Dewasa,True,True,88.72
+e5-large,kamus v2,ICD-9-CM,seen,Amputasi eksisi kista branchiogenik,True,True,29.2
+e5-large,kamus v2,ICD-9-CM,seen,Eksisi condiloma accuminata,False,False,83.32
+e5-large,kamus v2,ICD-9-CM,seen,HemostatisSCBA,False,False,44.49
+e5-large,kamus v2,ICD-9-CM,seen,Crown Lengthening,False,False,78.39
+e5-large,kamus v2,ICD-9-CM,seen,Sphenoimidektomi (THT),True,True,22.64
+e5-large,kamus v2,ICD-9-CM,seen,Dobutamin Stress Echocardiography,True,True,88.72
+e5-large,kamus v2,ICD-9-CM,seen,Hair removal,False,False,86.64
+e5-large,kamus v2,ICD-9-CM,seen,Repair fraktur penis,True,True,64.49
+e5-large,kamus v2,ICD-9-CM,seen,Pasang tampon vaginal,True,True,96.14
+e5-large,kamus v2,ICD-9-CM,fresh,Nasal,False,False,22.79
+e5-large,kamus v2,ICD-9-CM,fresh,Tambalan Komposit Posterior Sedang,True,True,23.2
+e5-large,kamus v2,ICD-9-CM,fresh,Uretrotrografi,True,True,87.76
+e5-large,kamus v2,ICD-9-CM,fresh,hecting margopalpebra / kantus palpebra,False,False,08.01
+e5-large,kamus v2,ICD-9-CM,fresh,CT SCAN CERVICAL NON KONTRAS,True,True,88.38
+e5-large,kamus v2,ICD-9-CM,fresh,Passing / Lepas Catheter,False,False,97.15
+e5-large,kamus v2,ICD-9-CM,fresh,Spirometri dengan provokasi bronkus,False,False,92.15
+e5-large,kamus v2,ICD-9-CM,fresh,Kateter blok saraf perifer,False,False,04.3
+e5-large,kamus v2,ICD-9-CM,fresh,Antebrachi Bilateral AP/Lateral,False,False,85.54
+e5-large,kamus v2,ICD-9-CM,fresh,Herniotomi bilateral,True,True,53.11
+e5-large,kamus v2,ICD-9-CM,fresh,Lopografi,False,False,88.42
+e5-large,kamus v2,ICD-9-CM,fresh,Pemeriksaan kesehatan untuk asuransi,False,True,92.18
+e5-large,kamus v2,ICD-9-CM,fresh,Shoulder Bilateral AP,False,False,81.83
+e5-large,kamus v2,ICD-9-CM,fresh,Pungsi sendi kecil,False,False,22.01
+e5-large,kamus v2,ICD-9-CM,fresh,Kemoterapi,False,True,00.10
+e5-large,kamus v2,ICD-9-CM,fresh,CT Scan Thorax,True,True,87.41
+e5-large,kamus v2,ICD-9-CM,fresh,Penutupan oroantral fistula,False,False,49.73
+e5-large,kamus v2,ICD-9-CM,fresh,Injeksi Haemorhoid (termasuk obat),True,True,49.42
+e5-large,kamus v2,ICD-9-CM,fresh,Cranium Ap/Lateral,False,False,49.51
+e5-large,kamus v2,ICD-9-CM,fresh,Peniahitan Luka Sederhanakurangdari 5 jahitan,False,False,64.41
+e5-large,kamus v2,LOINC,seen,PPTest,True,True,2106-3
+e5-large,kamus v2,LOINC,seen,Keton Urine,True,True,33903-6
+e5-large,kamus v2,LOINC,seen,Anti Toxoplasma Ig M,True,True,57770-0
+e5-large,kamus v2,LOINC,seen,Anti Trombin III,True,True,3175-7
+e5-large,kamus v2,LOINC,seen,Cholesterol LDL Biasa,True,True,2089-1
+e5-large,kamus v2,LOINC,seen,Bilirubin Direk/Indirek,True,True,34543-9
+e5-large,kamus v2,LOINC,seen,ANA,True,True,8061-4
+e5-large,kamus v2,LOINC,seen,SGOT,True,True,1920-8
+e5-large,kamus v2,LOINC,seen,HBA 1C,True,True,17856-6
+e5-large,kamus v2,LOINC,seen,Fibrinogen,True,True,3255-7
+e5-large,kamus v2,LOINC,seen,TSHS,False,True,29574-1
+e5-large,kamus v2,LOINC,fresh,CK-MB,True,True,49551-5
+e5-large,kamus v2,LOINC,fresh,Anti Helicobacter Ftylori IgG,True,True,16126-5
+e5-large,kamus v2,LOINC,fresh,Elektrolit + Ca ION,True,True,55231-5
+e5-large,kamus v2,LOINC,fresh,Dengue Blot IgM,True,True,41878-0
+e5-large,kamus v2,LOINC,fresh,SGPT,True,True,1742-6
+e5-large,kamus v2,LOINC,fresh,Thrombotest,False,True,3243-3
+e5-large,kamus v2,LOINC,fresh,Eritrosit,False,True,30341-2
+e5-large,kamus v2,LOINC,fresh,Complement 3 (C3),True,True,4485-9
+e5-large,kamus v2,LOINC,fresh,Syphilis (Rapid),False,False,49580-4
+e5-large,kamus v2,LOINC,fresh,TIBC (Total Iron Binding,True,True,2500-7
+e5-large,kamus v2,LOINC,fresh,Immuno Globulin E,False,False,34550-4

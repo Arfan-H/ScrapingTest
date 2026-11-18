@@ -23,6 +23,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 sys.path.insert(0, os.path.dirname(__file__))
 from align import e5_embed  # noqa: E402
+from medterm_id_en import translate_v2  # noqa: E402
 
 BASE = os.path.join(os.path.dirname(__file__), "..")
 ROOT = os.path.join(BASE, "..")
@@ -101,7 +102,7 @@ def main():
     sheets = pd.read_excel(path, sheet_name=None)
     pem = sheets["pemetaan"].copy()
     pem["kode_sistem"] = pem.kategori_std.map(TARGET).fillna("ICD-9-CM")
-    pem["query"] = [f"{n} {translate(n)}" for n in pem.nama_norm]
+    pem["query"] = [f"{n} {translate_v2(n)}" for n in pem.nama_norm]  # kamus v2 (lihat pilot/eval)
     T = load_targets()
     cand_col, top_col, score_col = [""] * len(pem), [""] * len(pem), [np.nan] * len(pem)
     for sysname, tgt in T.items():
