@@ -1,0 +1,1187 @@
+t_id,rs,nama_norm,nama_asli,kategori,kategori_std,harga,sumber,n
+0,RSUD_REMBANG,/ neoristi,/Neoristi,ICU/PICU/NICU,Akomodasi & Visite,275000.0,harga_langsung,1
+1,RSUD_REMBANG,abdomen 2 posisi,Abdomen 2 Posisi,SEDANG,Tindakan Lain,69500.0,harga_langsung,2
+2,RSUD_REMBANG,abdomen 3 posisi,Abdomen 3 Posisi,SEDANG,Tindakan Lain,69500.0,harga_langsung,2
+3,RSUD_REMBANG,abreviated conner,Abreviated Conner,SARANA LAYANAN MEDIS,Tindakan Lain,65000.0,harga_langsung,1
+4,RSUD_REMBANG,absolut eusinofil,Absolut eusinofil,Pemeriksaan,Laboratorium,8100.0,harga_langsung,2
+5,RSUD_REMBANG,absolut eusinofil count,Absolut eusinofil count,Pemeriksaan Sederhana,Laboratorium,12075.0,harga_langsung,1
+6,RSUD_REMBANG,adenoidektomy,Adenoidektomy,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+7,RSUD_REMBANG,adenolisis,Adenolisis,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+8,RSUD_REMBANG,adenotonsilektomy,Adenotonsilektomy,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+9,RSUD_REMBANG,aff double lumen,Aff double lumen,SARANA LAYANAN,Tindakan Lain,15250.0,harga_langsung,2
+10,RSUD_REMBANG,aff plates / implant / idw,Aff plates / Implant / IDW,Tindakan operatif / kelompok ii,Kebidanan,1470000.0,golongan:operatif/kelompok ii,1
+11,RSUD_REMBANG,afp,AFP,Pemeriksaan,Laboratorium,46200.0,harga_langsung,2
+12,RSUD_REMBANG,agregasi trombosit,Agregasi Trombosit,Pemeriksaan,Laboratorium,50050.0,harga_langsung,2
+13,RSUD_REMBANG,akomodasi,Akomodasi,SARANA LAYANAN UMUM SPESIALI,Akomodasi & Visite,45000.0,harga_langsung,2
+14,RSUD_REMBANG,akomodasi hcu,Akomodasi HCU,ICU/PICU/NICU,Akomodasi & Visite,185000.0,harga_langsung,1
+15,RSUD_REMBANG,akomodasi igd,Akomodasi IGD,ICU/PICU/NICU,Akomodasi & Visite,105000.0,harga_langsung,1
+16,RSUD_REMBANG,akomodasi one,Akomodasi One,ICU/PICU/NICU,Akomodasi & Visite,60000.0,harga_langsung,1
+17,RSUD_REMBANG,albumin,Albumin,Pemeriksaan,Laboratorium,9250.0,harga_langsung,2
+18,RSUD_REMBANG,alergi test / patch test,Alergi test/patch test,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+19,RSUD_REMBANG,alfa 1 antitrifsin,Alfa 1 Antitrifsin,Pemeriksaan,Laboratorium,50050.0,harga_langsung,2
+20,RSUD_REMBANG,alfa 2 makro,Alfa 2 Makro,Pemeriksaan,Laboratorium,21000.0,harga_langsung,1
+21,RSUD_REMBANG,alfa 2 makro globulin,Alfa 2 Makro Globulin,Pemeriksaan Canggih,Laboratorium,25200.0,harga_langsung,1
+22,RSUD_REMBANG,alkali fosfatase,Alkali Fosfatase,Pemeriksaan,Laboratorium,12712.5,harga_langsung,2
+23,RSUD_REMBANG,alveolectomy kista kecil,Alveolectomy kista kecil,TINDAKAN SEDANG,Tindakan Lain,68000.0,harga_langsung,1
+24,RSUD_REMBANG,alveolectomy per region,Alveolectomy per region,TINDAKAN SEDANG,Tindakan Lain,132000.0,harga_langsung,1
+25,RSUD_REMBANG,amilase darah,Amilase Darah,Pemeriksaan,Laboratorium,11937.5,harga_langsung,2
+26,RSUD_REMBANG,amilase urine,Amilase Urine,Pemeriksaan,Laboratorium,11937.5,harga_langsung,2
+27,RSUD_REMBANG,aminophylin,Aminophylin,Pemeriksaan,Laboratorium,23100.0,harga_langsung,2
+28,RSUD_REMBANG,amotio corpus alineum konjungtiva / kornea,Amotio corpus alineum konjungtiva / kornea,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+29,RSUD_REMBANG,amotio lithiasis / jahit konjungtiva,Amotio lithiasis / Jahit konjungtiva,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+30,RSUD_REMBANG,amputasi eksisi kista branchiogenik,Amputasi eksisi kista branchiogenik,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+31,RSUD_REMBANG,amputasi jari tangan dan jari kaki dengan narkose,Amputasi jari tangan dan jari kaki dengan narkose,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+32,RSUD_REMBANG,amputasi jari tanpa narkose,Amputasi jari (tanpa narkose),Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+33,RSUD_REMBANG,amputasi transmedular / fasiotomi,Amputasi transmedular / Fasiotomi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+34,RSUD_REMBANG,ana titrasi,ANA Titrasi,Pemeriksaan,Laboratorium,41575.0,harga_langsung,2
+35,RSUD_REMBANG,analisa batu,Analisa Batu,Pemeriksaan,Laboratorium,25025.0,harga_langsung,2
+36,RSUD_REMBANG,analisa gas darah,Analisa Gas Darah,Pemeriksaan,Laboratorium,28000.0,harga_langsung,3
+37,RSUD_REMBANG,analisa sperma,Analisa sperma,Pemeriksaan,Laboratorium,60062.5,harga_langsung,2
+38,RSUD_REMBANG,analisis cairan,Analisis Cairan,PEMERIKSAAN KHUSUS,Laboratorium,15000.0,harga_langsung,1
+39,RSUD_REMBANG,analisis sperma,Analisis Sperma,PEMERIKSAAN KHUSUS,Laboratorium,15000.0,harga_langsung,1
+40,RSUD_REMBANG,angiofibroma,Angiofibroma,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+41,RSUD_REMBANG,angkat jahitan 6-10,Angkat jahitan 6-10,SARANA LAYANAN,Tindakan Lain,9000.0,harga_langsung,1
+42,RSUD_REMBANG,angkat jahitan 6-10 jahitan,Angkat jahitan 6-10 jahitan,SARANA LAYANAN,Tindakan Lain,6500.0,harga_langsung,1
+43,RSUD_REMBANG,angkat jahitan < 5,Angkat jahitan < 5,SARANA LAYANAN,Tindakan Lain,4500.0,harga_langsung,1
+44,RSUD_REMBANG,angkat jahitan < 5 jahitan,Angkat jahitan < 5 jahitan,SARANA LAYANAN,Tindakan Lain,3500.0,harga_langsung,1
+45,RSUD_REMBANG,angkat jahitan > 10,Angkat jahitan > 10,SARANA LAYANAN,Tindakan Lain,22000.0,harga_langsung,1
+46,RSUD_REMBANG,angkat jahitan > 10 jahitan,Angkat jahitan > 10 jahitan,SARANA LAYANAN,Tindakan Lain,16500.0,harga_langsung,1
+47,RSUD_REMBANG,angkat k-wire,Angkat K-Wire,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+48,RSUD_REMBANG,angkat pen / screw,Angkat pen / screw,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+49,RSUD_REMBANG,angkat spiral benang negative,Angkat spiral benang negative,Tindakan non operatif / tindakan besar,Kebidanan,100500.0,golongan:non operatif/tindakan besar,1
+50,RSUD_REMBANG,anoplasti,Anoplasti,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+51,RSUD_REMBANG,anoplasti sederhana cutback,Anoplasti sederhana (cutback),Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+52,RSUD_REMBANG,anterior / posterior sklerotomi,Anterior / posterior sklerotomi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+53,RSUD_REMBANG,anti cmv ig g,Anti CMV IgG,Pemeriksaan,Laboratorium,41575.0,harga_langsung,2
+54,RSUD_REMBANG,anti cmv ig m,Anti CMV IgM,Pemeriksaan,Laboratorium,41575.0,harga_langsung,2
+55,RSUD_REMBANG,anti faktor xa,Anti Faktor Xa,Pemeriksaan,Laboratorium,127050.0,harga_langsung,2
+56,RSUD_REMBANG,anti hav ig m,Anti HAV IgM,Pemeriksaan,Laboratorium,41575.0,harga_langsung,2
+57,RSUD_REMBANG,anti hav total,Anti HAV Total,Pemeriksaan,Laboratorium,41575.0,harga_langsung,2
+58,RSUD_REMBANG,anti hbc ig m,Anti HBc IgM,Pemeriksaan,Laboratorium,25400.0,harga_langsung,2
+59,RSUD_REMBANG,anti hbc total,Anti HBc Total,Pemeriksaan,Laboratorium,41575.0,harga_langsung,2
+60,RSUD_REMBANG,anti hbe,Anti HBe,Pemeriksaan,Laboratorium,60050.0,harga_langsung,2
+61,RSUD_REMBANG,anti hbs,Anti HBs,Pemeriksaan,Laboratorium,17712.5,harga_langsung,2
+62,RSUD_REMBANG,anti hcv,Anti HCV,Pemeriksaan,Laboratorium,36950.0,harga_langsung,2
+63,RSUD_REMBANG,anti helicobacter,Anti Helicobacter,Pemeriksaan,Laboratorium,29400.0,harga_langsung,2
+64,RSUD_REMBANG,anti helicobacter pylori,Anti Helicobacter Pylori,Pemeriksaan Canggih,Laboratorium,35275.0,harga_langsung,2
+65,RSUD_REMBANG,anti hsv i ig g,Anti HSV I IgG,Pemeriksaan,Laboratorium,32337.5,harga_langsung,2
+66,RSUD_REMBANG,anti hsv i ig m,Anti HSV I IgM,Pemeriksaan,Laboratorium,32337.5,harga_langsung,2
+67,RSUD_REMBANG,anti hsv ii ig g,Anti HSV II IgG,Pemeriksaan,Laboratorium,32337.5,harga_langsung,2
+68,RSUD_REMBANG,anti hsv ii ig m,Anti HSV II IgM,Pemeriksaan,Laboratorium,32337.5,harga_langsung,2
+69,RSUD_REMBANG,anti kappa,Anti Kappa,Pemeriksaan,Laboratorium,41575.0,harga_langsung,2
+70,RSUD_REMBANG,anti lamda,Anti Lamda,Pemeriksaan,Laboratorium,41575.0,harga_langsung,2
+71,RSUD_REMBANG,anti rubella ig g,Anti Rubella IgG,Pemeriksaan,Laboratorium,27725.0,harga_langsung,2
+72,RSUD_REMBANG,anti rubella ig m,Anti Rubella IgM,Pemeriksaan,Laboratorium,27725.0,harga_langsung,2
+73,RSUD_REMBANG,anti tb,Anti TB,Pemeriksaan,Laboratorium,27725.0,harga_langsung,2
+74,RSUD_REMBANG,anti toxoplasma,Anti Toxoplasma,Pemeriksaan,Laboratorium,37800.0,harga_langsung,2
+75,RSUD_REMBANG,anti toxoplasma ig g,Anti Toxoplasma IgG,Pemeriksaan Canggih,Laboratorium,45350.0,harga_langsung,1
+76,RSUD_REMBANG,anti toxoplasma ig m,Anti Toxoplasma IgM,Pemeriksaan Canggih,Laboratorium,45350.0,harga_langsung,1
+77,RSUD_REMBANG,anti trombin iii,Anti Trombin III,Pemeriksaan,Laboratorium,64675.0,harga_langsung,2
+78,RSUD_REMBANG,antrostomi sinus maksilaris,Antrostomi sinus maksilaris,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+79,RSUD_REMBANG,anuplasty,Anuplasty,Tindakan operatif / kelompok khusus,Tindakan Lain,3680000.0,golongan:operatif/kelompok khusus,1
+80,RSUD_REMBANG,anxiety scale,Anxiety Scale,Pemeriksaan,Laboratorium,20000.0,harga_langsung,1
+81,RSUD_REMBANG,apendektomi akut,Apendektomi akut,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+82,RSUD_REMBANG,apendiktomi perforate,Apendiktomi perforate,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+83,RSUD_REMBANG,apex reseksi,Apex reseksi,TINDAKAN BESAR,Tindakan Lain,145000.0,harga_langsung,1
+84,RSUD_REMBANG,appendikografi,Appendikografi,SEDANG,Tindakan Lain,63000.0,harga_langsung,2
+85,RSUD_REMBANG,aptt masa,APTT (Masa,Pemeriksaan,Laboratorium,16937.5,harga_langsung,2
+86,RSUD_REMBANG,ark / keratometer,ARK/Keratometer,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+87,RSUD_REMBANG,arteriografi,Arteriografi,SEDANG,Tindakan Lain,313500.0,harga_langsung,2
+88,RSUD_REMBANG,arthrosplasty,Arthrosplasty,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+89,RSUD_REMBANG,asam empedu,Asam Empedu,Pemeriksaan,Laboratorium,18475.0,harga_langsung,2
+90,RSUD_REMBANG,asam folat,Asam Folat,Pemeriksaan,Laboratorium,32337.5,harga_langsung,2
+91,RSUD_REMBANG,asam urat,Asam Urat,Pemeriksaan,Laboratorium,7700.0,harga_langsung,2
+92,RSUD_REMBANG,aspirasi haemarthrosis / pus,Aspirasi haemarthrosis / Pus,Tindakan non operatif / tindakan sedang,Tindakan Lain,72500.0,golongan:non operatif/tindakan sedang,1
+93,RSUD_REMBANG,assay faktor ix,Assay Faktor IX,Pemeriksaan,Laboratorium,173250.0,harga_langsung,2
+94,RSUD_REMBANG,assay faktor viii,Assay Faktor VIII,Pemeriksaan,Laboratorium,173250.0,harga_langsung,2
+95,RSUD_REMBANG,asto,ASTO,Pemeriksaan,Laboratorium,22325.0,harga_langsung,2
+96,RSUD_REMBANG,atrostomi adenoidektomi,Atrostomi & adenoidektomi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+97,RSUD_REMBANG,av shunt berikut,AV Shunt berikut:,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+98,RSUD_REMBANG,barium enema,Barium Enema,SEDANG,Radiologi,125500.0,harga_langsung,2
+99,RSUD_REMBANG,barium follow through,Barium Follow Through,SEDANG,Tindakan Lain,125500.0,harga_langsung,2
+100,RSUD_REMBANG,barium meal,Barium Meal,SEDANG,Tindakan Lain,125500.0,harga_langsung,2
+101,RSUD_REMBANG,bedah beku < 5 cm,Bedah beku < 5 cm,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+102,RSUD_REMBANG,benzidin slide,Benzidin Slide,"MCHC, RDW,",Tindakan Lain,27500.0,harga_langsung,2
+103,RSUD_REMBANG,berat,Berat,SARANA LAYANAN MEDIS,Tindakan Lain,126250.0,harga_langsung,2
+104,RSUD_REMBANG,besar iii,Besar III,TINDAKAN SARANA LAYANAN MEDIS,Tindakan Lain,45000.0,harga_langsung,1
+105,RSUD_REMBANG,beta hcg,Beta HCG,Pemeriksaan,Laboratorium,13087.5,harga_langsung,2
+106,RSUD_REMBANG,biakan,Biakan,Pemeriksaan,Laboratorium,56000.0,harga_langsung,1
+107,RSUD_REMBANG,biakan jamur,Biakan Jamur,Pemeriksaan,Laboratorium,27725.0,harga_langsung,2
+108,RSUD_REMBANG,biakan mikroorganisme,Biakan Mikroorganisme,PEMERIKSAAN MIKROBIOLOGI,Laboratorium,67200.0,harga_langsung,1
+109,RSUD_REMBANG,biakan salmonella,Biakan Salmonella,Pemeriksaan,Laboratorium,27725.0,harga_langsung,2
+110,RSUD_REMBANG,biaya institusi i / < 5 orang,Biaya Institusi I / < 5 orang,PESERTA,Tindakan Lain,1000000.0,harga_langsung,1
+111,RSUD_REMBANG,bidan iii 180.00,Bidan III 180.00,AN A N IS,Tindakan Lain,435000.0,harga_langsung,1
+112,RSUD_REMBANG,bilirubin,Bilirubin,Pemeriksaan,Laboratorium,8400.0,harga_langsung,1
+113,RSUD_REMBANG,bilirubin direk / indirek,Bilirubin Direk/Indirek,Pemeriksaan Canggih,Laboratorium,10075.0,harga_langsung,1
+114,RSUD_REMBANG,bilirubin total,Bilirubin Total,Pemeriksaan,Laboratorium,9237.5,harga_langsung,2
+115,RSUD_REMBANG,biopsi adneksa,Biopsi adneksa,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+116,RSUD_REMBANG,biopsi dalam narkose umum / incisi dalam narkose,Biopsi dalam narkose umum / Incisi dalam narkose,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+117,RSUD_REMBANG,biopsi ginjal,Biopsi ginjal,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+118,RSUD_REMBANG,biopsi hepar,Biopsi hepar,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+119,RSUD_REMBANG,biopsi jaringan,Biopsi Jaringan,PEMERIKSAAN PATOLOGI ANATOMI,Laboratorium,45500.0,harga_langsung,3
+120,RSUD_REMBANG,biopsi jaringan besar,Biopsi Jaringan Besar,PEMERIKSAAN PATOLOGI ANATOMI,Laboratorium,65500.0,harga_langsung,1
+121,RSUD_REMBANG,biopsi jaringan kecil,Biopsi Jaringan Kecil,PEMERIKSAAN PATOLOGI ANATOMI,Laboratorium,45350.0,harga_langsung,1
+122,RSUD_REMBANG,biopsi jaringan sedang,Biopsi Jaringan Sedang,PEMERIKSAAN PATOLOGI ANATOMI,Laboratorium,54600.0,harga_langsung,1
+123,RSUD_REMBANG,biopsi jarum halus struma,Biopsi jarum halus struma,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+124,RSUD_REMBANG,biopsi khusus hati,"Biopsi Khusus (Hati,",PEMERIKSAAN PATOLOGI ANATOMI,Laboratorium,119350.0,harga_langsung,2
+125,RSUD_REMBANG,biopsi neoplasma daerah telinga / hidung / tenggorokan / kepala / leher,Biopsi neoplasma daerah telinga / hidung / tenggorokan / kepala / leher,Tindakan operatif / kelompok i,Mata/THT/Kulit,1077000.0,golongan:operatif/kelompok i,1
+126,RSUD_REMBANG,biopsi pleura / lepas tube,Biopsi pleura / Lepas tube,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+127,RSUD_REMBANG,biopsi prostat,Biopsi prostat,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+128,RSUD_REMBANG,biopsi saraf kutaneus / otot,Biopsi saraf kutaneus / otot,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+129,RSUD_REMBANG,biopsi testis,Biopsi testis,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+130,RSUD_REMBANG,biopsi tumor nasofaring,Biopsi tumor nasofaring,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+131,RSUD_REMBANG,bipolar uretro sistografi,Bipolar Uretro Sistografi,SEDANG,Tindakan Lain,204000.0,harga_langsung,2
+132,RSUD_REMBANG,blepharoplasti,Blepharoplasti,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+133,RSUD_REMBANG,blok saraf tepi,Blok saraf tepi,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+134,RSUD_REMBANG,bmp paket baca 4,BMP Paket Baca (4,PEMERIKSAAN KHUSUS,Laboratorium,200000.0,harga_langsung,1
+135,RSUD_REMBANG,bno intravenous pyelografi,BNO + IVP,SEDANG,Radiologi,227000.0,harga_langsung,2
+136,RSUD_REMBANG,bone age,Bone Age,SEDANG,Tindakan Lain,125500.0,harga_langsung,2
+137,RSUD_REMBANG,bouginasi,Bouginasi,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+138,RSUD_REMBANG,breast care,Breast care,SARANA LAYANAN,Tindakan Lain,15250.0,harga_langsung,2
+139,RSUD_REMBANG,broncho toilet,Broncho toilet,SARANA LAYANAN,Tindakan Lain,23000.0,harga_langsung,2
+140,RSUD_REMBANG,bronchoscopy,Bronchoscopy,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+141,RSUD_REMBANG,bronchoscopy rigid eksplorasi,Bronchoscopy rigid eksplorasi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+142,RSUD_REMBANG,buka arch bar,Buka Arch Bar,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+143,RSUD_REMBANG,buka gips sirkuler / aff hecting mata,Buka gips sirkuler / aff hecting mata,Tindakan non operatif / tindakan kecil,Mata/THT/Kulit,31500.0,golongan:non operatif/tindakan kecil,1
+144,RSUD_REMBANG,caesarian histerectomi,Caesarian histerectomi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+145,RSUD_REMBANG,cairan,Cairan,Pemeriksaan,Laboratorium,54600.0,harga_langsung,1
+146,RSUD_REMBANG,cairan otak,Cairan Otak,Pemeriksaan,Laboratorium,60062.5,harga_langsung,2
+147,RSUD_REMBANG,cairan pleura / asites,Cairan Pleura/asites,Pemeriksaan Canggih,Laboratorium,65525.0,harga_langsung,1
+148,RSUD_REMBANG,cairan sendi,Cairan Sendi,Pemeriksaan,Laboratorium,60062.5,harga_langsung,2
+149,RSUD_REMBANG,caldwell luc anthrostomi,Caldwell luc anthrostomi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+150,RSUD_REMBANG,calsium ion,Calsium Ion,Pemeriksaan,Laboratorium,13100.0,harga_langsung,2
+151,RSUD_REMBANG,calsium scoring,Calsium Scoring,CT-SCAN,Radiologi,1050000.0,harga_langsung,2
+152,RSUD_REMBANG,care vip 300.000 0,Care VIP 300.000 0,ICU/PICU/NICU,Akomodasi & Visite,540000.0,harga_langsung,1
+153,RSUD_REMBANG,cd 4 cd 8,CD 4 + CD 8,Pemeriksaan,Laboratorium,90000.0,harga_langsung,2
+154,RSUD_REMBANG,cea,CEA,Pemeriksaan,Laboratorium,77000.0,harga_langsung,2
+155,RSUD_REMBANG,cervical 2 posisi,Cervical 2 Posisi,SEDANG,Tindakan Lain,75500.0,harga_langsung,2
+156,RSUD_REMBANG,cervival 4 posisi,Cervival 4 Posisi,SEDANG,Tindakan Lain,151000.0,harga_langsung,2
+157,RSUD_REMBANG,checklist for autism in,Checklist for Autism in,SARANA LAYANAN MEDIS,Tindakan Lain,65000.0,harga_langsung,1
+158,RSUD_REMBANG,chlorida darah,Chlorida Darah,Pemeriksaan,Laboratorium,7700.0,harga_langsung,2
+159,RSUD_REMBANG,chlorida urine,Chlorida Urine,Pemeriksaan,Laboratorium,7700.0,harga_langsung,2
+160,RSUD_REMBANG,cholecystografi,Cholecystografi,SEDANG,Tindakan Lain,271000.0,harga_langsung,2
+161,RSUD_REMBANG,cholesterol hdl,Cholesterol HDL,Pemeriksaan,Laboratorium,8850.0,harga_langsung,2
+162,RSUD_REMBANG,cholesterol ldl,Cholesterol LDL,Pemeriksaan,Laboratorium,8850.0,harga_langsung,2
+163,RSUD_REMBANG,cholesterol total,Cholesterol Total,Pemeriksaan,Laboratorium,8850.0,harga_langsung,2
+164,RSUD_REMBANG,cholinesterase,Cholinesterase,Pemeriksaan,Laboratorium,13850.0,harga_langsung,2
+165,RSUD_REMBANG,cirkumsisi,Cirkumsisi,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+166,RSUD_REMBANG,ck creatine,CK (Creatine,Pemeriksaan,Laboratorium,20300.0,harga_langsung,1
+167,RSUD_REMBANG,ck creatine kinase,CK (Creatine Kinase),Pemeriksaan Canggih,Laboratorium,24350.0,harga_langsung,1
+168,RSUD_REMBANG,ck-mb,CK-MB,Pemeriksaan,Laboratorium,22325.0,harga_langsung,2
+169,RSUD_REMBANG,clitoral reduction,Clitoral reduction,Tindakan operatif / kelompok khusus,Tindakan Lain,3680000.0,golongan:operatif/kelompok khusus,1
+170,RSUD_REMBANG,cmv ig g avidity,CMV IgG Avidity,Pemeriksaan,Laboratorium,41575.0,harga_langsung,2
+171,RSUD_REMBANG,cognitive behaviour,Cognitive Behaviour,PSIKOTERAPI,Rehab Medik,150000.0,harga_langsung,1
+172,RSUD_REMBANG,colon in loop,Colon in Loop,SEDANG,Tindakan Lain,79000.0,harga_langsung,2
+173,RSUD_REMBANG,colostomy,Colostomy,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+174,RSUD_REMBANG,complement 3 c3,Complement 3 (C3),Pemeriksaan,Laboratorium,41575.0,harga_langsung,2
+175,RSUD_REMBANG,complement 4 c4,Complement 4 (C4),Pemeriksaan,Laboratorium,41575.0,harga_langsung,2
+176,RSUD_REMBANG,corpus alienum tanpa penyulit,Corpus alienum tanpa penyulit,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+177,RSUD_REMBANG,craniotomi,Craniotomi,Tindakan operatif / kelompok khusus,Tindakan Lain,3680000.0,golongan:operatif/kelompok khusus,1
+178,RSUD_REMBANG,creatinin,Creatinin,Pemeriksaan,Laboratorium,9237.5,harga_langsung,2
+179,RSUD_REMBANG,creatinin clearance,Creatinin Clearance,Pemeriksaan,Laboratorium,18475.0,harga_langsung,2
+180,RSUD_REMBANG,cross insisi,Cross insisi,SARANA LAYANAN,Tindakan Lain,38250.0,harga_langsung,2
+181,RSUD_REMBANG,crp,CRP,Pemeriksaan,Laboratorium,22325.0,harga_langsung,2
+182,RSUD_REMBANG,cryoglobulin,Cryoglobulin,Pemeriksaan,Laboratorium,11937.5,harga_langsung,2
+183,RSUD_REMBANG,ct angiography,CT Angiography,CT-SCAN,Radiologi,1780000.0,harga_langsung,10
+184,RSUD_REMBANG,ct angiography aorta,CT Angiography Aorta,CT-SCAN,Radiologi,1780000.0,harga_langsung,2
+185,RSUD_REMBANG,ct angiography brain,CT Angiography Brain,CT-SCAN,Radiologi,1780000.0,harga_langsung,2
+186,RSUD_REMBANG,ct angiography cardiac,CT Angiography Cardiac,CT-SCAN,Radiologi,1780000.0,harga_langsung,2
+187,RSUD_REMBANG,ct angiography carotis,CT Angiography Carotis,CT-SCAN,Radiologi,1780000.0,harga_langsung,2
+188,RSUD_REMBANG,ct angiography cerebral,CT Angiography Cerebral,CT-SCAN,Radiologi,1780000.0,harga_langsung,2
+189,RSUD_REMBANG,ct guiding,CT Guiding,CT-SCAN,Radiologi,1780000.0,harga_langsung,2
+190,RSUD_REMBANG,ct scan abdomen,CT Scan Abdomen,CT-SCAN,Radiologi,1050000.0,harga_langsung,2
+191,RSUD_REMBANG,ct scan abdomen 2 fase,CT Scan Abdomen 2 Fase,CT-SCAN,Radiologi,1780000.0,harga_langsung,2
+192,RSUD_REMBANG,ct scan abdomen 3 fase,CT Scan Abdomen 3 Fase,CT-SCAN,Radiologi,1780000.0,harga_langsung,2
+193,RSUD_REMBANG,ct scan abdomen 4 fase,CT Scan Abdomen 4 Fase,CT-SCAN,Radiologi,1780000.0,harga_langsung,2
+194,RSUD_REMBANG,ct scan ankle,CT Scan Ankle,CT-SCAN,Radiologi,1200000.0,harga_langsung,4
+195,RSUD_REMBANG,ct scan antebrachi,CT Scan Antebrachi,CT-SCAN,Radiologi,1200000.0,harga_langsung,4
+196,RSUD_REMBANG,ct scan cervical,CT Scan Cervical,CT-SCAN,Radiologi,1260000.0,harga_langsung,4
+197,RSUD_REMBANG,ct scan collie / leher,CT Scan Collie / Leher,CT-SCAN,Radiologi,1200000.0,harga_langsung,4
+198,RSUD_REMBANG,ct scan cruris,CT Scan Cruris,CT-SCAN,Radiologi,1200000.0,harga_langsung,4
+199,RSUD_REMBANG,ct scan elbow,CT Scan Elbow,CT-SCAN,Radiologi,1200000.0,harga_langsung,4
+200,RSUD_REMBANG,ct scan femur,CT Scan Femur,CT-SCAN,Radiologi,1200000.0,harga_langsung,4
+201,RSUD_REMBANG,ct scan genu,CT Scan Genu,CT-SCAN,Radiologi,1200000.0,harga_langsung,4
+202,RSUD_REMBANG,ct scan humerus,CT Scan Humerus,CT-SCAN,Radiologi,1200000.0,harga_langsung,4
+203,RSUD_REMBANG,ct scan kepala,CT Scan Kepala,CT-SCAN,Radiologi,1200000.0,harga_langsung,4
+204,RSUD_REMBANG,ct scan lower abdomen,CT Scan Lower Abdomen,CT-SCAN,Radiologi,1260000.0,harga_langsung,4
+205,RSUD_REMBANG,ct scan lumbal,CT Scan Lumbal,CT-SCAN,Radiologi,1260000.0,harga_langsung,4
+206,RSUD_REMBANG,ct scan mastoid,CT Scan Mastoid,CT-SCAN,Radiologi,1200000.0,harga_langsung,4
+207,RSUD_REMBANG,ct scan nasofaring,CT Scan Nasofaring,CT-SCAN,Radiologi,1200000.0,harga_langsung,4
+208,RSUD_REMBANG,ct scan orbita,CT Scan Orbita,CT-SCAN,Radiologi,1200000.0,harga_langsung,4
+209,RSUD_REMBANG,ct scan pedis,CT Scan Pedis,CT-SCAN,Radiologi,1200000.0,harga_langsung,4
+210,RSUD_REMBANG,ct scan pelvis,CT Scan Pelvis,CT-SCAN,Radiologi,1260000.0,harga_langsung,4
+211,RSUD_REMBANG,ct scan shoulder,CT Scan Shoulder,CT-SCAN,Radiologi,1200000.0,harga_langsung,4
+212,RSUD_REMBANG,ct scan sinus paranasal,CT Scan Sinus Paranasal,CT-SCAN,Radiologi,1200000.0,harga_langsung,4
+213,RSUD_REMBANG,ct scan thorakal,CT Scan Thorakal,CT-SCAN,Radiologi,1260000.0,harga_langsung,4
+214,RSUD_REMBANG,ct scan thorax,CT Scan Thorax,CT-SCAN,Radiologi,1500000.0,harga_langsung,5
+215,RSUD_REMBANG,ct scan thyroid,CT Scan Thyroid,CT-SCAN,Radiologi,900000.0,harga_langsung,3
+216,RSUD_REMBANG,ct scan upper abdomen,CT Scan Upper Abdomen,CT-SCAN,Radiologi,1260000.0,harga_langsung,4
+217,RSUD_REMBANG,ct scan urologi,CT Scan Urologi,CT-SCAN,Radiologi,1410000.0,harga_langsung,4
+218,RSUD_REMBANG,ct scan wrist,CT Scan Wrist,CT-SCAN,Radiologi,1200000.0,harga_langsung,4
+219,RSUD_REMBANG,cuci lambung,Cuci lambung,SARANA LAYANAN,Tindakan Lain,7750.0,harga_langsung,2
+220,RSUD_REMBANG,dakrio rinostomi de bulkging,Dakrio rinostomiDe bulkging,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+221,RSUD_REMBANG,day 300.000 0,Day 300.000 0,ICU/PICU/NICU,Akomodasi & Visite,480000.0,harga_langsung,1
+222,RSUD_REMBANG,day care,Day Care,ICU/PICU/NICU,Akomodasi & Visite,185000.0,harga_langsung,1
+223,RSUD_REMBANG,debridemen luka,Debridemen luka,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+224,RSUD_REMBANG,debridemen pada luka bakar / wound dehisence,Debridemen pada luka bakar / Wound Dehisence,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+225,RSUD_REMBANG,debridement,Debridement,SARANA LAYANAN,Tindakan Lain,23250.0,harga_langsung,2
+226,RSUD_REMBANG,debridement fraktur terbuka / osteomilitis,Debridement fraktur terbuka / Osteomilitis,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+227,RSUD_REMBANG,debridement luka bakar lebih 10 / wound dehisence,Debridement luka bakar lebih 10 % / Wound Dehisence,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+228,RSUD_REMBANG,decompresi fasialis,Decompresi fasialis,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+229,RSUD_REMBANG,dengan kontras,Dengan Kontras,IMAGING ( MRI ),Radiologi,2350000.0,harga_langsung,2
+230,RSUD_REMBANG,dengue blot ig g,Dengue Blot IgG,Pemeriksaan,Laboratorium,41575.0,harga_langsung,2
+231,RSUD_REMBANG,dengue blot ig m,Dengue Blot IgM,Pemeriksaan,Laboratorium,41575.0,harga_langsung,2
+232,RSUD_REMBANG,denver develpoment,Denver Develpoment,(PEDS),Tindakan Lain,65000.0,harga_langsung,1
+233,RSUD_REMBANG,depresi analizer bdi,Depresi Analizer (BDI,Pemeriksaan,Laboratorium,20000.0,harga_langsung,1
+234,RSUD_REMBANG,dermabrasi scar > 10 cm,Dermabrasi scar > 10 cm,Tindakan non operatif / tindakan besar,Tindakan Lain,100500.0,golongan:non operatif/tindakan besar,1
+235,RSUD_REMBANG,deteksi kesulitan,Deteksi Kesulitan,(SPM/CPM/CFIT),Tindakan Lain,50000.0,harga_langsung,1
+236,RSUD_REMBANG,detorsi testis dengan orchidopexi,Detorsi testis dengan orchidopexi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+237,RSUD_REMBANG,digital evakuasi,Digital (Evakuasi,SARANA LAYANAN,Tindakan Lain,38250.0,harga_langsung,2
+238,RSUD_REMBANG,dilatasi phimosis,Dilatasi phimosis,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+239,RSUD_REMBANG,dilatasi urethra / anus / ureter / aff dj stand / sache,Dilatasi urethra / Anus / Ureter / Aff DJ Stand / Sache,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+240,RSUD_REMBANG,divertikulektomi,Divertikulektomi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+241,RSUD_REMBANG,dokter iii,Dokter III,PENOLONG SARANA LAYANAN UMUM SPESIALIS,Tindakan Lain,900000.0,harga_langsung,3
+242,RSUD_REMBANG,dokter iii 180.00,Dokter III 180.00,AN A N IS,Tindakan Lain,850000.0,harga_langsung,2
+243,RSUD_REMBANG,dokter iii 180.00 120.000 285.00,Dokter III 180.00 120.000 285.00,AN A N IS,Tindakan Lain,585000.0,harga_langsung,1
+244,RSUD_REMBANG,dokter spesialis,Dokter Spesialis,Pemeriksaan,Laboratorium,12500.0,harga_langsung,3
+245,RSUD_REMBANG,dokter umum,Dokter Umum,Pemeriksaan,Laboratorium,10000.0,harga_langsung,3
+246,RSUD_REMBANG,douglas punctie,Douglas punctie,Tindakan non operatif / tindakan sedang,Tindakan Lain,72500.0,golongan:non operatif/tindakan sedang,1
+247,RSUD_REMBANG,drainage kista pancreas,Drainage kista pancreas,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+248,RSUD_REMBANG,drainage periureter,Drainage periureter,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+249,RSUD_REMBANG,dry needling,Dry Needling,Tindakan non operatif / tindakan besar,Tindakan Lain,100500.0,golongan:non operatif/tindakan besar,1
+250,RSUD_REMBANG,early languange,Early Languange,(PEDS),Tindakan Lain,65000.0,harga_langsung,1
+251,RSUD_REMBANG,eksenterasi orbita,Eksenterasi orbita,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+252,RSUD_REMBANG,eksisi / konisasi / explorasi / evakuasi,Eksisi / Konisasi / explorasi / evakuasi,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+253,RSUD_REMBANG,eksisi angiofibroma nasofaring,Eksisi angiofibroma nasofaring,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+254,RSUD_REMBANG,eksisi biopsy,Eksisi biopsy,TINDAKAN KECIL,Tindakan Lain,36500.0,harga_langsung,1
+255,RSUD_REMBANG,eksisi chodee,Eksisi chodee,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+256,RSUD_REMBANG,eksisi clavus,Eksisi clavus,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+257,RSUD_REMBANG,eksisi condiloma accuminata,Eksisi condiloma accuminata,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+258,RSUD_REMBANG,eksisi granuloma pyogenikum,Eksisi granuloma pyogenikum,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+259,RSUD_REMBANG,eksisi hemangioma kompleks,Eksisi hemangioma kompleks,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+260,RSUD_REMBANG,eksisi higroma,Eksisi higroma,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+261,RSUD_REMBANG,eksisi kelenjar liur submandibula,Eksisi kelenjar liur submandibula,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+262,RSUD_REMBANG,eksisi keloid < 5 cm,Eksisi keloid < 5 cm,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+263,RSUD_REMBANG,eksisi kista urachus,Eksisi kista urachus,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+264,RSUD_REMBANG,eksisi luas neoplasma palatum durum,Eksisi luas neoplasma palatum durum,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+265,RSUD_REMBANG,eksisi mammae aberran,Eksisi mammae aberran,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+266,RSUD_REMBANG,eksisi syringoma,Eksisi syringoma,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+267,RSUD_REMBANG,eksisi veruka vulgaris,Eksisi veruka vulgaris,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+268,RSUD_REMBANG,eksplorasi abses parafaringeal,Eksplorasi abses parafaringeal,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+269,RSUD_REMBANG,eksplorasi abses septum,Eksplorasi abses septum,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+270,RSUD_REMBANG,eksplorasi duktus koledokus,Eksplorasi duktus koledokus,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+271,RSUD_REMBANG,eksplorasi kista bronchial,Eksplorasi kista bronchial,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+272,RSUD_REMBANG,eksplorasi kista ductus tiroglosus,Eksplorasi kista ductus tiroglosus,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+273,RSUD_REMBANG,eksplorasi kista tiroid,Eksplorasi kista tiroid,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+274,RSUD_REMBANG,eksterpasi / eksisional biopsional,Eksterpasi / eksisional biopsional,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+275,RSUD_REMBANG,eksterpasi cyste conjungtiva mata,Eksterpasi cyste conjungtiva (mata),Tindakan operatif / tindakan kecil,Mata/THT/Kulit,250000.0,golongan:operatif/tindakan kecil,1
+276,RSUD_REMBANG,eksterpasi jaringan canalis auditoris eksternal,Eksterpasi jaringan canalis auditoris eksternal,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+277,RSUD_REMBANG,eksterpasi kista atheroma / lipoma / ganglion < 2 cm,Eksterpasi kista atheroma / lipoma / ganglion < 2 cm,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+278,RSUD_REMBANG,eksterpasi kista konjungtiva,Eksterpasi kista konjungtiva,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+279,RSUD_REMBANG,eksterpasi plunging ranula,Eksterpasi plunging ranula,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+280,RSUD_REMBANG,eksterpasi polip,Eksterpasi polip,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+281,RSUD_REMBANG,eksterpasi pterigium,Eksterpasi pterigium,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+282,RSUD_REMBANG,eksterpasi pterigium dan amnion graft,Eksterpasi pterigium dan amnion graft,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+283,RSUD_REMBANG,eksterpasi tumor dengan diameter kurang dari 5 cm,Eksterpasi tumor dengan diameter kurang dari 5 cm,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+284,RSUD_REMBANG,eksterpasi tumor kecil / jinak diameter 5 10 cm,Eksterpasi tumor kecil / jinak diameter 5 – 10 cm,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+285,RSUD_REMBANG,ekstirpasi fibroma,Ekstirpasi fibroma,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+286,RSUD_REMBANG,ekstirpasi granuloma,Ekstirpasi granuloma,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+287,RSUD_REMBANG,ekstirpasi kista atheroma / lipoma / ganglion < 2 cm,Ekstirpasi kista atheroma/lipoma/ganglion < 2 cm,Tindakan non operatif / tindakan sedang,Tindakan Lain,72500.0,golongan:non operatif/tindakan sedang,1
+288,RSUD_REMBANG,ekstirpasi serumen,Ekstirpasi serumen,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+289,RSUD_REMBANG,ekstraksi granulasi cae,Ekstraksi granulasi CAE,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+290,RSUD_REMBANG,ekstraksi granuloma / incisi chalasion hordeolum,Ekstraksi granuloma / incisi chalasion hordeolum,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+291,RSUD_REMBANG,ekstraksi kalium oksalat amatiolithiasis,Ekstraksi kalium oksalat (amatiolithiasis),Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+292,RSUD_REMBANG,ekstraksi katarak dan tanam lensa ekek / sics iol,Ekstraksi katarak dan tanam lensa (EKEK/SICS+IOL),Tindakan operatif / kelompok iii,Mata/THT/Kulit,2156000.0,golongan:operatif/kelompok iii,1
+293,RSUD_REMBANG,ekstraksi katarak ekek / sics,Ekstraksi katarak : EKEK / SICS,Tindakan operatif / kelompok ii,Mata/THT/Kulit,1470000.0,golongan:operatif/kelompok ii,1
+294,RSUD_REMBANG,ekstraksi kolesteatom eksterna,Ekstraksi kolesteatom eksterna,Tindakan operatif / tindakan kecil,Tindakan Lain,663500.0,golongan:operatif/tindakan kecil,2
+295,RSUD_REMBANG,ekstraksi korpus sceretomi eyelodialise poster or sclerotomi,"Ekstraksi korpus sceretomi eyelodialise, poster or sclerotomi",Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+296,RSUD_REMBANG,ekstraksi kuku,Ekstraksi kuku,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+297,RSUD_REMBANG,ekstraksi kuku / paronichia,Ekstraksi kuku / paronichia,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+298,RSUD_REMBANG,ektraksi korpus alienum nekrotomi ulkus kornea,"Ektraksi korpus alienum, nekrotomi ulkus kornea",Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+299,RSUD_REMBANG,electro cauter > 10 lesi,Electro cauter > 10 lesi,Tindakan non operatif / tindakan besar,Tindakan Lain,100500.0,golongan:non operatif/tindakan besar,1
+300,RSUD_REMBANG,electrocauter 5 10 lesi,Electrocauter 5 – 10 lesi,Tindakan non operatif / tindakan sedang,Tindakan Lain,72500.0,golongan:non operatif/tindakan sedang,1
+301,RSUD_REMBANG,electrocauter < 5 lesi,Electrocauter < 5 lesi,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+302,RSUD_REMBANG,elektrocauter condiloma akuminata,Elektrocauter Condiloma Akuminata,Tindakan non operatif / tindakan khusus,Tindakan Lain,224000.0,golongan:non operatif/tindakan khusus,1
+303,RSUD_REMBANG,elektroforese,Elektroforese,Pemeriksaan,Laboratorium,22750.0,harga_langsung,1
+304,RSUD_REMBANG,elektroforese protein,Elektroforese Protein,Pemeriksaan Canggih,Laboratorium,27300.0,harga_langsung,1
+305,RSUD_REMBANG,elektroforesis hemoglobin,Elektroforesis Hb,Pemeriksaan,Laboratorium,23100.0,harga_langsung,2
+306,RSUD_REMBANG,embriotomi,Embriotomi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+307,RSUD_REMBANG,endoscopic assisted untuk evakuasi,Endoscopic assisted untuk evakuasi,Tindakan operatif / kelompok khusus,Tindakan Lain,3680000.0,golongan:operatif/kelompok khusus,1
+308,RSUD_REMBANG,endoscopic spinal surgery,Endoscopic Spinal Surgery,Tindakan operatif / kelompok khusus,Tindakan Lain,3680000.0,golongan:operatif/kelompok khusus,1
+309,RSUD_REMBANG,endoscopic third ventriculostomy,Endoscopic third ventriculostomy,Tindakan operatif / kelompok khusus,Akomodasi & Visite,3680000.0,golongan:operatif/kelompok khusus,1
+310,RSUD_REMBANG,endoscopic transphenoid surgery,Endoscopic Transphenoid surgery,Tindakan operatif / kelompok khusus,Tindakan Lain,3680000.0,golongan:operatif/kelompok khusus,1
+311,RSUD_REMBANG,enucleatie kista d 42,Enucleatie kista D 42,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+312,RSUD_REMBANG,enukleasi / evicerasi bulbi,Enukleasi / evicerasi bulbi,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+313,RSUD_REMBANG,enukleasi bulbi,Enukleasi bulbi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+314,RSUD_REMBANG,enukleasi kista,Enukleasi kista,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+315,RSUD_REMBANG,enukleasi kista ginjal,Enukleasi kista ginjal,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+316,RSUD_REMBANG,eosinofil,Eosinofil,Pemeriksaan,Laboratorium,9137.5,harga_langsung,2
+317,RSUD_REMBANG,epilasi,Epilasi,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+318,RSUD_REMBANG,epilasi bulu mata,Epilasi bulu mata,Tindakan operatif / kelompok i,Mata/THT/Kulit,554250.0,golongan:operatif/kelompok i,2
+319,RSUD_REMBANG,episiotomi,Episiotomi,SARANA LAYANAN,Tindakan Lain,35500.0,harga_langsung,2
+320,RSUD_REMBANG,eritrosit,Eritrosit,Pemeriksaan,Laboratorium,6375.0,harga_langsung,2
+321,RSUD_REMBANG,esbach,Esbach,Pemeriksaan Canggih,Laboratorium,6300.0,harga_langsung,1
+322,RSUD_REMBANG,esbach 3.150 1.250 850,Esbach 3.150 1.250 850,Pemeriksaan,Laboratorium,5250.0,harga_langsung,1
+323,RSUD_REMBANG,esofagoskopi rigid eksplorasi,Esofagoskopi rigid eksplorasi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+324,RSUD_REMBANG,estradiol,Estradiol,Pemeriksaan,Laboratorium,55437.5,harga_langsung,2
+325,RSUD_REMBANG,estrogen,Estrogen,Pemeriksaan,Laboratorium,55437.5,harga_langsung,2
+326,RSUD_REMBANG,eswt,ESWT,Tindakan non operatif / tindakan besar,Tindakan Lain,100500.0,golongan:non operatif/tindakan besar,1
+327,RSUD_REMBANG,ethmoidektomi intranasal,Ethmoidektomi (intranasal),Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+328,RSUD_REMBANG,evaluasi alat bantu jalan,Evaluasi Alat Bantu Jalan,Tindakan non operatif / tindakan sedang,Tindakan Lain,72500.0,golongan:non operatif/tindakan sedang,1
+329,RSUD_REMBANG,evaluasi orthosis,Evaluasi Orthosis,Tindakan non operatif / tindakan sedang,Rehab Medik,72500.0,golongan:non operatif/tindakan sedang,1
+330,RSUD_REMBANG,evaluasi prothesis,Evaluasi Prothesis,Tindakan non operatif / tindakan sedang,Rehab Medik,72500.0,golongan:non operatif/tindakan sedang,1
+331,RSUD_REMBANG,evaluasi sikap kerja,Evaluasi Sikap Kerja,(SPM/CPM/CFIT),Tindakan Lain,50000.0,harga_langsung,1
+332,RSUD_REMBANG,eviscerasi bulbi,Eviscerasi bulbi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+333,RSUD_REMBANG,excochliasi,Excochliasi,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+334,RSUD_REMBANG,explorasi nectino sclera / cornea,Explorasi Nectino sclera / cornea,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+335,RSUD_REMBANG,extra oral fistula,Extra oral fistula,TINDAKAN BESAR,Tindakan Lain,118500.0,harga_langsung,1
+336,RSUD_REMBANG,extraksi linear,Extraksi linear,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+337,RSUD_REMBANG,f.von willebrands,F.Von Willebrands,Pemeriksaan,Laboratorium,127050.0,harga_langsung,2
+338,RSUD_REMBANG,facial fna fine needle aspiration,Facial FNA (Fine Needle Aspiration),Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+339,RSUD_REMBANG,facial wajah,Facial Wajah,Tindakan non operatif / tindakan sedang,Tindakan Lain,72500.0,golongan:non operatif/tindakan sedang,1
+340,RSUD_REMBANG,faeces /,faeces/,SARANA LAYANAN,Tindakan Lain,17500.0,harga_langsung,1
+341,RSUD_REMBANG,faktor rhematoid,Faktor Rhematoid,Pemeriksaan,Laboratorium,11550.0,harga_langsung,2
+342,RSUD_REMBANG,fare head flap,Fare head flap,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+343,RSUD_REMBANG,faringoplasi,Faringoplasi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+344,RSUD_REMBANG,faringotomi,Faringotomi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+345,RSUD_REMBANG,feces lengkap,Feces Lengkap,"MCHC, RDW,",Tindakan Lain,8637.5,harga_langsung,2
+346,RSUD_REMBANG,ferritin,Ferritin,Pemeriksaan,Laboratorium,41575.0,harga_langsung,2
+347,RSUD_REMBANG,fibrinogen,Fibrinogen,Pemeriksaan,Laboratorium,15135.0,harga_langsung,3
+348,RSUD_REMBANG,fibrinogen degradation,Fibrinogen Degradation,Pemeriksaan Canggih,Laboratorium,25200.0,harga_langsung,1
+349,RSUD_REMBANG,fiksasi dengan kawat,Fiksasi dengan kawat,TINDAKAN BESAR,Tindakan Lain,145000.0,harga_langsung,1
+350,RSUD_REMBANG,fiksasi interna kompleks,Fiksasi interna kompleks,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+351,RSUD_REMBANG,fiksasi interna sederhana,Fiksasi interna sederhana,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+352,RSUD_REMBANG,filaria,Filaria,PEMERIKSAAN KHUSUS,Laboratorium,10000.0,harga_langsung,1
+353,RSUD_REMBANG,filler injeksi prp,Filler (Injeksi PRP),Tindakan non operatif / tindakan khusus,Tindakan Lain,224000.0,golongan:non operatif/tindakan khusus,1
+354,RSUD_REMBANG,fimbriektomi,Fimbriektomi,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+355,RSUD_REMBANG,fissure sealat per gigi,Fissure sealat per gigi,TINDAKAN KECIL,Gigi,22000.0,harga_langsung,1
+356,RSUD_REMBANG,fissurektomi,Fissurektomi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+357,RSUD_REMBANG,fissurektomi perianal,Fissurektomi perianal,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+358,RSUD_REMBANG,fistula ureterovesika,Fistula ureterovesika,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+359,RSUD_REMBANG,fistulektomi,Fistulektomi,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+360,RSUD_REMBANG,fistulektomi pada digestif,Fistulektomi pada digestif,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+361,RSUD_REMBANG,fistulektomi tanpa narkose,Fistulektomi (tanpa narkose),Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+362,RSUD_REMBANG,fistulografi,Fistulografi,SEDANG,Tindakan Lain,102000.0,harga_langsung,2
+363,RSUD_REMBANG,flebektomi,Flebektomi,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+364,RSUD_REMBANG,fosfatase asam,Fosfatase asam,Pemeriksaan,Laboratorium,7700.0,harga_langsung,2
+365,RSUD_REMBANG,foto abdomen 1 posisi,Photo Abdomen 1 Posisi,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+366,RSUD_REMBANG,foto adenoid,Photo Adenoid,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+367,RSUD_REMBANG,foto ankle 2 posisi,Photo Ankle 2 Posisi,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+368,RSUD_REMBANG,foto antebrachi 2 posisi,Photo Antebrachi 2 Posisi,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+369,RSUD_REMBANG,foto babygram,Photo Babygram,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+370,RSUD_REMBANG,foto cadwell,Photo Cadwell,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+371,RSUD_REMBANG,foto calcaneus 2 posisi,Photo Calcaneus 2 Posisi,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+372,RSUD_REMBANG,foto clavicula,Photo Clavicula,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+373,RSUD_REMBANG,foto cruris 2 posisi,Photo Cruris 2 Posisi,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+374,RSUD_REMBANG,foto eisler 2 posisi,Photo Eisler 2 Posisi,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+375,RSUD_REMBANG,foto ekstremitas atas 2,Photo Ekstremitas Atas 2,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+376,RSUD_REMBANG,foto ekstremitas bawah,Photo Ekstremitas Bawah,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+377,RSUD_REMBANG,foto elbow joint 2 posisi,Photo Elbow Joint 2 Posisi,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+378,RSUD_REMBANG,foto femur 2 posisi,Photo Femur 2 Posisi,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+379,RSUD_REMBANG,foto genu 2 posisi,Photo Genu 2 Posisi,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+380,RSUD_REMBANG,foto gigi biasa,Photo Gigi Biasa,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+381,RSUD_REMBANG,foto humerus 2 posisi,Photo Humerus 2 Posisi,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+382,RSUD_REMBANG,foto jaringan lunak,Photo Jaringan Lunak,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+383,RSUD_REMBANG,foto kepala 2 posisi,Photo Kepala 2 Posisi,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+384,RSUD_REMBANG,foto kepala sinus,"Photo Kepala (Sinus,",SEDERHANA,Radiologi,39750.0,harga_langsung,2
+385,RSUD_REMBANG,foto koagulasi,Foto koagulasi,Tindakan operatif / kelompok i,Radiologi,1077000.0,golongan:operatif/kelompok i,1
+386,RSUD_REMBANG,foto kolumna,Photo Kolumna,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+387,RSUD_REMBANG,foto mandibula,Photo Mandibula,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+388,RSUD_REMBANG,foto manus 2 posisi,Photo Manus 2 Posisi,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+389,RSUD_REMBANG,foto nasal,Photo Nasal,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+390,RSUD_REMBANG,foto oesophagus maag duodenum,Foto OMD,SEDANG,Radiologi,125500.0,harga_langsung,2
+391,RSUD_REMBANG,foto orbita,Photo Orbita,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+392,RSUD_REMBANG,foto pedis 2 posisi,Photo Pedis 2 Posisi,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+393,RSUD_REMBANG,foto pelvis 1 posisi,Photo Pelvis 1 Posisi,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+394,RSUD_REMBANG,foto scapula,Photo Scapula,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+395,RSUD_REMBANG,foto sella tursica 2,Photo Sella Tursica 2,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+396,RSUD_REMBANG,foto shculler 2 posisi,Photo Shculler 2 Posisi,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+397,RSUD_REMBANG,foto shoulder joint,Photo Shoulder Joint,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+398,RSUD_REMBANG,foto thorax,Photo Thoraks,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+399,RSUD_REMBANG,foto thorax 2 posisi,Photo Thoraks 2 Posisi,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+400,RSUD_REMBANG,foto townes,Photo Townes,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+401,RSUD_REMBANG,foto waters,Photo Waters,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+402,RSUD_REMBANG,foto wrist joint 2 posisi,Photo Wrist Joint 2 Posisi,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+403,RSUD_REMBANG,foto zygomaticum,Photo Zygomaticum,SEDERHANA,Radiologi,39750.0,harga_langsung,2
+404,RSUD_REMBANG,free t3,Free T3,Pemeriksaan,Laboratorium,32337.5,harga_langsung,2
+405,RSUD_REMBANG,free t4,Free T4,Pemeriksaan,Laboratorium,32337.5,harga_langsung,2
+406,RSUD_REMBANG,frenectomi,Frenectomi,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+407,RSUD_REMBANG,frontoethmoidectomi ekstranasal,Frontoethmoidectomi (ekstranasal),Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+408,RSUD_REMBANG,fruktosamin,Fruktosamin,Pemeriksaan,Laboratorium,23100.0,harga_langsung,2
+409,RSUD_REMBANG,fsh,FSH,Pemeriksaan,Laboratorium,32337.5,harga_langsung,2
+410,RSUD_REMBANG,fta-abs,FTA-ABS,Pemeriksaan,Laboratorium,23100.0,harga_langsung,2
+411,RSUD_REMBANG,fungsional endoscopy sinus surgery fess,Fungsional endoscopy sinus surgery (FESS),Tindakan operatif / kelompok khusus,Tindakan Lain,3680000.0,golongan:operatif/kelompok khusus,1
+412,RSUD_REMBANG,g6pd,G6PD,Pemeriksaan,Laboratorium,41575.0,harga_langsung,2
+413,RSUD_REMBANG,gambaran darah,Gambaran darah,Pemeriksaan,Laboratorium,19500.0,harga_langsung,1
+414,RSUD_REMBANG,gambaran darah tepi,Gambaran darah tepi,Pemeriksaan Canggih,Laboratorium,18000.0,harga_langsung,2
+415,RSUD_REMBANG,gamma gt,Gamma GT,Pemeriksaan,Laboratorium,12700.0,harga_langsung,2
+416,RSUD_REMBANG,ganti balut khusus gangrene diabetika dan luka bakar luas > 25,Ganti balut (khusus gangrene diabetika dan luka bakar luas > 25 %),Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+417,RSUD_REMBANG,gastrografi,Gastrografi,SEDANG,Tindakan Lain,125500.0,harga_langsung,2
+418,RSUD_REMBANG,gigi tiruan cekat mahkota,"Gigi tiruan cekat, mahkota",TINDAKAN BESAR,Gigi,356000.0,harga_langsung,1
+419,RSUD_REMBANG,gigi tiruan lengkap akrilik,Gigi tiruan lengkap akrilik,TINDAKAN BESAR,Gigi,686500.0,harga_langsung,1
+420,RSUD_REMBANG,gigi tiruan rangka logam,Gigi tiruan rangka logam,TINDAKAN BESAR,Gigi,323000.0,harga_langsung,2
+421,RSUD_REMBANG,gingivektomy,Gingivektomy,TINDAKAN BESAR,Tindakan Lain,132000.0,harga_langsung,1
+422,RSUD_REMBANG,gingivoplasty,Gingivoplasty,TINDAKAN BESAR,Tindakan Lain,132000.0,harga_langsung,1
+423,RSUD_REMBANG,gldh,GLDH,Pemeriksaan,Laboratorium,18475.0,harga_langsung,2
+424,RSUD_REMBANG,glikolysis,Glikolysis,Pemeriksaan,Laboratorium,45500.0,harga_langsung,1
+425,RSUD_REMBANG,glikolysis hemoglobin / hemoglobin a1c,Glikolysis HB/HbA1c,Pemeriksaan Canggih,Laboratorium,54600.0,harga_langsung,1
+426,RSUD_REMBANG,globulin,Globulin,Pemeriksaan,Laboratorium,9237.5,harga_langsung,2
+427,RSUD_REMBANG,glukosa darah,Glukosa Darah,Pemeriksaan,Laboratorium,7000.0,harga_langsung,2
+428,RSUD_REMBANG,glukosa darah pp,Glukosa Darah PP,Pemeriksaan,Laboratorium,7700.0,harga_langsung,2
+429,RSUD_REMBANG,glukosa darah puasa,Glukosa Darah Puasa,Pemeriksaan Canggih,Laboratorium,8400.0,harga_langsung,1
+430,RSUD_REMBANG,glukosa darah sewaktu,Glukosa Darah Sewaktu,Pemeriksaan Canggih,Laboratorium,8400.0,harga_langsung,1
+431,RSUD_REMBANG,glukosa toleransi,Glukosa Toleransi,Pemeriksaan,Laboratorium,7000.0,harga_langsung,1
+432,RSUD_REMBANG,glukosa toleransi test,Glukosa Toleransi Test,Pemeriksaan Canggih,Laboratorium,8400.0,harga_langsung,1
+433,RSUD_REMBANG,golongan darah 500,Golongan Darah 500,Pemeriksaan,Laboratorium,4725.0,harga_langsung,2
+434,RSUD_REMBANG,goniotomi,Goniotomi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+435,RSUD_REMBANG,graf vena membuat a vistula,Graf vena membuat A vistula,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+436,RSUD_REMBANG,gts akrilik plat elemen,"GTS, Akrilik, Plat,Elemen",TINDAKAN SEDANG,Tindakan Lain,126000.0,harga_langsung,2
+437,RSUD_REMBANG,haemangioma diameter 1 2 cm,Haemangioma diameter 1 – 2 cm,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+438,RSUD_REMBANG,haemodialisa,Haemodialisa,SARANA LAYANAN MEDIS,Tindakan Lain,300000.0,harga_langsung,1
+439,RSUD_REMBANG,haemoglobin,Haemoglobin,Pemeriksaan,Laboratorium,5062.5,harga_langsung,2
+440,RSUD_REMBANG,hair removal,Hair removal,Tindakan non operatif / tindakan besar,Tindakan Lain,100500.0,golongan:non operatif/tindakan besar,1
+441,RSUD_REMBANG,ham s test,Ham’s test,Pemeriksaan,Laboratorium,16950.0,harga_langsung,2
+442,RSUD_REMBANG,hbdh,HBDH,Pemeriksaan,Laboratorium,21175.0,harga_langsung,2
+443,RSUD_REMBANG,hbe ag,HBe Ag,Pemeriksaan,Laboratorium,60062.5,harga_langsung,2
+444,RSUD_REMBANG,hbs ag,HBs Ag,Pemeriksaan,Laboratorium,23100.0,harga_langsung,2
+445,RSUD_REMBANG,hecting conjungtiva / repair entropion,Hecting conjungtiva / Repair entropion,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+446,RSUD_REMBANG,hematokrit,Hematokrit,Pemeriksaan,Laboratorium,6375.0,harga_langsung,2
+447,RSUD_REMBANG,hemiglosektomi / glosektomi parsial,Hemiglosektomi / Glosektomi parsial,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+448,RSUD_REMBANG,hemoglobin,Hemoglobin,Pemeriksaan,Laboratorium,8250.0,harga_langsung,2
+449,RSUD_REMBANG,hemoglobin f,Hb F,Pemeriksaan,Laboratorium,23100.0,harga_langsung,2
+450,RSUD_REMBANG,hemoroidektomi,Hemoroidektomi,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+451,RSUD_REMBANG,hemosiderin,Hemosiderin,Pemeriksaan Canggih,Laboratorium,5050.0,harga_langsung,1
+452,RSUD_REMBANG,hemosiderin 2.500 1.000 700,Hemosiderin 2.500 1.000 700,Pemeriksaan,Laboratorium,4200.0,harga_langsung,1
+453,RSUD_REMBANG,herniotomi,Herniotomi,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+454,RSUD_REMBANG,herniotomi bilateral,Herniotomi bilateral,Tindakan operatif / kelompok iii,Radiologi,2156000.0,golongan:operatif/kelompok iii,1
+455,RSUD_REMBANG,hidrocelectomi,Hidrocelectomi,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+456,RSUD_REMBANG,high intensity laser therapy,High Intensity Laser Therapy,Tindakan non operatif / tindakan sedang,Rehab Medik,72500.0,golongan:non operatif/tindakan sedang,1
+457,RSUD_REMBANG,himenektomi,Himenektomi,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+458,RSUD_REMBANG,hitung jenis,Hitung Jenis,Pemeriksaan,Laboratorium,6500.0,harga_langsung,1
+459,RSUD_REMBANG,hitung jenis leukosit,Hitung Jenis Leukosit,Pemeriksaan Sederhana,Laboratorium,13375.0,harga_langsung,3
+460,RSUD_REMBANG,home care,Home care,LAYANAN SARANA LAYANAN,Tindakan Lain,80000.0,harga_langsung,2
+461,RSUD_REMBANG,hormonal serial 4x,Hormonal Serial 4x,PEMERIKSAAN PATOLOGI ANATOMI,Laboratorium,83150.0,harga_langsung,2
+462,RSUD_REMBANG,hs crp,HsCRP,Pemeriksaan,Laboratorium,66500.0,harga_langsung,2
+463,RSUD_REMBANG,hsv i ig g,HSV I IgG,Pemeriksaan,Laboratorium,32337.5,harga_langsung,2
+464,RSUD_REMBANG,hsv ii ig m,HSV II IgM,Pemeriksaan,Laboratorium,32337.5,harga_langsung,2
+465,RSUD_REMBANG,hylafom,Hylafom,Tindakan non operatif / tindakan besar,Tindakan Lain,100500.0,golongan:non operatif/tindakan besar,1
+466,RSUD_REMBANG,hystektomy partial,Hystektomy partial,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+467,RSUD_REMBANG,hysterectomi dengan penyulit,Hysterectomi dengan penyulit,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+468,RSUD_REMBANG,hysterectomy total / tvh,Hysterectomy total / TVH,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+469,RSUD_REMBANG,hysterosalpingografi,Hysterosalpingografi,SEDANG,Tindakan Lain,168000.0,harga_langsung,2
+470,RSUD_REMBANG,icu,"ICU,",LIS LIS,Akomodasi & Visite,30000.0,harga_langsung,1
+471,RSUD_REMBANG,icu picu / nicu,"ICU, PICU/NICU,",SARANA LAYANAN PSIKOLOG,Akomodasi & Visite,40000.0,harga_langsung,1
+472,RSUD_REMBANG,ig a / ig g / ig m,IgA/IgG/IgM,Pemeriksaan,Laboratorium,53900.0,harga_langsung,2
+473,RSUD_REMBANG,ig e,IgE,Pemeriksaan,Laboratorium,41575.0,harga_langsung,2
+474,RSUD_REMBANG,ig m salmonella,IgM Salmonella,Pemeriksaan,Laboratorium,16500.0,harga_langsung,2
+475,RSUD_REMBANG,ii / 6 - 10 orang,II / 6 - 10 orang,PESERTA,Tindakan Lain,2000000.0,harga_langsung,1
+476,RSUD_REMBANG,iii / 11 15 orang,III / 11 – 15 orang,PESERTA,Tindakan Lain,3000000.0,harga_langsung,1
+477,RSUD_REMBANG,implan koklea,Implan koklea,Tindakan operatif / kelompok khusus,Tindakan Lain,3680000.0,golongan:operatif/kelompok khusus,1
+478,RSUD_REMBANG,imuno,Imuno,Pemeriksaan,Laboratorium,49000.0,harga_langsung,2
+479,RSUD_REMBANG,imuno elektroforesis,Imuno Elektroforesis,Pemeriksaan Canggih,Laboratorium,58800.0,harga_langsung,1
+480,RSUD_REMBANG,imuno elektroforesis anti,Imuno Elektroforesis Anti,Pemeriksaan Canggih,Laboratorium,58800.0,harga_langsung,1
+481,RSUD_REMBANG,indakan blok reseksi,indakan blok reseksi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+482,RSUD_REMBANG,inhibitor viii,Inhibitor VIII,Pemeriksaan,Laboratorium,160925.0,harga_langsung,2
+483,RSUD_REMBANG,injeksi alkohol / cortizon retrobulbair,Injeksi alkohol / cortizon retrobulbair,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+484,RSUD_REMBANG,injeksi botox 1-5 titik,Injeksi botox (1-5 titik),Tindakan non operatif / tindakan besar,Tindakan Lain,100500.0,golongan:non operatif/tindakan besar,1
+485,RSUD_REMBANG,injeksi botox besar > 6 titik,Injeksi botox besar ( > 6 titik ),Tindakan non operatif / tindakan khusus,Tindakan Lain,224000.0,golongan:non operatif/tindakan khusus,1
+486,RSUD_REMBANG,injeksi dengan ultrasonografi guiding,Injeksi dengan USG Guiding,Tindakan non operatif / tindakan khusus,Radiologi,224000.0,golongan:non operatif/tindakan khusus,1
+487,RSUD_REMBANG,injeksi haemorhoid termasuk obat,Injeksi Haemorhoid (termasuk obat),Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+488,RSUD_REMBANG,injeksi intra articular,Injeksi intra articular,Tindakan non operatif / tindakan besar,Akomodasi & Visite,100500.0,golongan:non operatif/tindakan besar,1
+489,RSUD_REMBANG,injeksi intra lesi acne,Injeksi intra lesi (acne),Tindakan non operatif / tindakan kecil,Mata/THT/Kulit,31500.0,golongan:non operatif/tindakan kecil,1
+490,RSUD_REMBANG,injeksi steroid intra lesi vial,Injeksi steroid intra lesi ½ vial,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+491,RSUD_REMBANG,injeksi steroid intralesi 1 vial,Injeksi steroid intralesi 1 vial,Tindakan non operatif / tindakan sedang,Tindakan Lain,72500.0,golongan:non operatif/tindakan sedang,1
+492,RSUD_REMBANG,injeksi varises termasuk obat,Injeksi varises (termasuk obat),Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+493,RSUD_REMBANG,insisi abses extra oral,Insisi abses extra oral,TINDAKAN BESAR,Tindakan Lain,41500.0,harga_langsung,1
+494,RSUD_REMBANG,insisi abses intra oral,Insisi abses intra oral,TINDAKAN KECIL,Tindakan Lain,29000.0,harga_langsung,1
+495,RSUD_REMBANG,insisi abses mastoid,Insisi abses mastoid,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+496,RSUD_REMBANG,insisi abses othematoma,Insisi abses othematoma,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+497,RSUD_REMBANG,insisi abses septum nasi,Insisi abses septum nasi,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+498,RSUD_REMBANG,insisi furunkel / abses,Insisi furunkel / abses,Tindakan operatif / tindakan kecil,Tindakan Lain,140750.0,golongan:operatif/tindakan kecil,2
+499,RSUD_REMBANG,insisi mucocele,Insisi mucocele,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+500,RSUD_REMBANG,intens pulse laser ipl,Intens pulse laser (IPL),Tindakan non operatif / tindakan khusus,Rehab Medik,224000.0,golongan:non operatif/tindakan khusus,1
+501,RSUD_REMBANG,internal urethrotomi,Internal Urethrotomi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+502,RSUD_REMBANG,ippb intermitten positive pressure breathing,IPPB (Intermitten Positive Pressure Breathing),Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+503,RSUD_REMBANG,iridectomy,Iridectomy,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+504,RSUD_REMBANG,irigasi,Irigasi,SARANA LAYANAN,Tindakan Lain,13250.0,harga_langsung,2
+505,RSUD_REMBANG,irigasi mata,Irigasi mata,Tindakan operatif / kelompok i,Mata/THT/Kulit,1077000.0,golongan:operatif/kelompok i,1
+506,RSUD_REMBANG,irigasi telinga oleh dokter,Irigasi telinga oleh dokter,Tindakan non operatif / tindakan kecil,Mata/THT/Kulit,31500.0,golongan:non operatif/tindakan kecil,1
+507,RSUD_REMBANG,iring - iring,Iring - iring,LAYANAN SARANA,Tindakan Lain,105000.0,harga_langsung,1
+508,RSUD_REMBANG,is ii 220.00,is II 220.00,AN A N IS,Tindakan Lain,920000.0,harga_langsung,1
+509,RSUD_REMBANG,isolasi,Isolasi,ICU/PICU/NICU,Akomodasi & Visite,155000.0,harga_langsung,1
+510,RSUD_REMBANG,isolasi khusus,Isolasi Khusus,ICU/PICU/NICU,Akomodasi & Visite,270000.0,harga_langsung,1
+511,RSUD_REMBANG,isthobektomi,Isthobektomi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+512,RSUD_REMBANG,it rasio,IT rasio,Pemeriksaan,Laboratorium,10000.0,harga_langsung,3
+513,RSUD_REMBANG,iv / 16 20 orang,IV / 16 – 20 orang,PESERTA,Tindakan Lain,4000000.0,harga_langsung,1
+514,RSUD_REMBANG,iv admixture,IV Admixture,LAYANAN PERACIKAN SEDIAAN STERIL,Tindakan Lain,15000.0,harga_langsung,1
+515,RSUD_REMBANG,jahit kornea,Jahit kornea,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+516,RSUD_REMBANG,jahit kulit palpebra,Jahit kulit palpebra,Tindakan operatif / kelompok i,Mata/THT/Kulit,1077000.0,golongan:operatif/kelompok i,1
+517,RSUD_REMBANG,jahit sclera,Jahit sclera,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+518,RSUD_REMBANG,kalium darah,Kalium Darah,Pemeriksaan,Laboratorium,6925.0,harga_langsung,2
+519,RSUD_REMBANG,kalium urine,Kalium Urine,Pemeriksaan,Laboratorium,6925.0,harga_langsung,2
+520,RSUD_REMBANG,kalsium darah,Kalsium Darah,Pemeriksaan,Laboratorium,6925.0,harga_langsung,2
+521,RSUD_REMBANG,kalsium urine,Kalsium Urine,Pemeriksaan,Laboratorium,6925.0,harga_langsung,2
+522,RSUD_REMBANG,kanaloplasty / meatoplasty,Kanaloplasty / Meatoplasty,Tindakan operatif / kelompok khusus,Tindakan Lain,3680000.0,golongan:operatif/kelompok khusus,1
+523,RSUD_REMBANG,kaustik,Kaustik,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+524,RSUD_REMBANG,kehamilan ektopik terganggu ket,Kehamilan ektopik terganggu (KET),Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+525,RSUD_REMBANG,kelainan bawaan dengan penyulit,Kelainan bawaan dengan penyulit,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+526,RSUD_REMBANG,kelas i ii iii,"KELAS I,II,III",LIS LIS,Akomodasi & Visite,10000.0,harga_langsung,1
+527,RSUD_REMBANG,kelompok i,Kelompok I,CT-SCAN,Radiologi,800000.0,harga_langsung,1
+528,RSUD_REMBANG,kelompok ii,Kelompok II,CT-SCAN,Radiologi,840000.0,harga_langsung,1
+529,RSUD_REMBANG,kelompok iii,KELOMPOK III,KECIL,Tindakan Lain,1575000.0,harga_langsung,6
+530,RSUD_REMBANG,kemoterapi,Kemoterapi,LAYANAN PERACIKAN SEDIAAN STERIL,Rehab Medik,40000.0,harga_langsung,1
+531,RSUD_REMBANG,kesehatan cpns,Kesehatan CPNS,LAYANAN (SURAT KETERANGAN) MEDIKO LEGAL,Tindakan Lain,10000.0,harga_langsung,1
+532,RSUD_REMBANG,keterangan sehat haji ke,"Keterangan sehat haji, ke",LAYANAN (SURAT KETERANGAN) MEDIKO LEGAL,Tindakan Lain,15000.0,harga_langsung,1
+533,RSUD_REMBANG,keterangan sehat untuk,Keterangan sehat untuk,LAYANAN (SURAT KETERANGAN) MEDIKO LEGAL,Tindakan Lain,4000.0,harga_langsung,2
+534,RSUD_REMBANG,kinesiotaping,Kinesiotaping,Tindakan non operatif / tindakan sedang,Tindakan Lain,72500.0,golongan:non operatif/tindakan sedang,1
+535,RSUD_REMBANG,kistektomi,Kistektomi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+536,RSUD_REMBANG,kolesistektomi,Kolesistektomi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+537,RSUD_REMBANG,kolostomi,Kolostomi,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+538,RSUD_REMBANG,kolpoperineiplastik,Kolpoperineiplastik,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+539,RSUD_REMBANG,kolporapia,Kolporapia,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+540,RSUD_REMBANG,kolpotomi,Kolpotomi,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+541,RSUD_REMBANG,kompresi bi manual,Kompresi bi manual,SARANA LAYANAN,Tindakan Lain,31000.0,harga_langsung,1
+542,RSUD_REMBANG,kompresi bimanual,Kompresi bimanual,SARANA LAYANAN,Tindakan Lain,23000.0,harga_langsung,1
+543,RSUD_REMBANG,konkotomi,Konkotomi,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+544,RSUD_REMBANG,konsultasi,Konsultasi,DARURAT,Rawat Jalan & Darurat,30000.0,harga_langsung,3
+545,RSUD_REMBANG,konsultasi gizi anak,Konsultasi Gizi Anak,(PEDS),Rawat Jalan & Darurat,45000.0,harga_langsung,1
+546,RSUD_REMBANG,kontrol alat lepasan per rahang,Kontrol alat lepasan per rahang,Tindakan non operatif / tindakan sedang,Tindakan Lain,72500.0,golongan:non operatif/tindakan sedang,1
+547,RSUD_REMBANG,kontrol ganti bracket,Kontrol Ganti Bracket,PINDAH KONTROL,Tindakan Lain,100500.0,harga_langsung,1
+548,RSUD_REMBANG,kontrol ganti karetp,Kontrol ganti karetp,Tindakan non operatif / tindakan besar,Tindakan Lain,100500.0,golongan:non operatif/tindakan besar,1
+549,RSUD_REMBANG,kontrol orto alat cekat,Kontrol orto alat cekat,Tindakan non operatif / tindakan khusus,Tindakan Lain,224000.0,golongan:non operatif/tindakan khusus,1
+550,RSUD_REMBANG,kontrol per rahang,Kontrol per Rahang,ORTODONTI LEPASAN,Gigi,162250.0,harga_langsung,2
+551,RSUD_REMBANG,koreksi atresia ani,Koreksi atresia ani,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+552,RSUD_REMBANG,koreksi ctev congenital talipes equino varus,Koreksi CTEV (congenital talipes equino varus),Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+553,RSUD_REMBANG,koreksi disartikulasi,Koreksi disartikulasi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+554,RSUD_REMBANG,koreksi exstropion / entropion,Koreksi exstropion / entropion,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+555,RSUD_REMBANG,koreksi fraktur rahang multiple / kompleks,Koreksi fraktur rahang multiple / kompleks,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+556,RSUD_REMBANG,koreksi kriptoismus megacolon hipospadia congenital talipes equinovarus ctev,"Koreksi Kriptoismus, megacolon, hipospadia, congenital talipes equinovarus (CTEV)",Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+557,RSUD_REMBANG,koreksi priapismus,Koreksi priapismus,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+558,RSUD_REMBANG,koreksi refraksi,Koreksi refraksi,Tindakan non operatif / tindakan kecil,Mata/THT/Kulit,31500.0,golongan:non operatif/tindakan kecil,1
+559,RSUD_REMBANG,koreksi strabismus,Koreksi strabismus,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+560,RSUD_REMBANG,koreksi symblepharon,Koreksi symblepharon,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+561,RSUD_REMBANG,koreksi torsio testis,Koreksi torsio testis,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+562,RSUD_REMBANG,kuesioner praskrining,Kuesioner Praskrining,(PEDS),Tindakan Lain,30000.0,harga_langsung,1
+563,RSUD_REMBANG,kuratase periodontik pocket,Kuratase periodontik pocket,TINDAKAN SEDANG,Tindakan Lain,77000.0,harga_langsung,1
+564,RSUD_REMBANG,kuretase / dilatasi kuretase dengan narkose,Kuretase / dilatasi kuretase dengan narkose,Tindakan operatif / kelompok i,Kebidanan,1077000.0,golongan:operatif/kelompok i,1
+565,RSUD_REMBANG,kuretase < 3 lesi,Kuretase < 3 lesi,Tindakan non operatif / tindakan kecil,Kebidanan,31500.0,golongan:non operatif/tindakan kecil,1
+566,RSUD_REMBANG,kuretase tanpa narkose,Kuretase tanpa narkose,Tindakan operatif / tindakan kecil,Kebidanan,250000.0,golongan:operatif/tindakan kecil,1
+567,RSUD_REMBANG,kuretasi 5 10 cm,Kuretasi 5 – 10 cm,Tindakan non operatif / tindakan sedang,Kebidanan,72500.0,golongan:non operatif/tindakan sedang,1
+568,RSUD_REMBANG,kuretasi > 10 lesi,Kuretasi > 10 lesi,Tindakan non operatif / tindakan besar,Kebidanan,100500.0,golongan:non operatif/tindakan besar,1
+569,RSUD_REMBANG,labiopalatoplasti bilateral,Labiopalatoplasti bilateral,Tindakan operatif / kelompok iii,Radiologi,2156000.0,golongan:operatif/kelompok iii,1
+570,RSUD_REMBANG,labioplasti bilateral,Labioplasti bilateral,Tindakan operatif / kelompok ii,Radiologi,1470000.0,golongan:operatif/kelompok ii,1
+571,RSUD_REMBANG,labioplasti unilateral,Labioplasti unilateral,Tindakan operatif / kelompok i,Radiologi,1077000.0,golongan:operatif/kelompok i,1
+572,RSUD_REMBANG,labioplasty parotidectomi,Labioplasty parotidectomi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+573,RSUD_REMBANG,laju endap darah,Laju Endap Darah,Pemeriksaan,Laboratorium,5787.5,harga_langsung,2
+574,RSUD_REMBANG,lantorapi tarsorapi tarsotomi hotz operasi,"Lantorapi tarsorapi, tarsotomi hotz operasi",Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+575,RSUD_REMBANG,laparatomi eksplorasi,Laparatomi eksplorasi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+576,RSUD_REMBANG,laparatomi mini,Laparatomi mini,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+577,RSUD_REMBANG,laparatomi percobaan,Laparatomi percobaan,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+578,RSUD_REMBANG,laparatomi vc,Laparatomi VC,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+579,RSUD_REMBANG,laser soft peel perkali,Laser soft peel (perkali),Tindakan non operatif / tindakan sedang,Mata/THT/Kulit,72500.0,golongan:non operatif/tindakan sedang,1
+580,RSUD_REMBANG,lavement,Lavement,SARANA LAYANAN,Tindakan Lain,19250.0,harga_langsung,2
+581,RSUD_REMBANG,ldh,LDH,Pemeriksaan,Laboratorium,32500.0,harga_langsung,2
+582,RSUD_REMBANG,lem brachet lepas satu bracket,Lem brachet lepas satu bracket,Tindakan non operatif / tindakan besar,Tindakan Lain,100500.0,golongan:non operatif/tindakan besar,1
+583,RSUD_REMBANG,lem bracket lepas satu,Lem Bracket Lepas Satu,PINDAH KONTROL,Tindakan Lain,100500.0,harga_langsung,1
+584,RSUD_REMBANG,lengkap,Lengkap,Pemeriksaan,Laboratorium,6500.0,harga_langsung,1
+585,RSUD_REMBANG,lengkap menggunakan,Lengkap (menggunakan,(SPM/CPM/CFIT),Tindakan Lain,50000.0,harga_langsung,1
+586,RSUD_REMBANG,lepas bracket dan,Lepas Bracket dan,PINDAH KONTROL,Tindakan Lain,250000.0,harga_langsung,1
+587,RSUD_REMBANG,lepas bracket dan pembersihan lem / pelepasan semua alat debending,Lepas bracket dan pembersihan lem / pelepasan semua alat (debending),Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+588,RSUD_REMBANG,lepas laminaria,Lepas laminaria,Tindakan non operatif / tindakan sedang,Tindakan Lain,72500.0,golongan:non operatif/tindakan sedang,1
+589,RSUD_REMBANG,lepas pesarium,Lepas pesarium,Tindakan non operatif / tindakan sedang,Tindakan Lain,72500.0,golongan:non operatif/tindakan sedang,1
+590,RSUD_REMBANG,lepas spiral benang positif,Lepas spiral benang positif,Tindakan non operatif / tindakan sedang,Kebidanan,72500.0,golongan:non operatif/tindakan sedang,1
+591,RSUD_REMBANG,leukosit,Leukosit,Pemeriksaan,Laboratorium,8250.0,harga_langsung,3
+592,RSUD_REMBANG,ligasi tinggi hidrokel,Ligasi tinggi hidrokel,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+593,RSUD_REMBANG,limfosit plasma,Limfosit plasma,Pemeriksaan,Laboratorium,5200.0,harga_langsung,1
+594,RSUD_REMBANG,limfosit plasma biru,Limfosit plasma biru,Pemeriksaan Sederhana,Laboratorium,9600.0,harga_langsung,2
+595,RSUD_REMBANG,lipase darah,Lipase Darah,Pemeriksaan,Laboratorium,21175.0,harga_langsung,2
+596,RSUD_REMBANG,lipase urine,Lipase Urine,Pemeriksaan,Laboratorium,21175.0,harga_langsung,2
+597,RSUD_REMBANG,liposuction,Liposuction,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+598,RSUD_REMBANG,lithotripsi,Lithotripsi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+599,RSUD_REMBANG,lobulaplasti 1 telinga,Lobulaplasti 1 telinga,Tindakan non operatif / tindakan kecil,Mata/THT/Kulit,31500.0,golongan:non operatif/tindakan kecil,1
+600,RSUD_REMBANG,lopografi,Lopografi,SEDANG,Tindakan Lain,79000.0,harga_langsung,2
+601,RSUD_REMBANG,lumbal 2 posisi,Lumbal 2 Posisi,SEDANG,Tindakan Lain,75500.0,harga_langsung,2
+602,RSUD_REMBANG,lumbosacral 2 posisi,Lumbosacral 2 Posisi,SEDANG,Tindakan Lain,75500.0,harga_langsung,2
+603,RSUD_REMBANG,lupus antikoagulan,Lupus Antikoagulan,Pemeriksaan,Laboratorium,119350.0,harga_langsung,2
+604,RSUD_REMBANG,madya vip a,Madya (VIP A),SARANA LAYANAN UMUM SPESIALI,Akomodasi & Visite,395000.0,harga_langsung,1
+605,RSUD_REMBANG,magnesium,Magnesium,Pemeriksaan,Laboratorium,11937.5,harga_langsung,2
+606,RSUD_REMBANG,maksilektomi partialis,Maksilektomi partialis,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+607,RSUD_REMBANG,malaria,Malaria,Pemeriksaan,Laboratorium,9200.0,harga_langsung,3
+608,RSUD_REMBANG,mammografi,Mammografi,SEDANG,Radiologi,257000.0,harga_langsung,2
+609,RSUD_REMBANG,mandibulektomi marginalis,Mandibulektomi marginalis,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+610,RSUD_REMBANG,mantoux test,Mantoux test,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+611,RSUD_REMBANG,manual plasenta oleh,Manual plasenta oleh,SARANA LAYANAN,Tindakan Lain,109500.0,harga_langsung,1
+612,RSUD_REMBANG,manual plasenta oleh bidan,Manual plasenta oleh bidan,SARANA LAYANAN,Tindakan Lain,81500.0,harga_langsung,1
+613,RSUD_REMBANG,marsupialisasi,Marsupialisasi,TINDAKAN BESAR,Tindakan Lain,211500.0,harga_langsung,1
+614,RSUD_REMBANG,marsupialisasi canula,Marsupialisasi canula,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+615,RSUD_REMBANG,marsupilisasi,Marsupilisasi,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+616,RSUD_REMBANG,masa lisis,Masa Lisis,Pemeriksaan,Laboratorium,15400.0,harga_langsung,1
+617,RSUD_REMBANG,masa lisis euglobulin,Masa Lisis Euglobulin,Pemeriksaan Canggih,Laboratorium,18475.0,harga_langsung,1
+618,RSUD_REMBANG,mastektomi simpleks / mastektomi radikal,Mastektomi simpleks / mastektomi radikal,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+619,RSUD_REMBANG,mastektomi subkutaneus,Mastektomi subkutaneus,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+620,RSUD_REMBANG,mastoidectomi,Mastoidectomi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+621,RSUD_REMBANG,mastoidektomi modifikasi,Mastoidektomi modifikasi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+622,RSUD_REMBANG,mastoidektomi radikal,Mastoidektomi radikal,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+623,RSUD_REMBANG,mca,MCA,Pemeriksaan,Laboratorium,50050.0,harga_langsung,2
+624,RSUD_REMBANG,meatotomi,Meatotomi,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+625,RSUD_REMBANG,medis,Medis,A GI S,Tindakan Lain,40000.0,harga_langsung,1
+626,RSUD_REMBANG,melakukan restrain,Melakukan Restrain,SARANA LAYANAN,Tindakan Lain,4750.0,harga_langsung,2
+627,RSUD_REMBANG,memandikan dan,Memandikan dan,SARANA LAYANAN MEDIS,Tindakan Lain,600000.0,harga_langsung,3
+628,RSUD_REMBANG,memandikan pasien,Memandikan pasien,SARANA LAYANAN,Tindakan Lain,11750.0,harga_langsung,2
+629,RSUD_REMBANG,memasang et,Memasang ET,SARANA LAYANAN,Tindakan Lain,38250.0,harga_langsung,2
+630,RSUD_REMBANG,memberikan diet via,Memberikan diet via,SARANA LAYANAN,Tindakan Lain,9000.0,harga_langsung,1
+631,RSUD_REMBANG,memberikan diet via sonde,Memberikan diet via sonde,SARANA LAYANAN,Tindakan Lain,6500.0,harga_langsung,1
+632,RSUD_REMBANG,mencuci rambut,Mencuci rambut,SARANA LAYANAN,Tindakan Lain,11750.0,harga_langsung,2
+633,RSUD_REMBANG,menjahit perineum,Menjahit perineum,SARANA LAYANAN,Tindakan Lain,38250.0,harga_langsung,2
+634,RSUD_REMBANG,merawat luka / ganti,Merawat luka/ganti,SARANA LAYANAN,Tindakan Lain,11750.0,harga_langsung,2
+635,RSUD_REMBANG,mesoterapi,Mesoterapi,Tindakan non operatif / tindakan besar,Rehab Medik,100500.0,golongan:non operatif/tindakan besar,1
+636,RSUD_REMBANG,microdermabrasi,Microdermabrasi,Tindakan non operatif / tindakan sedang,Tindakan Lain,72500.0,golongan:non operatif/tindakan sedang,1
+637,RSUD_REMBANG,midfacial degloving,Midfacial degloving,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+638,RSUD_REMBANG,mikrode kompresi,Mikrode kompresi,Tindakan operatif / kelompok khusus,Tindakan Lain,3680000.0,golongan:operatif/kelompok khusus,1
+639,RSUD_REMBANG,miomektomi,Miomektomi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+640,RSUD_REMBANG,miringotomi,Miringotomi,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+641,RSUD_REMBANG,monitoring potensi,Monitoring potensi,SARANA LAYANAN,Rehab Medik,13500.0,harga_langsung,1
+642,RSUD_REMBANG,monitoring potensi irigasi,Monitoring potensi irigasi,SARANA LAYANAN,Rehab Medik,10000.0,harga_langsung,1
+643,RSUD_REMBANG,multiple neurofibroma hemangioma > 3 cm,"Multiple neurofibroma, hemangioma > 3 cm",Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+644,RSUD_REMBANG,myelografi,Myelografi,SEDANG,Tindakan Lain,165000.0,harga_langsung,2
+645,RSUD_REMBANG,myringoplasty,Myringoplasty,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+646,RSUD_REMBANG,nap,NAP,Pemeriksaan,Laboratorium,41575.0,harga_langsung,2
+647,RSUD_REMBANG,natrium darah,Natrium Darah,Pemeriksaan,Laboratorium,6925.0,harga_langsung,2
+648,RSUD_REMBANG,natrium urine,Natrium Urine,Pemeriksaan,Laboratorium,6925.0,harga_langsung,2
+649,RSUD_REMBANG,nefropexie,Nefropexie,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+650,RSUD_REMBANG,nefrostomi open / nefrostomi,Nefrostomi open / Nefrostomi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+651,RSUD_REMBANG,nekrotomi,Nekrotomi,SARANA LAYANAN,Tindakan Lain,17500.0,harga_langsung,3
+652,RSUD_REMBANG,neuroektomi saraf vidian,Neuroektomi saraf vidian,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+653,RSUD_REMBANG,neurofibroma,Neurofibroma,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+654,RSUD_REMBANG,nomor 16 tahun,NOMOR 16 TAHUN,PERATURAN BUPATI REMBANG,Tindakan Lain,2023.0,harga_langsung,1
+655,RSUD_REMBANG,nse,NSE,Pemeriksaan,Laboratorium,41575.0,harga_langsung,2
+656,RSUD_REMBANG,obturator,Obturator,TINDAKAN BESAR,Tindakan Lain,277500.0,harga_langsung,1
+657,RSUD_REMBANG,odontectomy > 2 elemen dengan narkose,Odontectomy > 2 elemen dengan narkose,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+658,RSUD_REMBANG,odontectomy kelas 1,Odontectomy kelas 1,TINDAKAN SEDANG,Akomodasi & Visite,169000.0,harga_langsung,1
+659,RSUD_REMBANG,odontectomy klas ii klas,Odontectomy klas II & klas,TINDAKAN BESAR,Tindakan Lain,211500.0,harga_langsung,1
+660,RSUD_REMBANG,oesophagusgrafi,Oesophagusgrafi,SEDANG,Radiologi,79500.0,harga_langsung,2
+661,RSUD_REMBANG,one day,One Day,KECIL,Tindakan Lain,7252000.0,harga_langsung,4
+662,RSUD_REMBANG,oovorektomi,Oovorektomi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+663,RSUD_REMBANG,open reduksi fraktur / dislokasi lama,Open reduksi fraktur / dislokasi lama,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+664,RSUD_REMBANG,open renal biopsy,Open renal biopsy,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+665,RSUD_REMBANG,operasi cyclodialysa,Operasi cyclodialysa,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+666,RSUD_REMBANG,operasi flap,Operasi Flap,TINDAKAN BESAR,Tindakan Lain,132000.0,harga_langsung,1
+667,RSUD_REMBANG,operasi hernia dengan komplikasi,Operasi hernia dengan komplikasi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+668,RSUD_REMBANG,operasi hernia tanpa komplikasi,Operasi hernia tanpa komplikasi,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+669,RSUD_REMBANG,operasi hipospadia,Operasi hipospadia,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+670,RSUD_REMBANG,operasi hydrokel,Operasi hydrokel,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+671,RSUD_REMBANG,operasi manchester fortegil,Operasi Manchester fortegil,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+672,RSUD_REMBANG,operasi microtia,Operasi microtia,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+673,RSUD_REMBANG,operasi pada spermatocele,Operasi pada spermatocele,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+674,RSUD_REMBANG,operasi pada varicocele / palomo,Operasi pada varicocele / palomo,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+675,RSUD_REMBANG,operasi palatoplasti,Operasi palatoplasti,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+676,RSUD_REMBANG,operasi peyronie,Operasi peyronie,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+677,RSUD_REMBANG,operasi psoas hiscth / boari flap,Operasi psoas hiscth / boari flap,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+678,RSUD_REMBANG,operasi shoudkan,Operasi Shoudkan,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+679,RSUD_REMBANG,operasi tumor jinak ovarium,Operasi tumor jinak ovarium,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+680,RSUD_REMBANG,operasi tumor kecil,Operasi tumor kecil,TINDAKAN SEDANG,Tindakan Lain,77000.0,harga_langsung,1
+681,RSUD_REMBANG,operasi tumor pembuluh darah,Operasi tumor pembuluh darah,Tindakan operatif / kelompok iii,Laboratorium,2156000.0,golongan:operatif/kelompok iii,1
+682,RSUD_REMBANG,operasi-operasi ca dengan perlengketan hebat stadium lanjut,Operasi-operasi Ca dengan perlengketan hebat stadium lanjut,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+683,RSUD_REMBANG,operasio ablasio retina,Operasio ablasio retina,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+684,RSUD_REMBANG,operculectomy,Operculectomy,TINDAKAN SEDANG,Tindakan Lain,157000.0,harga_langsung,2
+685,RSUD_REMBANG,oral higiene,Oral higiene,SARANA LAYANAN,Tindakan Lain,7750.0,harga_langsung,2
+686,RSUD_REMBANG,orchidectomi subkapsular,Orchidectomi subkapsular,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+687,RSUD_REMBANG,orchidektomi ligasi tinggi,Orchidektomi ligasi tinggi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+688,RSUD_REMBANG,orthognatie surgery,Orthognatie surgery,Tindakan operatif / kelompok iii,Rehab Medik,2156000.0,golongan:operatif/kelompok iii,1
+689,RSUD_REMBANG,orto cekat dua rahang,Orto Cekat Dua Rahang,PERMANEN,Tindakan Lain,5760000.0,harga_langsung,1
+690,RSUD_REMBANG,orto cekat satu rahang,Orto Cekat Satu Rahang,PERMANEN,Tindakan Lain,2880000.0,harga_langsung,1
+691,RSUD_REMBANG,orto lepasan dua rahang,Orto Lepasan Dua Rahang,ORTODONTI LEPASAN,Gigi,2240000.0,harga_langsung,1
+692,RSUD_REMBANG,orto lepasan satu rahang,Orto Lepasan Satu Rahang,ORTODONTI LEPASAN,Gigi,1120000.0,harga_langsung,1
+693,RSUD_REMBANG,oval fat body,Oval Fat Body,Pemeriksaan Canggih,Laboratorium,5050.0,harga_langsung,1
+694,RSUD_REMBANG,oval fat body 2.500 1.000 700,Oval Fat Body 2.500 1.000 700,Pemeriksaan,Laboratorium,4200.0,harga_langsung,1
+695,RSUD_REMBANG,pa potong beku vc,PA Potong Beku (VC),PEMERIKSAAN PATOLOGI ANATOMI,Laboratorium,119350.0,harga_langsung,2
+696,RSUD_REMBANG,pan histerektomi,Pan histerektomi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+697,RSUD_REMBANG,panoramic,Panoramic,SEDANG,Radiologi,110000.0,harga_langsung,2
+698,RSUD_REMBANG,pap smear,Pap Smear,PEMERIKSAAN PATOLOGI ANATOMI,Laboratorium,38500.0,harga_langsung,2
+699,RSUD_REMBANG,papsmear pengambilan secret,Papsmear (pengambilan secret),Tindakan non operatif / tindakan sedang,Tindakan Lain,72500.0,golongan:non operatif/tindakan sedang,1
+700,RSUD_REMBANG,parasintesa,Parasintesa,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+701,RSUD_REMBANG,parasintesis telinga,Parasintesis telinga,Tindakan non operatif / tindakan sedang,Mata/THT/Kulit,72500.0,golongan:non operatif/tindakan sedang,1
+702,RSUD_REMBANG,parent evaluation of,Parent Evaluation of,SARANA LAYANAN MEDIS,Tindakan Lain,65000.0,harga_langsung,1
+703,RSUD_REMBANG,parotidectomi,Parotidectomi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+704,RSUD_REMBANG,parotidektomi,Parotidektomi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+705,RSUD_REMBANG,pasang / angkat implant,Pasang/angkat implant,Tindakan non operatif / tindakan sedang,Kebidanan,72500.0,golongan:non operatif/tindakan sedang,1
+706,RSUD_REMBANG,pasang / lepas alat kontrasepsi dalam rahim,Pasang/lepas IUD,SARANA LAYANAN,Tindakan Lain,27000.0,harga_langsung,2
+707,RSUD_REMBANG,pasang laminaria,Pasang laminaria,Tindakan non operatif / tindakan sedang,Tindakan Lain,72500.0,golongan:non operatif/tindakan sedang,1
+708,RSUD_REMBANG,pasang pesarium,Pasang pesarium,Tindakan non operatif / tindakan kecil,Tindakan Lain,66000.0,golongan:non operatif/tindakan kecil,2
+709,RSUD_REMBANG,pasang rectal tube,Pasang Rectal Tube,SARANA LAYANAN,Tindakan Lain,3000.0,harga_langsung,2
+710,RSUD_REMBANG,pasang spalk,Pasang spalk,SARANA LAYANAN,Tindakan Lain,4750.0,harga_langsung,2
+711,RSUD_REMBANG,pasang spiral,Pasang spiral,Tindakan non operatif / tindakan sedang,Kebidanan,72500.0,golongan:non operatif/tindakan sedang,1
+712,RSUD_REMBANG,pasang tampon utero vaginal,Pasang tampon utero vaginal,Tindakan non operatif / tindakan besar,Tindakan Lain,100500.0,golongan:non operatif/tindakan besar,1
+713,RSUD_REMBANG,pasang tampon vaginal,Pasang tampon vaginal,Tindakan non operatif / tindakan sedang,Tindakan Lain,72500.0,golongan:non operatif/tindakan sedang,1
+714,RSUD_REMBANG,pediatrics symtom,Pediatrics Symtom,SARANA LAYANAN MEDIS,Tindakan Lain,65000.0,harga_langsung,1
+715,RSUD_REMBANG,peeling,Peeling,Tindakan non operatif / tindakan sedang,Mata/THT/Kulit,72500.0,golongan:non operatif/tindakan sedang,1
+716,RSUD_REMBANG,pelepasan tampon anterior,Pelepasan tampon anterior,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+717,RSUD_REMBANG,pelepasan tampon posterior,Pelepasan tampon posterior,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+718,RSUD_REMBANG,pemasangan,Pemasangan,TINDAKAN ORTODONSI,Gigi,250000.0,harga_langsung,1
+719,RSUD_REMBANG,pemasangan / pelepasan tracheal tube,Pemasangan / pelepasan Tracheal Tube,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+720,RSUD_REMBANG,pemasangan / pelepasan tympanostomi tube / grommet,Pemasangan / pelepasan Tympanostomi Tube / Grommet,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+721,RSUD_REMBANG,pemasangan / revisi arch bar,Pemasangan / Revisi Arch Bar,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+722,RSUD_REMBANG,pemasangan bandul,Pemasangan bandul,SARANA LAYANAN,Tindakan Lain,32000.0,harga_langsung,1
+723,RSUD_REMBANG,pemasangan bandul kateter,Pemasangan bandul kateter,SARANA LAYANAN,Tindakan Lain,25000.0,harga_langsung,1
+724,RSUD_REMBANG,pemasangan bsm,Pemasangan BSM,SARANA LAYANAN,Tindakan Lain,11750.0,harga_langsung,2
+725,RSUD_REMBANG,pemasangan cateter,Pemasangan cateter,SARANA LAYANAN,Tindakan Lain,15250.0,harga_langsung,2
+726,RSUD_REMBANG,pemasangan cvc / double lumen / kateter hemodialisa,Pemasangan CVC / Double Lumen / Kateter Hemodialisa,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+727,RSUD_REMBANG,pemasangan dower kateter dengan penyulit,Pemasangan DC dengan penyulit,Tindakan non operatif / tindakan sedang,Tindakan Lain,72500.0,golongan:non operatif/tindakan sedang,1
+728,RSUD_REMBANG,pemasangan gips sirkular,Pemasangan gips sirkular,Tindakan non operatif / tindakan besar,Tindakan Lain,100500.0,golongan:non operatif/tindakan besar,1
+729,RSUD_REMBANG,pemasangan gips spalk,Pemasangan gips spalk,Tindakan non operatif / tindakan sedang,Tindakan Lain,72500.0,golongan:non operatif/tindakan sedang,1
+730,RSUD_REMBANG,pemasangan headgear / facemask,Pemasangan headgear / facemask,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+731,RSUD_REMBANG,pemasangan hfnc,Pemasangan HFNC,SARANA LAYANAN,Tindakan Lain,38250.0,harga_langsung,2
+732,RSUD_REMBANG,pemasangan infus,Pemasangan Infus,SARANA LAYANAN,Tindakan Lain,13500.0,harga_langsung,1
+733,RSUD_REMBANG,pemasangan infus pump,Pemasangan Infus pump,SARANA LAYANAN,Tindakan Lain,10000.0,harga_langsung,1
+734,RSUD_REMBANG,pemasangan infus tali,Pemasangan infus tali,SARANA LAYANAN,Tindakan Lain,38250.0,harga_langsung,2
+735,RSUD_REMBANG,pemasangan kateter capd,Pemasangan kateter CAPD,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+736,RSUD_REMBANG,pemasangan mini screw,Pemasangan Mini Screw,TINDAKAN ORTODONSI,Gigi,250000.0,harga_langsung,1
+737,RSUD_REMBANG,pemasangan mini screw implant per buah,Pemasangan mini screw implant per buah,Tindakan operatif / tindakan kecil,Kebidanan,250000.0,golongan:operatif/tindakan kecil,1
+738,RSUD_REMBANG,pemasangan nasogastric tube,Pemasangan NGT,SARANA LAYANAN,Tindakan Lain,15250.0,harga_langsung,2
+739,RSUD_REMBANG,pemasangan nasogastric tube dengan penyulit,Pemasangan NGT dengan penyulit,Tindakan non operatif / tindakan sedang,Tindakan Lain,72500.0,golongan:non operatif/tindakan sedang,1
+740,RSUD_REMBANG,pemasangan pipa shepard,Pemasangan pipa shepard,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+741,RSUD_REMBANG,pemasangan syringe,Pemasangan Syringe,SARANA LAYANAN,Tindakan Lain,13500.0,harga_langsung,1
+742,RSUD_REMBANG,pemasangan syringe pump,Pemasangan Syringe pump,SARANA LAYANAN,Tindakan Lain,10000.0,harga_langsung,1
+743,RSUD_REMBANG,pemasangan t tube,Pemasangan T Tube,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+744,RSUD_REMBANG,pemasangan tampon anterior,Pemasangan tampon anterior,Tindakan non operatif / tindakan sedang,Tindakan Lain,72500.0,golongan:non operatif/tindakan sedang,1
+745,RSUD_REMBANG,pemasangan tampon posterior / tampon beloq,Pemasangan tampon posterior / tampon beloq,Tindakan non operatif / tindakan besar,Tindakan Lain,100500.0,golongan:non operatif/tindakan besar,1
+746,RSUD_REMBANG,pemasangan tampon telinga,Pemasangan tampon telinga,Tindakan non operatif / tindakan kecil,Mata/THT/Kulit,31500.0,golongan:non operatif/tindakan kecil,1
+747,RSUD_REMBANG,pemasangan ventilator,Pemasangan ventilator,SARANA LAYANAN,Tindakan Lain,38250.0,harga_langsung,2
+748,RSUD_REMBANG,pemasangan wsd / aff wsd,Pemasangan WSD / Aff WSD,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+749,RSUD_REMBANG,pembedahan dengan laparascopi / endoscopy,Pembedahan dengan laparascopi/endoscopy,Tindakan operatif / kelompok khusus,Tindakan Lain,3680000.0,golongan:operatif/kelompok khusus,1
+750,RSUD_REMBANG,pembedahan jenazah,Pembedahan jenazah,SARANA LAYANAN MEDIS,Tindakan Lain,1350000.0,harga_langsung,1
+751,RSUD_REMBANG,pembedahan kompartemental,Pembedahan kompartemental,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+752,RSUD_REMBANG,pemberian obat,Pemberian Obat,SARANA LAYANAN,Tindakan Lain,3500.0,harga_langsung,1
+753,RSUD_REMBANG,pemberian obat melalui,Pemberian Obat Melalui,SARANA LAYANAN,Tindakan Lain,2500.0,harga_langsung,1
+754,RSUD_REMBANG,pemberian terapi fibrinolitik / trombolitik g. layanan persalinan,Pemberian Terapi Fibrinolitik/Trombolitik g. LAYANAN PERSALINAN,Tindakan non operatif / tindakan khusus,Rehab Medik,224000.0,golongan:non operatif/tindakan khusus,1
+755,RSUD_REMBANG,pemberian terapi surfactan,Pemberian Terapi Surfactan,Tindakan non operatif / tindakan khusus,Rehab Medik,224000.0,golongan:non operatif/tindakan khusus,1
+756,RSUD_REMBANG,pembuangan torus,Pembuangan torus,TINDAKAN BESAR,Tindakan Lain,145000.0,harga_langsung,1
+757,RSUD_REMBANG,pembuatan lubang anting di telinga tindik bayi,Pembuatan lubang anting di telinga (Tindik bayi),Tindakan non operatif / tindakan kecil,Mata/THT/Kulit,31500.0,golongan:non operatif/tindakan kecil,1
+758,RSUD_REMBANG,pembuatan sediaan platelets rich plasma prp,Pembuatan Sediaan Platelets Rich Plasma (PRP),Tindakan non operatif / tindakan besar,Tindakan Lain,100500.0,golongan:non operatif/tindakan besar,1
+759,RSUD_REMBANG,pemeriksaan cairan,Pemeriksaan Cairan,PEMERIKSAAN PATOLOGI ANATOMI,Laboratorium,129350.0,harga_langsung,2
+760,RSUD_REMBANG,pemeriksaan ginekologi,Pemeriksaan ginekologi,SARANA LAYANAN,Tindakan Lain,27000.0,harga_langsung,2
+761,RSUD_REMBANG,pemeriksaan ginekologis,Pemeriksaan ginekologis,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+762,RSUD_REMBANG,pemeriksaan visus,Pemeriksaan visus,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+763,RSUD_REMBANG,pencabutan gigi,Pencabutan gigi,TINDAKAN KECIL,Gigi,41700.0,harga_langsung,1
+764,RSUD_REMBANG,pencabutan gigi sulung,Pencabutan gigi sulung,TINDAKAN KECIL,Gigi,26500.0,harga_langsung,1
+765,RSUD_REMBANG,pencabutan gigi tetap,Pencabutan gigi tetap,TINDAKAN SEDANG,Gigi,77000.0,harga_langsung,1
+766,RSUD_REMBANG,pendampingan anastesi,Pendampingan anastesi,Tindakan non operatif / tindakan besar,Tindakan Lain,100500.0,golongan:non operatif/tindakan besar,1
+767,RSUD_REMBANG,pendampingan ct-scan,Pendampingan CT-Scan,SARANA LAYANAN,Radiologi,16500.0,harga_langsung,1
+768,RSUD_REMBANG,pendampingan pasien,Pendampingan pasien,SARANA LAYANAN,Tindakan Lain,22000.0,harga_langsung,2
+769,RSUD_REMBANG,pendampingan pasien ect,Pendampingan Pasien ECT,SARANA LAYANAN,Tindakan Lain,16500.0,harga_langsung,1
+770,RSUD_REMBANG,penektomi,Penektomi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+771,RSUD_REMBANG,pengambilan specimen,Pengambilan specimen,SARANA LAYANAN,Tindakan Lain,13250.0,harga_langsung,2
+772,RSUD_REMBANG,pengangkatan alat fiksasi mandibula,Pengangkatan alat fiksasi mandibula,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+773,RSUD_REMBANG,pengangkatan fibro adenoma mammae,Pengangkatan fibro adenoma mammae,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+774,RSUD_REMBANG,pengangkatan ganglion popliteal dengan narkose,Pengangkatan ganglion popliteal dengan narkose,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+775,RSUD_REMBANG,pengawetan jenazah,Pengawetan jenazah,SARANA LAYANAN MEDIS,Tindakan Lain,500000.0,harga_langsung,1
+776,RSUD_REMBANG,pengelolaan dento alveolar,Pengelolaan dento alveolar,TINDAKAN SEDANG,Tindakan Lain,116000.0,harga_langsung,1
+777,RSUD_REMBANG,pengelolaan dry sacket,Pengelolaan Dry Sacket,TINDAKAN SEDANG,Tindakan Lain,41500.0,harga_langsung,1
+778,RSUD_REMBANG,pengelolaan kista jakertas,Pengelolaan kista jakertas,TINDAKAN BESAR,Tindakan Lain,145000.0,harga_langsung,1
+779,RSUD_REMBANG,pengelolaan luka,Pengelolaan luka,TINDAKAN BESAR,Tindakan Lain,118500.0,harga_langsung,1
+780,RSUD_REMBANG,pengelolaan pasca operasi,Pengelolaan pasca operasi,TINDAKAN KECIL,Tindakan Lain,26500.0,harga_langsung,1
+781,RSUD_REMBANG,pengeluaran benda asing,Pengeluaran benda asing,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+782,RSUD_REMBANG,pengeluaran benda asing dengan penyulit,Pengeluaran benda asing dengan penyulit,Tindakan non operatif / tindakan besar,Tindakan Lain,100500.0,golongan:non operatif/tindakan besar,1
+783,RSUD_REMBANG,pengeluaran tinja,Pengeluaran tinja,SARANA LAYANAN,Tindakan Lain,8500.0,harga_langsung,1
+784,RSUD_REMBANG,pengeluaran tinja manual,Pengeluaran tinja manual,SARANA LAYANAN,Tindakan Lain,5500.0,harga_langsung,1
+785,RSUD_REMBANG,penggalian kubur,Penggalian kubur,SARANA LAYANAN MEDIS,Tindakan Lain,1000000.0,harga_langsung,1
+786,RSUD_REMBANG,pengkajian head to toe,Pengkajian Head to Toe,SARANA LAYANAN,Tindakan Lain,11750.0,harga_langsung,2
+787,RSUD_REMBANG,penutupan oroantral fistula,Penutupan oroantral fistula,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+788,RSUD_REMBANG,penyimpanan jenazah,Penyimpanan jenazah,SARANA LAYANAN MEDIS,Tindakan Lain,60000.0,harga_langsung,2
+789,RSUD_REMBANG,perawatan acne berat,Perawatan acne berat,Tindakan non operatif / tindakan besar,Mata/THT/Kulit,100500.0,golongan:non operatif/tindakan besar,1
+790,RSUD_REMBANG,perawatan acne dengan komplikasi,Perawatan acne dengan komplikasi,Tindakan non operatif / tindakan khusus,Mata/THT/Kulit,224000.0,golongan:non operatif/tindakan khusus,1
+791,RSUD_REMBANG,perawatan acne ringan,Perawatan acne ringan,Tindakan non operatif / tindakan kecil,Mata/THT/Kulit,31500.0,golongan:non operatif/tindakan kecil,1
+792,RSUD_REMBANG,perawatan acne sedang,Perawatan acne sedang,Tindakan non operatif / tindakan sedang,Mata/THT/Kulit,72500.0,golongan:non operatif/tindakan sedang,1
+793,RSUD_REMBANG,perawatan av shunt,Perawatan AV Shunt,SARANA LAYANAN,Tindakan Lain,15250.0,harga_langsung,2
+794,RSUD_REMBANG,perawatan colostomi,Perawatan colostomi,SARANA LAYANAN,Tindakan Lain,22000.0,harga_langsung,1
+795,RSUD_REMBANG,perawatan cystostomi,Perawatan cystostomi,SARANA LAYANAN,Tindakan Lain,16500.0,harga_langsung,1
+796,RSUD_REMBANG,perawatan cystotomi,Perawatan cystotomi,SARANA LAYANAN,Tindakan Lain,22000.0,harga_langsung,1
+797,RSUD_REMBANG,perawatan double,Perawatan double,SARANA LAYANAN,Tindakan Lain,13500.0,harga_langsung,1
+798,RSUD_REMBANG,perawatan double lumen,Perawatan double lumen,SARANA LAYANAN,Tindakan Lain,13000.0,harga_langsung,1
+799,RSUD_REMBANG,perawatan endodontic akar,Perawatan endodontic akar,TINDAKAN BESAR,Gigi,158000.0,harga_langsung,1
+800,RSUD_REMBANG,perawatan endodontik satu,Perawatan endodontik satu,TINDAKAN SEDANG,Gigi,90000.0,harga_langsung,1
+801,RSUD_REMBANG,perawatan epilepsy,Perawatan epilepsy,SARANA LAYANAN,Tindakan Lain,15250.0,harga_langsung,2
+802,RSUD_REMBANG,perawatan jenazah,Perawatan jenazah,SARANA LAYANAN,Tindakan Lain,7750.0,harga_langsung,2
+803,RSUD_REMBANG,perawatan kulit kusam berat,Perawatan kulit kusam berat,Tindakan non operatif / tindakan besar,Mata/THT/Kulit,100500.0,golongan:non operatif/tindakan besar,1
+804,RSUD_REMBANG,perawatan kulit kusam ringan,Perawatan kulit kusam ringan,Tindakan non operatif / tindakan kecil,Mata/THT/Kulit,31500.0,golongan:non operatif/tindakan kecil,1
+805,RSUD_REMBANG,perawatan kulit kusam sedang,Perawatan kulit kusam sedang,Tindakan non operatif / tindakan sedang,Mata/THT/Kulit,72500.0,golongan:non operatif/tindakan sedang,1
+806,RSUD_REMBANG,perawatan luka / ganti,Perawatan luka/ganti,SARANA LAYANAN,Tindakan Lain,4500.0,harga_langsung,3
+807,RSUD_REMBANG,perawatan luka / ganti balut,Perawatan luka/ganti balut,SARANA LAYANAN,Tindakan Lain,19500.0,harga_langsung,1
+808,RSUD_REMBANG,perawatan molax,Perawatan molax,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+809,RSUD_REMBANG,perawatan transfusi,Perawatan Transfusi,SARANA LAYANAN,Tindakan Lain,13500.0,harga_langsung,1
+810,RSUD_REMBANG,perawatan transfusi darah,Perawatan Transfusi darah,SARANA LAYANAN,Laboratorium,13000.0,harga_langsung,1
+811,RSUD_REMBANG,perawatan wsd,Perawatan WSD,SARANA LAYANAN,Tindakan Lain,22000.0,harga_langsung,1
+812,RSUD_REMBANG,percobaan,Percobaan,Pemeriksaan,Laboratorium,9137.5,harga_langsung,2
+813,RSUD_REMBANG,perineorafi,Perineorafi,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+814,RSUD_REMBANG,periodontal spiingting,Periodontal spiingting,TINDAKAN BESAR,Tindakan Lain,118500.0,harga_langsung,1
+815,RSUD_REMBANG,peritomi,Peritomi,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+816,RSUD_REMBANG,pewarnaan,Pewarnaan,Pemeriksaan,Laboratorium,21000.0,harga_langsung,1
+817,RSUD_REMBANG,pewarnaan acid,Pewarnaan Acid,Pemeriksaan,Laboratorium,32337.5,harga_langsung,2
+818,RSUD_REMBANG,pewarnaan besi,Pewarnaan Besi,Pemeriksaan,Laboratorium,23100.0,harga_langsung,2
+819,RSUD_REMBANG,pewarnaan sumsum,Pewarnaan Sumsum,Pemeriksaan Canggih,Laboratorium,25200.0,harga_langsung,1
+820,RSUD_REMBANG,phacoemulsifikasi,Phacoemulsifikasi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+821,RSUD_REMBANG,phacoemulsifikasi dan tanam lensa iol,Phacoemulsifikasi dan tanam lensa (IOL),Tindakan operatif / kelompok iii,Mata/THT/Kulit,2156000.0,golongan:operatif/kelompok iii,1
+822,RSUD_REMBANG,phlebografi,Phlebografi,SEDANG,Tindakan Lain,125500.0,harga_langsung,2
+823,RSUD_REMBANG,phosphat darah,Phosphat Darah,Pemeriksaan,Laboratorium,6925.0,harga_langsung,2
+824,RSUD_REMBANG,phosphat urine,Phosphat Urine,Pemeriksaan,Laboratorium,6925.0,harga_langsung,2
+825,RSUD_REMBANG,pigmentation,Pigmentation,Tindakan non operatif / tindakan besar,Laboratorium,100500.0,golongan:non operatif/tindakan besar,1
+826,RSUD_REMBANG,piranti myofungsional,Piranti Myofungsional,TINDAKAN ORTODONSI,Gigi,250000.0,harga_langsung,2
+827,RSUD_REMBANG,plasenta kornea depan discisio lentis,Plasenta kornea depan discisio lentis,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+828,RSUD_REMBANG,plasenta manual,Plasenta manual,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+829,RSUD_REMBANG,polipektomi nasal,Polipektomi nasal,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+830,RSUD_REMBANG,polymerase chain,Polymerase Chain,Pemeriksaan,Laboratorium,17500.0,harga_langsung,2
+831,RSUD_REMBANG,potong flap,Potong flap,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+832,RSUD_REMBANG,pratama vip,Pratama (VIP,SARANA LAYANAN UMUM SPESIALI,Akomodasi & Visite,30000.0,harga_langsung,1
+833,RSUD_REMBANG,prenectomy,Prenectomy,TINDAKAN SEDANG,Tindakan Lain,77000.0,harga_langsung,1
+834,RSUD_REMBANG,progesteron,Progesteron,Pemeriksaan,Laboratorium,55437.5,harga_langsung,2
+835,RSUD_REMBANG,prokalsitonin,Prokalsitonin,Pemeriksaan,Laboratorium,36250.0,harga_langsung,2
+836,RSUD_REMBANG,prolactine,Prolactine,Pemeriksaan,Laboratorium,55437.5,harga_langsung,2
+837,RSUD_REMBANG,prosedur dengan endoscopi,Prosedur dengan endoscopi,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+838,RSUD_REMBANG,prosedur manipulasi otot,Prosedur Manipulasi Otot,Tindakan non operatif / tindakan besar,Tindakan Lain,100500.0,golongan:non operatif/tindakan besar,1
+839,RSUD_REMBANG,prosedur muller manuver,Prosedur Muller Manuver,Tindakan non operatif / tindakan sedang,Tindakan Lain,72500.0,golongan:non operatif/tindakan sedang,1
+840,RSUD_REMBANG,prosedur pembedahan saluran kemih dengan laser,Prosedur pembedahan saluran kemih dengan laser,Tindakan operatif / kelompok khusus,Mata/THT/Kulit,3680000.0,golongan:operatif/kelompok khusus,1
+841,RSUD_REMBANG,prosesi pemakaman,Prosesi pemakaman,SARANA LAYANAN MEDIS,Tindakan Lain,100000.0,harga_langsung,1
+842,RSUD_REMBANG,prostat specific,Prostat Specific,Pemeriksaan,Laboratorium,70000.0,harga_langsung,1
+843,RSUD_REMBANG,prostat specific antigen,Prostat Specific Antigen,Pemeriksaan Canggih,Laboratorium,84000.0,harga_langsung,1
+844,RSUD_REMBANG,prostatektomi retropubik,Prostatektomi retropubik,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+845,RSUD_REMBANG,protein kuantitatif,Protein Kuantitatif,Pemeriksaan Canggih,Laboratorium,5050.0,harga_langsung,1
+846,RSUD_REMBANG,protein kuantitatif 2.500 1.000 700,Protein Kuantitatif 2.500 1.000 700,Pemeriksaan,Laboratorium,4200.0,harga_langsung,1
+847,RSUD_REMBANG,protein total,Protein Total,Pemeriksaan,Laboratorium,9237.5,harga_langsung,2
+848,RSUD_REMBANG,protis plastic rekonstruksi,Protis plastic rekonstruksi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+849,RSUD_REMBANG,psikotes kerja,Psikotes Kerja,(SPM/CPM/CFIT),Tindakan Lain,100000.0,harga_langsung,1
+850,RSUD_REMBANG,pt prothombin,PT (Prothombin,Pemeriksaan,Laboratorium,23100.0,harga_langsung,1
+851,RSUD_REMBANG,pt prothombin time,PT (Prothombin Time),Pemeriksaan Canggih,Laboratorium,27725.0,harga_langsung,1
+852,RSUD_REMBANG,pulpatomi,Pulpatomi,Tindakan non operatif / tindakan kecil,Gigi,31500.0,golongan:non operatif/tindakan kecil,1
+853,RSUD_REMBANG,punksi / irigasi pleura / thoracosintesis,Punksi/irigasi pleura/ thoracosintesis,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+854,RSUD_REMBANG,punksi ascites,Punksi Ascites,Tindakan non operatif / tindakan besar,Tindakan Lain,100500.0,golongan:non operatif/tindakan besar,1
+855,RSUD_REMBANG,punksi batu,Punksi Batu,Tindakan non operatif / tindakan besar,Tindakan Lain,100500.0,golongan:non operatif/tindakan besar,1
+856,RSUD_REMBANG,punksi cairan otak dengan narkose,Punksi cairan otak dengan narkose,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+857,RSUD_REMBANG,punksi cairan sendi,Punksi Cairan Sendi,Tindakan non operatif / tindakan besar,Tindakan Lain,100500.0,golongan:non operatif/tindakan besar,1
+858,RSUD_REMBANG,punksi hematoma telinga,Punksi hematoma telinga,Tindakan non operatif / tindakan sedang,Mata/THT/Kulit,72500.0,golongan:non operatif/tindakan sedang,1
+859,RSUD_REMBANG,punksi sumsum tulang,Punksi sumsum tulang,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+860,RSUD_REMBANG,pyelolithotomi,Pyelolithotomi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+861,RSUD_REMBANG,pyeloplasty,Pyeloplasty,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+862,RSUD_REMBANG,radio frekwensi rf,Radio frekwensi (RF),Tindakan non operatif / tindakan khusus,Tindakan Lain,224000.0,golongan:non operatif/tindakan khusus,1
+863,RSUD_REMBANG,radioterapi,Radioterapi,Tindakan non operatif / tindakan khusus,Rehab Medik,224000.0,golongan:non operatif/tindakan khusus,1
+864,RSUD_REMBANG,rapid antibodi,Rapid Antibodi,Pemeriksaan,Laboratorium,20000.0,harga_langsung,1
+865,RSUD_REMBANG,rapid antigen,Rapid Antigen,Pemeriksaan,Laboratorium,20000.0,harga_langsung,1
+866,RSUD_REMBANG,rawat,Rawat,A GI S,Tindakan Lain,11000.0,harga_langsung,2
+867,RSUD_REMBANG,rawat inap kelas i ii iii,"Rawat Inap Kelas I, II, III",SARANA LAYANAN PSIKOLOG,Akomodasi & Visite,15000.0,harga_langsung,1
+868,RSUD_REMBANG,rawat inap vip a vip b,"Rawat Inap VIP A, VIP B,",SARANA LAYANAN PSIKOLOG,Akomodasi & Visite,45000.0,harga_langsung,1
+869,RSUD_REMBANG,rawat inap vvip,Rawat Inap VVIP,SARANA LAYANAN PSIKOLOG,Akomodasi & Visite,55000.0,harga_langsung,1
+870,RSUD_REMBANG,rawat jalan,Rawat Jalan,A GI S,Rawat Jalan & Darurat,10000.0,harga_langsung,7
+871,RSUD_REMBANG,rawat jalan non vip,Rawat Jalan Non VIP,SARANA LAYANAN PSIKOLOG,Akomodasi & Visite,30000.0,harga_langsung,1
+872,RSUD_REMBANG,rawat jalan spesialis pagi,Rawat jalan spesialis pagi,layanan konsultasi khusus dan tidak dikenakan biaya administ,Rawat Jalan & Darurat,50000.0,harga_langsung,1
+873,RSUD_REMBANG,rawat jalan spesialis sore,Rawat jalan spesialis sore,layanan konsultasi khusus dan tidak dikenakan biaya administ,Rawat Jalan & Darurat,70000.0,harga_langsung,1
+874,RSUD_REMBANG,rawat jalan subspesialis pagi,Rawat jalan subspesialis pagi,layanan konsultasi khusus dan tidak dikenakan biaya administ,Rawat Jalan & Darurat,75000.0,harga_langsung,1
+875,RSUD_REMBANG,rawat jalan subspesialis sore,Rawat jalan subspesialis sore,layanan konsultasi khusus dan tidak dikenakan biaya administ,Rawat Jalan & Darurat,90000.0,harga_langsung,1
+876,RSUD_REMBANG,rawat jalan vip,Rawat Jalan VIP,SARANA LAYANAN PSIKOLOG,Akomodasi & Visite,45000.0,harga_langsung,1
+877,RSUD_REMBANG,reduksi urine,Reduksi Urine,"MCHC, RDW,",Laboratorium,8637.5,harga_langsung,2
+878,RSUD_REMBANG,regional flap,Regional flap,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+879,RSUD_REMBANG,reguler / non,Reguler / Non,LIS LIS,Tindakan Lain,10000.0,harga_langsung,1
+880,RSUD_REMBANG,rekanalisasi ruptura / transkanal,Rekanalisasi ruptura / transkanal,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+881,RSUD_REMBANG,rekonstruksi hidung,Rekonstruksi hidung,Tindakan operatif / kelompok ii,Mata/THT/Kulit,1470000.0,golongan:operatif/kelompok ii,1
+882,RSUD_REMBANG,rekonstruksi kelainan jari / ekstremitas polidaktili sindaktili construction hand sederhana,"Rekonstruksi kelainan jari / ekstremitas (polidaktili, sindaktili,construction hand) sederhana",Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+883,RSUD_REMBANG,rekonstruksi kontraktur,Rekonstruksi kontraktur,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+884,RSUD_REMBANG,rekonstruksi tumor ganas / adneksa luas,Rekonstruksi Tumor ganas / adneksa luas,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+885,RSUD_REMBANG,rekonstruksi vesika,Rekonstruksi vesika,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+886,RSUD_REMBANG,rekontruksi blassemeck,Rekontruksi blassemeck,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+887,RSUD_REMBANG,rekontruksi defek / kelainan tubuh yang kompleks,Rekontruksi defek / kelainan tubuh yang kompleks,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+888,RSUD_REMBANG,rekontruksi kontraktur kompleks,Rekontruksi kontraktur kompleks,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+889,RSUD_REMBANG,repair atresia choanae,Repair atresia choanae,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+890,RSUD_REMBANG,repair fistel,Repair fistel,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+891,RSUD_REMBANG,repair fistel urethra pasca uretroplasti,Repair fistel urethra pasca uretroplasti,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+892,RSUD_REMBANG,repair fraktur penis,Repair fraktur penis,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+893,RSUD_REMBANG,repair komplikasi av shunt,Repair komplikasi AV shunt,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+894,RSUD_REMBANG,repair komplikasi double lumen / kateter hemodialisa,Repair komplikasi double lumen / kateter hemodialisa,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+895,RSUD_REMBANG,repair kontraktur / repair perineum / organ lain,Repair kontraktur / repair perineum / organ lain,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+896,RSUD_REMBANG,repair luka pada wajah kompleks,Repair luka pada wajah kompleks,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+897,RSUD_REMBANG,repair luka robek sederhana pada wajah,Repair luka robek sederhana pada wajah,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+898,RSUD_REMBANG,repair tendon jari,Repair tendon jari,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+899,RSUD_REMBANG,reparasi / rebasing / relining,Reparasi/Rebasing/Relining,TINDAKAN SEDANG,Tindakan Lain,132000.0,harga_langsung,1
+900,RSUD_REMBANG,reparasi busur labial,Reparasi Busur Labial,TINDAKAN ORTODONSI,Gigi,100500.0,harga_langsung,2
+901,RSUD_REMBANG,reparasi fistula vesiko vaginal,Reparasi fistula vesiko vaginal,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+902,RSUD_REMBANG,reparasi plate,Reparasi Plate,TINDAKAN ORTODONSI,Gigi,100500.0,harga_langsung,2
+903,RSUD_REMBANG,replantasi gigi,Replantasi gigi,TINDAKAN BESAR,Gigi,198000.0,harga_langsung,1
+904,RSUD_REMBANG,reposisi / reduksi fraktur os nasal terbuka,Reposisi / reduksi fraktur os nasal terbuka,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+905,RSUD_REMBANG,reposisi dengan anastesi local,Reposisi dengan anastesi local,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+906,RSUD_REMBANG,reposisi dislokasi sendi,Reposisi dislokasi sendi,Tindakan non operatif / tindakan besar,Tindakan Lain,100500.0,golongan:non operatif/tindakan besar,1
+907,RSUD_REMBANG,reposisi fixatie compucate,Reposisi fixatie (compucate),Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+908,RSUD_REMBANG,reposisi fraktur / dislokasi dalam narkose,Reposisi fraktur / dislokasi dalam narkose,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+909,RSUD_REMBANG,reposisi fraktur maksila / zygoma,Reposisi fraktur maksila / zygoma,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+910,RSUD_REMBANG,reposisi fraktur os nasal,Reposisi fraktur os nasal,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+911,RSUD_REMBANG,reposisi fraktur rahang,Reposisi fraktur rahang,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+912,RSUD_REMBANG,reposisi fraktur rahang sederhana,Reposisi fraktur rahang sederhana,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+913,RSUD_REMBANG,reposisi fraktur sederhana os nasal,Reposisi fraktur sederhana os nasal,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+914,RSUD_REMBANG,reposisi prolapse uteri,Reposisi prolapse uteri,Tindakan non operatif / tindakan besar,Tindakan Lain,100500.0,golongan:non operatif/tindakan besar,1
+915,RSUD_REMBANG,reposisi tertutup patah tulang,Reposisi tertutup patah tulang,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+916,RSUD_REMBANG,reposisi trauma hidung sederhana,Reposisi trauma hidung sederhana,Tindakan non operatif / tindakan sedang,Mata/THT/Kulit,72500.0,golongan:non operatif/tindakan sedang,1
+917,RSUD_REMBANG,resectie rahang,Resectie rahang,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+918,RSUD_REMBANG,reseksi adenomiosis,Reseksi adenomiosis,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+919,RSUD_REMBANG,reseksi anastomosis,Reseksi anastomosis,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+920,RSUD_REMBANG,reseksi caesaria,Reseksi caesaria,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+921,RSUD_REMBANG,reseksi caesaria dan tubektomi,Reseksi caesaria dan tubektomi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+922,RSUD_REMBANG,reseksi partial vesika,Reseksi partial vesika,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+923,RSUD_REMBANG,reseksi urachus,Reseksi urachus,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+924,RSUD_REMBANG,reshaping untuk torus / tumor tulang,Reshaping untuk torus / tumor tulang,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+925,RSUD_REMBANG,resusitasi jantung,Resusitasi Jantung,SARANA LAYANAN,Tindakan Lain,38250.0,harga_langsung,2
+926,RSUD_REMBANG,retainer per rahang,Retainer per Rahang,TINDAKAN ORTODONSI,Gigi,224000.0,harga_langsung,2
+927,RSUD_REMBANG,retikulosit,Retikulosit,Pemeriksaan,Laboratorium,10000.0,harga_langsung,3
+928,RSUD_REMBANG,retraksi bekuan,Retraksi Bekuan,Pemeriksaan,Laboratorium,9137.5,harga_langsung,2
+929,RSUD_REMBANG,revisi sinekia hidung,Revisi Sinekia Hidung,Tindakan operatif / kelompok i,Mata/THT/Kulit,1077000.0,golongan:operatif/kelompok i,1
+930,RSUD_REMBANG,revisi trakeostomi,Revisi trakeostomi,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+931,RSUD_REMBANG,rhinotomi lateralis,Rhinotomi lateralis,Tindakan operatif / kelompok iii,Radiologi,2156000.0,golongan:operatif/kelompok iii,1
+932,RSUD_REMBANG,ringan,Ringan,SARANA LAYANAN MEDIS,Tindakan Lain,30000.0,harga_langsung,2
+933,RSUD_REMBANG,rpg retrograde,RPG (Retrograde,SEDANG,Tindakan Lain,107000.0,harga_langsung,2
+934,RSUD_REMBANG,salpingektomi,Salpingektomi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+935,RSUD_REMBANG,salpingo oovarektomi bilateral,Salpingo oovarektomi bilateral,Tindakan operatif / kelompok ii,Radiologi,1470000.0,golongan:operatif/kelompok ii,1
+936,RSUD_REMBANG,salpingo oovarektomi unilateral,Salpingo oovarektomi unilateral,Tindakan operatif / kelompok ii,Radiologi,1470000.0,golongan:operatif/kelompok ii,1
+937,RSUD_REMBANG,salpingolisis,Salpingolisis,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+938,RSUD_REMBANG,salpingoofarektomi bilateral,Salpingoofarektomi bilateral,Tindakan operatif / kelompok iii,Radiologi,2156000.0,golongan:operatif/kelompok iii,1
+939,RSUD_REMBANG,salvaging operasi mikro,Salvaging operasi mikro,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+940,RSUD_REMBANG,scaling per gigi,Scaling per gigi,TINDAKAN KECIL,Gigi,13000.0,harga_langsung,1
+941,RSUD_REMBANG,scalling dan root pkanning,Scalling dan Root pkanning,TINDAKAN SEDANG,Tindakan Lain,61500.0,harga_langsung,1
+942,RSUD_REMBANG,scar acne berat,Scar acne berat,Tindakan non operatif / tindakan khusus,Mata/THT/Kulit,224000.0,golongan:non operatif/tindakan khusus,1
+943,RSUD_REMBANG,scar acne ringan,Scar acne ringan,Tindakan non operatif / tindakan sedang,Mata/THT/Kulit,72500.0,golongan:non operatif/tindakan sedang,1
+944,RSUD_REMBANG,scar acne sedang,Scar acne sedang,Tindakan non operatif / tindakan besar,Mata/THT/Kulit,100500.0,golongan:non operatif/tindakan besar,1
+945,RSUD_REMBANG,scorsteen,Scorsteen,SARANA LAYANAN,Tindakan Lain,7750.0,harga_langsung,2
+946,RSUD_REMBANG,sedaan langsung,Sedaan Langsung,Pemeriksaan,Laboratorium,7312.5,harga_langsung,2
+947,RSUD_REMBANG,sedang,Sedang,SARANA LAYANAN MEDIS,Tindakan Lain,67500.0,harga_langsung,2
+948,RSUD_REMBANG,sedang iii,Sedang III,TINDAKAN SARANA LAYANAN MEDIS,Tindakan Lain,30000.0,harga_langsung,1
+949,RSUD_REMBANG,sederhana,Sederhana,Pemeriksaan,Laboratorium,30000.0,harga_langsung,1
+950,RSUD_REMBANG,sederhana iii,Sederhana III,TINDAKAN SARANA LAYANAN MEDIS,Tindakan Lain,20000.0,harga_langsung,1
+951,RSUD_REMBANG,sederhana individual,Sederhana individual,Pemeriksaan,Laboratorium,30000.0,harga_langsung,1
+952,RSUD_REMBANG,sediaan langsung,Sediaan Langsung,Pemeriksaan,Laboratorium,16937.5,harga_langsung,2
+953,RSUD_REMBANG,sedimen urine,Sedimen Urine,"MCHC, RDW,",Laboratorium,8637.5,harga_langsung,2
+954,RSUD_REMBANG,segmentektomi,Segmentektomi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+955,RSUD_REMBANG,seksio sesarea / histerotomi,Seksio sesarea / histerotomi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+956,RSUD_REMBANG,sel le,Sel LE,Pemeriksaan Canggih,Laboratorium,10450.0,harga_langsung,2
+957,RSUD_REMBANG,sel le 2.900 1.200 800,Sel LE 2.900 1.200 800,Pemeriksaan,Laboratorium,4900.0,harga_langsung,1
+958,RSUD_REMBANG,septum reseksi,Septum reseksi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+959,RSUD_REMBANG,sequesterectomy,Sequesterectomy,TINDAKAN BESAR,Tindakan Lain,92000.0,harga_langsung,1
+960,RSUD_REMBANG,sequesterectomy dengan narkose,Sequesterectomy dengan narkose,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+961,RSUD_REMBANG,serologi rpr,Serologi RPR,Pemeriksaan,Laboratorium,36250.0,harga_langsung,2
+962,RSUD_REMBANG,serum protein,Serum protein,PEMERIKSAAN KHUSUS,Laboratorium,15000.0,harga_langsung,1
+963,RSUD_REMBANG,sgot ast,SGOT,Pemeriksaan,Laboratorium,9237.5,harga_langsung,2
+964,RSUD_REMBANG,sgpt alt,SGPT,Pemeriksaan,Laboratorium,9237.5,harga_langsung,2
+965,RSUD_REMBANG,sibc serum ion,SIBC (Serum Ion,Pemeriksaan,Laboratorium,11200.0,harga_langsung,1
+966,RSUD_REMBANG,sibc serum ion binding,SIBC (Serum Ion Binding,Pemeriksaan Canggih,Laboratorium,13450.0,harga_langsung,1
+967,RSUD_REMBANG,simpatektomi,Simpatektomi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+968,RSUD_REMBANG,sirklase,Sirklase,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+969,RSUD_REMBANG,sirkumsisi pada phymosis dengan narkose,Sirkumsisi pada phymosis dengan narkose,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+970,RSUD_REMBANG,sistografi,Sistografi,SEDANG,Tindakan Lain,102000.0,harga_langsung,2
+971,RSUD_REMBANG,sistoplasti reduksi,Sistoplasti reduksi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+972,RSUD_REMBANG,sistostomi / businasi,Sistostomi / businasi,Tindakan operatif / tindakan kecil,Tindakan Lain,663500.0,golongan:operatif/tindakan kecil,2
+973,RSUD_REMBANG,sitologi 3 x serial,Sitologi 3 x Serial,PEMERIKSAAN PATOLOGI ANATOMI,Laboratorium,55450.0,harga_langsung,2
+974,RSUD_REMBANG,skin grafting yang tidak luas / bone grafting,Skin grafting yang tidak luas / Bone Grafting,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+975,RSUD_REMBANG,skingrafting yang luas,Skingrafting yang luas,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+976,RSUD_REMBANG,sma smooth,SMA (Smooth,Pemeriksaan,Laboratorium,25200.0,harga_langsung,1
+977,RSUD_REMBANG,sma smooth muscle,SMA (Smooth Muscle,Pemeriksaan Canggih,Laboratorium,30250.0,harga_langsung,1
+978,RSUD_REMBANG,sondage canaliculi lacrimalis,Sondage canaliculi lacrimalis,Tindakan non operatif / tindakan sedang,Akomodasi & Visite,72500.0,golongan:non operatif/tindakan sedang,1
+979,RSUD_REMBANG,spesialis,Spesialis,DARURAT,Rawat Jalan & Darurat,35000.0,harga_langsung,2
+980,RSUD_REMBANG,sphenoimidektomi tht,Sphenoimidektomi (THT),Tindakan operatif / kelompok iii,Mata/THT/Kulit,2156000.0,golongan:operatif/kelompok iii,1
+981,RSUD_REMBANG,spinal cord injury leveling,Spinal Cord Injury Leveling,Tindakan non operatif / tindakan besar,Tindakan Lain,100500.0,golongan:non operatif/tindakan besar,1
+982,RSUD_REMBANG,splenektomi,Splenektomi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+983,RSUD_REMBANG,spooling cerumen telinga,Spooling cerumen telinga,Tindakan non operatif / tindakan kecil,Mata/THT/Kulit,31500.0,golongan:non operatif/tindakan kecil,1
+984,RSUD_REMBANG,spooling hidung dan sinus,Spooling Hidung dan sinus,Tindakan non operatif / tindakan kecil,Mata/THT/Kulit,31500.0,golongan:non operatif/tindakan kecil,1
+985,RSUD_REMBANG,spooling saluran air mata,Spooling saluran air mata,Tindakan non operatif / tindakan kecil,Mata/THT/Kulit,31500.0,golongan:non operatif/tindakan kecil,1
+986,RSUD_REMBANG,spray and stretch,Spray And Stretch,Tindakan non operatif / tindakan sedang,Tindakan Lain,72500.0,golongan:non operatif/tindakan sedang,1
+987,RSUD_REMBANG,sputum 1x,Sputum 1x,PEMERIKSAAN PATOLOGI ANATOMI,Laboratorium,23100.0,harga_langsung,2
+988,RSUD_REMBANG,sputum 3x serial,"Sputum 3x Serial,",PEMERIKSAAN PATOLOGI ANATOMI,Laboratorium,45500.0,harga_langsung,1
+989,RSUD_REMBANG,sputum 3x serial cairan,"Sputum 3x Serial, Cairan,",PEMERIKSAAN PATOLOGI ANATOMI,Laboratorium,54600.0,harga_langsung,1
+990,RSUD_REMBANG,staging kanker,Staging kanker,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+991,RSUD_REMBANG,stres analyzer tmas,Stres Analyzer (TMAS,Pemeriksaan,Laboratorium,20000.0,harga_langsung,1
+992,RSUD_REMBANG,strumektomi,Strumektomi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+993,RSUD_REMBANG,sub,Sub,DARURAT,Rawat Jalan & Darurat,50000.0,harga_langsung,1
+994,RSUD_REMBANG,subcision,Subcision,Tindakan non operatif / tindakan sedang,Tindakan Lain,72500.0,golongan:non operatif/tindakan sedang,1
+995,RSUD_REMBANG,suction,Suction,SARANA LAYANAN,Tindakan Lain,22000.0,harga_langsung,1
+996,RSUD_REMBANG,sugar water test,Sugar Water Test,Pemeriksaan,Laboratorium,12325.0,harga_langsung,2
+997,RSUD_REMBANG,supportif teraphy se,Supportif Teraphy (SE),PSIKOTERAPI,Rehab Medik,50000.0,harga_langsung,1
+998,RSUD_REMBANG,surat jalan jenazah,Surat jalan jenazah,LAYANAN (SURAT KETERANGAN) MEDIKO LEGAL,Tindakan Lain,10000.0,harga_langsung,1
+999,RSUD_REMBANG,surat keterangan,Surat keterangan,LAYANAN (SURAT KETERANGAN) MEDIKO LEGAL,Tindakan Lain,15000.0,harga_langsung,1
+1000,RSUD_REMBANG,surat keterangan bebas,Surat keterangan bebas,LAYANAN (SURAT KETERANGAN) MEDIKO LEGAL,Tindakan Lain,15000.0,harga_langsung,1
+1001,RSUD_REMBANG,surat keterangan kematian,Surat keterangan kematian,LAYANAN (SURAT KETERANGAN) MEDIKO LEGAL,Tindakan Lain,15000.0,harga_langsung,1
+1002,RSUD_REMBANG,surat keterangan lahir,Surat keterangan lahir,LAYANAN (SURAT KETERANGAN) MEDIKO LEGAL,Tindakan Lain,5000.0,harga_langsung,1
+1003,RSUD_REMBANG,surat keterangan lain-lain,Surat keterangan lain-lain,LAYANAN (SURAT KETERANGAN) MEDIKO LEGAL,Tindakan Lain,5000.0,harga_langsung,1
+1004,RSUD_REMBANG,survey tulang bone,Survey Tulang (Bone,SEDANG,Tindakan Lain,125500.0,harga_langsung,2
+1005,RSUD_REMBANG,t cel dan b cel,T Cel dan B Cel,Pemeriksaan,Laboratorium,23100.0,harga_langsung,2
+1006,RSUD_REMBANG,t3 up take,T3 Up Take,Pemeriksaan,Laboratorium,32337.5,harga_langsung,2
+1007,RSUD_REMBANG,tambalan permanen per gigi,Tambalan permanen per gigi,TINDAKAN KECIL,Gigi,37000.0,harga_langsung,1
+1008,RSUD_REMBANG,tampon vagina,Tampon vagina,SARANA LAYANAN,Tindakan Lain,27000.0,harga_langsung,2
+1009,RSUD_REMBANG,tanpa kontras,Tanpa Kontras,IMAGING ( MRI ),Radiologi,1450000.0,harga_langsung,2
+1010,RSUD_REMBANG,tatoage kornea,Tatoage kornea,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+1011,RSUD_REMBANG,tattoo removal dengan laser,Tattoo removal dengan laser,Tindakan non operatif / tindakan khusus,Mata/THT/Kulit,224000.0,golongan:non operatif/tindakan khusus,1
+1012,RSUD_REMBANG,terapi aktifitas,Terapi aktifitas,SARANA LAYANAN,Rehab Medik,27000.0,harga_langsung,2
+1013,RSUD_REMBANG,terapi aktifitas individu,Terapi aktifitas individu,SARANA LAYANAN,Rehab Medik,47000.0,harga_langsung,1
+1014,RSUD_REMBANG,terapi aktifitas kelompok,Terapi aktifitas kelompok,SARANA LAYANAN,Rehab Medik,17000.0,harga_langsung,1
+1015,RSUD_REMBANG,terapi bermain,Terapi Bermain,PSIKOTERAPI,Rehab Medik,100000.0,harga_langsung,1
+1016,RSUD_REMBANG,terapi hipnosis,Terapi Hipnosis,PSIKOTERAPI,Rehab Medik,100000.0,harga_langsung,1
+1017,RSUD_REMBANG,terapi injeksi,Terapi injeksi,Tindakan non operatif / tindakan besar,Rehab Medik,100500.0,golongan:non operatif/tindakan besar,1
+1018,RSUD_REMBANG,terapi kelompok,Terapi Kelompok,PSIKOTERAPI,Rehab Medik,70000.0,harga_langsung,1
+1019,RSUD_REMBANG,terapi keluarga,Terapi Keluarga,SARANA LAYANAN,Rehab Medik,32000.0,harga_langsung,1
+1020,RSUD_REMBANG,terapi keluarga couple,Terapi Keluarga (Couple,PSIKOTERAPI,Rehab Medik,100000.0,harga_langsung,1
+1021,RSUD_REMBANG,terapi kognitif,Terapi Kognitif,PSIKOTERAPI,Rehab Medik,100000.0,harga_langsung,1
+1022,RSUD_REMBANG,terapi perilaku,Terapi Perilaku,PSIKOTERAPI,Rehab Medik,100000.0,harga_langsung,1
+1023,RSUD_REMBANG,terapi relaksasi,Terapi Relaksasi,PSIKOTERAPI,Rehab Medik,70000.0,harga_langsung,1
+1024,RSUD_REMBANG,terapi sklerosing,Terapi sklerosing,Tindakan operatif / kelompok i,Rehab Medik,1077000.0,golongan:operatif/kelompok i,1
+1025,RSUD_REMBANG,tes agregasi,Tes Agregasi,PEMERIKSAAN KHUSUS,Laboratorium,15000.0,harga_langsung,1
+1026,RSUD_REMBANG,tes alergi,Tes alergi,Tindakan non operatif / tindakan besar,Tindakan Lain,100500.0,golongan:non operatif/tindakan besar,1
+1027,RSUD_REMBANG,tes anti hiv,Tes Anti HIV,Pemeriksaan,Laboratorium,33500.0,harga_langsung,2
+1028,RSUD_REMBANG,tes bakat minat dan,"Tes Bakat, Minat dan",Pemeriksaan,Laboratorium,30000.0,harga_langsung,1
+1029,RSUD_REMBANG,tes buta warna,Tes buta warna,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+1030,RSUD_REMBANG,tes cepat molekuler,Tes Cepat Molekuler,Pemeriksaan,Laboratorium,30000.0,harga_langsung,2
+1031,RSUD_REMBANG,tes fluorescein,Tes fluorescein,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+1032,RSUD_REMBANG,tes intelegensi lengkap,Tes Intelegensi Lengkap,(SPM/CPM/CFIT),Tindakan Lain,50000.0,harga_langsung,1
+1033,RSUD_REMBANG,tes kematangan masuk,Tes Kematangan Masuk,Pemeriksaan,Laboratorium,30000.0,harga_langsung,1
+1034,RSUD_REMBANG,tes narkoba 6,Tes Narkoba (6,Pemeriksaan,Laboratorium,63000.0,harga_langsung,2
+1035,RSUD_REMBANG,test kehamilan,Test Kehamilan,Pemeriksaan,Laboratorium,7312.5,harga_langsung,2
+1036,RSUD_REMBANG,test mmpi,Test MMPI,Tindakan non operatif / tindakan khusus,Tindakan Lain,224000.0,golongan:non operatif/tindakan khusus,1
+1037,RSUD_REMBANG,tetes mata / telinga,Tetes Mata/Telinga,LAYANAN PERACIKAN SEDIAAN STERIL,Mata/THT/Kulit,20000.0,harga_langsung,1
+1038,RSUD_REMBANG,thoracal 2 posisi,Thoracal 2 Posisi,SEDANG,Tindakan Lain,75500.0,harga_langsung,2
+1039,RSUD_REMBANG,thoracolumbal 2 posisi,Thoracolumbal 2 Posisi,SEDANG,Tindakan Lain,75500.0,harga_langsung,2
+1040,RSUD_REMBANG,thorakotomi,Thorakotomi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+1041,RSUD_REMBANG,thromboplastin,Thromboplastin,Pemeriksaan,Laboratorium,64675.0,harga_langsung,2
+1042,RSUD_REMBANG,thrombotest,Thrombotest,Pemeriksaan,Laboratorium,23100.0,harga_langsung,2
+1043,RSUD_REMBANG,tibc total iron,TIBC (Total Iron,Pemeriksaan,Laboratorium,12600.0,harga_langsung,1
+1044,RSUD_REMBANG,tibc total iron binding,TIBC (Total Iron Binding,Pemeriksaan Canggih,Laboratorium,15100.0,harga_langsung,1
+1045,RSUD_REMBANG,tindakan,Tindakan,SARANA LAYANAN MEDIS,Tindakan Lain,5000.0,harga_langsung,1
+1046,RSUD_REMBANG,tindakan anastesi pro ect,Tindakan anastesi pro ECT,Tindakan non operatif / tindakan khusus,Tindakan Lain,224000.0,golongan:non operatif/tindakan khusus,1
+1047,RSUD_REMBANG,tindakan anoscopy,Tindakan anoscopy,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+1048,RSUD_REMBANG,tindakan argon laser / kenon,Tindakan argon laser / kenon,Tindakan operatif / kelompok ii,Mata/THT/Kulit,1470000.0,golongan:operatif/kelompok ii,1
+1049,RSUD_REMBANG,tindakan congenital fornix plastic,Tindakan congenital fornix plastic,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+1050,RSUD_REMBANG,tindakan cuci sinus perawatan,Tindakan cuci sinus (perawatan),Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+1051,RSUD_REMBANG,tindakan cyclodiatermi,Tindakan cyclodiatermi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+1052,RSUD_REMBANG,tindakan deepening sulcus,Tindakan deepening sulcus,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+1053,RSUD_REMBANG,tindakan dekompresi fasialis,Tindakan dekompresi fasialis,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+1054,RSUD_REMBANG,tindakan iii,TINDAKAN III,SARANA LAYANAN MEDIS ANASTESI,Tindakan Lain,100500.0,harga_langsung,5
+1055,RSUD_REMBANG,tindakan pada keratosis seboroika,Tindakan pada keratosis seboroika,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+1056,RSUD_REMBANG,tindakan pada kolpodeksis,Tindakan pada kolpodeksis,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+1057,RSUD_REMBANG,tindakan pembuatan visum et repertum korban hidup,Tindakan pembuatan visum et repertum korban hidup,Tindakan non operatif / tindakan sedang,Tindakan Lain,72500.0,golongan:non operatif/tindakan sedang,1
+1058,RSUD_REMBANG,tindakan pharyngeal flap,Tindakan Pharyngeal flap,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+1059,RSUD_REMBANG,tindakan psikoterapi / psikometri,Tindakan psikoterapi/psikometri,Tindakan non operatif / tindakan sedang,Rehab Medik,72500.0,golongan:non operatif/tindakan sedang,1
+1060,RSUD_REMBANG,tindakan roser plasty,Tindakan roser plasty,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+1061,RSUD_REMBANG,tindik telinga bayi,Tindik telinga bayi,SARANA LAYANAN,Mata/THT/Kulit,11750.0,harga_langsung,2
+1062,RSUD_REMBANG,tiroid stimulating,Tiroid Stimulating,Pemeriksaan,Laboratorium,32337.5,harga_langsung,2
+1063,RSUD_REMBANG,tiroidektomi,Tiroidektomi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+1064,RSUD_REMBANG,tonsilektomi,Tonsilektomi,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+1065,RSUD_REMBANG,tonsilo adenoidektomi,Tonsilo adenoidektomi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+1066,RSUD_REMBANG,total limfosit count,Total limfosit count,Pemeriksaan,Laboratorium,10000.0,harga_langsung,3
+1067,RSUD_REMBANG,total parenteral,Total Parenteral,LAYANAN PERACIKAN SEDIAAN STERIL,Tindakan Lain,20000.0,harga_langsung,1
+1068,RSUD_REMBANG,tpha treponema,TPHA (Treponema,Pemeriksaan,Laboratorium,15400.0,harga_langsung,2
+1069,RSUD_REMBANG,trabeculetomi filtrasi operasi,Trabeculetomi filtrasi operasi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+1070,RSUD_REMBANG,trabekulectomi dengan tripel prosedur trabekulektomi ekek / sic / phaco iol,Trabekulectomi dengan tripel prosedur (trabekulektomi+EKEK/SIC/Phaco+IOL),Tindakan operatif / kelompok khusus,Tindakan Lain,3680000.0,golongan:operatif/kelompok khusus,1
+1071,RSUD_REMBANG,trabekulektomi,Trabekulektomi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+1072,RSUD_REMBANG,trakeostomi,Trakeostomi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+1073,RSUD_REMBANG,trakeostomi dengan penyulit,Trakeostomi dengan penyulit,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+1074,RSUD_REMBANG,trans uretrae reseksi / turb / turp,Trans uretrae reseksi / TURB / TURP,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+1075,RSUD_REMBANG,transeksi esophagus,Transeksi esophagus,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+1076,RSUD_REMBANG,transferrin,Transferrin,Pemeriksaan,Laboratorium,69300.0,harga_langsung,2
+1077,RSUD_REMBANG,transfusi tukar,Transfusi tukar,SARANA LAYANAN,Tindakan Lain,95500.0,harga_langsung,2
+1078,RSUD_REMBANG,transplantasi amnion,Transplantasi amnion,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+1079,RSUD_REMBANG,transplantasi kornea,Transplantasi kornea,Tindakan operatif / kelompok khusus,Tindakan Lain,3680000.0,golongan:operatif/kelompok khusus,1
+1080,RSUD_REMBANG,treadlift,Treadlift,Tindakan non operatif / tindakan khusus,Tindakan Lain,224000.0,golongan:non operatif/tindakan khusus,1
+1081,RSUD_REMBANG,trepanase,Trepanase,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+1082,RSUD_REMBANG,trigliserida,Trigliserida,Pemeriksaan,Laboratorium,12325.0,harga_langsung,2
+1083,RSUD_REMBANG,trombosit,Trombosit,Pemeriksaan,Laboratorium,6375.0,harga_langsung,2
+1084,RSUD_REMBANG,troponin i kualitatif,Troponin I Kualitatif,Pemeriksaan,Laboratorium,66500.0,harga_langsung,2
+1085,RSUD_REMBANG,troponin t,Troponin T,Pemeriksaan,Laboratorium,77000.0,harga_langsung,2
+1086,RSUD_REMBANG,tubektomi,Tubektomi,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+1087,RSUD_REMBANG,tubektomi / mow,Tubektomi / MOW,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+1088,RSUD_REMBANG,tulang belakang 2 posisi,Tulang Belakang 2 Posisi,SEDANG,Tindakan Lain,75500.0,harga_langsung,2
+1089,RSUD_REMBANG,tumor palpebral,Tumor palpebral,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+1090,RSUD_REMBANG,tumpatan amalgam 1,Tumpatan Amalgam 1,TINDAKAN SEDANG,Tindakan Lain,61500.0,harga_langsung,1
+1091,RSUD_REMBANG,tumpatan dengan logam,Tumpatan dengan logam,TINDAKAN BESAR,Tindakan Lain,285500.0,harga_langsung,2
+1092,RSUD_REMBANG,tumpatan dengan pin,Tumpatan dengan PIN,TINDAKAN SEDANG,Tindakan Lain,102000.0,harga_langsung,2
+1093,RSUD_REMBANG,tumpatan sementara pulpa,"Tumpatan sementara, pulpa",TINDAKAN KECIL,Gigi,26500.0,harga_langsung,1
+1094,RSUD_REMBANG,tumpatan sewarna gigi,Tumpatan sewarna gigi,TINDAKAN SEDANG,Gigi,87000.0,harga_langsung,1
+1095,RSUD_REMBANG,tympanoplasty,Tympanoplasty,Tindakan operatif / kelompok khusus,Tindakan Lain,3680000.0,golongan:operatif/kelompok khusus,1
+1096,RSUD_REMBANG,tzank tes,Tzank tes,PEMERIKSAAN PATOLOGI ANATOMI,Laboratorium,6200.0,harga_langsung,3
+1097,RSUD_REMBANG,uji fungsi berkemih sederhana,Uji Fungsi Berkemih Sederhana,Tindakan non operatif / tindakan sedang,Rehab Medik,72500.0,golongan:non operatif/tindakan sedang,1
+1098,RSUD_REMBANG,uji fungsi defekasi,Uji Fungsi Defekasi,Tindakan non operatif / tindakan sedang,Rehab Medik,72500.0,golongan:non operatif/tindakan sedang,1
+1099,RSUD_REMBANG,uji fungsi ganguan komunikasi tadir,Uji Fungsi Ganguan Komunikasi (TADIR),Tindakan non operatif / tindakan sedang,Rehab Medik,72500.0,golongan:non operatif/tindakan sedang,1
+1100,RSUD_REMBANG,uji fungsi kardiorespirasi berat menggunakan treadmill ergocycle peak flow meter sebagai berikut,"Uji Fungsi Kardiorespirasi Berat (Menggunakan Treadmill, ergocycle, peak flow meter) sebagai berikut :",Tindakan non operatif / tindakan besar,Rehab Medik,100500.0,golongan:non operatif/tindakan besar,1
+1101,RSUD_REMBANG,uji fungsi kardiorespirasi sedang uji jalan 6 menit atau hardvar step test sebagai berikut,Uji Fungsi Kardiorespirasi sedang (Uji Jalan 6 Menit Atau Hardvar Step Test) sebagai berikut :,Tindakan non operatif / tindakan sedang,Rehab Medik,72500.0,golongan:non operatif/tindakan sedang,1
+1102,RSUD_REMBANG,uji fungsi kognisi moca ina,Uji Fungsi Kognisi (MOCA Ina),Tindakan non operatif / tindakan sedang,Rehab Medik,72500.0,golongan:non operatif/tindakan sedang,1
+1103,RSUD_REMBANG,uji fungsi kualitas hidup,Uji Fungsi Kualitas Hidup,Tindakan non operatif / tindakan kecil,Rehab Medik,31500.0,golongan:non operatif/tindakan kecil,1
+1104,RSUD_REMBANG,uji fungsi menelan tor bsst / guus,Uji Fungsi Menelan (TOR BSST/GUUS),Tindakan non operatif / tindakan kecil,Rehab Medik,31500.0,golongan:non operatif/tindakan kecil,1
+1105,RSUD_REMBANG,uji fungsi postur kontrol,Uji Fungsi Postur Kontrol,Tindakan non operatif / tindakan kecil,Rehab Medik,31500.0,golongan:non operatif/tindakan kecil,1
+1106,RSUD_REMBANG,uji fungsi sensory integrasi dan praksis,Uji Fungsi Sensory Integrasi Dan Praksis,Tindakan non operatif / tindakan kecil,Rehab Medik,31500.0,golongan:non operatif/tindakan kecil,1
+1107,RSUD_REMBANG,uji kemampuan dan fungsional dan perawatan / adl anak barthel fim wee fim berikut,"Uji Kemampuan Dan Fungsional Dan Perawatan/Adl Anak (Barthel, FIM, Wee FIM) berikut :",Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+1108,RSUD_REMBANG,ultrasonografi abdomen,USG Abdomen,ULTRASONOGRAFI,Radiologi,72000.0,harga_langsung,2
+1109,RSUD_REMBANG,ultrasonografi carotid,USG Carotid,ULTRASONOGRAFI,Radiologi,164000.0,harga_langsung,2
+1110,RSUD_REMBANG,ultrasonografi collie / leher,USG Collie / Leher,ULTRASONOGRAFI,Radiologi,143500.0,harga_langsung,2
+1111,RSUD_REMBANG,ultrasonografi dopler vascular,USG Dopler Vascular,ULTRASONOGRAFI,Radiologi,164000.0,harga_langsung,8
+1112,RSUD_REMBANG,ultrasonografi dopler vascular vena,USG Dopler Vascular Vena,ULTRASONOGRAFI,Radiologi,164000.0,harga_langsung,4
+1113,RSUD_REMBANG,ultrasonografi fast,USG FAST,ULTRASONOGRAFI,Radiologi,72000.0,harga_langsung,2
+1114,RSUD_REMBANG,ultrasonografi guiding,USG Guiding,ULTRASONOGRAFI,Radiologi,143500.0,harga_langsung,2
+1115,RSUD_REMBANG,ultrasonografi inguinal,USG Inguinal,ULTRASONOGRAFI,Radiologi,143500.0,harga_langsung,2
+1116,RSUD_REMBANG,ultrasonografi jaringan lunak,USG Jaringan Lunak,ULTRASONOGRAFI,Radiologi,143500.0,harga_langsung,2
+1117,RSUD_REMBANG,ultrasonografi kepala bayi,USG Kepala Bayi,ULTRASONOGRAFI,Radiologi,143500.0,harga_langsung,2
+1118,RSUD_REMBANG,ultrasonografi mammae,USG Mammae,ULTRASONOGRAFI,Radiologi,143500.0,harga_langsung,2
+1119,RSUD_REMBANG,ultrasonografi mata,USG Mata,ULTRASONOGRAFI,Radiologi,68000.0,harga_langsung,2
+1120,RSUD_REMBANG,ultrasonografi musculoskeletal,USG Musculoskeletal,ULTRASONOGRAFI,Radiologi,143500.0,harga_langsung,6
+1121,RSUD_REMBANG,ultrasonografi perianal,USG Perianal,ULTRASONOGRAFI,Radiologi,72000.0,harga_langsung,2
+1122,RSUD_REMBANG,ultrasonografi prostat,USG Prostat,ULTRASONOGRAFI,Radiologi,72000.0,harga_langsung,2
+1123,RSUD_REMBANG,ultrasonografi scrotum,USG Scrotum,ULTRASONOGRAFI,Radiologi,143500.0,harga_langsung,2
+1124,RSUD_REMBANG,ultrasonografi thorax,USG Thorax,ULTRASONOGRAFI,Radiologi,143500.0,harga_langsung,2
+1125,RSUD_REMBANG,ultrasonografi thorax marker,USG Thorax Marker,ULTRASONOGRAFI,Radiologi,143500.0,harga_langsung,2
+1126,RSUD_REMBANG,ultrasonografi thyroid,USG Thyroid,ULTRASONOGRAFI,Radiologi,143500.0,harga_langsung,2
+1127,RSUD_REMBANG,ultrasonografi urologi / tractus,USG Urologi / Tractus,ULTRASONOGRAFI,Radiologi,72000.0,harga_langsung,2
+1128,RSUD_REMBANG,urea clearance,Urea Clearance,Pemeriksaan,Laboratorium,18475.0,harga_langsung,2
+1129,RSUD_REMBANG,uretero sigmoidostomi,Uretero sigmoidostomi,Tindakan operatif / kelompok iii,Laboratorium,2156000.0,golongan:operatif/kelompok iii,1
+1130,RSUD_REMBANG,uretero ureterostomi,Uretero ureterostomi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+1131,RSUD_REMBANG,ureterocutaneostomi,Ureterocutaneostomi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+1132,RSUD_REMBANG,ureterolithotomi,Ureterolithotomi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+1133,RSUD_REMBANG,ureterolysis,Ureterolysis,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+1134,RSUD_REMBANG,ureterostomi,Ureterostomi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+1135,RSUD_REMBANG,urethrektomi,Urethrektomi,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+1136,RSUD_REMBANG,urethrolithotomi,Urethrolithotomi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+1137,RSUD_REMBANG,uretrhrolithotomi pars anterior,Uretrhrolithotomi pars anterior,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+1138,RSUD_REMBANG,uretrografi,Uretrografi,SEDANG,Tindakan Lain,102000.0,harga_langsung,2
+1139,RSUD_REMBANG,uretrolitotomi pars anterior,Uretrolitotomi pars anterior,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+1140,RSUD_REMBANG,uretroplasti,Uretroplasti,Tindakan operatif / kelompok iii,Tindakan Lain,2156000.0,golongan:operatif/kelompok iii,1
+1141,RSUD_REMBANG,ureum,Ureum,Pemeriksaan,Laboratorium,9237.5,harga_langsung,2
+1142,RSUD_REMBANG,urinalisa,Urinalisa,"MCHC, RDW,",Laboratorium,8637.5,harga_langsung,2
+1143,RSUD_REMBANG,urine 4 porsi / kurve,Urine 4 porsi/kurve,Pemeriksaan,Laboratorium,11550.0,harga_langsung,2
+1144,RSUD_REMBANG,urine serial 3x,Urine Serial 3x,PEMERIKSAAN PATOLOGI ANATOMI,Laboratorium,60050.0,harga_langsung,2
+1145,RSUD_REMBANG,utama vvip 350.000 0,Utama (VVIP) 350.000 0,SARANA LAYANAN UMUM SPESIALI,Akomodasi & Visite,505000.0,harga_langsung,1
+1146,RSUD_REMBANG,uvuloplasty,Uvuloplasty,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+1147,RSUD_REMBANG,v / 21 25 orang,V / 21 – 25 orang,PESERTA,Tindakan Lain,5000000.0,harga_langsung,1
+1148,RSUD_REMBANG,vaginoplasty construction,Vaginoplasty construction,Tindakan operatif / kelompok khusus,Tindakan Lain,3680000.0,golongan:operatif/kelompok khusus,1
+1149,RSUD_REMBANG,varikokel,Varikokel,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+1150,RSUD_REMBANG,vasektomi,Vasektomi,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+1151,RSUD_REMBANG,vasografi,Vasografi,Tindakan operatif / kelompok ii,Tindakan Lain,1470000.0,golongan:operatif/kelompok ii,1
+1152,RSUD_REMBANG,vdrl,VDRL,Pemeriksaan,Laboratorium,7700.0,harga_langsung,2
+1153,RSUD_REMBANG,vena seksi,Vena seksi,Tindakan operatif / tindakan kecil,Tindakan Lain,250000.0,golongan:operatif/tindakan kecil,1
+1154,RSUD_REMBANG,ventriculoperitonial shunt vp shunt,Ventriculoperitonial shunt (VP shunt),Tindakan operatif / kelompok khusus,Akomodasi & Visite,3680000.0,golongan:operatif/kelompok khusus,1
+1155,RSUD_REMBANG,ver / her / kher,VER/HER/KHER,Pemeriksaan,Laboratorium,9137.5,harga_langsung,2
+1156,RSUD_REMBANG,vesikolitotomi,Vesikolitotomi,Tindakan operatif / kelompok i,Tindakan Lain,1077000.0,golongan:operatif/kelompok i,1
+1157,RSUD_REMBANG,vi / > 25 orang,VI / > 25 orang,PESERTA,Tindakan Lain,6000000.0,harga_langsung,1
+1158,RSUD_REMBANG,vip 300.00,VIP 300.00,AN A N IS,Akomodasi & Visite,825000.0,harga_langsung,1
+1159,RSUD_REMBANG,vip 300.00 200.000 485.00,VIP 300.00 200.000 485.00,AN A N IS,Akomodasi & Visite,985000.0,harga_langsung,1
+1160,RSUD_REMBANG,vip medis,VIP Medis,A GI S,Akomodasi & Visite,15000.0,harga_langsung,1
+1161,RSUD_REMBANG,vip pratama vip,"VIP Pratama,VIP",LIS LIS,Akomodasi & Visite,30000.0,harga_langsung,1
+1162,RSUD_REMBANG,vip spesialis,VIP Spesialis,A GI S,Akomodasi & Visite,82000.0,harga_langsung,1
+1163,RSUD_REMBANG,vip utama,VIP Utama,KECIL,Akomodasi & Visite,101500.0,harga_langsung,8
+1164,RSUD_REMBANG,visum et repertum,Visum et Repertum,LAYANAN (SURAT KETERANGAN) MEDIKO LEGAL,Tindakan Lain,100000.0,harga_langsung,1
+1165,RSUD_REMBANG,vulva higiene,Vulva higiene,SARANA LAYANAN,Tindakan Lain,11750.0,harga_langsung,2
+1166,RSUD_REMBANG,wafer splinting fraktur gigi,Wafer ( splinting fraktur gigi,TINDAKAN ORTODONSI,Gigi,250000.0,harga_langsung,2
+1167,RSUD_REMBANG,waktu pembekuan,Waktu Pembekuan,Pemeriksaan Sederhana,Laboratorium,4600.0,harga_langsung,1
+1168,RSUD_REMBANG,waktu pembekuan 1.000 1.000 600,Waktu Pembekuan 1.000 1.000 600,Pemeriksaan,Laboratorium,2600.0,harga_langsung,1
+1169,RSUD_REMBANG,waktu perdarahan,Waktu Perdarahan,Pemeriksaan Sederhana,Laboratorium,4600.0,harga_langsung,1
+1170,RSUD_REMBANG,waktu perdarahan 1.000 1.000 600,Waktu Perdarahan 1.000 1.000 600,Pemeriksaan,Laboratorium,2600.0,harga_langsung,1
+1171,RSUD_REMBANG,water drinking test,Water drinking test,Tindakan non operatif / tindakan kecil,Tindakan Lain,31500.0,golongan:non operatif/tindakan kecil,1
+1172,RSUD_REMBANG,widal,Widal,Pemeriksaan,Laboratorium,17712.5,harga_langsung,2
+1173,RSUD_REMBANG,x-ray c arm,X-Ray C Arm,SEDANG,Tindakan Lain,136000.0,harga_langsung,2
+1174,RSUD_REMBANG,zona 1 2 s / d 10,ZONA 1 2 s/d 10,BBM JARAK UANG SAKU JASA,Tindakan Lain,30000.0,harga_langsung,1
+1175,RSUD_REMBANG,zona 1 2 s / d 15,ZONA 1 2 s/d 15,BBM JASA,Tindakan Lain,15000.0,harga_langsung,1
+1176,RSUD_REMBANG,zona 2 3 11 s / d 15,ZONA 2 3 11 s/d 15,BBM JARAK UANG SAKU JASA,Tindakan Lain,30000.0,harga_langsung,1
+1177,RSUD_REMBANG,zona 2 3 16 s / d 30,ZONA 2 3 16 s/d 30,BBM JASA,Tindakan Lain,15000.0,harga_langsung,1
+1178,RSUD_REMBANG,zona 3 4 16 s / d 25,ZONA 3 4 16 s/d 25,BBM JARAK UANG SAKU JASA,Tindakan Lain,45000.0,harga_langsung,1
+1179,RSUD_REMBANG,zona 4 10 26 s / d 50,ZONA 4 10 26 s/d 50,BBM JARAK UANG SAKU JASA,Tindakan Lain,45000.0,harga_langsung,1
+1180,RSUD_REMBANG,zona 5 14 51 s / d 65,ZONA 5 14 51 s/d 65,BBM JARAK UANG SAKU JASA,Tindakan Lain,45000.0,harga_langsung,1
+1181,RSUD_REMBANG,zona i 1 10 km,Zona I 1 – 10 km,LAYANAN SARANA,Tindakan Lain,65000.0,harga_langsung,3
+1182,RSUD_REMBANG,zona ii 10 15,Zona II 10 – 15,LAYANAN SARANA,Tindakan Lain,85000.0,harga_langsung,2
+1183,RSUD_REMBANG,zona ii 10 15 km,Zona II 10 – 15 km,LAYANAN SARANA,Tindakan Lain,95000.0,harga_langsung,1
+1184,RSUD_REMBANG,zona iii 15 25,Zona III 15 – 25,LAYANAN SARANA,Tindakan Lain,105000.0,harga_langsung,2
+1185,RSUD_REMBANG,zona iii 15 25 km,Zona III 15 – 25 km,LAYANAN SARANA,Tindakan Lain,120000.0,harga_langsung,1

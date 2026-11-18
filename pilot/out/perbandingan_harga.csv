@@ -1,0 +1,94 @@
+q_id,t_id,sumber,nama_asli_cimacan,kategori_std,harga_cimacan,nama_asli_rembang,harga_rembang,sumber_harga_R,rasio_C_per_R,log2_rasio,flag
+505,574,label_silver,katopeksi / tarsorhapi / tarsotomi,Mata/THT/Kulit,300000.0,"Lantorapi tarsorapi, tarsotomi hotz operasi",1470000.0,golongan:operatif/kelompok ii,0.20408163265306123,-2.2927817492278457,JANGGAL (>4x)
+121,115,exact,biopsi adneksa,Mata/THT/Kulit,250000.0,Biopsi adneksa,1077000.0,golongan:operatif/kelompok i,0.23212627669452182,-2.1070182498821204,JANGGAL (>4x)
+826,859,exact,Punksi Sumsum Tulang,Rehab Medik,80000.0,Punksi sumsum tulang,250000.0,golongan:operatif/tindakan kecil,0.32,-1.6438561897747246,
+1108,1153,exact,Vena seksi,Rehab Medik,85000.0,Vena seksi,250000.0,golongan:operatif/tindakan kecil,0.34,-1.5563933485243853,
+237,222,exact,Day Care,Akomodasi & Visite,100000.0,Day Care,185000.0,harga_langsung,0.5405405405405406,-0.8875252707415874,
+577,580,exact,Lavement,Akomodasi & Visite,12000.0,Lavement,19250.0,harga_langsung,0.6233766233766234,-0.6818240399737452,
+313,328,exact,EVALUASI ALAT BANTU JALAN,Tindakan Lain,47000.0,Evaluasi Alat Bantu Jalan,72500.0,golongan:non operatif/tindakan sedang,0.6482758620689655,-0.6253202383372972,
+922,995,exact,Suction,Mata/THT/Kulit,20000.0,Suction,22000.0,harga_langsung,0.9090909090909091,-0.13750352374993496,
+822,854,exact,Punksi Ascites,Akomodasi & Visite,96000.0,Punksi Ascites,100500.0,golongan:non operatif/tindakan besar,0.9552238805970149,-0.06608919045777246,
+110,103,exact,BERAT,Tindakan Lain,123000.0,Berat,126250.0,harga_langsung,0.9742574257425742,-0.037625072299917246,
+790,330,label_silver,PROSEDUR EVALUASI PROSTHESIS,Tindakan Lain,72000.0,Evaluasi Prothesis,72500.0,golongan:non operatif/tindakan sedang,0.993103448275862,-0.009984088572622125,
+222,208,exact,CT SCAN ORBITA,Radiologi,1200000.0,CT Scan Orbita,1200000.0,harga_langsung,1.0,0.0,
+655,697,exact,Panoramic,Radiologi,125000.0,Panoramic,110000.0,harga_langsung,1.1363636363636365,0.18442457113742758,
+993,1071,exact,Trabekulektomi,Mata/THT/Kulit,2500000.0,Trabekulektomi,2156000.0,golongan:operatif/kelompok iii,1.1595547309833023,0.2135709167969438,
+1058,1114,exact,USG Guiding,Radiologi,200000.0,USG Guiding,143500.0,harga_langsung,1.3937282229965158,0.478949263099037,
+689,629,label_silver,Pemasanagan ETT,Akomodasi & Visite,55000.0,Memasang ET,38250.0,harga_langsung,1.4379084967320261,0.5239718708320078,
+602,610,exact,MantouxTest,Laboratorium,50000.0,Mantoux test,31500.0,golongan:non operatif/tindakan kecil,1.5873015873015872,0.6665762662748081,
+259,249,exact,DRY NEEDLING,Rehab Medik,165000.0,Dry Needling,100500.0,golongan:non operatif/tindakan besar,1.6417910447761195,0.7152705230668872,
+1070,1123,exact,USG Scrotum,Radiologi,250000.0,USG Scrotum,143500.0,harga_langsung,1.7421602787456445,0.8008773579863991,
+1062,1115,exact,USG INGUINAL,Radiologi,250000.0,USG Inguinal,143500.0,harga_langsung,1.7421602787456445,0.8008773579863991,
+94,95,exact,ASTO,Laboratorium,40000.0,ASTO,22325.0,harga_langsung,1.7917133258678613,0.8413398246535019,
+151,147,label_silver,Cairan Tubuh Asites,Laboratorium,120000.0,Cairan Pleura/asites,65525.0,harga_langsung,1.8313620755436857,0.8729170521674635,
+1017,1098,exact,UJI FUNGSI DEFEKASI,Rehab Medik,134000.0,Uji Fungsi Defekasi,72500.0,golongan:non operatif/tindakan sedang,1.8482758620689654,0.8861801004428379,
+662,725,label_silver,Pasang/cabut chateter,Akomodasi & Visite,30000.0,Pemasangan cateter,15250.0,harga_langsung,1.9672131147540983,0.9761532580456322,
+1073,1126,exact,USG Thyroid,Radiologi,300000.0,USG Thyroid,143500.0,harga_langsung,2.0905923344947737,1.0639117638201931,
+996,1077,exact,TransfusiTukar,Rehab Medik,212500.0,Transfusi tukar,95500.0,harga_langsung,2.225130890052356,1.1538902029893152,
+20,22,exact,Alkali Fosfatase,Laboratorium,30000.0,Alkali Fosfatase,12712.5,harga_langsung,2.359882005899705,1.238714726638381,
+131,132,label_silver,Blepharoplasty,Mata/THT/Kulit,3500000.0,Blepharoplasti,1470000.0,golongan:operatif/kelompok ii,2.380952380952381,1.2515387669959643,
+813,997,label_silver,PsikoterapiSuportif /Sesi,Rehab Medik,120000.0,Supportif Teraphy (SE),50000.0,harga_langsung,2.4,1.2630344058337937,
+585,591,exact,Leukosit,Laboratorium,20000.0,Leukosit,8250.0,harga_langsung,2.4242424242424243,1.277533975528909,
+310,321,exact,Esbach,Laboratorium,16000.0,Esbach,6300.0,harga_langsung,2.5396825396825395,1.3446481713874459,
+877,947,exact,Sedang,Mata/THT/Kulit,175000.0,Sedang,67500.0,harga_langsung,2.5925925925925926,1.374395514781498,
+538,1128,label_silver,Klirens Ureum,Laboratorium,50000.0,Urea Clearance,18475.0,harga_langsung,2.706359945872801,1.436353730515936,
+807,847,exact,Protein Total,Laboratorium,25000.0,Protein Total,9237.5,harga_langsung,2.706359945872801,1.436353730515936,
+351,415,exact,Gamma GT,Laboratorium,35000.0,Gamma GT,12700.0,harga_langsung,2.7559055118110236,1.4625264250601628,
+823,246,label_silver,PunksiCavum Douglas,Mata/THT/Kulit,200000.0,Douglas punctie,72500.0,golongan:non operatif/tindakan sedang,2.7586206896551726,1.4639470997597903,
+888,397,label_silver,Shoulder Kanan AP,Radiologi,110000.0,Photo Shoulder Joint,39750.0,harga_langsung,2.7672955974842766,1.4684767582403042,
+336,362,exact,Fistulografi,Radiologi,300000.0,Fistulografi,102000.0,harga_langsung,2.9411764705882355,1.5563933485243855,
+683,715,exact,Peeling,Mata/THT/Kulit,220000.0,Peeling,72500.0,golongan:non operatif/tindakan sedang,3.0344827586206895,1.601450623509725,
+614,636,exact,Microdermabrasi,Mata/THT/Kulit,220000.0,Microdermabrasi,72500.0,golongan:non operatif/tindakan sedang,3.0344827586206895,1.601450623509725,
+59,61,exact,Anti HBs,Laboratorium,55000.0,Anti HBs,17712.5,harga_langsung,3.10515172900494,1.6346637654940035,
+704,747,exact,Pemasangan Ventilator,Rehab Medik,120000.0,Pemasangan ventilator,38250.0,harga_langsung,3.1372549019607843,1.6495027529158668,
+309,320,exact,Eritrosit,Laboratorium,20000.0,Eritrosit,6375.0,harga_langsung,3.1372549019607843,1.6495027529158668,
+383,444,label_silver,HBsAg (Rapid Test),Laboratorium,75000.0,HBs Ag,23100.0,harga_langsung,3.2467532467532467,1.6989977439671857,
+860,928,exact,Retraksi Bekuan,Laboratorium,30000.0,Retraksi Bekuan,9137.5,harga_langsung,3.283173734610123,1.7150910945434434,
+166,154,exact,CEA,Laboratorium,265000.0,CEA,77000.0,harga_langsung,3.4415584415584415,1.7830620087556601,
+137,138,exact,Breast Care,Mata/THT/Kulit,54000.0,Breast care,15250.0,harga_langsung,3.540983606557377,1.8241501646005822,
+1000,1082,exact,Trigliserida,Laboratorium,45000.0,Trigliserida,12325.0,harga_langsung,3.6511156186612577,1.8683373548391256,
+599,387,label_silver,Mandibula Kanan AP/Eisler,Radiologi,150000.0,Photo Mandibula,39750.0,harga_langsung,3.7735849056603774,1.9159357352115256,
+119,114,exact,Bilirubin total,Laboratorium,35000.0,Bilirubin Total,9237.5,harga_langsung,3.7889039242219216,1.921780557686178,
+656,698,exact,PapSmear,Laboratorium,150000.0,Pap Smear,38500.0,harga_langsung,3.896103896103896,1.9620321498009794,
+1001,1083,exact,Trombosit,Laboratorium,25000.0,Trombosit,6375.0,harga_langsung,3.9215686274509802,1.971430847803229,
+312,326,exact,ESWT,Rehab Medik,399500.0,ESWT,100500.0,golongan:non operatif/tindakan besar,3.9751243781094527,1.9910000017490481,
+986,1061,label_silver,Tindik,Mata/THT/Kulit,50000.0,Tindik telinga bayi,11750.0,harga_langsung,4.25531914893617,2.089267338097087,JANGGAL (>4x)
+859,927,exact,Retikulosit,Laboratorium,45000.0,Retikulosit,10000.0,harga_langsung,4.5,2.169925001442312,JANGGAL (>4x)
+1107,1152,exact,VDRL,Laboratorium,35000.0,VDRL,7700.0,harga_langsung,4.545454545454546,2.1844245711374275,JANGGAL (>4x)
+411,458,exact,Hitung jenis,Laboratorium,30000.0,Hitung Jenis,6500.0,harga_langsung,4.615384615384615,2.206450877467426,JANGGAL (>4x)
+86,84,exact,Appendikografi,Radiologi,300000.0,Appendikografi,63000.0,harga_langsung,4.761904761904762,2.2515387669959646,JANGGAL (>4x)
+1002,1085,exact,Troponin T,Laboratorium,372000.0,Troponin T,77000.0,harga_langsung,4.8311688311688314,2.27237227041313,JANGGAL (>4x)
+1081,1141,exact,Ureum,Laboratorium,45000.0,Ureum,9237.5,harga_langsung,4.871447902571042,2.284350637070886,JANGGAL (>4x)
+884,963,exact,SGOT,Laboratorium,45000.0,SGOT,9237.5,harga_langsung,4.871447902571042,2.284350637070886,JANGGAL (>4x)
+885,964,exact,SGPT,Laboratorium,45000.0,SGPT,9237.5,harga_langsung,4.871447902571042,2.284350637070886,JANGGAL (>4x)
+1106,695,label_silver,VC (Vries Coop),Laboratorium,600000.0,PA Potong Beku (VC),119350.0,harga_langsung,5.027230833682447,2.3297639343014667,JANGGAL (>4x)
+177,163,exact,Cholesterol total,Laboratorium,45000.0,Cholesterol Total,8850.0,harga_langsung,5.084745762711864,2.3461756411340398,JANGGAL (>4x)
+1122,1167,exact,Waktu Pembekuan,Laboratorium,25000.0,Waktu Pembekuan,4600.0,harga_langsung,5.434782608695652,2.4422223286050744,JANGGAL (>4x)
+77,76,exact,Anti Toxoplasma Ig M,Laboratorium,250000.0,Anti Toxoplasma IgM,45350.0,harga_langsung,5.512679162072767,2.462753639020927,JANGGAL (>4x)
+332,378,label_silver,Femur Kiri AP/Lateral,Radiologi,220000.0,Photo Femur 2 Posisi,39750.0,harga_langsung,5.534591194968553,2.468476758240304,JANGGAL (>4x)
+76,75,exact,Anti Toxoplasma Ig G,Laboratorium,255000.0,Anti Toxoplasma IgG,45350.0,harga_langsung,5.622932745314222,2.491322791217698,JANGGAL (>4x)
+381,442,exact,HBDH,Laboratorium,120000.0,HBDH,21175.0,harga_langsung,5.667060212514758,2.502600531163682,JANGGAL (>4x)
+91,91,exact,Asam urat,Laboratorium,45000.0,Asam Urat,7700.0,harga_langsung,5.8441558441558445,2.546994650522136,JANGGAL (>4x)
+806,845,exact,Protein Kuantitatif,Laboratorium,30000.0,Protein Kuantitatif,5050.0,harga_langsung,5.9405940594059405,2.5706072077440862,JANGGAL (>4x)
+728,1028,label_silver,PENELUSURAN MINAT DAN BAKAT,Tindakan Lain,181000.0,"Tes Bakat, Minat dan",30000.0,harga_langsung,6.033333333333333,2.592955291474687,JANGGAL (>4x)
+170,164,label_silver,CHE,Laboratorium,85000.0,Cholinesterase,13850.0,harga_langsung,6.137184115523466,2.617576864975876,JANGGAL (>4x)
+51,53,exact,Anti CMV IgG,Laboratorium,265000.0,Anti CMV IgG,41575.0,harga_langsung,6.374022850270595,2.6722041910506547,JANGGAL (>4x)
+597,607,exact,Malaria,Laboratorium,60000.0,Malaria,9200.0,harga_langsung,6.521739130434782,2.705256734438868,JANGGAL (>4x)
+173,161,exact,Cholesterol HDL,Laboratorium,60000.0,Cholesterol HDL,8850.0,harga_langsung,6.779661016949152,2.7612131404128832,JANGGAL (>4x)
+57,59,exact,Anti HBC Total,Laboratorium,285000.0,Anti HBc Total,41575.0,harga_langsung,6.855081178592904,2.777173750652197,JANGGAL (>4x)
+370,431,label_silver,GTT,Laboratorium,52000.0,Glukosa Toleransi,7000.0,harga_langsung,7.428571428571429,2.893084796083488,JANGGAL (>4x)
+475,504,exact,Irigasi,Mata/THT/Kulit,100000.0,Irigasi,13250.0,harga_langsung,7.547169811320755,2.9159357352115256,JANGGAL (>4x)
+58,60,exact,Anti Hbe,Laboratorium,470000.0,Anti HBe,60050.0,harga_langsung,7.826810990840966,2.968424605746728,JANGGAL (>4x)
+290,296,exact,Ekstraksi kuku,Mata/THT/Kulit,250000.0,Ekstraksi kuku,31500.0,golongan:non operatif/tindakan kecil,7.936507936507937,2.9885043611621707,JANGGAL (>4x)
+52,54,exact,Anti CMV IgM,Laboratorium,360000.0,Anti CMV IgM,41575.0,harga_langsung,8.659049909801563,3.114208737929768,JANGGAL (>4x)
+335,347,exact,Fibrinogen,Laboratorium,135000.0,Fibrinogen,15135.0,harga_langsung,8.919722497522299,3.1569988269980422,JANGGAL (>4x)
+579,581,exact,LDH,Laboratorium,310000.0,LDH,32500.0,harga_langsung,9.538461538461538,3.253756592245783,JANGGAL (>4x)
+70,71,exact,Anti Rubella Ig G,Laboratorium,270000.0,Anti Rubella IgG,27725.0,harga_langsung,9.738503155996392,3.2837000417764832,JANGGAL (>4x)
+344,404,exact,Free T3,Laboratorium,340000.0,Free T3,32337.5,harga_langsung,10.514109006571319,3.3942546923403234,JANGGAL (>4x)
+62,62,exact,Anti HCV,Laboratorium,395000.0,Anti HCV,36950.0,harga_langsung,10.690121786197563,3.4182063838056767,JANGGAL (>4x)
+176,162,label_silver,Cholesterol LDL direk,Laboratorium,100000.0,Cholesterol LDL,8850.0,harga_langsung,11.299435028248588,3.49817873457909,JANGGAL (>4x)
+345,405,exact,Free T4,Laboratorium,400000.0,Free T4,32337.5,harga_langsung,12.369540007730963,3.628719945977346,JANGGAL (>4x)
+71,72,exact,Anti Rubella Ig M,Laboratorium,345000.0,Anti Rubella IgM,27725.0,harga_langsung,12.443642921550946,3.6373369963911837,JANGGAL (>4x)
+238,225,exact,Debridement,Rawat Jalan & Darurat,330000.0,Debridement,23250.0,harga_langsung,14.193548387096774,3.8271634031377846,JANGGAL (>4x)
+56,58,exact,Anti HBC IgM,Laboratorium,500000.0,Anti HBc IgM,25400.0,harga_langsung,19.68503937007874,4.299027692777283,JANGGAL (>4x)
+113,105,exact,Beta HCg,Laboratorium,430000.0,Beta HCG,13087.5,harga_langsung,32.85577841451767,5.038075217546014,JANGGAL (>4x)

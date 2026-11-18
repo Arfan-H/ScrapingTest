@@ -1,0 +1,7 @@
+pdfplumber
+pandas
+networkx
+scikit-learn
+onnxruntime
+tokenizers
+huggingface_hub

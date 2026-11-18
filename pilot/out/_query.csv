@@ -1,0 +1,1136 @@
+q_id,rs,nama_norm,nama_asli,kategori,kategori_std,harga,sumber,n
+0,RSUD_CIMACAN,a . extraksi komplikasi,a . Extraksi Komplikasi,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,100000.0,harga_langsung,1
+1,RSUD_CIMACAN,acheivmenttest,ACHEIVMENTTEST,"EVALUASI KEMAMPUAN INTELEKTUAL, ACADEMIC",Tindakan Lain,126000.0,harga_langsung,1
+2,RSUD_CIMACAN,activator,activator,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,1600000.0,harga_langsung,1
+3,RSUD_CIMACAN,aff hecting,Aff Hecting,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,200000.0,harga_langsung,2
+4,RSUD_CIMACAN,aff infus,Aff Infus,Tarif Tindakan Kecil Kebidanan,Kebidanan,10000.0,harga_langsung,1
+5,RSUD_CIMACAN,aff wire,AffWire,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,679500.0,harga_langsung,1
+6,RSUD_CIMACAN,agd,AGD,Tarif Pemeriksaan Laboratorium,Laboratorium,352000.0,harga_langsung,1
+7,RSUD_CIMACAN,akses arteri,Akses Arteri,Pelayanan Penunjang Diagnostik Kardiovaskular,Tindakan Lain,2000000.0,harga_langsung,1
+8,RSUD_CIMACAN,akses vena central,Akses Vena Central,Pelayanan Penunjang Diagnostik Kardiovaskular,Tindakan Lain,2000000.0,harga_langsung,1
+9,RSUD_CIMACAN,aktivasi alat ortho lepasan,Aktivasi alat ortho lepasan,Tarif Tindakan Medik Rawat Jalan,Rehab Medik,100000.0,harga_langsung,1
+10,RSUD_CIMACAN,akupuntur,Akupuntur,ESTETIK,Mata/THT/Kulit,125000.0,harga_langsung,1
+11,RSUD_CIMACAN,akupuntur manual,Akupuntur Manual,ESTETIK,Mata/THT/Kulit,75000.0,harga_langsung,1
+12,RSUD_CIMACAN,akupuntur termal,AkupunturTermal,ESTETIK,Mata/THT/Kulit,75000.0,harga_langsung,1
+13,RSUD_CIMACAN,alat cekat metal / logam 2 rh,alat cekat metal / logam 2 Rh,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,7500000.0,harga_langsung,1
+14,RSUD_CIMACAN,alat cekat metal logam 1 rh,alat cekat metal logam 1 Rh,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,4000000.0,harga_langsung,1
+15,RSUD_CIMACAN,alat cekat rujukan 1 rh,alat cekat rujukan 1 Rh,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,1500000.0,harga_langsung,1
+16,RSUD_CIMACAN,alat interseptik orthodontic / rh,alat interseptik orthodontic/Rh,Tarif Tindakan Medik Rawat Jalan,Rehab Medik,2000000.0,harga_langsung,1
+17,RSUD_CIMACAN,alat ortho cekat maloklusi iii,alat ortho cekat maloklusi III,Tarif Tindakan Medik Rawat Jalan,Rehab Medik,8500000.0,harga_langsung,1
+18,RSUD_CIMACAN,albumin / globulin,Albumin/ Globulin,Tarif Pemeriksaan Laboratorium,Laboratorium,35000.0,harga_langsung,1
+19,RSUD_CIMACAN,alfa fetoprotein,Alfa Fetoprotein,Tarif Pemeriksaan Laboratorium,Laboratorium,275000.0,harga_langsung,1
+20,RSUD_CIMACAN,alkali fosfatase,Alkali Fosfatase,Tarif Pemeriksaan Laboratorium,Laboratorium,30000.0,harga_langsung,1
+21,RSUD_CIMACAN,alveolectomy / gingivectomy,Alveolectomy/Gingivectomy,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,1183500.0,harga_langsung,1
+22,RSUD_CIMACAN,ambulatory blood pressure monitoring abpm,Ambulatory Blood Pressure Monitoring (ABPM),Pelayanan Penunjang Diagnostik Kardiovaskular,Tindakan Lain,780000.0,harga_langsung,1
+23,RSUD_CIMACAN,ambulatory holter monitoring,Ambulatory Holter Monitoring,Pelayanan Penunjang Diagnostik Kardiovaskular,Tindakan Lain,480000.0,harga_langsung,1
+24,RSUD_CIMACAN,amilase,Amilase,Tarif Pemeriksaan Laboratorium,Laboratorium,130000.0,harga_langsung,1
+25,RSUD_CIMACAN,amnutasi dengananastesi loka 1 iari,Amnutasi Dengananastesi loka 1 iari,ESTETIK,Mata/THT/Kulit,130000.0,harga_langsung,1
+26,RSUD_CIMACAN,amputasi 1 stel,Amputasi 1 stel,ESTETIK,Mata/THT/Kulit,100000.0,harga_langsung,1
+27,RSUD_CIMACAN,amputasi dengan anestesi local 1 jari,Amputasi dengan anestesi local 1 jari,ESTETIK,Mata/THT/Kulit,138000.0,harga_langsung,1
+28,RSUD_CIMACAN,ana,ANA,Tarif Pemeriksaan Laboratorium,Laboratorium,440000.0,harga_langsung,1
+29,RSUD_CIMACAN,analisa batu gijal,Analisa Batu Gijal,Tarif Pemeriksaan Laboratorium,Laboratorium,275000.0,harga_langsung,1
+30,RSUD_CIMACAN,analyzer,Analyzer,Tarif Pemeriksaan Laboratorium,Laboratorium,85000.0,harga_langsung,1
+31,RSUD_CIMACAN,anekat iahitan sederhanakurangdari 5 iahitan,Anekat iahitan Sederhanakurangdari 5 iahitan,ESTETIK,Mata/THT/Kulit,25000.0,harga_langsung,1
+32,RSUD_CIMACAN,angkat iahitan korrmlek kurangdari 5 iahitan,Angkat iahitan korrmlek kurangdari 5 iahitan,ESTETIK,Mata/THT/Kulit,30000.0,harga_langsung,1
+33,RSUD_CIMACAN,angkat jahitan mata,Angkat Jahitan Mata,ESTETIK,Mata/THT/Kulit,100000.0,harga_langsung,1
+34,RSUD_CIMACAN,angkat jahitan operasi <6,Angkat jahitanOperasi (<6),ESTETIK,Mata/THT/Kulit,150000.0,harga_langsung,1
+35,RSUD_CIMACAN,angkat nasogastric tube,Angkat NGT,ESTETIK,Mata/THT/Kulit,120000.0,harga_langsung,1
+36,RSUD_CIMACAN,angkat tampon hidung anterior bilateral,AngkatTampon Hidung AnteriorBilateral,ESTETIK,Radiologi,285000.0,harga_langsung,1
+37,RSUD_CIMACAN,angkat tampon hidung anterior unilateral,AngkatTampon Hidung AnteriorUnilateral,ESTETIK,Radiologi,240000.0,harga_langsung,1
+38,RSUD_CIMACAN,angkat tampon hidung protestor,AngkatTamponHidung Protestor,ESTETIK,Mata/THT/Kulit,300000.0,harga_langsung,1
+39,RSUD_CIMACAN,angkatan jahitan sederhana kurangdari 5jahitan,AngkatanJahitan SederhanaKurangdari 5jahitan,ESTETIK,Mata/THT/Kulit,25000.0,harga_langsung,1
+40,RSUD_CIMACAN,angkatan jahitan sederhana lebih dari 5jahitan,Angkatan Jahitan Sederhana Lebih dari 5jahitan,ESTETIK,Mata/THT/Kulit,30000.0,harga_langsung,1
+41,RSUD_CIMACAN,angkatjahitan operasi >6,AngkatjahitanOperasi (>6),ESTETIK,Mata/THT/Kulit,165000.0,harga_langsung,1
+42,RSUD_CIMACAN,ankle joint bilateral ap 86 lateral,Ankle Joint Bilateral AP 86 Lateral,Tarif Tindakan Radiologi,Radiologi,300000.0,harga_langsung,1
+43,RSUD_CIMACAN,ankle joint kanan ap 85 lateral,Ankle Joint Kanan AP 85 Lateral,Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+44,RSUD_CIMACAN,ankle joint kiri ap 85 lateral,Ankle Joint Kiri AP 85 Lateral,Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+45,RSUD_CIMACAN,annkle brachial index abi,Annkle Brachial Index (ABI),Pelayanan Penunjang Diagnostik Kardiovaskular,Tindakan Lain,80000.0,harga_langsung,1
+46,RSUD_CIMACAN,antebrachi bilateral ap / lateral,Antebrachi Bilateral AP/Lateral,Tarif Tindakan Radiologi,Radiologi,300000.0,harga_langsung,1
+47,RSUD_CIMACAN,antebrachi kanan ap / lateral,Antebrachi Kanan AP/Lateral,Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+48,RSUD_CIMACAN,antebrachi kiri ap / lateral,Antebrachi Kiri AP/Lateral,Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+49,RSUD_CIMACAN,anti ccp,Anti CCP,Tarif Pemeriksaan Laboratorium,Laboratorium,440000.0,harga_langsung,1
+50,RSUD_CIMACAN,anti cmv avidity,Anti CMV Avidity,Tarif Pemeriksaan Laboratorium,Laboratorium,400000.0,harga_langsung,1
+51,RSUD_CIMACAN,anti cmv ig g,Anti CMV IgG,Tarif Pemeriksaan Laboratorium,Laboratorium,265000.0,harga_langsung,1
+52,RSUD_CIMACAN,anti cmv ig m,Anti CMV IgM,Tarif Pemeriksaan Laboratorium,Laboratorium,360000.0,harga_langsung,1
+53,RSUD_CIMACAN,anti ds dna,Anti DS DNA,Tarif Pemeriksaan Laboratorium,Laboratorium,455000.0,harga_langsung,1
+54,RSUD_CIMACAN,anti hay ig g,Anti HAY IgG,Tarif Pemeriksaan Laboratorium,Laboratorium,390000.0,harga_langsung,1
+55,RSUD_CIMACAN,anti hay ig m,Anti HAY IgM,Tarif Pemeriksaan Laboratorium,Laboratorium,350000.0,harga_langsung,1
+56,RSUD_CIMACAN,anti hbc ig m,Anti HBC IgM,Tarif Pemeriksaan Laboratorium,Laboratorium,500000.0,harga_langsung,1
+57,RSUD_CIMACAN,anti hbc total,Anti HBC Total,Tarif Pemeriksaan Laboratorium,Laboratorium,285000.0,harga_langsung,1
+58,RSUD_CIMACAN,anti hbe,Anti Hbe,Tarif Pemeriksaan Laboratorium,Laboratorium,470000.0,harga_langsung,1
+59,RSUD_CIMACAN,anti hbs,Anti HBs,Tarif Pemeriksaan Laboratorium,Laboratorium,55000.0,harga_langsung,1
+60,RSUD_CIMACAN,anti hbs ag elisa,Anti HBs AG (Elisa),Tarif Pemeriksaan Laboratorium,Laboratorium,95000.0,harga_langsung,1
+61,RSUD_CIMACAN,anti hbs ag repid,Anti HBs AG (Repid),Tarif Pemeriksaan Laboratorium,Laboratorium,65000.0,harga_langsung,1
+62,RSUD_CIMACAN,anti hcv,Anti HCV,Tarif Pemeriksaan Laboratorium,Laboratorium,395000.0,harga_langsung,1
+63,RSUD_CIMACAN,anti hcv ig m,Anti HCV IgM,Tarif Pemeriksaan Laboratorium,Laboratorium,540000.0,harga_langsung,1
+64,RSUD_CIMACAN,anti hcv rapid test,Anti HCV (Rapid Test),Tarif Pemeriksaan Laboratorium,Laboratorium,55000.0,harga_langsung,1
+65,RSUD_CIMACAN,anti helicobacter ftylori ig g,Anti Helicobacter Ftylori IgG,Tarif Pemeriksaan Laboratorium,Laboratorium,490000.0,harga_langsung,1
+66,RSUD_CIMACAN,anti helicobacter ig m,Anti Helicobacter IgM,Tarif Pemeriksaan Laboratorium,Laboratorium,500000.0,harga_langsung,1
+67,RSUD_CIMACAN,anti hiv,Anti HIV,Tarif Pemeriksaan Laboratorium,Laboratorium,210000.0,harga_langsung,1
+68,RSUD_CIMACAN,anti hsv 2 ig g,Anti HSV 2 IgG,Tarif Pemeriksaan Laboratorium,Laboratorium,265000.0,harga_langsung,1
+69,RSUD_CIMACAN,anti hsv 2 ig m,Anti HSV 2 IgM,Tarif Pemeriksaan Laboratorium,Laboratorium,265000.0,harga_langsung,1
+70,RSUD_CIMACAN,anti rubella ig g,Anti Rubella Ig G,Tarif Pemeriksaan Laboratorium,Laboratorium,270000.0,harga_langsung,1
+71,RSUD_CIMACAN,anti rubella ig m,Anti Rubella Ig M,Tarif Pemeriksaan Laboratorium,Laboratorium,345000.0,harga_langsung,1
+72,RSUD_CIMACAN,anti salmonela typhi ig g elisa,Anti Salmonela Typhi Ig G (Elisa),Tarif Pemeriksaan Laboratorium,Laboratorium,275000.0,harga_langsung,1
+73,RSUD_CIMACAN,anti salmonela typhi ig m elisa,Anti Salmonela Typhi Ig M (Elisa),Tarif Pemeriksaan Laboratorium,Laboratorium,275000.0,harga_langsung,1
+74,RSUD_CIMACAN,anti salmonela typhi ig m rapid,Anti Salmonela Typhi Ig M Rapid,Tarif Pemeriksaan Laboratorium,Laboratorium,245000.0,harga_langsung,1
+75,RSUD_CIMACAN,anti toxoplasma avidity,Anti Toxoplasma Avidity,Tarif Pemeriksaan Laboratorium,Laboratorium,400000.0,harga_langsung,1
+76,RSUD_CIMACAN,anti toxoplasma ig g,Anti Toxoplasma Ig G,Tarif Pemeriksaan Laboratorium,Laboratorium,255000.0,harga_langsung,1
+77,RSUD_CIMACAN,anti toxoplasma ig m,Anti Toxoplasma Ig M,Tarif Pemeriksaan Laboratorium,Laboratorium,250000.0,harga_langsung,1
+78,RSUD_CIMACAN,apicoectomy retrograd filling,Apicoectomy + Retrograd Filling,ENDODONTIK,Gigi,1102500.0,harga_langsung,1
+79,RSUD_CIMACAN,aplikasi podofilin tingtura,Aplikasi podofilin tingtura,ESTETIK,Mata/THT/Kulit,15500.0,harga_langsung,1
+80,RSUD_CIMACAN,aplikasitrichoroacetic,Aplikasitrichoroacetic,ESTETIK,Mata/THT/Kulit,15500.0,harga_langsung,1
+81,RSUD_CIMACAN,app catheter,App catheter,ESTETIK,Mata/THT/Kulit,25000.0,harga_langsung,1
+82,RSUD_CIMACAN,app drain,App Drain,ESTETIK,Mata/THT/Kulit,25000.0,harga_langsung,2
+83,RSUD_CIMACAN,app hecting,App Hecting,ESTETIK,Mata/THT/Kulit,30000.0,harga_langsung,2
+84,RSUD_CIMACAN,app infus / transfusi,App Infus/Transfusi,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,14000.0,harga_langsung,1
+85,RSUD_CIMACAN,app nasogastric tube,App NGT,ESTETIK,Mata/THT/Kulit,23000.0,harga_langsung,2
+86,RSUD_CIMACAN,appendikografi,Appendikografi,Tarif Tindakan Radiologi,Radiologi,300000.0,harga_langsung,1
+87,RSUD_CIMACAN,aptt,APTT,Tarif Pemeriksaan Laboratorium,Laboratorium,205000.0,harga_langsung,1
+88,RSUD_CIMACAN,apus hidung,Apus Hidung,ESTETIK,Mata/THT/Kulit,120000.0,harga_langsung,1
+89,RSUD_CIMACAN,apus telinga,ApusTelinga,ESTETIK,Mata/THT/Kulit,120000.0,harga_langsung,1
+90,RSUD_CIMACAN,apus tenggorokan,ApusTenggorokan,ESTETIK,Mata/THT/Kulit,120000.0,harga_langsung,1
+91,RSUD_CIMACAN,asam urat,Asam urat,Tarif Pemeriksaan Laboratorium,Laboratorium,45000.0,harga_langsung,1
+92,RSUD_CIMACAN,askep rajal,Askep rajal,ESTETIK,Mata/THT/Kulit,40000.0,harga_langsung,1
+93,RSUD_CIMACAN,aspirasi,Aspirasi,ESTETIK,Mata/THT/Kulit,120000.0,harga_langsung,1
+94,RSUD_CIMACAN,asto,ASTO,Tarif Pemeriksaan Laboratorium,Laboratorium,40000.0,harga_langsung,1
+95,RSUD_CIMACAN,asto semi kuantitatif,Asto semi kuantitatif,Tarif Pemeriksaan Laboratorium,Laboratorium,110000.0,harga_langsung,1
+96,RSUD_CIMACAN,asuhan gizi / ncp,Asuhan Gizi / NCP,Tarif Makan Cair HCJJ ( Home Care Jarak Jauh ),Akomodasi & Visite,25000.0,harga_langsung,1
+97,RSUD_CIMACAN,asuhan kebidanan,Asuhan Kebidanan,Tarif Tindakan Kecil Kebidanan,Kebidanan,12000.0,harga_langsung,2
+98,RSUD_CIMACAN,asuhan keperawatan,Asuhan Keperawatan,ESTETIK,Mata/THT/Kulit,30000.0,harga_langsung,2
+99,RSUD_CIMACAN,audiometri,Audiometri,Tarif Tindakan Penunjang Diagnostik,Tindakan Lain,125000.0,harga_langsung,1
+100,RSUD_CIMACAN,audiometri nada mumi,AudiometriNadaMumi,ESTETIK,Mata/THT/Kulit,160000.0,harga_langsung,1
+101,RSUD_CIMACAN,audiometri tutur,AudiometriTutur,ESTETIK,Mata/THT/Kulit,160000.0,harga_langsung,1
+102,RSUD_CIMACAN,auto retraksi,auto retraksi,ESTETIK,Mata/THT/Kulit,75000.0,harga_langsung,1
+103,RSUD_CIMACAN,b 2 gpi ig g,B 2 GPi IgG,Tarif Pemeriksaan Laboratorium,Laboratorium,390000.0,harga_langsung,1
+104,RSUD_CIMACAN,bakteri tahan asam 1 x,BTA 1 X,Tarif Pemeriksaan Laboratorium,Laboratorium,20000.0,harga_langsung,1
+105,RSUD_CIMACAN,band braket p / 1,band braket P/1,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,170000.0,harga_langsung,1
+106,RSUD_CIMACAN,band double tube,band double tube,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,200000.0,harga_langsung,1
+107,RSUD_CIMACAN,band single tube,band single tube,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,170000.0,harga_langsung,1
+108,RSUD_CIMACAN,bed side monitor,Bed side monitor,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,30000.0,harga_langsung,3
+109,RSUD_CIMACAN,behavior per session,Behavior per Session,ESTETIK,Mata/THT/Kulit,65000.0,harga_langsung,1
+110,RSUD_CIMACAN,berat,BERAT,MANUAL LYMPATIC ORAINAGE (MLD)/ LYMPHATIC PUMP,Tindakan Lain,123000.0,harga_langsung,1
+111,RSUD_CIMACAN,besar,Besar,ESTETIK,Mata/THT/Kulit,225000.0,harga_langsung,2
+112,RSUD_CIMACAN,besar / lesi > 4,Besar / Lesi > 4,ESTETIK,Mata/THT/Kulit,275000.0,harga_langsung,1
+113,RSUD_CIMACAN,beta hcg,Beta HCg,Tarif Pemeriksaan Laboratorium,Laboratorium,430000.0,harga_langsung,1
+114,RSUD_CIMACAN,biasa,Biasa,Tarif Tindakan Bedah Mayat dan Pengawetan Jenazah,Tindakan Lain,875000.0,harga_langsung,2
+115,RSUD_CIMACAN,bikarbonat,Bikarbonat,Tarif Pemeriksaan Laboratorium,Laboratorium,60000.0,harga_langsung,1
+116,RSUD_CIMACAN,bilas lambung,Bilas Lambung,Tarif Tindakan Medis dan Terapi bagian Perinatologi Anak,Rehab Medik,60000.0,harga_langsung,4
+117,RSUD_CIMACAN,bilirubin direct,Bilirubin direct,Tarif Pemeriksaan Laboratorium,Laboratorium,35000.0,harga_langsung,1
+118,RSUD_CIMACAN,bilirubin indirect,Bilirubin indirect,Tarif Pemeriksaan Laboratorium,Laboratorium,35000.0,harga_langsung,1
+119,RSUD_CIMACAN,bilirubin total,Bilirubin total,Tarif Pemeriksaan Laboratorium,Laboratorium,35000.0,harga_langsung,1
+120,RSUD_CIMACAN,biopsi,Biopsi,ESTETIK,Mata/THT/Kulit,200000.0,harga_langsung,1
+121,RSUD_CIMACAN,biopsi adneksa,biopsi adneksa,ESTETIK,Mata/THT/Kulit,250000.0,harga_langsung,1
+122,RSUD_CIMACAN,biopsi insisi tumor kecil,biopsi insisi tumor kecil,ESTETIK,Mata/THT/Kulit,250000.0,harga_langsung,1
+123,RSUD_CIMACAN,biopsi jarum halus / fnab,Biopsi jarum halus/FNAB,Tarif Tindakan Medis Khusus Paru,Tindakan Lain,471000.0,harga_langsung,1
+124,RSUD_CIMACAN,biopsi paru dengan jarum core,Biopsi paru dengan jarum core,Tarif Tindakan Medis Khusus Paru,Tindakan Lain,1253000.0,harga_langsung,1
+125,RSUD_CIMACAN,biopsi pleura,Biopsi Pleura,Tarif Tindakan Medis Khusus Paru,Tindakan Lain,471000.0,harga_langsung,1
+126,RSUD_CIMACAN,bj. plasma,BJ. Plasma,Tarif Pemeriksaan Laboratorium,Laboratorium,20000.0,harga_langsung,1
+127,RSUD_CIMACAN,bladder spoeling,bladder spoeling,ESTETIK,Mata/THT/Kulit,50000.0,harga_langsung,1
+128,RSUD_CIMACAN,bladder training,bladder training,ESTETIK,Mata/THT/Kulit,30000.0,harga_langsung,1
+129,RSUD_CIMACAN,bleaching ekstakoronal / gigi,Bleaching Ekstakoronal/gigi,ESTETIK,Gigi,393500.0,harga_langsung,1
+130,RSUD_CIMACAN,bleaching intrakoronal / gigi,Bleaching intrakoronal/gigi,ESTETIK,Gigi,150000.0,harga_langsung,1
+131,RSUD_CIMACAN,blepharoplasty,Blepharoplasty,ESTETIK,Mata/THT/Kulit,3500000.0,harga_langsung,1
+132,RSUD_CIMACAN,bno 2 posisi,BNO 2 Posisi,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+133,RSUD_CIMACAN,bno 3 posisi,BNO 3 Posisi,Tarif Tindakan Radiologi,Radiologi,330000.0,harga_langsung,1
+134,RSUD_CIMACAN,bno ap,BNO AP,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+135,RSUD_CIMACAN,bonding buc tube,bonding buc tube,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,100000.0,harga_langsung,1
+136,RSUD_CIMACAN,braket metal,braket metal,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,100000.0,harga_langsung,1
+137,RSUD_CIMACAN,breast care,Breast Care,ESTETIK,Mata/THT/Kulit,54000.0,harga_langsung,3
+138,RSUD_CIMACAN,brief per session,Brief Per Session,ESTETIK,Mata/THT/Kulit,35000.0,harga_langsung,1
+139,RSUD_CIMACAN,bronkoskopi,Bronkoskopi,Tarif Tindakan Medis Khusus Paru,Tindakan Lain,724000.0,harga_langsung,1
+140,RSUD_CIMACAN,bronkoskopi biopsi,Bronkoskopi + Biopsi,Tarif Tindakan Medis Khusus Paru,Tindakan Lain,932000.0,harga_langsung,1
+141,RSUD_CIMACAN,bronkoskopi brush,Bronkoskopi + Brush,Tarif Tindakan Medis Khusus Paru,Tindakan Lain,152000.0,harga_langsung,1
+142,RSUD_CIMACAN,bubble test echocardiography,Bubble Test Echocardiography,Pelayanan Penunjang Diagnostik Kardiovaskular,Tindakan Lain,600000.0,harga_langsung,1
+143,RSUD_CIMACAN,buka / angkat jahitan,Buka/AngkatJahitan,ESTETIK,Mata/THT/Kulit,38500.0,harga_langsung,1
+144,RSUD_CIMACAN,buka braket / rh pasien luar,buka braket/Rh pasien luar,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,200000.0,harga_langsung,1
+145,RSUD_CIMACAN,buka braket ra rb,buka braket RA RB,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,150000.0,harga_langsung,1
+146,RSUD_CIMACAN,businasi hurtz achalasia,BusinasiHurtz (achalasia),Tarif Pelayanan Endoskopik,Tindakan Lain,445000.0,harga_langsung,1
+147,RSUD_CIMACAN,cabut selang wsd / pigtail,Cabut selang WSD/pigtail,Tarif Tindakan Medis Khusus Paru,Tindakan Lain,276000.0,harga_langsung,1
+148,RSUD_CIMACAN,cair anak,Cair Anak,Tarif Makan Cair,Akomodasi & Visite,35000.0,harga_langsung,2
+149,RSUD_CIMACAN,cair biasa,Cair Biasa,Tarif Makan Cair,Akomodasi & Visite,40000.0,harga_langsung,2
+150,RSUD_CIMACAN,cair khusus,Cair Khusus,Tarif Makan Cair,Akomodasi & Visite,65000.0,harga_langsung,2
+151,RSUD_CIMACAN,cairan tubuh asites,Cairan Tubuh Asites,Tarif Pemeriksaan Laboratorium,Laboratorium,120000.0,harga_langsung,1
+152,RSUD_CIMACAN,cairan tubuh effusi pleura,Cairan Tubuh Effusi Pleura,Tarif Pemeriksaan Laboratorium,Laboratorium,120000.0,harga_langsung,1
+153,RSUD_CIMACAN,cairan tubuh lainnya,Cairan Tubuh Lainnya,Tarif Pemeriksaan Laboratorium,Laboratorium,120000.0,harga_langsung,1
+154,RSUD_CIMACAN,calcaneus bilateral ap axial / lateral,Calcaneus Bilateral AP Axial/Lateral,Tarif Tindakan Radiologi,Radiologi,300000.0,harga_langsung,1
+155,RSUD_CIMACAN,calcaneus kanan ap axial / lateral,Calcaneus Kanan AP Axial/Lateral,Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+156,RSUD_CIMACAN,calcaneus kiri ap axial / lateral,Calcaneus Kiri AP Axial/Lateral,Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+157,RSUD_CIMACAN,caldwell,Caldwell,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+158,RSUD_CIMACAN,canalith repositional therapy crt,CanalithRepositionalTherapy (CRT),ESTETIK,Mata/THT/Kulit,270000.0,harga_langsung,1
+159,RSUD_CIMACAN,casting,CASTING,ERGOCYCLE,Rehab Medik,59000.0,harga_langsung,1
+160,RSUD_CIMACAN,cat,CAT,ESTETIK,Mata/THT/Kulit,75000.0,harga_langsung,1
+161,RSUD_CIMACAN,cbct luas lapangan besar dengan expertise,CBCT LUAS LAPANGAN BESAR DENGAN EXPERTISE,CBCT LUAS LAPANGAN SEDANG TANPA EXPERTISE,Tindakan Lain,850000.0,harga_langsung,1
+162,RSUD_CIMACAN,cbct luas lapangan besar tanpa expertise,CBCT LUAS LAPANGAN BESAR TANPA EXPERTISE,CBCT LUAS LAPANGAN SEDANG TANPA EXPERTISE,Tindakan Lain,750000.0,harga_langsung,1
+163,RSUD_CIMACAN,cbct luas lapangan kecil dengan expertise,CBCT LUAS LAPANGAN KECIL DENGAN EXPERTISE,CBCT LUAS LAPANGAN SEDANG TANPA EXPERTISE,Tindakan Lain,450000.0,harga_langsung,1
+164,RSUD_CIMACAN,cbct luas lapangan keciltanpa expertise,CBCT LUAS LAPANGAN KECILTANPA EXPERTISE,CT SCAN MASTOID NON KONTRAS,Radiologi,350000.0,harga_langsung,1
+165,RSUD_CIMACAN,cbct luas lapangan sedang dengan expertise,CBCT LUAS LAPANGAN SEDANG DENGAN EXPERTISE,CBCT LUAS LAPANGAN SEDANG TANPA EXPERTISE,Tindakan Lain,600000.0,harga_langsung,1
+166,RSUD_CIMACAN,cea,CEA,Tarif Pemeriksaan Laboratorium,Laboratorium,265000.0,harga_langsung,1
+167,RSUD_CIMACAN,cek lakmus,Cek Lakmus,Tarif Tindakan Kecil Kebidanan,Kebidanan,8750.0,harga_langsung,2
+168,RSUD_CIMACAN,cetak alginat,Cetak alginat,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,50000.0,harga_langsung,1
+169,RSUD_CIMACAN,cetak alginat / rh,cetak alginat/Rh,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,75000.0,harga_langsung,1
+170,RSUD_CIMACAN,che,CHE,Tarif Pemeriksaan Laboratorium,Laboratorium,85000.0,harga_langsung,1
+171,RSUD_CIMACAN,chepalometri,Chepalometri,Tarif Tindakan Radiologi,Radiologi,125000.0,harga_langsung,1
+172,RSUD_CIMACAN,chin up,chin up,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,800000.0,harga_langsung,1
+173,RSUD_CIMACAN,cholesterol hdl,Cholesterol HDL,Tarif Pemeriksaan Laboratorium,Laboratorium,60000.0,harga_langsung,1
+174,RSUD_CIMACAN,cholesterol hdl direk,Cholesterol HDL Direk,Tarif Pemeriksaan Laboratorium,Laboratorium,93000.0,harga_langsung,1
+175,RSUD_CIMACAN,cholesterol ldl biasa,Cholesterol LDL Biasa,Tarif Pemeriksaan Laboratorium,Laboratorium,30000.0,harga_langsung,1
+176,RSUD_CIMACAN,cholesterol ldl direk,Cholesterol LDL direk,Tarif Pemeriksaan Laboratorium,Laboratorium,100000.0,harga_langsung,1
+177,RSUD_CIMACAN,cholesterol total,Cholesterol total,Tarif Pemeriksaan Laboratorium,Laboratorium,45000.0,harga_langsung,1
+178,RSUD_CIMACAN,ckmb,CKMB,Tarif Pemeriksaan Laboratorium,Laboratorium,290000.0,harga_langsung,1
+179,RSUD_CIMACAN,clavicula bilateral,Clavicula Bilateral,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+180,RSUD_CIMACAN,clavicula kanan,Clavicula Kanan,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+181,RSUD_CIMACAN,clavicula kiri,Clavicula Kiri,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+182,RSUD_CIMACAN,cognitif behavior therapy cbt / sesi,Cognitif BehaviorTherapy (CBT) /Sesi,ESTETIK,Mata/THT/Kulit,150000.0,harga_langsung,1
+183,RSUD_CIMACAN,colar neck,Colar neck,ESTETIK,Mata/THT/Kulit,18000.0,harga_langsung,1
+184,RSUD_CIMACAN,colon inloop barium enema dewasa,Colon Inloop (Barium Enema) Dewasa,Tarif Tindakan Radiologi,Radiologi,500000.0,harga_langsung,1
+185,RSUD_CIMACAN,colonscopy,Colonscopy,Tarif Pelayanan Endoskopik,Tindakan Lain,1225000.0,harga_langsung,1
+186,RSUD_CIMACAN,continuous negative pressure ventilation cnp,Continuous negative Pressure Ventilation (CNP),Tarif Tindakan Medis Khusus Paru,Tindakan Lain,445000.0,harga_langsung,1
+187,RSUD_CIMACAN,continuous positive airway pressure cpap,Continuous Positive Airway Pressure (CPAP),Tarif Tindakan Medis Khusus Paru,Tindakan Lain,685000.0,harga_langsung,1
+188,RSUD_CIMACAN,contitive per session,Contitive per Session,ESTETIK,Mata/THT/Kulit,65000.0,harga_langsung,1
+189,RSUD_CIMACAN,core built up,Core Built Up,RESTORASI POST ENDODONTIK,Gigi,52500.0,harga_langsung,1
+190,RSUD_CIMACAN,corpus alineum,Corpus Alineum,ESTETIK,Mata/THT/Kulit,36000.0,harga_langsung,1
+191,RSUD_CIMACAN,costae,Costae,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+192,RSUD_CIMACAN,coxygeus ap / lateral,Coxygeus Ap/Lateral,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+193,RSUD_CIMACAN,cranium ap / lateral,Cranium Ap/Lateral,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+194,RSUD_CIMACAN,cross pmi,Cross PMI,Tarif Pelayanan Bank Darah,Laboratorium,35000.0,harga_langsung,1
+195,RSUD_CIMACAN,crossmacth albumin,Crossmacth Albumin,Tarif Pelayanan Bank Darah,Laboratorium,55000.0,harga_langsung,1
+196,RSUD_CIMACAN,crossmacth geltes,Crossmacth Geltes,Tarif Pelayanan Bank Darah,Laboratorium,95000.0,harga_langsung,1
+197,RSUD_CIMACAN,crown acrllyc,Crown Acrllyc,RESTORASI POST ENDODONTIK,Gigi,330500.0,harga_langsung,1
+198,RSUD_CIMACAN,crown all porcelen emax,Crown all porcelen Emax,RESTORASI POST ENDODONTIK,Gigi,2000000.0,harga_langsung,1
+199,RSUD_CIMACAN,crown all porcelen inceram alumunia,Crown all porcelen inceram Alumunia,RESTORASI POST ENDODONTIK,Gigi,787500.0,harga_langsung,1
+200,RSUD_CIMACAN,crown all zirconia,Crown all Zirconia,RESTORASI POST ENDODONTIK,Gigi,3500000.0,harga_langsung,1
+201,RSUD_CIMACAN,crown lengthening,Crown Lengthening,ESTETIK,Gigi,1800000.0,harga_langsung,1
+202,RSUD_CIMACAN,crown metal porcelen,Crown Metal Porcelen,RESTORASI POST ENDODONTIK,Gigi,1500000.0,harga_langsung,1
+203,RSUD_CIMACAN,crp kualitatif,CRP Kualitatif,Tarif Pemeriksaan Laboratorium,Laboratorium,55000.0,harga_langsung,1
+204,RSUD_CIMACAN,crp kuantitatif,CRP Kuantitatif,Tarif Pemeriksaan Laboratorium,Laboratorium,207000.0,harga_langsung,1
+205,RSUD_CIMACAN,cruris bilateral ap85 lateral,Cruris Bilateral AP85 Lateral,Tarif Tindakan Radiologi,Radiologi,300000.0,harga_langsung,1
+206,RSUD_CIMACAN,cruris kanan ap 86 lateral,Cruris Kanan AP 86 Lateral,Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+207,RSUD_CIMACAN,cruris kiri ap 86 lateral,Cruris Kiri AP 86 Lateral,Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+208,RSUD_CIMACAN,crytherafi,Crytherafi,ESTETIK,Mata/THT/Kulit,110000.0,harga_langsung,1
+209,RSUD_CIMACAN,ct scan abdomen dengan kontras,CT SCAN ABDOMEN DENGAN KONTRAS,Tarif Tindakan Radiologi,Radiologi,1400000.0,harga_langsung,1
+210,RSUD_CIMACAN,ct scan abdomen non kontras,CT SCAN ABDOMEN NON KONTRAS,Tarif Tindakan Radiologi,Radiologi,1200000.0,harga_langsung,1
+211,RSUD_CIMACAN,ct scan angiography,CT SCAN ANGIOGRAPHY,Tarif Tindakan Radiologi,Radiologi,1700000.0,harga_langsung,1
+212,RSUD_CIMACAN,ct scan cervical dengan kontras,CT SCAN CERVICAL DENGAN KONTRAS,Tarif Tindakan Radiologi,Radiologi,1200000.0,harga_langsung,1
+213,RSUD_CIMACAN,ct scan cervical non kontras,CT SCAN CERVICAL NON KONTRAS,Tarif Tindakan Radiologi,Radiologi,1100000.0,harga_langsung,1
+214,RSUD_CIMACAN,ct scan ekstremitas atas kontras,CT SCAN EKSTREMITAS ATAS KONTRAS,Tarif Tindakan Radiologi,Radiologi,1200000.0,harga_langsung,1
+215,RSUD_CIMACAN,ct scan ekstremitas atas non kontras,CT SCAN EKSTREMITAS ATAS NON KONTRAS,Tarif Tindakan Radiologi,Radiologi,850000.0,harga_langsung,1
+216,RSUD_CIMACAN,ct scan ekstremitas bawah kontras,CT SCAN EKSTREMITAS BAWAH KONTRAS,Tarif Tindakan Radiologi,Radiologi,1200000.0,harga_langsung,1
+217,RSUD_CIMACAN,ct scan kepala dengan kontras,CT SCAN KEPALA DENGAN KONTRAS,Tarif Tindakan Radiologi,Radiologi,1200000.0,harga_langsung,1
+218,RSUD_CIMACAN,ct scan kepala non kontras 3d,CT SCAN KEPALA NON KONTRAS+3D,Tarif Tindakan Radiologi,Radiologi,950000.0,harga_langsung,1
+219,RSUD_CIMACAN,ct scan lumbosacral dengan kontras,CT SCAN LUMBOSACRAL DENGAN KONTRAS,Tarif Tindakan Radiologi,Radiologi,1300000.0,harga_langsung,1
+220,RSUD_CIMACAN,ct scan mastoid kontras,CT SCAN MASTOID KONTRAS,Tarif Tindakan Radiologi,Radiologi,1200000.0,harga_langsung,1
+221,RSUD_CIMACAN,ct scan nasofaring kontras,CT SCAN NASOFARING KONTRAS,Tarif Tindakan Radiologi,Radiologi,1200000.0,harga_langsung,1
+222,RSUD_CIMACAN,ct scan orbita,CT SCAN ORBITA,Tarif Tindakan Radiologi,Radiologi,1200000.0,harga_langsung,1
+223,RSUD_CIMACAN,ct scan pelvis kontras,CT SCAN PELVIS KONTRAS,Tarif Tindakan Radiologi,Radiologi,1300000.0,harga_langsung,1
+224,RSUD_CIMACAN,ct scan pelvis non kontras,CT SCAN PELVIS NON KONTRAS,Tarif Tindakan Radiologi,Radiologi,1100000.0,harga_langsung,1
+225,RSUD_CIMACAN,ct scan spn kontras,CT SCAN SPN KONTRAS,Tarif Tindakan Radiologi,Radiologi,1200000.0,harga_langsung,1
+226,RSUD_CIMACAN,ct scan spn non kontras,CT SCAN SPN NON KONTRAS,Tarif Tindakan Radiologi,Radiologi,850000.0,harga_langsung,1
+227,RSUD_CIMACAN,ct scan thoracal dengan kontras,CT SCAN THORACAL DENGAN KONTRAS,Tarif Tindakan Radiologi,Radiologi,1300000.0,harga_langsung,1
+228,RSUD_CIMACAN,ct scan thoracal non kontras,CT SCAN THORACAL NON KONTRAS,Tarif Tindakan Radiologi,Radiologi,1100000.0,harga_langsung,1
+229,RSUD_CIMACAN,ctg,CTG,Tarif Tindakan Kecil Kebidanan,Kebidanan,100000.0,harga_langsung,3
+230,RSUD_CIMACAN,ctscan ekstremitas bawah non kontras,CTSCAN EKSTREMITAS BAWAH NON KONTRAS,Tarif Tindakan Radiologi,Radiologi,850000.0,harga_langsung,1
+231,RSUD_CIMACAN,ctscan kepala non kontras,CTSCAN KEPALA NON KONTRAS,Tarif Tindakan Radiologi,Radiologi,850000.0,harga_langsung,1
+232,RSUD_CIMACAN,ctscan lumbosacral non kontras,CTSCAN LUMBOSACRAL NON KONTRAS,Tarif Tindakan Radiologi,Radiologi,1100000.0,harga_langsung,1
+233,RSUD_CIMACAN,ctscan thorax non kontras,CTSCAN THORAX NON KONTRAS,Tarif Tindakan Radiologi,Radiologi,1200000.0,harga_langsung,1
+234,RSUD_CIMACAN,cystografi,Cystografi,Tarif Tindakan Radiologi,Radiologi,400000.0,harga_langsung,1
+235,RSUD_CIMACAN,d-dimer,D-Dimer,Tarif Pemeriksaan Laboratorium,Laboratorium,330000.0,harga_langsung,1
+236,RSUD_CIMACAN,darurat medik,Darurat Medik,Tarif Darurat Medik,Rawat Jalan & Darurat,50000.0,harga_langsung,1
+237,RSUD_CIMACAN,day care,Day Care,Tarif Rawat Inap per hari,Akomodasi & Visite,100000.0,harga_langsung,1
+238,RSUD_CIMACAN,debridement,Debridement,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,330000.0,harga_langsung,2
+239,RSUD_CIMACAN,debridement luka operasi,Debridement LukaOperasi,ESTETIK,Mata/THT/Kulit,200000.0,harga_langsung,1
+240,RSUD_CIMACAN,debridement lukadan / atau nekrotomi ringan,Debridement lukadan/ atau nekrotomi ringan,ESTETIK,Mata/THT/Kulit,150000.0,harga_langsung,1
+241,RSUD_CIMACAN,defibrilator,Defibrilator,Tarif Tindakan Anestesiologi dan Terapi Intensif,Rehab Medik,180000.0,harga_langsung,3
+242,RSUD_CIMACAN,dengan guidance berat,DENGAN GUIDANCE BERAT,INJEKSI BOTULINUM TOXIN/ PHENOL DAN INJEKSI LAIN,Tindakan Lain,404000.0,harga_langsung,1
+243,RSUD_CIMACAN,dengan guidance ringan,DENGAN GUIDANCE RINGAN,INJEKSI BOTULINUM TOXIN/ PHENOL DAN INJEKSI LAIN,Tindakan Lain,151000.0,harga_langsung,1
+244,RSUD_CIMACAN,dengan guidance sedang,DENGAN GUIDANCE SEDANG,INJEKSI BOTULINUM TOXIN/ PHENOL DAN INJEKSI LAIN,Tindakan Lain,303000.0,harga_langsung,1
+245,RSUD_CIMACAN,dengan panduan ultrasonografi,DENGAN PANDUAN USG,PROSEDUR INJEKSI INTRA PARINEURAL PADASARAFTEPI,Radiologi,549000.0,harga_langsung,1
+246,RSUD_CIMACAN,dengan shock,Dengan shock,Pelayanan Tindakan Kardiovaskular,Tindakan Lain,360000.0,harga_langsung,1
+247,RSUD_CIMACAN,dengue ig g / m,Dengue IgG/M,Tarif Pemeriksaan Laboratorium,Laboratorium,250000.0,harga_langsung,1
+248,RSUD_CIMACAN,dental,Dental,Tarif Tindakan Radiologi,Radiologi,80000.0,harga_langsung,1
+249,RSUD_CIMACAN,detoksifikasi opiate cepat,Detoksifikasi opiate cepat,Tarif Tindakan Anestesiologi dan Terapi Intensif,Rehab Medik,240000.0,harga_langsung,1
+250,RSUD_CIMACAN,difteri,Difteri,Tarif Pemeriksaan Laboratorium,Laboratorium,40000.0,harga_langsung,1
+251,RSUD_CIMACAN,dilatasi uretra,dilatasi uretra,ESTETIK,Mata/THT/Kulit,60000.0,harga_langsung,1
+252,RSUD_CIMACAN,direct composite veneering / gigi,Direct composite Veneering/gigi,ESTETIK,Gigi,500000.0,harga_langsung,1
+253,RSUD_CIMACAN,diri / adlanak,DIRI/ADLANAK,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+254,RSUD_CIMACAN,disleksia syspraksia,"DISLEKSIA, SYSPRAKSIA",TATALAKSANA GANGGUAN BERBAHASA TIDAK SPESIFIK ;,Tindakan Lain,60000.0,harga_langsung,1
+255,RSUD_CIMACAN,dispensing steril per vial,DispensingSteril Per Vial,Tarif Barang Farmasi,Tindakan Lain,2500.0,harga_langsung,1
+256,RSUD_CIMACAN,dobutamin stress echocardiography,Dobutamin Stress Echocardiography,Pelayanan Penunjang Diagnostik Kardiovaskular,Tindakan Lain,600000.0,harga_langsung,1
+257,RSUD_CIMACAN,douglas punksi,Douglas punksi,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,60000.0,harga_langsung,1
+258,RSUD_CIMACAN,doulas punksi,Doulas punksi,"Tindakan Perawatan Ruang ICU,NICU,PICU,CICU,ICCU",Akomodasi & Visite,120000.0,harga_langsung,1
+259,RSUD_CIMACAN,dry needling,DRY NEEDLING,ERGOCYCLE,Rehab Medik,165000.0,harga_langsung,1
+260,RSUD_CIMACAN,echocardiografy,Echocardiografy,ESTETIK,Mata/THT/Kulit,600000.0,harga_langsung,1
+261,RSUD_CIMACAN,eksisi,Eksisi,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,61000.0,harga_langsung,2
+262,RSUD_CIMACAN,eksisi / ekstirpasi lokal,Eksisi/ekstirpasi (lokal),ESTETIK,Mata/THT/Kulit,400000.0,harga_langsung,1
+263,RSUD_CIMACAN,eksisi epulis,Eksisi Epulis,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,1417500.0,harga_langsung,1
+264,RSUD_CIMACAN,eksisi fitroma / mucocele,Eksisi Fitroma/Mucocele,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,1183500.0,harga_langsung,1
+265,RSUD_CIMACAN,ekspolirasi,Ekspolirasi,Tarif Tindakan Kecil Kebidanan,Kebidanan,100000.0,harga_langsung,1
+266,RSUD_CIMACAN,eksterpasi pulpa / saluran akar,Eksterpasi pulpa/ saluran akar,Tarif Tindakan Medik Rawat Jalan,Gigi,45000.0,harga_langsung,1
+267,RSUD_CIMACAN,ekstirpasi nevus / xantelasma / veruka kauterisasi,ekstirpasi nevus/xantelasma/veruka+kauterisasi,ESTETIK,Mata/THT/Kulit,375000.0,harga_langsung,1
+268,RSUD_CIMACAN,ekstirpasi polip cervix,Ekstirpasi Polip Cervix,ESTETIK,Mata/THT/Kulit,100000.0,harga_langsung,1
+269,RSUD_CIMACAN,ekstirpasi pterygium,ekstirpasi pterygium,ESTETIK,Mata/THT/Kulit,500000.0,harga_langsung,1
+270,RSUD_CIMACAN,ekstirpasi pterygium clg,ekstirpasi pterygium + CLG,ESTETIK,Mata/THT/Kulit,2500000.0,harga_langsung,1
+271,RSUD_CIMACAN,ekstirpasi stt,Ekstirpasi STT,ESTETIK,Mata/THT/Kulit,3500000.0,harga_langsung,1
+272,RSUD_CIMACAN,ekstraksi / irigasi serumen unillateral,Ekstraksi/Irigasi SerumenUnillateral,ESTETIK,Radiologi,150000.0,harga_langsung,1
+273,RSUD_CIMACAN,ekstraksi / irigasi serumendengan bilateral,Ekstraksi/Irigasi SerumendenganBilateral,ESTETIK,Radiologi,255000.0,harga_langsung,1
+274,RSUD_CIMACAN,ekstraksi / irigasi serumendenganpenyulit bilateral,Ekstraksi/IrigasiSerumendenganpenyulitBilateral,ESTETIK,Radiologi,330000.0,harga_langsung,1
+275,RSUD_CIMACAN,ekstraksi / irigasi serumendenganpenyulit unilateral,Ekstraksi/IrigasiSerumendenganpenyulitUnilateral,ESTETIK,Radiologi,315000.0,harga_langsung,1
+276,RSUD_CIMACAN,ekstraksi alat kontrasepsi dalam rahim,Ekstraksi IUD,ESTETIK,Mata/THT/Kulit,75000.0,harga_langsung,1
+277,RSUD_CIMACAN,ekstraksi band keratopati,ekstraksi band keratopati,ESTETIK,Mata/THT/Kulit,300000.0,harga_langsung,1
+278,RSUD_CIMACAN,ekstraksi benda asing di scba,EkstraksiBenda AsingDiSCBA,Tarif Pelayanan Endoskopik,Tindakan Lain,1585000.0,harga_langsung,1
+279,RSUD_CIMACAN,ekstraksi benda asing di scbb,Ekstraksi Benda Asing DiSCBB,Tarif Pelayanan Endoskopik,Tindakan Lain,1891000.0,harga_langsung,1
+280,RSUD_CIMACAN,ekstraksi benda asing faringdengan endoskopi,Ekstraksi Benda AsingFaringdengan Endoskopi,ESTETIK,Mata/THT/Kulit,315000.0,harga_langsung,1
+281,RSUD_CIMACAN,ekstraksi benda asing hidung,EkstraksiBenda AsingHidung,ESTETIK,Mata/THT/Kulit,195000.0,harga_langsung,1
+282,RSUD_CIMACAN,ekstraksi benda asing hidungdenganpenyulit,Ekstraksi Benda AsingHidungdenganpenyulit,ESTETIK,Mata/THT/Kulit,315000.0,harga_langsung,1
+283,RSUD_CIMACAN,ekstraksi benda asing mulut,Ekstraksi Benda Asing Mulut,ESTETIK,Mata/THT/Kulit,195000.0,harga_langsung,1
+284,RSUD_CIMACAN,ekstraksi benda asing telinga,EkstraksiBendaAsingTelinga,ESTETIK,Mata/THT/Kulit,165000.0,harga_langsung,1
+285,RSUD_CIMACAN,ekstraksi benda asing telingadengan penyulit,EkstraksiBenda AsingTelingadengan penyulit,ESTETIK,Mata/THT/Kulit,315000.0,harga_langsung,1
+286,RSUD_CIMACAN,ekstraksi benda asing tosil-faring,Ekstraksi Benda AsingTosil-Faring,ESTETIK,Mata/THT/Kulit,315000.0,harga_langsung,1
+287,RSUD_CIMACAN,ekstraksi implant,Ekstraksi Implant,ESTETIK,Kebidanan,100000.0,harga_langsung,1
+288,RSUD_CIMACAN,ekstraksi kista granuloma / papiloma,ekstraksi kista granuloma / papiloma,ESTETIK,Mata/THT/Kulit,375000.0,harga_langsung,1
+289,RSUD_CIMACAN,ekstraksi korpus aleneum komea / konjungtiva,ekstraksi korpus aleneum komea / konjungtiva,ESTETIK,Mata/THT/Kulit,350000.0,harga_langsung,1
+290,RSUD_CIMACAN,ekstraksi kuku,Ekstraksi kuku,ESTETIK,Mata/THT/Kulit,250000.0,harga_langsung,1
+291,RSUD_CIMACAN,ekstraksi kuku rozer plasty lokal,Ekstraksi kuku + rozer plasty (lokal),ESTETIK,Mata/THT/Kulit,400000.0,harga_langsung,1
+292,RSUD_CIMACAN,ekstrasi kuku,Ekstrasi kuku,ESTETIK,Mata/THT/Kulit,50000.0,harga_langsung,1
+293,RSUD_CIMACAN,ektirpate,Ektirpate,ESTETIK,Mata/THT/Kulit,125000.0,harga_langsung,1
+294,RSUD_CIMACAN,elastik,Elastik,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,25000.0,harga_langsung,1
+295,RSUD_CIMACAN,elbow joint bilateral ap / lateral,Elbow Joint Bilateral AP/Lateral,Tarif Tindakan Radiologi,Radiologi,300000.0,harga_langsung,1
+296,RSUD_CIMACAN,elbow joint kanan ap / lateral,Elbow Joint Kanan AP/Lateral,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+297,RSUD_CIMACAN,elbow joint kiri ap / lateral,Elbow Joint Kiri AP/Lateral,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+298,RSUD_CIMACAN,elektroakupuntur,Elektroakupuntur,ESTETIK,Mata/THT/Kulit,75000.0,harga_langsung,1
+299,RSUD_CIMACAN,elektroensefalografi,EEG,Tarif Tindakan Penunjang Diagnostik,Tindakan Lain,200000.0,harga_langsung,2
+300,RSUD_CIMACAN,elektrokardiografi,EKG,Tarif Tindakan Penunjang Diagnostik,Tindakan Lain,70000.0,harga_langsung,4
+301,RSUD_CIMACAN,elektrolit ca ion,Elektrolit + Ca ION,Tarif Pemeriksaan Laboratorium,Laboratorium,250000.0,harga_langsung,1
+302,RSUD_CIMACAN,emg,EMG,Tarif Tindakan Penunjang Diagnostik,Tindakan Lain,400000.0,harga_langsung,2
+303,RSUD_CIMACAN,emg neddle,EMG NEDDLE,C TINDAKAN KEDOKTERAN FISIK DAN REHABILITASI,Rehab Medik,199000.0,harga_langsung,1
+304,RSUD_CIMACAN,emg surface,EMG SURFACE,C TINDAKAN KEDOKTERAN FISIK DAN REHABILITASI,Rehab Medik,110000.0,harga_langsung,1
+305,RSUD_CIMACAN,epidural labor analgesia,Epidural Labor Analgesia,Tarif Tindakan Anestesiologi dan Terapi Intensif,Rehab Medik,190000.0,harga_langsung,1
+306,RSUD_CIMACAN,epilasi / cukur bulumata,epilasi / cukur bulumata,ESTETIK,Mata/THT/Kulit,7500.0,harga_langsung,1
+307,RSUD_CIMACAN,epilasi trichiasis / distichiasis,epilasi trichiasis / distichiasis,ESTETIK,Mata/THT/Kulit,250000.0,harga_langsung,1
+308,RSUD_CIMACAN,epps,EPPS,ESTETIK,Mata/THT/Kulit,50000.0,harga_langsung,1
+309,RSUD_CIMACAN,eritrosit,Eritrosit,Tarif Pemeriksaan Laboratorium,Laboratorium,20000.0,harga_langsung,1
+310,RSUD_CIMACAN,esbach,Esbach,Tarif Pemeriksaan Laboratorium,Laboratorium,16000.0,harga_langsung,1
+311,RSUD_CIMACAN,esofagogastroduodenoscopy,Esofagogastroduodenoscopy,Tarif Pelayanan Endoskopik,Tindakan Lain,805000.0,harga_langsung,1
+312,RSUD_CIMACAN,eswt,ESWT,REHABILITASI PRE- VOKASIONAL DAN REHABILITASI,Rehab Medik,399500.0,harga_langsung,2
+313,RSUD_CIMACAN,evaluasi alat bantu jalan,EVALUASI ALAT BANTU JALAN,PROSEDUR BERSIHAN JALAN NAFAS/ AIRWAY CLEARANCE,Tindakan Lain,47000.0,harga_langsung,2
+314,RSUD_CIMACAN,evaluasi kondisi sosial dan prilaku bakat,EVALUASI KONDISI SOSIAL DAN PRILAKU BAKAT,REHABILITASI PRE- VOKASIONAL DAN REHABILITASI,Rehab Medik,47000.0,harga_langsung,1
+315,RSUD_CIMACAN,evaluasi sepatu koreksi,EVALUASI SEPATU KOREKSI,PROSEDUR BERSIHAN JALAN NAFAS/ AIRWAY CLEARANCE,Tindakan Lain,47000.0,harga_langsung,2
+316,RSUD_CIMACAN,evisceration,Evisceration,ESTETIK,Mata/THT/Kulit,4500000.0,harga_langsung,1
+317,RSUD_CIMACAN,exterpasi,Exterpasi,ESTETIK,Mata/THT/Kulit,138000.0,harga_langsung,1
+318,RSUD_CIMACAN,exterpasi permukaan kulit,Exterpasi Permukaan Kulit,ESTETIK,Mata/THT/Kulit,137500.0,harga_langsung,1
+319,RSUD_CIMACAN,extirpasi corpus alienum cornea,Extirpasi Corpus Alienum Cornea,ESTETIK,Mata/THT/Kulit,300000.0,harga_langsung,1
+320,RSUD_CIMACAN,extirpasi litiasis,Extirpasi Litiasis,ESTETIK,Mata/THT/Kulit,300000.0,harga_langsung,1
+321,RSUD_CIMACAN,extraksi komplikasi,Extraksi Komplikasi,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,945000.0,harga_langsung,1
+322,RSUD_CIMACAN,face mask,face mask,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,1700000.0,harga_langsung,1
+323,RSUD_CIMACAN,fako iol,FAKO+ IOL,ESTETIK,Mata/THT/Kulit,8500000.0,harga_langsung,1
+324,RSUD_CIMACAN,familly per session,Familly Per Session,ESTETIK,Mata/THT/Kulit,65000.0,harga_langsung,1
+325,RSUD_CIMACAN,family meeting,FAMILY MEETING,B PROSEDUR KEDOKTERAN FISIK DAN REHABILITASI,Rehab Medik,100000.0,harga_langsung,1
+326,RSUD_CIMACAN,fe / serum iron,Fe/Serum Iron,Tarif Pemeriksaan Laboratorium,Laboratorium,115000.0,harga_langsung,1
+327,RSUD_CIMACAN,feces rutin,Feces Rutin,Tarif Pemeriksaan Laboratorium,Laboratorium,50000.0,harga_langsung,1
+328,RSUD_CIMACAN,femur bilateral ap,Femur Bilateral AP,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+329,RSUD_CIMACAN,femur kanan ap,Femur Kanan AP,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+330,RSUD_CIMACAN,femur kanan ap / lateral,Femur Kanan AP/Lateral,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+331,RSUD_CIMACAN,femur kiri ap,Femur Kiri AP,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+332,RSUD_CIMACAN,femur kiri ap / lateral,Femur Kiri AP/Lateral,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+333,RSUD_CIMACAN,feritin i,Feritin I,Tarif Pemeriksaan Laboratorium,Laboratorium,130000.0,harga_langsung,1
+334,RSUD_CIMACAN,feritin ii,Feritin II,Tarif Pemeriksaan Laboratorium,Laboratorium,226000.0,harga_langsung,1
+335,RSUD_CIMACAN,fibrinogen,Fibrinogen,Tarif Pemeriksaan Laboratorium,Laboratorium,135000.0,harga_langsung,1
+336,RSUD_CIMACAN,fistulografi,Fistulografi,Tarif Tindakan Radiologi,Radiologi,300000.0,harga_langsung,1
+337,RSUD_CIMACAN,fisus,Fisus,ESTETIK,Mata/THT/Kulit,25000.0,harga_langsung,1
+338,RSUD_CIMACAN,fluorescein test,fluorescein test,ESTETIK,Mata/THT/Kulit,75000.0,harga_langsung,1
+339,RSUD_CIMACAN,fob test,FOB Test,Tarif Pemeriksaan Laboratorium,Laboratorium,90000.0,harga_langsung,1
+340,RSUD_CIMACAN,foot care,Foot care,ESTETIK,Mata/THT/Kulit,45000.0,harga_langsung,1
+341,RSUD_CIMACAN,foto fundus,foto fundus,ESTETIK,Radiologi,250000.0,harga_langsung,1
+342,RSUD_CIMACAN,foto therapy,Photo therapy,Tindakan Perawatan Ruang Rawat Inap,Radiologi,43000.0,harga_langsung,2
+343,RSUD_CIMACAN,free psa,Free PSA,Tarif Pemeriksaan Laboratorium,Laboratorium,760000.0,harga_langsung,1
+344,RSUD_CIMACAN,free t3,Free T3,Tarif Pemeriksaan Laboratorium,Laboratorium,340000.0,harga_langsung,1
+345,RSUD_CIMACAN,free t4,Free T4,Tarif Pemeriksaan Laboratorium,Laboratorium,400000.0,harga_langsung,1
+346,RSUD_CIMACAN,frenectomy,Frenectomy,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,1183500.0,harga_langsung,1
+347,RSUD_CIMACAN,frt,FRT,ESTETIK,Mata/THT/Kulit,75000.0,harga_langsung,1
+348,RSUD_CIMACAN,funduskopi derect,funduskopi derect,ESTETIK,Mata/THT/Kulit,187500.0,harga_langsung,1
+349,RSUD_CIMACAN,funduskopi indirect,funduskopi indirect,ESTETIK,Mata/THT/Kulit,187500.0,harga_langsung,1
+350,RSUD_CIMACAN,fungsi kandung kemih,Fungsi kandung kemih,ESTETIK,Mata/THT/Kulit,70000.0,harga_langsung,1
+351,RSUD_CIMACAN,gamma gt,Gamma GT,Tarif Pemeriksaan Laboratorium,Laboratorium,35000.0,harga_langsung,1
+352,RSUD_CIMACAN,ganti balutan,Ganti Balutan,ESTETIK,Mata/THT/Kulit,36000.0,harga_langsung,5
+353,RSUD_CIMACAN,ganti kawat / rh,Ganti Kawat/Rh,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,60000.0,harga_langsung,1
+354,RSUD_CIMACAN,ganti oring / power chain / aktivasi,Ganti Oring/Power Chain/Aktivasi,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,150000.0,harga_langsung,1
+355,RSUD_CIMACAN,ganti perban,Ganti Perban,ESTETIK,Mata/THT/Kulit,21000.0,harga_langsung,2
+356,RSUD_CIMACAN,gigi m3,Gigi M3,Tarif Tindakan Medik Rawat Jalan,Gigi,180000.0,harga_langsung,1
+357,RSUD_CIMACAN,gigi m3dengan komplikasi,Gigi M3dengan komplikasi,Tarif Tindakan Medik Rawat Jalan,Gigi,200000.0,harga_langsung,1
+358,RSUD_CIMACAN,gigi sulung suntik,Gigi sulung (suntik),Tarif Tindakan Medik Rawat Jalan,Gigi,70000.0,harga_langsung,1
+359,RSUD_CIMACAN,gigi sulung topical,Gigi sulung (topical),Tarif Tindakan Medik Rawat Jalan,Gigi,45000.0,harga_langsung,1
+360,RSUD_CIMACAN,gigi tetap,Gigi tetap,Tarif Tindakan Medik Rawat Jalan,Gigi,100000.0,harga_langsung,1
+361,RSUD_CIMACAN,gigi tetap dengan komplikasi,Gigi tetap dengan komplikasi,Tarif Tindakan Medik Rawat Jalan,Gigi,150000.0,harga_langsung,1
+362,RSUD_CIMACAN,glukosa kuantitatif,Glukosa Kuantitatif,Tarif Pemeriksaan Laboratorium,Laboratorium,25000.0,harga_langsung,1
+363,RSUD_CIMACAN,golongan darah rhesus,Golongan Darah (Rhesus),Tarif Pemeriksaan Laboratorium,Laboratorium,30000.0,harga_langsung,1
+364,RSUD_CIMACAN,golongan darah tanpa rhesus,Golongan Darah (Tanpa Rhesus),Tarif Pemeriksaan Laboratorium,Laboratorium,20000.0,harga_langsung,1
+365,RSUD_CIMACAN,grafis,GRAFIS,ESTETIK,Mata/THT/Kulit,50000.0,harga_langsung,1
+366,RSUD_CIMACAN,grainding,Grainding,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,20000.0,harga_langsung,1
+367,RSUD_CIMACAN,gram,Gram,Tarif Pemeriksaan Laboratorium,Laboratorium,40000.0,harga_langsung,1
+368,RSUD_CIMACAN,group per orang per session,Group Per orang per Session,ESTETIK,Mata/THT/Kulit,35000.0,harga_langsung,1
+369,RSUD_CIMACAN,gstik,GStik,Tarif Pemeriksaan Laboratorium,Laboratorium,35000.0,harga_langsung,1
+370,RSUD_CIMACAN,gtt,GTT,Tarif Pemeriksaan Laboratorium,Laboratorium,52000.0,harga_langsung,1
+371,RSUD_CIMACAN,gula darah puasa / 2jam pp / sewaktu,Gula darah puasa/ 2jam PP/ sewaktu,Tarif Pemeriksaan Laboratorium,Laboratorium,35000.0,harga_langsung,1
+372,RSUD_CIMACAN,gv / remove suture 6-10 cm,GV/remove suture 6-10 cm,ESTETIK,Mata/THT/Kulit,50000.0,harga_langsung,1
+373,RSUD_CIMACAN,gv / remove suture < 5cm,GV/remove suture < 5cm,ESTETIK,Mata/THT/Kulit,30000.0,harga_langsung,1
+374,RSUD_CIMACAN,gv / remove suture >10 cm,GV/remove suture >10 cm,ESTETIK,Mata/THT/Kulit,80000.0,harga_langsung,1
+375,RSUD_CIMACAN,gv / remove suture luas circuler multipelregion >20cm,"GV/remove suture luas (circuler, multipelregion, >20cm)",ESTETIK,Mata/THT/Kulit,150000.0,harga_langsung,1
+376,RSUD_CIMACAN,haemoroid kontrol anuscopy,Haemoroid Kontrol (anuscopy),Tarif Pelayanan Endoskopik,Tindakan Lain,415000.0,harga_langsung,1
+377,RSUD_CIMACAN,ham test,Ham Test,Tarif Pemeriksaan Laboratorium,Laboratorium,125000.0,harga_langsung,1
+378,RSUD_CIMACAN,hand care,Hand care,ESTETIK,Mata/THT/Kulit,45000.0,harga_langsung,1
+379,RSUD_CIMACAN,hba 1c,HBA 1C,Tarif Pemeriksaan Laboratorium,Laboratorium,200000.0,harga_langsung,1
+380,RSUD_CIMACAN,hba l c / glicosilated hemoglobin,HBA lC/Glicosilated Hb,Tarif Pemeriksaan Laboratorium,Laboratorium,200000.0,harga_langsung,1
+381,RSUD_CIMACAN,hbdh,HBDH,Tarif Pemeriksaan Laboratorium,Laboratorium,120000.0,harga_langsung,1
+382,RSUD_CIMACAN,hbe,Hbe,Tarif Pemeriksaan Laboratorium,Laboratorium,390000.0,harga_langsung,1
+383,RSUD_CIMACAN,hbs ag rapid test,HBsAg (Rapid Test),Tarif Pemeriksaan Laboratorium,Laboratorium,75000.0,harga_langsung,1
+384,RSUD_CIMACAN,head gear,head gear,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,1500000.0,harga_langsung,1
+385,RSUD_CIMACAN,hechting 1-5,hechting 1-5,ESTETIK,Mata/THT/Kulit,150000.0,harga_langsung,1
+386,RSUD_CIMACAN,hechting6-10,hechting6-10,ESTETIK,Mata/THT/Kulit,250000.0,harga_langsung,1
+387,RSUD_CIMACAN,hecting 1 - 3 jahitan,Hecting 1 - 3 jahitan,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,50000.0,harga_langsung,1
+388,RSUD_CIMACAN,hecting 3-6 jahitan,Hecting 3-6 jahitan,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,75000.0,harga_langsung,1
+389,RSUD_CIMACAN,hecting komea / sklera / konjungtiva,hecting komea / sklera / konjungtiva,ESTETIK,Mata/THT/Kulit,2500000.0,harga_langsung,1
+390,RSUD_CIMACAN,hecting margopalpebra / kantus palpebra,hecting margopalpebra / kantus palpebra,ESTETIK,Mata/THT/Kulit,2500000.0,harga_langsung,1
+391,RSUD_CIMACAN,hecting per satu jahitan,Hecting per satu jahitan,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,3600.0,harga_langsung,1
+392,RSUD_CIMACAN,hecting robekan serviks per satu jahitan,Hecting Robekan Serviks per satu jahitan,Tarif Tindakan Kecil Kebidanan,Kebidanan,5000.0,harga_langsung,1
+393,RSUD_CIMACAN,hecting1s / d 5jahitan,Hecting1s/d 5jahitan,ESTETIK,Mata/THT/Kulit,25000.0,harga_langsung,1
+394,RSUD_CIMACAN,hemiseksi / bicuspidasi,Hemiseksi/Bicuspidasi,ENDODONTIK,Gigi,220500.0,harga_langsung,1
+395,RSUD_CIMACAN,hemodialisa,Hemodialisa,Tindakan Hemodialisa,Tindakan Lain,650000.0,harga_langsung,1
+396,RSUD_CIMACAN,hemoglobin elektroforesa,Hb Elektroforesa,Tarif Pemeriksaan Laboratorium,Laboratorium,420000.0,harga_langsung,1
+397,RSUD_CIMACAN,hemoglobin elektroforesa hplc,Hb Elektroforesa (HPLC),Tarif Pemeriksaan Laboratorium,Laboratorium,465000.0,harga_langsung,1
+398,RSUD_CIMACAN,hemostatis scba,HemostatisSCBA,Tarif Pelayanan Endoskopik,Tindakan Lain,1585000.0,harga_langsung,1
+399,RSUD_CIMACAN,hemostatis scbb,HemostatisSCBB,Tarif Pelayanan Endoskopik,Tindakan Lain,1915000.0,harga_langsung,1
+400,RSUD_CIMACAN,heparinisasi,Heparinisasi,Pelayanan Penunjang Diagnostik Kardiovaskular,Tindakan Lain,500000.0,harga_langsung,1
+401,RSUD_CIMACAN,hip joint bilateral ap,Hip Joint Bilateral AP,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+402,RSUD_CIMACAN,hip joint bilateral tangensial,Hip Joint BilateralTangensial,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+403,RSUD_CIMACAN,hip joint kanan ap,Hip Joint Kanan AP,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+404,RSUD_CIMACAN,hip joint kanan tangensial,Hip Joint Kanan Tangensial,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+405,RSUD_CIMACAN,hip joint kiri ap,Hip Joint Kiri AP,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+406,RSUD_CIMACAN,hip joint kiri tangensial,Hip Joint Kiri Tangensial,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+407,RSUD_CIMACAN,hipnoterapi / sesi,Hipnoterapi /Sesi,ESTETIK,Rehab Medik,250000.0,harga_langsung,1
+408,RSUD_CIMACAN,histopatologi besar,Histopatologi Besar,Tarif Pemeriksaan Laboratorium,Laboratorium,200000.0,harga_langsung,1
+409,RSUD_CIMACAN,histopatologi kecil,Histopatologi Kecil,Tarif Pemeriksaan Laboratorium,Laboratorium,150000.0,harga_langsung,1
+410,RSUD_CIMACAN,histopatologi sedang,Histopatologi Sedang,Tarif Pemeriksaan Laboratorium,Laboratorium,175000.0,harga_langsung,1
+411,RSUD_CIMACAN,hitung jenis,Hitung jenis,Tarif Pemeriksaan Laboratorium,Laboratorium,30000.0,harga_langsung,1
+412,RSUD_CIMACAN,holland,HOLLAND,ESTETIK,Mata/THT/Kulit,50000.0,harga_langsung,1
+413,RSUD_CIMACAN,home care pasien anak,Home Care Pasien Anak,Tarif Home Care,Tindakan Lain,75000.0,harga_langsung,1
+414,RSUD_CIMACAN,home care pasien dewasa,Home Care Pasien Dewasa,Tarif Home Care,Tindakan Lain,75000.0,harga_langsung,1
+415,RSUD_CIMACAN,home care pasien geriatri,Home Care Pasien Geriatri,Tarif Home Care,Tindakan Lain,75000.0,harga_langsung,1
+416,RSUD_CIMACAN,home care pasien post operasi,Home Care Pasien Post Operasi,Tarif Home Care,Tindakan Lain,75000.0,harga_langsung,1
+417,RSUD_CIMACAN,home care pasien rehabilitasi jiwa,Home Care Pasien Rehabilitasi Jiwa,Tarif Home Care,Rehab Medik,75000.0,harga_langsung,1
+418,RSUD_CIMACAN,homecare per pasien,Homecare Per Pasien,Tarif Barang Farmasi,Tindakan Lain,25000.0,harga_langsung,1
+419,RSUD_CIMACAN,hs-crp,Hs-CRP,Tarif Pemeriksaan Laboratorium,Laboratorium,263000.0,harga_langsung,1
+420,RSUD_CIMACAN,humerus bilateral ap,Humerus Bilateral AP,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+421,RSUD_CIMACAN,humerus bilateral ap / lateral,Humerus Bilateral AP/Lateral,Tarif Tindakan Radiologi,Radiologi,300000.0,harga_langsung,1
+422,RSUD_CIMACAN,humerus kanan ap,Humerus Kanan AP,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+423,RSUD_CIMACAN,humerus kanan ap / lateral,Humerus Kanan AP/Lateral,Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+424,RSUD_CIMACAN,humerus kiri ap,Humerus Kiri AP,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+425,RSUD_CIMACAN,humerus kiri ap / lateral,Humerus Kiri AP/Lateral,Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+426,RSUD_CIMACAN,hysterosalphingografi hsg,Hysterosalphingografi (HSG),Tarif Tindakan Radiologi,Radiologi,500000.0,harga_langsung,1
+427,RSUD_CIMACAN,ict tb,ICT TB,Tarif Pemeriksaan Laboratorium,Laboratorium,225000.0,harga_langsung,1
+428,RSUD_CIMACAN,iii,III,VVIP,Akomodasi & Visite,4125000.0,harga_langsung,19
+429,RSUD_CIMACAN,immuno globulin a,Immuno Globulin A,Tarif Pemeriksaan Laboratorium,Laboratorium,430000.0,harga_langsung,1
+430,RSUD_CIMACAN,immuno globulin e,Immuno Globulin E,Tarif Pemeriksaan Laboratorium,Laboratorium,300000.0,harga_langsung,1
+431,RSUD_CIMACAN,immuno globulin g,Immuno Globulin G,Tarif Pemeriksaan Laboratorium,Laboratorium,430000.0,harga_langsung,1
+432,RSUD_CIMACAN,immuno globulin m,Immuno Globulin M,Tarif Pemeriksaan Laboratorium,Laboratorium,430000.0,harga_langsung,1
+433,RSUD_CIMACAN,imunisasi tt,ImunisasiTT,Tarif Tindakan Kecil Kebidanan,Kebidanan,10000.0,harga_langsung,1
+434,RSUD_CIMACAN,in spekulo,In spekulo,ESTETIK,Mata/THT/Kulit,15000.0,harga_langsung,1
+435,RSUD_CIMACAN,incisi,Incisi,ESTETIK,Mata/THT/Kulit,109000.0,harga_langsung,2
+436,RSUD_CIMACAN,incisi / aspirasi kista bartolin,Incisi/Aspirasi Kista Bartolin,ESTETIK,Mata/THT/Kulit,100000.0,harga_langsung,1
+437,RSUD_CIMACAN,indeks eritrosit mch mch mchc,"Indeks Eritrosit (MCH, MCH, MCHC)",Tarif Pemeriksaan Laboratorium,Laboratorium,40000.0,harga_langsung,1
+438,RSUD_CIMACAN,indeksi intra artikular berat,INDEKSI INTRA ARTIKULAR BERAT,PROSEDUR INJEKSI INTRA PARINEURAL PADASARAFTEPI,Tindakan Lain,247000.0,harga_langsung,1
+439,RSUD_CIMACAN,indirect ophtalmoskop,Indirect Ophtalmoskop,ESTETIK,Mata/THT/Kulit,37500.0,harga_langsung,1
+440,RSUD_CIMACAN,individual per session,Individual PerSession,ESTETIK,Mata/THT/Kulit,65000.0,harga_langsung,1
+441,RSUD_CIMACAN,infant warmer,Infant Warmer,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,50000.0,harga_langsung,2
+442,RSUD_CIMACAN,infra red 1 lampu,INFRA RED 1 LAMPU,REHABILITASI PRE- VOKASIONAL DAN REHABILITASI,Rehab Medik,32500.0,harga_langsung,2
+443,RSUD_CIMACAN,infus,Infus,ESTETIK,Mata/THT/Kulit,20000.0,harga_langsung,3
+444,RSUD_CIMACAN,infus balita,Infus Balita,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,25000.0,harga_langsung,2
+445,RSUD_CIMACAN,infus pump,Infus pump,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,30000.0,harga_langsung,1
+446,RSUD_CIMACAN,infus pump per tindakan,Infus Pump per Tindakan,Tarif Tindakan Medis dan Terapi bagian Perinatologi Anak,Rehab Medik,20000.0,harga_langsung,1
+447,RSUD_CIMACAN,infuse pump,Infuse pump,"Tindakan Perawatan Ruang ICU,NICU,PICU,CICU,ICCU",Akomodasi & Visite,40000.0,harga_langsung,1
+448,RSUD_CIMACAN,inhalasi,Inhalasi,ESTETIK,Mata/THT/Kulit,150000.0,harga_langsung,1
+449,RSUD_CIMACAN,inhalasi / nebul,Inhalasi/Nebul,ESTETIK,Mata/THT/Kulit,150000.0,harga_langsung,1
+450,RSUD_CIMACAN,injeksi,Injeksi,ESTETIK,Mata/THT/Kulit,20000.0,harga_langsung,1
+451,RSUD_CIMACAN,injeksi dan punksi spinal,Injeksi dan punksi spinal,Tarif Tindakan Anestesiologi dan Terapi Intensif,Rehab Medik,75000.0,harga_langsung,1
+452,RSUD_CIMACAN,injeksi flamicort,injeksi flamicort,ESTETIK,Mata/THT/Kulit,60000.0,harga_langsung,1
+453,RSUD_CIMACAN,injeksi intra artikular ringan,INJEKSI INTRA ARTIKULAR RINGAN,PROSEDUR INJEKSI INTRA PARINEURAL PADASARAFTEPI,Tindakan Lain,123000.0,harga_langsung,1
+454,RSUD_CIMACAN,injeksi intra artikular sedang,INJEKSI INTRA ARTIKULAR SEDANG,PROSEDUR INJEKSI INTRA PARINEURAL PADASARAFTEPI,Tindakan Lain,165000.0,harga_langsung,1
+455,RSUD_CIMACAN,injeksi intraarticular besar,Injeksi Intraarticular besar,ESTETIK,Akomodasi & Visite,150000.0,harga_langsung,1
+456,RSUD_CIMACAN,injeksi intraarticular kecil,Injeksi intraarticular kecil,ESTETIK,Akomodasi & Visite,150000.0,harga_langsung,1
+457,RSUD_CIMACAN,injeksi intraartikuler,Injeksi Intraartikuler,ESTETIK,Mata/THT/Kulit,250000.0,harga_langsung,1
+458,RSUD_CIMACAN,injeksi saraf perifer,Injeksi saraf perifer,Tarif Tindakan Anestesiologi dan Terapi Intensif,Rehab Medik,60000.0,harga_langsung,1
+459,RSUD_CIMACAN,injeksigranuloma / keloid,Injeksigranuloma/keloid,ESTETIK,Mata/THT/Kulit,19500.0,harga_langsung,1
+460,RSUD_CIMACAN,inkubator,Inkubator,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,50000.0,harga_langsung,2
+461,RSUD_CIMACAN,inlay / onlay / uplay composite,Inlay/onlay/uplay composite,RESTORASI POST ENDODONTIK,Gigi,300000.0,harga_langsung,1
+462,RSUD_CIMACAN,inlay / onlay / uplay logam,Inlay/onlay/uplay Logam,RESTORASI POST ENDODONTIK,Gigi,79000.0,harga_langsung,1
+463,RSUD_CIMACAN,insersi intra-arterial line,Insersi intra-arterial Line,Tarif Tindakan Anestesiologi dan Terapi Intensif,Rehab Medik,265000.0,harga_langsung,1
+464,RSUD_CIMACAN,insisi,Insisi,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,100000.0,harga_langsung,1
+465,RSUD_CIMACAN,insisi abses / cross incision,insisi abses/cross incision,ESTETIK,Mata/THT/Kulit,150000.0,harga_langsung,1
+466,RSUD_CIMACAN,insisi kuretase hordeolum / kalazion,Insisi kuretase hordeolum/kalazion,ESTETIK,Kebidanan,300000.0,harga_langsung,1
+467,RSUD_CIMACAN,inspekulo,Inspekulo,Tarif Tindakan Kecil Kebidanan,Kebidanan,15000.0,harga_langsung,1
+468,RSUD_CIMACAN,intentional replantasi,Intentional Replantasi,ENDODONTIK,Gigi,1102500.0,harga_langsung,1
+469,RSUD_CIMACAN,intermittent positive pressure breathing ippb,Intermittent Positive Pressure Breathing (IPPB),Tarif Tindakan Medis Khusus Paru,Tindakan Lain,445000.0,harga_langsung,1
+470,RSUD_CIMACAN,intrathecal labor analgesia,Intrathecal Labor Analgesia,Tarif Tindakan Anestesiologi dan Terapi Intensif,Rehab Medik,190000.0,harga_langsung,1
+471,RSUD_CIMACAN,intravenous pyelography intravenous pyelografi,Intravenous Pyelography (IVP),Tarif Tindakan Radiologi,Radiologi,500000.0,harga_langsung,1
+472,RSUD_CIMACAN,intubasi,Intubasi,Tarif Tindakan Medis dan Terapi bagian Perinatologi Anak,Rehab Medik,75000.0,harga_langsung,2
+473,RSUD_CIMACAN,intubasi atau ekstubasi pipa endotrakeal di luar ok,Intubasi atau Ekstubasi pipa endotrakeal di luar OK,Tarif Tindakan Anestesiologi dan Terapi Intensif,Rehab Medik,65000.0,harga_langsung,1
+474,RSUD_CIMACAN,intubasi double lumen tube,Intubasi Double Lumen Tube,Tarif Tindakan Anestesiologi dan Terapi Intensif,Rehab Medik,190000.0,harga_langsung,1
+475,RSUD_CIMACAN,irigasi,Irigasi,ESTETIK,Mata/THT/Kulit,100000.0,harga_langsung,1
+476,RSUD_CIMACAN,irigasi / vaginal toilet,Irigasi/VaginalToilet,ESTETIK,Mata/THT/Kulit,150000.0,harga_langsung,1
+477,RSUD_CIMACAN,irigasi pleura,Irigasi pleura,Tarif Tindakan Medis Khusus Paru,Tindakan Lain,200000.0,harga_langsung,1
+478,RSUD_CIMACAN,j - perawatan saluran akar tunggal dresing,j - Perawatan Saluran Akar Tunggal Dresing,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,200000.0,harga_langsung,1
+479,RSUD_CIMACAN,j6 debridement lukadan / atau nekrotomi sedang,j6 Debridement lukadan/ atau nekrotomi sedang,ESTETIK,Mata/THT/Kulit,300000.0,harga_langsung,1
+480,RSUD_CIMACAN,jahitan berikutnya,Jahitan berikutnya,ESTETIK,Mata/THT/Kulit,5000.0,harga_langsung,1
+481,RSUD_CIMACAN,jahitan palpebra,Jahitan Palpebra,ESTETIK,Mata/THT/Kulit,75000.0,harga_langsung,1
+482,RSUD_CIMACAN,jasa dokter specialis,Jasa Dokter Specialis,Tarif Visite Dokter,Akomodasi & Visite,75000.0,harga_langsung,1
+483,RSUD_CIMACAN,jasa dokter specialis kelas i,Jasa DokterSpecialis Kelas I,Tarif Visite Dokter,Akomodasi & Visite,75000.0,harga_langsung,1
+484,RSUD_CIMACAN,jasa dokter specialis kelas iii,Jasa Dokter Specialis Kelas III,Tarif Visite Dokter,Akomodasi & Visite,75000.0,harga_langsung,1
+485,RSUD_CIMACAN,jasa dokter specialis nicu / icu,Jasa Dokter Specialis NICU/ICU,Tarif Visite Dokter,Akomodasi & Visite,150000.0,harga_langsung,1
+486,RSUD_CIMACAN,jasa dokter specialis perinatologi,Jasa Dokter Specialis Perinatologi,Tarif Visite Dokter,Akomodasi & Visite,60000.0,harga_langsung,1
+487,RSUD_CIMACAN,jasa dokter specialis picu / nicu,JasaDokterSpecialis PICU/NICU,Tarif Visite Dokter,Akomodasi & Visite,100000.0,harga_langsung,1
+488,RSUD_CIMACAN,jasa dokter specialis presiden suite,Jasa DokterSpecialis Presiden Suite,Tarif Visite Dokter,Akomodasi & Visite,75000.0,harga_langsung,1
+489,RSUD_CIMACAN,jasa dokter specialis vip a,Jasa DokterSpecialis VIP A,Tarif Visite Dokter,Akomodasi & Visite,75000.0,harga_langsung,1
+490,RSUD_CIMACAN,jasa dokter specialis vip b,Jasa Dokter Specialis VIP B,Tarif Visite Dokter,Akomodasi & Visite,75000.0,harga_langsung,1
+491,RSUD_CIMACAN,jasa dokter specialis vvip,Jasa DokterSpecialis VVIP,Tarif Visite Dokter,Akomodasi & Visite,75000.0,harga_langsung,1
+492,RSUD_CIMACAN,jasa dokter sub spesialis,Jasa Dokter SubSpesialis,Tarif Visite Dokter,Akomodasi & Visite,150000.0,harga_langsung,9
+493,RSUD_CIMACAN,jasa dokter umum,Jasa DokterUmum,Tarif Visite Dokter,Akomodasi & Visite,37500.0,harga_langsung,10
+494,RSUD_CIMACAN,jumlah sel,Jumlah sel,Tarif Pemeriksaan Laboratorium,Laboratorium,40000.0,harga_langsung,2
+495,RSUD_CIMACAN,kalium,Kalium,Tarif Pemeriksaan Laboratorium,Laboratorium,75000.0,harga_langsung,1
+496,RSUD_CIMACAN,kalsium ion,Kalsium Ion,Tarif Pemeriksaan Laboratorium,Laboratorium,75000.0,harga_langsung,1
+497,RSUD_CIMACAN,kasur decubitus,Kasur decubitus,"Tindakan Perawatan Ruang ICU,NICU,PICU,CICU,ICCU",Akomodasi & Visite,20000.0,harga_langsung,1
+498,RSUD_CIMACAN,katarak ekstraksi ecce,katarak ekstraksi (ECCE),ESTETIK,Mata/THT/Kulit,2500000.0,harga_langsung,1
+499,RSUD_CIMACAN,katarak ekstraksi ecce lensa implant,katarak ekstraksi (ECCE) + lensa implant,ESTETIK,Kebidanan,2500000.0,harga_langsung,1
+500,RSUD_CIMACAN,kateter blok saraf perifer,Kateter blok saraf perifer,Tarif Tindakan Anestesiologi dan Terapi Intensif,Rehab Medik,90000.0,harga_langsung,1
+501,RSUD_CIMACAN,kateter central venous pressure / dyalisis mahokar,Kateter Central Venous Pressure/Dyalisis (mahokar),Tarif Tindakan Anestesiologi dan Terapi Intensif,Rehab Medik,440000.0,harga_langsung,1
+502,RSUD_CIMACAN,kateter epidural kontinyu,Kateter Epidural kontinyu,Tarif Tindakan Anestesiologi dan Terapi Intensif,Rehab Medik,90000.0,harga_langsung,1
+503,RSUD_CIMACAN,kateter intrathecal kontinyu,Kateter Intrathecal kontinyu,Tarif Tindakan Anestesiologi dan Terapi Intensif,Rehab Medik,90000.0,harga_langsung,1
+504,RSUD_CIMACAN,kateterisasi jantung,Kateterisasi Jantung,Pelayanan Penunjang Diagnostik Kardiovaskular,Tindakan Lain,10400000.0,harga_langsung,1
+505,RSUD_CIMACAN,katopeksi / tarsorhapi / tarsotomi,katopeksi / tarsorhapi / tarsotomi,ESTETIK,Mata/THT/Kulit,300000.0,harga_langsung,1
+506,RSUD_CIMACAN,kebutuhan kalori,Kebutuhan kalori,Tarif Makan Padat HCJJ ( Home Care Jauh Jauh ),Akomodasi & Visite,45000.0,harga_langsung,2
+507,RSUD_CIMACAN,kebutuhan kalori 1700,Kebutuhan kalori 1700,Tarif Makan Padat HCJJ ( Home Care Jauh Jauh ),Akomodasi & Visite,65000.0,harga_langsung,1
+508,RSUD_CIMACAN,kebutuhan kalori 1800,Kebutuhan kalori 1800,Tarif Makan Padat HCJJ ( Home Care Jauh Jauh ),Akomodasi & Visite,80000.0,harga_langsung,1
+509,RSUD_CIMACAN,kecil,Kecil,ESTETIK,Mata/THT/Kulit,112500.0,harga_langsung,2
+510,RSUD_CIMACAN,kecil / lesi1-3,Kecil / Lesi1-3,ESTETIK,Mata/THT/Kulit,154000.0,harga_langsung,1
+511,RSUD_CIMACAN,kehidupan sehari - hari aks,KEHIDUPAN SEHARI - HARI (AKS),UJI FUNGSI ACTIVITY DAILY LIVING (ADL)/ AKTIVITAS,Rehab Medik,95000.0,harga_langsung,1
+512,RSUD_CIMACAN,kelas i 1,Kelas I 1,Tarif Curretage,Akomodasi & Visite,25000.0,harga_langsung,1
+513,RSUD_CIMACAN,kelas i eksplor,Kelas I Eksplor,Tarif Tindakan Kebidanan Lain (Non Anestesi,Akomodasi & Visite,425000.0,harga_langsung,1
+514,RSUD_CIMACAN,kelas i episiotomi,Kelas I EPISIOTOMI,Tarif Tindakan Kebidanan Lain (Non Anestesi,Akomodasi & Visite,250000.0,harga_langsung,1
+515,RSUD_CIMACAN,kelas i inferforata,Kelas I Inferforata,Tarif Tindakan Kebidanan Lain (Anestesi),Akomodasi & Visite,535000.0,harga_langsung,1
+516,RSUD_CIMACAN,kelas i manual digital,Kelas I Manual Digital,Tarif Tindakan Kebidanan Lain (Non Anestesi,Akomodasi & Visite,525000.0,harga_langsung,1
+517,RSUD_CIMACAN,kelas i retensio plasenta,Kelas I retensio plasenta,Tarif Tindakan Kebidanan Lain (Non Anestesi,Rehab Medik,825000.0,harga_langsung,1
+518,RSUD_CIMACAN,kelas i uteri,Kelas I Uteri,Tarif Tindakan Kebidanan Lain (Non Anestesi,Akomodasi & Visite,375000.0,harga_langsung,1
+519,RSUD_CIMACAN,kelas ii isolasi observasi,"Kelas II, Isolasi, Observasi",Tarif Makan Padat,Akomodasi & Visite,35000.0,harga_langsung,1
+520,RSUD_CIMACAN,kelas ii r.isolasi dan r. observasi,"Kelas II, R.Isolasi dan R. Observasi",Tarif Rawat Inap per hari,Akomodasi & Visite,100000.0,harga_langsung,1
+521,RSUD_CIMACAN,kelas iii 1,Kelas III 1,Tarif Curretage,Akomodasi & Visite,25000.0,harga_langsung,1
+522,RSUD_CIMACAN,kelas utama manual placenta /,Kelas Utama Manual Placenta/,Tarif Tindakan Kebidanan Lain (Non Anestesi,Akomodasi & Visite,825000.0,harga_langsung,1
+523,RSUD_CIMACAN,kelas utama reparasi hymen,Kelas Utama Reparasi Hymen,Tarif Tindakan Kebidanan Lain (Anestesi),Akomodasi & Visite,535000.0,harga_langsung,1
+524,RSUD_CIMACAN,kelas utama reposisi inversio,Kelas Utama Reposisi Inversio,Tarif Tindakan Kebidanan Lain (Non Anestesi,Akomodasi & Visite,375000.0,harga_langsung,1
+525,RSUD_CIMACAN,kepribadian,Kepribadian,ESTETIK,Mata/THT/Kulit,250000.0,harga_langsung,1
+526,RSUD_CIMACAN,keratometry,Keratometry,ESTETIK,Mata/THT/Kulit,35000.0,harga_langsung,1
+527,RSUD_CIMACAN,kesiapan anak masuk sd,Kesiapan Anak Masuk SD,ESTETIK,Mata/THT/Kulit,200000.0,harga_langsung,1
+528,RSUD_CIMACAN,kesulitan belajar anak,Kesulitan Belajar Anak,ESTETIK,Mata/THT/Kulit,200000.0,harga_langsung,1
+529,RSUD_CIMACAN,keton,Keton,Tarif Pemeriksaan Laboratorium,Laboratorium,40000.0,harga_langsung,1
+530,RSUD_CIMACAN,keton urine,Keton Urine,Tarif Pemeriksaan Laboratorium,Laboratorium,10000.0,harga_langsung,1
+531,RSUD_CIMACAN,keur mata buta mata / tes buta wama,Keur Mata Buta Mata/tes buta wama,ESTETIK,Mata/THT/Kulit,37500.0,harga_langsung,1
+532,RSUD_CIMACAN,keuring mata,Keuring mata,Tarif Pengujian Kesehatan,Laboratorium,50000.0,harga_langsung,1
+533,RSUD_CIMACAN,khitan,Khitan,ESTETIK,Mata/THT/Kulit,108000.0,harga_langsung,1
+534,RSUD_CIMACAN,khusus,Khusus,Tarif Tindakan Bedah Mayat dan Pengawetan Jenazah,Tindakan Lain,1450000.0,harga_langsung,2
+535,RSUD_CIMACAN,khusus hiv,Khusus (HIV),Tarif Perawatan Jenazah,Laboratorium,350000.0,harga_langsung,1
+536,RSUD_CIMACAN,khusus kll,Khusus KLL,Tarif Perawatan Jenazah,Tindakan Lain,250000.0,harga_langsung,1
+537,RSUD_CIMACAN,kliren kreatinin,Kliren Kreatinin,Tarif Pemeriksaan Laboratorium,Laboratorium,50000.0,harga_langsung,1
+538,RSUD_CIMACAN,klirens ureum,Klirens Ureum,Tarif Pemeriksaan Laboratorium,Laboratorium,50000.0,harga_langsung,1
+539,RSUD_CIMACAN,klorida,Klorida,Tarif Pemeriksaan Laboratorium,Laboratorium,65000.0,harga_langsung,1
+540,RSUD_CIMACAN,knee joint bilateral ap / lateral,Knee Joint Bilateral AP/Lateral,Tarif Tindakan Radiologi,Radiologi,300000.0,harga_langsung,1
+541,RSUD_CIMACAN,knee joint kanan ap / lateral,Knee Joint Kanan AP/Lateral,Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+542,RSUD_CIMACAN,knee joint kiri ap / lateral,Knee Joint Kiri AP/Lateral,Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+543,RSUD_CIMACAN,koh,KOH,Tarif Pemeriksaan Laboratorium,Laboratorium,30000.0,harga_langsung,1
+544,RSUD_CIMACAN,konseling kb,Konseling KB,Tarif Tindakan Kecil Kebidanan,Kebidanan,20000.0,harga_langsung,1
+545,RSUD_CIMACAN,konseling laktasia,Konseling Laktasia,Tarif Tindakan Kecil Kebidanan,Kebidanan,40000.0,harga_langsung,1
+546,RSUD_CIMACAN,konseling pasien rawat inap kelas i per pasien,Konseling Pasien Rawat InapKelas I Per Pasien,Tarif Barang Farmasi,Akomodasi & Visite,20000.0,harga_langsung,1
+547,RSUD_CIMACAN,konseling pasien rawat inap kelas ii per pasien,KonselingPasien RawatInapKelasII Per Pasien,Tarif Barang Farmasi,Akomodasi & Visite,20000.0,harga_langsung,1
+548,RSUD_CIMACAN,konseling pasien rawat inap kelas iii per pasien,Konseling Pasien RawatInapKelasIII Per Pasien,Tarif Barang Farmasi,Akomodasi & Visite,20000.0,harga_langsung,1
+549,RSUD_CIMACAN,konseling pasien rawat inap kelas vip per pasien,Konseling Pasien Rawat InapKelasVIP Per Pasien,Tarif Barang Farmasi,Akomodasi & Visite,20000.0,harga_langsung,1
+550,RSUD_CIMACAN,konsultasi dokter specialis anestesi,Konsultasi Dokter Specialis Anestesi,ESTETIK,Rawat Jalan & Darurat,150000.0,harga_langsung,1
+551,RSUD_CIMACAN,konsultasi gizi,Konsultasi Gizi,Tarif Makan Cair HCJJ ( Home Care Jarak Jauh ),Akomodasi & Visite,25000.0,harga_langsung,1
+552,RSUD_CIMACAN,konsultasi gizi rawat jalan,Konsultasi gizi (rawat jalan),ESTETIK,Rawat Jalan & Darurat,25000.0,harga_langsung,1
+553,RSUD_CIMACAN,kontrol bedah endodontik,Kontrol Bedah Endodontik,ENDODONTIK,Gigi,36500.0,harga_langsung,1
+554,RSUD_CIMACAN,kontrol pasien dari luar,Kontrol Pasien dari luar,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,200000.0,harga_langsung,1
+555,RSUD_CIMACAN,kontrol spooling,Kontrol Spooling,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,50000.0,harga_langsung,1
+556,RSUD_CIMACAN,kranio fasial,KRANIO FASIAL,TATALAKSANA GANGGUAN PROSES BICARA PADA KELAINAN,Tindakan Lain,61000.0,harga_langsung,1
+557,RSUD_CIMACAN,kreatinin,Kreatinin,Tarif Pemeriksaan Laboratorium,Laboratorium,45000.0,harga_langsung,1
+558,RSUD_CIMACAN,kultur anaerob,Kultur Anaerob,Tarif Pemeriksaan Laboratorium,Laboratorium,500000.0,harga_langsung,1
+559,RSUD_CIMACAN,kultur bakteri tahan asam resistensi,Kultur BTA+Resistensi,Tarif Pemeriksaan Laboratorium,Laboratorium,450000.0,harga_langsung,1
+560,RSUD_CIMACAN,kultur diphteri,Kultur Diphteri,Tarif Pemeriksaan Laboratorium,Laboratorium,315000.0,harga_langsung,1
+561,RSUD_CIMACAN,kultur fungi,Kultur Fungi,Tarif Pemeriksaan Laboratorium,Laboratorium,315000.0,harga_langsung,1
+562,RSUD_CIMACAN,kultur go,Kultur GO,Tarif Pemeriksaan Laboratorium,Laboratorium,315000.0,harga_langsung,1
+563,RSUD_CIMACAN,kultur mikroorganisme,Kultur Mikroorganisme,Tarif Pemeriksaan Laboratorium,Laboratorium,350000.0,harga_langsung,2
+564,RSUD_CIMACAN,kultur mo-hk,Kultur MO-HK,Tarif Pemeriksaan Laboratorium,Laboratorium,400000.0,harga_langsung,1
+565,RSUD_CIMACAN,kunjungan rumah / kali,Kunjungan Rumah/Kali,ESTETIK,Mata/THT/Kulit,300000.0,harga_langsung,1
+566,RSUD_CIMACAN,kuretase aplikasi,Kuretase Aplikasi,ENDODONTIK,Gigi,6798000.0,harga_langsung,1
+567,RSUD_CIMACAN,laktat,Laktat,Tarif Pemeriksaan Laboratorium,Laboratorium,90000.0,harga_langsung,1
+568,RSUD_CIMACAN,laser,Laser,ESTETIK,Mata/THT/Kulit,252000.0,harga_langsung,1
+569,RSUD_CIMACAN,latihan jalan menggunakan prostesi,LATIHAN JALAN MENGGUNAKAN PROSTESI,C TINDAKAN KEDOKTERAN FISIK DAN REHABILITASI,Rehab Medik,41500.0,harga_langsung,2
+570,RSUD_CIMACAN,latihan ketahanan kardiopolumonar treadmill,"LATIHAN KETAHANAN KARDIOPOLUMONAR:TREADMILL,",C TINDAKAN KEDOKTERAN FISIK DAN REHABILITASI,Rehab Medik,62000.0,harga_langsung,2
+571,RSUD_CIMACAN,latihan koordinasi dan keterampilan motorik,LATIHAN KOORDINASI DAN KETERAMPILAN MOTORIK,C TINDAKAN KEDOKTERAN FISIK DAN REHABILITASI,Rehab Medik,48000.0,harga_langsung,1
+572,RSUD_CIMACAN,latihan lingkupgerak sendi,LATIHAN LINGKUPGERAK SENDI,C TINDAKAN KEDOKTERAN FISIK DAN REHABILITASI,Rehab Medik,61000.0,harga_langsung,1
+573,RSUD_CIMACAN,latihan penguatan otot berat,LATIHAN PENGUATAN OTOT BERAT,C TINDAKAN KEDOKTERAN FISIK DAN REHABILITASI,Rehab Medik,69000.0,harga_langsung,1
+574,RSUD_CIMACAN,latihan penguatan otot ringan,LATIHAN PENGUATAN OTOT RINGAN,C TINDAKAN KEDOKTERAN FISIK DAN REHABILITASI,Rehab Medik,43000.0,harga_langsung,1
+575,RSUD_CIMACAN,latihan penguatan ototsedang,LATIHAN PENGUATAN OTOTSEDANG,C TINDAKAN KEDOKTERAN FISIK DAN REHABILITASI,Rehab Medik,58000.0,harga_langsung,1
+576,RSUD_CIMACAN,latihan pernafasan,LATIHAN PERNAFASAN,C TINDAKAN KEDOKTERAN FISIK DAN REHABILITASI,Rehab Medik,56000.0,harga_langsung,1
+577,RSUD_CIMACAN,lavement,Lavement,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,12000.0,harga_langsung,1
+578,RSUD_CIMACAN,lavement / huknah / klisma,Lavement/Huknah/Klisma,"Tindakan Perawatan Ruang ICU,NICU,PICU,CICU,ICCU",Akomodasi & Visite,20000.0,harga_langsung,2
+579,RSUD_CIMACAN,ldh,LDH,Tarif Pemeriksaan Laboratorium,Laboratorium,310000.0,harga_langsung,2
+580,RSUD_CIMACAN,le sel,LE sel,Tarif Pemeriksaan Laboratorium,Laboratorium,50000.0,harga_langsung,1
+581,RSUD_CIMACAN,led,LED,Tarif Pemeriksaan Laboratorium,Laboratorium,30000.0,harga_langsung,1
+582,RSUD_CIMACAN,lengkap stick,Lengkap (Stick),Tarif Pemeriksaan Laboratorium,Laboratorium,36000.0,harga_langsung,1
+583,RSUD_CIMACAN,lensometer,Lensometer,ESTETIK,Mata/THT/Kulit,25000.0,harga_langsung,1
+584,RSUD_CIMACAN,lepas jahitan,LepasJahitan,ESTETIK,Mata/THT/Kulit,35000.0,harga_langsung,1
+585,RSUD_CIMACAN,leukosit,Leukosit,Tarif Pemeriksaan Laboratorium,Laboratorium,20000.0,harga_langsung,1
+586,RSUD_CIMACAN,ligasi de,Ligasi DE,Tarif Pelayanan Endoskopik,Tindakan Lain,1345000.0,harga_langsung,1
+587,RSUD_CIMACAN,ligature wire,Ligature Wire,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,60000.0,harga_langsung,1
+588,RSUD_CIMACAN,lingual arch,lingual arch,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,500000.0,harga_langsung,1
+589,RSUD_CIMACAN,low laser therapy berat / hi laser,LOW LASER THERAPY BERAT/ HI LASER,ERGOCYCLE,Rehab Medik,123000.0,harga_langsung,1
+590,RSUD_CIMACAN,low laser therapy ringan,LOW LASER THERAPY RINGAN,ERGOCYCLE,Rehab Medik,30000.0,harga_langsung,1
+591,RSUD_CIMACAN,low laser therapy sedang,LOW LASER THERAPY SEDANG,ERGOCYCLE,Rehab Medik,61000.0,harga_langsung,1
+592,RSUD_CIMACAN,luka bakar < 10,Luka Bakar < 10 %,ESTETIK,Mata/THT/Kulit,50000.0,harga_langsung,1
+593,RSUD_CIMACAN,luka bakar < 5,Luka Bakar < 5%,ESTETIK,Mata/THT/Kulit,25000.0,harga_langsung,1
+594,RSUD_CIMACAN,luka bakar > 10,Luka Bakar > 10 %,ESTETIK,Mata/THT/Kulit,70000.0,harga_langsung,1
+595,RSUD_CIMACAN,luviva,Luviva,Tarif Tindakan Kecil Kebidanan,Kebidanan,500000.0,harga_langsung,1
+596,RSUD_CIMACAN,magneto therapy,MAGNETO THERAPY,REHABILITASI PRE- VOKASIONAL DAN REHABILITASI,Rehab Medik,74500.0,harga_langsung,2
+597,RSUD_CIMACAN,malaria,Malaria,Tarif Pemeriksaan Laboratorium,Laboratorium,60000.0,harga_langsung,1
+598,RSUD_CIMACAN,mandibula bilateral ap / eisler kanan kiri,Mandibula Bilateral AP/Eisler Kanan Kiri,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+599,RSUD_CIMACAN,mandibula kanan ap / eisler,Mandibula Kanan AP/Eisler,Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+600,RSUD_CIMACAN,mandibula kiri ap / eisler,Mandibula Kiri AP/Eisler,Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+601,RSUD_CIMACAN,mantoux tes,Mantoux tes,ESTETIK,Mata/THT/Kulit,50000.0,harga_langsung,1
+602,RSUD_CIMACAN,mantoux test,MantouxTest,Tarif Pemeriksaan Laboratorium,Laboratorium,50000.0,harga_langsung,1
+603,RSUD_CIMACAN,manual lympatic orainage mld / lymphatic pump,MANUAL LYMPATIC ORAINAGE (MLD)/ LYMPHATIC PUMP,ERGOCYCLE,Rehab Medik,94000.0,harga_langsung,1
+604,RSUD_CIMACAN,manual lympatic orainage mld ringan,MANUAL LYMPATIC ORAINAGE (MLD) RINGAN,ERGOCYCLE,Rehab Medik,64000.0,harga_langsung,1
+605,RSUD_CIMACAN,manus bilateral ap / lateral atau oblique,Manus Bilateral AP/Lateral atau Oblique,Tarif Tindakan Radiologi,Radiologi,300000.0,harga_langsung,1
+606,RSUD_CIMACAN,manus kanan ap / lateral atau oblique,Manus Kanan AP/Lateral atau Oblique,Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+607,RSUD_CIMACAN,manus kiri ap / lateral atau oblique,Manus Kiri AP/Lateral atau Oblique,Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+608,RSUD_CIMACAN,marriage per session,Marriage Per Session,ESTETIK,Mata/THT/Kulit,130000.0,harga_langsung,1
+609,RSUD_CIMACAN,massage,MASSAGE,ERGOCYCLE,Rehab Medik,53000.0,harga_langsung,1
+610,RSUD_CIMACAN,mastoid dextra / sinistra schuller,Mastoid Dextra/Sinistra (Schuller),Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+611,RSUD_CIMACAN,maxilla ap,Maxilla AP,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+612,RSUD_CIMACAN,maxilla lateral,Maxilla Lateral,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+613,RSUD_CIMACAN,memandikan,Memandikan,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,12000.0,harga_langsung,3
+614,RSUD_CIMACAN,microdermabrasi,Microdermabrasi,ESTETIK,Mata/THT/Kulit,220000.0,harga_langsung,1
+615,RSUD_CIMACAN,minat / bakat / penjurusan,Minat/bakat/penjurusan,ESTETIK,Mata/THT/Kulit,200000.0,harga_langsung,1
+616,RSUD_CIMACAN,mmpi / kali,MMPI/Kali,ESTETIK,Mata/THT/Kulit,500000.0,harga_langsung,1
+617,RSUD_CIMACAN,mmse / kali,MMSE/Kali,ESTETIK,Mata/THT/Kulit,120000.0,harga_langsung,1
+618,RSUD_CIMACAN,mobilisasi,Mobilisasi,"Tindakan Perawatan Ruang ICU,NICU,PICU,CICU,ICCU",Akomodasi & Visite,30000.0,harga_langsung,1
+619,RSUD_CIMACAN,monitor elektrokardiografi,Monitor EKG,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,45000.0,harga_langsung,1
+620,RSUD_CIMACAN,morfologi sumsum tulang,Morfologi Sumsum Tulang,Tarif Pemeriksaan Laboratorium,Laboratorium,220000.0,harga_langsung,1
+621,RSUD_CIMACAN,multilead,Multilead,ESTETIK,Mata/THT/Kulit,300000.0,harga_langsung,1
+622,RSUD_CIMACAN,music therapy,MUSIC THERAPY,TATALAKSANA GANGGUAN MENELAN ; OROMOTOR,Tindakan Lain,65000.0,harga_langsung,1
+623,RSUD_CIMACAN,nance holder,nance holder,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,450000.0,harga_langsung,1
+624,RSUD_CIMACAN,narkoba 5jenis,Narkoba (5Jenis),Tarif Pemeriksaan Laboratorium,Laboratorium,205000.0,harga_langsung,1
+625,RSUD_CIMACAN,nasal,Nasal,Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+626,RSUD_CIMACAN,nasogastric tube,NGT,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,21000.0,harga_langsung,1
+627,RSUD_CIMACAN,nasogastric tube / cabut,NGT/Cabut,"Tindakan Perawatan Ruang ICU,NICU,PICU,CICU,ICCU",Akomodasi & Visite,36000.0,harga_langsung,1
+628,RSUD_CIMACAN,natrium,Natrium,Tarif Pemeriksaan Laboratorium,Laboratorium,75000.0,harga_langsung,1
+629,RSUD_CIMACAN,nebulasi,Nebulasi,ESTETIK,Mata/THT/Kulit,50000.0,harga_langsung,1
+630,RSUD_CIMACAN,nebulizer,Nebulizer,Tarif Tindakan Medis dan Terapi bagian Perinatologi Anak,Rehab Medik,40000.0,harga_langsung,5
+631,RSUD_CIMACAN,non invasive ventilation,Non Invasive Ventilation,Tarif Tindakan Medis Khusus Paru,Tindakan Lain,445000.0,harga_langsung,1
+632,RSUD_CIMACAN,non kontak tonometer,non kontak tonometer,ESTETIK,Mata/THT/Kulit,250000.0,harga_langsung,1
+633,RSUD_CIMACAN,nonne,Nonne,Tarif Pemeriksaan Laboratorium,Laboratorium,25000.0,harga_langsung,1
+634,RSUD_CIMACAN,nst,NST,ESTETIK,Mata/THT/Kulit,50000.0,harga_langsung,1
+635,RSUD_CIMACAN,observasi,Observasi,"Tindakan Perawatan Ruang ICU,NICU,PICU,CICU,ICCU",Akomodasi & Visite,30000.0,harga_langsung,1
+636,RSUD_CIMACAN,observasi darurat medik,Observasi Darurat Medik,Tarif Darurat Medik,Rawat Jalan & Darurat,50000.0,harga_langsung,1
+637,RSUD_CIMACAN,odontectomy,Odontectomy,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,600000.0,harga_langsung,1
+638,RSUD_CIMACAN,oesophagografi,Oesophagografi,Tarif Tindakan Radiologi,Radiologi,300000.0,harga_langsung,1
+639,RSUD_CIMACAN,oesophagomaagduodenografi oesophagus maag duodenum,Oesophagomaagduodenografi (OMD),Tarif Tindakan Radiologi,Radiologi,500000.0,harga_langsung,1
+640,RSUD_CIMACAN,oklusal adjusment,Oklusal adjusment,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,60000.0,harga_langsung,1
+641,RSUD_CIMACAN,okupasi,OKUPASI,REHABILITASI PRE- VOKASIONAL DAN REHABILITASI,Rehab Medik,510000.0,harga_langsung,1
+642,RSUD_CIMACAN,one day care,One Day Care,Tarif Rawat Inap per hari,Akomodasi & Visite,125000.0,harga_langsung,1
+643,RSUD_CIMACAN,open wound care 1-5 cm,open wound care (1-5 cm),ESTETIK,Mata/THT/Kulit,50000.0,harga_langsung,1
+644,RSUD_CIMACAN,open wound care 6-10 cm,open wound care (6-10 cm),ESTETIK,Mata/THT/Kulit,75000.0,harga_langsung,1
+645,RSUD_CIMACAN,open wound care >10 cm,open wound care (>10 cm),ESTETIK,Mata/THT/Kulit,100000.0,harga_langsung,1
+646,RSUD_CIMACAN,ortosis lumbal brace,ORTOSIS: LUMBAL BRACE,C TINDAKAN KEDOKTERAN FISIK DAN REHABILITASI,Rehab Medik,300000.0,harga_langsung,1
+647,RSUD_CIMACAN,other hydrotherapy,OTHER HYDROTHERAPY,C TINDAKAN KEDOKTERAN FISIK DAN REHABILITASI,Rehab Medik,47000.0,harga_langsung,1
+648,RSUD_CIMACAN,pada 14 januari,Pada 14 Januari,HERMAN SUHERMAN,Tindakan Lain,2025.0,harga_langsung,1
+649,RSUD_CIMACAN,pada tanggal 13januari,pada tanggal 13Januari,KETENTUAN PENUTUP,Tindakan Lain,2025.0,harga_langsung,1
+650,RSUD_CIMACAN,paket a akper rekrutmen pegawai,"Paket A (Akper, Rekrutmen Pegawai)",Tarif Pengujian Kesehatan,Tindakan Lain,400000.0,harga_langsung,1
+651,RSUD_CIMACAN,paket b haji ipdn mcu calon tenaga keija,"Paket B (Haji, IPDN, MCU Calon Tenaga Keija,",Tarif Pengujian Kesehatan,Tindakan Lain,650000.0,harga_langsung,1
+652,RSUD_CIMACAN,paket c caleg polisi / tni cabup cawabup,"Paket C (Caleg, POLISI/ TNI, Cabup, Cawabup)",Tarif Pengujian Kesehatan,Tindakan Lain,1300000.0,harga_langsung,1
+653,RSUD_CIMACAN,paket na k cl,"Paket Na, K, Cl",Tarif Pemeriksaan Laboratorium,Laboratorium,220000.0,harga_langsung,1
+654,RSUD_CIMACAN,pandy,Pandy,Tarif Pemeriksaan Laboratorium,Laboratorium,25000.0,harga_langsung,1
+655,RSUD_CIMACAN,panoramic,Panoramic,Tarif Tindakan Radiologi,Radiologi,125000.0,harga_langsung,1
+656,RSUD_CIMACAN,pap smear,PapSmear,Tarif Pemeriksaan Laboratorium,Laboratorium,150000.0,harga_langsung,2
+657,RSUD_CIMACAN,papiskotik,PAPISKOTIK,ESTETIK,Mata/THT/Kulit,50000.0,harga_langsung,1
+658,RSUD_CIMACAN,parafin bath,PARAFIN BATH,D TARIF PELAYANAN PAKETUMUM,Tindakan Lain,40000.0,harga_langsung,1
+659,RSUD_CIMACAN,parafin bath infra merah,"PARAFIN BATH, INFRA MERAH",C TINDAKAN KEDOKTERAN FISIK DAN REHABILITASI,Rehab Medik,45000.0,harga_langsung,1
+660,RSUD_CIMACAN,pasak logam cor,Pasak Logam Cor,RESTORASI POST ENDODONTIK,Gigi,52500.0,harga_langsung,1
+661,RSUD_CIMACAN,pasak serat / fiber post,Pasak serat/ fiber post,RESTORASI POST ENDODONTIK,Gigi,200000.0,harga_langsung,1
+662,RSUD_CIMACAN,pasang / cabut chateter,Pasang/cabut chateter,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,30000.0,harga_langsung,2
+663,RSUD_CIMACAN,pasang / lepas dower kateter,Pasang/Lepas DC,ESTETIK,Mata/THT/Kulit,30000.0,harga_langsung,1
+664,RSUD_CIMACAN,pasang / lepas pessarium,Pasang/LepasPessarium,ESTETIK,Mata/THT/Kulit,150000.0,harga_langsung,1
+665,RSUD_CIMACAN,pasang alat kontrasepsi dalam rahim,PasangIUD,ESTETIK,Mata/THT/Kulit,75000.0,harga_langsung,1
+666,RSUD_CIMACAN,pasang catheter,Pasang Catheter,ESTETIK,Mata/THT/Kulit,25000.0,harga_langsung,1
+667,RSUD_CIMACAN,pasang cpap,Pasang CPAP,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,75000.0,harga_langsung,1
+668,RSUD_CIMACAN,pasang implant,PasangImplant,ESTETIK,Kebidanan,75000.0,harga_langsung,1
+669,RSUD_CIMACAN,pasang infus,Pasang Infus,ESTETIK,Mata/THT/Kulit,12000.0,harga_langsung,1
+670,RSUD_CIMACAN,pasang mayo / guedel,Pasang mayo/guedel,ESTETIK,Mata/THT/Kulit,18000.0,harga_langsung,1
+671,RSUD_CIMACAN,pasang nasogastric tube,Pasang NGT,ESTETIK,Mata/THT/Kulit,72500.0,harga_langsung,2
+672,RSUD_CIMACAN,pasang ogt,Pasang OGT,Tindakan Perawatan Ruang Perinatologi,Akomodasi & Visite,20000.0,harga_langsung,1
+673,RSUD_CIMACAN,passing / lepas catheter,Passing / Lepas Catheter,ESTETIK,Mata/THT/Kulit,25000.0,harga_langsung,1
+674,RSUD_CIMACAN,patella bilateral skyline view,Patella Bilateral Skyline View,Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+675,RSUD_CIMACAN,patella kanan skyline view,Patella Kanan Skyline View,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+676,RSUD_CIMACAN,patella kiri skyline view,Patella Kiri Skyline View,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+677,RSUD_CIMACAN,patient controlled analgesia,Patient Controlled Analgesia,Tarif Tindakan Anestesiologi dan Terapi Intensif,Rehab Medik,90000.0,harga_langsung,1
+678,RSUD_CIMACAN,pauli,PAULI,ESTETIK,Mata/THT/Kulit,50000.0,harga_langsung,1
+679,RSUD_CIMACAN,pcv,PCV,Tarif Pemeriksaan Laboratorium,Laboratorium,20000.0,harga_langsung,1
+680,RSUD_CIMACAN,pedis bilateral ap / oblique atau lateral,Pedis Bilateral AP/Oblique atau Lateral,Tarif Tindakan Radiologi,Radiologi,300000.0,harga_langsung,1
+681,RSUD_CIMACAN,pedis kanan ap / oblique atau lateral,Pedis Kanan AP/Oblique atau Lateral,Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+682,RSUD_CIMACAN,pedis kiri ap / oblique atau lateral,Pedis Kiri AP/Oblique atau Lateral,Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+683,RSUD_CIMACAN,peeling,Peeling,ESTETIK,Mata/THT/Kulit,220000.0,harga_langsung,1
+684,RSUD_CIMACAN,pelayanan odasor per pasien,Pelayanan Odasor Per Pasien,Tarif Barang Farmasi,Tindakan Lain,25000.0,harga_langsung,1
+685,RSUD_CIMACAN,pelayanan resep non racikan per lembar,Pelayanan Resep Non Racikan Per Lembar,Tarif Barang Farmasi,Tindakan Lain,10000.0,harga_langsung,1
+686,RSUD_CIMACAN,pelayanan resep racikan sirup per botol,Pelayanan ResepRacikanSirup Per Botol,Tarif Barang Farmasi,Tindakan Lain,5000.0,harga_langsung,1
+687,RSUD_CIMACAN,pelvis ap,Pelvis AP,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+688,RSUD_CIMACAN,pemakaian incubator,Pemakaian Incubator,Tarif Tindakan Medis dan Terapi bagian Perinatologi Anak,Rehab Medik,50000.0,harga_langsung,1
+689,RSUD_CIMACAN,pemasanagan ett,Pemasanagan ETT,"Tindakan Perawatan Ruang ICU,NICU,PICU,CICU,ICCU",Akomodasi & Visite,55000.0,harga_langsung,1
+690,RSUD_CIMACAN,pemasangan / cabut mayo,Pemasangan / cabut mayo,"Tindakan Perawatan Ruang ICU,NICU,PICU,CICU,ICCU",Akomodasi & Visite,30000.0,harga_langsung,1
+691,RSUD_CIMACAN,pemasangan alat ortho dan komplikasi,pemasangan alat ortho dan komplikasi,Tarif Tindakan Medik Rawat Jalan,Rehab Medik,9000000.0,harga_langsung,1
+692,RSUD_CIMACAN,pemasangan colar neck,Pemasangan Colar neck,"Tindakan Perawatan Ruang ICU,NICU,PICU,CICU,ICCU",Akomodasi & Visite,20000.0,harga_langsung,1
+693,RSUD_CIMACAN,pemasangan cpap,Pemasangan CPAP,Tarif Tindakan Medis dan Terapi bagian Perinatologi Anak,Rehab Medik,100000.0,harga_langsung,2
+694,RSUD_CIMACAN,pemasangan elektrokardiografi,Pemasangan EKG,Tarif Tindakan Medis dan Terapi bagian Perinatologi Anak,Rehab Medik,50000.0,harga_langsung,1
+695,RSUD_CIMACAN,pemasangan ett,Pemasangan ETT,ESTETIK,Mata/THT/Kulit,100000.0,harga_langsung,1
+696,RSUD_CIMACAN,pemasangan laminaria skip,Pemasangan laminaria skip,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,30000.0,harga_langsung,1
+697,RSUD_CIMACAN,pemasangan nasogastric tube atau kateter urine,pemasangan NGT atau Kateter urine,ESTETIK,Laboratorium,100000.0,harga_langsung,1
+698,RSUD_CIMACAN,pemasangan spalk fraktur,Pemasangan Spalk Fraktur,ESTETIK,Mata/THT/Kulit,50000.0,harga_langsung,1
+699,RSUD_CIMACAN,pemasangan spalk untuk vanpfrakturatas,Pemasangan spalk untuk vanpfrakturatas,ESTETIK,Mata/THT/Kulit,25000.0,harga_langsung,1
+700,RSUD_CIMACAN,pemasangan spalk untuk yangfraktur,Pemasangan spalk untuk yangfraktur,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,24000.0,harga_langsung,1
+701,RSUD_CIMACAN,pemasangan swarowski gigi,Pemasangan Swarowski Gigi,ESTETIK,Gigi,262500.0,harga_langsung,1
+702,RSUD_CIMACAN,pemasangan tampon,Pemasangan tampon,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,30000.0,harga_langsung,1
+703,RSUD_CIMACAN,pemasangan umbilikal line,Pemasangan Umbilikal Line,Tarif Tindakan Medis dan Terapi bagian Perinatologi Anak,Rehab Medik,200000.0,harga_langsung,1
+704,RSUD_CIMACAN,pemasangan ventilator,Pemasangan Ventilator,Tarif Tindakan Medis dan Terapi bagian Perinatologi Anak,Rehab Medik,120000.0,harga_langsung,1
+705,RSUD_CIMACAN,pemberian obat oral,Pemberian obat oral,"Tindakan Perawatan Ruang ICU,NICU,PICU,CICU,ICCU",Akomodasi & Visite,25000.0,harga_langsung,1
+706,RSUD_CIMACAN,pemberian obat per vaginal,Pemberian Obat Per Vaginal,Tarif Tindakan Kecil Kebidanan,Kebidanan,30000.0,harga_langsung,1
+707,RSUD_CIMACAN,pemberian sonde per hari,Pemberian sonde per hari,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,9600.0,harga_langsung,3
+708,RSUD_CIMACAN,pemebrian obat anal,Pemebrian obat anal,"Tindakan Perawatan Ruang ICU,NICU,PICU,CICU,ICCU",Akomodasi & Visite,25000.0,harga_langsung,1
+709,RSUD_CIMACAN,pemeriksaan bebas napza,Pemeriksaan Bebas NAPZA,ESTETIK,Mata/THT/Kulit,50000.0,harga_langsung,1
+710,RSUD_CIMACAN,pemeriksaan dalam,Pemeriksaan Dalam,ESTETIK,Mata/THT/Kulit,10000.0,harga_langsung,1
+711,RSUD_CIMACAN,pemeriksaan dokter gigi spesilis,Pemeriksaan dokter gigi spesilis,Tarif Tindakan Medik Rawat Jalan,Gigi,150000.0,harga_langsung,1
+712,RSUD_CIMACAN,pemeriksaan dokter gigi umum,Pemeriksaan dokter gigi umum,Tarif Tindakan Medik Rawat Jalan,Gigi,125000.0,harga_langsung,1
+713,RSUD_CIMACAN,pemeriksaan dokter specialis,Pemeriksaan Dokter Specialis,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,150000.0,harga_langsung,9
+714,RSUD_CIMACAN,pemeriksaan dokter spesialis,PEMERIKSAAN DOKTER SPESIALIS,Tarif Tindakan Rehabilitasi Medik Rawat Jalan,Rehab Medik,150000.0,harga_langsung,3
+715,RSUD_CIMACAN,pemeriksaan dokter umum,Pemeriksaan dokter Umum,ESTETIK,Mata/THT/Kulit,125000.0,harga_langsung,11
+716,RSUD_CIMACAN,pemeriksaan doppler,Pemeriksaan Doppler,ESTETIK,Mata/THT/Kulit,10000.0,harga_langsung,1
+717,RSUD_CIMACAN,pemeriksaan kesehatan untuk asuransi,Pemeriksaan kesehatan untuk asuransi,Tarif Pengujian Kesehatan,Tindakan Lain,235000.0,harga_langsung,1
+718,RSUD_CIMACAN,pemeriksaan kesehatan untuk bekerja,Pemeriksaan kesehatan untuk bekerja,Tarif Pengujian Kesehatan,Tindakan Lain,160000.0,harga_langsung,1
+719,RSUD_CIMACAN,pemeriksaan kesehatan untuk sekolah,Pemeriksaan kesehatan untuk sekolah,Tarif Pengujian Kesehatan,Tindakan Lain,110000.0,harga_langsung,1
+720,RSUD_CIMACAN,pemeriksaan otoscope,Pemeriksaan Otoscope,ESTETIK,Mata/THT/Kulit,50000.0,harga_langsung,1
+721,RSUD_CIMACAN,pemeriksaan strabismus,pemeriksaan strabismus,ESTETIK,Mata/THT/Kulit,200000.0,harga_langsung,1
+722,RSUD_CIMACAN,pemeriksaan umbilical,Pemeriksaan Umbilical,ESTETIK,Mata/THT/Kulit,50000.0,harga_langsung,1
+723,RSUD_CIMACAN,pemeriksaandokter spesialis,Pemeriksaandokter spesialis,ESTETIK,Mata/THT/Kulit,150000.0,harga_langsung,1
+724,RSUD_CIMACAN,pemeriksaandokterumum,Pemeriksaandokterumum,ESTETIK,Mata/THT/Kulit,125000.0,harga_langsung,1
+725,RSUD_CIMACAN,pemulasaraan jenazah,Pemulasaraan jenazah,Tarif Perawatan Jenazah,Tindakan Lain,200000.0,harga_langsung,1
+726,RSUD_CIMACAN,pen,PEN,ESTETIK,Mata/THT/Kulit,125000.0,harga_langsung,1
+727,RSUD_CIMACAN,penambalan gigi,Penambalan Gigi,Tarif Tindakan Medik Rawat Jalan,Gigi,50000.0,harga_langsung,1
+728,RSUD_CIMACAN,penelusuran minat dan bakat,PENELUSURAN MINAT DAN BAKAT,"EVALUASI KEMAMPUAN INTELEKTUAL, ACADEMIC",Tindakan Lain,181000.0,harga_langsung,1
+729,RSUD_CIMACAN,pengambilan sampel / sedimen,Pengambilan sampel/ sedimen,"Tindakan Perawatan Ruang ICU,NICU,PICU,CICU,ICCU",Akomodasi & Visite,20000.0,harga_langsung,1
+730,RSUD_CIMACAN,pengambilan sampel darah faeces urin,"Pengambilan Sampel (darah, faeces, urin)",Tindakan Perawatan Ruang Perinatologi,Laboratorium,10000.0,harga_langsung,1
+731,RSUD_CIMACAN,pengambilan sample papsmear,Pengambilan Sample Papsmear,Tarif Tindakan Kecil Kebidanan,Kebidanan,95000.0,harga_langsung,1
+732,RSUD_CIMACAN,pengambilan sedimen darah feces urine sputum,"Pengambilan sedimen (darah, feces, urine, sputum)",Tindakan Perawatan Ruang Rawat Inap,Laboratorium,14000.0,harga_langsung,1
+733,RSUD_CIMACAN,penggunaan kamar jenazah kurang dari 6 jam,Penggunaan kamar jenazah kurang dari 6 jam,Tarif Perawatan Jenazah,Akomodasi & Visite,100000.0,harga_langsung,1
+734,RSUD_CIMACAN,pengisian pulpektomi,Pengisian Pulpektomi,Tarif Tindakan Medik Rawat Jalan,Gigi,60000.0,harga_langsung,1
+735,RSUD_CIMACAN,penguburan jenazah,Penguburan jenazah,Tarif Perawatan Jenazah,Tindakan Lain,150000.0,harga_langsung,1
+736,RSUD_CIMACAN,peniahitan luka sederhanakurangdari 5 jahitan,Peniahitan Luka Sederhanakurangdari 5 jahitan,ESTETIK,Mata/THT/Kulit,55000.0,harga_langsung,1
+737,RSUD_CIMACAN,peniahitan lukakomolek lebihdari 5 iahitan,± Peniahitan lukakomolek lebihdari 5 iahitan,ESTETIK,Mata/THT/Kulit,75000.0,harga_langsung,1
+738,RSUD_CIMACAN,penyimpanan jenazah dalam freezer per hari,Penyimpanan Jenazah dalam freezer per hari,Tarif Perawatan Jenazah,Tindakan Lain,250000.0,harga_langsung,1
+739,RSUD_CIMACAN,penyimpanan jenazah dalam kamar duka per hari,Penyimpanan Jenazah dalam kamar duka per hari,Tarif Perawatan Jenazah,Akomodasi & Visite,200000.0,harga_langsung,1
+740,RSUD_CIMACAN,per pasien,Per Pasien,Tarif Barang Farmasi,Tindakan Lain,27500.0,harga_langsung,2
+741,RSUD_CIMACAN,perawatan gangren,Perawatan Gangren,ESTETIK,Mata/THT/Kulit,50000.0,harga_langsung,1
+742,RSUD_CIMACAN,perawatan gangrene,Perawatan gangrene,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,36000.0,harga_langsung,2
+743,RSUD_CIMACAN,perawatan luka,Perawatan luka,ESTETIK,Mata/THT/Kulit,100000.0,harga_langsung,1
+744,RSUD_CIMACAN,perawatan luka bakar <10,Perawatan luka bakar <10%,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,24000.0,harga_langsung,1
+745,RSUD_CIMACAN,perawatan luka bakar <5,Perawatan luka bakar <5%,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,12000.0,harga_langsung,1
+746,RSUD_CIMACAN,perawatan luka bakar >10,Perawatan luka bakar >10%,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,30000.0,harga_langsung,1
+747,RSUD_CIMACAN,perawatan luka dengan jahitan 1-5jahitan,Perawatan luka dengan jahitan 1-5Jahitan,ESTETIK,Mata/THT/Kulit,50000.0,harga_langsung,1
+748,RSUD_CIMACAN,perawatan luka tanpa jahitan,Perawatan luka tanpa jahitan,ESTETIK,Mata/THT/Kulit,30000.0,harga_langsung,1
+749,RSUD_CIMACAN,perawatan postoperasi katarak,perawatan postoperasi katarak,ESTETIK,Mata/THT/Kulit,63000.0,harga_langsung,1
+750,RSUD_CIMACAN,perawatan preoperasi katarak,perawatan preoperasi katarak,ESTETIK,Mata/THT/Kulit,44500.0,harga_langsung,1
+751,RSUD_CIMACAN,perawatan saluran akar tunggal obturasi,Perawatan Saluran Akar Tunggal Obturasi,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,250000.0,harga_langsung,1
+752,RSUD_CIMACAN,perawatan tali pusat,Perawatan tali pusat,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,14000.0,harga_langsung,1
+753,RSUD_CIMACAN,perawatan tali pusat / hari,Perawatan Tali Pusat/hari,Tindakan Perawatan Ruang Perinatologi,Akomodasi & Visite,10000.0,harga_langsung,1
+754,RSUD_CIMACAN,percobaan perbendungan,Percobaan Perbendungan,Tarif Pemeriksaan Laboratorium,Laboratorium,18000.0,harga_langsung,1
+755,RSUD_CIMACAN,periksa dalam / vagina touch,Periksa Dalam / VaginaTouch,Tarif Tindakan Kecil Kebidanan,Kebidanan,7500.0,harga_langsung,1
+756,RSUD_CIMACAN,perimeter,Perimeter,ESTETIK,Mata/THT/Kulit,250000.0,harga_langsung,1
+757,RSUD_CIMACAN,perinatologi,Perinatologi,Tarif Rawat Inap per hari,Akomodasi & Visite,100000.0,harga_langsung,1
+758,RSUD_CIMACAN,peripherally inserted central catheter,Peripherally Inserted Central Catheter,Tarif Tindakan Medis dan Terapi bagian Perinatologi Anak,Rehab Medik,450000.0,harga_langsung,1
+759,RSUD_CIMACAN,personal hygiene,Personal hygiene,"Tindakan Perawatan Ruang ICU,NICU,PICU,CICU,ICCU",Akomodasi & Visite,30000.0,harga_langsung,1
+760,RSUD_CIMACAN,personal hygine,Personal Hygine,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,6000.0,harga_langsung,1
+761,RSUD_CIMACAN,pesiden suit,Pesiden Suit,Tarif Persalinan Patologis,Laboratorium,2240000.0,harga_langsung,1
+762,RSUD_CIMACAN,phacoemulsifikasi lensa implant,phacoemulsifikasi + lensa implant,ESTETIK,Kebidanan,3750000.0,harga_langsung,1
+763,RSUD_CIMACAN,phalanges digiti manus bilateral ap / lateral,Phalanges (Digiti) Manus Bilateral AP/Lateral,Tarif Tindakan Radiologi,Radiologi,300000.0,harga_langsung,1
+764,RSUD_CIMACAN,phalanges digiti manus kanan ap / lateral,Phalanges (Digiti) Manus Kanan AP/Lateral,Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+765,RSUD_CIMACAN,phalanges digiti manus kiri ap / lateral,Phalanges (Digiti) Manus Kiri AP/Lateral,Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+766,RSUD_CIMACAN,phalanges digiti pedis bilateral ap / lateral,Phalanges (Digiti) Pedis Bilateral AP/Lateral,Tarif Tindakan Radiologi,Radiologi,300000.0,harga_langsung,1
+767,RSUD_CIMACAN,phalanges digiti pedis kanan ap / lateral,Phalanges (Digiti) Pedis Kanan AP/Lateral,Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+768,RSUD_CIMACAN,phalanges digiti pedis kiri ap / lateral,Phalanges (Digiti) Pedis Kiri AP/Lateral,Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+769,RSUD_CIMACAN,phototherapy,Phototherapy,Tarif Tindakan Medis dan Terapi bagian Perinatologi Anak,Rehab Medik,50000.0,harga_langsung,1
+770,RSUD_CIMACAN,picu / nicu /,PICU / NICU/,Tarif Rawat Inap per hari,Akomodasi & Visite,440000.0,harga_langsung,1
+771,RSUD_CIMACAN,plak control / scalling ortho,plak control/scalling ortho,Tarif Tindakan Medik Rawat Jalan,Rehab Medik,150000.0,harga_langsung,1
+772,RSUD_CIMACAN,pleurodesis,Pleurodesis,Tarif Tindakan Medis Khusus Paru,Tindakan Lain,200000.0,harga_langsung,1
+773,RSUD_CIMACAN,pleurodesis pada pneumotoraks,Pleurodesis pada pneumotoraks,Tarif Tindakan Medis Khusus Paru,Tindakan Lain,200000.0,harga_langsung,1
+774,RSUD_CIMACAN,pm colour,PM COLOUR,ESTETIK,Mata/THT/Kulit,75000.0,harga_langsung,1
+775,RSUD_CIMACAN,pmib,PMIB,ESTETIK,Mata/THT/Kulit,50000.0,harga_langsung,1
+776,RSUD_CIMACAN,polipertomi scbb,PolipertomiSCBB,Tarif Pelayanan Endoskopik,Tindakan Lain,1885000.0,harga_langsung,1
+777,RSUD_CIMACAN,porcelen veneering / gigi,Porcelen Veneering/gigi,ESTETIK,Gigi,2000000.0,harga_langsung,1
+778,RSUD_CIMACAN,posterior bite raiser / incline bite plane,posterior bite raiser/incline bite plane,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,500000.0,harga_langsung,1
+779,RSUD_CIMACAN,postural drainage,Postural drainage,"Tindakan Perawatan Ruang ICU,NICU,PICU,CICU,ICCU",Akomodasi & Visite,237500.0,harga_langsung,2
+780,RSUD_CIMACAN,postural drainge,POSTURAL DRAINGE,REHABILITASI PRE- VOKASIONAL DAN REHABILITASI,Rehab Medik,54500.0,harga_langsung,2
+781,RSUD_CIMACAN,pptest,PPTest,Tarif Pemeriksaan Laboratorium,Laboratorium,30000.0,harga_langsung,1
+782,RSUD_CIMACAN,pptest semi kuantitatif,PPTest Semi Kuantitatif,Tarif Pemeriksaan Laboratorium,Laboratorium,65000.0,harga_langsung,1
+783,RSUD_CIMACAN,premedikasi,Premedikasi,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,10000.0,harga_langsung,1
+784,RSUD_CIMACAN,probing saluran lakrimal,probing saluran lakrimal,ESTETIK,Mata/THT/Kulit,250000.0,harga_langsung,1
+785,RSUD_CIMACAN,promosi jabatan,PromosiJabatan,ESTETIK,Mata/THT/Kulit,250000.0,harga_langsung,1
+786,RSUD_CIMACAN,prosedur diagnostik ultrasonografi neuromuskuloskeletal,PROSEDUR DIAGNOSTIK USG NEUROMUSKULOSKELETAL,PROSEDUR BERSIHAN JALAN NAFAS/ AIRWAY CLEARANCE,Radiologi,549000.0,harga_langsung,1
+787,RSUD_CIMACAN,prosedur dry neddling da injeksi,PROSEDUR DRY NEDDLING da injeksi,PROSEDUR BERSIHAN JALAN NAFAS/ AIRWAY CLEARANCE,Tindakan Lain,400000.0,harga_langsung,1
+788,RSUD_CIMACAN,prosedur ekokardiografi dewasa,Prosedur Ekokardiografi Dewasa,Pelayanan Penunjang Diagnostik Kardiovaskular,Tindakan Lain,440000.0,harga_langsung,1
+789,RSUD_CIMACAN,prosedur ekokardiografi pediatrik,Prosedur Ekokardiografi Pediatrik,Pelayanan Penunjang Diagnostik Kardiovaskular,Tindakan Lain,440000.0,harga_langsung,1
+790,RSUD_CIMACAN,prosedur evaluasi prosthesis,PROSEDUR EVALUASI PROSTHESIS,PROSEDUR BERSIHAN JALAN NAFAS/ AIRWAY CLEARANCE,Tindakan Lain,72000.0,harga_langsung,1
+791,RSUD_CIMACAN,prosedur injeksi intra artikuler dan ligamen,PROSEDUR INJEKSI INTRA ARTIKULER DAN LIGAMEN,PROSEDUR INJEKSI INTRA PARINEURAL PADASARAFTEPI,Tindakan Lain,425000.0,harga_langsung,1
+792,RSUD_CIMACAN,prosedur injeksi saraf perifer,PROSEDUR INJEKSI SARAF PERIFER,PROSEDUR INJEKSI INTRA PARINEURAL PADASARAFTEPI,Tindakan Lain,165000.0,harga_langsung,1
+793,RSUD_CIMACAN,prosedur injeksi softtissue,PROSEDUR INJEKSI SOFTTISSUE,PROSEDUR INJEKSI INTRA PARINEURAL PADASARAFTEPI,Tindakan Lain,123000.0,harga_langsung,1
+794,RSUD_CIMACAN,prosedur kardiovaskular perkutan,Prosedur Kardiovaskular Perkutan,Pelayanan Penunjang Diagnostik Kardiovaskular,Tindakan Lain,28000000.0,harga_langsung,1
+795,RSUD_CIMACAN,prosedur kardioversi,Prosedur Kardioversi,Pelayanan Tindakan Kardiovaskular,Tindakan Lain,360000.0,harga_langsung,1
+796,RSUD_CIMACAN,prosedur manipulasi,PROSEDUR MANIPULASI,INJEKSI BOTULINUM TOXIN/ PHENOL DAN INJEKSI LAIN,Tindakan Lain,136000.0,harga_langsung,1
+797,RSUD_CIMACAN,prosedur pericardiocentesis,Prosedur Pericardiocentesis,Pelayanan Tindakan Kardiovaskular,Tindakan Lain,2000000.0,harga_langsung,1
+798,RSUD_CIMACAN,prosedur spray and strech,PROSEDUR SPRAY AND STRECH,INJEKSI BOTULINUM TOXIN/ PHENOL DAN INJEKSI LAIN,Tindakan Lain,98000.0,harga_langsung,1
+799,RSUD_CIMACAN,prosedur stress testing treadmill test,Prosedur Stress Testing (Treadmill Test),Pelayanan Penunjang Diagnostik Kardiovaskular,Tindakan Lain,280000.0,harga_langsung,1
+800,RSUD_CIMACAN,prosedur taping,PROSEDUR TAPING,INJEKSI BOTULINUM TOXIN/ PHENOL DAN INJEKSI LAIN,Tindakan Lain,183000.0,harga_langsung,1
+801,RSUD_CIMACAN,prosedur trombolitik,Prosedur Trombolitik,Pelayanan Tindakan Kardiovaskular,Tindakan Lain,2640000.0,harga_langsung,1
+802,RSUD_CIMACAN,prosedur ultrasonografi guidance neuromuskuloskeletal,PROSEDUR USG GUIDANCE NEUROMUSKULOSKELETAL,PROSEDUR BERSIHAN JALAN NAFAS/ AIRWAY CLEARANCE,Radiologi,549000.0,harga_langsung,1
+803,RSUD_CIMACAN,prosedur ultrasound pembuluh darah,Prosedur Ultrasound Pembuluh Darah,Pelayanan Penunjang Diagnostik Kardiovaskular,Laboratorium,600000.0,harga_langsung,1
+804,RSUD_CIMACAN,prosedur ultrasound pembuluh darah karotis,Prosedur Ultrasound Pembuluh Darah Karotis,Pelayanan Penunjang Diagnostik Kardiovaskular,Laboratorium,600000.0,harga_langsung,1
+805,RSUD_CIMACAN,protein elektroforesa,Protein Elektroforesa,Tarif Pemeriksaan Laboratorium,Laboratorium,200000.0,harga_langsung,1
+806,RSUD_CIMACAN,protein kuantitatif,Protein Kuantitatif,Tarif Pemeriksaan Laboratorium,Laboratorium,30000.0,harga_langsung,1
+807,RSUD_CIMACAN,protein total,Protein Total,Tarif Pemeriksaan Laboratorium,Laboratorium,25000.0,harga_langsung,1
+808,RSUD_CIMACAN,provisoris,Provisoris,RESTORASI POST ENDODONTIK,Gigi,200000.0,harga_langsung,1
+809,RSUD_CIMACAN,psa total,PSA Total,Tarif Pemeriksaan Laboratorium,Laboratorium,365000.0,harga_langsung,1
+810,RSUD_CIMACAN,psikoedukasi / sesi,Psikoedukasi /Sesi,ESTETIK,Mata/THT/Kulit,120000.0,harga_langsung,1
+811,RSUD_CIMACAN,psikometri panss ymrs madras esrs ham-d,"Psikometri (PANSS, YMRS, MADRAS, ESRS, HAM-D,",ESTETIK,Mata/THT/Kulit,120000.0,harga_langsung,1
+812,RSUD_CIMACAN,psikoterapi mdifikasi perilaku / sesi,PsikoterapiMdifikasi Perilaku/Sesi,ESTETIK,Rehab Medik,120000.0,harga_langsung,1
+813,RSUD_CIMACAN,psikoterapi suportif / sesi,PsikoterapiSuportif /Sesi,ESTETIK,Rehab Medik,120000.0,harga_langsung,1
+814,RSUD_CIMACAN,pt prothrombin time,PT (Prothrombin Time),Tarif Pemeriksaan Laboratorium,Laboratorium,300000.0,harga_langsung,1
+815,RSUD_CIMACAN,pterigium,Pterigium,ESTETIK,Mata/THT/Kulit,106250.0,harga_langsung,1
+816,RSUD_CIMACAN,pulp capping,Pulp Capping,Tarif Tindakan Medik Rawat Jalan,Gigi,50000.0,harga_langsung,1
+817,RSUD_CIMACAN,punch,Punch,ESTETIK,Mata/THT/Kulit,165000.0,harga_langsung,1
+818,RSUD_CIMACAN,pungsi ascites,Pungsi Ascites,ESTETIK,Mata/THT/Kulit,250000.0,harga_langsung,1
+819,RSUD_CIMACAN,pungsi pleura,Pungsi pleura,ESTETIK,Mata/THT/Kulit,210000.0,harga_langsung,2
+820,RSUD_CIMACAN,pungsi sendi besar,Pungsi sendi besar,ESTETIK,Mata/THT/Kulit,250000.0,harga_langsung,1
+821,RSUD_CIMACAN,pungsi sendi kecil,Pungsi sendi kecil,ESTETIK,Mata/THT/Kulit,250000.0,harga_langsung,1
+822,RSUD_CIMACAN,punksi ascites,Punksi Ascites,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,96000.0,harga_langsung,2
+823,RSUD_CIMACAN,punksi cavum douglas,PunksiCavum Douglas,ESTETIK,Mata/THT/Kulit,200000.0,harga_langsung,1
+824,RSUD_CIMACAN,punksi lumbal,Punksi Lumbal,Tarif Tindakan Medis dan Terapi bagian Perinatologi Anak,Rehab Medik,90000.0,harga_langsung,2
+825,RSUD_CIMACAN,punksi pleura,Punksi Pleura,Tarif Tindakan Medis dan Terapi bagian Perinatologi Anak,Rehab Medik,60000.0,harga_langsung,3
+826,RSUD_CIMACAN,punksi sumsum tulang,Punksi Sumsum Tulang,Tarif Tindakan Medis dan Terapi bagian Perinatologi Anak,Rehab Medik,80000.0,harga_langsung,2
+827,RSUD_CIMACAN,qperculectomy,Qperculectomy,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,1417500.0,harga_langsung,1
+828,RSUD_CIMACAN,ransel verban,Ransel verban,ESTETIK,Mata/THT/Kulit,30000.0,harga_langsung,1
+829,RSUD_CIMACAN,rapid test antigen sars-co v-2,Rapid Test Antigen SARS-CoV-2,Tarif Pemeriksaan Laboratorium,Laboratorium,99000.0,harga_langsung,1
+830,RSUD_CIMACAN,rebonding / resemen,Rebonding/Resemen,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,60000.0,harga_langsung,1
+831,RSUD_CIMACAN,recementing crown,RecementingCrown,RESTORASI POST ENDODONTIK,Gigi,63000.0,harga_langsung,1
+832,RSUD_CIMACAN,recreation therapy senam bermain,"RECREATION THERAPY: SENAM, BERMAIN",TATALAKSANA GANGGUAN MENELAN ; OROMOTOR,Tindakan Lain,47000.0,harga_langsung,1
+833,RSUD_CIMACAN,rectal touche,Rectal touche,ESTETIK,Mata/THT/Kulit,24000.0,harga_langsung,3
+834,RSUD_CIMACAN,rectal toucher,RectalToucher,ESTETIK,Mata/THT/Kulit,12000.0,harga_langsung,1
+835,RSUD_CIMACAN,rectosigmoidoscopy,Rectosigmoidoscopy,Tarif Pelayanan Endoskopik,Laboratorium,900000.0,harga_langsung,1
+836,RSUD_CIMACAN,reduksi / protein,Reduksi/Protein,Tarif Pemeriksaan Laboratorium,Laboratorium,10000.0,harga_langsung,1
+837,RSUD_CIMACAN,reflex stapedius,ReflexStapedius,ESTETIK,Mata/THT/Kulit,130000.0,harga_langsung,1
+838,RSUD_CIMACAN,rehabilitasi paliatif,REHABILITASI PALIATIF,REHABILITASI PRE- VOKASIONAL DAN REHABILITASI,Rehab Medik,48000.0,harga_langsung,1
+839,RSUD_CIMACAN,rekruitmen,Rekruitmen,ESTETIK,Mata/THT/Kulit,250000.0,harga_langsung,1
+840,RSUD_CIMACAN,remove drain multiple,remove drain multiple,ESTETIK,Mata/THT/Kulit,80000.0,harga_langsung,1
+841,RSUD_CIMACAN,remove drain single,remove drain single,ESTETIK,Mata/THT/Kulit,50000.0,harga_langsung,1
+842,RSUD_CIMACAN,remove ngtatau dower kateter,remove NGTatau DC,ESTETIK,Mata/THT/Kulit,60000.0,harga_langsung,1
+843,RSUD_CIMACAN,repair konjungtiva,repair konjungtiva,ESTETIK,Mata/THT/Kulit,2500000.0,harga_langsung,1
+844,RSUD_CIMACAN,repair palpebra,Repair palpebra,ESTETIK,Mata/THT/Kulit,3500000.0,harga_langsung,1
+845,RSUD_CIMACAN,repair robek portio,Repair Robek Portio,Tarif Tindakan Kecil Kebidanan,Kebidanan,150000.0,harga_langsung,1
+846,RSUD_CIMACAN,repair strabismur,repair strabismur,ESTETIK,Mata/THT/Kulit,2500000.0,harga_langsung,1
+847,RSUD_CIMACAN,reparasi plat alat pelepasan,reparasi plat alat pelepasan,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,300000.0,harga_langsung,1
+848,RSUD_CIMACAN,reparasi plat dan spring,reparasi plat dan spring,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,400000.0,harga_langsung,1
+849,RSUD_CIMACAN,reposisi dislokasi,Reposisi dislokasi,ESTETIK,Mata/THT/Kulit,48000.0,harga_langsung,1
+850,RSUD_CIMACAN,reposisi gigi post trauma,Reposisi Gigi Post trauma,Tarif Tindakan Medik Rawat Jalan,Gigi,1183500.0,harga_langsung,1
+851,RSUD_CIMACAN,reposisi iol,Reposisi IOL,ESTETIK,Mata/THT/Kulit,3500000.0,harga_langsung,1
+852,RSUD_CIMACAN,reposisi iris,Reposisi iris,ESTETIK,Mata/THT/Kulit,3500000.0,harga_langsung,1
+853,RSUD_CIMACAN,resistensi / uji kepekaan obat,Resistensi/Uji Kepekaan Obat,Tarif Pemeriksaan Laboratorium,Laboratorium,200000.0,harga_langsung,1
+854,RSUD_CIMACAN,resistensi osmotik,Resistensi Osmotik,Tarif Pemeriksaan Laboratorium,Laboratorium,45000.0,harga_langsung,1
+855,RSUD_CIMACAN,resusitasi dengan ett,Resusitasi dengan ETT,ESTETIK,Mata/THT/Kulit,100000.0,harga_langsung,1
+856,RSUD_CIMACAN,resusitasi tanpa ett,Resusitasi tanpa ETT,ESTETIK,Mata/THT/Kulit,50000.0,harga_langsung,1
+857,RSUD_CIMACAN,retainer cekat / rh rc 6g,retainer cekat/Rh + rc (6g),Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,800000.0,harga_langsung,1
+858,RSUD_CIMACAN,retainer lepasan,Retainer Lepasan,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,500000.0,harga_langsung,1
+859,RSUD_CIMACAN,retikulosit,Retikulosit,Tarif Pemeriksaan Laboratorium,Laboratorium,45000.0,harga_langsung,1
+860,RSUD_CIMACAN,retraksi bekuan,Retraksi Bekuan,Tarif Pemeriksaan Laboratorium,Laboratorium,30000.0,harga_langsung,2
+861,RSUD_CIMACAN,rhesus,Rhesus,Tarif Pemeriksaan Laboratorium,Laboratorium,25000.0,harga_langsung,1
+862,RSUD_CIMACAN,rivalta,Rivalta,Tarif Pemeriksaan Laboratorium,Laboratorium,25000.0,harga_langsung,1
+863,RSUD_CIMACAN,rjp,RJP,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,42000.0,harga_langsung,3
+864,RSUD_CIMACAN,rjp termasuk intubasi,RJP (termasuk intubasi),Tarif Tindakan Anestesiologi dan Terapi Intensif,Rehab Medik,265000.0,harga_langsung,1
+865,RSUD_CIMACAN,rpe 2 band molar,RPE + 2 band molar,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,1600000.0,harga_langsung,1
+866,RSUD_CIMACAN,rt pcr sars-co v-2,RT PCR SARS-CoV-2,Tarif Pemeriksaan Laboratorium,Laboratorium,275000.0,harga_langsung,1
+867,RSUD_CIMACAN,rutin konvensional,Rutin (Konvensional),Tarif Pemeriksaan Laboratorium,Laboratorium,25000.0,harga_langsung,1
+868,RSUD_CIMACAN,sacrum ap / lateral,Sacrum AP/Lateral,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+869,RSUD_CIMACAN,sadt / mpt,SADT / MPT,Tarif Pemeriksaan Laboratorium,Laboratorium,120000.0,harga_langsung,1
+870,RSUD_CIMACAN,sars-co v-2-ig m / ig g rapid,SARS-CoV-2-IgM/IgG (rapid),Tarif Pemeriksaan Laboratorium,Laboratorium,150000.0,harga_langsung,1
+871,RSUD_CIMACAN,scalling / regio,Scalling/ regio,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,60000.0,harga_langsung,1
+872,RSUD_CIMACAN,scapula billateral ap,Scapula Billateral AP,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+873,RSUD_CIMACAN,scapula kanan ap,Scapula Kanan AP,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+874,RSUD_CIMACAN,scapula kiri ap,Scapula Kiri AP,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+875,RSUD_CIMACAN,scc,SCC,Tarif Pemeriksaan Laboratorium,Laboratorium,480000.0,harga_langsung,1
+876,RSUD_CIMACAN,screening hipotiroid kongenital shk,Screening Hipotiroid Kongenital (SHK),Tarif Pemeriksaan Laboratorium,Laboratorium,163000.0,harga_langsung,1
+877,RSUD_CIMACAN,sedang,Sedang,ESTETIK,Mata/THT/Kulit,175000.0,harga_langsung,2
+878,RSUD_CIMACAN,sedang / lesi3-4,Sedang / Lesi3-4,ESTETIK,Mata/THT/Kulit,209000.0,harga_langsung,1
+879,RSUD_CIMACAN,sedasi / paralysis / analgesia,Sedasi/Paralysis/Analgesia,Tarif Tindakan Anestesiologi dan Terapi Intensif,Rehab Medik,140000.0,harga_langsung,1
+880,RSUD_CIMACAN,sedimen,Sedimen,Tarif Pemeriksaan Laboratorium,Laboratorium,25000.0,harga_langsung,1
+881,RSUD_CIMACAN,sementasi semen resin,Sementasi semen resin,RESTORASI POST ENDODONTIK,Gigi,100000.0,harga_langsung,1
+882,RSUD_CIMACAN,sensitiviti test,Sensitiviti test,Tarif Pemeriksaan Laboratorium,Laboratorium,250000.0,harga_langsung,1
+883,RSUD_CIMACAN,sensory reedukasi,SENSORY REEDUKASI,ERGOCYCLE,Rehab Medik,25000.0,harga_langsung,1
+884,RSUD_CIMACAN,sgot ast,SGOT,Tarif Pemeriksaan Laboratorium,Laboratorium,45000.0,harga_langsung,1
+885,RSUD_CIMACAN,sgpt alt,SGPT,Tarif Pemeriksaan Laboratorium,Laboratorium,45000.0,harga_langsung,1
+886,RSUD_CIMACAN,shoulder bilateral ap,Shoulder Bilateral AP,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+887,RSUD_CIMACAN,shoulder bilateral endo / ekso rotasi,Shoulder Bilateral Endo/Ekso Rotasi,Tarif Tindakan Radiologi,Radiologi,440000.0,harga_langsung,1
+888,RSUD_CIMACAN,shoulder kanan ap,Shoulder Kanan AP,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+889,RSUD_CIMACAN,shoulder kanan endo / ekso rotasi,Shoulder Kanan Endo/Ekso Rotasi,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+890,RSUD_CIMACAN,shoulder kiri ap,Shoulder Kiri AP,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+891,RSUD_CIMACAN,shoulder kiri endo / ekso rotasi,Shoulder Kiri Endo/Ekso Rotasi,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+892,RSUD_CIMACAN,sicl iol,SICL + IOL,ESTETIK,Mata/THT/Kulit,5500000.0,harga_langsung,1
+893,RSUD_CIMACAN,sikat gigi a,Sikat gigi A,Tarif Tindakan Medik Rawat Jalan,Gigi,100000.0,harga_langsung,1
+894,RSUD_CIMACAN,sikat gigi b,Sikat gigi B,Tarif Tindakan Medik Rawat Jalan,Gigi,60000.0,harga_langsung,1
+895,RSUD_CIMACAN,sikat gigi c,Sikat Gigi C,Tarif Tindakan Medik Rawat Jalan,Gigi,30000.0,harga_langsung,1
+896,RSUD_CIMACAN,sitologi cairan tubuh,SitologiCairan Tubuh,Tarif Pemeriksaan Laboratorium,Laboratorium,150000.0,harga_langsung,1
+897,RSUD_CIMACAN,sitologi fnab,Sitologi FNAB,Tarif Pemeriksaan Laboratorium,Laboratorium,200000.0,harga_langsung,1
+898,RSUD_CIMACAN,skrining lanjutan,Skrining Lanjutan,Tarif Makan Cair HCJJ ( Home Care Jarak Jauh ),Akomodasi & Visite,20000.0,harga_langsung,1
+899,RSUD_CIMACAN,slicing,Slicing,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,60000.0,harga_langsung,1
+900,RSUD_CIMACAN,slit lamp,slit lamp,ESTETIK,Mata/THT/Kulit,100000.0,harga_langsung,1
+901,RSUD_CIMACAN,soft tissue leher ap,Soft Tissue Leher AP,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+902,RSUD_CIMACAN,soft tissue leher lateral,Soft Tissue Leher Lateral,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+903,RSUD_CIMACAN,sonopuntur,Sonopuntur,ESTETIK,Mata/THT/Kulit,125000.0,harga_langsung,1
+904,RSUD_CIMACAN,sperma analisis,Sperma analisis,Tarif Pemeriksaan Laboratorium,Laboratorium,70000.0,harga_langsung,1
+905,RSUD_CIMACAN,spirometer,Spirometer,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,60000.0,harga_langsung,1
+906,RSUD_CIMACAN,spirometri,Spirometri,Tarif Tindakan Penunjang Diagnostik,Tindakan Lain,120000.0,harga_langsung,5
+907,RSUD_CIMACAN,spirometri dengan provokasi bronkus,Spirometri dengan provokasi bronkus,Tarif Tindakan Medis Khusus Paru,Tindakan Lain,320000.0,harga_langsung,1
+908,RSUD_CIMACAN,spn,SPN,Tarif Tindakan Radiologi,Radiologi,330000.0,harga_langsung,1
+909,RSUD_CIMACAN,spoeling prostat / wsd,Spoeling prostat/WSD,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,28500.0,harga_langsung,2
+910,RSUD_CIMACAN,spooling,Spooling,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,30000.0,harga_langsung,1
+911,RSUD_CIMACAN,spooling / irigasi,Spooling / Irigasi,ESTETIK,Mata/THT/Kulit,20000.0,harga_langsung,1
+912,RSUD_CIMACAN,ste haemoroid,STE Haemoroid,Tarif Pelayanan Endoskopik,Tindakan Lain,505000.0,harga_langsung,1
+913,RSUD_CIMACAN,ste histoscyl,STE Histoscyl,Tarif Pelayanan Endoskopik,Tindakan Lain,2095000.0,harga_langsung,1
+914,RSUD_CIMACAN,sternum,Sternum,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+915,RSUD_CIMACAN,stimulasi,STIMULASI,TATALAKSANA GANGGUAN MENELAN ; OROMOTOR,Tindakan Lain,66000.0,harga_langsung,1
+916,RSUD_CIMACAN,stimulus kognitif / sesi,Stimulus Kognitif/Sesi,ESTETIK,Mata/THT/Kulit,120000.0,harga_langsung,1
+917,RSUD_CIMACAN,stl ap / lateral,STL AP/ Lateral,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+918,RSUD_CIMACAN,stoma care,stoma care,ESTETIK,Mata/THT/Kulit,60000.0,harga_langsung,1
+919,RSUD_CIMACAN,streak retinoskopi,streak retinoskopi,ESTETIK,Mata/THT/Kulit,150000.0,harga_langsung,1
+920,RSUD_CIMACAN,streakretinoscopy,Streakretinoscopy,ESTETIK,Mata/THT/Kulit,375000.0,harga_langsung,1
+921,RSUD_CIMACAN,subjektif refraksi,subjektif refraksi,ESTETIK,Mata/THT/Kulit,125000.0,harga_langsung,1
+922,RSUD_CIMACAN,suction,Suction,ESTETIK,Mata/THT/Kulit,20000.0,harga_langsung,1
+923,RSUD_CIMACAN,suction slym / hari,Suction slym/hari,"Tindakan Perawatan Ruang ICU,NICU,PICU,CICU,ICCU",Akomodasi & Visite,24000.0,harga_langsung,2
+924,RSUD_CIMACAN,suntik,Suntik,ESTETIK,Mata/THT/Kulit,25000.0,harga_langsung,1
+925,RSUD_CIMACAN,suntik kb / obat / vaksin,Suntik KB/Obat/Vaksin,ESTETIK,Mata/THT/Kulit,30000.0,harga_langsung,1
+926,RSUD_CIMACAN,suntikan / hari,Suntikan/hari,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,12000.0,harga_langsung,3
+927,RSUD_CIMACAN,supportive per session,Supportive per Session,ESTETIK,Mata/THT/Kulit,65000.0,harga_langsung,1
+928,RSUD_CIMACAN,swab vagina,SwabVagina,ESTETIK,Mata/THT/Kulit,75000.0,harga_langsung,1
+929,RSUD_CIMACAN,swd / mwd,SWD / MWD,ERGOCYCLE,Rehab Medik,30000.0,harga_langsung,1
+930,RSUD_CIMACAN,syphilis rapid,Syphilis (Rapid),Tarif Pemeriksaan Laboratorium,Laboratorium,46000.0,harga_langsung,1
+931,RSUD_CIMACAN,syringe pump,Syringe pump,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,40000.0,harga_langsung,3
+932,RSUD_CIMACAN,syringe pump per tindakan,Syringe Pump per Tindakan,Tarif Tindakan Medis dan Terapi bagian Perinatologi Anak,Rehab Medik,40000.0,harga_langsung,1
+933,RSUD_CIMACAN,tambalan gic besar,Tambalan GIC Besar,Tarif Tindakan Medik Rawat Jalan,Gigi,90000.0,harga_langsung,1
+934,RSUD_CIMACAN,tambalan gic kecil,Tambalan GIC Kecil,Tarif Tindakan Medik Rawat Jalan,Gigi,80000.0,harga_langsung,1
+935,RSUD_CIMACAN,tambalan komposit anterior besar,Tambalan Komposit Anterior Besar,Tarif Tindakan Medik Rawat Jalan,Gigi,200000.0,harga_langsung,1
+936,RSUD_CIMACAN,tambalan komposit anterior kecil,Tambalan Komposit Anterior Kecil,Tarif Tindakan Medik Rawat Jalan,Gigi,100000.0,harga_langsung,1
+937,RSUD_CIMACAN,tambalan komposit anterior sedang,Tambalan Komposit Anterior Sedang,Tarif Tindakan Medik Rawat Jalan,Gigi,150000.0,harga_langsung,1
+938,RSUD_CIMACAN,tambalan komposit posterior besar,Tambalan Komposit Posterior Besar,Tarif Tindakan Medik Rawat Jalan,Gigi,150000.0,harga_langsung,1
+939,RSUD_CIMACAN,tambalan komposit posterior kecil,Tambalan Komposit Posterior Kecil,Tarif Tindakan Medik Rawat Jalan,Gigi,80000.0,harga_langsung,1
+940,RSUD_CIMACAN,tambalan komposit posterior sedang,Tambalan Komposit Posterior Sedang,Tarif Tindakan Medik Rawat Jalan,Gigi,100000.0,harga_langsung,1
+941,RSUD_CIMACAN,tanam benang,Tanam Benang,ESTETIK,Mata/THT/Kulit,200000.0,harga_langsung,1
+942,RSUD_CIMACAN,tanpa guidance berat,TANPA GUIDANCE BERAT,INJEKSI BOTULINUM TOXIN/ PHENOL DAN INJEKSI LAIN,Tindakan Lain,323000.0,harga_langsung,1
+943,RSUD_CIMACAN,tanpa guidance ringan,TANPA GUIDANCE RINGAN,INJEKSI BOTULINUM TOXIN/ PHENOL DAN INJEKSI LAIN,Tindakan Lain,121000.0,harga_langsung,1
+944,RSUD_CIMACAN,tanpa shock,Tanpa shock,Pelayanan Tindakan Kardiovaskular,Tindakan Lain,280000.0,harga_langsung,1
+945,RSUD_CIMACAN,tapping dan straping berat,TAPPING DAN STRAPING BERAT,INJEKSI BOTULINUM TOXIN/ PHENOL DAN INJEKSI LAIN,Tindakan Lain,236000.0,harga_langsung,1
+946,RSUD_CIMACAN,tapping dan straping ringan,TAPPING DAN STRAPING RINGAN,INJEKSI BOTULINUM TOXIN/ PHENOL DAN INJEKSI LAIN,Tindakan Lain,85000.0,harga_langsung,1
+947,RSUD_CIMACAN,tapping dan straping sedang,TAPPING DAN STRAPING SEDANG,INJEKSI BOTULINUM TOXIN/ PHENOL DAN INJEKSI LAIN,Tindakan Lain,160000.0,harga_langsung,1
+948,RSUD_CIMACAN,tat,TAT,ESTETIK,Mata/THT/Kulit,75000.0,harga_langsung,1
+949,RSUD_CIMACAN,tatalaksana gangguan artikulasi,TATALAKSANA GANGGUAN ARTIKULASI,TATALAKSANA GANGGUAN PROSES BICARA PADA KELAINAN,Tindakan Lain,45000.0,harga_langsung,2
+950,RSUD_CIMACAN,tatalaksana gangguan berbahasa,TATALAKSANA GANGGUAN BERBAHASA,TATALAKSANA GANGGUAN BERBAHASA TIDAK SPESIFIK ;,Tindakan Lain,58000.0,harga_langsung,1
+951,RSUD_CIMACAN,tatalaksana gangguan berbahasatidak spesifik,TATALAKSANA GANGGUAN BERBAHASATIDAK SPESIFIK,ERGOCYCLE,Rehab Medik,40000.0,harga_langsung,1
+952,RSUD_CIMACAN,tatalaksana gangguan fonasi atau produksi suara,TATALAKSANA GANGGUAN FONASI ATAU PRODUKSI SUARA,TATALAKSANA GANGGUAN PROSES BICARA PADA KELAINAN,Tindakan Lain,51000.0,harga_langsung,1
+953,RSUD_CIMACAN,tatalaksana gangguan kelancaran bicara,TATALAKSANA GANGGUAN KELANCARAN BICARA,TATALAKSANA GANGGUAN PROSES BICARA PADA KELAINAN,Tindakan Lain,45000.0,harga_langsung,2
+954,RSUD_CIMACAN,tatalaksana gangguan menelan,TATALAKSANA GANGGUAN MENELAN,ERGOCYCLE,Rehab Medik,40000.0,harga_langsung,1
+955,RSUD_CIMACAN,tatalaksana gangguan sensasi - sensori,TATALAKSANA GANGGUAN SENSASI - SENSORI,REHABILITASI PRE- VOKASIONAL DAN REHABILITASI,Rehab Medik,65000.0,harga_langsung,1
+956,RSUD_CIMACAN,tatalaksana kesulitan makan pada anak,TATALAKSANA KESULITAN MAKAN PADA ANAK,REHABILITASI PRE- VOKASIONAL DAN REHABILITASI,Rehab Medik,65000.0,harga_langsung,1
+957,RSUD_CIMACAN,tatalaksana keterlambatan bicara bahasa,TATALAKSANA KETERLAMBATAN BICARA BAHASA,TATALAKSANA GANGGUAN PROSES BICARA PADA KELAINAN,Tindakan Lain,74000.0,harga_langsung,2
+958,RSUD_CIMACAN,technique act,TECHNIQUE (ACT),PROSEDUR BERSIHAN JALAN NAFAS/ AIRWAY CLEARANCE,Tindakan Lain,100000.0,harga_langsung,1
+959,RSUD_CIMACAN,tens es nmes,"TENS, ES, NMES",ERGOCYCLE,Rehab Medik,69500.0,harga_langsung,2
+960,RSUD_CIMACAN,terapi alkohol dan rehabilitasi narkoba dan,TerapiAlkohol dan Rehabilitasi Narkoba dan,ESTETIK,Rehab Medik,150000.0,harga_langsung,1
+961,RSUD_CIMACAN,terapi dingin,TERAPI DINGIN,REHABILITASI PRE- VOKASIONAL DAN REHABILITASI,Rehab Medik,45000.0,harga_langsung,1
+962,RSUD_CIMACAN,terapi edukasi,TERAPI EDUKASI,TATALAKSANA GANGGUAN MENELAN ; OROMOTOR,Rehab Medik,36000.0,harga_langsung,2
+963,RSUD_CIMACAN,terapi inhalasi,TERAPI INHALASI,REHABILITASI PRE- VOKASIONAL DAN REHABILITASI,Rehab Medik,55000.0,harga_langsung,2
+964,RSUD_CIMACAN,terapi keluarga dan martial / sesi,Terapi Keluarga dan Martial / Sesi,ESTETIK,Rehab Medik,150000.0,harga_langsung,1
+965,RSUD_CIMACAN,terapi latihan,TERAPI LATIHAN,C TINDAKAN KEDOKTERAN FISIK DAN REHABILITASI,Rehab Medik,31500.0,harga_langsung,2
+966,RSUD_CIMACAN,terapi multi sensori terintegrasi,TERAPI MULTI SENSORI TERINTEGRASI,REHABILITASI PRE- VOKASIONAL DAN REHABILITASI,Rehab Medik,65000.0,harga_langsung,1
+967,RSUD_CIMACAN,terapi oksigen,Terapi Oksigen,ESTETIK,Rehab Medik,120000.0,harga_langsung,2
+968,RSUD_CIMACAN,terapi relaksasi / sesi,Terapi relaksasi /Sesi,ESTETIK,Rehab Medik,120000.0,harga_langsung,1
+969,RSUD_CIMACAN,terapi suportif dan konseling / sesi,TerapiSuportif dan Konseling/Sesi,ESTETIK,Rehab Medik,120000.0,harga_langsung,1
+970,RSUD_CIMACAN,tes golongan darah,Tes Golongan Darah,Tarif Pelayanan Bank Darah,Laboratorium,10000.0,harga_langsung,1
+971,RSUD_CIMACAN,tes kepribadian,TES KEPRIBADIAN,"EVALUASI KEMAMPUAN INTELEKTUAL, ACADEMIC",Tindakan Lain,184000.0,harga_langsung,1
+972,RSUD_CIMACAN,tes tumbang anak denfer test,TesTumbang Anak (Denfer test),ESTETIK,Mata/THT/Kulit,200000.0,harga_langsung,1
+973,RSUD_CIMACAN,test butawama,test butawama,ESTETIK,Mata/THT/Kulit,50000.0,harga_langsung,1
+974,RSUD_CIMACAN,tetalaksanakan gangguan berbahasa,TETALAKSANAKAN GANGGUAN BERBAHASA,ERGOCYCLE,Rehab Medik,40000.0,harga_langsung,1
+975,RSUD_CIMACAN,thorax lateral,Thorax Lateral,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+976,RSUD_CIMACAN,thorax pa,Thorax PA,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+977,RSUD_CIMACAN,thorax pa / lateral,Thorax PA/Lateral,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+978,RSUD_CIMACAN,thorax top lordotic view,ThoraxTop Lordotic View,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+979,RSUD_CIMACAN,three mirror lens / goniotomi,three mirror lens / goniotomi,ESTETIK,Mata/THT/Kulit,300000.0,harga_langsung,1
+980,RSUD_CIMACAN,tibc,TIBC,Tarif Pemeriksaan Laboratorium,Laboratorium,160000.0,harga_langsung,1
+981,RSUD_CIMACAN,tim klinis,TIM KLINIS,"EVALUASI KEMAMPUAN INTELEKTUAL, ACADEMIC",Tindakan Lain,100000.0,harga_langsung,1
+982,RSUD_CIMACAN,timpanometri,Timpanometri,ESTETIK,Mata/THT/Kulit,130000.0,harga_langsung,1
+983,RSUD_CIMACAN,tindakan medik pertama pada bbl patologis,Tindakan Medik Pertama Pada BBL Patologis,Tindakan Perawatan Ruang Perinatologi,Laboratorium,150000.0,harga_langsung,1
+984,RSUD_CIMACAN,tindakan ultra sound,TINDAKAN ULTRA SOUND,D TARIF PELAYANAN PAKETUMUM,Tindakan Lain,40000.0,harga_langsung,1
+985,RSUD_CIMACAN,tindakan ultrasound diathermi,TINDAKAN ULTRASOUND DIATHERMI,C TINDAKAN KEDOKTERAN FISIK DAN REHABILITASI,Rehab Medik,56000.0,harga_langsung,1
+986,RSUD_CIMACAN,tindik,Tindik,ESTETIK,Mata/THT/Kulit,50000.0,harga_langsung,1
+987,RSUD_CIMACAN,tmj bilateral,TMJ Bilateral,Tarif Tindakan Radiologi,Radiologi,300000.0,harga_langsung,1
+988,RSUD_CIMACAN,tonometer,Tonometer,ESTETIK,Mata/THT/Kulit,125000.0,harga_langsung,1
+989,RSUD_CIMACAN,total parental nutrition tpn,Total Parental Nutrition (TPN),Tarif Tindakan Anestesiologi dan Terapi Intensif,Rehab Medik,40000.0,harga_langsung,1
+990,RSUD_CIMACAN,tpa trans palatal arch,TPA (Trans Palatal Arch),Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,450000.0,harga_langsung,1
+991,RSUD_CIMACAN,tpha,TPHA,Tarif Pemeriksaan Laboratorium,Laboratorium,80000.0,harga_langsung,1
+992,RSUD_CIMACAN,tpha semi kuantitatif,TPHA semi kuantitatif,Tarif Pemeriksaan Laboratorium,Laboratorium,120000.0,harga_langsung,1
+993,RSUD_CIMACAN,trabekulektomi,Trabekulektomi,ESTETIK,Mata/THT/Kulit,2500000.0,harga_langsung,1
+994,RSUD_CIMACAN,traksi,TRAKSI,C TINDAKAN KEDOKTERAN FISIK DAN REHABILITASI,Rehab Medik,50500.0,harga_langsung,2
+995,RSUD_CIMACAN,transfusi,Transfusi,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,24000.0,harga_langsung,3
+996,RSUD_CIMACAN,transfusi tukar,TransfusiTukar,Tarif Tindakan Medis dan Terapi bagian Perinatologi Anak,Rehab Medik,212500.0,harga_langsung,2
+997,RSUD_CIMACAN,transthoracal needle aspiration ttna,Transthoracal needle aspiration (TTNA),Tarif Tindakan Medis Khusus Paru,Tindakan Lain,892000.0,harga_langsung,1
+998,RSUD_CIMACAN,transvenous pacemaker,Transvenous Pacemaker,Pelayanan Tindakan Kardiovaskular,Tindakan Lain,5600000.0,harga_langsung,1
+999,RSUD_CIMACAN,trepanasi,Trepanasi,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,30000.0,harga_langsung,1
+1000,RSUD_CIMACAN,trigliserida,Trigliserida,Tarif Pemeriksaan Laboratorium,Laboratorium,45000.0,harga_langsung,1
+1001,RSUD_CIMACAN,trombosit,Trombosit,Tarif Pemeriksaan Laboratorium,Laboratorium,25000.0,harga_langsung,1
+1002,RSUD_CIMACAN,troponin t,Troponin T,Tarif Pemeriksaan Laboratorium,Laboratorium,372000.0,harga_langsung,1
+1003,RSUD_CIMACAN,troponin-1,Troponin-1,Tarif Pemeriksaan Laboratorium,Laboratorium,372000.0,harga_langsung,1
+1004,RSUD_CIMACAN,tshs,TSHS,Tarif Pemeriksaan Laboratorium,Laboratorium,350000.0,harga_langsung,1
+1005,RSUD_CIMACAN,tubex tf,TubexTF,Tarif Pemeriksaan Laboratorium,Laboratorium,242000.0,harga_langsung,1
+1006,RSUD_CIMACAN,tumpalan composite post endodontik,Tumpalan Composite Post Endodontik,RESTORASI POST ENDODONTIK,Gigi,500000.0,harga_langsung,1
+1007,RSUD_CIMACAN,tumpalan glass ionemer post endodontic,Tumpalan glass ionemer post endodontic,RESTORASI POST ENDODONTIK,Gigi,250000.0,harga_langsung,1
+1008,RSUD_CIMACAN,ubt,UBT,Tarif Pelayanan Endoskopik,Tindakan Lain,595000.0,harga_langsung,1
+1009,RSUD_CIMACAN,uji / skrining nyeri,UJI/ SKRINING NYERI,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1010,RSUD_CIMACAN,uji / skrining paliatif,UJI/ SKRINING PALIATIF,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1011,RSUD_CIMACAN,uji dekondisi,UJI DEKONDISI,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1012,RSUD_CIMACAN,uji fungsi berkemih berat,UJI FUNGSI BERKEMIH BERAT,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,215000.0,harga_langsung,1
+1013,RSUD_CIMACAN,uji fungsi berkemih dan defekasi pada anak,UJI FUNGSI BERKEMIH DAN DEFEKASI PADA ANAK,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1014,RSUD_CIMACAN,uji fungsi berkemih ringan,UJI FUNGSI BERKEMIH RINGAN,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,159000.0,harga_langsung,1
+1015,RSUD_CIMACAN,uji fungsi berkemih sedang,UJI FUNGSI BERKEMIH SEDANG,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,187000.0,harga_langsung,1
+1016,RSUD_CIMACAN,uji fungsi cognisi,UJI FUNGSI COGNISI,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1017,RSUD_CIMACAN,uji fungsi defekasi,UJI FUNGSI DEFEKASI,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,134000.0,harga_langsung,1
+1018,RSUD_CIMACAN,uji fungsi eksekusi gerak,UJI FUNGSI EKSEKUSI GERAK,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,2
+1019,RSUD_CIMACAN,uji fungsi fleksibiltas dan lingkup gerak sendi,UJI FUNGSI FLEKSIBILTAS DAN LINGKUP GERAK SENDI,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1020,RSUD_CIMACAN,uji fungsi gangguan komunikasi,UJI FUNGSI GANGGUAN KOMUNIKASI,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1021,RSUD_CIMACAN,uji fungsi integrasi sensori motor,UJI FUNGSI INTEGRASI SENSORI MOTOR,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1022,RSUD_CIMACAN,uji fungsi kardidrespirasi berat,UJI FUNGSI KARDIDRESPIRASI BERAT,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,123000.0,harga_langsung,1
+1023,RSUD_CIMACAN,uji fungsi kardidrespirasi ringan,UJI FUNGSI KARDIDRESPIRASI RINGAN,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,45000.0,harga_langsung,1
+1024,RSUD_CIMACAN,uji fungsi kardidrespirasi sedang,UJI FUNGSI KARDIDRESPIRASI SEDANG,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,74000.0,harga_langsung,1
+1025,RSUD_CIMACAN,uji fungsi kebugaran kardiorespirasi,UJI FUNGSI KEBUGARAN KARDIORESPIRASI,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1026,RSUD_CIMACAN,uji fungsi kebugaran pada anak,UJI FUNGSI KEBUGARAN PADA ANAK,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1027,RSUD_CIMACAN,uji fungsi kekuatan otot,UJI FUNGSI KEKUATAN OTOT,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,152000.0,harga_langsung,1
+1028,RSUD_CIMACAN,uji fungsi kelainan angulasi pada anak,UJI FUNGSI KELAINAN ANGULASI PADA ANAK,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1029,RSUD_CIMACAN,uji fungsi kelainan pada kaki dewasa,UJI FUNGSI KELAINAN PADA KAKI DEWASA,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1030,RSUD_CIMACAN,uji fungsi keseimbangan statistik dan dinamik,UJI FUNGSI KESEIMBANGAN STATISTIK DAN DINAMIK,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1031,RSUD_CIMACAN,uji fungsi kesulitan makan pada anak,UJI FUNGSI KESULITAN MAKAN PADA ANAK,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1032,RSUD_CIMACAN,uji fungsi komunikasi,UJI FUNGSI KOMUNIKASI,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1033,RSUD_CIMACAN,uji fungsi komuniklasi pada anak,UJI FUNGSI KOMUNIKLASI PADA ANAK,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1034,RSUD_CIMACAN,uji fungsi kontrol postur,UJI FUNGSI KONTROL POSTUR,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1035,RSUD_CIMACAN,uji fungsi kontrol postur pada anak,UJI FUNGSI KONTROL POSTUR PADA ANAK,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1036,RSUD_CIMACAN,uji fungsi lokomotor,UJI FUNGSI LOKOMOTOR,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1037,RSUD_CIMACAN,uji fungsi lokomotor pada anak,UJI FUNGSI LOKOMOTOR PADA ANAK,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1038,RSUD_CIMACAN,uji fungsi menelan,UJI FUNGSI MENELAN,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1039,RSUD_CIMACAN,uji fungsi motorik halus pada anak,UJI FUNGSI MOTORIK HALUS PADA ANAK,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1040,RSUD_CIMACAN,uji fungsi neurogenic bowel,UJI FUNGSI NEUROGENIC BOWEL,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1041,RSUD_CIMACAN,uji fungsi sensibilitas,UJI FUNGSI SENSIBILITAS,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1042,RSUD_CIMACAN,uji fungsi sensori integrasi dan praksis,UJI FUNGSI SENSORI INTEGRASI DAN PRAKSIS,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1043,RSUD_CIMACAN,uji fungsi tangan,UJI FUNGSI TANGAN,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1044,RSUD_CIMACAN,uji kemampuan fungsional dan perawatan,UJI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1045,RSUD_CIMACAN,uji kualitas hidup,UJI KUALITAS HIDUP,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1046,RSUD_CIMACAN,uji motorik halus,UJI MOTORIK HALUS,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1047,RSUD_CIMACAN,uji polajalan,UJI POLAJALAN,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,88000.0,harga_langsung,1
+1048,RSUD_CIMACAN,uji resiko jatuh,UJI RESIKO JATUH,UJI FUNGSI KEMAMPUAN FUNGSIONAL DAN PERAWATAN,Rehab Medik,95000.0,harga_langsung,1
+1049,RSUD_CIMACAN,ultra violet radiation uvr,ULTRA VIOLET RADIATION ( UVR ),REHABILITASI PRE- VOKASIONAL DAN REHABILITASI,Rehab Medik,48000.0,harga_langsung,1
+1050,RSUD_CIMACAN,ultrasonografi 2d,USG 2D,ESTETIK,Radiologi,80000.0,harga_langsung,1
+1051,RSUD_CIMACAN,ultrasonografi 4 dimensia,USG 4 Dimensia,Tarif Tindakan Kecil Kebidanan,Radiologi,100000.0,harga_langsung,1
+1052,RSUD_CIMACAN,ultrasonografi 4d,USG 4D,ESTETIK,Radiologi,100000.0,harga_langsung,1
+1053,RSUD_CIMACAN,ultrasonografi abdomen atas,USG Abdomen Atas,Tarif Tindakan Radiologi,Radiologi,250000.0,harga_langsung,1
+1054,RSUD_CIMACAN,ultrasonografi abdomen bawah,USG Abdomen Bawah,Tarif Tindakan Radiologi,Radiologi,250000.0,harga_langsung,1
+1055,RSUD_CIMACAN,ultrasonografi colli / leher,USG Colli/Leher,Tarif Tindakan Radiologi,Radiologi,300000.0,harga_langsung,1
+1056,RSUD_CIMACAN,ultrasonografi full abdomen,USG Full Abdomen,Tarif Tindakan Radiologi,Radiologi,325000.0,harga_langsung,1
+1057,RSUD_CIMACAN,ultrasonografi guide pungsi pleura,USG Guide Pungsi Pleura,ESTETIK,Radiologi,300000.0,harga_langsung,1
+1058,RSUD_CIMACAN,ultrasonografi guiding,USG Guiding,ESTETIK,Radiologi,200000.0,harga_langsung,1
+1059,RSUD_CIMACAN,ultrasonografi guiding abdomen,USG GUIDING ABDOMEN,Tarif Tindakan Radiologi,Radiologi,200000.0,harga_langsung,1
+1060,RSUD_CIMACAN,ultrasonografi guiding thorax,USG GUIDING THORAX,Tarif Tindakan Radiologi,Radiologi,200000.0,harga_langsung,1
+1061,RSUD_CIMACAN,ultrasonografi hepatobilier,USG HEPATOBILIER,Tarif Tindakan Radiologi,Radiologi,250000.0,harga_langsung,1
+1062,RSUD_CIMACAN,ultrasonografi inguinal,USG INGUINAL,Tarif Tindakan Radiologi,Radiologi,250000.0,harga_langsung,1
+1063,RSUD_CIMACAN,ultrasonografi kebidanan,USG Kebidanan,Tarif Tindakan Kecil Kebidanan,Radiologi,120000.0,harga_langsung,1
+1064,RSUD_CIMACAN,ultrasonografi kepala,USG Kepala,Tarif Tindakan Radiologi,Radiologi,325000.0,harga_langsung,1
+1065,RSUD_CIMACAN,ultrasonografi mammae bilateral,USG MAMMAE BILATERAL,Tarif Tindakan Radiologi,Radiologi,350000.0,harga_langsung,1
+1066,RSUD_CIMACAN,ultrasonografi mammae dan axilla dextra,USG Mammae dan Axilla Dextra,Tarif Tindakan Radiologi,Radiologi,200000.0,harga_langsung,1
+1067,RSUD_CIMACAN,ultrasonografi mammae dan axilla sinistra,USG Mammae dan Axilla Sinistra,Tarif Tindakan Radiologi,Radiologi,200000.0,harga_langsung,1
+1068,RSUD_CIMACAN,ultrasonografi mammae dextra sinistra dan bilateral,"USG MAMMAE Dextra, Sinistra dan Bilateral",Tarif Tindakan Radiologi,Radiologi,400000.0,harga_langsung,1
+1069,RSUD_CIMACAN,ultrasonografi musculosceletal,USG Musculosceletal,Tarif Tindakan Radiologi,Radiologi,300000.0,harga_langsung,1
+1070,RSUD_CIMACAN,ultrasonografi scrotum,USG Scrotum,Tarif Tindakan Radiologi,Radiologi,250000.0,harga_langsung,1
+1071,RSUD_CIMACAN,ultrasonografi small part,USG Small Part,Tarif Tindakan Radiologi,Radiologi,200000.0,harga_langsung,1
+1072,RSUD_CIMACAN,ultrasonografi softtissue / massa,USG SOFTTISSUE/MASSA,Tarif Tindakan Radiologi,Radiologi,250000.0,harga_langsung,1
+1073,RSUD_CIMACAN,ultrasonografi thyroid,USG Thyroid,Tarif Tindakan Radiologi,Radiologi,300000.0,harga_langsung,1
+1074,RSUD_CIMACAN,ultrasonografi traktus urinarius,USG Traktus Urinarius,Tarif Tindakan Radiologi,Radiologi,250000.0,harga_langsung,1
+1075,RSUD_CIMACAN,ultrasonografi transvaginal,USG Transvaginal,Tarif Tindakan Kecil Kebidanan,Radiologi,95000.0,harga_langsung,2
+1076,RSUD_CIMACAN,ultrasonografi vasculer doppler,USG Vasculer Doppler,Tarif Tindakan Radiologi,Radiologi,250000.0,harga_langsung,1
+1077,RSUD_CIMACAN,up bumper,up bumper,Tarif Tindakan Medik Rawat Jalan,Rawat Jalan & Darurat,450000.0,harga_langsung,1
+1078,RSUD_CIMACAN,upwire / pasang ginsona / up gipsona,UPWire / pasangGinsona/ UP Gipsona,ESTETIK,Mata/THT/Kulit,800000.0,harga_langsung,1
+1079,RSUD_CIMACAN,uretrocystografi,Uretrocystografi,Tarif Tindakan Radiologi,Radiologi,450000.0,harga_langsung,1
+1080,RSUD_CIMACAN,uretrotrografi,Uretrotrografi,CBCT LUAS LAPANGAN SEDANG TANPA EXPERTISE,Tindakan Lain,400000.0,harga_langsung,1
+1081,RSUD_CIMACAN,ureum,Ureum,Tarif Pemeriksaan Laboratorium,Laboratorium,45000.0,harga_langsung,1
+1082,RSUD_CIMACAN,urine 3 parameter p h protein glukosa,"Urine 3 parameter (pH, protein, glukosa)",Tarif Pemeriksaan Laboratorium,Laboratorium,25000.0,harga_langsung,1
+1083,RSUD_CIMACAN,usd / swd / mwd,USD/ SWD / MWD,REHABILITASI PRE- VOKASIONAL DAN REHABILITASI,Rehab Medik,56000.0,harga_langsung,1
+1084,RSUD_CIMACAN,utama,Utama,VVIP,Akomodasi & Visite,6499000.0,harga_langsung,2
+1085,RSUD_CIMACAN,utama / vip b,UTAMA/ VIP B,VVIP,Akomodasi & Visite,2800000.0,harga_langsung,12
+1086,RSUD_CIMACAN,utama / vip b cathlab angiografi,UTAMA / VIP B Cathlab Angiografi,VVIP,Akomodasi & Visite,5000000.0,harga_langsung,1
+1087,RSUD_CIMACAN,utama / vip b endoscopy 5.000 . 000 00,"UTAMA / VIP B Endoscopy 5.000 . 000,00",VVIP,Akomodasi & Visite,5000000.0,harga_langsung,1
+1088,RSUD_CIMACAN,utama 1,Utama 1,Tarif Curretage,Tindakan Lain,25000.0,harga_langsung,1
+1089,RSUD_CIMACAN,utama bedah besar,Utama Bedah besar,VVIP,Akomodasi & Visite,5198000.0,harga_langsung,1
+1090,RSUD_CIMACAN,utama bedah canggih,Utama Bedah Canggih,VVIP,Akomodasi & Visite,9698000.0,harga_langsung,1
+1091,RSUD_CIMACAN,utama bedah kecil,Utama Bedah kecil,Tarif Tindakan Bedah BiusTotal / Spinal,Tindakan Lain,2025000.0,harga_langsung,1
+1092,RSUD_CIMACAN,utama bedah khusus,Utama Bedah Khusus,VVIP,Akomodasi & Visite,8298000.0,harga_langsung,1
+1093,RSUD_CIMACAN,v lumbal bending kanan / kiri,V Lumbal Bending Kanan/Kiri,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+1094,RSUD_CIMACAN,v thoracolumbal ap / lateral / oblique,V Thoracolumbal Ap/Lateral/Oblique,Tarif Tindakan Radiologi,Radiologi,440000.0,harga_langsung,1
+1095,RSUD_CIMACAN,v. cervical ap,V. Cervical AP,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+1096,RSUD_CIMACAN,v. cervical ap / lateral,V. Cervical Ap/Lateral,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+1097,RSUD_CIMACAN,v. cervical ap / lateral / oblique,V. Cervical Ap/Lateral/Oblique,Tarif Tindakan Radiologi,Radiologi,440000.0,harga_langsung,1
+1098,RSUD_CIMACAN,v. cervical lateral,V. Cervical Lateral,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+1099,RSUD_CIMACAN,v. lumbal ap / lateral,V. Lumbal Ap/Lateral,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+1100,RSUD_CIMACAN,v. lumbal ap / lateral / obi,V. Lumbal Ap/Lateral/Obi,Tarif Tindakan Radiologi,Radiologi,440000.0,harga_langsung,1
+1101,RSUD_CIMACAN,v. lumbosacral ap / lateral,V. Lumbosacral Ap/Lateral,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+1102,RSUD_CIMACAN,v. lumbosacral ap / lateral / obi,V. Lumbosacral Ap/Lateral/Obi,Tarif Tindakan Radiologi,Radiologi,440000.0,harga_langsung,1
+1103,RSUD_CIMACAN,v. thoracal ap / lateral,V. Thoracal AP/Lateral,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+1104,RSUD_CIMACAN,v. thoracal bending kanan / kiri,V. Thoracal Bending Kanan/Kiri,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+1105,RSUD_CIMACAN,v. thoracolumbal ap / lateral,V. Thoracolumbal Ap/Lateral,Tarif Tindakan Radiologi,Radiologi,220000.0,harga_langsung,1
+1106,RSUD_CIMACAN,vc vries coop,VC (Vries Coop),Tarif Pemeriksaan Laboratorium,Laboratorium,600000.0,harga_langsung,1
+1107,RSUD_CIMACAN,vdrl,VDRL,Tarif Pemeriksaan Laboratorium,Laboratorium,35000.0,harga_langsung,1
+1108,RSUD_CIMACAN,vena seksi,Vena seksi,Tarif Tindakan Anestesiologi dan Terapi Intensif,Rehab Medik,85000.0,harga_langsung,3
+1109,RSUD_CIMACAN,ventilasi mekanik invasif,Ventilasi Mekanik Invasif,Pelayanan Penunjang Diagnostik Kardiovaskular,Tindakan Lain,1500000.0,harga_langsung,1
+1110,RSUD_CIMACAN,ventilasi mekanik non invasif / nippy,Ventilasi Mekanik Non Invasif/NIPPY,Pelayanan Penunjang Diagnostik Kardiovaskular,Tindakan Lain,1500000.0,harga_langsung,1
+1111,RSUD_CIMACAN,ventilator,Ventilator,Tindakan Perawatan Ruang Rawat Inap,Akomodasi & Visite,150000.0,harga_langsung,3
+1112,RSUD_CIMACAN,ventilator mekanik,Ventilator Mekanik,Tarif Tindakan Anestesiologi dan Terapi Intensif,Rehab Medik,240000.0,harga_langsung,1
+1113,RSUD_CIMACAN,visite per pasien,Visite Per Pasien,Tarif Barang Farmasi,Akomodasi & Visite,20000.0,harga_langsung,1
+1114,RSUD_CIMACAN,visum et repertum korban hidup,Visum et repertum korban hidup,Tarif Visum Et Repertum,Tindakan Lain,40000.0,harga_langsung,1
+1115,RSUD_CIMACAN,visum et repertum korban hidup untuk asuransi,Visum et repertum korban hidup untuk asuransi,Tarif Visum Et Repertum,Tindakan Lain,50000.0,harga_langsung,1
+1116,RSUD_CIMACAN,visum et repertum perkosaan / pencabulan,Visum et repertum perkosaan/ pencabulan,Tarif Visum Et Repertum,Tindakan Lain,50000.0,harga_langsung,1
+1117,RSUD_CIMACAN,visum mati / pemeriksaan luar mayat,Visum Mati/ pemeriksaan luar mayat,Tarif Tindakan Bedah Mayat dan Pengawetan Jenazah,Tindakan Lain,175000.0,harga_langsung,1
+1118,RSUD_CIMACAN,visum perkosaan / pencabulan,Visum Perkosaan/Pencabulan,Tarif Tindakan Kecil Kebidanan,Kebidanan,50000.0,harga_langsung,1
+1119,RSUD_CIMACAN,voluntary conseling test vct,Voluntary ConselingTest (VCT),ESTETIK,Mata/THT/Kulit,50000.0,harga_langsung,1
+1120,RSUD_CIMACAN,vulva hygiene,Vulva Hygiene,ESTETIK,Mata/THT/Kulit,12000.0,harga_langsung,3
+1121,RSUD_CIMACAN,vvip / presiden suit,VVIP/Presiden Suit,Tarif Tindakan Kebidanan Lain (Non Anestesi,Akomodasi & Visite,425000.0,harga_langsung,6
+1122,RSUD_CIMACAN,waktu pembekuan,Waktu Pembekuan,Tarif Pemeriksaan Laboratorium,Laboratorium,25000.0,harga_langsung,1
+1123,RSUD_CIMACAN,waktu pendarahan,Waktu Pendarahan,Tarif Pemeriksaan Laboratorium,Laboratorium,25000.0,harga_langsung,1
+1124,RSUD_CIMACAN,water s,Water's,Tarif Tindakan Radiologi,Radiologi,110000.0,harga_langsung,1
+1125,RSUD_CIMACAN,water sealed drainage,Water sealed drainage,Tarif Tindakan Medis Khusus Paru,Tindakan Lain,1099000.0,harga_langsung,1
+1126,RSUD_CIMACAN,whirpool bath,WHIRPOOL BATH,C TINDAKAN KEDOKTERAN FISIK DAN REHABILITASI,Rehab Medik,47000.0,harga_langsung,1
+1127,RSUD_CIMACAN,wicc,WICC,ESTETIK,Mata/THT/Kulit,75000.0,harga_langsung,1
+1128,RSUD_CIMACAN,widal h q ah oa,"Widal (H,Q,AH,OA)",Tarif Pemeriksaan Laboratorium,Laboratorium,55000.0,harga_langsung,1
+1129,RSUD_CIMACAN,widal to th,Widal (TO & TH),Tarif Pemeriksaan Laboratorium,Laboratorium,45000.0,harga_langsung,1
+1130,RSUD_CIMACAN,wppsi,WPPSI,ESTETIK,Mata/THT/Kulit,75000.0,harga_langsung,1
+1131,RSUD_CIMACAN,wrist joint bilateral ap 86 lateral,Wrist Joint Bilateral AP 86 Lateral,Tarif Tindakan Radiologi,Radiologi,300000.0,harga_langsung,1
+1132,RSUD_CIMACAN,wrist joint kanan ap 86 lateral,Wrist Joint Kanan AP 86 Lateral,Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+1133,RSUD_CIMACAN,wrist joint kiri ap 86 lateral,Wrist Joint Kiri AP 86 Lateral,Tarif Tindakan Radiologi,Radiologi,150000.0,harga_langsung,1
+1134,RSUD_CIMACAN,wsd,WSD,Tarif Tindakan Medis dan Terapi bagian Perinatologi Anak,Rehab Medik,120000.0,harga_langsung,1

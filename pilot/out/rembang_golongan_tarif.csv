@@ -1,0 +1,51 @@
+jenis,golongan,kelas,total,page
+operatif,tindakan kecil,III,250000,19
+operatif,tindakan kecil,II,375000,19
+operatif,tindakan kecil,I,500000,19
+operatif,tindakan kecil,VIP Pratama & Madya,625000,19
+operatif,tindakan kecil,VIP Utama,750000,19
+operatif,kelompok i,III,1077000,19
+operatif,kelompok i,II,1617000,19
+operatif,kelompok i,I,2156000,19
+operatif,kelompok i,VIP Pratama & Madya,2695000,19
+operatif,kelompok i,VIP Utama,3234000,19
+operatif,kelompok i,One Day Surgery,4312000,19
+operatif,kelompok ii,III,1470000,19
+operatif,kelompok ii,II,2205000,19
+operatif,kelompok ii,I,2940000,19
+operatif,kelompok ii,VIP Pratama & Madya,3675000,20
+operatif,kelompok ii,VIP Utama,4410000,20
+operatif,kelompok ii,One Day Surgery,5880000,20
+operatif,kelompok iii,III,2156000,20
+operatif,kelompok iii,II,3234000,20
+operatif,kelompok iii,I,4312000,20
+operatif,kelompok iii,VIP Pratama & Madya,5390000,20
+operatif,kelompok iii,VIP Utama,6468000,20
+operatif,kelompok iii,One Day Surgery,8624000,20
+operatif,kelompok khusus,III,3680000,20
+operatif,kelompok khusus,II,5520000,20
+operatif,kelompok khusus,I,7360000,20
+operatif,kelompok khusus,VIP Pratama & Madya,9200000,20
+operatif,kelompok khusus,VIP Utama,11040000,20
+operatif,kelompok khusus,One Day Surgery,14720000,20
+non operatif,tindakan kecil,III,31500,28
+non operatif,tindakan kecil,II,46500,28
+non operatif,tindakan kecil,I,61500,28
+non operatif,tindakan kecil,VIP Pratama & Madya,77000,28
+non operatif,tindakan kecil,VIP Utama,92000,29
+non operatif,tindakan sedang,III,72500,29
+non operatif,tindakan sedang,II,109000,29
+non operatif,tindakan sedang,I,145500,29
+non operatif,tindakan sedang,VIP Pratama & Madya,182000,29
+non operatif,tindakan sedang,VIP Utama,218500,29
+non operatif,tindakan besar,III,100500,29
+non operatif,tindakan besar,II,151500,29
+non operatif,tindakan besar,I,202000,29
+non operatif,tindakan besar,VIP Pratama & Madya,252000,29
+non operatif,tindakan besar,VIP Utama,302000,29
+non operatif,tindakan khusus,III,224000,29
+non operatif,tindakan khusus,II,336000,29
+non operatif,tindakan khusus,I,448000,29
+non operatif,tindakan khusus,VIP Pratama & Madya,560000,29
+non operatif,tindakan khusus,VIP Utama,672000,29
+non operatif,tindakan khusus,One Day Surgery,565000,33
