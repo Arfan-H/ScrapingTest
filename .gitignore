@@ -1,4 +1,5 @@
 pilot/raw_pdf/
 pilot/out/_*.npy
 __pycache__/
+# LOINC dataset (download separately)
 Loinc_2.83/
