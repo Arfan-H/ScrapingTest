@@ -1,0 +1,406 @@
+<title>Pilot Graf Tarif RSUD</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: satu kolom laporan riset (maks 880px), tiap bagian = satu pertanyaan + grafik + tabel rinci */
+:root {
+  --bg: #f6f7f8;
+  --surface: #fcfcfb;
+  --fg: #12171c;
+  --fg-2: #4b5560;
+  --muted: #7d8791;
+  --line: #e1e4e7;
+  --axis: #c3c7cc;
+  --accent: #0f5f73;
+  --accent-soft: #e2eff2;
+  --s1: #2a78d6;
+  --s2: #eb6834;
+  --warn-bg: #fff4dc;
+  --warn-fg: #6b4a00;
+  --ring: rgba(18,23,28,.10);
+  --f-display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+  --f-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1214; --surface: #1a1d1f; --fg: #eef0f1; --fg-2: #c0c6cc; --muted: #8b949c;
+    --line: #2c3033; --axis: #3b4044; --accent: #6cc3d6; --accent-soft: #15303a;
+    --s1: #3987e5; --s2: #d95926; --warn-bg: #3a2c0c; --warn-fg: #f5d58a; --ring: rgba(255,255,255,.10);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1214; --surface: #1a1d1f; --fg: #eef0f1; --fg-2: #c0c6cc; --muted: #8b949c;
+  --line: #2c3033; --axis: #3b4044; --accent: #6cc3d6; --accent-soft: #15303a;
+  --s1: #3987e5; --s2: #d95926; --warn-bg: #3a2c0c; --warn-fg: #f5d58a; --ring: rgba(255,255,255,.10);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font: 400 16px/1.6 var(--f-body); }
+.wrap { max-width: 880px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 40px 72px; display: grid; gap: 56px; }
+h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; margin: 0; line-height: 1.2; }
+h1 { font-size: clamp(2rem, 5vw, 2.75rem); font-weight: 700; letter-spacing: -0.01em; }
+h2 { font-size: 1.5rem; font-weight: 600; }
+h3 { font-size: 1.05rem; font-weight: 600; }
+p { margin: 0; max-width: 65ch; }
+.eyebrow { font: 500 .75rem/1.2 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.lede { font-size: 1.125rem; color: var(--fg-2); }
+.stack { display: grid; gap: 16px; min-width: 0; }
+.stack-lg { display: grid; gap: 24px; min-width: 0; }
+header.hero { display: grid; gap: 16px; }
+.docs { display: flex; flex-wrap: wrap; gap: 8px; }
+.doc { font: 500 .8rem/1.3 var(--f-mono); padding: 6px 10px; border-radius: 6px; background: var(--accent-soft); color: var(--accent); text-decoration: none; }
+.doc:hover, .doc:focus-visible { text-decoration: underline; }
+a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.tiles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 720px) { .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.tile { background: var(--surface); border: 1px solid var(--ring); border-radius: 10px; padding: 16px; display: grid; gap: 4px; align-content: start; }
+.tile .lbl { font-size: .8rem; color: var(--fg-2); }
+.tile .val { font: 600 1.9rem/1.1 var(--f-body); }
+.tile .sub { font-size: .78rem; color: var(--muted); }
+
+.card { background: var(--surface); border: 1px solid var(--ring); border-radius: 12px; padding: 20px; display: grid; gap: 12px; min-width: 0; }
+.card-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px 16px; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: .82rem; color: var(--fg-2); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.sw { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+.sw.dot { border-radius: 50%; }
+.chart { width: 100%; min-width: 0; position: relative; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.chart text { font-family: var(--f-body); }
+.note { font-size: .85rem; color: var(--muted); }
+.caveat { background: var(--warn-bg); color: var(--warn-fg); border-radius: 8px; padding: 12px 14px; font-size: .9rem; max-width: none; }
+
+details { border-top: 1px solid var(--line); padding-top: 10px; }
+summary { cursor: pointer; font-size: .85rem; color: var(--accent); font-weight: 500; }
+.tbl { overflow-x: auto; margin-top: 10px; }
+table { border-collapse: collapse; width: 100%; font-size: .85rem; }
+th, td { text-align: left; padding: 6px 10px 6px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-weight: 600; color: var(--fg-2); white-space: nowrap; }
+td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+.findings { display: grid; gap: 16px; counter-reset: f; padding: 0; margin: 0; list-style: none; }
+.findings li { display: grid; grid-template-columns: 2rem minmax(0, 1fr); gap: 4px 12px; }
+.findings li::before { counter-increment: f; content: counter(f); font: 600 1rem/1.5 var(--f-display); color: var(--accent); grid-row: span 2; }
+.findings b { font-weight: 600; }
+.findings p { color: var(--fg-2); }
+
+.steps { display: grid; gap: 10px; padding: 0; margin: 0; list-style: none; counter-reset: s; }
+.steps li { display: grid; grid-template-columns: 2rem minmax(0, 1fr); gap: 12px; padding: 12px 14px; background: var(--surface); border: 1px solid var(--ring); border-radius: 10px; }
+.steps li::before { counter-increment: s; content: counter(s); font: 600 .95rem/1.6 var(--f-mono); color: var(--accent); }
+
+.tip { position: absolute; pointer-events: none; background: var(--fg); color: var(--bg); font-size: .8rem; line-height: 1.4; padding: 8px 10px; border-radius: 6px; max-width: 260px; z-index: 5; opacity: 0; transition: opacity .1s; }
+.tip b { font-weight: 600; }
+@media (prefers-reduced-motion: reduce) { .tip { transition: none; } }
+footer { font-size: .85rem; color: var(--muted); display: grid; gap: 6px; }
+code { font-family: var(--f-mono); font-size: .85em; }
+</style>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow">Pilot riset · 2 RSUD · November 2026</div>
+    <h1>Pilot Graf Tarif RSUD</h1>
+    <p class="lede">Uji kelayakan sebelum mengumpulkan 20–30 RSUD: apakah tarif di lampiran Perbup bisa diekstrak, nama layanannya disamakan antar-RS, lalu disusun menjadi knowledge graph?</p>
+    <div class="docs">
+      <a class="doc" href="https://jdih.rembangkab.go.id/produk_hukum/perbup/PERBUP_16_%202023%20-TARIF%20LAYANAN%20PADA%20RUMAH%20SAKIT%20UMUM%20DAERAH%20dr.%20R.%20SOETRASNO%20KABUPATEN%20REMBANG.pdf" target="_blank" rel="noopener">Perbup Rembang No. 16/2023 · 76 hlm</a>
+      <a class="doc" href="https://rsudcimacan.cianjurkab.go.id/public/assets/pdf/PB%203%202025%20TARIF%20KLS%20C%20terupdate.pdf" target="_blank" rel="noopener">Perbup Cianjur No. 3/2025 · 50 hlm</a>
+    </div>
+  </header>
+
+  <section class="stack-lg" aria-labelledby="ringkas">
+    <h2 id="ringkas">Ringkasan</h2>
+    <div class="tiles">
+      <div class="tile"><span class="lbl">Layanan unik diekstrak</span><span class="val">2.321</span><span class="sub">1.135 Cimacan · 1.186 Rembang</span></div>
+      <div class="tile"><span class="lbl">Akurasi ekstraksi</span><span class="val">26/30</span><span class="sub">cek manual baris acak (≈85%)</span></div>
+      <div class="tile"><span class="lbl">Padanan benar di top-3</span><span class="val">0,91</span><span class="sub">metode hybrid, 23 query</span></div>
+      <div class="tile"><span class="lbl">Median rasio harga</span><span class="val">3,5×</span><span class="sub">Cimacan ÷ Rembang, 91 pasangan</span></div>
+    </div>
+    <p>Kesimpulannya, <b>ide ini layak dilanjutkan</b>. Ekstraksi dari PDF teks berjalan baik tanpa OCR, dan sistem bisa mengusulkan kandidat padanan dengan akurat. Namun keputusan akhir masih perlu manusia, dan harga baru bisa dibandingkan setelah komponen tarifnya disamakan.</p>
+  </section>
+
+  <section class="stack-lg" aria-labelledby="alur">
+    <div class="stack">
+      <div class="eyebrow">Alur</div>
+      <h2 id="alur">Dari PDF ke graf</h2>
+      <p>Setiap tahap adalah satu skrip di folder <code>pilot/src/</code>. Harga sengaja tidak dipakai untuk mencocokkan nama, supaya perbandingan harga di akhir tidak sirkular.</p>
+    </div>
+    <div class="card"><div class="chart" id="c-flow" role="img" aria-label="Alur kerja: PDF Perbup, ekstraksi, adapter golongan, normalisasi, alignment, evaluasi, graf"></div></div>
+  </section>
+
+  <section class="stack-lg" aria-labelledby="ekstraksi">
+    <div class="stack">
+      <div class="eyebrow">Tahap 1–3 · Ekstraksi</div>
+      <h2 id="ekstraksi">Isi kedua buku tarif sangat berbeda</h2>
+      <p>Kategori layanan dipetakan ke 9 kategori standar dengan aturan kata kunci. Bentuk dokumennya terlihat dari distribusinya. Cimacan banyak memuat tindakan estetik dan mata. Rembang memuat ratusan tindakan operatif yang harganya ditentukan lewat golongan.</p>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <h3>Jumlah layanan unik per kategori standar</h3>
+        <div class="legend"><span><i class="sw" style="background:var(--s1)"></i>RSUD Cimacan</span><span><i class="sw" style="background:var(--s2)"></i>RSUD Rembang</span></div>
+      </div>
+      <div class="chart" id="c-cat"></div>
+      <p class="note">"Tindakan Lain" di Rembang besar karena 533 tindakan golongan (misalnya Apendektomi, Craniotomi) belum terpetakan oleh aturan kategori. Ini pekerjaan berikutnya.</p>
+      <details><summary>Lihat tabel</summary><div class="tbl" id="t-cat"></div></details>
+    </div>
+  </section>
+
+  <section class="stack-lg" aria-labelledby="golongan">
+    <div class="stack">
+      <div class="eyebrow">Temuan utama</div>
+      <h2 id="golongan">Rembang memberi harga per golongan, bukan per tindakan</h2>
+      <p>Lampiran Rembang berisi matriks golongan × kelas, lalu daftar tindakan yang termasuk ke setiap golongan. Contohnya, Apendektomi akut termasuk Kelompok I, sehingga harganya Rp1.077.000 di kelas III. Dalam bentuk tabel datar, harga ini harus disalin ke ratusan baris. Di graf, cukup satu edge <code>Layanan → Golongan</code>.</p>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <h3>Tarif total per golongan dan kelas (Rp), Perbup Rembang 16/2023</h3>
+        <span class="note">warna = besaran (skala log)</span>
+      </div>
+      <div class="eyebrow">Tindakan medis operatif</div>
+      <div class="chart" id="c-gol-op"></div>
+      <div class="eyebrow">Tindakan medis non operatif</div>
+      <div class="chart" id="c-gol-non"></div>
+      <p class="note">Angka berupa total jasa sarana + layanan + medis (+ anestesi untuk operatif), di luar obat dan BHP. Tindakan CITO ditambah 75% untuk jasa tertentu. Sel kosong berarti kelas itu tidak tercantum.</p>
+    </div>
+  </section>
+
+  <section class="stack-lg" aria-labelledby="align">
+    <div class="stack">
+      <div class="eyebrow">Tahap 4–5 · Alignment</div>
+      <h2 id="align">Mesin cukup baik untuk mengusulkan, belum untuk memutuskan</h2>
+      <p>Untuk 60 layanan Cimacan yang diambil acak, setiap metode mencari padanan di Rembang. Setelah 12 sampel ragu dan 1 sampel rusak dibuang, tersisa 47 yang bisa dinilai: 23 punya padanan dan 24 tidak punya.</p>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <h3>Proporsi padanan benar (23 query yang punya padanan)</h3>
+        <div class="legend"><span><i class="sw" style="background:var(--s1)"></i>Benar di peringkat 1</span><span><i class="sw" style="background:var(--s2)"></i>Benar di top-3</span></div>
+      </div>
+      <div class="chart" id="c-align"></div>
+      <details><summary>Lihat tabel lengkap, termasuk precision dan recall</summary><div class="tbl" id="t-align"></div></details>
+    </div>
+    <p class="caveat"><b>Catatan:</b> label dibuat oleh asisten AI dan belum divalidasi manusia. Dengan 23 query, ketidakpastiannya sekitar ±0,2. Ambang precision dan recall dipilih di sampel yang sama, jadi angkanya optimistis. Angka-angka ini indikasi arah, belum hasil.</p>
+  </section>
+
+  <section class="stack-lg" aria-labelledby="harga">
+    <div class="stack">
+      <div class="eyebrow">Tahap 6 · Perbandingan harga</div>
+      <h2 id="harga">Selisih harga terbesar ada di laboratorium, dan sebagian besar semu</h2>
+      <p>Setiap titik adalah satu pasangan layanan yang sudah dicocokkan. Posisinya menunjukkan berapa kali lipat tarif Cimacan dibanding Rembang kelas III. Tarif lab Rembang (misalnya SGOT Rp8.400) tertulis tidak termasuk BHP, sedangkan angka Cimacan tampaknya tarif total. Karena itu, selisih 5× di laboratorium terutama mencerminkan komponen tarif yang berbeda.</p>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <h3>Rasio tarif Cimacan ÷ Rembang per pasangan (skala log)</h3>
+        <div class="legend"><span><i class="sw dot" style="background:var(--s1)"></i>Nama identik (exact)</span><span><i class="sw dot" style="background:var(--s2)"></i>Dicocokkan lewat label</span><span><i class="sw" style="background:var(--fg);width:3px;height:12px;border-radius:1px"></i>Median kategori</span></div>
+      </div>
+      <div class="chart" id="c-ratio"></div>
+      <p class="note">Ada 93 pasangan. Dua di antaranya ("Berat" dan "Sedang") adalah potongan nama hasil ekstraksi, jadi tidak ditampilkan. Arahkan kursor ke titik untuk melihat nama dan harga.</p>
+      <details><summary>Lihat tabel 91 pasangan</summary><div class="tbl" id="t-ratio"></div></details>
+    </div>
+  </section>
+
+  <section class="stack-lg" aria-labelledby="graf">
+    <div class="stack">
+      <div class="eyebrow">Hasil · Graf pilot</div>
+      <h2 id="graf">Skema graf yang terbentuk</h2>
+      <p>Angka pada panah menunjukkan jumlah edge di graf pilot (<code>out/graf_pilot.graphml</code>, bisa dibuka di Gephi). Relasi tambahan yang ternyata dibutuhkan ada di catatan di bawah diagram.</p>
+    </div>
+    <div class="card"><div class="chart" id="c-graph" role="img" aria-label="Skema graf: RumahSakit TARIF ke Layanan 1.788; Layanan MASUK_GOLONGAN ke Golongan 533; RumahSakit TARIF_GOLONGAN ke Golongan 50 dengan atribut kelas; Layanan KATEGORI ke KategoriStd 2.321; Layanan SAMA_DENGAN Layanan 93"></div>
+      <p class="note"><b>Usulan dari pilot:</b> relasi TERDIRI_DARI (paket → item), dan atribut tarif untuk komponen, BHP, kelas, serta CITO.</p></div>
+  </section>
+
+  <section class="stack-lg" aria-labelledby="temuan">
+    <h2 id="temuan">Enam temuan</h2>
+    <ol class="findings">
+      <li><b>Komponen tarif harus dicatat.</b><p>Atribut yang perlu: total atau rincian, termasuk BHP atau tidak, kelas, dan CITO. Tanpa atribut ini, perbandingan harga antar-RS menyesatkan.</p></li>
+      <li><b>Format golongan adalah argumen terkuat untuk graf.</b><p>Struktur Layanan → Golongan → Tarif per kelas tidak bisa ditampung tabel datar tanpa duplikasi.</p></li>
+      <li><b>Tingkat rincian layanan berbeda.</b><p>"Paket Na, K, Cl" di Cimacan setara 3 item terpisah di Rembang. Jadi graf butuh relasi TERDIRI_DARI, bukan hanya SAMA_DENGAN.</p></li>
+      <li><b>Separuh layanan tidak punya padanan.</b><p>24 dari 47 query tidak punya pasangan di RS lain. Model harus bisa menjawab "tidak ada", bukan selalu mengambil kandidat teratas.</p></li>
+      <li><b>Banyak contoh sulit yang alami.</b><p>GTT ≠ Gamma GT, Uji Fungsi Berkemih Sedang ≠ Sederhana, CT Scan ≠ Photo. "VC (Vries Coop)" = "PA Potong Beku" hanya bisa dikenali dengan pengetahuan medis.</p></li>
+      <li><b>Kategori asli tidak seragam.</b><p>"Pemeriksaan Canggih" di satu RS setara "Tarif Pemeriksaan Laboratorium" di RS lain, jadi pemetaan ke kategori standar perlu dikerjakan serius.</p></li>
+    </ol>
+  </section>
+
+  <section class="stack-lg" aria-labelledby="lanjut">
+    <h2 id="lanjut">Langkah berikutnya</h2>
+    <ol class="steps">
+      <li><span>Validasi 60 label pilot bersama seorang PMIK (<code>out/label_pilot.json</code>).</span></li>
+      <li><span>Tambah 8–10 RSUD dari 2 provinsi, dengan sengaja mencampur format: harga langsung, golongan, dan per kelas.</span></li>
+      <li><span>Tambahkan atribut komponen tarif ke skema sebelum membandingkan harga.</span></li>
+      <li><span>Siapkan dev/test set terpisah berisi 300–500 pasangan untuk menentukan ambang dan melaporkan hasil.</span></li>
+      <li><span>Metode: hybrid + fitur graf (golongan, kategori, tetangga) + opsi "tidak ada padanan", lalu fine-tune e5.</span></li>
+      <li><span>Framing paper: resource (dataset + skema graf) + evaluasi alignment + analisis variasi tarif setelah komponen dinormalisasi.</span></li>
+    </ol>
+  </section>
+
+  <footer>
+    <span>Sumber angka: skrip di <code>pilot/</code>, branch <code>claude/bts-i2c-2026-ieee-17zfxo</code>, repo ScrapingTest. Model embedding: multilingual-e5-small (zero-shot).</span>
+    <span>Tarif Rembang = kelas III. Tarif Cimacan = angka tunggal di lampiran.</span>
+  </footer>
+</div>
+<div class="tip" id="tip" role="tooltip"></div>
+
+<script>
+const DATA = __DATA__;
+const NS = "http://www.w3.org/2000/svg";
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const fmt = v => "Rp" + Math.round(v).toLocaleString("id-ID");
+const fmtC = v => v >= 1e6 ? (v/1e6).toLocaleString("id-ID",{maximumFractionDigits:2}) + " jt" : Math.round(v/1e3).toLocaleString("id-ID") + " rb";
+const dec = (v, d=2) => v.toLocaleString("id-ID",{minimumFractionDigits:d, maximumFractionDigits:d});
+function el(tag, attrs={}, parent){ const e=document.createElementNS(NS,tag); for(const k in attrs) e.setAttribute(k,attrs[k]); if(parent) parent.appendChild(e); return e; }
+function txt(parent, x, y, s, attrs={}){ const t=el("text",Object.assign({x,y,fill:css("--fg-2"),"font-size":12},attrs),parent); t.textContent=s; return t; }
+function svgFor(id, h){ const box=document.getElementById(id); box.innerHTML=""; const w=Math.max(300, box.clientWidth); const s=el("svg",{viewBox:`0 0 ${w} ${h}`, width:w, height:h},box); return [s,w,box]; }
+function barPath(x,y,w,h,r=4){ r=Math.min(r,w,h/2); return `M${x},${y}H${x+w-r}Q${x+w},${y} ${x+w},${y+r}V${y+h-r}Q${x+w},${y+h} ${x+w-r},${y+h}H${x}Z`; }
+const tip = document.getElementById("tip");
+function showTip(evt, html, box){ tip.innerHTML=html; tip.style.opacity=1; const r=box.getBoundingClientRect(); const pr=document.body.getBoundingClientRect(); let x=evt.clientX - pr.left + 12, y=evt.clientY - pr.top + 12; const tw=tip.offsetWidth; if (x + tw > document.documentElement.clientWidth - 8) x = evt.clientX - pr.left - tw - 12; tip.style.left=x+"px"; tip.style.top=y+"px"; }
+function hideTip(){ tip.style.opacity=0; }
+function table(id, head, rows, numCols=[]){ const h = "<table><thead><tr>"+head.map((c,i)=>`<th class="${numCols.includes(i)?'n':''}">${c}</th>`).join("")+"</tr></thead><tbody>"+rows.map(r=>"<tr>"+r.map((c,i)=>`<td class="${numCols.includes(i)?'n':''}">${c}</td>`).join("")+"</tr>").join("")+"</tbody></table>"; document.getElementById(id).innerHTML=h; }
+
+/* ---------- Alur ---------- */
+function drawFlow(){
+  const steps=[["PDF Perbup","2 file teks"],["Ekstraksi","parser baris"],["Adapter golongan","format Rembang"],["Normalisasi","nama + kategori"],["Alignment","4 metode"],["Evaluasi","60 sampel"],["Graf","NetworkX"]];
+  const box=document.getElementById("c-flow"); const W=Math.max(300, box.clientWidth);
+  const cols = W < 560 ? 2 : (W < 760 ? 4 : 7);
+  const gap=10, bw=(W-gap*(cols-1))/cols, bh=58, rows=Math.ceil(steps.length/cols), H=rows*bh+(rows-1)*22;
+  const [s]=svgFor("c-flow",H);
+  steps.forEach((st,i)=>{ const c=i%cols, r=Math.floor(i/cols), x=c*(bw+gap), y=r*(bh+22);
+    el("rect",{x,y,width:bw,height:bh,rx:8,fill:i===2?css("--accent-soft"):css("--bg"),stroke:css("--line")},s);
+    txt(s,x+10,y+24,st[0],{fill:css("--fg"),"font-weight":600,"font-size":13});
+    txt(s,x+10,y+43,st[1],{fill:css("--muted"),"font-size":11.5});
+    if (i<steps.length-1 && c<cols-1) el("path",{d:`M${x+bw+1},${y+bh/2} l${gap-3},0`,stroke:css("--axis"),"stroke-width":2,fill:"none"},s);
+  });
+}
+
+/* ---------- Kategori ---------- */
+const CAT = {"Laboratorium":[198,262],"Radiologi":[180,115],"Mata/THT/Kulit":[247,41],"Rehab Medik":[141,38],"Akomodasi & Visite":[105,32],"Rawat Jalan & Darurat":[62,9],"Gigi":[50,25],"Kebidanan":[21,11],"Tindakan Lain":[131,653]};
+function drawCat(){
+  const names=Object.keys(CAT); const box=document.getElementById("c-cat"); const W=Math.max(300,box.clientWidth);
+  const lw = W<480 ? 118 : 150, bar=12, grp=bar*2+2, band=grp+14, top=4, H=top+names.length*band+26;
+  const [s]=svgFor("c-cat",H); const pw=W-lw-44, max=700, X=v=>lw+v/max*pw;
+  for(const t of [0,200,400,600]){ el("line",{x1:X(t),x2:X(t),y1:top,y2:H-22,stroke:css("--line")},s); txt(s,X(t),H-6,t.toLocaleString("id-ID"),{"text-anchor":"middle",fill:css("--muted"),"font-size":11}); }
+  el("line",{x1:lw,x2:lw,y1:top,y2:H-22,stroke:css("--axis")},s);
+  names.forEach((n,i)=>{ const y=top+i*band+7;
+    txt(s,lw-8,y+grp/2+4,n,{"text-anchor":"end","font-size":W<480?11:12});
+    CAT[n].forEach((v,j)=>{ const yy=y+j*(bar+2), w=Math.max(1,X(v)-lw);
+      const p=el("path",{d:barPath(lw,yy,w,bar),fill:j?css("--s2"):css("--s1")},s);
+      txt(s,lw+w+5,yy+bar-2,v.toLocaleString("id-ID"),{"font-size":11,fill:css("--fg-2")});
+      const hit=el("rect",{x:lw,y:yy-1,width:Math.max(w,24),height:bar+2,fill:"transparent"},s);
+      hit.addEventListener("pointermove",e=>showTip(e,`<b>${n}</b><br>${j?"Rembang":"Cimacan"}: ${v} layanan`,box)); hit.addEventListener("pointerleave",hideTip);
+    });
+  });
+}
+table("t-cat",["Kategori standar","Cimacan","Rembang"],Object.entries(CAT).map(([k,v])=>[k,v[0],v[1]]),[1,2]);
+
+/* ---------- Golongan heat table ---------- */
+function drawGol(id, jenis){
+  const kelas=["III","II","I","VIP Pratama & Madya","VIP Utama","One Day Surgery"];
+  const data=DATA.gol.filter(d=>d.j===jenis);
+  const kUse=kelas.filter(k=>data.some(d=>d.k===k));
+  const rows=[...new Set(data.map(d=>d.g))];
+  const box=document.getElementById(id); const W=Math.max(300,box.clientWidth); const narrow=W<560;
+  const short={"III":"III","II":"II","I":"I","VIP Pratama & Madya":narrow?"VIP P&M":"VIP Pratama & Madya","VIP Utama":narrow?"VIP U":"VIP Utama","One Day Surgery":narrow?"ODS":"One Day Surgery"};
+  const lw=narrow?104:150, top=22, rh=narrow?30:34, g=2, H=top+rows.length*(rh+g);
+  const [s]=svgFor(id,H); const cw=(W-lw-g*(kUse.length-1))/kUse.length;
+  const ramp=["#cde2fb","#9ec5f4","#6da7ec","#3987e5","#256abf","#184f95","#0d366b"];
+  const vals=DATA.gol.map(d=>d.v), lo=Math.log(Math.min(...vals)), hi=Math.log(Math.max(...vals));
+  const col=v=>ramp[Math.min(ramp.length-1,Math.floor((Math.log(v)-lo)/(hi-lo)*ramp.length))];
+  const lum=h=>{const n=parseInt(h.slice(1),16);const c=[n>>16,n>>8&255,n&255].map(x=>{x/=255;return x<=.03928?x/12.92:((x+.055)/1.055)**2.4});return .2126*c[0]+.7152*c[1]+.0722*c[2];};
+  const title=t=>t.replace(/\b(tindakan|kelompok|kecil|sedang|besar|khusus)\b/g,m=>m[0].toUpperCase()+m.slice(1)).replace(/ (i{1,3})$/,(m,a)=>" "+a.toUpperCase());
+  kUse.forEach((k,i)=>txt(s,lw+i*(cw+g)+cw/2,top-8,short[k],{"text-anchor":"middle","font-size":narrow?10.5:11.5,fill:css("--muted")}));
+  rows.forEach((gr,r)=>{ const y=top+r*(rh+g);
+    txt(s,lw-8,y+rh/2+4,title(gr),{"text-anchor":"end","font-size":narrow?11:12,fill:css("--fg")});
+    kUse.forEach((k,i)=>{ const d=data.find(x=>x.g===gr&&x.k===k); const x=lw+i*(cw+g);
+      if(!d){ el("rect",{x,y,width:cw,height:rh,rx:4,fill:css("--bg")},s); return; }
+      const c=col(d.v); el("rect",{x,y,width:cw,height:rh,rx:4,fill:c},s);
+      const lab=fmtC(d.v);
+      if(cw > lab.length*6.3+8) txt(s,x+cw/2,y+rh/2+4,lab,{"text-anchor":"middle","font-size":narrow?10:11.5,fill:lum(c)>.35?"#0b0b0b":"#ffffff"});
+      const hit=el("rect",{x,y,width:cw,height:rh,fill:"transparent"},s);
+      hit.addEventListener("pointermove",e=>showTip(e,`${title(gr)} · kelas ${k}<br><b>${fmt(d.v)}</b>`,box)); hit.addEventListener("pointerleave",hideTip);
+    });
+  });
+}
+
+/* ---------- Alignment ---------- */
+const AL=[["M1 Nama identik",.174,.174,1.0,.174,.296,"–"],["M2 TF-IDF karakter",.652,.826,.583,.609,.596,"0,45"],["M3 e5 tanpa training",.609,.783,.75,.391,.514,"0,93"],["M4 Hybrid",.696,.913,.538,.609,.571,"0,65"]];
+function drawAlign(){
+  const box=document.getElementById("c-align"); const W=Math.max(300,box.clientWidth);
+  const lw=W<480?128:160, bar=14, grp=bar*2+2, band=grp+18, top=4, H=top+AL.length*band+26;
+  const [s]=svgFor("c-align",H); const pw=W-lw-46, X=v=>lw+v*pw;
+  for(const t of [0,.25,.5,.75,1]){ el("line",{x1:X(t),x2:X(t),y1:top,y2:H-22,stroke:css("--line")},s); txt(s,X(t),H-6,dec(t,t%0.5?2:1).replace(",0","").replace(/^0$/,"0"),{"text-anchor":"middle",fill:css("--muted"),"font-size":11}); }
+  el("line",{x1:lw,x2:lw,y1:top,y2:H-22,stroke:css("--axis")},s);
+  AL.forEach((r,i)=>{ const y=top+i*band+9;
+    txt(s,lw-8,y+grp/2+4,r[0],{"text-anchor":"end","font-size":W<480?11:12,fill:css("--fg"),"font-weight":i===3?600:400});
+    [r[1],r[2]].forEach((v,j)=>{ const yy=y+j*(bar+2), w=Math.max(2,X(v)-lw);
+      el("path",{d:barPath(lw,yy,w,bar),fill:j?css("--s2"):css("--s1")},s);
+      txt(s,lw+w+5,yy+bar-3,dec(v),{"font-size":11,fill:css("--fg-2")});
+      const hit=el("rect",{x:lw,y:yy-1,width:Math.max(w,24),height:bar+2,fill:"transparent"},s);
+      hit.addEventListener("pointermove",e=>showTip(e,`<b>${r[0]}</b><br>${j?"Benar di top-3":"Benar di peringkat 1"}: ${dec(v)} (${Math.round(v*23)}/23)`,box)); hit.addEventListener("pointerleave",hideTip);
+    });
+  });
+}
+table("t-align",["Metode","Benar #1","Benar top-3","Ambang","Precision","Recall","F1"],AL.map(r=>[r[0],dec(r[1]),dec(r[2]),r[6],dec(r[3]),dec(r[4]),dec(r[5])]),[1,2,3,4,5,6]);
+
+/* ---------- Rasio harga ---------- */
+function drawRatio(){
+  const cats=["Laboratorium","Mata/THT/Kulit","Radiologi","Rehab Medik","Akomodasi & Visite","Tindakan Lain","Rawat Jalan & Darurat"];
+  const box=document.getElementById("c-ratio"); const W=Math.max(300,box.clientWidth); const narrow=W<520;
+  const lw=narrow?100:150, rh=narrow?40:44, top=6, H=top+cats.length*rh+28;
+  const [s]=svgFor("c-ratio",H); const pw=W-lw-14;
+  const lmin=Math.log(0.15), lmax=Math.log(40), X=v=>lw+(Math.log(v)-lmin)/(lmax-lmin)*pw;
+  const ticks=narrow?[0.25,1,4,16]:[0.25,0.5,1,2,4,8,16,32];
+  ticks.forEach(t=>{ el("line",{x1:X(t),x2:X(t),y1:top,y2:H-24,stroke:t===1?css("--axis"):css("--line"),"stroke-width":t===1?1.5:1},s); txt(s,X(t),H-8,(t<1?dec(t,2).replace(/0$/,""):t)+"×",{"text-anchor":"middle",fill:t===1?css("--fg-2"):css("--muted"),"font-size":11,"font-weight":t===1?600:400}); });
+  cats.forEach((c,i)=>{ const y=top+i*rh+rh/2; const pts=DATA.pairs.filter(p=>p.k===c);
+    txt(s,lw-10,y+4,c,{"text-anchor":"end","font-size":narrow?10.5:12,fill:css("--fg")});
+    txt(s,lw-10,y+17,`n = ${pts.length}`,{"text-anchor":"end","font-size":10,fill:css("--muted")});
+    if(i) el("line",{x1:lw,x2:W,y1:y-rh/2,y2:y-rh/2,stroke:css("--line")},s);
+    // jitter deterministik
+    pts.sort((a,b)=>a.x-b.x).forEach((p,k)=>{ const jy=y+((k%5)-2)*(narrow?5:6);
+      const cx=X(p.x);
+      el("circle",{cx,cy:jy,r:6,fill:css("--surface")},s);
+      const dot=el("circle",{cx,cy:jy,r:4.5,fill:p.s==="exact"?css("--s1"):css("--s2"),"fill-opacity":.9},s);
+      const hit=el("circle",{cx,cy:jy,r:9,fill:"transparent"},s);
+      hit.addEventListener("pointermove",e=>{ dot.setAttribute("r",6); showTip(e,`<b>${p.c}</b> ↔ ${p.r}<br>Cimacan ${fmt(p.hc)} · Rembang ${fmt(p.hr)}<br>Rasio <b>${dec(p.x)}×</b> · ${p.s==="exact"?"nama identik":"lewat label"}`,box); });
+      hit.addEventListener("pointerleave",()=>{ dot.setAttribute("r",4.5); hideTip(); });
+    });
+    const xs=pts.map(p=>p.x).sort((a,b)=>a-b); const m=xs.length%2?xs[(xs.length-1)/2]:(xs[xs.length/2-1]+xs[xs.length/2])/2;
+    el("rect",{x:X(m)-1.5,y:y-15,width:3,height:30,rx:1,fill:css("--fg")},s);
+    if(pts.length>=4){ const lx=X(m); const right = lx < W-70; txt(s,right?lx+6:lx-6,y-11,dec(m,1)+"×",{"text-anchor":right?"start":"end","font-size":11,"font-weight":600,fill:css("--fg"),stroke:css("--surface"),"stroke-width":4,"paint-order":"stroke","stroke-linejoin":"round"}); }
+  });
+}
+table("t-ratio",["Cimacan","Rembang","Kategori","Tarif Cimacan","Tarif Rembang","Rasio","Cocok via"],
+  [...DATA.pairs].sort((a,b)=>b.x-a.x).map(p=>[p.c,p.r,p.k,fmt(p.hc),fmt(p.hr),dec(p.x)+"×",p.s==="exact"?"nama identik":"label"]),[3,4,5]);
+
+/* ---------- Skema graf ---------- */
+function drawGraph(){
+  const box=document.getElementById("c-graph"); const W=Math.max(300,box.clientWidth); const narrow=W<600;
+  const H=narrow?430:330; const [s]=svgFor("c-graph",H);
+  const nodeW=narrow?118:138, nodeH=44;
+  const pos = narrow ? {RS:[W*.5,30],L:[W*.27,190],G:[W*.75,190],K:[W*.27,390],L2:[W*.75,390]}
+                     : {RS:[W*.5,36],L:[W*.22,170],G:[W*.78,170],K:[W*.1+nodeW/2,292],L2:[W*.5,292]};
+  const nodes={RS:["RumahSakit","2 node"],L:["Layanan","2.321 node"],G:["Golongan","9 node"],K:["KategoriStd","9 node"],L2:["Layanan (RS lain)",""]};
+  const edge=(a,b,label,dash,dy=0)=>{ const [x1,y1]=pos[a],[x2,y2]=pos[b];
+    el("line",{x1,y1,x2,y2,stroke:dash?css("--muted"):css("--axis"),"stroke-width":2,"stroke-dasharray":dash?"5 4":"none"},s);
+    const mx=(x1+x2)/2, my=(y1+y2)/2+dy; const t=txt(s,mx,my+4,label,{"text-anchor":"middle","font-size":11.5,fill:dash?css("--muted"):css("--fg-2"),"font-family":"var(--f-mono)"});
+    const bb=t.getBBox(); const bg=el("rect",{x:bb.x-4,y:bb.y-2,width:bb.width+8,height:bb.height+4,rx:4,fill:css("--surface")},s); s.insertBefore(bg,t); };
+  edge("RS","L","TARIF · 1.788",false);
+  edge("RS","G","TARIF_GOLONGAN · 50",false);
+  edge("L","G","MASUK_GOLONGAN · 533",false, narrow?-14:-10);
+  edge("L","K","KATEGORI · 2.321",false);
+  edge("L","L2","SAMA_DENGAN · 93",false, narrow?14:0);
+  if(!narrow){ /* usulan */ }
+  Object.entries(nodes).forEach(([k,[a,b]])=>{ const [x,y]=pos[k];
+    el("rect",{x:x-nodeW/2,y:y-nodeH/2,width:nodeW,height:nodeH,rx:22,fill:k==="G"?css("--accent-soft"):css("--bg"),stroke:k==="G"?css("--accent"):css("--line"),"stroke-width":1.5},s);
+    txt(s,x,b?y-2:y+4,a,{"text-anchor":"middle","font-size":12.5,"font-weight":600,fill:css("--fg")});
+    if(b) txt(s,x,y+13,b,{"text-anchor":"middle","font-size":10.5,fill:css("--muted")});
+  });
+}
+
+function drawAll(){ drawFlow(); drawCat(); drawGol('c-gol-op','operatif'); drawGol('c-gol-non','non operatif'); drawAlign(); drawRatio(); drawGraph(); }
+drawAll();
+let rt; window.addEventListener("resize",()=>{ clearTimeout(rt); rt=setTimeout(drawAll,120); });
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",drawAll);
+new MutationObserver(drawAll).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+if (document.fonts) document.fonts.ready.then(drawAll);
+</script>
