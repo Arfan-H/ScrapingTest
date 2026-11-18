@@ -1,0 +1,263 @@
+<title>Peta Graf Tarif</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: kanvas graf penuh di tengah, panel kontrol (cari, jenis relasi, legenda) di atas; info node terpilih di bawah kanvas */
+:root {
+  --bg: #f6f7f8; --surface: #fcfcfb; --canvas: #fbfcfc; --fg: #12171c; --fg-2: #4b5560; --muted: #7d8791;
+  --line: #e1e4e7; --edge: rgba(75,85,96,.13); --accent: #0f5f73; --accent-soft: #e2eff2;
+  --cj: #2a78d6; --rb: #eb6834; --gol: #0f8a8a; --kat: #3a3f46; --ring: rgba(18,23,28,.10); --halo: #fbfcfc;
+  --f-display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+  --f-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1214; --surface: #1a1d1f; --canvas: #141719; --fg: #eef0f1; --fg-2: #c0c6cc; --muted: #8b949c;
+    --line: #2c3033; --edge: rgba(192,198,204,.10); --accent: #6cc3d6; --accent-soft: #15303a;
+    --cj: #3987e5; --rb: #d95926; --gol: #2fb3b3; --kat: #d6dadd; --ring: rgba(255,255,255,.10); --halo: #141719;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1214; --surface: #1a1d1f; --canvas: #141719; --fg: #eef0f1; --fg-2: #c0c6cc; --muted: #8b949c;
+  --line: #2c3033; --edge: rgba(192,198,204,.10); --accent: #6cc3d6; --accent-soft: #15303a;
+  --cj: #3987e5; --rb: #d95926; --gol: #2fb3b3; --kat: #d6dadd; --ring: rgba(255,255,255,.10); --halo: #141719;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { background: var(--bg); color: var(--fg); font: 400 15px/1.5 var(--f-body); }
+.wrap { max-width: 1200px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 28px 48px; display: grid; gap: 16px; }
+h1 { font-family: var(--f-display); font-size: clamp(1.6rem, 3.6vw, 2.1rem); font-weight: 700; margin: 0; line-height: 1.2; }
+p { margin: 0; max-width: 72ch; }
+.lede { color: var(--fg-2); }
+.eyebrow { font: 500 .72rem/1.2 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.head { display: grid; gap: 8px; }
+.controls { display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: center; background: var(--surface); border: 1px solid var(--ring); border-radius: 12px; padding: 12px 14px; }
+.search { position: relative; flex: 1 1 240px; min-width: 0; }
+.search input { width: 100%; font: 400 .95rem var(--f-body); padding: 9px 12px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); }
+.res { position: absolute; top: 100%; left: 0; right: 0; margin-top: 4px; background: var(--surface); border: 1px solid var(--ring); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,.14); z-index: 20; max-height: 300px; overflow-y: auto; padding: 4px; }
+.res button { display: flex; justify-content: space-between; gap: 10px; width: 100%; border: 0; background: none; color: var(--fg); font: 400 .9rem var(--f-body); padding: 7px 9px; border-radius: 6px; text-align: left; cursor: pointer; }
+.res button:hover, .res button.on { background: var(--accent-soft); }
+.res .sub { color: var(--muted); font-size: .78rem; white-space: nowrap; }
+.toggles { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: .84rem; color: var(--fg-2); }
+.toggles label { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; white-space: nowrap; }
+.toggles input { accent-color: var(--accent); }
+.toggles .cnt { color: var(--muted); font-variant-numeric: tabular-nums; }
+.stage { position: relative; background: var(--canvas); border: 1px solid var(--ring); border-radius: 12px; overflow: hidden; height: min(72vh, 760px); min-height: 420px; touch-action: none; }
+canvas { display: block; width: 100%; height: 100%; cursor: grab; }
+canvas.drag { cursor: grabbing; }
+.zoom { position: absolute; right: 10px; top: 10px; display: grid; gap: 4px; }
+.zoom button { width: 34px; height: 34px; border-radius: 8px; border: 1px solid var(--ring); background: var(--surface); color: var(--fg); font: 600 1rem var(--f-body); cursor: pointer; }
+.zoom button:focus-visible, .search input:focus-visible, .toggles input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.legend { position: absolute; left: 10px; bottom: 10px; display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: .76rem; color: var(--fg-2); background: color-mix(in srgb, var(--surface) 88%, transparent); border: 1px solid var(--ring); border-radius: 8px; padding: 6px 10px; max-width: calc(100% - 64px); }
+.legend span { display: inline-flex; align-items: center; gap: 5px; }
+.legend i { display: inline-block; border-radius: 50%; }
+.tip { position: absolute; pointer-events: none; background: var(--fg); color: var(--bg); font-size: .8rem; line-height: 1.4; padding: 7px 9px; border-radius: 6px; max-width: 260px; z-index: 15; }
+.info { background: var(--surface); border: 1px solid var(--ring); border-radius: 12px; padding: 14px 16px; display: grid; gap: 8px; min-width: 0; }
+.info h2 { font-family: var(--f-display); font-size: 1.05rem; margin: 0; }
+.info .meta { font-size: .84rem; color: var(--muted); }
+.nb { display: flex; flex-wrap: wrap; gap: 6px; }
+.nb button { border: 1px solid var(--line); background: var(--bg); color: var(--fg); font: 400 .82rem var(--f-body); padding: 4px 9px; border-radius: 999px; cursor: pointer; }
+.nb button:hover { border-color: var(--accent); }
+.note { font-size: .82rem; color: var(--muted); }
+code { font-family: var(--f-mono); font-size: .85em; }
+</style>
+
+<div class="wrap">
+  <header class="head">
+    <div class="eyebrow">Pilot graf tarif RSUD · seluruh graf</div>
+    <h1>Peta Graf Tarif</h1>
+    <p class="lede">Semua node di graf pilot dalam satu gambar. Setiap lingkaran adalah satu kategori: titik biru di belahan kiri berasal dari Perbup Cianjur, titik oranye di belahan kanan dari Perbup Rembang. Garis hijau tua (SAMA_DENGAN) menghubungkan layanan yang sama di kedua dokumen. Golongan Rembang ada di kolom kanan. Geser untuk berpindah, gulir atau cubit untuk memperbesar, klik node untuk melihat tetangganya.</p>
+  </header>
+
+  <div class="controls">
+    <div class="search">
+      <input id="q" type="search" placeholder="Cari node, mis. SGOT, Kelompok II, Laboratorium" autocomplete="off" aria-label="Cari node" aria-controls="res">
+      <div class="res" id="res" hidden></div>
+    </div>
+    <div class="toggles" id="toggles" aria-label="Jenis relasi yang digambar"></div>
+  </div>
+
+  <div class="stage" id="stage">
+    <canvas id="cv" aria-label="Gambar seluruh graf tarif pilot" role="img"></canvas>
+    <div class="zoom">
+      <button id="zin" aria-label="Perbesar">+</button>
+      <button id="zout" aria-label="Perkecil">−</button>
+      <button id="zfit" aria-label="Tampilkan semua">⤢</button>
+    </div>
+    <div class="legend" id="legend"></div>
+    <div class="tip" id="tip" hidden></div>
+  </div>
+
+  <div class="info" id="info">
+    <h2>Klik sebuah node</h2>
+    <p class="meta">Node besar adalah penghubung: kategori, golongan, dokumen (Perbup), dan rumah sakit. Titik kecil adalah layanan. Biru dari Perbup Cianjur, oranye dari Perbup Rembang.</p>
+  </div>
+  <p class="note">Edge TARIF ganda (satu per kelas) digambar sebagai satu garis, begitu juga TARIF_GOLONGAN (49 edge, 9 garis). Jumlah di kotak centang adalah jumlah edge di graf. Posisi node disusun per kategori, bukan hasil simulasi gaya, supaya kelompoknya terbaca. Data dari <code>out/graf_pilot.graphml</code>.</p>
+</div>
+
+<script>
+const GF = __FULL__;
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const TYPE = ["Layanan","Golongan","KategoriStd","Dokumen","RumahSakit"];
+const REL = [
+  {name:"TARIF", count:2497, on:false, desc:"Dokumen → Layanan"},
+  {name:"KATEGORI", count:2322, on:true, desc:"Layanan → Kategori"},
+  {name:"MASUK_GOLONGAN", count:567, on:true, desc:"Layanan → Golongan"},
+  {name:"SAMA_DENGAN", count:84, on:true, desc:"Layanan ↔ Layanan"},
+  {name:"TARIF_GOLONGAN", count:49, on:true, desc:"Dokumen → Golongan"},
+  {name:"BERLAKU_UNTUK", count:2, on:true, desc:"Dokumen → RS"},
+];
+const SIDE = ["Perbup Cianjur 3/2025","Perbup Rembang 16/2023"];
+const N = GF.N.map(([x,y,t,d,label],i)=>({i,x,y,t,d,label,nb:[]}));
+GF.E.forEach(([a,b,r])=>{ N[a].nb.push([b,r]); N[b].nb.push([a,r]); });
+const deg = n => n.nb.length;
+const radius = n => n.t===0 ? 2.4 : n.t===1 ? 6 + Math.min(6, Math.sqrt(deg(n))/2.5) : n.t===2 ? 8 + Math.min(8, Math.sqrt(deg(n))/3) : n.t===3 ? 11 : 9;
+
+// ---------- toggles ----------
+const tg = document.getElementById("toggles");
+REL.forEach((r,k)=>{ const id="rel"+k; const lab=document.createElement("label");
+  lab.innerHTML = `<input type="checkbox" id="${id}" ${r.on?"checked":""}> ${r.name} <span class="cnt">${r.count.toLocaleString("id-ID")}</span>`;
+  lab.title = r.desc; tg.appendChild(lab);
+  lab.querySelector("input").addEventListener("change",e=>{ r.on=e.target.checked; draw(); }); });
+
+// ---------- legend ----------
+function legend(){
+  const items=[["var(--cj)",6,"Layanan Cianjur"],["var(--rb)",6,"Layanan Rembang"],["var(--kat)",10,"Kategori"],["var(--gol)",10,"Golongan"],["var(--fg-2)",10,"Dokumen / RS"],["var(--accent)",0,"SAMA_DENGAN"]];
+  document.getElementById("legend").innerHTML = items.map(([c,s,l])=> s ? `<span><i style="width:${s}px;height:${s}px;background:${c}"></i>${l}</span>` : `<span><i style="width:14px;height:2px;border-radius:1px;background:${c}"></i>${l}</span>`).join("");
+}
+legend();
+
+// ---------- canvas & view ----------
+const stage=document.getElementById("stage"), cv=document.getElementById("cv"), ctx=cv.getContext("2d");
+let W=0,H=0,dpr=1, view={k:1,tx:0,ty:0}, sel=null, hover=null;
+function fit(){ const px=Math.max(56,W*0.07), py=34, bw=GF.box[0], bh=GF.box[1]; const k=Math.min((W-2*px)/bw,(H-2*py-30)/bh); view={k, tx:(W-bw*k)/2, ty:(H-bh*k)/2-12}; }
+function resize(){ const r=stage.getBoundingClientRect(); dpr=window.devicePixelRatio||1; W=r.width; H=r.height; cv.width=W*dpr; cv.height=H*dpr; }
+const sx = x => x*view.k+view.tx, sy = y => y*view.k+view.ty;
+
+let C={};
+function colors(){ C={edge:css("--edge"),cj:css("--cj"),rb:css("--rb"),gol:css("--gol"),kat:css("--kat"),fg:css("--fg"),fg2:css("--fg-2"),muted:css("--muted"),accent:css("--accent"),halo:css("--halo"),canvas:css("--canvas"),surface:css("--surface")}; }
+function nodeColor(n){ return n.t===0 ? (n.d===0?C.cj:C.rb) : n.t===1 ? C.gol : n.t===2 ? C.kat : n.t===3 ? (n.d===0?C.cj:C.rb) : C.fg2; }
+
+function draw(){
+  ctx.setTransform(dpr,0,0,dpr,0,0); ctx.clearRect(0,0,W,H);
+  const focus = sel!=null ? new Set([sel, ...N[sel].nb.map(x=>x[0])]) : null;
+  const zr = Math.max(0.6, Math.min(2.2, view.k*1.0));
+  // edges
+  ctx.lineWidth=1;
+  for(const [a,b,r] of GF.E){
+    if(!REL[r].on) continue;
+    const inF = focus && (a===sel||b===sel);
+    if(focus && !inF) continue;
+    if(r===3){ ctx.strokeStyle=C.accent; ctx.lineWidth=inF?2.5:1.6; ctx.globalAlpha=focus?1:.85; }
+    else { ctx.strokeStyle= inF ? C.fg2 : C.edge; ctx.lineWidth= inF?1.4:1; ctx.globalAlpha=inF?.7:1; }
+    ctx.beginPath(); ctx.moveTo(sx(N[a].x),sy(N[a].y)); ctx.lineTo(sx(N[b].x),sy(N[b].y)); ctx.stroke();
+  }
+  ctx.globalAlpha=1;
+  // nodes: layanan first, hubs on top
+  const order = [0,1,2,3,4];
+  for(const t of order){ for(const n of N){ if(n.t!==t) continue;
+    const dim = focus && !focus.has(n.i);
+    const r = radius(n) * (n.t===0 ? zr : Math.max(.8, Math.min(1.6, view.k)));
+    ctx.globalAlpha = dim ? .12 : 1;
+    ctx.beginPath(); ctx.arc(sx(n.x),sy(n.y),r+ (n.t?1.5:0.8),0,Math.PI*2); ctx.fillStyle=C.canvas; ctx.fill();
+    ctx.beginPath(); ctx.arc(sx(n.x),sy(n.y),r,0,Math.PI*2); ctx.fillStyle=nodeColor(n); ctx.fill();
+    if(n.i===sel||n.i===hover){ ctx.lineWidth=2; ctx.strokeStyle=C.fg; ctx.stroke(); }
+  }}
+  ctx.globalAlpha=1;
+  // labels: hubs always; layanan when zoomed in or focused
+  ctx.textAlign="center"; ctx.lineJoin="round";
+  for(const n of N){
+    const showHub = n.t>0;
+    const showLay = n.t===0 && (focus ? (focus.has(n.i) && focus.size<=60) : view.k>7);
+    if(!(showHub||showLay)) continue;
+    if(focus && !focus.has(n.i) && n.t>0 && view.k<2) { /* keep hubs readable but faint */ ctx.globalAlpha=.35; } else ctx.globalAlpha=1;
+    const fs = n.t===0 ? 11 : n.t===2 ? 12.5 : 11.5;
+    ctx.font = `${n.t===0?400:600} ${fs}px "Public Sans", system-ui, sans-serif`;
+    let lab = n.label.length>34 ? n.label.slice(0,33)+"…" : n.label;
+    if(n.t===1) lab = lab.replace("Operatif / ","Op · ").replace("Non Operatif / ","Non-op · ");
+    let lx = sx(n.x), y = sy(n.y) - radius(n)*(n.t===0?zr:1) - 5;
+    if(n.t===1){ ctx.textAlign="left"; lx = sx(n.x) + radius(n)*Math.max(.8,Math.min(1.6,view.k)) + 6; y = sy(n.y) + 4; } else ctx.textAlign="center";
+    ctx.strokeStyle=C.halo; ctx.lineWidth=4; ctx.strokeText(lab,lx,y);
+    ctx.fillStyle = n.t===0 ? C.fg2 : C.fg; ctx.fillText(lab,lx,y);
+  }
+  ctx.globalAlpha=1;
+}
+
+// ---------- spatial lookup ----------
+function nearest(px,py){ let best=null, bd=Infinity;
+  for(const n of N){ const dx=sx(n.x)-px, dy=sy(n.y)-py, d=dx*dx+dy*dy; const r=Math.max(9, radius(n)*(n.t?Math.max(.8,Math.min(1.6,view.k)):1)+5); if(d<r*r && d<bd){ bd=d; best=n.i; } }
+  return best; }
+
+// ---------- interaction ----------
+const tip=document.getElementById("tip");
+let drag=null, moved=false, pinch=null; const ptrs=new Map();
+cv.addEventListener("pointerdown",e=>{ cv.setPointerCapture(e.pointerId); ptrs.set(e.pointerId,[e.offsetX,e.offsetY]);
+  if(ptrs.size===2){ const [a,b]=[...ptrs.values()]; pinch={d:Math.hypot(a[0]-b[0],a[1]-b[1]), k:view.k, tx:view.tx, ty:view.ty, cx:(a[0]+b[0])/2, cy:(a[1]+b[1])/2}; drag=null; }
+  else { drag={x:e.offsetX,y:e.offsetY,tx:view.tx,ty:view.ty}; moved=false; cv.classList.add("drag"); } });
+cv.addEventListener("pointermove",e=>{
+  if(ptrs.has(e.pointerId)) ptrs.set(e.pointerId,[e.offsetX,e.offsetY]);
+  if(pinch && ptrs.size===2){ const [a,b]=[...ptrs.values()]; const d=Math.hypot(a[0]-b[0],a[1]-b[1]); zoomAt(pinch.cx,pinch.cy,pinch.k*d/pinch.d,pinch); moved=true; return; }
+  if(drag){ const dx=e.offsetX-drag.x, dy=e.offsetY-drag.y; if(Math.abs(dx)+Math.abs(dy)>3) moved=true; view.tx=drag.tx+dx; view.ty=drag.ty+dy; tip.hidden=true; draw(); return; }
+  const h=nearest(e.offsetX,e.offsetY);
+  if(h!==hover){ hover=h; draw(); }
+  if(h!=null){ const n=N[h]; tip.innerHTML=`<b>${esc(n.label)}</b><br>${TYPE[n.t]}${n.t===0||n.t===3?" · "+SIDE[n.d]:""} · ${deg(n)} edge`; tip.hidden=false;
+    const tw=tip.offsetWidth; let x=e.offsetX+12; if(x+tw>W-6) x=e.offsetX-tw-12; tip.style.left=x+"px"; tip.style.top=(e.offsetY+12)+"px"; }
+  else tip.hidden=true;
+});
+function endPtr(e){ ptrs.delete(e.pointerId); if(ptrs.size<2) pinch=null;
+  if(drag && !moved){ const h=nearest(e.offsetX,e.offsetY); selectNode(h, false); }
+  drag=null; cv.classList.remove("drag"); }
+cv.addEventListener("pointerup",endPtr); cv.addEventListener("pointercancel",endPtr);
+cv.addEventListener("pointerleave",()=>{ hover=null; tip.hidden=true; draw(); });
+function zoomAt(px,py,k,base=view){ k=Math.max(.3,Math.min(25,k)); const wx=(px-base.tx)/base.k, wy=(py-base.ty)/base.k; view={k, tx:px-wx*k, ty:py-wy*k}; draw(); }
+cv.addEventListener("wheel",e=>{ e.preventDefault(); zoomAt(e.offsetX,e.offsetY,view.k*Math.exp(-e.deltaY*0.0015)); },{passive:false});
+document.getElementById("zin").addEventListener("click",()=>zoomAt(W/2,H/2,view.k*1.5));
+document.getElementById("zout").addEventListener("click",()=>zoomAt(W/2,H/2,view.k/1.5));
+document.getElementById("zfit").addEventListener("click",()=>{ fit(); draw(); });
+
+// ---------- info panel ----------
+const info=document.getElementById("info");
+function selectNode(i, center){
+  sel = (i==null || i===sel && !center) ? null : i;
+  if(sel==null){ info.innerHTML=`<h2>Klik sebuah node</h2><p class="meta">Node besar adalah penghubung: kategori, golongan, dokumen (Perbup), dan rumah sakit. Titik kecil adalah layanan. Biru dari Perbup Cianjur, oranye dari Perbup Rembang.</p>`; draw(); return; }
+  const n=N[sel];
+  if(center){ const k=Math.max(view.k, n.t===0?5:2.2); view={k, tx:W/2-n.x*k, ty:H/2-n.y*k}; }
+  const groups={}; n.nb.forEach(([j,r])=>{ (groups[REL[r].name] ||= []).push(j); });
+  const parts = Object.entries(groups).map(([rel,js])=>{ const uniq=[...new Set(js)];
+    const shown=uniq.slice(0,40);
+    return `<div><p class="meta">${rel} · ${uniq.length} node</p><div class="nb">${shown.map(j=>`<button data-j="${j}">${esc(N[j].label)}${N[j].t===0?` <span class="meta">(${N[j].d===0?"Cianjur":"Rembang"})</span>`:""}</button>`).join("")}${uniq.length>40?`<span class="meta">+${uniq.length-40} lainnya</span>`:""}</div></div>`; }).join("");
+  info.innerHTML = `<h2>${esc(n.label)}</h2><p class="meta">${TYPE[n.t]}${n.t===0||n.t===3?" · "+SIDE[n.d]:""} · ${deg(n)} edge. Klik node yang sama sekali lagi, atau area kosong, untuk melepas pilihan.</p>${parts}`;
+  info.querySelectorAll(".nb button").forEach(b=>b.addEventListener("click",()=>selectNode(+b.dataset.j,true)));
+  draw();
+}
+
+// ---------- search ----------
+const q=document.getElementById("q"), res=document.getElementById("res");
+const idx=N.map(n=>({i:n.i,key:n.label.toLowerCase()}));
+let hi=-1;
+q.addEventListener("input",()=>{ const term=q.value.trim().toLowerCase(); if(!term){ res.hidden=true; return; }
+  const hits=idx.filter(o=>o.key.includes(term)).sort((a,b)=>(N[b.i].t>0)-(N[a.i].t>0) || (a.key.startsWith(term)?0:1)-(b.key.startsWith(term)?0:1) || a.key.length-b.key.length).slice(0,12);
+  res.innerHTML = hits.length ? hits.map(o=>{ const n=N[o.i]; return `<button data-i="${o.i}">${esc(n.label)}<span class="sub">${TYPE[n.t]}${n.t===0?" · "+(n.d===0?"Cianjur":"Rembang"):""}</span></button>`; }).join("") : `<p class="note" style="padding:8px">Tidak ditemukan. Coba kata yang lebih pendek.</p>`;
+  res.hidden=false; hi=-1; });
+q.addEventListener("keydown",e=>{ const bs=[...res.querySelectorAll("button")];
+  if(e.key==="ArrowDown"){ hi=Math.min(bs.length-1,hi+1); e.preventDefault(); } else if(e.key==="ArrowUp"){ hi=Math.max(0,hi-1); e.preventDefault(); }
+  else if(e.key==="Enter"){ if(bs.length){ pick(+bs[Math.max(0,hi)].dataset.i); } e.preventDefault(); return; } else if(e.key==="Escape"){ res.hidden=true; return; }
+  bs.forEach((b,k)=>b.classList.toggle("on",k===hi)); });
+res.addEventListener("click",e=>{ const b=e.target.closest("button"); if(b) pick(+b.dataset.i); });
+document.addEventListener("click",e=>{ if(!e.target.closest(".search")) res.hidden=true; });
+function pick(i){ res.hidden=true; q.value=N[i].label; selectNode(i,true); }
+
+// ---------- boot ----------
+function boot(){ resize(); colors(); fit(); draw(); }
+boot();
+new ResizeObserver(()=>{ const k=view.k; resize(); draw(); }).observe(stage);
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>{ colors(); draw(); });
+new MutationObserver(()=>{ colors(); legend(); draw(); }).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+if(document.fonts) document.fonts.ready.then(draw);
+</script>
