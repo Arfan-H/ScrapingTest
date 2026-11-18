@@ -1,6 +1,6 @@
-"""PDF Perbup -> Excel tarif standar (long format, 5 sheet).
+"""PDF Perbup -> Excel tarif standar (long format, 6 sheet).
 
-Sheet: tarif, rumah_sakit, dokumen, golongan_tarif, pemetaan.
+Sheet: tarif, rumah_sakit, dokumen, dokumen_rs, golongan_tarif, pemetaan.
 Satu baris di sheet `tarif` = satu harga (satu nama x satu kelas x satu komponen).
 
 Dibanding extract.py, versi ini membaca KONTEKS bagian dokumen:
@@ -26,21 +26,27 @@ BASE = os.path.join(os.path.dirname(__file__), "..")
 OUT = os.path.join(BASE, "out")
 
 RS = [
-    dict(rs_id="RSUD-KAB-CIANJUR-KLS-C", nama_rs="RSUD Kelas C Kabupaten Cianjur (termasuk RSUD Cimacan)",
-         kepemilikan="kab/kota", kelas_rs="C", kab_kota="Kabupaten Cianjur", provinsi="Jawa Barat",
-         catatan="Satu Perbup berlaku untuk semua RSUD Kelas C di Kab. Cianjur"),
+    dict(rs_id="RSUD-CIMACAN", nama_rs="RSUD Cimacan", kepemilikan="kab/kota", kelas_rs="C",
+         kab_kota="Kabupaten Cianjur", provinsi="Jawa Barat",
+         catatan="Satu-satunya RSUD Kelas C Cianjur yang sudah dicek; RSUD lain ditambah lewat sheet dokumen_rs"),
     dict(rs_id="RSUD-REMBANG-SOETRASNO", nama_rs="RSUD dr. R. Soetrasno", kepemilikan="kab/kota",
          kelas_rs="", kab_kota="Kabupaten Rembang", provinsi="Jawa Tengah",
          catatan="Kelas RS belum diverifikasi"),
 ]
+# Satu dokumen bisa berlaku untuk beberapa RS (Perbup Cianjur: semua RSUD Kelas C di kabupaten itu).
+# Tarif disimpan per DOKUMEN, sehingga RS baru cukup ditambah satu baris di sini, tanpa menggandakan tarif.
+DOKUMEN_RS = [
+    dict(dokumen_id="PERBUP-CIANJUR-3-2025", rs_id="RSUD-CIMACAN", dasar="Perbup berlaku untuk RSUD Kelas C Kab. Cianjur"),
+    dict(dokumen_id="PERBUP-REMBANG-16-2023", rs_id="RSUD-REMBANG-SOETRASNO", dasar="Judul Perbup menyebut RS ini"),
+]
 DOK = [
-    dict(dokumen_id="PERBUP-CIANJUR-3-2025", rs_id="RSUD-KAB-CIANJUR-KLS-C", jenis="Perbup", nomor="3",
+    dict(dokumen_id="PERBUP-CIANJUR-3-2025", jenis="Perbup", nomor="3", cakupan="Semua RSUD Kelas C di Kabupaten Cianjur",
          tahun=2025, tgl_ditetapkan="2025-01-13", tgl_berlaku="2025-01-14", status="berlaku (per unduhan)",
          mengubah_dokumen_id="", jenis_pdf="teks", halaman_lampiran_mulai=7,
          url="https://rsudcimacan.cianjurkab.go.id/public/assets/pdf/PB%203%202025%20TARIF%20KLS%20C%20terupdate.pdf",
          tgl_unduh="2026-11-18",
          aturan_umum="Sebagian besar bagian: tarif ditambah alat dan bahan (BHP di luar tarif)."),
-    dict(dokumen_id="PERBUP-REMBANG-16-2023", rs_id="RSUD-REMBANG-SOETRASNO", jenis="Perbup", nomor="16",
+    dict(dokumen_id="PERBUP-REMBANG-16-2023", jenis="Perbup", nomor="16", cakupan="RSUD dr. R. Soetrasno",
          tahun=2023, tgl_ditetapkan="2023-06-27", tgl_berlaku="2023-07-17", status="berlaku (per unduhan)",
          mengubah_dokumen_id="mencabut Perbup 2021 (Berita Daerah 2021 No. 43)", jenis_pdf="teks",
          halaman_lampiran_mulai=9,
@@ -80,7 +86,7 @@ def std_kelas(s):
     return s.strip()
 
 
-def extract_doc(pdf_path, rs_id, dok_id, prefix, start_page):
+def extract_doc(pdf_path, dok_id, start_page):
     rows, blocks = [], []
     block = dict(id=0, kelas="", text="", top=True, section=0)
     blocks.append(block)
@@ -133,7 +139,7 @@ def extract_doc(pdf_path, rs_id, dok_id, prefix, start_page):
                 if re.search(r"(^|\s)\.\d{3}", raw):
                     flags.append("harga_ambigu")
                 rows.append(dict(
-                    rs_id=rs_id, dokumen_id=dok_id, halaman=pno + 1, kategori_asli=category,
+                    dokumen_id=dok_id, halaman=pno + 1, kategori_asli=category,
                     nama_asli=nama, kelas=kelas or "Non-kelas", komponen="total",
                     n_kolom_harga=len(prices), harga=prices[-1], sumber_harga="langsung",
                     golongan="", paket_id="", metode_ekstraksi="pdf_teks",
@@ -179,7 +185,7 @@ def golongan_rows():
         komponen="total", harga=gt.total, termasuk_bhp="tidak", halaman=gt.page))
     ga = pd.read_csv(f"{OUT}/rembang_golongan_anggota.csv")
     ga["golongan_id"] = ("GOL-" + ga.jenis.str.replace(" ", "_") + "-" + ga.golongan.str.replace(" ", "_")).str.upper()
-    rows = [dict(rs_id="RSUD-REMBANG-SOETRASNO", dokumen_id="PERBUP-REMBANG-16-2023", halaman=r.page,
+    rows = [dict(dokumen_id="PERBUP-REMBANG-16-2023", halaman=r.page,
                  kategori_asli=f"Tindakan medis {r.jenis}", nama_asli=r.nama_asli, kelas="",
                  komponen="total", n_kolom_harga=0, harga=None, sumber_harga="via_golongan",
                  golongan=r.golongan_id, paket_id="", metode_ekstraksi="pdf_teks",
@@ -189,10 +195,8 @@ def golongan_rows():
 
 
 def main():
-    rows = extract_doc(f"{BASE}/raw_pdf/cianjur_cimacan_3_2025.pdf", "RSUD-KAB-CIANJUR-KLS-C",
-                       "PERBUP-CIANJUR-3-2025", "CJR25", 7)
-    rows += extract_doc(f"{BASE}/raw_pdf/rembang16_2023.pdf", "RSUD-REMBANG-SOETRASNO",
-                        "PERBUP-REMBANG-16-2023", "RBG23", 9)
+    rows = extract_doc(f"{BASE}/raw_pdf/cianjur_cimacan_3_2025.pdf", "PERBUP-CIANJUR-3-2025", 7)
+    rows += extract_doc(f"{BASE}/raw_pdf/rembang16_2023.pdf", "PERBUP-REMBANG-16-2023", 9)
     gol, grows = golongan_rows()
     df = pd.DataFrame(rows + grows)
     df["nama_norm"] = df.nama_asli.map(norm_name)
@@ -200,28 +204,28 @@ def main():
     df["satuan"] = ""
 
     # QC lintas baris
-    key = ["rs_id", "nama_norm", "kategori_asli", "kelas", "harga"]
+    key = ["dokumen_id", "nama_norm", "kategori_asli", "kelas", "harga"]
     dup = df.duplicated(key, keep="first") & df.harga.notna()
     df.loc[dup, "_flags"] = df.loc[dup, "_flags"].map(lambda f: f + ["duplikat"])
     order = {"III": 0, "II": 1, "I": 2}
     d3 = df[df.kelas.isin(order) & df.harga.notna()].copy()
     d3["o"] = d3.kelas.map(order)
-    for (rs, n), g in d3.groupby(["rs_id", "nama_norm"]):
+    for (dk, n), g in d3.groupby(["dokumen_id", "nama_norm"]):
         g = g.sort_values("o")
         if g.kelas.nunique() > 1 and (g.groupby("o").harga.min().diff().dropna() < 0).any():
             for i in g.index:
                 df.at[i, "_flags"] = df.at[i, "_flags"] + ["urutan_kelas_aneh"]
     df["flag_qc"] = df["_flags"].map(lambda f: ";".join(dict.fromkeys(f)) or "ok")
 
-    pref = {"RSUD-KAB-CIANJUR-KLS-C": "CJR25", "RSUD-REMBANG-SOETRASNO": "RBG23"}
-    df["tarif_id"] = [f"{pref[r]}-{i:05d}" for i, r in zip(df.groupby("rs_id").cumcount() + 1, df.rs_id)]
-    cols = ["tarif_id", "rs_id", "dokumen_id", "halaman", "kategori_asli", "nama_asli", "nama_norm",
+    pref = {"PERBUP-CIANJUR-3-2025": "CJR25", "PERBUP-REMBANG-16-2023": "RBG23"}
+    df["tarif_id"] = [f"{pref[d]}-{i:05d}" for i, d in zip(df.groupby("dokumen_id").cumcount() + 1, df.dokumen_id)]
+    cols = ["tarif_id", "dokumen_id", "halaman", "kategori_asli", "nama_asli", "nama_norm",
             "kategori_std", "golongan", "kelas", "komponen", "termasuk_bhp", "satuan", "harga",
             "sumber_harga", "paket_id", "metode_ekstraksi", "flag_qc", "n_kolom_harga", "baris_mentah"]
     tarif = df[cols]
 
     pem = (tarif.groupby("nama_norm").agg(kategori_std=("kategori_std", "first"), contoh_nama_asli=("nama_asli", "first"),
-                                         jumlah_rs=("rs_id", "nunique"), jumlah_baris=("tarif_id", "size"))
+                                         jumlah_dokumen=("dokumen_id", "nunique"), jumlah_baris=("tarif_id", "size"))
            .reset_index())
     pem = pem.assign(kode_sistem="", kode="", nama_kode="", skor="", status="belum", reviewer="", catatan="")
 
@@ -230,6 +234,7 @@ def main():
         tarif.to_excel(xw, sheet_name="tarif", index=False)
         pd.DataFrame(RS).to_excel(xw, sheet_name="rumah_sakit", index=False)
         pd.DataFrame(DOK).to_excel(xw, sheet_name="dokumen", index=False)
+        pd.DataFrame(DOKUMEN_RS).to_excel(xw, sheet_name="dokumen_rs", index=False)
         gol.to_excel(xw, sheet_name="golongan_tarif", index=False)
         pem.to_excel(xw, sheet_name="pemetaan", index=False)
         for ws in xw.book.worksheets:
@@ -240,9 +245,9 @@ def main():
     tarif.to_csv(f"{OUT}/tarif_standar_pilot.csv", index=False)
 
     print(f"-> {path}")
-    print("baris tarif:", len(tarif), "| per RS:", tarif.groupby("rs_id").size().to_dict())
+    print("baris tarif:", len(tarif), "| per dokumen:", tarif.groupby("dokumen_id").size().to_dict())
     print("kelas:", tarif.kelas.value_counts().to_dict())
-    print("termasuk_bhp:", tarif.groupby(["rs_id", "termasuk_bhp"]).size().to_dict())
+    print("termasuk_bhp:", tarif.groupby(["dokumen_id", "termasuk_bhp"]).size().to_dict())
     print("flag_qc:", tarif.flag_qc.str.split(";").explode().value_counts().to_dict())
     print("golongan_tarif sel:", len(gol), "| pemetaan nama unik:", len(pem))
 

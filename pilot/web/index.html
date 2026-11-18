@@ -116,7 +116,7 @@ code { font-family: var(--f-mono); font-size: .85em; }
   <section class="stack-lg" aria-labelledby="ringkas">
     <h2 id="ringkas">Ringkasan</h2>
     <div class="tiles">
-      <div class="tile"><span class="lbl">Layanan unik diekstrak</span><span class="val">2.321</span><span class="sub">1.135 Cianjur · 1.186 Rembang</span></div>
+      <div class="tile"><span class="lbl">Layanan unik diekstrak</span><span class="val">2.322</span><span class="sub">1.128 Cianjur · 1.194 Rembang</span></div>
       <div class="tile"><span class="lbl">Akurasi ekstraksi</span><span class="val">26/30</span><span class="sub">cek manual baris acak (87%)</span></div>
       <div class="tile"><span class="lbl">Padanan benar di top-3</span><span class="val">0,91</span><span class="sub">metode hybrid, 23 query</span></div>
       <div class="tile"><span class="lbl">Median rasio harga</span><span class="val">4,4×</span><span class="sub">Cianjur ÷ Rembang kelas III, 69 pasangan dengan status BHP setara</span></div>
@@ -129,7 +129,7 @@ code { font-family: var(--f-mono); font-size: .85em; }
     <ul class="fixes">
       <li><b>Kelas tercampur.</b> Rembang punya tabel lab dan radiologi untuk kelas III dan kelas II. Versi lama mengambil median keduanya (misalnya SGOT jadi Rp9.237,5). Sekarang Rembang dibandingkan pada kelas III saja.</li>
       <li><b>Klaim "selisih lab semu" dicabut.</b> Lab Cianjur ternyata juga tidak termasuk BHP ("ditambah alat dan bahan"). Selisihnya tetap besar setelah BHP disamakan.</li>
-      <li><b>Nama RS.</b> Perbup Cianjur 3/2025 berlaku untuk semua RSUD Kelas C di Kabupaten Cianjur, bukan khusus RSUD Cimacan.</li>
+      <li><b>Nama RS dan model graf.</b> Perbup Cianjur 3/2025 berlaku untuk semua RSUD Kelas C di Kabupaten Cianjur, bukan khusus RSUD Cimacan. Graf sekarang memakai Dokumen → BERLAKU_UNTUK → RumahSakit, dan dibangun ulang dari tabel standar (SAMA_DENGAN 84 edge).</li>
       <li><b>Angka.</b> Median rasio menjadi 4,4× (69 pasangan dengan status BHP setara), akurasi ekstraksi 87%, dan tarif golongan 49 sel (satu sel salah baca dibuang).</li>
     </ul>
   </section>
@@ -155,7 +155,7 @@ code { font-family: var(--f-mono); font-size: .85em; }
         <div class="legend"><span><i class="sw" style="background:var(--s1)"></i>RSUD Kelas C Cianjur</span><span><i class="sw" style="background:var(--s2)"></i>RSUD Rembang</span></div>
       </div>
       <div class="chart" id="c-cat"></div>
-      <p class="note">"Tindakan Lain" di Rembang besar karena 533 tindakan golongan (misalnya Apendektomi, Craniotomi) belum terpetakan oleh aturan kategori. Ini pekerjaan berikutnya.</p>
+      <p class="note">"Tindakan Lain" di Rembang besar karena 567 tindakan golongan (misalnya Apendektomi, Craniotomi) belum terpetakan oleh aturan kategori. Ini pekerjaan berikutnya.</p>
       <details><summary>Lihat tabel</summary><div class="tbl" id="t-cat"></div></details>
     </div>
   </section>
@@ -218,7 +218,7 @@ code { font-family: var(--f-mono); font-size: .85em; }
     <div class="stack">
       <div class="eyebrow">Hasil · Tabel tarif standar</div>
       <h2 id="standar">Dari PDF ke Excel bersih, satu baris per harga</h2>
-      <p>Semua tarif kedua dokumen sekarang ada di <code>out/tarif_standar_pilot.xlsx</code>, dengan 5 sheet: <code>tarif</code>, <code>rumah_sakit</code>, <code>dokumen</code>, <code>golongan_tarif</code>, dan <code>pemetaan</code>. Setiap baris tarif menyimpan halaman PDF, kelas, komponen, status BHP, cara harga diperoleh, dan hasil cek kualitas.</p>
+      <p>Semua tarif kedua dokumen sekarang ada di <code>out/tarif_standar_pilot.xlsx</code>, dengan 6 sheet: <code>tarif</code>, <code>rumah_sakit</code>, <code>dokumen</code>, <code>dokumen_rs</code>, <code>golongan_tarif</code>, dan <code>pemetaan</code>. Setiap baris tarif menyimpan halaman PDF, kelas, komponen, status BHP, cara harga diperoleh, dan hasil cek kualitas.</p>
     </div>
     <div class="card">
       <div class="card-head"><h3>Hasil cek kualitas otomatis (3.178 baris tarif)</h3></div>
@@ -242,10 +242,10 @@ code { font-family: var(--f-mono); font-size: .85em; }
     <div class="stack">
       <div class="eyebrow">Hasil · Graf pilot</div>
       <h2 id="graf">Skema graf yang terbentuk</h2>
-      <p>Angka pada panah menunjukkan jumlah edge di graf pilot (<code>out/graf_pilot.graphml</code>, bisa dibuka di Gephi). Relasi tambahan yang ternyata dibutuhkan ada di catatan di bawah diagram.</p>
+      <p>Angka pada garis menunjukkan jumlah edge di graf pilot (<code>out/graf_pilot.graphml</code>, bisa dibuka di Gephi). Graf dibangun langsung dari tabel standar. Tarif menempel pada Dokumen, bukan pada RumahSakit, karena satu Perbup bisa berlaku untuk beberapa RS. Perbup Cianjur berlaku untuk semua RSUD Kelas C di kabupaten itu, jadi menambah RSUD Kelas C lain cukup dengan satu edge BERLAKU_UNTUK, tanpa menggandakan tarif.</p>
     </div>
-    <div class="card"><div class="chart" id="c-graph" role="img" aria-label="Skema graf: RumahSakit TARIF ke Layanan 1.788; Layanan MASUK_GOLONGAN ke Golongan 533; RumahSakit TARIF_GOLONGAN ke Golongan 50 dengan atribut kelas; Layanan KATEGORI ke KategoriStd 2.321; Layanan SAMA_DENGAN Layanan 93"></div>
-      <p class="note"><b>Usulan dari pilot:</b> relasi TERDIRI_DARI (paket → item), dan atribut tarif untuk komponen, BHP, kelas, serta CITO.</p></div>
+    <div class="card"><div class="chart" id="c-graph" role="img" aria-label="Skema graf: Dokumen BERLAKU_UNTUK RumahSakit 2 edge; Dokumen TARIF ke Layanan 2.497; Dokumen TARIF_GOLONGAN ke Golongan 49; Layanan MASUK_GOLONGAN ke Golongan 567; Layanan KATEGORI ke KategoriStd 2.322; Layanan SAMA_DENGAN Layanan dokumen lain 84"></div>
+      <p class="note"><b>Belum ada di graf:</b> relasi TERDIRI_DARI (paket → item, misalnya "Paket Na, K, Cl") dan aturan tambahan CITO. Atribut kelas, komponen, dan BHP sudah tersimpan di setiap edge TARIF.</p></div>
   </section>
 
   <section class="stack-lg" aria-labelledby="temuan">
@@ -265,7 +265,8 @@ code { font-family: var(--f-mono); font-size: .85em; }
     <ol class="steps">
       <li><span>Validasi 60 label pilot bersama seorang PMIK (<code>out/label_pilot.json</code>).</span></li>
       <li><span>Tambah 8–10 RSUD dari 2 provinsi, dengan sengaja mencampur format: harga langsung, golongan, dan per kelas.</span></li>
-      <li><span>Tambahkan atribut komponen tarif ke skema sebelum membandingkan harga.</span></li>
+      <li><span>Petakan item ke ICD-9-CM (tindakan, radiologi) dan LOINC (lab) dengan mengisi sheet <code>pemetaan</code>.</span></li>
+      <li><span>Kerjakan pilot lapisan diagnosis untuk DBD, demam tifoid, dan sectio caesarea.</span></li>
       <li><span>Siapkan dev/test set terpisah berisi 300–500 pasangan untuk menentukan ambang dan melaporkan hasil.</span></li>
       <li><span>Metode: hybrid + fitur graf (golongan, kategori, tetangga) + opsi "tidak ada padanan", lalu fine-tune e5.</span></li>
       <li><span>Framing paper: resource (dataset + skema graf) + evaluasi alignment + analisis variasi tarif setelah komponen dinormalisasi.</span></li>
@@ -311,7 +312,7 @@ function drawFlow(){
 }
 
 /* ---------- Kategori ---------- */
-const CAT = {"Laboratorium":[198,262],"Radiologi":[180,115],"Mata/THT/Kulit":[247,41],"Rehab Medik":[141,38],"Akomodasi & Visite":[105,32],"Rawat Jalan & Darurat":[62,9],"Gigi":[50,25],"Kebidanan":[21,11],"Tindakan Lain":[131,653]};
+const CAT = {"Laboratorium":[198,260],"Radiologi":[180,115],"Mata/THT/Kulit":[244,41],"Rehab Medik":[141,38],"Akomodasi & Visite":[103,31],"Rawat Jalan & Darurat":[62,8],"Gigi":[50,25],"Kebidanan":[21,12],"Tindakan Lain":[129,664]};
 function drawCat(){
   const names=Object.keys(CAT); const box=document.getElementById("c-cat"); const W=Math.max(300,box.clientWidth);
   const lw = W<480 ? 118 : 150, bar=12, grp=bar*2+2, band=grp+14, top=4, H=top+names.length*band+26;
@@ -411,26 +412,32 @@ table("t-ratio",["Cianjur","Rembang","Kategori","Tarif Cianjur","Tarif Rembang k
 
 /* ---------- Skema graf ---------- */
 function drawGraph(){
-  const box=document.getElementById("c-graph"); const W=Math.max(300,box.clientWidth); const narrow=W<600;
-  const H=narrow?430:330; const [s]=svgFor("c-graph",H);
-  const nodeW=narrow?118:138, nodeH=44;
-  const pos = narrow ? {RS:[W*.5,30],L:[W*.27,190],G:[W*.75,190],K:[W*.27,390],L2:[W*.75,390]}
-                     : {RS:[W*.5,36],L:[W*.22,170],G:[W*.78,170],K:[W*.1+nodeW/2,292],L2:[W*.5,292]};
-  const nodes={RS:["RumahSakit","2 node"],L:["Layanan","2.321 node"],G:["Golongan","9 node"],K:["KategoriStd","9 node"],L2:["Layanan (RS lain)",""]};
-  const edge=(a,b,label,dash,dy=0)=>{ const [x1,y1]=pos[a],[x2,y2]=pos[b];
-    el("line",{x1,y1,x2,y2,stroke:dash?css("--muted"):css("--axis"),"stroke-width":2,"stroke-dasharray":dash?"5 4":"none"},s);
-    const mx=(x1+x2)/2, my=(y1+y2)/2+dy; const t=txt(s,mx,my+4,label,{"text-anchor":"middle","font-size":11.5,fill:dash?css("--muted"):css("--fg-2"),"font-family":"var(--f-mono)"});
+  const box=document.getElementById("c-graph"); const W=Math.max(300,box.clientWidth); const narrow=W<640;
+  const nodeW=narrow?116:140, nodeH=44;
+  const H=narrow?500:360; const [s]=svgFor("c-graph",H);
+  const L=nodeW/2+2, Rx=W-nodeW/2-2;
+  const pos = narrow
+    ? {RS:[L,30],D:[Rx,120],L:[L,215],G:[Rx,300],K:[L,465],L2:[Rx,465]}
+    : {RS:[nodeW/2+4,40],D:[W*.5,40],G:[W-nodeW/2-4,170],L:[W*.32,190],K:[nodeW/2+4,318],L2:[W*.62,318]};
+  const nodes={RS:["RumahSakit","2 node"],D:["Dokumen","2 node (Perbup)"],L:["Layanan","2.322 node"],G:["Golongan","10 node, 9 bertarif"],K:["KategoriStd","9 node"],L2:["Layanan","dokumen lain"]};
+  const edge=(a,b,name,count,dy=0,dx=0)=>{ const [x1,y1]=pos[a],[x2,y2]=pos[b];
+    el("line",{x1,y1,x2,y2,stroke:css("--axis"),"stroke-width":2},s);
+    const mx=(x1+x2)/2+dx, my=(y1+y2)/2+dy;
+    const t=el("text",{x:mx,y:narrow?my-2:my+4,"text-anchor":"middle","font-size":narrow?10:11.5,fill:css("--fg-2"),"font-family":"var(--f-mono)"},s);
+    if(narrow){ const a1=el("tspan",{x:mx,dy:0},t); a1.textContent=name; const a2=el("tspan",{x:mx,dy:13,fill:css("--fg"),"font-weight":600},t); a2.textContent=count; }
+    else t.textContent=name+" · "+count;
     const bb=t.getBBox(); const bg=el("rect",{x:bb.x-4,y:bb.y-2,width:bb.width+8,height:bb.height+4,rx:4,fill:css("--surface")},s); s.insertBefore(bg,t); };
-  edge("RS","L","TARIF · 1.788",false);
-  edge("RS","G","TARIF_GOLONGAN · 49",false);
-  edge("L","G","MASUK_GOLONGAN · 533",false, narrow?-14:-10);
-  edge("L","K","KATEGORI · 2.321",false);
-  edge("L","L2","SAMA_DENGAN · 93",false, narrow?14:0);
-  if(!narrow){ /* usulan */ }
+  edge("D","RS","BERLAKU_UNTUK","2");
+  edge("D","L","TARIF","2.497", narrow?-8:0);
+  edge("D","G","TARIF_GOLONGAN","49", narrow?0:-6);
+  edge("L","G","MASUK_GOLONGAN","567", narrow?8:-12);
+  edge("L","K","KATEGORI","2.322", narrow?10:4, narrow?0:-10);
+  edge("L","L2","SAMA_DENGAN","84", narrow?50:6, narrow?18:14);
   Object.entries(nodes).forEach(([k,[a,b]])=>{ const [x,y]=pos[k];
-    el("rect",{x:x-nodeW/2,y:y-nodeH/2,width:nodeW,height:nodeH,rx:22,fill:k==="G"?css("--accent-soft"):css("--bg"),stroke:k==="G"?css("--accent"):css("--line"),"stroke-width":1.5},s);
-    txt(s,x,b?y-2:y+4,a,{"text-anchor":"middle","font-size":12.5,"font-weight":600,fill:css("--fg")});
-    if(b) txt(s,x,y+13,b,{"text-anchor":"middle","font-size":10.5,fill:css("--muted")});
+    const hl=k==="D"||k==="G";
+    el("rect",{x:x-nodeW/2,y:y-nodeH/2,width:nodeW,height:nodeH,rx:22,fill:hl?css("--accent-soft"):css("--bg"),stroke:hl?css("--accent"):css("--line"),"stroke-width":1.5},s);
+    txt(s,x,y-2,a,{"text-anchor":"middle","font-size":12.5,"font-weight":600,fill:css("--fg")});
+    txt(s,x,y+13,b,{"text-anchor":"middle","font-size":10.5,fill:css("--muted")});
   });
 }
 

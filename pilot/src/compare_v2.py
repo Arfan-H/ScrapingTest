@@ -17,8 +17,8 @@ t = t[~t.flag_qc.str.contains("nama_terpotong")]
 gol = pd.read_excel(f"{OUT}/tarif_standar_pilot.xlsx", sheet_name="golongan_tarif")
 g3 = gol[gol.kelas == "III"].set_index("golongan_id").harga
 
-C = t[(t.rs_id == "RSUD-KAB-CIANJUR-KLS-C") & (t.kelas == "Non-kelas") & t.harga.notna()]
-R = t[t.rs_id == "RSUD-REMBANG-SOETRASNO"].copy()
+C = t[(t.dokumen_id == "PERBUP-CIANJUR-3-2025") & (t.kelas == "Non-kelas") & t.harga.notna()]
+R = t[t.dokumen_id == "PERBUP-REMBANG-16-2023"].copy()
 R.loc[R.sumber_harga == "via_golongan", "harga"] = R.loc[R.sumber_harga == "via_golongan", "golongan"].map(g3)
 R.loc[R.sumber_harga == "via_golongan", "kelas"] = "III"
 R = R[R.harga.notna()]
@@ -56,7 +56,7 @@ for q, v in lab.items():
 rows = []
 for cn, rn, src in pairs:
     c, r = Cp[cn], Rp[rn]
-    rows.append(dict(nama_cianjur=c["nama"], nama_rembang=r["nama"], kategori_std=c["kategori"],
+    rows.append(dict(norm_cianjur=cn, norm_rembang=rn, nama_cianjur=c["nama"], nama_rembang=r["nama"], kategori_std=c["kategori"],
                      harga_cianjur=c["harga"], harga_rembang_kelas3=r["harga"], kelas_rembang=r["kelas"],
                      sumber_harga_rembang=r["sumber"], bhp_cianjur=c["bhp"], bhp_rembang=r["bhp"],
                      hlm_cianjur=c["halaman"], hlm_rembang=r["halaman"],

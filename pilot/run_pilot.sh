@@ -12,4 +12,6 @@ export HF_HUB_DISABLE_XET=1
 export E5_DIR="$(python3 -I -c 'from huggingface_hub import snapshot_download as s; print(s("intfloat/multilingual-e5-small", allow_patterns=["onnx/model.onnx","tokenizer.json"]))')"
 python3 -I src/align.py
 python3 -I src/evaluate.py
+python3 -I src/to_standard.py
+python3 -I src/compare_v2.py
 python3 -I src/build_graph.py

@@ -1,85 +1,85 @@
-nama_cianjur,nama_rembang,kategori_std,harga_cianjur,harga_rembang_kelas3,kelas_rembang,sumber_harga_rembang,bhp_cianjur,bhp_rembang,hlm_cianjur,hlm_rembang,harga_ganda,cocok_via,rasio,bhp_setara
-Vena seksi,Vena seksi,Rehab Medik,36000.0,250000.0,III,via_golongan,tidak,tidak,16,22,True,exact,0.144,True
-katopeksi / tarsorhapi / tarsotomi,"Lantorapi tarsorapi, tarsotomi hotz operasi",Mata/THT/Kulit,300000.0,1470000.0,III,via_golongan,tidak,tidak,36,24,False,label_silver,0.20408163265306123,True
-biopsi adneksa,Biopsi adneksa,Mata/THT/Kulit,250000.0,1077000.0,III,via_golongan,tidak,tidak,35,22,False,exact,0.23212627669452182,True
-Punksi Sumsum Tulang,Punksi sumsum tulang,Rehab Medik,80000.0,250000.0,III,via_golongan,tidak_jelas,tidak,16,21,False,exact,0.32,False
-Day Care,Day Care,Akomodasi & Visite,100000.0,185000.0,Non-kelas,langsung,tidak,tidak,8,13,False,exact,0.5405405405405406,True
-EVALUASI ALAT BANTU JALAN,Evaluasi Alat Bantu Jalan,Tindakan Lain,47000.0,72500.0,III,via_golongan,tidak,tidak,18,31,False,exact,0.6482758620689655,True
-Lavement,Lavement,Akomodasi & Visite,12000.0,16500.0,III,langsung,tidak,tidak,42,15,False,exact,0.7272727272727273,True
-Punksi Ascites,Punksi Ascites,Akomodasi & Visite,96000.0,100500.0,III,via_golongan,tidak,tidak,43,32,False,exact,0.9552238805970149,True
-PROSEDUR EVALUASI PROSTHESIS,Evaluasi Prothesis,Tindakan Lain,72000.0,72500.0,III,via_golongan,tidak,tidak,18,31,False,label_silver,0.993103448275862,True
-Trabekulektomi,Trabekulektomi,Mata/THT/Kulit,2500000.0,2156000.0,III,via_golongan,tidak,tidak,36,27,False,exact,1.1595547309833023,True
-Panoramic,Panoramic,Radiologi,125000.0,100000.0,III,langsung,tidak,tidak,21,44,False,exact,1.25,True
-CT SCAN ORBITA,CT Scan Orbita,Radiologi,1200000.0,800000.0,III,langsung,tidak,tidak,24,44,True,exact,1.5,True
-Debridement,Debridement,Rawat Jalan & Darurat,30000.0,19500.0,III,langsung,tidak,tidak,31,15,True,exact,1.5384615384615385,True
-MantouxTest,Mantoux test,Laboratorium,50000.0,31500.0,III,via_golongan,tidak,tidak,28,30,False,exact,1.5873015873015872,True
-DRY NEEDLING,Dry Needling,Rehab Medik,165000.0,100500.0,III,via_golongan,tidak,tidak,19,32,False,exact,1.6417910447761195,True
-USG Guiding,USG Guiding,Radiologi,200000.0,120000.0,III,langsung,tidak,tidak,42,46,False,exact,1.6666666666666667,True
-Pemasanagan ETT,Memasang ET,Akomodasi & Visite,55000.0,32500.0,III,langsung,tidak,tidak,44,15,False,label_silver,1.6923076923076923,True
-Pasang/cabut chateter,Pemasangan cateter,Akomodasi & Visite,24000.0,13000.0,III,langsung,tidak,tidak,42,14,True,label_silver,1.8461538461538463,True
-UJI FUNGSI DEFEKASI,Uji Fungsi Defekasi,Rehab Medik,134000.0,72500.0,III,via_golongan,tidak,tidak,18,31,False,exact,1.8482758620689654,True
-ASTO,ASTO,Laboratorium,40000.0,20300.0,III,langsung,tidak,tidak,27,55,False,exact,1.9704433497536946,True
-USG INGUINAL,USG Inguinal,Radiologi,250000.0,120000.0,III,langsung,tidak,tidak,24,46,False,exact,2.0833333333333335,True
-USG Scrotum,USG Scrotum,Radiologi,250000.0,120000.0,III,langsung,tidak,tidak,24,46,False,exact,2.0833333333333335,True
-Blepharoplasty,Blepharoplasti,Mata/THT/Kulit,3500000.0,1470000.0,III,via_golongan,tidak,tidak,36,24,False,label_silver,2.380952380952381,True
-PsikoterapiSuportif /Sesi,Supportif Teraphy (SE),Rehab Medik,120000.0,50000.0,Non-kelas,langsung,tidak,tidak_jelas,40,71,False,label_silver,2.4,False
-Retraksi Bekuan,Retraksi Bekuan,Laboratorium,15000.0,6200.0,III,langsung,tidak,tidak,25,52,True,exact,2.4193548387096775,True
-TransfusiTukar,Transfusi tukar,Rehab Medik,200000.0,81500.0,III,langsung,tidak_jelas,tidak,16,15,True,exact,2.4539877300613497,False
-ESWT,ESWT,Rehab Medik,250000.0,100500.0,III,via_golongan,tidak,tidak,20,32,True,exact,2.487562189054726,True
-USG Thyroid,USG Thyroid,Radiologi,300000.0,120000.0,III,langsung,tidak,tidak,24,46,False,exact,2.5,True
-Alkali Fosfatase,Alkali Fosfatase,Laboratorium,30000.0,11550.0,III,langsung,tidak,tidak,26,54,False,exact,2.5974025974025974,True
-PunksiCavum Douglas,Douglas punctie,Mata/THT/Kulit,200000.0,72500.0,III,via_golongan,tidak,tidak,40,31,False,label_silver,2.7586206896551726,True
-PapSmear,Pap Smear,Laboratorium,100000.0,35000.0,III,langsung,tidak,tidak,29,58,True,exact,2.857142857142857,True
-Protein Total,Protein Total,Laboratorium,25000.0,8400.0,III,langsung,tidak,tidak,26,54,False,exact,2.9761904761904763,True
-Klirens Ureum,Urea Clearance,Laboratorium,50000.0,16800.0,III,langsung,tidak,tidak,26,54,False,label_silver,2.9761904761904763,True
-Gamma GT,Gamma GT,Laboratorium,35000.0,11550.0,III,langsung,tidak,tidak,26,54,False,exact,3.0303030303030303,True
-Peeling,Peeling,Mata/THT/Kulit,220000.0,72500.0,III,via_golongan,tidak,tidak,38,31,False,exact,3.0344827586206895,True
-Microdermabrasi,Microdermabrasi,Mata/THT/Kulit,220000.0,72500.0,III,via_golongan,tidak,tidak,38,31,False,exact,3.0344827586206895,True
-Breast Care,Breast care,Mata/THT/Kulit,40000.0,13000.0,III,langsung,tidak,tidak,39,14,True,exact,3.076923076923077,True
-Shoulder Kanan AP,Photo Shoulder Joint,Radiologi,110000.0,35000.0,III,langsung,tidak,tidak,22,43,False,label_silver,3.142857142857143,True
-LDH,LDH,Laboratorium,95000.0,28000.0,III,langsung,tidak,tidak,26,56,True,exact,3.392857142857143,True
-Fistulografi,Fistulografi,Radiologi,300000.0,88000.0,III,langsung,tidak,tidak,24,44,False,exact,3.409090909090909,True
-Anti HBs,Anti HBs,Laboratorium,55000.0,16100.0,III,langsung,tidak,tidak,27,55,False,exact,3.4161490683229814,True
-HBsAg (Rapid Test),HBs Ag,Laboratorium,75000.0,21000.0,III,langsung,tidak,tidak,27,55,False,label_silver,3.5714285714285716,True
-Pemasangan Ventilator,Pemasangan ventilator,Rehab Medik,120000.0,32500.0,III,langsung,tidak_jelas,tidak,16,15,False,exact,3.6923076923076925,False
-CEA,CEA,Laboratorium,265000.0,70000.0,III,langsung,tidak,tidak,29,57,False,exact,3.7857142857142856,True
-Trigliserida,Trigliserida,Laboratorium,45000.0,11200.0,III,langsung,tidak,tidak,26,54,False,exact,4.017857142857143,True
-Bilirubin total,Bilirubin Total,Laboratorium,35000.0,8400.0,III,langsung,tidak,tidak,26,54,False,exact,4.166666666666667,True
-Mandibula Kanan AP/Eisler,Photo Mandibula,Radiologi,150000.0,35000.0,III,langsung,tidak,tidak,22,43,False,label_silver,4.285714285714286,True
-Eritrosit,Eritrosit,Laboratorium,20000.0,4500.0,III,langsung,tidak,tidak,25,52,False,exact,4.444444444444445,True
-Leukosit,Leukosit,Laboratorium,20000.0,4500.0,III,langsung,tidak,tidak,25,52,False,exact,4.444444444444445,True
-Hitung jenis,Hitung Jenis,Laboratorium,30000.0,6500.0,III,langsung,tidak,tidak,27,52,False,exact,4.615384615384615,True
-Tindik,Tindik telinga bayi,Mata/THT/Kulit,50000.0,10000.0,III,langsung,tidak,tidak,37,14,False,label_silver,5.0,True
-VDRL,VDRL,Laboratorium,35000.0,7000.0,III,langsung,tidak,tidak,27,55,False,exact,5.0,True
-Troponin T,Troponin T,Laboratorium,372000.0,70000.0,III,langsung,tidak,tidak,26,54,False,exact,5.314285714285714,True
-SGPT,SGPT,Laboratorium,45000.0,8400.0,III,langsung,tidak,tidak,26,54,False,exact,5.357142857142857,True
-SGOT,SGOT,Laboratorium,45000.0,8400.0,III,langsung,tidak,tidak,26,54,False,exact,5.357142857142857,True
-Ureum,Ureum,Laboratorium,45000.0,8400.0,III,langsung,tidak,tidak,26,54,False,exact,5.357142857142857,True
-VC (Vries Coop),PA Potong Beku (VC),Laboratorium,600000.0,108500.0,III,langsung,tidak,tidak,29,58,False,label_silver,5.529953917050691,True
-Appendikografi,Appendikografi,Radiologi,300000.0,54000.0,III,langsung,tidak,tidak,24,43,False,exact,5.555555555555555,True
-Trombosit,Trombosit,Laboratorium,25000.0,4500.0,III,langsung,tidak,tidak,25,52,False,exact,5.555555555555555,True
-Cholesterol total,Cholesterol Total,Laboratorium,45000.0,8050.0,III,langsung,tidak,tidak,26,54,False,exact,5.590062111801243,True
-PENELUSURAN MINAT DAN BAKAT,"Tes Bakat, Minat dan",Tindakan Lain,181000.0,30000.0,Non-kelas,langsung,tidak,tidak_jelas,19,71,False,label_silver,6.033333333333333,False
-HBDH,HBDH,Laboratorium,120000.0,19250.0,III,langsung,tidak,tidak,26,53,False,exact,6.233766233766234,True
-Femur Kiri AP/Lateral,Photo Femur 2 Posisi,Radiologi,220000.0,35000.0,III,langsung,tidak,tidak,23,43,False,label_silver,6.285714285714286,True
-Asam urat,Asam Urat,Laboratorium,45000.0,7000.0,III,langsung,tidak,tidak,26,53,False,exact,6.428571428571429,True
-CHE,Cholinesterase,Laboratorium,85000.0,12600.0,III,langsung,tidak,tidak,26,53,False,label_silver,6.746031746031746,True
-Anti CMV IgG,Anti CMV IgG,Laboratorium,265000.0,37800.0,III,langsung,tidak,tidak,28,55,False,exact,7.01058201058201,True
-Retikulosit,Retikulosit,Laboratorium,45000.0,6200.0,III,langsung,tidak,tidak,25,52,False,exact,7.258064516129032,True
-GTT,Glukosa Toleransi,Laboratorium,52000.0,7000.0,III,langsung,tidak,tidak,26,54,False,label_silver,7.428571428571429,True
-Cholesterol HDL,Cholesterol HDL,Laboratorium,60000.0,8050.0,III,langsung,tidak,tidak,26,54,False,exact,7.453416149068323,True
-Anti HBC Total,Anti HBc Total,Laboratorium,285000.0,37800.0,III,langsung,tidak,tidak,28,55,False,exact,7.5396825396825395,True
-Irigasi,Irigasi,Mata/THT/Kulit,100000.0,13000.0,III,langsung,tidak,tidak,36,14,False,exact,7.6923076923076925,True
-Ekstraksi kuku,Ekstraksi kuku,Mata/THT/Kulit,250000.0,31500.0,III,via_golongan,tidak,tidak,33,30,False,exact,7.936507936507937,True
-Anti Hbe,Anti HBe,Laboratorium,470000.0,54600.0,III,langsung,tidak,tidak,28,55,False,exact,8.608058608058608,True
-Anti CMV IgM,Anti CMV IgM,Laboratorium,360000.0,37800.0,III,langsung,tidak,tidak,28,55,False,exact,9.523809523809524,True
-Anti Rubella Ig G,Anti Rubella IgG,Laboratorium,270000.0,25200.0,III,langsung,tidak,tidak,28,55,False,exact,10.714285714285714,True
-Fibrinogen,Fibrinogen,Laboratorium,135000.0,12600.0,III,langsung,tidak,tidak,25,56,True,exact,10.714285714285714,True
-Malaria,Malaria,Laboratorium,60000.0,5200.0,III,langsung,tidak,tidak,25,52,False,exact,11.538461538461538,True
-Free T3,Free T3,Laboratorium,340000.0,29400.0,III,langsung,tidak,tidak,29,56,False,exact,11.564625850340136,True
-Anti HCV,Anti HCV,Laboratorium,395000.0,33600.0,III,langsung,tidak,tidak,28,55,False,exact,11.755952380952381,True
-Cholesterol LDL direk,Cholesterol LDL,Laboratorium,100000.0,8050.0,III,langsung,tidak,tidak,26,54,False,label_silver,12.422360248447205,True
-Free T4,Free T4,Laboratorium,400000.0,29400.0,III,langsung,tidak,tidak,29,56,False,exact,13.605442176870747,True
-Anti Rubella Ig M,Anti Rubella IgM,Laboratorium,345000.0,25200.0,III,langsung,tidak,tidak,28,55,False,exact,13.69047619047619,True
-Anti HBC IgM,Anti HBc IgM,Laboratorium,500000.0,23100.0,III,langsung,tidak,tidak,28,55,False,exact,21.645021645021647,True
-Beta HCg,Beta HCG,Laboratorium,430000.0,11900.0,III,langsung,tidak,tidak,28,55,False,exact,36.134453781512605,True
+norm_cianjur,norm_rembang,nama_cianjur,nama_rembang,kategori_std,harga_cianjur,harga_rembang_kelas3,kelas_rembang,sumber_harga_rembang,bhp_cianjur,bhp_rembang,hlm_cianjur,hlm_rembang,harga_ganda,cocok_via,rasio,bhp_setara
+vena seksi,vena seksi,Vena seksi,Vena seksi,Rehab Medik,36000.0,250000.0,III,via_golongan,tidak,tidak,16,22,True,exact,0.144,True
+katopeksi / tarsorhapi / tarsotomi,lantorapi tarsorapi tarsotomi hotz operasi,katopeksi / tarsorhapi / tarsotomi,"Lantorapi tarsorapi, tarsotomi hotz operasi",Mata/THT/Kulit,300000.0,1470000.0,III,via_golongan,tidak,tidak,36,24,False,label_silver,0.20408163265306123,True
+biopsi adneksa,biopsi adneksa,biopsi adneksa,Biopsi adneksa,Mata/THT/Kulit,250000.0,1077000.0,III,via_golongan,tidak,tidak,35,22,False,exact,0.23212627669452182,True
+punksi sumsum tulang,punksi sumsum tulang,Punksi Sumsum Tulang,Punksi sumsum tulang,Rehab Medik,80000.0,250000.0,III,via_golongan,tidak_jelas,tidak,16,21,False,exact,0.32,False
+day care,day care,Day Care,Day Care,Akomodasi & Visite,100000.0,185000.0,Non-kelas,langsung,tidak,tidak,8,13,False,exact,0.5405405405405406,True
+evaluasi alat bantu jalan,evaluasi alat bantu jalan,EVALUASI ALAT BANTU JALAN,Evaluasi Alat Bantu Jalan,Tindakan Lain,47000.0,72500.0,III,via_golongan,tidak,tidak,18,31,False,exact,0.6482758620689655,True
+lavement,lavement,Lavement,Lavement,Akomodasi & Visite,12000.0,16500.0,III,langsung,tidak,tidak,42,15,False,exact,0.7272727272727273,True
+punksi ascites,punksi ascites,Punksi Ascites,Punksi Ascites,Akomodasi & Visite,96000.0,100500.0,III,via_golongan,tidak,tidak,43,32,False,exact,0.9552238805970149,True
+prosedur evaluasi prosthesis,evaluasi prothesis,PROSEDUR EVALUASI PROSTHESIS,Evaluasi Prothesis,Tindakan Lain,72000.0,72500.0,III,via_golongan,tidak,tidak,18,31,False,label_silver,0.993103448275862,True
+trabekulektomi,trabekulektomi,Trabekulektomi,Trabekulektomi,Mata/THT/Kulit,2500000.0,2156000.0,III,via_golongan,tidak,tidak,36,27,False,exact,1.1595547309833023,True
+panoramic,panoramic,Panoramic,Panoramic,Radiologi,125000.0,100000.0,III,langsung,tidak,tidak,21,44,False,exact,1.25,True
+ct scan orbita,ct scan orbita,CT SCAN ORBITA,CT Scan Orbita,Radiologi,1200000.0,800000.0,III,langsung,tidak,tidak,24,44,True,exact,1.5,True
+debridement,debridement,Debridement,Debridement,Rawat Jalan & Darurat,30000.0,19500.0,III,langsung,tidak,tidak,31,15,True,exact,1.5384615384615385,True
+mantoux test,mantoux test,MantouxTest,Mantoux test,Laboratorium,50000.0,31500.0,III,via_golongan,tidak,tidak,28,30,False,exact,1.5873015873015872,True
+dry needling,dry needling,DRY NEEDLING,Dry Needling,Rehab Medik,165000.0,100500.0,III,via_golongan,tidak,tidak,19,32,False,exact,1.6417910447761195,True
+ultrasonografi guiding,ultrasonografi guiding,USG Guiding,USG Guiding,Radiologi,200000.0,120000.0,III,langsung,tidak,tidak,42,46,False,exact,1.6666666666666667,True
+pemasanagan ett,memasang et,Pemasanagan ETT,Memasang ET,Akomodasi & Visite,55000.0,32500.0,III,langsung,tidak,tidak,44,15,False,label_silver,1.6923076923076923,True
+pasang / cabut chateter,pemasangan cateter,Pasang/cabut chateter,Pemasangan cateter,Akomodasi & Visite,24000.0,13000.0,III,langsung,tidak,tidak,42,14,True,label_silver,1.8461538461538463,True
+uji fungsi defekasi,uji fungsi defekasi,UJI FUNGSI DEFEKASI,Uji Fungsi Defekasi,Rehab Medik,134000.0,72500.0,III,via_golongan,tidak,tidak,18,31,False,exact,1.8482758620689654,True
+asto,asto,ASTO,ASTO,Laboratorium,40000.0,20300.0,III,langsung,tidak,tidak,27,55,False,exact,1.9704433497536946,True
+ultrasonografi inguinal,ultrasonografi inguinal,USG INGUINAL,USG Inguinal,Radiologi,250000.0,120000.0,III,langsung,tidak,tidak,24,46,False,exact,2.0833333333333335,True
+ultrasonografi scrotum,ultrasonografi scrotum,USG Scrotum,USG Scrotum,Radiologi,250000.0,120000.0,III,langsung,tidak,tidak,24,46,False,exact,2.0833333333333335,True
+blepharoplasty,blepharoplasti,Blepharoplasty,Blepharoplasti,Mata/THT/Kulit,3500000.0,1470000.0,III,via_golongan,tidak,tidak,36,24,False,label_silver,2.380952380952381,True
+psikoterapi suportif / sesi,supportif teraphy se,PsikoterapiSuportif /Sesi,Supportif Teraphy (SE),Rehab Medik,120000.0,50000.0,Non-kelas,langsung,tidak,tidak_jelas,40,71,False,label_silver,2.4,False
+retraksi bekuan,retraksi bekuan,Retraksi Bekuan,Retraksi Bekuan,Laboratorium,15000.0,6200.0,III,langsung,tidak,tidak,25,52,True,exact,2.4193548387096775,True
+transfusi tukar,transfusi tukar,TransfusiTukar,Transfusi tukar,Rehab Medik,200000.0,81500.0,III,langsung,tidak_jelas,tidak,16,15,True,exact,2.4539877300613497,False
+eswt,eswt,ESWT,ESWT,Rehab Medik,250000.0,100500.0,III,via_golongan,tidak,tidak,20,32,True,exact,2.487562189054726,True
+ultrasonografi thyroid,ultrasonografi thyroid,USG Thyroid,USG Thyroid,Radiologi,300000.0,120000.0,III,langsung,tidak,tidak,24,46,False,exact,2.5,True
+alkali fosfatase,alkali fosfatase,Alkali Fosfatase,Alkali Fosfatase,Laboratorium,30000.0,11550.0,III,langsung,tidak,tidak,26,54,False,exact,2.5974025974025974,True
+punksi cavum douglas,douglas punctie,PunksiCavum Douglas,Douglas punctie,Mata/THT/Kulit,200000.0,72500.0,III,via_golongan,tidak,tidak,40,31,False,label_silver,2.7586206896551726,True
+pap smear,pap smear,PapSmear,Pap Smear,Laboratorium,100000.0,35000.0,III,langsung,tidak,tidak,29,58,True,exact,2.857142857142857,True
+protein total,protein total,Protein Total,Protein Total,Laboratorium,25000.0,8400.0,III,langsung,tidak,tidak,26,54,False,exact,2.9761904761904763,True
+klirens ureum,urea clearance,Klirens Ureum,Urea Clearance,Laboratorium,50000.0,16800.0,III,langsung,tidak,tidak,26,54,False,label_silver,2.9761904761904763,True
+gamma gt,gamma gt,Gamma GT,Gamma GT,Laboratorium,35000.0,11550.0,III,langsung,tidak,tidak,26,54,False,exact,3.0303030303030303,True
+peeling,peeling,Peeling,Peeling,Mata/THT/Kulit,220000.0,72500.0,III,via_golongan,tidak,tidak,38,31,False,exact,3.0344827586206895,True
+microdermabrasi,microdermabrasi,Microdermabrasi,Microdermabrasi,Mata/THT/Kulit,220000.0,72500.0,III,via_golongan,tidak,tidak,38,31,False,exact,3.0344827586206895,True
+breast care,breast care,Breast Care,Breast care,Mata/THT/Kulit,40000.0,13000.0,III,langsung,tidak,tidak,39,14,True,exact,3.076923076923077,True
+shoulder kanan ap,foto shoulder joint,Shoulder Kanan AP,Photo Shoulder Joint,Radiologi,110000.0,35000.0,III,langsung,tidak,tidak,22,43,False,label_silver,3.142857142857143,True
+ldh,ldh,LDH,LDH,Laboratorium,95000.0,28000.0,III,langsung,tidak,tidak,26,56,True,exact,3.392857142857143,True
+fistulografi,fistulografi,Fistulografi,Fistulografi,Radiologi,300000.0,88000.0,III,langsung,tidak,tidak,24,44,False,exact,3.409090909090909,True
+anti hbs,anti hbs,Anti HBs,Anti HBs,Laboratorium,55000.0,16100.0,III,langsung,tidak,tidak,27,55,False,exact,3.4161490683229814,True
+hbs ag rapid test,hbs ag,HBsAg (Rapid Test),HBs Ag,Laboratorium,75000.0,21000.0,III,langsung,tidak,tidak,27,55,False,label_silver,3.5714285714285716,True
+pemasangan ventilator,pemasangan ventilator,Pemasangan Ventilator,Pemasangan ventilator,Rehab Medik,120000.0,32500.0,III,langsung,tidak_jelas,tidak,16,15,False,exact,3.6923076923076925,False
+cea,cea,CEA,CEA,Laboratorium,265000.0,70000.0,III,langsung,tidak,tidak,29,57,False,exact,3.7857142857142856,True
+trigliserida,trigliserida,Trigliserida,Trigliserida,Laboratorium,45000.0,11200.0,III,langsung,tidak,tidak,26,54,False,exact,4.017857142857143,True
+bilirubin total,bilirubin total,Bilirubin total,Bilirubin Total,Laboratorium,35000.0,8400.0,III,langsung,tidak,tidak,26,54,False,exact,4.166666666666667,True
+mandibula kanan ap / eisler,foto mandibula,Mandibula Kanan AP/Eisler,Photo Mandibula,Radiologi,150000.0,35000.0,III,langsung,tidak,tidak,22,43,False,label_silver,4.285714285714286,True
+eritrosit,eritrosit,Eritrosit,Eritrosit,Laboratorium,20000.0,4500.0,III,langsung,tidak,tidak,25,52,False,exact,4.444444444444445,True
+leukosit,leukosit,Leukosit,Leukosit,Laboratorium,20000.0,4500.0,III,langsung,tidak,tidak,25,52,False,exact,4.444444444444445,True
+hitung jenis,hitung jenis,Hitung jenis,Hitung Jenis,Laboratorium,30000.0,6500.0,III,langsung,tidak,tidak,27,52,False,exact,4.615384615384615,True
+tindik,tindik telinga bayi,Tindik,Tindik telinga bayi,Mata/THT/Kulit,50000.0,10000.0,III,langsung,tidak,tidak,37,14,False,label_silver,5.0,True
+vdrl,vdrl,VDRL,VDRL,Laboratorium,35000.0,7000.0,III,langsung,tidak,tidak,27,55,False,exact,5.0,True
+troponin t,troponin t,Troponin T,Troponin T,Laboratorium,372000.0,70000.0,III,langsung,tidak,tidak,26,54,False,exact,5.314285714285714,True
+sgpt alt,sgpt alt,SGPT,SGPT,Laboratorium,45000.0,8400.0,III,langsung,tidak,tidak,26,54,False,exact,5.357142857142857,True
+sgot ast,sgot ast,SGOT,SGOT,Laboratorium,45000.0,8400.0,III,langsung,tidak,tidak,26,54,False,exact,5.357142857142857,True
+ureum,ureum,Ureum,Ureum,Laboratorium,45000.0,8400.0,III,langsung,tidak,tidak,26,54,False,exact,5.357142857142857,True
+vc vries coop,pa potong beku vc,VC (Vries Coop),PA Potong Beku (VC),Laboratorium,600000.0,108500.0,III,langsung,tidak,tidak,29,58,False,label_silver,5.529953917050691,True
+appendikografi,appendikografi,Appendikografi,Appendikografi,Radiologi,300000.0,54000.0,III,langsung,tidak,tidak,24,43,False,exact,5.555555555555555,True
+trombosit,trombosit,Trombosit,Trombosit,Laboratorium,25000.0,4500.0,III,langsung,tidak,tidak,25,52,False,exact,5.555555555555555,True
+cholesterol total,cholesterol total,Cholesterol total,Cholesterol Total,Laboratorium,45000.0,8050.0,III,langsung,tidak,tidak,26,54,False,exact,5.590062111801243,True
+penelusuran minat dan bakat,tes bakat minat dan,PENELUSURAN MINAT DAN BAKAT,"Tes Bakat, Minat dan",Tindakan Lain,181000.0,30000.0,Non-kelas,langsung,tidak,tidak_jelas,19,71,False,label_silver,6.033333333333333,False
+hbdh,hbdh,HBDH,HBDH,Laboratorium,120000.0,19250.0,III,langsung,tidak,tidak,26,53,False,exact,6.233766233766234,True
+femur kiri ap / lateral,foto femur 2 posisi,Femur Kiri AP/Lateral,Photo Femur 2 Posisi,Radiologi,220000.0,35000.0,III,langsung,tidak,tidak,23,43,False,label_silver,6.285714285714286,True
+asam urat,asam urat,Asam urat,Asam Urat,Laboratorium,45000.0,7000.0,III,langsung,tidak,tidak,26,53,False,exact,6.428571428571429,True
+che,cholinesterase,CHE,Cholinesterase,Laboratorium,85000.0,12600.0,III,langsung,tidak,tidak,26,53,False,label_silver,6.746031746031746,True
+anti cmv ig g,anti cmv ig g,Anti CMV IgG,Anti CMV IgG,Laboratorium,265000.0,37800.0,III,langsung,tidak,tidak,28,55,False,exact,7.01058201058201,True
+retikulosit,retikulosit,Retikulosit,Retikulosit,Laboratorium,45000.0,6200.0,III,langsung,tidak,tidak,25,52,False,exact,7.258064516129032,True
+gtt,glukosa toleransi,GTT,Glukosa Toleransi,Laboratorium,52000.0,7000.0,III,langsung,tidak,tidak,26,54,False,label_silver,7.428571428571429,True
+cholesterol hdl,cholesterol hdl,Cholesterol HDL,Cholesterol HDL,Laboratorium,60000.0,8050.0,III,langsung,tidak,tidak,26,54,False,exact,7.453416149068323,True
+anti hbc total,anti hbc total,Anti HBC Total,Anti HBc Total,Laboratorium,285000.0,37800.0,III,langsung,tidak,tidak,28,55,False,exact,7.5396825396825395,True
+irigasi,irigasi,Irigasi,Irigasi,Mata/THT/Kulit,100000.0,13000.0,III,langsung,tidak,tidak,36,14,False,exact,7.6923076923076925,True
+ekstraksi kuku,ekstraksi kuku,Ekstraksi kuku,Ekstraksi kuku,Mata/THT/Kulit,250000.0,31500.0,III,via_golongan,tidak,tidak,33,30,False,exact,7.936507936507937,True
+anti hbe,anti hbe,Anti Hbe,Anti HBe,Laboratorium,470000.0,54600.0,III,langsung,tidak,tidak,28,55,False,exact,8.608058608058608,True
+anti cmv ig m,anti cmv ig m,Anti CMV IgM,Anti CMV IgM,Laboratorium,360000.0,37800.0,III,langsung,tidak,tidak,28,55,False,exact,9.523809523809524,True
+anti rubella ig g,anti rubella ig g,Anti Rubella Ig G,Anti Rubella IgG,Laboratorium,270000.0,25200.0,III,langsung,tidak,tidak,28,55,False,exact,10.714285714285714,True
+fibrinogen,fibrinogen,Fibrinogen,Fibrinogen,Laboratorium,135000.0,12600.0,III,langsung,tidak,tidak,25,56,True,exact,10.714285714285714,True
+malaria,malaria,Malaria,Malaria,Laboratorium,60000.0,5200.0,III,langsung,tidak,tidak,25,52,False,exact,11.538461538461538,True
+free t3,free t3,Free T3,Free T3,Laboratorium,340000.0,29400.0,III,langsung,tidak,tidak,29,56,False,exact,11.564625850340136,True
+anti hcv,anti hcv,Anti HCV,Anti HCV,Laboratorium,395000.0,33600.0,III,langsung,tidak,tidak,28,55,False,exact,11.755952380952381,True
+cholesterol ldl direk,cholesterol ldl,Cholesterol LDL direk,Cholesterol LDL,Laboratorium,100000.0,8050.0,III,langsung,tidak,tidak,26,54,False,label_silver,12.422360248447205,True
+free t4,free t4,Free T4,Free T4,Laboratorium,400000.0,29400.0,III,langsung,tidak,tidak,29,56,False,exact,13.605442176870747,True
+anti rubella ig m,anti rubella ig m,Anti Rubella Ig M,Anti Rubella IgM,Laboratorium,345000.0,25200.0,III,langsung,tidak,tidak,28,55,False,exact,13.69047619047619,True
+anti hbc ig m,anti hbc ig m,Anti HBC IgM,Anti HBc IgM,Laboratorium,500000.0,23100.0,III,langsung,tidak,tidak,28,55,False,exact,21.645021645021647,True
+beta hcg,beta hcg,Beta HCg,Beta HCG,Laboratorium,430000.0,11900.0,III,langsung,tidak,tidak,28,55,False,exact,36.134453781512605,True

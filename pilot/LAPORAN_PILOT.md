@@ -24,8 +24,11 @@ jadi file diambil dari JDIH daerah atau situs RSUD.
 5. `evaluate.py`: 60 layanan Cianjur diambil acak bertingkat per kategori, lalu dilabel.
 6. `build_graph.py`: graf NetworkX (`out/graf_pilot.graphml`, bisa dibuka di Gephi) dan perbandingan harga.
 
-Graf yang terbentuk: 2.321 node Layanan, 9 Golongan, 6 Kelas, 9 Kategori, dan 2 RS.
-Edge-nya: TARIF 1.788, MASUK_GOLONGAN 533, TARIF_GOLONGAN 50, dan SAMA_DENGAN 93.
+Graf (versi 2) dibangun langsung dari tabel standar oleh `build_graph.py`. Tarif menempel pada Dokumen,
+dan Dokumen → BERLAKU_UNTUK → RumahSakit, karena satu Perbup bisa berlaku untuk beberapa RS.
+Node: 2.322 Layanan (1.128 Cianjur, 1.194 Rembang), 10 Golongan (9 bertarif, plus One Day Surgery tanpa matriks),
+9 Kategori, 2 Dokumen, 2 RS. Edge: TARIF 2.497, KATEGORI 2.322, MASUK_GOLONGAN 567, SAMA_DENGAN 84,
+TARIF_GOLONGAN 49, BERLAKU_UNTUK 2. Baris berflag nama_terpotong dan duplikat tidak dimasukkan.
 
 ## 3. Hasil
 
@@ -84,11 +87,12 @@ radiologi 2,8×, mata/THT/kulit 2,9×, akomodasi 0,8×. Detail ada di `out/perba
 - Klaim bahwa selisih lab "semu karena BHP" dicabut, karena lab Cianjur juga tidak termasuk BHP.
 - Perbup Cianjur 3/2025 berlaku untuk semua RSUD Kelas C di Kab. Cianjur, bukan khusus RSUD Cimacan.
 - Satu sel matriks golongan (non operatif, One Day Surgery) adalah salah baca dan dibuang, jadi tarif golongan menjadi 49 sel.
+- Graf dibangun ulang dari tabel standar dengan model Dokumen → BERLAKU_UNTUK → RumahSakit (SAMA_DENGAN 84 edge, bukan 93).
 
 ## 4c. Tabel tarif standar
 
-`src/to_standard.py` menghasilkan `out/tarif_standar_pilot.xlsx` (long format, 5 sheet: tarif, rumah_sakit,
-dokumen, golongan_tarif, pemetaan). Ada 3.178 baris tarif: 2.881 ok, 177 nama_dari_baris_atas, 82 duplikat,
+`src/to_standard.py` menghasilkan `out/tarif_standar_pilot.xlsx` (long format, 6 sheet: tarif, rumah_sakit,
+dokumen, dokumen_rs, golongan_tarif, pemetaan). Ada 3.178 baris tarif: 2.881 ok, 177 nama_dari_baris_atas, 82 duplikat,
 32 nama_terpotong, 22 golongan_tanpa_tarif, 4 harga_ambigu, dan 2 urutan_kelas_aneh. Status BHP terbaca untuk 93% baris.
 Sheet `pemetaan` (2.261 nama unik) masih kosong dan siap diisi kode ICD-9-CM, LOINC, atau katalog lokal.
 
@@ -101,7 +105,7 @@ Urutan langkah yang disarankan:
 1. Validasi label pilot ini. Kamu dan satu PMIK memeriksa 60 sampel di `out/label_pilot.json`.
 2. Kumpulkan 8–10 RSUD lagi dulu, bukan langsung 30, dari 2 provinsi. Sengaja pilih campuran format
    (harga langsung, golongan, dan per kelas) supaya ada parser adapter per format.
-3. Tambahkan atribut komponen tarif ke skema (total/komponen, BHP, kelas, CITO) sebelum membandingkan harga.
+3. Petakan item ke ICD-9-CM dan LOINC (isi sheet `pemetaan`), lalu kerjakan pilot lapisan diagnosis untuk DBD, tifoid, dan SC.
 4. Buat dev/test set terpisah (sekitar 300–500 pasangan) untuk menentukan ambang dan melaporkan hasil.
 5. Kontribusi metode yang realistis: hybrid + fitur graf (golongan, kategori, tetangga) + opsi "tidak ada padanan",
    lalu coba fine-tune e5 dengan pasangan hasil label.
