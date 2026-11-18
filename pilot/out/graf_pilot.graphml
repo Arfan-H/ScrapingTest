@@ -21,7 +21,7 @@
   <data key="d0">RumahSakit</data>
   <data key="d1">Rembang</data>
   <data key="d2">Jawa Tengah</data>
-  <data key="d3">C</data>
+  <data key="d3">belum_dicek</data>
   <data key="d4">2023</data>
 </node>
 <node id="C:0">
@@ -20885,11 +20885,6 @@
   <data key="d7">TARIF_GOLONGAN</data>
   <data key="d9">VIP Utama</data>
   <data key="d8">672000.0</data>
-</edge>
-<edge source="RSUD_REMBANG" target="GOL:non operatif/tindakan khusus" id="5">
-  <data key="d7">TARIF_GOLONGAN</data>
-  <data key="d9">One Day Surgery</data>
-  <data key="d8">565000.0</data>
 </edge>
 <edge source="C:0" target="Rawat Jalan &amp; Darurat" id="0">
   <data key="d7">KATEGORI</data>

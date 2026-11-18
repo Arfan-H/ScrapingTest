@@ -12,10 +12,11 @@ T = pd.read_csv(f"{OUT}/_target.csv")
 c = pd.read_json(f"{OUT}/kandidat.json").set_index("q_id")
 lab = {int(k): v for k, v in json.load(open(f"{OUT}/label_pilot.json")).items() if not k.startswith("_")}
 gt = pd.read_csv(f"{OUT}/rembang_golongan_tarif.csv")
+gt = gt[~((gt.jenis == "non operatif") & (gt.kelas == "One Day Surgery"))]  # sel salah baca
 
 G = nx.MultiDiGraph()
 for rs, meta in [("RSUD_CIMACAN", dict(kab="Cianjur", prov="Jawa Barat", kelas_rs="C", tahun=2025)),
-                 ("RSUD_REMBANG", dict(kab="Rembang", prov="Jawa Tengah", kelas_rs="C", tahun=2023))]:
+                 ("RSUD_REMBANG", dict(kab="Rembang", prov="Jawa Tengah", kelas_rs="belum_dicek", tahun=2023))]:
     G.add_node(rs, tipe="RumahSakit", **meta)
 for df, rs, pre in [(Q, "RSUD_CIMACAN", "C"), (T, "RSUD_REMBANG", "R")]:
     idcol = "q_id" if pre == "C" else "t_id"

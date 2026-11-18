@@ -8,7 +8,7 @@ sebelum mengumpulkan 20–30 RSUD. Semua angka di bawah berasal dari skrip di `s
 
 | RS | Peraturan | Halaman | Baris tarif | Layanan unik |
 |---|---|---|---|---|
-| RSUD Cimacan (Cianjur, Jabar) | Perbup Cianjur 3/2025 | 50 | 1.445 | 1.135 |
+| RSUD Kelas C Kab. Cianjur, Jabar (termasuk RSUD Cimacan) | Perbup Cianjur 3/2025 | 50 | 1.445 | 1.135 |
 | RSUD dr. R. Soetrasno (Rembang, Jateng) | Perbup Rembang 16/2023 | 76 | 1.166 berharga + 567 anggota golongan | 1.186 |
 
 Kedua PDF berupa teks, jadi tidak perlu OCR. URL ada di `sumber.csv`.
@@ -20,8 +20,8 @@ jadi file diambil dari JDIH daerah atau situs RSUD.
 1. `extract.py`: parser generik berbasis baris. Harga terakhir di baris dianggap total, dan judul tanpa angka dianggap kategori.
 2. `golongan_rembang.py`: adapter khusus untuk format golongan tindakan (lihat temuan 2).
 3. `normalize.py`: lowercase, memisah kata yang menempel, kamus singkatan, dan 9 kategori standar berbasis aturan.
-4. `align.py`: Cimacan → Rembang dengan 4 metode: exact, TF-IDF karakter, e5 multilingual (zero-shot), dan hybrid (TF-IDF + e5 + bonus kategori). Harga sengaja tidak dipakai sebagai fitur.
-5. `evaluate.py`: 60 layanan Cimacan diambil acak bertingkat per kategori, lalu dilabel.
+4. `align.py`: Cianjur → Rembang dengan 4 metode: exact, TF-IDF karakter, e5 multilingual (zero-shot), dan hybrid (TF-IDF + e5 + bonus kategori). Harga sengaja tidak dipakai sebagai fitur.
+5. `evaluate.py`: 60 layanan Cianjur diambil acak bertingkat per kategori, lalu dilabel.
 6. `build_graph.py`: graf NetworkX (`out/graf_pilot.graphml`, bisa dibuka di Gephi) dan perbandingan harga.
 
 Graf yang terbentuk: 2.321 node Layanan, 9 Golongan, 6 Kelas, 9 Kategori, dan 2 RS.
@@ -30,7 +30,7 @@ Edge-nya: TARIF 1.788, MASUK_GOLONGAN 533, TARIF_GOLONGAN 50, dan SAMA_DENGAN 93
 ## 3. Hasil
 
 ### Kualitas ekstraksi (cek manual 30 baris acak)
-26 dari 30 (≈85%) benar nama dan harganya. Kesalahannya:
+26 dari 30 (87%) benar nama dan harganya. Kesalahannya:
 - Fragmen tanpa konteks, misalnya "Sedang", "Utama", atau "Kelas II", yang nama induknya ada di baris lain.
 - Satu harga ambigu (".152.000").
 
@@ -49,21 +49,25 @@ Dari 60 sampel, 12 berlabel "ragu" dan 1 rusak akibat ekstraksi.
 **Peringatan:** label dibuat oleh asisten AI (silver), belum divalidasi manusia,
 dan jumlahnya kecil (interval kepercayaan lebar, sekitar ±0,2). Anggap ini indikasi, bukan hasil.
 
-### Perbandingan harga (93 pasangan: 74 exact + 19 label)
-Median rasio harga Cimacan/Rembang adalah 3,5×. Untuk laboratorium 5,0×, sedangkan untuk akomodasi sekitar 1×.
-Ada 42 pasangan yang selisihnya lebih dari 4×. Detailnya ada di `out/perbandingan_harga.csv`.
+### Perbandingan harga (versi 2, `src/compare_v2.py`)
+Ada 84 pasangan (66 nama identik + 18 lewat label). Ringkasan memakai 69 pasangan yang status BHP-nya sama
+di kedua dokumen dan tidak punya harga ganda. Rembang dibandingkan pada kelas III.
+
+Median rasio Cianjur/Rembang kelas III adalah 4,4×. Per kategori: laboratorium 5,6× (41 pasangan),
+radiologi 2,8×, mata/THT/kulit 2,9×, akomodasi 0,8×. Detail ada di `out/perbandingan_harga_v2.csv`.
 
 ## 4. Temuan penting
 
-1. **Selisih harga sebagian besar akibat komponen tarif, bukan harga yang sebenarnya berbeda.**
-   Tarif lab Rembang kelas III (misalnya SGOT Rp8.400) hanya terdiri dari jasa sarana + layanan + medis,
-   dengan catatan "tidak termasuk BHP". Angka Cimacan tampaknya tarif total. Jadi node atau edge tarif
-   wajib punya atribut komponen (termasuk BHP atau tidak, kelas, CITO). Ini sekaligus jadi kontribusi skema.
+1. **Kelas dan komponen tarif harus dicatat per baris.** Rembang punya tabel kelas III dan kelas II
+   untuk lab, radiologi, keperawatan, dan elektromedik. Status BHP juga berbeda antar-bagian.
+   Lab di kedua RS sama-sama tidak termasuk BHP, jadi selisih lab (sekitar 5,6×) nyata secara angka.
+   Penyebabnya belum bisa disimpulkan: tahun peraturan berbeda (2023 dan 2025), kelas RS Rembang belum dicek,
+   dan tarif Cianjur tidak menyebut kelas.
 2. **Format golongan tindakan adalah argumen terkuat untuk graf.** Rembang tidak memberi harga per tindakan.
    Harga ditentukan oleh golongan (Kecil, Kelompok I–III, Khusus) × kelas (III … VIP Utama, One Day Surgery),
    lalu ada daftar anggota golongan. Tabel datar tidak bisa menampungnya tanpa duplikasi,
    sedangkan graf `Layanan → Golongan → Tarif{kelas}` menampungnya dengan alami.
-3. **Granularitas berbeda.** Contohnya "Paket Na, K, Cl" (Cimacan) setara dengan 3 item terpisah di Rembang,
+3. **Granularitas berbeda.** Contohnya "Paket Na, K, Cl" (Cianjur) setara dengan 3 item terpisah di Rembang,
    dan "Femur Kiri AP/Lateral" setara dengan "Photo Femur 2 Posisi". Relasi yang dibutuhkan bukan hanya SAMA_DENGAN,
    tapi juga TERDIRI_DARI dan LEBIH_SPESIFIK_DARI.
 4. **Sekitar separuh layanan tidak punya padanan** di RS lain (24 dari 47). Model harus bisa menjawab "tidak ada",
@@ -73,6 +77,20 @@ Ada 42 pasangan yang selisihnya lebih dari 4×. Detailnya ada di `out/perbanding
    "VC (Vries Coop)" = "PA Potong Beku (VC)", yaitu frozen section.
 6. **Kategori antar-RS tidak seragam** (misalnya "Pemeriksaan Canggih" vs "Tarif Pemeriksaan Laboratorium"),
    sehingga pemetaan kategori standar perlu dikerjakan serius.
+
+## 4b. Koreksi dari versi pertama
+
+- Versi pertama mengambil median tarif kelas III dan kelas II Rembang (misalnya SGOT Rp9.237,5). Sekarang kelas III saja.
+- Klaim bahwa selisih lab "semu karena BHP" dicabut, karena lab Cianjur juga tidak termasuk BHP.
+- Perbup Cianjur 3/2025 berlaku untuk semua RSUD Kelas C di Kab. Cianjur, bukan khusus RSUD Cimacan.
+- Satu sel matriks golongan (non operatif, One Day Surgery) adalah salah baca dan dibuang, jadi tarif golongan menjadi 49 sel.
+
+## 4c. Tabel tarif standar
+
+`src/to_standard.py` menghasilkan `out/tarif_standar_pilot.xlsx` (long format, 5 sheet: tarif, rumah_sakit,
+dokumen, golongan_tarif, pemetaan). Ada 3.178 baris tarif: 2.881 ok, 177 nama_dari_baris_atas, 82 duplikat,
+32 nama_terpotong, 22 golongan_tanpa_tarif, 4 harga_ambigu, dan 2 urutan_kelas_aneh. Status BHP terbaca untuk 93% baris.
+Sheet `pemetaan` (2.261 nama unik) masih kosong dan siap diisi kode ICD-9-CM, LOINC, atau katalog lokal.
 
 ## 5. Kesimpulan & saran
 

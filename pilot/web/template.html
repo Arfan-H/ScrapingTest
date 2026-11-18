@@ -89,6 +89,8 @@ td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; white-space:
 .findings b { font-weight: 600; }
 .findings p { color: var(--fg-2); }
 
+.fixes { margin: 0; padding-left: 1.2rem; display: grid; gap: 8px; max-width: 70ch; color: var(--fg-2); }
+.fixes b { color: var(--fg); font-weight: 600; }
 .steps { display: grid; gap: 10px; padding: 0; margin: 0; list-style: none; counter-reset: s; }
 .steps li { display: grid; grid-template-columns: 2rem minmax(0, 1fr); gap: 12px; padding: 12px 14px; background: var(--surface); border: 1px solid var(--ring); border-radius: 10px; }
 .steps li::before { counter-increment: s; content: counter(s); font: 600 .95rem/1.6 var(--f-mono); color: var(--accent); }
@@ -107,19 +109,29 @@ code { font-family: var(--f-mono); font-size: .85em; }
     <p class="lede">Uji kelayakan sebelum mengumpulkan 20–30 RSUD: apakah tarif di lampiran Perbup bisa diekstrak, nama layanannya disamakan antar-RS, lalu disusun menjadi knowledge graph?</p>
     <div class="docs">
       <a class="doc" href="https://jdih.rembangkab.go.id/produk_hukum/perbup/PERBUP_16_%202023%20-TARIF%20LAYANAN%20PADA%20RUMAH%20SAKIT%20UMUM%20DAERAH%20dr.%20R.%20SOETRASNO%20KABUPATEN%20REMBANG.pdf" target="_blank" rel="noopener">Perbup Rembang No. 16/2023 · 76 hlm</a>
-      <a class="doc" href="https://rsudcimacan.cianjurkab.go.id/public/assets/pdf/PB%203%202025%20TARIF%20KLS%20C%20terupdate.pdf" target="_blank" rel="noopener">Perbup Cianjur No. 3/2025 · 50 hlm</a>
+      <a class="doc" href="https://rsudcimacan.cianjurkab.go.id/public/assets/pdf/PB%203%202025%20TARIF%20KLS%20C%20terupdate.pdf" target="_blank" rel="noopener">Perbup Cianjur No. 3/2025 (RSUD Kelas C) · 50 hlm</a>
     </div>
   </header>
 
   <section class="stack-lg" aria-labelledby="ringkas">
     <h2 id="ringkas">Ringkasan</h2>
     <div class="tiles">
-      <div class="tile"><span class="lbl">Layanan unik diekstrak</span><span class="val">2.321</span><span class="sub">1.135 Cimacan · 1.186 Rembang</span></div>
-      <div class="tile"><span class="lbl">Akurasi ekstraksi</span><span class="val">26/30</span><span class="sub">cek manual baris acak (≈85%)</span></div>
+      <div class="tile"><span class="lbl">Layanan unik diekstrak</span><span class="val">2.321</span><span class="sub">1.135 Cianjur · 1.186 Rembang</span></div>
+      <div class="tile"><span class="lbl">Akurasi ekstraksi</span><span class="val">26/30</span><span class="sub">cek manual baris acak (87%)</span></div>
       <div class="tile"><span class="lbl">Padanan benar di top-3</span><span class="val">0,91</span><span class="sub">metode hybrid, 23 query</span></div>
-      <div class="tile"><span class="lbl">Median rasio harga</span><span class="val">3,5×</span><span class="sub">Cimacan ÷ Rembang, 91 pasangan</span></div>
+      <div class="tile"><span class="lbl">Median rasio harga</span><span class="val">4,4×</span><span class="sub">Cianjur ÷ Rembang kelas III, 69 pasangan dengan status BHP setara</span></div>
     </div>
     <p>Kesimpulannya, <b>ide ini layak dilanjutkan</b>. Ekstraksi dari PDF teks berjalan baik tanpa OCR, dan sistem bisa mengusulkan kandidat padanan dengan akurat. Namun keputusan akhir masih perlu manusia, dan harga baru bisa dibandingkan setelah komponen tarifnya disamakan.</p>
+  </section>
+
+  <section class="stack" aria-labelledby="koreksi">
+    <h2 id="koreksi">Koreksi dari versi sebelumnya</h2>
+    <ul class="fixes">
+      <li><b>Kelas tercampur.</b> Rembang punya tabel lab dan radiologi untuk kelas III dan kelas II. Versi lama mengambil median keduanya (misalnya SGOT jadi Rp9.237,5). Sekarang Rembang dibandingkan pada kelas III saja.</li>
+      <li><b>Klaim "selisih lab semu" dicabut.</b> Lab Cianjur ternyata juga tidak termasuk BHP ("ditambah alat dan bahan"). Selisihnya tetap besar setelah BHP disamakan.</li>
+      <li><b>Nama RS.</b> Perbup Cianjur 3/2025 berlaku untuk semua RSUD Kelas C di Kabupaten Cianjur, bukan khusus RSUD Cimacan.</li>
+      <li><b>Angka.</b> Median rasio menjadi 4,4× (69 pasangan dengan status BHP setara), akurasi ekstraksi 87%, dan tarif golongan 49 sel (satu sel salah baca dibuang).</li>
+    </ul>
   </section>
 
   <section class="stack-lg" aria-labelledby="alur">
@@ -135,12 +147,12 @@ code { font-family: var(--f-mono); font-size: .85em; }
     <div class="stack">
       <div class="eyebrow">Tahap 1–3 · Ekstraksi</div>
       <h2 id="ekstraksi">Isi kedua buku tarif sangat berbeda</h2>
-      <p>Kategori layanan dipetakan ke 9 kategori standar dengan aturan kata kunci. Bentuk dokumennya terlihat dari distribusinya. Cimacan banyak memuat tindakan estetik dan mata. Rembang memuat ratusan tindakan operatif yang harganya ditentukan lewat golongan.</p>
+      <p>Kategori layanan dipetakan ke 9 kategori standar dengan aturan kata kunci. Bentuk dokumennya terlihat dari distribusinya. Cianjur banyak memuat tindakan estetik dan mata. Rembang memuat ratusan tindakan operatif yang harganya ditentukan lewat golongan.</p>
     </div>
     <div class="card">
       <div class="card-head">
         <h3>Jumlah layanan unik per kategori standar</h3>
-        <div class="legend"><span><i class="sw" style="background:var(--s1)"></i>RSUD Cimacan</span><span><i class="sw" style="background:var(--s2)"></i>RSUD Rembang</span></div>
+        <div class="legend"><span><i class="sw" style="background:var(--s1)"></i>RSUD Kelas C Cianjur</span><span><i class="sw" style="background:var(--s2)"></i>RSUD Rembang</span></div>
       </div>
       <div class="chart" id="c-cat"></div>
       <p class="note">"Tindakan Lain" di Rembang besar karena 533 tindakan golongan (misalnya Apendektomi, Craniotomi) belum terpetakan oleh aturan kategori. Ini pekerjaan berikutnya.</p>
@@ -171,7 +183,7 @@ code { font-family: var(--f-mono); font-size: .85em; }
     <div class="stack">
       <div class="eyebrow">Tahap 4–5 · Alignment</div>
       <h2 id="align">Mesin cukup baik untuk mengusulkan, belum untuk memutuskan</h2>
-      <p>Untuk 60 layanan Cimacan yang diambil acak, setiap metode mencari padanan di Rembang. Setelah 12 sampel ragu dan 1 sampel rusak dibuang, tersisa 47 yang bisa dinilai: 23 punya padanan dan 24 tidak punya.</p>
+      <p>Untuk 60 layanan Cianjur yang diambil acak, setiap metode mencari padanan di Rembang. Setelah 12 sampel ragu dan 1 sampel rusak dibuang, tersisa 47 yang bisa dinilai: 23 punya padanan dan 24 tidak punya.</p>
     </div>
     <div class="card">
       <div class="card-head">
@@ -187,17 +199,42 @@ code { font-family: var(--f-mono); font-size: .85em; }
   <section class="stack-lg" aria-labelledby="harga">
     <div class="stack">
       <div class="eyebrow">Tahap 6 · Perbandingan harga</div>
-      <h2 id="harga">Selisih harga terbesar ada di laboratorium, dan sebagian besar semu</h2>
-      <p>Setiap titik adalah satu pasangan layanan yang sudah dicocokkan. Posisinya menunjukkan berapa kali lipat tarif Cimacan dibanding Rembang kelas III. Tarif lab Rembang (misalnya SGOT Rp8.400) tertulis tidak termasuk BHP, sedangkan angka Cimacan tampaknya tarif total. Karena itu, selisih 5× di laboratorium terutama mencerminkan komponen tarif yang berbeda.</p>
+      <h2 id="harga">Selisih harga terbesar ada di laboratorium, dan BHP tidak menjelaskannya</h2>
+      <p>Setiap titik adalah satu pasangan layanan yang sudah dicocokkan, dibandingkan dengan tarif Rembang kelas III. Grafik hanya memuat pasangan yang status BHP-nya sama di kedua dokumen. Lab di kedua RS sama-sama tidak termasuk BHP: Rembang menulis "tidak termasuk BHP", Cianjur menulis "ditambah alat dan bahan". Contohnya, SGOT kelas III di Rembang Rp8.400, sedangkan di Cianjur Rp45.000.</p>
+      <p>Jadi selisih sekitar 5,6× di lab nyata secara angka. Penyebabnya belum bisa disimpulkan dari dua RS: tahun peraturannya berbeda (2023 dan 2025), kelas RS Rembang belum dicek, dan tarif Cianjur tidak menyebut kelas.</p>
     </div>
     <div class="card">
       <div class="card-head">
-        <h3>Rasio tarif Cimacan ÷ Rembang per pasangan (skala log)</h3>
+        <h3>Rasio tarif Cianjur ÷ Rembang kelas III per pasangan (skala log)</h3>
         <div class="legend"><span><i class="sw dot" style="background:var(--s1)"></i>Nama identik (exact)</span><span><i class="sw dot" style="background:var(--s2)"></i>Dicocokkan lewat label</span><span><i class="sw" style="background:var(--fg);width:3px;height:12px;border-radius:1px"></i>Median kategori</span></div>
       </div>
       <div class="chart" id="c-ratio"></div>
-      <p class="note">Ada 93 pasangan. Dua di antaranya ("Berat" dan "Sedang") adalah potongan nama hasil ekstraksi, jadi tidak ditampilkan. Arahkan kursor ke titik untuk melihat nama dan harga.</p>
-      <details><summary>Lihat tabel 91 pasangan</summary><div class="tbl" id="t-ratio"></div></details>
+      <p class="note">Ada 84 pasangan. Grafik memuat 69 di antaranya. Sisanya 15 pasangan: status BHP salah satu sisi tidak jelas, atau satu nama punya beberapa harga di dokumen yang sama. Arahkan kursor ke titik untuk melihat nama dan harga.</p>
+      <details><summary>Lihat tabel 84 pasangan</summary><div class="tbl" id="t-ratio"></div></details>
+    </div>
+  </section>
+
+  <section class="stack-lg" aria-labelledby="standar">
+    <div class="stack">
+      <div class="eyebrow">Hasil · Tabel tarif standar</div>
+      <h2 id="standar">Dari PDF ke Excel bersih, satu baris per harga</h2>
+      <p>Semua tarif kedua dokumen sekarang ada di <code>out/tarif_standar_pilot.xlsx</code>, dengan 5 sheet: <code>tarif</code>, <code>rumah_sakit</code>, <code>dokumen</code>, <code>golongan_tarif</code>, dan <code>pemetaan</code>. Setiap baris tarif menyimpan halaman PDF, kelas, komponen, status BHP, cara harga diperoleh, dan hasil cek kualitas.</p>
+    </div>
+    <div class="card">
+      <div class="card-head"><h3>Hasil cek kualitas otomatis (3.178 baris tarif)</h3></div>
+      <div class="tbl"><table>
+        <thead><tr><th>Tanda (flag_qc)</th><th class="n">Baris</th><th>Arti</th></tr></thead>
+        <tbody>
+          <tr><td>ok</td><td class="n">2.881</td><td>Tidak ada masalah yang terdeteksi</td></tr>
+          <tr><td>nama_dari_baris_atas</td><td class="n">177</td><td>Baris berisi kelas saja; namanya diambil dari baris di atasnya, perlu dicek</td></tr>
+          <tr><td>duplikat</td><td class="n">82</td><td>Nama, kelas, dan harga sama muncul lebih dari sekali</td></tr>
+          <tr><td>nama_terpotong</td><td class="n">32</td><td>Potongan nama seperti "Sedang" atau "Berat"; dibuang dari analisis</td></tr>
+          <tr><td>golongan_tanpa_tarif</td><td class="n">22</td><td>Tindakan One Day Surgery; golongannya tidak punya matriks tarif</td></tr>
+          <tr><td>harga_ambigu</td><td class="n">4</td><td>Angka seperti ".152.000" yang digit depannya hilang</td></tr>
+          <tr><td>urutan_kelas_aneh</td><td class="n">2</td><td>Kelas III lebih mahal dari kelas II untuk nama yang sama</td></tr>
+        </tbody>
+      </table></div>
+      <p class="note">Status BHP terbaca untuk 2.951 baris (93%). Kalau satu baris kena beberapa tanda, semuanya dihitung.</p>
     </div>
   </section>
 
@@ -214,9 +251,9 @@ code { font-family: var(--f-mono); font-size: .85em; }
   <section class="stack-lg" aria-labelledby="temuan">
     <h2 id="temuan">Enam temuan</h2>
     <ol class="findings">
-      <li><b>Komponen tarif harus dicatat.</b><p>Atribut yang perlu: total atau rincian, termasuk BHP atau tidak, kelas, dan CITO. Tanpa atribut ini, perbandingan harga antar-RS menyesatkan.</p></li>
+      <li><b>Kelas dan komponen tarif harus dicatat per baris.</b><p>Rembang punya tabel kelas III dan kelas II untuk layanan yang sama. Versi pertama pilot tidak sengaja mencampur keduanya. Status BHP juga berbeda antar-bagian dokumen. Tanpa kolom kelas, komponen, dan BHP, perbandingan harga antar-RS menyesatkan.</p></li>
       <li><b>Format golongan adalah argumen terkuat untuk graf.</b><p>Struktur Layanan → Golongan → Tarif per kelas tidak bisa ditampung tabel datar tanpa duplikasi.</p></li>
-      <li><b>Tingkat rincian layanan berbeda.</b><p>"Paket Na, K, Cl" di Cimacan setara 3 item terpisah di Rembang. Jadi graf butuh relasi TERDIRI_DARI, bukan hanya SAMA_DENGAN.</p></li>
+      <li><b>Tingkat rincian layanan berbeda.</b><p>"Paket Na, K, Cl" di Cianjur setara 3 item terpisah di Rembang. Jadi graf butuh relasi TERDIRI_DARI, bukan hanya SAMA_DENGAN.</p></li>
       <li><b>Separuh layanan tidak punya padanan.</b><p>24 dari 47 query tidak punya pasangan di RS lain. Model harus bisa menjawab "tidak ada", bukan selalu mengambil kandidat teratas.</p></li>
       <li><b>Banyak contoh sulit yang alami.</b><p>GTT ≠ Gamma GT, Uji Fungsi Berkemih Sedang ≠ Sederhana, CT Scan ≠ Photo. "VC (Vries Coop)" = "PA Potong Beku" hanya bisa dikenali dengan pengetahuan medis.</p></li>
       <li><b>Kategori asli tidak seragam.</b><p>"Pemeriksaan Canggih" di satu RS setara "Tarif Pemeriksaan Laboratorium" di RS lain, jadi pemetaan ke kategori standar perlu dikerjakan serius.</p></li>
@@ -237,7 +274,7 @@ code { font-family: var(--f-mono); font-size: .85em; }
 
   <footer>
     <span>Sumber angka: skrip di <code>pilot/</code>, branch <code>claude/bts-i2c-2026-ieee-17zfxo</code>, repo ScrapingTest. Model embedding: multilingual-e5-small (zero-shot).</span>
-    <span>Tarif Rembang = kelas III. Tarif Cimacan = angka tunggal di lampiran.</span>
+    <span>Tarif Rembang = kelas III. Tarif Cianjur = angka tunggal di lampiran (tidak menyebut kelas).</span>
   </footer>
 </div>
 <div class="tip" id="tip" role="tooltip"></div>
@@ -287,11 +324,11 @@ function drawCat(){
       const p=el("path",{d:barPath(lw,yy,w,bar),fill:j?css("--s2"):css("--s1")},s);
       txt(s,lw+w+5,yy+bar-2,v.toLocaleString("id-ID"),{"font-size":11,fill:css("--fg-2")});
       const hit=el("rect",{x:lw,y:yy-1,width:Math.max(w,24),height:bar+2,fill:"transparent"},s);
-      hit.addEventListener("pointermove",e=>showTip(e,`<b>${n}</b><br>${j?"Rembang":"Cimacan"}: ${v} layanan`,box)); hit.addEventListener("pointerleave",hideTip);
+      hit.addEventListener("pointermove",e=>showTip(e,`<b>${n}</b><br>${j?"Rembang":"Cianjur"}: ${v} layanan`,box)); hit.addEventListener("pointerleave",hideTip);
     });
   });
 }
-table("t-cat",["Kategori standar","Cimacan","Rembang"],Object.entries(CAT).map(([k,v])=>[k,v[0],v[1]]),[1,2]);
+table("t-cat",["Kategori standar","Cianjur","Rembang"],Object.entries(CAT).map(([k,v])=>[k,v[0],v[1]]),[1,2]);
 
 /* ---------- Golongan heat table ---------- */
 function drawGol(id, jenis){
@@ -348,10 +385,10 @@ function drawRatio(){
   const box=document.getElementById("c-ratio"); const W=Math.max(300,box.clientWidth); const narrow=W<520;
   const lw=narrow?100:150, rh=narrow?40:44, top=6, H=top+cats.length*rh+28;
   const [s]=svgFor("c-ratio",H); const pw=W-lw-14;
-  const lmin=Math.log(0.15), lmax=Math.log(40), X=v=>lw+(Math.log(v)-lmin)/(lmax-lmin)*pw;
+  const lmin=Math.log(0.12), lmax=Math.log(40), X=v=>lw+(Math.log(v)-lmin)/(lmax-lmin)*pw;
   const ticks=narrow?[0.25,1,4,16]:[0.25,0.5,1,2,4,8,16,32];
   ticks.forEach(t=>{ el("line",{x1:X(t),x2:X(t),y1:top,y2:H-24,stroke:t===1?css("--axis"):css("--line"),"stroke-width":t===1?1.5:1},s); txt(s,X(t),H-8,(t<1?dec(t,2).replace(/0$/,""):t)+"×",{"text-anchor":"middle",fill:t===1?css("--fg-2"):css("--muted"),"font-size":11,"font-weight":t===1?600:400}); });
-  cats.forEach((c,i)=>{ const y=top+i*rh+rh/2; const pts=DATA.pairs.filter(p=>p.k===c);
+  cats.forEach((c,i)=>{ const y=top+i*rh+rh/2; const pts=DATA.pairs.filter(p=>p.k===c && p.use);
     txt(s,lw-10,y+4,c,{"text-anchor":"end","font-size":narrow?10.5:12,fill:css("--fg")});
     txt(s,lw-10,y+17,`n = ${pts.length}`,{"text-anchor":"end","font-size":10,fill:css("--muted")});
     if(i) el("line",{x1:lw,x2:W,y1:y-rh/2,y2:y-rh/2,stroke:css("--line")},s);
@@ -361,7 +398,7 @@ function drawRatio(){
       el("circle",{cx,cy:jy,r:6,fill:css("--surface")},s);
       const dot=el("circle",{cx,cy:jy,r:4.5,fill:p.s==="exact"?css("--s1"):css("--s2"),"fill-opacity":.9},s);
       const hit=el("circle",{cx,cy:jy,r:9,fill:"transparent"},s);
-      hit.addEventListener("pointermove",e=>{ dot.setAttribute("r",6); showTip(e,`<b>${p.c}</b> ↔ ${p.r}<br>Cimacan ${fmt(p.hc)} · Rembang ${fmt(p.hr)}<br>Rasio <b>${dec(p.x)}×</b> · ${p.s==="exact"?"nama identik":"lewat label"}`,box); });
+      hit.addEventListener("pointermove",e=>{ dot.setAttribute("r",6); showTip(e,`<b>${p.c}</b> ↔ ${p.r}<br>Cianjur ${fmt(p.hc)} · Rembang kelas III ${fmt(p.hr)}<br>Rasio <b>${dec(p.x)}×</b> · ${p.s==="exact"?"nama identik":"lewat label"}`,box); });
       hit.addEventListener("pointerleave",()=>{ dot.setAttribute("r",4.5); hideTip(); });
     });
     const xs=pts.map(p=>p.x).sort((a,b)=>a-b); const m=xs.length%2?xs[(xs.length-1)/2]:(xs[xs.length/2-1]+xs[xs.length/2])/2;
@@ -369,8 +406,8 @@ function drawRatio(){
     if(pts.length>=4){ const lx=X(m); const right = lx < W-70; txt(s,right?lx+6:lx-6,y-11,dec(m,1)+"×",{"text-anchor":right?"start":"end","font-size":11,"font-weight":600,fill:css("--fg"),stroke:css("--surface"),"stroke-width":4,"paint-order":"stroke","stroke-linejoin":"round"}); }
   });
 }
-table("t-ratio",["Cimacan","Rembang","Kategori","Tarif Cimacan","Tarif Rembang","Rasio","Cocok via"],
-  [...DATA.pairs].sort((a,b)=>b.x-a.x).map(p=>[p.c,p.r,p.k,fmt(p.hc),fmt(p.hr),dec(p.x)+"×",p.s==="exact"?"nama identik":"label"]),[3,4,5]);
+table("t-ratio",["Cianjur","Rembang","Kategori","Tarif Cianjur","Tarif Rembang kls III","Rasio","BHP Cianjur / Rembang","Di grafik","Cocok via"],
+  [...DATA.pairs].sort((a,b)=>b.x-a.x).map(p=>[p.c,p.r,p.k,fmt(p.hc),fmt(p.hr),dec(p.x)+"×",(p.bc+" / "+p.br).replace(/_/g," "),p.use?"ya":(p.g?"tidak (harga ganda)":"tidak (BHP beda/tidak jelas)"),p.s==="exact"?"nama identik":"label"]),[3,4,5]);
 
 /* ---------- Skema graf ---------- */
 function drawGraph(){
@@ -385,7 +422,7 @@ function drawGraph(){
     const mx=(x1+x2)/2, my=(y1+y2)/2+dy; const t=txt(s,mx,my+4,label,{"text-anchor":"middle","font-size":11.5,fill:dash?css("--muted"):css("--fg-2"),"font-family":"var(--f-mono)"});
     const bb=t.getBBox(); const bg=el("rect",{x:bb.x-4,y:bb.y-2,width:bb.width+8,height:bb.height+4,rx:4,fill:css("--surface")},s); s.insertBefore(bg,t); };
   edge("RS","L","TARIF · 1.788",false);
-  edge("RS","G","TARIF_GOLONGAN · 50",false);
+  edge("RS","G","TARIF_GOLONGAN · 49",false);
   edge("L","G","MASUK_GOLONGAN · 533",false, narrow?-14:-10);
   edge("L","K","KATEGORI · 2.321",false);
   edge("L","L2","SAMA_DENGAN · 93",false, narrow?14:0);
