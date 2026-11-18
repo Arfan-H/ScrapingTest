@@ -2,4 +2,17 @@ pilot/raw_pdf/
 pilot/out/_*.npy
 __pycache__/
 # LOINC dataset (download separately)
-Loinc_2.83/
+# Ignore seluruh dataset LOINC
+Loinc_2.83/**
+
+# Tetap masukkan file yang diperlukan
+!Loinc_2.83/LoincTable/
+!Loinc_2.83/LoincTable/Loinc.csv
+!Loinc_2.83/LoincTable/MapTo.csv
+
+!Loinc_2.83/AccessoryFiles/
+!Loinc_2.83/AccessoryFiles/LoincUniversalLabOrdersValueSet/
+!Loinc_2.83/AccessoryFiles/LoincUniversalLabOrdersValueSet/LoincUniversalLabOrdersValueSet.csv
+
+!Loinc_2.83/AccessoryFiles/PanelsAndForms/
+!Loinc_2.83/AccessoryFiles/PanelsAndForms/PanelsAndForms.csv
