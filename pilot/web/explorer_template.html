@@ -1,0 +1,334 @@
+<title>Penjelajah Graf Tarif</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: alat satu kolom (maks 960px): pencarian + tab di atas, diagram jalur dua sisi (Cianjur | Rembang), rincian tarif di bawah */
+:root {
+  --bg: #f6f7f8; --surface: #fcfcfb; --fg: #12171c; --fg-2: #4b5560; --muted: #7d8791;
+  --line: #e1e4e7; --axis: #b9bfc5; --accent: #0f5f73; --accent-soft: #e2eff2;
+  --cj: #2a78d6; --cj-soft: #e3eefb; --rb: #eb6834; --rb-soft: #fcebe3; --ring: rgba(18,23,28,.10);
+  --f-display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+  --f-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1214; --surface: #1a1d1f; --fg: #eef0f1; --fg-2: #c0c6cc; --muted: #8b949c;
+    --line: #2c3033; --axis: #4a5055; --accent: #6cc3d6; --accent-soft: #15303a;
+    --cj: #3987e5; --cj-soft: #142a44; --rb: #d95926; --rb-soft: #3a1f12; --ring: rgba(255,255,255,.10);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1214; --surface: #1a1d1f; --fg: #eef0f1; --fg-2: #c0c6cc; --muted: #8b949c;
+  --line: #2c3033; --axis: #4a5055; --accent: #6cc3d6; --accent-soft: #15303a;
+  --cj: #3987e5; --cj-soft: #142a44; --rb: #d95926; --rb-soft: #3a1f12; --ring: rgba(255,255,255,.10);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { background: var(--bg); color: var(--fg); font: 400 15px/1.55 var(--f-body); }
+.wrap { max-width: 960px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 32px 64px; display: grid; gap: 24px; }
+h1, h2, h3 { font-family: var(--f-display); margin: 0; line-height: 1.2; text-wrap: balance; }
+h1 { font-size: clamp(1.7rem, 4vw, 2.2rem); font-weight: 700; }
+h2 { font-size: 1.15rem; font-weight: 600; }
+p { margin: 0; max-width: 68ch; }
+.lede { color: var(--fg-2); }
+.eyebrow { font: 500 .72rem/1.2 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+code { font-family: var(--f-mono); font-size: .85em; }
+.head { display: grid; gap: 10px; }
+.counts { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: .85rem; color: var(--muted); }
+.counts b { color: var(--fg); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); overflow-x: auto; }
+.tab { appearance: none; border: 0; background: none; font: 500 .92rem var(--f-body); color: var(--fg-2); padding: 10px 14px; border-bottom: 2px solid transparent; cursor: pointer; white-space: nowrap; }
+.tab[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
+.tab:focus-visible, .chip:focus-visible, .res button:focus-visible, .mem:focus-visible, input:focus-visible, .pair:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.search { position: relative; display: grid; gap: 8px; }
+.search label { font-size: .85rem; color: var(--fg-2); }
+.search input { width: 100%; font: 400 1rem var(--f-body); padding: 11px 14px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); color: var(--fg); }
+.res { position: absolute; top: 100%; left: 0; right: 0; margin-top: 4px; background: var(--surface); border: 1px solid var(--ring); border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,.12); z-index: 10; max-height: 340px; overflow-y: auto; padding: 4px; }
+.res button { display: flex; width: 100%; justify-content: space-between; gap: 12px; text-align: left; border: 0; background: none; color: var(--fg); font: 400 .92rem var(--f-body); padding: 8px 10px; border-radius: 6px; cursor: pointer; }
+.res button:hover, .res button.on { background: var(--accent-soft); }
+.res .empty { padding: 10px; color: var(--muted); font-size: .9rem; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.chips span { font-size: .8rem; color: var(--muted); }
+.chip { appearance: none; border: 1px solid var(--line); background: var(--surface); color: var(--fg-2); font: 500 .82rem var(--f-body); padding: 5px 10px; border-radius: 999px; cursor: pointer; }
+.chip:hover { border-color: var(--accent); color: var(--accent); }
+.chip.on { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+
+.tag { display: inline-flex; align-items: center; gap: 5px; font: 500 .72rem var(--f-mono); padding: 2px 7px; border-radius: 5px; white-space: nowrap; }
+.tag.cj { background: var(--cj-soft); color: var(--fg); }
+.tag.rb { background: var(--rb-soft); color: var(--fg); }
+.tag i { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
+.tag.cj i { background: var(--cj); } .tag.rb i { background: var(--rb); }
+
+.card { background: var(--surface); border: 1px solid var(--ring); border-radius: 12px; padding: 18px; display: grid; gap: 14px; min-width: 0; }
+.diagram svg { display: block; width: 100%; height: auto; }
+.diagram text { font-family: var(--f-body); }
+.summary { font-size: .95rem; }
+.summary b { font-weight: 600; }
+.sides { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+.side { display: grid; gap: 8px; align-content: start; min-width: 0; }
+.side h3 { font-size: .95rem; font-weight: 600; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.tbl { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: .85rem; }
+th, td { text-align: left; padding: 6px 10px 6px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-weight: 600; color: var(--fg-2); white-space: nowrap; }
+td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.note { font-size: .82rem; color: var(--muted); }
+
+.mems { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 6px; max-height: 460px; overflow-y: auto; padding-right: 4px; }
+.mem { appearance: none; text-align: left; border: 1px solid var(--line); background: var(--bg); color: var(--fg); font: 400 .85rem var(--f-body); padding: 7px 10px; border-radius: 8px; cursor: pointer; display: flex; justify-content: space-between; gap: 8px; align-items: center; }
+.mem:hover { border-color: var(--accent); }
+.mem .pt { font: 500 .7rem var(--f-mono); color: var(--accent); white-space: nowrap; }
+.pairs { display: grid; gap: 4px; }
+.pair { appearance: none; border: 0; border-bottom: 1px solid var(--line); background: none; color: var(--fg); font: 400 .88rem var(--f-body); padding: 8px 4px; display: grid; grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) auto; gap: 10px; align-items: center; text-align: left; cursor: pointer; }
+.pair:hover { background: var(--accent-soft); }
+.pair .eq { color: var(--muted); font-family: var(--f-mono); font-size: .8rem; }
+.pair .via { font: 500 .7rem var(--f-mono); color: var(--muted); }
+@media (max-width: 560px) { .pair { grid-template-columns: minmax(0,1fr) auto; } .pair .eq { display: none; } }
+footer { font-size: .82rem; color: var(--muted); display: grid; gap: 4px; }
+</style>
+
+<div class="wrap">
+  <header class="head">
+    <div class="eyebrow">Pilot graf tarif RSUD · data dari <code>out/graf_pilot.graphml</code></div>
+    <h1>Penjelajah Graf Tarif</h1>
+    <p class="lede">Pilih satu layanan untuk melihat jalurnya di graf: dari rumah sakit dan Perbup, ke layanan, ke padanannya di dokumen lain, sampai golongan dan tarif per kelas.</p>
+    <div class="counts" id="counts"></div>
+  </header>
+
+  <div class="tabs" role="tablist" aria-label="Tampilan">
+    <button class="tab" role="tab" id="tab-jalur" aria-selected="true" aria-controls="v-jalur">Jalur layanan</button>
+    <button class="tab" role="tab" id="tab-golongan" aria-selected="false" aria-controls="v-golongan">Golongan</button>
+    <button class="tab" role="tab" id="tab-pasangan" aria-selected="false" aria-controls="v-pasangan">Pasangan SAMA_DENGAN</button>
+  </div>
+
+  <section id="v-jalur" role="tabpanel" aria-labelledby="tab-jalur" class="head">
+    <div class="search">
+      <label for="q">Cari nama layanan (dari kedua Perbup)</label>
+      <input id="q" type="search" autocomplete="off" placeholder="mis. SGOT, apendektomi, USG" aria-autocomplete="list" aria-controls="res">
+      <div class="res" id="res" role="listbox" hidden></div>
+    </div>
+    <div class="chips" id="examples"><span>Contoh:</span></div>
+    <div class="card">
+      <div class="diagram" id="diagram" role="img"></div>
+      <p class="summary" id="summary"></p>
+      <div class="sides" id="sides"></div>
+    </div>
+  </section>
+
+  <section id="v-golongan" role="tabpanel" aria-labelledby="tab-golongan" class="head" hidden>
+    <p class="lede">Perbup Rembang menetapkan harga per golongan × kelas, lalu mendaftar tindakan anggota setiap golongan. Pilih golongan untuk melihat matriks tarifnya dan anggotanya. Klik anggota untuk membuka jalurnya.</p>
+    <div class="chips" id="golchips"></div>
+    <div class="card" id="golcard"></div>
+  </section>
+
+  <section id="v-pasangan" role="tabpanel" aria-labelledby="tab-pasangan" class="head" hidden>
+    <p class="lede">Semua 84 pasangan layanan yang dihubungkan edge SAMA_DENGAN, antara Perbup Cianjur dan Perbup Rembang. Klik satu pasangan untuk membuka jalurnya.</p>
+    <div class="card"><div class="pairs" id="pairs"></div></div>
+  </section>
+
+  <footer>
+    <span>Tarif Rembang tertulis per kelas (III, II, …) atau lewat golongan. Tarif Cianjur umumnya satu angka tanpa kelas. BHP = bahan habis pakai.</span>
+    <span>Pasangan "label" berasal dari label asisten AI yang belum divalidasi manusia.</span>
+  </footer>
+</div>
+
+<script>
+const GD = __GRAPH__;
+GD.G.forEach(g=>{ if(/^GOL-/.test(g.n)) g.n = g.n.replace(/^GOL-/,'').split('-').map(p=>p.replace(/_/g,' ').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase())).join(' / '); });
+const NS = "http://www.w3.org/2000/svg";
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const rp = v => "Rp" + Math.round(v).toLocaleString("id-ID");
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const BHP = {t:"tidak termasuk", y:"termasuk", "t_":"", };
+const bhpTxt = c => c==="t" ? "tidak termasuk" : c==="y" ? "termasuk" : "tidak jelas";
+const SIDE = [{key:"cj", short:"Cianjur"}, {key:"rb", short:"Rembang"}];
+const KORDER = ["III","II","I","VIP Pratama/Madya","VIP Utama","ODS"];
+
+// ---------- counts ----------
+const nPairs = GD.L.reduce((a,r)=>a+(r.s?r.s.length:0),0)/2;
+document.getElementById("counts").innerHTML =
+  `<span><b>${GD.L.length.toLocaleString("id-ID")}</b> layanan</span><span><b>${GD.G.length}</b> golongan</span><span><b>${GD.D.length}</b> dokumen</span><span><b>${nPairs}</b> pasangan SAMA_DENGAN</span>`;
+
+function docTag(d){ const s=SIDE[d]; return `<span class="tag ${s.key}"><i></i>${s.short}</span>`; }
+
+// ---------- tabs ----------
+const tabs=["jalur","golongan","pasangan"];
+function showTab(name){
+  tabs.forEach(t=>{ document.getElementById("tab-"+t).setAttribute("aria-selected", t===name); document.getElementById("v-"+t).hidden = t!==name; });
+}
+tabs.forEach(t=>document.getElementById("tab-"+t).addEventListener("click",()=>{ showTab(t); if(t==="jalur") drawPath(current); }));
+
+// ---------- search ----------
+const q=document.getElementById("q"), res=document.getElementById("res");
+const idx = GD.L.map((r,i)=>({i, key:r.n.toLowerCase()}));
+let hits=[], hi=-1;
+function renderRes(){
+  if(!q.value.trim()){ res.hidden=true; return; }
+  const term=q.value.trim().toLowerCase();
+  hits = idx.filter(o=>o.key.includes(term)).sort((a,b)=>(a.key.startsWith(term)?0:1)-(b.key.startsWith(term)?0:1) || a.key.length-b.key.length).slice(0,12).map(o=>o.i);
+  hi=-1;
+  res.innerHTML = hits.length ? hits.map((i,k)=>{ const r=GD.L[i]; return `<button role="option" data-i="${i}" id="opt${k}">${esc(r.n)}<span style="display:flex;gap:6px">${r.s?'<span class="tag" style="color:var(--accent)">punya padanan</span>':""}${docTag(r.d)}</span></button>`; }).join("")
+    : `<div class="empty">Tidak ada layanan dengan nama itu. Coba kata yang lebih pendek.</div>`;
+  res.hidden=false;
+}
+q.addEventListener("input",renderRes);
+q.addEventListener("keydown",e=>{
+  const btns=[...res.querySelectorAll("button")];
+  if(e.key==="ArrowDown"){ hi=Math.min(btns.length-1,hi+1); e.preventDefault(); }
+  else if(e.key==="ArrowUp"){ hi=Math.max(0,hi-1); e.preventDefault(); }
+  else if(e.key==="Enter"){ if(btns.length) select(+btns[Math.max(0,hi)].dataset.i); e.preventDefault(); return; }
+  else if(e.key==="Escape"){ res.hidden=true; return; }
+  btns.forEach((b,k)=>b.classList.toggle("on",k===hi));
+});
+res.addEventListener("click",e=>{ const b=e.target.closest("button"); if(b) select(+b.dataset.i); });
+document.addEventListener("click",e=>{ if(!e.target.closest(".search")) res.hidden=true; });
+
+function select(i){ res.hidden=true; q.value=""; current=i; showTab("jalur"); drawPath(i); try{ history.replaceState(null,"","#l"+i); }catch(_){}
+  document.querySelectorAll("#examples .chip").forEach(c=>c.classList.toggle("on",+c.dataset.i===i)); }
+
+// ---------- examples ----------
+const EX=[["Biopsi adneksa",1],["SGOT",0],["Trabekulektomi",1],["Apendektomi akut",1],["Free T4",0],["Panoramic",0]];
+const exBox=document.getElementById("examples");
+EX.forEach(([name,d])=>{ const i=GD.L.findIndex(r=>r.n.toLowerCase()===name.toLowerCase() && r.d===d); if(i<0) return;
+  const b=document.createElement("button"); b.className="chip"; b.textContent=name; b.dataset.i=i; b.addEventListener("click",()=>select(i)); exBox.appendChild(b); });
+
+// ---------- path diagram ----------
+function el(tag,attrs={},parent){ const e=document.createElementNS(NS,tag); for(const k in attrs) e.setAttribute(k,attrs[k]); if(parent) parent.appendChild(e); return e; }
+function txt(p,x,y,s,a={}){ const t=el("text",Object.assign({x,y,fill:css("--fg"),"font-size":12,"text-anchor":"middle"},a),p); t.textContent=s; return t; }
+function wrap(s,max){ const words=String(s).split(/\s+/); const lines=[]; let cur="";
+  for(const w of words){ if((cur+" "+w).trim().length>max && cur){ lines.push(cur); cur=w; } else cur=(cur+" "+w).trim(); }
+  if(cur) lines.push(cur); if(lines.length>2){ lines.length=2; lines[1]=lines[1].slice(0,max-1)+"…"; } return lines; }
+function kelasSummary(t){ if(!t||!t.length) return ""; const by={}; t.forEach(([k,h])=>{ if(!(k in by)) by[k]=h; });
+  const ks=Object.keys(by).sort((a,b)=>(KORDER.indexOf(a)+1||99)-(KORDER.indexOf(b)+1||99));
+  return ks.slice(0,2).map(k=>(k==="Non-kelas"?"":k+" ")+Math.round(by[k]/1000).toLocaleString("id-ID")+"rb").join(" · ")+(ks.length>2?" · …":""); }
+
+let current = null;
+function drawPath(i){
+  if(i==null) return;
+  const box=document.getElementById("diagram"); box.innerHTML="";
+  const A=GD.L[i]; const partners=(A.s||[]); const B=partners.length?GD.L[partners[0][0]]:null; const via=partners.length?partners[0][1]:null;
+  const W=Math.max(300,box.clientWidth), narrow=W<560;
+  const both=!!B; const sidesArr = both ? (A.d===0?[A,B]:[B,A]) : [A];
+  const hasGol = sidesArr.some(r=>r.g!=null);
+  const rows = ["rs","dok"].concat(hasGol?["gol"]:[]).concat(["lay","kat"]);
+  const rowH = narrow?92:86, top=26, nodeH=narrow?50:46;
+  const H = top + rows.length*rowH;
+  const s=el("svg",{viewBox:`0 0 ${W} ${H}`,width:W,height:H},box);
+  const colX = both ? [W*0.25, W*0.75] : [W*0.5];
+  const nodeW = Math.min(both?W*0.42:W*0.6, 300);
+  const Y = r => top + rows.indexOf(r)*rowH + nodeH/2;
+  const nodes=[], edges=[];
+  sidesArr.forEach((r,ci)=>{
+    const D=GD.D[r.d], x=colX[ci], key=SIDE[r.d].key;
+    nodes.push({x,y:Y("rs"),type:"RumahSakit",label:D.rs.map(z=>z.nama).join(", "),side:key});
+    nodes.push({x,y:Y("dok"),type:"Dokumen",label:D.label,side:key});
+    edges.push({a:[x,Y("dok")],b:[x,Y("rs")],label:"BERLAKU_UNTUK"});
+    if(r.g!=null){ const g=GD.G[r.g];
+      nodes.push({x,y:Y("gol"),type:"Golongan",label:g.n,side:key,gol:true});
+      edges.push({a:[x,Y("dok")],b:[x,Y("gol")],label:g.p?"TARIF_GOLONGAN":"(tanpa matriks tarif)"});
+      edges.push({a:[x,Y("gol")],b:[x,Y("lay")],label:"MASUK_GOLONGAN"});
+    } else {
+      edges.push({a:[x,Y("dok")],b:[x,Y("lay")],label:"TARIF  "+kelasSummary(r.t)});
+    }
+    nodes.push({x,y:Y("lay"),type:"Layanan",label:r.n,side:key,sel:r===A});
+  });
+  if(both) edges.push({a:[colX[0]+nodeW/2,Y("lay")],b:[colX[1]-nodeW/2,Y("lay")],label:"SAMA_DENGAN",sub:via==="e"?"nama identik":"lewat label",horiz:true});
+  // kategori: satu node bila sama
+  const kats=[...new Set(sidesArr.map(r=>r.k))];
+  if(kats.length===1){ const kx=both?W*0.5:colX[0]; nodes.push({x:kx,y:Y("kat"),type:"KategoriStd",label:kats[0]});
+    sidesArr.forEach((r,ci)=>edges.push({a:[colX[ci],Y("lay")],b:[kx,Y("kat")],label:both?"":"KATEGORI"})); }
+  else sidesArr.forEach((r,ci)=>{ nodes.push({x:colX[ci],y:Y("kat"),type:"KategoriStd",label:r.k}); edges.push({a:[colX[ci],Y("lay")],b:[colX[ci],Y("kat")],label:"KATEGORI"}); });
+
+  edges.forEach(e=>{ el("line",{x1:e.a[0],y1:e.a[1],x2:e.b[0],y2:e.b[1],stroke:e.horiz?css("--accent"):css("--axis"),"stroke-width":e.horiz?2.5:1.5},s); });
+  nodes.forEach(n=>{
+    const fill = n.sel ? css("--accent-soft") : n.side==="cj" ? css("--cj-soft") : n.side==="rb" ? css("--rb-soft") : css("--bg");
+    const stroke = n.sel ? css("--accent") : n.side==="cj" ? css("--cj") : n.side==="rb" ? css("--rb") : css("--line");
+    el("rect",{x:n.x-nodeW/2,y:n.y-nodeH/2,width:nodeW,height:nodeH,rx:10,fill,stroke,"stroke-width":n.sel?2:1.2},s);
+    txt(s,n.x,n.y-nodeH/2-6,n.type.toUpperCase(),{"font-size":9.5,fill:css("--muted"),"font-family":"var(--f-mono)","letter-spacing":".06em"});
+    const lines=wrap(n.label, Math.max(14,Math.floor(nodeW/7.4)));
+    lines.forEach((ln,k)=>txt(s,n.x,n.y+4+(k-(lines.length-1)/2)*15,ln,{"font-size":narrow?12:12.5,"font-weight":n.type==="Layanan"?600:500}));
+  });
+  edges.forEach(e=>{ if(!e.label) return;
+    const mx=(e.a[0]+e.b[0])/2, my=(e.a[1]+e.b[1])/2;
+    const lx = e.horiz ? mx : mx+8, anchor = e.horiz ? "middle" : "start";
+    const t=txt(s,lx,e.horiz?my-8:my+4,e.label,{"font-size":10,fill:e.horiz?css("--accent"):css("--fg-2"),"font-family":"var(--f-mono)","text-anchor":anchor});
+    const bb=t.getBBox(); const bg=el("rect",{x:bb.x-3,y:bb.y-1,width:bb.width+6,height:bb.height+2,rx:3,fill:css("--surface")},s); s.insertBefore(bg,t);
+    if(e.sub){ const t2=txt(s,mx,my+16,e.sub,{"font-size":10,fill:css("--muted")}); const b2=t2.getBBox(); const g2=el("rect",{x:b2.x-3,y:b2.y-1,width:b2.width+6,height:b2.height+2,rx:3,fill:css("--surface")},s); s.insertBefore(g2,t2); }
+  });
+  box.setAttribute("aria-label", `Jalur graf untuk ${A.n}` + (B?`, padanan ${B.n}`:", tanpa padanan"));
+  renderDetail(sidesArr, A, B, via);
+}
+
+function tarifRows(r){
+  if(r.g!=null){ const g=GD.G[r.g];
+    if(!g.p) return `<p class="note">Tindakan ini masuk daftar ${esc(g.n)}, tapi Perbup tidak memberi matriks tarif untuk golongan itu.</p>`;
+    const m=[...g.m].sort((a,b)=>KORDER.indexOf(a[0])-KORDER.indexOf(b[0]));
+    return `<p class="note">Harga diturunkan dari golongan <b>${esc(g.n)}</b>. Total jasa, di luar obat dan BHP.</p><div class="tbl"><table><thead><tr><th>Kelas</th><th class="n">Tarif golongan</th></tr></thead><tbody>${m.map(([k,h])=>`<tr><td>${esc(k)}</td><td class="n">${rp(h)}</td></tr>`).join("")}</tbody></table></div>`;
+  }
+  if(!r.t) return `<p class="note">Tidak ada tarif tercatat.</p>`;
+  const t=[...r.t].sort((a,b)=>(KORDER.indexOf(a[0])+1||50)-(KORDER.indexOf(b[0])+1||50) || a[3]-b[3]);
+  return `<div class="tbl"><table><thead><tr><th>Kelas</th><th class="n">Tarif</th><th>BHP</th><th class="n">Hlm.</th></tr></thead><tbody>${t.map(([k,h,b,p])=>`<tr><td>${esc(k)}</td><td class="n">${rp(h)}</td><td>${bhpTxt(b)}</td><td class="n">${p}</td></tr>`).join("")}</tbody></table></div>`;
+}
+function priceFor(r){ // tarif utama untuk ringkasan
+  if(r.g!=null){ const g=GD.G[r.g]; const c=g.m.find(x=>x[0]==="III"); return c?{h:c[1],k:"kelas III, lewat golongan"}:null; }
+  if(!r.t) return null; const k3=r.t.find(x=>x[0]==="III"); if(k3) return {h:k3[1],k:"kelas III"};
+  const nk=r.t.find(x=>x[0]==="Non-kelas"); return nk?{h:nk[1],k:"tanpa kelas"}:{h:r.t[0][1],k:"kelas "+r.t[0][0]};
+}
+function renderDetail(sidesArr, A, B, via){
+  const sum=document.getElementById("summary");
+  if(B){ const c=sidesArr[0], r=sidesArr[1], pc=priceFor(c), pr=priceFor(r);
+    let line=`<b>${esc(c.n)}</b> (Cianjur) dan <b>${esc(r.n)}</b> (Rembang) dihubungkan SAMA_DENGAN, ${via==="e"?"karena namanya identik setelah normalisasi":"berdasarkan label pilot yang belum divalidasi"}.`;
+    if(pc&&pr) line+=` Tarif: ${rp(pc.h)} (${pc.k}) di Cianjur, ${rp(pr.h)} (${pr.k}) di Rembang, rasio ${(pc.h/pr.h).toLocaleString("id-ID",{maximumFractionDigits:2})}×.`;
+    sum.innerHTML=line;
+  } else {
+    const p=priceFor(A);
+    sum.innerHTML=`<b>${esc(A.n)}</b> (${SIDE[A.d].short}) belum punya padanan di dokumen lain.${p?` Tarifnya ${rp(p.h)} (${p.k}).`:""}`;
+  }
+  document.getElementById("sides").innerHTML = sidesArr.map(r=>{ const D=GD.D[r.d];
+    return `<div class="side"><h3>${docTag(r.d)} ${esc(r.n)}</h3><p class="note">${esc(D.label)} · ${esc(D.cakupan)} · kategori ${esc(r.k)}</p>${tarifRows(r)}</div>`; }).join("");
+}
+
+// ---------- golongan view ----------
+const golBox=document.getElementById("golchips"), golCard=document.getElementById("golcard");
+const golOrder=GD.G.map((g,i)=>i).sort((a,b)=>GD.G[a].n.localeCompare(GD.G[b].n,"id"));
+let curGol=golOrder[0];
+golOrder.forEach(i=>{ const g=GD.G[i]; const b=document.createElement("button"); b.className="chip"; b.textContent=`${g.n.replace("Operatif / ","Op · ").replace("Non Operatif / ","Non-op · ")} (${g.mem.length})`; b.dataset.g=i;
+  b.addEventListener("click",()=>drawGol(i)); golBox.appendChild(b); });
+function drawGol(i){
+  curGol=i; const g=GD.G[i];
+  golBox.querySelectorAll(".chip").forEach(c=>c.classList.toggle("on",+c.dataset.g===i));
+  const m=[...g.m].sort((a,b)=>KORDER.indexOf(a[0])-KORDER.indexOf(b[0]));
+  const mems=[...g.mem].sort((a,b)=>(GD.L[b].s?1:0)-(GD.L[a].s?1:0) || GD.L[a].n.localeCompare(GD.L[b].n,"id"));
+  const withP=mems.filter(x=>GD.L[x].s).length;
+  golCard.innerHTML = `<div class="side"><h2>${esc(g.n)}</h2><p class="note">Perbup Rembang 16/2023 · ${g.mem.length} tindakan anggota · ${withP} punya padanan di Cianjur</p></div>
+    ${g.p?`<div class="tbl"><table><thead><tr>${m.map(([k])=>`<th class="n">${esc(k)}</th>`).join("")}</tr></thead><tbody><tr>${m.map(([,h])=>`<td class="n">${rp(h)}</td>`).join("")}</tr></tbody></table></div>`
+         :`<p class="note">Golongan ini tidak punya matriks tarif di Perbup. Anggotanya tercatat, harganya belum bisa diturunkan.</p>`}
+    <div class="mems">${mems.map(x=>{ const r=GD.L[x]; return `<button class="mem" data-i="${x}"><span>${esc(r.n)}</span>${r.s?'<span class="pt">↔ Cianjur</span>':""}</button>`; }).join("")}</div>`;
+  golCard.querySelectorAll(".mem").forEach(b=>b.addEventListener("click",()=>select(+b.dataset.i)));
+}
+drawGol(curGol);
+
+// ---------- pairs view ----------
+const seen=new Set(), pairRows=[];
+GD.L.forEach((r,i)=>{ if(r.d!==0||!r.s) return; r.s.forEach(([j,v])=>{ const key=i+"-"+j; if(seen.has(key)) return; seen.add(key); pairRows.push([i,j,v]); }); });
+pairRows.sort((a,b)=>GD.L[a[0]].n.localeCompare(GD.L[b[0]].n,"id"));
+document.getElementById("pairs").innerHTML = pairRows.map(([i,j,v])=>`<button class="pair" data-i="${i}"><span>${esc(GD.L[i].n)}</span><span class="eq">↔</span><span>${esc(GD.L[j].n)}</span><span class="via">${v==="e"?"identik":"label"}</span></button>`).join("");
+document.querySelectorAll(".pair").forEach(b=>b.addEventListener("click",()=>select(+b.dataset.i)));
+
+// ---------- start ----------
+function fromHash(){ const m=/^#l(\d+)$/.exec(location.hash); return m && GD.L[+m[1]] ? +m[1] : null; }
+const startI = fromHash() ?? (+exBox.querySelector(".chip")?.dataset.i || 0);
+select(startI);
+let rt; window.addEventListener("resize",()=>{ clearTimeout(rt); rt=setTimeout(()=>drawPath(current),120); });
+window.addEventListener("hashchange",()=>{ const h=fromHash(); if(h!=null && h!==current) select(h); });
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>drawPath(current));
+new MutationObserver(()=>drawPath(current)).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+if(document.fonts) document.fonts.ready.then(()=>drawPath(current));
+</script>
