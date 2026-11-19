@@ -97,8 +97,8 @@ def load_targets():
     return {"LOINC": loinc, "ICD-9-CM": pd.DataFrame(rows)}
 
 
-def main():
-    path = f"{OUT}/tarif_standar_pilot.xlsx"
+def main(path=None):
+    path = path or f"{OUT}/tarif_standar_pilot.xlsx"
     sheets = pd.read_excel(path, sheet_name=None)
     pem = sheets["pemetaan"].copy()
     pem["kode_sistem"] = pem.kategori_std.map(TARGET).fillna("ICD-9-CM")
@@ -139,9 +139,10 @@ def main():
             for col in ws.columns:
                 w = max(len(str(c.value or "")) for c in list(col)[:300])
                 ws.column_dimensions[col[0].column_letter].width = min(max(10, w + 2), 60)
-    pem[cols].to_csv(f"{OUT}/pemetaan_usulan.csv", index=False)
+    pem[cols].to_csv(path.replace(".xlsx", "_pemetaan_usulan.csv") if not path.endswith("_pilot.xlsx")
+                     else f"{OUT}/pemetaan_usulan.csv", index=False)
     print(pem.kode_sistem.value_counts().to_dict())
 
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1] if len(sys.argv) > 1 else None)
