@@ -159,8 +159,13 @@ def parse_prices(line):
     return m, [p for p in (to_int(t) for t in toks) if 1_000 <= p <= 200_000_000], lead0
 
 
-def extract_doc(pdf_path, dok_id, start_page=None):
+LOCAL_BHP = re.compile(r"(belum|tidak)\s+termasuk\s+(biaya\s+)?BHP", re.I)
+QUOTE_MARK = re.compile(r"[\"\u201c\u201d*]")
+
+
+def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
     rows, blocks = [], []
+    seg_start = 0
     block = dict(id=0, kelas="", text="", top=True, section=0)
     blocks.append(block)
     category, pending, parent = "", None, ""
@@ -180,7 +185,18 @@ def extract_doc(pdf_path, dok_id, start_page=None):
                     block = dict(id=len(blocks), kelas=km.group(1).upper() if km else "", text="",
                                  top=top or not blocks, section=(len(blocks) if top else block.get("section", 0)))
                     blocks.append(block)
-                block["text"] += " " + line
+                    seg_start = len(rows)
+                # catatan kaki lokal ("Belum termasuk BHP" bertanda kutip): hanya untuk tabel ini
+                lb = LOCAL_BHP.search(line)
+                is_foot = bool(lb) and not re.search(r"kontras", line[:lb.start()], re.I) and (
+                    QUOTE_MARK.search(line[:lb.start() + 1]) or lb.start() < 3 or re.match(r"(Ket|Catatan)\b", line, re.I))
+                if is_foot:
+                    seg = rows[seg_start:]
+                    marked = [r for r in seg if QUOTE_MARK.search(r["baris_mentah"])]
+                    for r in (marked or seg):
+                        r.setdefault("_bhp_lokal", "tidak")
+                else:
+                    block["text"] += " " + line
                 m, prices, lead0 = parse_prices(line)
                 merged = SPLIT_NUM.sub(r"\1\2", line)
                 if merged != line:
@@ -190,6 +206,8 @@ def extract_doc(pdf_path, dok_id, start_page=None):
                         line, m, prices = merged, m2, p2
                 if not m:
                     # judul tabel baru tanpa kelas -> lupakan judul kelas sebelumnya
+                    if TABLE_HEAD.search(line):
+                        seg_start = len(rows)
                     if (TABLE_HEAD.search(line) and len(header_classes(line)) < 3 and not header_groups(line)
                             and len(re.findall(r"\b(tarif|jumlah)\b", line, re.I)) < 2):
                         cls_header, grp_header = [], []
@@ -251,7 +269,15 @@ def extract_doc(pdf_path, dok_id, start_page=None):
     # Status BHP: catatan "Komponen tarif ... kelas X ..." bisa muncul di akhir bagian,
     # sesudah tabel lain. Terapkan ke blok terdekat sebelumnya dengan kelas X di bagian yang sama.
     def status(txt):
-        return "tidak" if BHP_NO.search(txt) else ("ya" if BHP_YES.search(txt) else None)
+        for mm in BHP_NO.finditer(txt):
+            if re.search(r"kontras", txt[max(0, mm.start() - 40):mm.start()], re.I):
+                continue
+            if re.search(r"(tarif|biaya|komponen)", txt[max(0, mm.start() - 150):mm.end()], re.I):
+                return "tidak"
+        for mm in BHP_YES.finditer(txt):
+            if re.search(r"(tarif|biaya|komponen)", txt[max(0, mm.start() - 150):mm.start()], re.I):
+                return "ya"
+        return None
     bhp = {}
     for b in blocks:
         segs = re.split(r"(?=Komponen tarif)", b["text"])
@@ -271,7 +297,14 @@ def extract_doc(pdf_path, dok_id, start_page=None):
             bhp.setdefault(target, st)
     bhp = {b["id"]: bhp.get(b["id"], "tidak_jelas") for b in blocks}
     for r in rows:
-        r["termasuk_bhp"] = bhp[r["_blok"]]
+        if r.get("_bhp_lokal"):
+            r["termasuk_bhp"], r["sumber_bhp"] = r.pop("_bhp_lokal"), "catatan_lokal"
+        elif bhp[r["_blok"]] != "tidak_jelas":
+            r["termasuk_bhp"], r["sumber_bhp"] = bhp[r["_blok"]], "catatan_bagian"
+        elif bhp_default:
+            r["termasuk_bhp"], r["sumber_bhp"] = bhp_default, "pasal_dokumen"
+        else:
+            r["termasuk_bhp"], r["sumber_bhp"] = "tidak_jelas", ""
     return rows
 
 
@@ -293,7 +326,7 @@ def golongan_rows():
                  kategori_asli=f"Tindakan medis {r.jenis}", nama_asli=r.nama_asli, kelas="",
                  komponen="total", n_kolom_harga=0, harga=None, sumber_harga="via_golongan",
                  golongan=r.golongan_id, paket_id="", metode_ekstraksi="pdf_teks",
-                 termasuk_bhp="tidak", _flags=[] if r.golongan_id in set(gt_out.golongan_id) else ["golongan_tanpa_tarif"],
+                 termasuk_bhp="tidak", sumber_bhp="catatan_bagian", _flags=[] if r.golongan_id in set(gt_out.golongan_id) else ["golongan_tanpa_tarif"],
                  baris_mentah=f"{r.jenis} / {r.golongan}: {r.nama_asli}") for r in ga.itertuples()]
     return gt_out, rows
 
@@ -308,7 +341,8 @@ def load_config(only=None):
     dok = []
     for r in cfg.itertuples():
         d = dict(dokumen_id=r.dokumen_id, jenis=r.jenis, nomor=r.nomor, tahun=r.tahun, cakupan=r.cakupan,
-                 tgl_berlaku=r.tgl_berlaku, file=os.path.basename(r.file), catatan=r.catatan)
+                 tgl_berlaku=r.tgl_berlaku, file=os.path.basename(r.file), catatan=r.catatan,
+                 bhp_dokumen=getattr(r, "bhp_dokumen", ""), bukti_bhp=getattr(r, "bukti_bhp", ""))
         for k, v in extra_dok.get(r.dokumen_id, {}).items():
             d.setdefault(k, v)
         dok.append(d)
@@ -326,7 +360,8 @@ def main(out_name="tarif_standar.xlsx", only=None):
     cfg, DOK_OUT, RS_OUT, DRS_OUT = load_config(only)
     rows = []
     for r in cfg.itertuples():
-        rows += extract_doc(os.path.join(ROOT, r.file), r.dokumen_id, int(r.hlm_lampiran) if r.hlm_lampiran else None)
+        rows += extract_doc(os.path.join(ROOT, r.file), r.dokumen_id, int(r.hlm_lampiran) if r.hlm_lampiran else None,
+                            getattr(r, "bhp_dokumen", ""))
     if "PERBUP-REMBANG-16-2023" in set(cfg.dokumen_id):
         gol, grows = golongan_rows()
     else:
@@ -354,7 +389,7 @@ def main(out_name="tarif_standar.xlsx", only=None):
     pref.update({"PERBUP-CIANJUR-3-2025": "CJR25", "PERBUP-REMBANG-16-2023": "RBG23"})
     df["tarif_id"] = [f"{pref[d]}-{i:05d}" for i, d in zip(df.groupby("dokumen_id").cumcount() + 1, df.dokumen_id)]
     cols = ["tarif_id", "dokumen_id", "halaman", "kategori_asli", "nama_asli", "nama_norm",
-            "kategori_std", "golongan", "kelas", "komponen", "termasuk_bhp", "satuan", "harga",
+            "kategori_std", "golongan", "kelas", "komponen", "termasuk_bhp", "sumber_bhp", "satuan", "harga",
             "sumber_harga", "paket_id", "metode_ekstraksi", "flag_qc", "n_kolom_harga", "baris_mentah"]
     tarif = df[cols]
 
