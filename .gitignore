@@ -16,3 +16,10 @@ Loinc_2.83/**
 
 !Loinc_2.83/AccessoryFiles/PanelsAndForms/
 !Loinc_2.83/AccessoryFiles/PanelsAndForms/PanelsAndForms.csv
+
+
+!bpk_v3/list.csv
+!bpk_v3/metadata.csv
+!bpk_v3/metadata_dryrun.csv
+!bpk_v3/details_done.txt
+.~lock.*#
