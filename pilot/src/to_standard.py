@@ -101,17 +101,16 @@ def clean_name(name):
 
 
 def find_annex_page(pdf):
-    """Halaman pertama yang diawali LAMPIRAN dan diikuti tabel harga; jika tidak ada, halaman
-    pertama dengan >= 5 angka harga."""
+    """Halaman awal tabel tarif: yang lebih awal di antara (a) halaman pertama yang diawali LAMPIRAN dan
+    diikuti tabel harga, dan (b) halaman pertama dengan >= 5 angka harga. (b) mencegah tabel terlewat
+    bila kata LAMPIRAN baru muncul di halaman belakang (mis. Lampiran II)."""
     texts = [(p.extract_text() or "") for p in pdf.pages]
     cnt = [len(PRICE_TOK.findall(t)) for t in texts]
-    for i, t in enumerate(texts):
-        if re.search(r"\bLAMPIRAN\b", t[:400], re.I) and sum(cnt[i:i + 2]) >= 5:
-            return i + 1
-    for i, c in enumerate(cnt):
-        if c >= 5:
-            return i + 1
-    return 1
+    lamp = next((i + 1 for i, t in enumerate(texts)
+                 if re.search(r"\bLAMPIRAN\b", t[:400], re.I) and sum(cnt[i:i + 2]) >= 5), None)
+    first = next((i + 1 for i, c in enumerate(cnt) if c >= 5), None)
+    cands = [x for x in (lamp, first) if x]
+    return min(cands) if cands else 1
 
 
 # --- format kelas berjajar ke samping & angka terpecah spasi -------------------------------
@@ -142,6 +141,11 @@ def header_groups(line):
 
 def _close(a, b):
     return abs(a - b) <= max(2, 0.005 * max(a, b))
+
+
+def total_first(p):
+    """Urutan kolom total, sarana, pelayanan (total di depan)."""
+    return len(p) >= 3 and _close(sum(p[1:]), p[0])
 
 
 def sum_ok(p):
@@ -241,6 +245,9 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                         flags.append("nama_terpotong")
                 else:
                     parent = name
+                if re.search(r"(^|\s)(sebesar|adalah|yaitu|ditetapkan|dikenakan|setinggi|paling (tinggi|rendah)|"
+                             r"maksimal|minimal|ayat|pasal)\s*$", nama, re.I):
+                    continue  # kalimat pasal, bukan item tarif
                 if FRAGMENT.match(nama):
                     flags.append("nama_terpotong")
                 if re.search(r"(^|\s)\.\d{3}", raw):
@@ -253,6 +260,14 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                     pairs = list(zip(cls_header, prices))
                 if pairs:
                     flags = flags + ["dari_kolom_kelas"]
+                elif (len(prices) >= 6 and len(prices) % 3 == 0 and sum_ok(prices)
+                      and not _close(sum(prices[:-1]), prices[-1])):
+                    # beberapa grup (sarana, pelayanan, total) berjajar tanpa judul kelas yang terbaca
+                    pairs = [(f"grup {k + 1} (kelas tak diketahui)", prices[3 * k + 2]) for k in range(len(prices) // 3)]
+                    flags.append("kelas_grup_tanpa_judul")
+                elif total_first(prices) and not sum_ok(prices):
+                    pairs = [(kelas or "Non-kelas", prices[0])]
+                    flags.append("total_di_depan")
                 else:
                     pairs = [(kelas or "Non-kelas", prices[-1])]
                     if len(prices) == 3 and not sum_ok(prices):

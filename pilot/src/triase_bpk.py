@@ -89,27 +89,6 @@ NONMED = re.compile(r"praktik|praktek|magang|penelitian|studi banding|mahasiswa|
 CLEAN_WORD = re.compile(r"^[A-Za-z][a-z]{2,}[.,:)]?$|^[A-Z]{2,}[.,:)]?$|^\(?[A-Za-z][a-z]+\)?$")
 
 
-def text_quality(path):
-    """Mutu lapisan teks pada baris item: persen kata wajar di bagian nama, dan persen baris non-medis."""
-    import pymupdf
-    doc = pymupdf.open(path)
-    items = []
-    for page in doc:
-        if len((page.get_text() or "").strip()) >= 50:
-            items += [l for l in page_lines(page) if ITEM.search(l)]
-    if not items:
-        return 0.0, 0.0, 0
-    good = tot = 0
-    for l in items:
-        name = re.split(r"(?:Rp\.?\s*)?\d{1,3}(?:[.,]\d{3})", l)[0]
-        for w in name.split():
-            if re.search(r"[A-Za-z]", w):
-                tot += 1
-                good += bool(CLEAN_WORD.match(w))
-    nonmed = sum(1 for l in items if NONMED.search(l)) / len(items)
-    return (good / tot if tot else 0.0), nonmed, len(items)
-
-
 NOSEP = re.compile(r"[A-Za-z]{3,}.*?(?<![\d.,])(\d{4,7})(?:,-|,00)?\s*$")
 NOT_PRICE_LINE = re.compile(r"tahun|nomor|nip\b|no\.|pasal|lembaran|tambahan|kode pos|tanggal|januari|februari|maret|april|"
                             r"mei|juni|juli|agustus|september|oktober|nopember|november|desember", re.I)
@@ -127,6 +106,53 @@ def count_nosep(path):
             if m and 1000 <= int(m.group(1)) <= 50_000_000 and not NOT_PRICE_LINE.search(l):
                 n += 1
     return n
+
+
+PRICE_LOOSE = r"\d{1,3}(?:[.,]\d{3})+(?:[.,]\d{2})?(?:,-)?"
+ITEM_LOOSE = re.compile(rf"[A-Za-z]{{3,}}.*?(?:Rp\.?\s*)?({PRICE_LOOSE})\s*,?-?\s*"
+                        rf"(?:(?:per|/)\s*[A-Za-z][\w ./()-]{{0,30}})?$", re.I)
+
+
+def count_items_loose(path):
+    """Seperti count_items, tetapi menerima satuan di ujung baris ('Per Tindakan', '/hari') dan desimal ',00'/'.00'."""
+    import pymupdf
+    n = med = 0
+    for page in pymupdf.open(path):
+        if len((page.get_text() or "").strip()) < 50:
+            continue
+        for l in page_lines(page):
+            m = ITEM_LOOSE.search(l)
+            if not m:
+                continue
+            raw = re.sub(r"[.,]\d{2}$", "", m.group(1).replace(",-", ""))
+            if int(re.sub(r"[.,]", "", raw)) >= 1000 and not NOT_PRICE_LINE.search(l):
+                n += 1
+                med += bool(MED.search(l))
+    return n, med
+
+
+def text_quality(path):
+    """Mutu lapisan teks pada baris item: persen kata wajar di bagian nama, dan persen baris non-medis.
+    Baris item dikenali dengan pola baku, pola longgar (satuan/desimal), atau harga tanpa titik ribuan."""
+    import pymupdf
+    doc = pymupdf.open(path)
+    items = []
+    for page in doc:
+        if len((page.get_text() or "").strip()) >= 50:
+            for l in page_lines(page):
+                if ITEM.search(l) or ITEM_LOOSE.search(l) or (NOSEP.search(l) and not NOT_PRICE_LINE.search(l)):
+                    items.append(l)
+    if not items:
+        return 0.0, 0.0, 0
+    good = tot = 0
+    for l in items:
+        name = re.split(r"(?:Rp\.?\s*)?\d{1,3}(?:[.,]\d{3})|(?<![\d.,])\d{4,7}\b", l)[0]
+        for w in name.split():
+            if re.search(r"[A-Za-z]", w):
+                tot += 1
+                good += bool(CLEAN_WORD.match(w))
+    nonmed = sum(1 for l in items if NONMED.search(l)) / len(items)
+    return (good / tot if tot else 0.0), nonmed, len(items)
 
 
 _ENGINE = None
