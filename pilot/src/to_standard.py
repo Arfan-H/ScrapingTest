@@ -24,6 +24,7 @@ from normalize import norm_name, std_category  # noqa: E402
 
 BASE = os.path.join(os.path.dirname(__file__), "..")
 OUT = os.path.join(BASE, "out")
+ROOT = os.path.join(BASE, "..")
 
 RS = [
     dict(rs_id="RSUD-CIMACAN", nama_rs="RSUD Cimacan", kepemilikan="kab/kota", kelas_rs="C",
@@ -86,12 +87,87 @@ def std_kelas(s):
     return s.strip()
 
 
-def extract_doc(pdf_path, dok_id, start_page):
+PRICE_TOK = re.compile(r"(?:Rp\.?\s*)?\d{1,3}(?:[.,]\d{3})+(?:,-|,00)?")
+
+
+def clean_name(name):
+    """Bersihkan sisa OCR/tabel: garis tegak, harga yang ikut terbaca di nama, 'Ill' untuk III."""
+    name = name.replace("|", " ").replace("{", " ")
+    name = PRICE_TOK.sub(" ", name)
+    name = re.sub(r"\bRp\.?\s*$", " ", name)
+    name = re.sub(r"\b(I[lI1]{2})\b", "III", name)
+    name = re.sub(r"\b(I[l1])\b", "II", name)
+    return re.sub(r"\s+", " ", name).strip(" :-.;")
+
+
+def find_annex_page(pdf):
+    """Halaman pertama yang diawali LAMPIRAN dan diikuti tabel harga; jika tidak ada, halaman
+    pertama dengan >= 5 angka harga."""
+    texts = [(p.extract_text() or "") for p in pdf.pages]
+    cnt = [len(PRICE_TOK.findall(t)) for t in texts]
+    for i, t in enumerate(texts):
+        if re.search(r"\bLAMPIRAN\b", t[:400], re.I) and sum(cnt[i:i + 2]) >= 5:
+            return i + 1
+    for i, c in enumerate(cnt):
+        if c >= 5:
+            return i + 1
+    return 1
+
+
+# --- format kelas berjajar ke samping & angka terpecah spasi -------------------------------
+SPLIT_NUM = re.compile(r"(?<![\d.,])(\d) (\d{1,2}(?:[.,]\d{3})+)(?!\d)")
+CLASS_TOK = re.compile(
+    r"(?:Kela[s$5]|K[l1]as|Kls)\s*(III|II|I|111|11|1|Ill|Il|l)\b|VVIP|VIP\s*[AB]\b|VIP|Utama|Perinatal|Isolasi|"
+    r"PICU\s*/\s*NICU|ICU\s*/?\s*ICCU|ICU|HCU", re.I)
+GROUP_TOK = re.compile(r"KOMPONEN\s+TARIF\s+(KELAS|UTAMA|VVIP|VIP\s*[AB]?)", re.I)
+TABLE_HEAD = re.compile(r"\b(JENIS|NO)\b.*\b(TARIF|JASA|TOTAL|JUMLAH|LAYANAN|PELAYANAN|PEMERIKSAAN|TINDAKAN)\b", re.I)
+ROMAN = {"III": "III", "111": "III", "ILL": "III", "II": "II", "11": "II", "IL": "II", "I": "I", "1": "I", "L": "I"}
+
+
+def header_classes(line):
+    out = []
+    for m in CLASS_TOK.finditer(line):
+        if m.group(1):
+            out.append(ROMAN.get(m.group(1).upper(), m.group(1)))
+        else:
+            t = re.sub(r"\s+", "", m.group(0)).upper()
+            out.append({"UTAMA": "Utama", "PERINATAL": "Perinatal", "ISOLASI": "Isolasi"}.get(t, t.replace("VIPA", "VIP A").replace("VIPB", "VIP B")))
+    return out
+
+
+def header_groups(line):
+    lab = {"KELAS": "Kelas III-I", "UTAMA": "Utama"}
+    return [lab.get(re.sub(r"\s+", " ", g.upper()), re.sub(r"\s+", " ", g.upper())) for g in GROUP_TOK.findall(line)]
+
+
+def _close(a, b):
+    return abs(a - b) <= max(2, 0.005 * max(a, b))
+
+
+def sum_ok(p):
+    if len(p) >= 3 and _close(sum(p[:-1]), p[-1]):
+        return True
+    return len(p) >= 6 and len(p) % 3 == 0 and all(_close(p[i] + p[i + 1], p[i + 2]) for i in range(0, len(p), 3))
+
+
+def parse_prices(line):
+    m = TRAIL_PRICES.search(line)
+    if not m:
+        return None, [], False
+    toks = PRICE_RE.findall(m.group(1))
+    lead0 = any(re.match(r"0[.,]?\d", t) for t in toks)
+    return m, [p for p in (to_int(t) for t in toks) if 1_000 <= p <= 200_000_000], lead0
+
+
+def extract_doc(pdf_path, dok_id, start_page=None):
     rows, blocks = [], []
     block = dict(id=0, kelas="", text="", top=True, section=0)
     blocks.append(block)
     category, pending, parent = "", None, ""
+    cls_header, grp_header = [], []
     with pdfplumber.open(pdf_path) as pdf:
+        if not start_page:
+            start_page = find_annex_page(pdf)
         for pno in range(start_page - 1, len(pdf.pages)):
             for raw in (pdf.pages[pno].extract_text() or "").splitlines():
                 line = fix_numbers(raw.strip())
@@ -105,16 +181,29 @@ def extract_doc(pdf_path, dok_id, start_page):
                                  top=top or not blocks, section=(len(blocks) if top else block.get("section", 0)))
                     blocks.append(block)
                 block["text"] += " " + line
-                m = TRAIL_PRICES.search(line)
+                m, prices, lead0 = parse_prices(line)
+                merged = SPLIT_NUM.sub(r"\1\2", line)
+                if merged != line:
+                    m2, p2, _ = parse_prices(merged)
+                    if p2 and (lead0 or (sum_ok(p2) and not sum_ok(prices))
+                               or (cls_header and len(p2) == len(cls_header) != len(prices))):
+                        line, m, prices = merged, m2, p2
                 if not m:
+                    # judul tabel baru tanpa kelas -> lupakan judul kelas sebelumnya
+                    if (TABLE_HEAD.search(line) and len(header_classes(line)) < 3 and not header_groups(line)
+                            and len(re.findall(r"\b(tarif|jumlah)\b", line, re.I)) < 2):
+                        cls_header, grp_header = [], []
+                    if len(header_groups(line)) >= 2:
+                        grp_header, cls_header = header_groups(line), []
+                    elif len(header_classes(line)) >= 3:
+                        cls_header, grp_header = header_classes(line), []
                     body = NUMBERING.sub("", line).strip(" :-.")
                     if is_header(body):
                         category, pending = body[:60], None
                     elif NUMBERING.match(line) and len(body) >= 3:
                         pending = body
                     continue
-                name = NUMBERING.sub("", line[: m.start()].strip(" :-.")).strip(" :-.")
-                prices = [p for p in (to_int(t) for t in PRICE_RE.findall(m.group(1))) if 1_000 <= p <= 200_000_000]
+                name = clean_name(NUMBERING.sub("", clean_name(line[: m.start()])).strip(" :-."))
                 if not prices:
                     continue
                 if len(re.sub(r"[^A-Za-z]", "", name)) < 3 and pending:
@@ -138,12 +227,27 @@ def extract_doc(pdf_path, dok_id, start_page):
                     flags.append("nama_terpotong")
                 if re.search(r"(^|\s)\.\d{3}", raw):
                     flags.append("harga_ambigu")
-                rows.append(dict(
-                    dokumen_id=dok_id, halaman=pno + 1, kategori_asli=category,
-                    nama_asli=nama, kelas=kelas or "Non-kelas", komponen="total",
-                    n_kolom_harga=len(prices), harga=prices[-1], sumber_harga="langsung",
-                    golongan="", paket_id="", metode_ekstraksi="pdf_teks",
-                    _blok=block["id"], _flags=flags, baris_mentah=raw.strip()))
+                # tentukan arti kolom harga
+                pairs = None  # [(kelas, harga)]
+                if grp_header and len(prices) == 3 * len(grp_header) and sum_ok(prices):
+                    pairs = [(g, prices[3 * k + 2]) for k, g in enumerate(grp_header)]
+                elif cls_header and len(prices) == len(cls_header) and len(prices) >= 2 and not sum_ok(prices):
+                    pairs = list(zip(cls_header, prices))
+                if pairs:
+                    flags = flags + ["dari_kolom_kelas"]
+                else:
+                    pairs = [(kelas or "Non-kelas", prices[-1])]
+                    if len(prices) == 3 and not sum_ok(prices):
+                        flags.append("komponen_tidak_jumlah")
+                    elif len(prices) >= 4 and not sum_ok(prices):
+                        flags.append("kolom_harga_tak_dikenal")
+                for kel, harga in pairs:
+                    rows.append(dict(
+                        dokumen_id=dok_id, halaman=pno + 1, kategori_asli=category,
+                        nama_asli=nama, kelas=kel or "Non-kelas", komponen="total",
+                        n_kolom_harga=len(prices), harga=harga, sumber_harga="langsung",
+                        golongan="", paket_id="", metode_ekstraksi="pdf_teks",
+                        _blok=block["id"], _flags=list(flags), baris_mentah=raw.strip()))
     # Status BHP: catatan "Komponen tarif ... kelas X ..." bisa muncul di akhir bagian,
     # sesudah tabel lain. Terapkan ke blok terdekat sebelumnya dengan kelas X di bagian yang sama.
     def status(txt):
@@ -194,10 +298,39 @@ def golongan_rows():
     return gt_out, rows
 
 
-def main():
-    rows = extract_doc(f"{BASE}/raw_pdf/cianjur_cimacan_3_2025.pdf", "PERBUP-CIANJUR-3-2025", 7)
-    rows += extract_doc(f"{BASE}/raw_pdf/rembang16_2023.pdf", "PERBUP-REMBANG-16-2023", 9)
-    gol, grows = golongan_rows()
+def load_config(only=None):
+    cfg = pd.read_csv(f"{BASE}/config/dokumen.csv", dtype=str).fillna("")
+    cfg = cfg[cfg.aktif == "ya"]
+    if only:
+        cfg = cfg[cfg.dokumen_id.isin(only)]
+    extra_dok = {d["dokumen_id"]: d for d in DOK}
+    extra_rs = {r["rs_id"]: r for r in RS}
+    dok = []
+    for r in cfg.itertuples():
+        d = dict(dokumen_id=r.dokumen_id, jenis=r.jenis, nomor=r.nomor, tahun=r.tahun, cakupan=r.cakupan,
+                 tgl_berlaku=r.tgl_berlaku, file=os.path.basename(r.file), catatan=r.catatan)
+        for k, v in extra_dok.get(r.dokumen_id, {}).items():
+            d.setdefault(k, v)
+        dok.append(d)
+    rs = []
+    for rid, g in cfg.groupby("rs_id", sort=False):
+        r = g.iloc[0]
+        rs.append(dict(rs_id=rid, nama_rs=r.nama_rs, kepemilikan="kab/kota", kelas_rs=r.kelas_rs,
+                       kab_kota=r.kab_kota, provinsi=r.provinsi,
+                       catatan=extra_rs.get(rid, {}).get("catatan", "Kelas RS belum diverifikasi" if not r.kelas_rs else "")))
+    drs = [dict(dokumen_id=r.dokumen_id, rs_id=r.rs_id, dasar=f"Cakupan: {r.cakupan}") for r in cfg.itertuples()]
+    return cfg, dok, rs, drs
+
+
+def main(out_name="tarif_standar.xlsx", only=None):
+    cfg, DOK_OUT, RS_OUT, DRS_OUT = load_config(only)
+    rows = []
+    for r in cfg.itertuples():
+        rows += extract_doc(os.path.join(ROOT, r.file), r.dokumen_id, int(r.hlm_lampiran) if r.hlm_lampiran else None)
+    if "PERBUP-REMBANG-16-2023" in set(cfg.dokumen_id):
+        gol, grows = golongan_rows()
+    else:
+        gol, grows = pd.DataFrame(), []
     df = pd.DataFrame(rows + grows)
     df["nama_norm"] = df.nama_asli.map(norm_name)
     df["kategori_std"] = [std_category(k, n) for k, n in zip(df.kategori_asli, df.nama_norm)]
@@ -217,7 +350,8 @@ def main():
                 df.at[i, "_flags"] = df.at[i, "_flags"] + ["urutan_kelas_aneh"]
     df["flag_qc"] = df["_flags"].map(lambda f: ";".join(dict.fromkeys(f)) or "ok")
 
-    pref = {"PERBUP-CIANJUR-3-2025": "CJR25", "PERBUP-REMBANG-16-2023": "RBG23"}
+    pref = {d: re.sub(r"[^A-Z0-9]", "", d.split("-")[1])[:6] + d[-2:] for d in df.dokumen_id.unique()}
+    pref.update({"PERBUP-CIANJUR-3-2025": "CJR25", "PERBUP-REMBANG-16-2023": "RBG23"})
     df["tarif_id"] = [f"{pref[d]}-{i:05d}" for i, d in zip(df.groupby("dokumen_id").cumcount() + 1, df.dokumen_id)]
     cols = ["tarif_id", "dokumen_id", "halaman", "kategori_asli", "nama_asli", "nama_norm",
             "kategori_std", "golongan", "kelas", "komponen", "termasuk_bhp", "satuan", "harga",
@@ -229,12 +363,12 @@ def main():
            .reset_index())
     pem = pem.assign(kode_sistem="", kode="", nama_kode="", skor="", status="belum", reviewer="", catatan="")
 
-    path = f"{OUT}/tarif_standar_pilot.xlsx"
+    path = f"{OUT}/{out_name}"
     with pd.ExcelWriter(path, engine="openpyxl") as xw:
         tarif.to_excel(xw, sheet_name="tarif", index=False)
-        pd.DataFrame(RS).to_excel(xw, sheet_name="rumah_sakit", index=False)
-        pd.DataFrame(DOK).to_excel(xw, sheet_name="dokumen", index=False)
-        pd.DataFrame(DOKUMEN_RS).to_excel(xw, sheet_name="dokumen_rs", index=False)
+        pd.DataFrame(RS_OUT).to_excel(xw, sheet_name="rumah_sakit", index=False)
+        pd.DataFrame(DOK_OUT).to_excel(xw, sheet_name="dokumen", index=False)
+        pd.DataFrame(DRS_OUT).to_excel(xw, sheet_name="dokumen_rs", index=False)
         gol.to_excel(xw, sheet_name="golongan_tarif", index=False)
         pem.to_excel(xw, sheet_name="pemetaan", index=False)
         for ws in xw.book.worksheets:
@@ -242,7 +376,7 @@ def main():
             for col in ws.columns:
                 w = max(len(str(c.value or "")) for c in list(col)[:300])
                 ws.column_dimensions[col[0].column_letter].width = min(max(10, w + 2), 48)
-    tarif.to_csv(f"{OUT}/tarif_standar_pilot.csv", index=False)
+    tarif.to_csv(f"{OUT}/{out_name.replace('.xlsx', '.csv')}", index=False)
 
     print(f"-> {path}")
     print("baris tarif:", len(tarif), "| per dokumen:", tarif.groupby("dokumen_id").size().to_dict())
@@ -253,4 +387,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--out", default="tarif_standar.xlsx")
+    ap.add_argument("--only", nargs="*", help="dokumen_id yang diproses (default: semua yang aktif)")
+    a = ap.parse_args()
+    main(a.out, a.only)
