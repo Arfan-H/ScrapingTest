@@ -61,23 +61,41 @@ DOK = [
 MAJOR = re.compile(
     r"^([a-z]\.\s+LAYANAN\b|\d+\.\s*[A-Z][A-Z /&()-]{5,}$|\d+\.\s*Tarif\s+[A-Z]|Tarif\s+[A-Z]|Paragraf\s+\d+)")
 KELAS_IN_HEAD = re.compile(r"\bKELAS\s+(III|II|I)\b", re.I)
+# kata "kelas" termasuk salah OCR yang sering muncul (Ketas, Kelss, Klas, Kls)
+KELAS_W = r"(?:kelas|kelss|ketas|kclas|kelaa|klas|kls)"
 KELAS_ROW = re.compile(
-    r"^(kelas\s*(iii|ii|i|utama)|iii|ii|i|vvip|vip(\s*(pratama|madya|utama|a|b))?(\s*&\s*madya)?|"
+    rf"^({KELAS_W}\s*(iii|ill|ii|i)\s*[ab]?(\s*/\s*(rawat jalan|poli\w*|igd|iii|ii|i))?|({KELAS_W}\s*)?utama|iii|ii|i|"
+    rf"({KELAS_W}\s*)?vvip|({KELAS_W}\s*)?vip(\s*(pratama|madya|utama|a|b))?(\s*&\s*madya)?|"
     r"presiden suite|vvip\s*/\s*presiden suite|icu|hcu|picu|nicu|semua kelas|one day( surgery)?)$", re.I)
+# kelas di ujung nama ("Kecil VIP", "Rawat Inap Kelas II")
+KELAS_SUFFIX = re.compile(rf"^(.*?[A-Za-z].*?)\s*[-,]?\s+((?:{KELAS_W}\s*(?:III|II|I|utama|vvip|vip)\b(?:\s*[AB]\b)?)|"
+                          r"super\s*vip|vvip|vip(?:\s*[AB])?)$", re.I)
 FRAGMENT = re.compile(
-    r"^(ringan|sedang|berat|kecil|besar|khusus|sederhana|canggih|utama|tindakan|pemeriksaan|reguler( / non)?|"
-    r"spesialis|subspesialis|lengkap|pagi|sore|umum)$", re.I)
+    r"^((ringan|sedang|berat|kecil|besar|khusus|sederhana|canggih)(\s+[A-D1-4])?|utama|tindakan|pemeriksaan|"
+    r"reguler( / non)?|spesialis|subspesialis|lengkap|pagi|sore|umum|(dengan|tanpa) rujukan|pasien (baru|lama)|"
+    r"baru|lama|anak|dewasa|bayi|elektif|cito)$", re.I)
 BHP_NO = re.compile(r"(tidak|belum)\s+termasuk[^.]{0,80}\bBHP\b|ditambah\s*alat\s*dan\s*bahan|"
                     r"diluar\s+dari\s+obat\s+dan\s+barang\s+habis\s+pakai", re.I)
 BHP_YES = re.compile(r"(?<!tidak )(?<!belum )termasuk\s+(biaya\s+)?BHP", re.I)
 KELAS_STD = {"iii": "III", "ii": "II", "i": "I", "kelas iii": "III", "kelas ii": "II", "kelas i": "I",
-             "kelas utama": "Utama", "vvip": "VVIP", "vip": "VIP", "presiden suite": "Presiden Suite",
+             "kelas utama": "Utama", "utama": "Utama", "vvip": "VVIP", "vip": "VIP", "presiden suite": "Presiden Suite",
              "one day": "ODS", "one day surgery": "ODS", "icu": "ICU", "hcu": "HCU", "nicu": "NICU",
              "picu": "PICU", "semua kelas": "Semua kelas"}
 
 
 def std_kelas(s):
     t = re.sub(r"\s+", " ", s.strip().lower())
+    t = re.sub(rf"^{KELAS_W}\b", "kelas", t)
+    t = re.sub(r"\bill$", "iii", t)
+    t = re.sub(r"[()]", "", t)
+    t = re.sub(r"\s*/\s*(rawat jalan|poli\w*|igd)$", "", t)
+    m = re.fullmatch(r"kelas\s*(iii|ii|i)\s*/\s*(iii|ii|i)", t)
+    if m:
+        return f"{m.group(1).upper()}-{m.group(2).upper()}"
+    m = re.fullmatch(r"kelas\s*(iii|ii|i)\s*([ab])", t)
+    if m:
+        return f"{m.group(1).upper()} {m.group(2).upper()}"
+    t = re.sub(r"^kelas\s+(vvip|vip|utama)", r"\1", t)
     if t in KELAS_STD:
         return KELAS_STD[t]
     if t.startswith("vip"):
@@ -131,7 +149,7 @@ SPLIT_NUM = re.compile(r"(?<![\d.,])(\d) (\d{1,2}(?:[.,]\d{3})+)(?!\d)")
 CLASS_TOK = re.compile(
     # kelas gabungan dulu ("Kelas I & II", "Kelas I/II", "Kelas II, I") -> satu kolom
     r"(?:Kela[s$58]|K[l1]as|Kls|Kalas)\s*(?P<g1>III|II|I)\s*(?:&|dan|/|,|-)\s*(?:Kelas\s*)?(?P<g2>III|II|I)\b|"
-    r"(?:Kela[s$58]|K[l1]as|Kls|Kalas)\s*(?P<n>III|II|I|111|11|1|Ill|Il|l|3|2)\b|Utama\s*(?P<u>II|I)\b|Super\s*VIP|VIP\s*/\s*Utama|Utama\s*/\s*VIP|VIP\s*Utama|NON[ -]?VIP|VVIP|"
+    r"(?:Kela[s$58]|K[l1]as|Kls|Kalas)\s*(?P<n>III|II|I|111|11|1|Ill|Il|l|3|2)\b|Utama\s*(?P<u>II|I)\b|Kelas\s+(?P<rs>[ABCD])\b(?!\s*\.)|Super\s*VIP|VIP\s*/\s*Utama|Utama\s*/\s*VIP|VIP\s*Utama|NON[ -]?VIP|VVIP|"
     r"VIP\s*[AB]\b|VIP|Utama|Teladan|PAV(?:ILIUN)?\b|Perinatal|Isolasi|PICU\s*/\s*NICU|ICU\s*/?\s*ICCU|ICU|HCU", re.I)
 # angka romawi tanpa kata "Kelas" di baris judul tabel ("NO JENIS PEMERIKSAAN VIP I II III/POLI/IGD")
 BARE_CLASS = re.compile(r"(?<![\w/])(III|II[AB]|II|I[AB]|I|Ill|VVIP|VIP\s*[AB]|VIP|Utama|ICU|HCU)(?!\w)", re.I)
@@ -150,6 +168,8 @@ def header_classes(line):
     for m in CLASS_TOK.finditer(line):
         if m.group("g1"):
             out.append(f"{ROMAN[m.group('g1').upper()]}-{ROMAN[m.group('g2').upper()]}")
+        elif m.group("rs"):
+            out.append(f"RS kelas {m.group('rs').upper()}")
         elif m.group("u"):
             out.append(f"Utama {m.group('u').upper()}")
         elif m.group("n"):
@@ -224,12 +244,14 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
     blocks.append(block)
     category, pending, parent, head_ctx = "", None, "", ""
     cls_header, grp_header = [], []
+    kelas_ctx = ""  # dari baris "Kelas I" tanpa harga; berlaku sampai judul bagian/tabel berikutnya
     np_run = []  # baris tanpa harga sejak baris berharga terakhir (judul tabel bisa terbelah beberapa baris)
     rows_at_hdr = 0  # jumlah baris saat judul kelas terakhir dibaca (judul bertingkat tidak saling menghapus)
     with pdfplumber.open(pdf_path) as pdf:
         if not start_page:
             start_page = find_annex_page(pdf)
         for pno in range(start_page - 1, len(pdf.pages)):
+            kelas_ctx = ""  # konteks kelas tidak menyeberang halaman
             for raw in page_text(pdf.pages[pno]).splitlines():
                 line = fix_numbers(raw.strip())
                 if not line:
@@ -274,8 +296,13 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                     elif len(hc) >= 2:
                         cls_header, grp_header, rows_at_hdr = hc, [], len(rows)
                     body = NUMBERING.sub("", line).strip(" :-.")
+                    if TABLE_HEAD.search(line) or MAJOR.match(line):
+                        kelas_ctx = ""
+                    if KELAS_ROW.match(body) and re.match(KELAS_W, body, re.I):
+                        kelas_ctx = std_kelas(body)
+                        continue
                     if is_header(body):
-                        category, pending = body[:60], None
+                        category, pending, kelas_ctx = body[:60], None, ""
                     elif NUMBERING.match(line) and len(body) >= 3:
                         pending = body
                     # judul item/kelompok untuk baris berikutnya ("1. Tindakan Operatif" -> "Sederhana 100.000")
@@ -283,7 +310,9 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                                 or re.search(r"\b(jasa|sarana|komponen)\b", line, re.I))
                     if (not hdr_like and len(re.sub(r"[^A-Za-z]", "", body)) >= 4 and len(body) <= 90
                             and (NUMBERING.match(line) or is_header(body) or line.rstrip().endswith(":"))
-                            and not re.search(r"\b(adalah|sebagaimana|dikenakan|ditetapkan|ayat|pasal)\b", body, re.I)):
+                            and not re.search(r"\b(adalah|sebagaimana|dikenakan|ditetapkan|ayat|pasal|rp)\b", body, re.I)
+                            and not re.match(KELAS_W, body, re.I) and not KELAS_ROW.match(body)
+                            and not re.fullmatch(r"(tarif|jumlah|keterangan|total|harga)( \(rp\.?\))?", body, re.I)):
                         if FRAGMENT.match(body) and head_ctx:
                             parent = f"{head_ctx} - {body}"
                         else:
@@ -305,9 +334,9 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                 if len(re.sub(r"[^A-Za-z]", "", name)) < 3:
                     continue
                 flags = []
-                kelas = block["kelas"]
+                kelas = kelas_ctx or block["kelas"]
                 nama = name
-                if KELAS_ROW.match(name):
+                if KELAS_ROW.match(re.sub(r"[()]", "", name)):
                     kelas = std_kelas(name)
                     if parent:
                         nama = parent
@@ -315,6 +344,14 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                     else:
                         flags.append("nama_terpotong")
                 else:
+                    ms = KELAS_SUFFIX.match(name)
+                    pre = re.sub(rf"(\s+\d+\.?|\s+{KELAS_W})$", "", ms.group(1), flags=re.I).strip(" -,") if ms else ""
+                    core = re.sub(r"\b(kelas|utama|vip|vvip|super|pratama|madya)\b", "", pre, flags=re.I)
+                    if (ms and len(prices) <= 4 and len(re.sub(r"[^A-Za-z]", "", core)) >= 4
+                            and not re.search(r"([/&]|\bnon)\s*$", ms.group(1), re.I)):
+                        kelas, name = std_kelas(ms.group(2)), pre
+                        nama = name
+                        flags.append("kelas_dari_nama")
                     if FRAGMENT.match(name) and head_ctx:
                         nama = f"{head_ctx} - {name}"
                         flags.append("nama_dari_judul")
@@ -332,8 +369,8 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                 pairs = None  # [(kelas, harga)]
                 if grp_header and len(prices) == 3 * len(grp_header) and sum_ok(prices):
                     pairs = [(g, prices[3 * k + 2]) for k, g in enumerate(grp_header)]
-                elif (cls_header and len(prices) == len(cls_header) and len(prices) >= 3 and not sum_ok(prices)
-                      and not total_first(prices)):
+                elif (cls_header and len(prices) == len(cls_header) and not sum_ok(prices) and not total_first(prices)
+                      and (len(prices) >= 3 or all(c.startswith("RS kelas") for c in cls_header))):
                     pairs = list(zip(cls_header, prices))
                 if pairs:
                     flags = flags + ["dari_kolom_kelas"]
