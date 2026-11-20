@@ -205,17 +205,34 @@ def load_ocr(pdf_path):
         return {int(k): v for k, v in json.load(h).items()}
 
 
+_VOCAB = None
+
+
+def vocab_ratio(text):
+    """Proporsi kata (>= 3 huruf) yang dikenal di kosakata nama layanan (pilot/config/kosakata_tarif.txt)."""
+    global _VOCAB
+    if _VOCAB is None:
+        f = os.path.join(os.path.dirname(__file__), "..", "config", "kosakata_tarif.txt")
+        _VOCAB = {ln.strip() for ln in open(f, encoding="utf-8") if ln.strip() and not ln.startswith("#")}
+    ws = [w for w in re.findall(r"[a-z]+", text.lower()) if len(w) >= 3]
+    return (sum(w in _VOCAB for w in ws) / len(ws)) if len(ws) >= 15 else None
+
+
 def choose_ocr(text_lines, ocr_words):
-    """Pakai baris OCR ulang bila teksnya jelas lebih bersih dan angka harganya tidak banyak hilang."""
+    """Pakai baris OCR ulang bila teksnya jelas lebih bersih, angka harganya tidak banyak hilang, dan kata-katanya
+    tidak lebih sering tak dikenal (OCR scan beresolusi rendah bisa 'bersih' tapi salah baca: AKOMODASI -> AKONODMSL)."""
     if not ocr_words:
         return None
     ocr_lines = lines_from_words([w for w in ocr_words if w.get("score", 1) >= 0.5])
     t_old = "\n".join(t for t, _ in text_lines)
     t_new = "\n".join(t for t, _ in ocr_lines)
     n_old, n_new = len(PRICE_TOK.findall(t_old)), len(PRICE_TOK.findall(t_new))
-    if garble(t_new) + 0.02 < garble(t_old) and n_new >= 0.8 * n_old:
-        return ocr_lines
-    return None
+    if not (garble(t_new) + 0.02 < garble(t_old) and n_new >= 0.8 * n_old):
+        return None
+    v_old, v_new = vocab_ratio(t_old), vocab_ratio(t_new)
+    if v_old is not None and v_new is not None and v_new < v_old - 0.05:
+        return None
+    return ocr_lines
 
 
 def page_lines(page):
