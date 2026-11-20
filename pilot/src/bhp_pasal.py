@@ -86,12 +86,25 @@ def scope_of(text, start, end=None):
 OBAT_SAJA = re.compile(r"(?:tidak|belum)\s+termasuk\b[^.;]{0,60}obat", re.I)
 
 
+DOUBLED = re.compile(r"(?:([A-Za-z])\1){3,}")
+
+
+def undouble(text):
+    """'PPeerraattuurraann' -> 'Peraturan' (huruf dicetak dua kali). Hanya kata yang seluruhnya berpasangan."""
+    def fix(m):
+        w = m.group(0)
+        return w[::2] if len(w) % 2 == 0 and all(w[i] == w[i + 1] for i in range(0, len(w), 2)) else w
+    return re.sub(r"\S{4,}", fix, text)
+
+
 def read_pages(path):
     import pymupdf
     doc = pymupdf.open(path)
     out = []
     for i, p in enumerate(doc):
         t = p.get_text() or ""
+        if len(DOUBLED.findall(t)) >= 3:
+            t = undouble(t)
         t = re.sub(r"-\s*\n\s*", "", t)          # sambung kata terpotong
         out.append((i + 1, " ".join(t.split())))
     return out
