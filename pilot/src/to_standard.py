@@ -90,6 +90,7 @@ HEAD_NUM = re.compile(r"^\s*(?:[IVX]{1,4}|[A-Z](?:\.\d+)+\.?)\s+(?=[A-Za-z(])")
 
 def std_kelas(s):
     t = re.sub(r"\s+", " ", s.strip().lower())
+    t = re.sub(rf"^{KELAS_W}\s*(?=(iii|ii|i|utama|vvip|vip)$)", "kelas ", t)
     t = re.sub(rf"^{KELAS_W}\b", "kelas", t)
     t = re.sub(r"\bill$", "iii", t)
     t = re.sub(r"[()]", "", t)
@@ -420,7 +421,7 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                 for kel, harga in pairs:
                     rows.append(dict(
                         dokumen_id=dok_id, halaman=pno + 1, kategori_asli=category,
-                        nama_asli=nama, kelas=kel or "Non-kelas", komponen="total",
+                        nama_asli=nama, kelas=(kel or "Non-kelas").strip(), komponen="total",
                         n_kolom_harga=len(prices), harga=harga, sumber_harga="langsung",
                         golongan="", paket_id="", metode_ekstraksi="pdf_teks",
                         _blok=block["id"], _flags=list(flags), baris_mentah=raw.strip()))

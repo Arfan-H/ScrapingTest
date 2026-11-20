@@ -249,6 +249,10 @@ def main():
     T = pd.read_csv(os.path.join(BASE, "out", "bpk", "uji_parser_baris_bhp.csv.gz"), low_memory=False)
     T = T.rename(columns={"dokumen_id": "file"})
     T["dokumen_id"] = T.file.map(dict(zip(D.file, D.dokumen_id)))
+    from to_standard import std_kelas
+    T["kelas"] = T.kelas.fillna("Non-kelas").astype(str).str.strip()
+    odd = T.kelas.str.match(r"(?i)^(kelas|klas|kls)\s*\S+$")
+    T.loc[odd, "kelas"] = T.loc[odd, "kelas"].map(std_kelas)
     T["nama_norm"] = T.nama_asli.astype(str).map(norm_name)
     T["kategori_std"] = [std_category(k if isinstance(k, str) else "", n) for k, n in zip(T.kategori_asli, T.nama_norm)]
     T["flags"] = T["flags"].fillna("")
