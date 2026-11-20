@@ -362,10 +362,11 @@ _COMP = (r"bahan(\s*(dan|&)\s*alat)?(\s*kesehatan)?|alat(\s*kesehatan)?|alkes|bh
          r"keperawatan|anestesi|operator|asisten|bidan|tindakan))?|sarana|japel|jaspel|"
          r"sewa\s*(kamar|alat|ruang)(\s*\w+)?|dr\.?\s*(operator|anestesi|spesialis|umum|ahli)(\s*\w+)?|"
          r"dokter\s*(operator|anestesi|spesialis|umum)|perawat(\s*(ok|anestesi|instrumen|asisten|kamar\s*operasi))?(\s*\d)?|"
-         r"paramedi[ks](\s*\w+)?|asisten(\s*\w+)?|operator|penata\s*anestesi")
+         r"paramedi[ks](\s*\w+)?|asisten(\s*\w+)?|operator|penata\s*anestesi|hospital\s*service(\s*\(\d+\s*%\))?|askep|"
+         r"js|jp|jrs|jasa\s*operator|jasa\s*anestes[il]")
 COMP_NAME = re.compile(rf"(?i)^({_COMP})$")
 TOTAL_NAME = re.compile(r"(?i)^(jumlah(\s*(biaya|tarif|total))?|sub\s*total|total(\s*paket)?(\s*(tarif|biaya))?|grand\s*total)$")
-COMP_SUFFIX = re.compile(r"(?i)^(?P<item>.*[A-Za-z]{3}.*?)\s+(?P<k>bahan(\s*(dan|&)\s*alat)?(\s*kesehatan)?|"
+COMP_SUFFIX = re.compile(r"(?i)^(?P<item>.*[A-Za-z]{3}.*?)\s+(?P<k>bahan(\s*(dan|&)\s*alat)?(\s*kesehatan)?|js|jp|"
                          r"jasa\s*(rumah\s*sakit|rsud|rs|sarana|pelayanan|medi[ks]))$")
 COMP_PREFIX = re.compile(r"(?i)^(?P<k>jasa\s*(rumah\s*sakit|rsud|rs|sarana|pelayanan|medi[ks])|bahan(\s*(dan|&)\s*alat)?|"
                          r"pelayanan|sarana|jumlah|total)\s+(?P<item>.+)$")
@@ -425,6 +426,13 @@ def tail_owner(tail, q_top, q_name, q_aligned=False):
             k += 1
         return k if (k == len(T) or q_name is not None) else k
     if q_open and not p_open and q_name is not None:
+        if len(T) >= 2:  # "GA" (lanjutan atas) lalu "Uvulorafi/Uvulektomi," (awal nama bawah): belah di jarak terbesar
+            ig = [T[i][0] - T[i - 1][1] for i in range(1, len(T))]
+            b = max(range(len(ig)), key=lambda i: ig[i])
+            if len(T[0][2]) <= 4 and T[0][2].isupper():
+                return 1  # singkatan pendek ("GA", "LA") = ujung nama atas
+            if len(ig) > 1 and all(ig[b] >= g + 2 for i, g in enumerate(ig) if i != b):
+                return b + 1
         return 0
     h = max(tail["bottom"] - tail["top"], 4)
     tol = max(2.0, 0.25 * h)
@@ -741,8 +749,10 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
     def apply_tail(k):
         """k baris teks pertama -> lanjutan nama baris harga di atasnya (P); sisanya dikembalikan untuk baris Q.
         Konteks (kategori, judul) yang sempat diubah oleh teks itu dipulihkan."""
-        nonlocal category, head_ctx, parent, np_last
+        nonlocal category, head_ctx, parent, np_last, dash_parent
         category, head_ctx, parent = tail["ctx"]
+        if dash_parent in [t for _, _, t in tail["texts"]]:
+            dash_parent = ""  # teks itu lanjutan nama, bukan judul induk butir "-"
         np_last = None  # teks ini sudah dipakai; jangan dipakai lagi sebagai awalan nama baris berikutnya
         del np_titles[tail["n_titles"]:]
         top_txt = " ".join(t for _, _, t in tail["texts"][:k])
@@ -983,13 +993,19 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                 if ctx_bare and NUMBERING.match(line) and not KELAS_ROW.match(re.sub(r"[()]", "", name)):
                     kelas_ctx, ctx_bare = "", False  # item bernomor baru: kelas dari baris polos grup sebelumnya tak berlaku
                 tail_flag = []
+                name_x0 = None
                 if not re.search(r"[A-Za-z]", name):
                     name = ""  # sisa nomor urut ("14") tanpa nama
                 q_top_ = min(w["top"] for w in lw) if lw else None
+                if not name and pending and np_last and q_top_ is not None and q_top_ - np_last[1] < 15:
+                    name_x0 = np_last[3]  # nama dari baris bernomor di atas ("g. Ambil iud dengan"): boleh diberi lanjutan
                 if np_last and q_top_ is not None and (tail is None or not tail["texts"]):
                     if not name and not pending and q_top_ - np_last[1] < 15:
                         name = clean_name(np_last[2])  # nama di baris atas, harga di baris bawah ("PJ.04 AUTOPSI ...")
                         tail_flag = ["nama_dari_baris_atas"]
+                        name_x0 = np_last[3]
+                        if dash_parent == np_last[2]:
+                            dash_parent = ""
                     elif (name and tail is None and not KELAS_ROW.match(re.sub(r"[()]", "", name)) and lw
                           and (qn := [w for w in sorted(lw, key=lambda w: w["x0"]) if re.search(r"[A-Za-z]{3}", w["text"])])
                           and (qp := [w for w in lw if PRICE_WORD.match(w["text"].strip(".-:;|"))])
@@ -1256,10 +1272,11 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                     grp_rows.append((i_start, len(rows), grp_flag[0][1]))
                 pw_t = [w for w in lw if PRICE_WORD.match(w["text"].strip(".-:;|"))] if lw else []
                 nw_t = [w for w in lw if not PRICE_WORD.match(w["text"].strip(".-:;|"))] if lw else []
-                if pw_t and nw_t and len(rows) > i_start and not KELAS_ROW.match(re.sub(r"[()]", "", name)):
+                if pw_t and (nw_t or name_x0 is not None) and len(rows) > i_start and not KELAS_ROW.match(re.sub(r"[()]", "", name)):
                     tail = dict(i0=i_start, i1=len(rows), name=rows[-1]["nama_asli"], texts=[],
                                 top=min(w["top"] for w in lw), bottom=max(w["bottom"] for w in lw),
-                                px0=min(w["x0"] for w in pw_t), nx0=min(w["x0"] for w in nw_t), ctx=None, n_titles=0,
+                                px0=min(w["x0"] for w in pw_t), nx0=min(w["x0"] for w in nw_t) if nw_t else name_x0,
+                                ctx=None, n_titles=0,
                                 aligned=num_aligned(lw))
     # Status BHP: catatan "Komponen tarif ... kelas X ..." bisa muncul di akhir bagian,
     # sesudah tabel lain. Terapkan ke blok terdekat sebelumnya dengan kelas X di bagian yang sama.
