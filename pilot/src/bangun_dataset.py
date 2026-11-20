@@ -262,6 +262,12 @@ def main():
     PROBLEM = {"nama_terpotong", "komponen_tidak_jumlah", "kolom_harga_tak_dikenal", "kelas_grup_tanpa_judul",
                "kelas_kolom_tanpa_judul", "harga_ambigu", "urutan_kelas_aneh"}
     T["qc_masalah"] = T["flags"].map(lambda f: bool(set(f.split("|")) & PROBLEM))
+    # harga harus tertulis di baris PDF sumber (dibaca ulang terpisah dari konverter)
+    from verifikasi_harga import check
+    T["verifikasi_harga"] = [check(r, h) for r, h in zip(T.baris_mentah, T.harga)]
+    bad = T.verifikasi_harga == "tidak_cocok"
+    T.loc[bad, "qc_masalah"] = True
+    T.loc[bad, "flag_qc"] = (T.loc[bad, "flag_qc"].replace("ok", "") + ";harga_tidak_di_baris_sumber").str.strip(";")
     T = T.sort_values(["dokumen_id", "file", "halaman"], kind="stable")
     T["tarif_id"] = T.dokumen_id + "-" + (T.groupby("dokumen_id").cumcount() + 1).map("{:06d}".format)
     T["tahun"] = T.dokumen_id.map(dict(zip(doc.dokumen_id, doc.tahun)))
@@ -269,7 +275,7 @@ def main():
     T["status_bpk"] = T.dokumen_id.map(dict(zip(doc.dokumen_id, doc.status_bpk)))
     cols = ["tarif_id", "dokumen_id", "rs_id", "tahun", "status_bpk", "file", "halaman", "kategori_asli", "nama_asli",
             "nama_norm", "kategori_std", "kelas", "komponen", "harga", "termasuk_bhp", "sumber_bhp", "n_kolom_harga",
-            "sumber_harga", "metode_ekstraksi", "flag_qc", "qc_masalah", "baris_mentah"]
+            "sumber_harga", "metode_ekstraksi", "flag_qc", "qc_masalah", "verifikasi_harga", "baris_mentah"]
     T[cols].to_csv(os.path.join(OUT, "tarif.csv.gz"), index=False)
 
     # urutan versi per RS: 1 = peraturan terbaru (tahun terbesar, lalu nomor terbesar)
@@ -299,6 +305,7 @@ def main():
             "urutan_versi_rs: 1 = peraturan terbaru untuk RS itu di dataset; peraturan perubahan bisa hanya memuat sebagian tarif.",
             "rs_generik = True: judul tidak menyebut nama RS; dipakai 'RSUD <daerah>'.",
             "qc_masalah (tarif.csv.gz): True bila baris punya flag masalah; flag lain (nama_dari_judul, dari_kolom_kelas, duplikat) hanya informatif.",
+            "verifikasi_harga (tarif.csv.gz): cocok_langsung = harga tertulis di baris PDF; cocok_gabungan = cocok setelah angka terpecah spasi digabung; tidak_cocok = tidak ditemukan (qc_masalah = True).",
             "bhp_dokumen: status BHP dari pasal (ya/tidak/tidak_jelas); status per baris ada di tarif.csv.gz.",
             "Wilayah: daftar Kemendagri 34 provinsi (edwardsamuel/Wilayah-Administratif-Indonesia)."]}
         ).to_excel(xw, sheet_name="keterangan", index=False)
