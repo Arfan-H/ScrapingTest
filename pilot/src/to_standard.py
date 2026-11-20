@@ -66,7 +66,7 @@ KELAS_W = r"(?:kelas|kelss|ketas|kclas|kelaa|keias|klas|kls)"
 KELAS_ROW = re.compile(
     rf"^({KELAS_W}\s*(iii|ill|ii|i|[123](?!\d))\s*[ab]?(\s*/\s*(rawat jalan|poli\w*|igd|iii|ii|i))?|({KELAS_W}\s*)?uta\.?ma(\s*(ii|i|[ab]))?|iii|ii|i|"
     r"perinatologi|perinatal|isolasi|igd|iw|iccu|ruang\s+bersalin|vk|"
-    rf"({KELAS_W}\s*)?vvip(\s*[ab])?|({KELAS_W}\s*)?wip|({KELAS_W}\s*)?vip(\s*(pratama|madya|utama|a|b))?(\s*&\s*madya)?|"
+    rf"({KELAS_W}\s*)?(vvip|vip|utama)(\s*/\s*(vvip|vip|utama))+|({KELAS_W}\s*)?vvip(\s*[ab])?|({KELAS_W}\s*)?wip|({KELAS_W}\s*)?vip(\s*(pratama|madya|utama|a|b))?(\s*&\s*madya)?|"
     r"presiden suite|vvip\s*/\s*presiden suite|icu|hcu|picu|nicu|semua kelas|one day( surgery)?)$", re.I)
 # kelas di ujung nama ("Kecil VIP", "Rawat Inap Kelas II")
 KELAS_SUFFIX = re.compile(rf"^(.*?[A-Za-z].*?)\s*[-,]?\s+((?:{KELAS_W}\s*(?:III|II|I|utama|vvip|vip)\b(?:\s*[AB]\b)?)|"
@@ -376,6 +376,11 @@ CLASS_LIST = re.compile(r"(?i)\s*(tarif\s*)?(kelas\s*)?((iii|ii|i|vip|vvip|utama
                         r"isolasi|paviliun|[abc]|kelas)[\s,/&.-]*(dan\s*)?)+")
 ROOM_NAME = re.compile(r"(?i)\b(suite|room)\b|^(utama|vip|vvip|super\s*vip)\s*(i{1,3}|[ab]|\d)?$")
 CONNECT_END = re.compile(r"(&/|[/&,(+\-]|\b(dan|dengan|atau|untuk|pada|di|ke|tanpa|serta|per|yang|non))\s*$", re.I)
+
+
+def mostly_upper(t):
+    letters = re.sub(r"[^A-Za-z]", "", t)
+    return bool(letters) and sum(c.isupper() for c in letters) >= 0.8 * len(letters)
 
 
 def tight_split(lw):
@@ -719,7 +724,8 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
     bd_item, np_item, comp_ctx = None, None, None
     parent_np = ""  # nama induk terakhir dari judul tanpa harga (bukan dari baris berharga)
     grp2, item_x, grp_rows = "", None, []
-    dash_parent = ""  # judul tanpa harga di atas butir berawalan "-" ("27 Injeksi / Tindakan" -> "- Sub Cutan (SC)")  # tabel dua kolom nama: kolom grup ("C. Praktik Klinik /") + kolom item bernomor ("1. SLTA")  # tabel rincian komponen: nama layanan induk, judul item, komponen aktif
+    dash_parent = ""  # judul tanpa harga di atas butir berawalan "-" ("27 Injeksi / Tindakan" -> "- Sub Cutan (SC)")
+    np_last = None  # (top, bottom, teks) baris teks terakhir tanpa harga sejak baris harga terakhir
     cls_header, grp_header = [], []
     x_memory = []  # [(pusat x kolom, label kelas)] yang pernah terbaca di dokumen ini, untuk tabel bersambung
     x2_memory = []  # [(pusat x 2 kolom harga, judul kolom)] untuk tabel 2 kolom yang bersambung ke halaman berikutnya
@@ -735,8 +741,9 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
     def apply_tail(k):
         """k baris teks pertama -> lanjutan nama baris harga di atasnya (P); sisanya dikembalikan untuk baris Q.
         Konteks (kategori, judul) yang sempat diubah oleh teks itu dipulihkan."""
-        nonlocal category, head_ctx, parent
+        nonlocal category, head_ctx, parent, np_last
         category, head_ctx, parent = tail["ctx"]
+        np_last = None  # teks ini sudah dipakai; jangan dipakai lagi sebagai awalan nama baris berikutnya
         del np_titles[tail["n_titles"]:]
         top_txt = " ".join(t for _, _, t in tail["texts"][:k])
         if top_txt:
@@ -836,12 +843,22 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                             regroup()
                     elif TABLE_HEAD.search(line) or MAJOR.match(line):
                         item_x = None
+                code_only = bool(re.fullmatch(r"[A-Z]{1,5}[.\-]?\d{1,4}[A-Za-z]?\.?", line.strip()))
+                if not m and code_only:
+                    continue  # baris kode saja ("PJ.06") di sel kode: jangan memutus nama yang terbelah
                 if not m:
                     db = HEAD_NUM.sub("", PAREN_NUM.sub("", NUMBERING.sub("", line))).strip(" :.-")
+                    if (lw and len(re.sub(r"[^A-Za-z]", "", db)) >= 3 and len(db) <= 90 and not TABLE_HEAD.search(line)
+                            and not COL_HEAD_LINE.match(db) and not KELAS_ROW.match(db) and not MAJOR.match(line)):
+                        np_last = (min(w["top"] for w in lw), max(w["bottom"] for w in lw), db,
+                                   min(w["x0"] for w in lw), max(w["x1"] for w in lw))
+                    elif lw and (TABLE_HEAD.search(line) or COL_HEAD_LINE.match(db)):
+                        np_last = None
                     if (not re.match(r"^\s*[-•–]", line) and len(re.sub(r"[^A-Za-z]", "", db)) >= 3 and len(db) <= 80
                             and not TABLE_HEAD.search(line) and not COL_HEAD_LINE.match(db) and not KELAS_ROW.match(db)):
                         dash_parent = db
                     if tail is not None:
+                        p_up = mostly_upper(tail["name"])
                         tb = HEAD_NUM.sub("", PAREN_NUM.sub("", NUMBERING.sub("", line))).strip(" :.")
                         numbered_l = bool(NUMBERING.match(line) or HEAD_NUM.match(line) or PAREN_NUM.match(line)
                                           or re.match(r"^[A-Za-z]\s+[A-Z]", line) or re.search(r"\d{3}", tb)
@@ -850,8 +867,8 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                                 or len(re.sub(r"[^A-Za-z]", "", tb)) < 0.6 * len(re.sub(r"[^A-Za-z0-9]", "", tb))
                                 or len(re.sub(r"[A-Za-z0-9\s()/\-.,&+:%<>=']", "", tb)) > 0.2 * len(tb.replace(" ", ""))
                                 or re.search(r"(?i)termasuk|catatan|keterangan|\*\)|^ket\b", tb)
-                                or (re.fullmatch(r"[A-Z]{3,}( [A-Z]{2,}){0,2}", tb) and not tail["name"].isupper()))
-                        upper_ok = tail["name"].isupper() or not is_header(tb)
+                                or (re.fullmatch(r"[A-Z]{3,}( [A-Z]{2,}){0,2}", tb) and not p_up))
+                        upper_ok = p_up or not is_header(tb)
                         if (lw and not numbered_l and len(tail["texts"]) < 3 and upper_ok
                                 and max(w["x1"] for w in lw) <= tail["px0"] + 2 and min(w["x0"] for w in lw) >= tail["nx0"] - 15
                                 and len(re.sub(r"[^A-Za-z]", "", tb)) >= 2 and len(tb) <= 90 and not PRICE_RE.search(tb)
@@ -968,6 +985,22 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                 tail_flag = []
                 if not re.search(r"[A-Za-z]", name):
                     name = ""  # sisa nomor urut ("14") tanpa nama
+                q_top_ = min(w["top"] for w in lw) if lw else None
+                if np_last and q_top_ is not None and (tail is None or not tail["texts"]):
+                    if not name and not pending and q_top_ - np_last[1] < 15:
+                        name = clean_name(np_last[2])  # nama di baris atas, harga di baris bawah ("PJ.04 AUTOPSI ...")
+                        tail_flag = ["nama_dari_baris_atas"]
+                    elif (name and tail is None and not KELAS_ROW.match(re.sub(r"[()]", "", name)) and lw
+                          and (qn := [w for w in sorted(lw, key=lambda w: w["x0"]) if re.search(r"[A-Za-z]{3}", w["text"])])
+                          and (qp := [w for w in lw if PRICE_WORD.match(w["text"].strip(".-:;|"))])
+                          and any(w["x1"] <= qn[0]["x0"] and w["top"] < np_last[1] - 1 for w in lw)
+                          and abs(np_last[3] - qn[0]["x0"]) <= 8 and np_last[4] < min(w["x0"] for w in qp)
+                          and not FRAGMENT.match(np_last[2]) and not re.match(r"^[a-z)(]", np_last[2])
+                          and len(re.findall(r"\.\s+[A-Za-z]", np_last[2])) < 2
+                          and (not is_header(np_last[2]) or mostly_upper(name))):
+                        name = clean_name(f"{np_last[2]} {name}")  # sel rata tengah: awal nama bertumpuk di atas
+                        tail_flag = ["nama_digabung"]
+                np_last = None
                 if tail is not None and tail["texts"]:
                     k = tail_owner(tail, min(w["top"] for w in lw) if lw else None, name, num_aligned(lw))
                     if k is not None:
