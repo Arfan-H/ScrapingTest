@@ -108,7 +108,9 @@ def main(cache):
     # 'Tindakan Lain' (banyak nama lab tanpa judul bagian) -> sistem dengan skor tertinggi
     sys_q = Q.kode_sistem.to_numpy().copy()
     generic = (Q.kategori_std == "Tindakan Lain").to_numpy()
-    lo_better = res["LOINC"][2] > res["ICD-9-CM"][2]
+    # pengalihan hanya bila LOINC cukup yakin; nama non-layanan ("pasien", "sebagai berikut") skornya rendah di
+    # kedua sistem dan tidak boleh 'menang' ke LOINC secara kebetulan
+    lo_better = (res["LOINC"][2] >= 0.72) & (res["LOINC"][2] - res["ICD-9-CM"][2] >= 0.03)
     sys_q[generic & lo_better] = "LOINC"
     print(f"dialihkan ke LOINC berdasarkan skor: {(generic & lo_better).sum():,} nama 'Tindakan Lain'", flush=True)
     P["sistem_dari"] = np.where(coded, "kategori", "kategori")
@@ -118,9 +120,11 @@ def main(cache):
     P["usulan_top1"], P["kandidat_top5"], P["skor"] = "", "", np.nan
     P.loc[coded, "usulan_top1"], P.loc[coded, "kandidat_top5"], P.loc[coded, "skor"] = pick(0), pick(1), pick(2)
     P["status"] = np.where(P.kode_sistem == "Lokal", "lokal_tanpa_kode", "usulan")
+    P["keyakinan"] = pd.cut(P.skor, [-1, 0.70, 0.80, 2], labels=["rendah (<0,70)", "sedang (0,70-0,80)", "tinggi (>=0,80)"],
+                            right=False).astype(str).replace("nan", "")
     P["kode"], P["nama_kode"], P["reviewer"], P["catatan"] = "", "", "", ""
     cols = ["nama_norm", "contoh_nama_asli", "kategori_std", "kode_sistem", "sistem_dari", "n_rs", "n_dokumen", "n_baris",
-            "pct_qc_masalah", "usulan_top1", "skor", "kandidat_top5", "status", "kode", "nama_kode", "reviewer", "catatan"]
+            "pct_qc_masalah", "usulan_top1", "skor", "keyakinan", "kandidat_top5", "status", "kode", "nama_kode", "reviewer", "catatan"]
     P[cols].to_csv(os.path.join(DS, "pemetaan_kode.csv.gz"), index=False)
 
     # sampel validasi PMIK: 150 nama tersering + 150 acak (n_rs >= 2) per sistem kode

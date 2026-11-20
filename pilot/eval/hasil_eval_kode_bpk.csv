@@ -19,17 +19,17 @@ seen,ICD-9-CM,dobutamin stress echocardiography,True,2.0,False,False
 seen,ICD-9-CM,hair removal,False,,,
 seen,ICD-9-CM,repair fraktur penis,True,7.0,True,True
 seen,ICD-9-CM,pasang tampon vaginal,False,,,
-seen,LOINC,pptest,True,2.0,False,False
+seen,LOINC,pptest,True,2.0,True,True
 seen,LOINC,keton urine,True,4.0,True,True
 seen,LOINC,anti toxoplasma ig m,True,18.0,True,True
-seen,LOINC,anti trombin iii,True,8.0,False,False
+seen,LOINC,anti trombin iii,True,8.0,True,True
 seen,LOINC,cholesterol ldl biasa,True,1.0,True,True
 seen,LOINC,bilirubin direk / indirek,True,10.0,True,True
-seen,LOINC,ana,True,10.0,False,False
+seen,LOINC,ana,True,10.0,True,True
 seen,LOINC,sgot ast,True,148.0,True,True
 seen,LOINC,hba 1c,True,7.0,True,True
-seen,LOINC,fibrinogen,True,74.0,False,False
-seen,LOINC,tshs,True,44.0,False,False
+seen,LOINC,fibrinogen,True,74.0,True,True
+seen,LOINC,tshs,True,44.0,True,True
 fresh,ICD-9-CM,nasal,True,23.0,False,False
 fresh,ICD-9-CM,tambalan komposit posterior sedang,False,,,
 fresh,ICD-9-CM,uretrotrografi,False,,,
@@ -42,20 +42,20 @@ fresh,ICD-9-CM,antebrachi bilateral ap / lateral,True,1.0,False,False
 fresh,ICD-9-CM,herniotomi bilateral,True,2.0,True,True
 fresh,ICD-9-CM,lopografi,True,24.0,False,False
 fresh,ICD-9-CM,pemeriksaan kesehatan untuk asuransi,True,3.0,False,False
-fresh,ICD-9-CM,shoulder bilateral ap,True,1.0,False,False
+fresh,ICD-9-CM,shoulder bilateral ap,True,1.0,False,True
 fresh,ICD-9-CM,pungsi sendi kecil,True,4.0,False,False
 fresh,ICD-9-CM,kemoterapi,True,22.0,False,True
 fresh,ICD-9-CM,ct scan thorax,True,15.0,True,True
 fresh,ICD-9-CM,penutupan oroantral fistula,True,8.0,False,False
 fresh,ICD-9-CM,injeksi haemorhoid termasuk obat,False,,,
-fresh,ICD-9-CM,cranium ap / lateral,True,5.0,False,False
+fresh,ICD-9-CM,cranium ap / lateral,True,5.0,True,True
 fresh,ICD-9-CM,peniahitan luka sederhanakurangdari 5 jahitan,False,,,
-fresh,LOINC,ck-mb,True,32.0,False,False
+fresh,LOINC,ck-mb,True,32.0,True,True
 fresh,LOINC,anti helicobacter ftylori ig g,False,,,
 fresh,LOINC,elektrolit ca ion,True,2.0,True,True
 fresh,LOINC,dengue blot ig m,True,4.0,True,True
 fresh,LOINC,sgpt alt,True,149.0,True,True
-fresh,LOINC,thrombotest,True,6.0,False,False
+fresh,LOINC,thrombotest,True,6.0,False,True
 fresh,LOINC,eritrosit,True,53.0,False,True
 fresh,LOINC,complement 3 c3,True,6.0,True,True
 fresh,LOINC,syphilis rapid,True,6.0,False,False
