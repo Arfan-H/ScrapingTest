@@ -13,13 +13,15 @@ HERE = os.path.dirname(__file__)
 gold = json.load(open(os.path.join(HERE, "gold_kode_v0.json")))
 p = pd.read_csv(os.path.join(HERE, "..", "out", "pemetaan_usulan.csv"))
 B = pd.read_csv(os.path.join(HERE, "..", "out", "dataset", "pemetaan_kode.csv.gz")).set_index("nama_norm")
+seen = pd.read_csv(os.path.join(HERE, "seen_idx.csv")).iloc[:, 0].tolist()  # indeks 'seen' -> baris pemetaan_usulan
+seen_map = {"icd": seen[:25], "loinc": seen[25:]}
 rows = []
 for split in ["seen", "fresh"]:
     for sysk, sysname in [("icd", "ICD-9-CM"), ("loinc", "LOINC")]:
         for idx, codes in gold[split][sysk].items():
             if not codes:
                 continue
-            n = p.nama_norm.iloc[int(idx)]
+            n = p.nama_norm.iloc[seen_map[sysk][int(idx)] if split == "seen" else int(idx)]
             if n not in B.index:
                 rows.append(dict(split=split, sistem=sysname, nama=n, ada_di_bpk=False))
                 continue

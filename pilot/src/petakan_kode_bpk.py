@@ -14,6 +14,7 @@ Keluaran (pilot/out/dataset/):
 Pemakaian: E5_DIR=<folder model> python -I pilot/src/petakan_kode_bpk.py [<folder cache embedding>]
 """
 import os
+import re
 import sys
 
 import numpy as np
@@ -27,6 +28,33 @@ from suggest_codes import TARGET, load_targets  # noqa: E402
 
 BASE = os.path.join(os.path.dirname(__file__), "..")
 DS = os.path.join(BASE, "out", "dataset")
+
+
+MODALITY = r"x-?ray|foto|photo|rontgen|r[oö]ntgen|usg|ultrasono|ct\b|ct scan|mri|mammo|fluoro|scan|echo|doppler|grafi|graphy"
+
+
+def build_query(nama, kategori):
+    q = f"{nama} {translate_v2(nama)}"
+    # radiologi tanpa modalitas tertulis ("cranium ap / lateral") hampir selalu foto polos
+    if kategori == "Radiologi" and not re.search(MODALITY, nama, re.I):
+        q = f"x-ray {q}"
+    return q
+
+
+def embed_store(texts, cache):
+    """Embedding per teks unik; disimpan di <cache>/store.npz agar run berikutnya hanya menghitung teks baru."""
+    f = os.path.join(cache, "store.npz")
+    have = {}
+    if os.path.exists(f):
+        z = np.load(f, allow_pickle=True)
+        have = dict(zip(z["texts"].tolist(), z["vecs"]))
+    todo = [t for t in dict.fromkeys(texts) if t not in have]
+    for i in range(0, len(todo), 5000):
+        V = e5_embed(todo[i:i + 5000], batch=128).astype(np.float32)
+        have.update(zip(todo[i:i + 5000], V))
+        print(f"  embedding baru: {min(i + 5000, len(todo)):,}/{len(todo):,}", flush=True)
+        np.savez(f, texts=np.array(list(have), dtype=object), vecs=np.vstack(list(have.values())))
+    return np.vstack([have[t] for t in texts])
 
 
 def embed_cached(texts, cache, tag, chunk=5000):
@@ -53,16 +81,16 @@ def main(cache):
         contoh_nama_asli=("nama_asli", lambda s: s.mode().iloc[0])).reset_index()
     P = P.sort_values(["n_rs", "n_baris"], ascending=False).reset_index(drop=True)
     P["kode_sistem"] = P.kategori_std.map(TARGET).fillna("ICD-9-CM")
-    P["query"] = [f"{n} {translate_v2(n)}" for n in P.nama_norm]
+    P["query"] = [build_query(n, k) for n, k in zip(P.nama_norm, P.kategori_std)]
     print(f"nama unik: {len(P):,} | per sistem: {P.kode_sistem.value_counts().to_dict()}", flush=True)
 
     targets = load_targets()
-    P["usulan_top1"], P["kandidat_top5"], P["skor"] = "", "", np.nan
+    coded = (P.kode_sistem != "Lokal").to_numpy()
+    Q = P[coded]
+    Eq = embed_store(list(Q["query"]), cache)
+    res = {}
     for sysname, tgt in targets.items():
-        m = (P.kode_sistem == sysname).to_numpy()
-        Q = P[m]
-        Eq = embed_cached(list(Q["query"]), cache, f"q_{sysname}")
-        Et = embed_cached(list(tgt.teks), cache, f"t_{sysname}")
+        Et = embed_store(list(tgt.teks), cache)
         vec = TfidfVectorizer(analyzer="char_wb", ngram_range=(3, 5), lowercase=True).fit(list(tgt.teks))
         Xt = vec.transform(tgt.teks)
         top1, top5, sc = [], [], []
@@ -74,11 +102,24 @@ def main(cache):
                 top1.append(f"{tgt.kode.iloc[j[0]]} | {tgt.nama.iloc[j[0]]}")
                 top5.append(" ;; ".join(f"{tgt.kode.iloc[k]} | {tgt.nama.iloc[k]} | {S[r, k]:.2f}" for k in j))
                 sc.append(round(float(S[r, j[0]]), 3))
-        P.loc[m, "usulan_top1"], P.loc[m, "kandidat_top5"], P.loc[m, "skor"] = top1, top5, sc
-        print(f"{sysname}: {m.sum():,} nama -> {len(tgt):,} kode", flush=True)
+        res[sysname] = (np.array(top1, dtype=object), np.array(top5, dtype=object), np.array(sc))
+        print(f"{sysname}: {len(Q):,} nama dinilai -> {len(tgt):,} kode", flush=True)
+    # pilih sistem: kategori jelas (Laboratorium -> LOINC; Radiologi/Gigi/... -> ICD-9-CM) tetap; kategori umum
+    # 'Tindakan Lain' (banyak nama lab tanpa judul bagian) -> sistem dengan skor tertinggi
+    sys_q = Q.kode_sistem.to_numpy().copy()
+    generic = (Q.kategori_std == "Tindakan Lain").to_numpy()
+    lo_better = res["LOINC"][2] > res["ICD-9-CM"][2]
+    sys_q[generic & lo_better] = "LOINC"
+    print(f"dialihkan ke LOINC berdasarkan skor: {(generic & lo_better).sum():,} nama 'Tindakan Lain'", flush=True)
+    P["sistem_dari"] = np.where(coded, "kategori", "kategori")
+    P.loc[coded, "sistem_dari"] = np.where(generic & lo_better, "skor_tertinggi", "kategori")
+    P.loc[coded, "kode_sistem"] = sys_q
+    pick = lambda k: np.where(sys_q == "LOINC", res["LOINC"][k], res["ICD-9-CM"][k])  # noqa: E731
+    P["usulan_top1"], P["kandidat_top5"], P["skor"] = "", "", np.nan
+    P.loc[coded, "usulan_top1"], P.loc[coded, "kandidat_top5"], P.loc[coded, "skor"] = pick(0), pick(1), pick(2)
     P["status"] = np.where(P.kode_sistem == "Lokal", "lokal_tanpa_kode", "usulan")
     P["kode"], P["nama_kode"], P["reviewer"], P["catatan"] = "", "", "", ""
-    cols = ["nama_norm", "contoh_nama_asli", "kategori_std", "kode_sistem", "n_rs", "n_dokumen", "n_baris",
+    cols = ["nama_norm", "contoh_nama_asli", "kategori_std", "kode_sistem", "sistem_dari", "n_rs", "n_dokumen", "n_baris",
             "pct_qc_masalah", "usulan_top1", "skor", "kandidat_top5", "status", "kode", "nama_kode", "reviewer", "catatan"]
     P[cols].to_csv(os.path.join(DS, "pemetaan_kode.csv.gz"), index=False)
 
