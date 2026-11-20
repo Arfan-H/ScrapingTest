@@ -64,7 +64,8 @@ KELAS_IN_HEAD = re.compile(r"\bKELAS\s+(III|II|I)\b", re.I)
 # kata "kelas" termasuk salah OCR yang sering muncul (Ketas, Kelss, Klas, Kls)
 KELAS_W = r"(?:kelas|kelss|ketas|kclas|kelaa|klas|kls)"
 KELAS_ROW = re.compile(
-    rf"^({KELAS_W}\s*(iii|ill|ii|i)\s*[ab]?(\s*/\s*(rawat jalan|poli\w*|igd|iii|ii|i))?|({KELAS_W}\s*)?utama(\s*(ii|i))?|iii|ii|i|"
+    rf"^({KELAS_W}\s*(iii|ill|ii|i)\s*[ab]?(\s*/\s*(rawat jalan|poli\w*|igd|iii|ii|i))?|({KELAS_W}\s*)?uta\.?ma(\s*(ii|i|[ab]))?|iii|ii|i|"
+    r"perinatologi|perinatal|isolasi|igd|iw|iccu|ruang\s+bersalin|vk|"
     rf"({KELAS_W}\s*)?vvip|({KELAS_W}\s*)?vip(\s*(pratama|madya|utama|a|b))?(\s*&\s*madya)?|"
     r"presiden suite|vvip\s*/\s*presiden suite|icu|hcu|picu|nicu|semua kelas|one day( surgery)?)$", re.I)
 # kelas di ujung nama ("Kecil VIP", "Rawat Inap Kelas II")
@@ -84,7 +85,7 @@ KELAS_STD = {"iii": "III", "ii": "II", "i": "I", "kelas iii": "III", "kelas ii":
 
 
 # penomoran judul yang tidak tertangkap NUMBERING: "II Rawat Jalan", "A.1.1.4.1 TMO ..."
-PAREN_NUM = re.compile(r"^\s*\(?(?:[a-z]|\d{1,3})\)\s+")  # "a) ", "2) ", "(1) "
+PAREN_NUM = re.compile(r"^\s*\(?(?:[a-z]|\d{1,3}|[ivx]{1,4})\)\.?\s+")  # "a) ", "2) ", "(1) "
 HEAD_NUM = re.compile(r"^\s*(?:[IVX]{1,4}|[A-Z](?:\.\d+)+\.?)\s+(?=[A-Za-z(])")
 
 
@@ -102,9 +103,15 @@ def std_kelas(s):
     if m:
         return f"{m.group(1).upper()} {m.group(2).upper()}"
     t = re.sub(r"^kelas\s+(vvip|vip|utama)", r"\1", t)
-    m = re.fullmatch(r"utama\s*(ii|i)", t)
+    t = t.replace("uta.ma", "utama")
+    t = re.sub(r"^kelas\s+utama", "utama", t)
+    m = re.fullmatch(r"utama\s*(ii|i|[ab])", t)
     if m:
         return f"Utama {m.group(1).upper()}"
+    if t in ("igd", "iw", "vk", "iccu"):
+        return t.upper()
+    if t in ("perinatologi", "perinatal", "isolasi", "ruang bersalin"):
+        return t.title()
     if t in KELAS_STD:
         return KELAS_STD[t]
     if t.startswith("vip"):
@@ -284,6 +291,7 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
     category, pending, parent, head_ctx = "", None, "", ""
     cls_header, grp_header = [], []
     kelas_ctx = ""  # dari baris "Kelas I" tanpa harga; berlaku sampai judul bagian/tabel berikutnya
+    np_titles = []  # judul (baris tanpa harga) sejak baris berharga terakhir
     np_run = []  # baris tanpa harga sejak baris berharga terakhir (judul tabel bisa terbelah beberapa baris)
     rows_at_hdr = 0  # jumlah baris saat judul kelas terakhir dibaca (judul bertingkat tidak saling menghapus)
     with pdfplumber.open(pdf_path) as pdf:
@@ -339,6 +347,18 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                         pre_flags.append("harga_ambigu")
                 if not m:
                     np_run = (np_run + [line])[-6:]
+                    t_body = HEAD_NUM.sub("", PAREN_NUM.sub("", NUMBERING.sub("", line))).strip(" :-.|")
+                    if (len(re.sub(r"[^A-Za-z]", "", t_body)) >= 4 and len(t_body) <= 90
+                            and not (TABLE_HEAD.search(line) or len(header_classes(line)) >= 2 or header_groups(line)
+                                     or re.search(r"\b(jasa|sarana|komponen|jumlah|tarif\s*\(rp|keterangan)\b", line, re.I))
+                            and not KELAS_ROW.match(t_body) and not re.match(KELAS_W, t_body, re.I)
+                            and not re.search(rf"{KELAS_W}\s*(iii|ii|i)\b", t_body, re.I)
+                            and not re.match(r"^\W*no\b", line, re.I) and "|" not in t_body
+                            and not re.fullmatch(r"(?i)(pratama|madya|utama|vip|vvip|&|dan|\s)+", t_body)
+                            and sum(len(w) == 1 for w in t_body.split()) <= 0.3 * len(t_body.split())
+                            and len(re.sub(r"[^A-Za-z]", "", t_body)) >= 0.5 * len(t_body.replace(" ", ""))
+                            and not re.search(r"\b(adalah|sebagaimana|dikenakan|ditetapkan|ayat|pasal|rp)\b", t_body, re.I)):
+                        np_titles.append(t_body)
                     # judul tabel baru tanpa kelas -> lupakan judul kelas sebelumnya
                     if TABLE_HEAD.search(line):
                         seg_start = len(rows)
@@ -387,17 +407,34 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                     if fits(ml) and not any(re.search(r"\(\d\)$", c) for c in ml) and len(ml) > len(cls_header if len(cls_header) and fits(cls_header) else []):
                         cls_header, grp_header, rows_at_hdr = ml, [], len(rows)
                 np_run = []
+                titles, np_titles = np_titles, []
+                # nama terbelah: '365 Sialendoskopi ... (' lalu '— | Anestesi Spinal / Ga Th 11.880.000'
+                raw_head = line[: m.start()].strip()
+                joined = False
+                first = (raw_head.split() or [""])[0]
+                if (pending and not NUMBERING.match(line) and len(re.sub(r"[^A-Za-z]", "", name)) >= 3
+                        and not KELAS_ROW.match(re.sub(r"[()]", "", name)) and not FRAGMENT.match(pending)
+                        and len(re.sub(r"[^A-Za-z]", "", pending)) >= 0.5 * len(pending.replace(" ", ""))
+                        and pending.lower().split()[0] not in name.lower()
+                        and (re.search(r"[(/,&-]\s*$", pending)
+                             or re.match(r"^[^A-Za-z0-9(]", raw_head) or re.fullmatch(r"[a-z]{3,}\W*", first))):
+                    name = clean_name(f"{pending} {name.lstrip('—|-. ')}")
+                    joined = True
                 if len(re.sub(r"[^A-Za-z]", "", name)) < 3 and pending:
                     name = pending
                 pending = None
                 if len(re.sub(r"[^A-Za-z]", "", name)) < 3:
                     continue
-                flags = list(pre_flags)
+                flags = list(pre_flags) + (["nama_digabung"] if joined else [])
                 kelas = kelas_ctx or block["kelas"]
                 nama = name
                 if KELAS_ROW.match(re.sub(r"[()]", "", name)):
                     kelas = std_kelas(name)
-                    if parent:
+                    if titles:  # judul tepat di atas baris-baris kelas = nama layanan
+                        parent = titles[-1]
+                        nama = parent
+                        flags.append("nama_dari_judul_tabel")
+                    elif parent:
                         nama = parent
                         flags.append("nama_dari_baris_atas")
                     else:
