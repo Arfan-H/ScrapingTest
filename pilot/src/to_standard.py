@@ -127,6 +127,9 @@ PRICE_TOK = re.compile(r"(?:Rp\.?\s*)?\d{1,3}(?:[.,]\d{3})+(?:,-|,00)?")
 def clean_name(name):
     """Bersihkan sisa OCR/tabel: garis tegak, harga yang ikut terbaca di nama, 'Ill' untuk III."""
     name = name.replace("|", " ").replace("{", " ")
+    # huruf kode kolom kiri yang menempel: "f 4 Pasang ...", "D 7. Pelayanan ...", "a Sendi Bahu ..."
+    name = re.sub(r"^\s*[A-Za-z]\s+(?=\d{1,3}\.?\s)", "", name)
+    name = re.sub(r"^\s*[a-z]\s+(?=[A-Z])", "", name)
     name = PRICE_TOK.sub(" ", name)
     name = re.sub(r"\bRp\.?\s*$", " ", name)
     name = re.sub(r"\b(I[lI1]{2})\b", "III", name)
@@ -138,13 +141,71 @@ def clean_name(name):
 DOUBLED = re.compile(r"(?:([A-Za-z])\1){3,}")
 
 
-def page_text(page):
-    """Teks halaman; huruf yang dicetak dua kali (efek tebal palsu, 'MMeenntteerrii') dibuang dulu.
-    Huruf kembar bergeser < 1 pt dan sering berbeda font, jadi atribut font tidak dibandingkan."""
+def lines_by_overlap(page):
+    """Susun baris dari kata: kata masuk baris yang sama bila kotaknya tumpang-tindih vertikal >= 50% dari tinggi
+    kata yang lebih pendek. Angka yang tercetak sedikit naik/turun (mis. kolom total 3 pt lebih tinggi) tetap satu
+    baris dengan namanya, padahal extract_text bawaan (toleransi posisi atas 3 pt) memisahkannya."""
+    words = page.extract_words(x_tolerance=1.5, y_tolerance=3, keep_blank_chars=False)
+    words.sort(key=lambda w: ((w["top"] + w["bottom"]) / 2, w["x0"]))
+    num = re.compile(r"^(?:Rp\.?)?[\d.,:;\-]+$", re.I)
+    lines = []  # [top, bottom, [words], semua_angka]
+    for w in words:
+        h = w["bottom"] - w["top"]
+        w_num = bool(num.match(w["text"]))
+        best = None
+        for ln in lines[-4:]:
+            ov = min(ln[1], w["bottom"]) - max(ln[0], w["top"])
+            lh = ln[1] - ln[0]
+            # angka yang tercetak naik/turun boleh longgar (50%); teks harus hampir sejajar (75%) supaya baris
+            # lanjutan nama di sel bertingkat ('kanguru)') tidak masuk ke baris berikutnya
+            need = 0.5 if (w_num or ln[3]) else 0.75
+            if ov >= need * min(h, lh) and (best is None or ov > best[0]):
+                best = (ov, ln)
+        if best:
+            ln = best[1]
+            ln[2].append(w)
+            if ln[3] and not w_num:  # pita baris pindah ke kata teks pertama
+                ln[0], ln[1], ln[3] = w["top"], w["bottom"], False
+        else:
+            lines.append([w["top"], w["bottom"], [w], w_num])
+    lines.sort(key=lambda ln: ln[0])
+    out = []
+    for _, _, ws, _ in lines:
+        ws.sort(key=lambda w: w["x0"])
+        out.append((" ".join(w["text"] for w in ws), ws))
+    return out
+
+
+def page_lines(page):
+    """Baris halaman sebagai [(teks, kata)], kata = dict(text, x0, x1, top, bottom) untuk membaca posisi kolom."""
     t = page.extract_text() or ""
     if len(DOUBLED.findall(t)) >= 3:
-        t = page.dedupe_chars(tolerance=1, extra_attrs=()).extract_text() or ""
-    return t
+        page = page.dedupe_chars(tolerance=1, extra_attrs=())
+    area = float(page.width * page.height) or 1.0
+    if any((im["x1"] - im["x0"]) * (im["bottom"] - im["top"]) >= 0.6 * area for im in page.images):
+        # halaman scan: baris dari extract_text bawaan, kata ditempatkan menurut titik tengah vertikalnya
+        words = page.extract_words()
+        out = []
+        for ln in page.extract_text_lines(strip=True):
+            ws = [w for w in words if ln["top"] - 0.5 <= (w["top"] + w["bottom"]) / 2 <= ln["bottom"] + 0.5]
+            out.append((ln["text"], sorted(ws, key=lambda w: w["x0"])))
+        return out
+    return lines_by_overlap(page)
+
+
+def page_text(page):
+    """Teks halaman (baris disusun berdasarkan tumpang-tindih vertikal kata). Huruf yang dicetak dua kali
+    (efek tebal palsu, 'MMeenntteerrii') dibuang dulu; huruf kembar bergeser < 1 pt dan sering berbeda font."""
+    t = page.extract_text() or ""
+    if len(DOUBLED.findall(t)) >= 3:
+        page = page.dedupe_chars(tolerance=1, extra_attrs=())
+        t = page.extract_text() or ""
+    # halaman hasil scan (gambar sehalaman + lapisan OCR): baris OCR sering miring, jadi penyusunan berdasarkan
+    # tumpang-tindih bisa mencampur angka baris tetangga -> pakai extract_text bawaan
+    area = float(page.width * page.height) or 1.0
+    if any((im["x1"] - im["x0"]) * (im["bottom"] - im["top"]) >= 0.6 * area for im in page.images):
+        return t
+    return "\n".join(tx for tx, _ in lines_by_overlap(page))
 
 
 def find_annex_page(pdf):
@@ -212,6 +273,85 @@ def header_classes(line):
 
 CLASS_ORDER = {"III": 0, "II-III": 0.5, "III-II": 0.5, "II": 1, "I-II": 1.5, "II-I": 1.5, "I": 2, "Utama": 3, "Utama II": 3, "Utama I": 3.5,
                "VIP": 4, "VIP/Utama": 4, "VIP Utama": 5, "VVIP": 6, "Super VIP": 6}
+
+
+PRICE_WORD = re.compile(r"^(?:Rp\.?)?\d{1,3}(?:[.,]\d{3})+(?:,-|,00)?$|^(?:Rp\.?)?\d{4,7}(?:,-)?$", re.I)
+HDR_HINT = re.compile(r"\b(kela[s$58]|klas|kls|vip|vvip|utama|iii|ii|paviliun|pav|teladan|icu|hcu)\b", re.I)
+
+
+def price_words(lwords, n):
+    """Kata harga di baris (urut x); None bila jumlahnya tidak sama dengan jumlah harga terbaca."""
+    ws = [w for w in lwords if PRICE_WORD.match(w["text"].strip(".-:;|"))]
+    return ws if len(ws) == n else None
+
+
+def col_label(text):
+    hc = header_classes(text)
+    if len(hc) != 1 and re.fullmatch(r"(?i)\s*(iii|ii|i|ill|1|2|3)\s*", text):
+        hc = header_classes("Kelas " + text)
+    return hc[0] if len(hc) == 1 else None
+
+
+def header_label_positions(block_lines):
+    """[(pusat x, label)] tiap label kelas di blok judul; posisi = rata-rata pusat kata yang membentuk label."""
+    out = []
+    for ws in block_lines:
+        ws = sorted(ws, key=lambda w: w["x0"])
+        text, spans = "", []
+        for w in ws:
+            spans.append((len(text), len(text) + len(w["text"]), w))
+            text += w["text"] + " "
+        found = [(m.start(), m.end(), m.group(0)) for m in CLASS_TOK.finditer(text)]
+        if len(found) < 3:  # angka romawi tanpa kata 'Kelas' ("III II I VIP")
+            bare = [(m.start(), m.end(), m.group(0)) for m in BARE_CLASS.finditer(text)]
+            rest = [x for x in re.findall(r"[A-Za-z]+", text) if not HEAD_WORDS.fullmatch(x)]
+            if len(bare) >= 3 and len(bare) >= 0.6 * len(rest):
+                found = bare
+        for a, b, tok in found:
+            lab = col_label(tok)
+            cw = [w for s0, s1, w in spans if s0 < b and s1 > a]
+            if lab and cw:
+                out.append(((min(w["x0"] for w in cw) + max(w["x1"] for w in cw)) / 2, lab))
+    return sorted(out)
+
+
+def labels_by_x(intervals, hdr_lines, row_top):
+    """Label kelas per kolom harga: tiap kolom dipasangkan ke label judul terdekat secara horizontal.
+    Kolom judul yang kosong di baris ini (mis. ICU) otomatis terlewati. None bila ragu."""
+    above = [(t, ws) for t, ws in hdr_lines if t < row_top]
+    if not above:
+        return None
+    last = above[-1][0]
+    labs = header_label_positions([ws for t, ws in above if last - t <= 45])
+    if len(labs) < len(intervals) or len(labs) < 2:
+        return None
+    centers = [(a + b) / 2 for a, b in intervals]
+    lx = [x for x, _ in labs]
+    gap = min(b - a for a, b in zip(lx, lx[1:])) if len(lx) > 1 else 60
+    tol = max(25.0, 0.6 * gap)
+    picked = []
+    for c in centers:
+        k = min(range(len(labs)), key=lambda i: abs(labs[i][0] - c))
+        if abs(labs[k][0] - c) > tol:
+            return None
+        picked.append(k)
+    if len(set(picked)) != len(picked) or picked != sorted(picked):
+        return None
+    labels = [labs[k][1] for k in picked]
+    return labels if len(set(labels)) == len(labels) else None
+
+
+def recall_x(memory, centers, tol=8):
+    """Label kolom dari memori bila pusat-pusat kolom sama posisinya (tabel bersambung tanpa judul berulang).
+    Hanya untuk >= 4 kolom dan label yang tidak ganda: 3 kolom terlalu mirip sarana/pelayanan/total."""
+    if len(centers) < 4:
+        return None
+    for mc, ml in reversed(memory):
+        if any(re.search(r"\(\d\)$", str(x)) for x in ml):
+            continue
+        if len(mc) == len(centers) and all(abs(a - b) <= tol for a, b in zip(mc, centers)):
+            return ml
+    return None
 
 
 def class_order_odd(pairs):
@@ -290,6 +430,7 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
     blocks.append(block)
     category, pending, parent, head_ctx = "", None, "", ""
     cls_header, grp_header = [], []
+    x_memory = []  # [(pusat x kolom, label kelas)] yang pernah terbaca di dokumen ini, untuk tabel bersambung
     kelas_ctx = ""  # dari baris "Kelas I" tanpa harga; berlaku sampai judul bagian/tabel berikutnya
     np_titles = []  # judul (baris tanpa harga) sejak baris berharga terakhir
     np_run = []  # baris tanpa harga sejak baris berharga terakhir (judul tabel bisa terbelah beberapa baris)
@@ -299,7 +440,8 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
             start_page = find_annex_page(pdf)
         for pno in range(start_page - 1, len(pdf.pages)):
             kelas_ctx = ""  # konteks kelas tidak menyeberang halaman
-            for raw in page_text(pdf.pages[pno]).splitlines():
+            hdr_lines = []  # [(top, kata)] baris tanpa harga yang memuat kata kelas, untuk membaca judul per kolom
+            for raw, lw in page_lines(pdf.pages[pno]):
                 line = fix_numbers(raw.strip())
                 if not line:
                     continue
@@ -347,6 +489,8 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                         pre_flags.append("harga_ambigu")
                 if not m:
                     np_run = (np_run + [line])[-6:]
+                    if lw and HDR_HINT.search(line):
+                        hdr_lines.append((min(w["top"] for w in lw), lw))
                     t_body = HEAD_NUM.sub("", PAREN_NUM.sub("", NUMBERING.sub("", line))).strip(" :-.|")
                     if (len(re.sub(r"[^A-Za-z]", "", t_body)) >= 4 and len(t_body) <= 90
                             and not (TABLE_HEAD.search(line) or len(header_classes(line)) >= 2 or header_groups(line)
@@ -465,6 +609,10 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                 pairs = None  # [(kelas, harga)]
                 if grp_header and len(prices) == 3 * len(grp_header) and sum_ok(prices):
                     pairs = [(g, prices[3 * k + 2]) for k, g in enumerate(grp_header)]
+                    pwg = price_words(lw, len(prices))
+                    if pwg:
+                        x_memory.append((tuple((pwg[3 * k + 2]["x0"] + pwg[3 * k + 2]["x1"]) / 2
+                                               for k in range(len(prices) // 3)), [k for k, _ in pairs]))
                 elif (cls_header and len(prices) == len(cls_header) and not sum_ok(prices) and not total_first(prices)
                       and (len(prices) >= 3 or all(c.startswith("RS kelas") for c in cls_header))):
                     pairs = list(zip(cls_header, prices))
@@ -472,11 +620,32 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                     flags = flags + ["dari_kolom_kelas"]
                     if class_order_odd(pairs):
                         flags.append("urutan_kelas_aneh")
+                    pw0 = price_words(lw, len(prices))
+                    if pw0 and len(pairs) == len(prices):
+                        x_memory.append((tuple((w["x0"] + w["x1"]) / 2 for w in pw0), [k for k, _ in pairs]))
                 elif (cls_header and len(prices) == 3 * len(cls_header) and len(prices) >= 6
                       and all(_close(prices[i] + prices[i + 1], prices[i + 2]) for i in range(0, len(prices), 3))):
                     # judul kelas di atas kelompok (sarana, pelayanan, total) per kelas
                     pairs = [(c, prices[3 * k + 2]) for k, c in enumerate(cls_header)]
+                    pwg = price_words(lw, len(prices))
+                    if pwg:
+                        x_memory.append((tuple((pwg[3 * k + 2]["x0"] + pwg[3 * k + 2]["x1"]) / 2
+                                               for k in range(len(prices) // 3)), [k for k, _ in pairs]))
                     flags.append("dari_kolom_kelas")
+                    if class_order_odd(pairs):
+                        flags.append("urutan_kelas_aneh")
+                elif (len(prices) >= 6 and len(prices) % 3 == 0 and sum_ok(prices)
+                      and not _close(sum(prices[:-1]), prices[-1])
+                      and (pw := price_words(lw, len(prices)))
+                      and (xl := (labels_by_x([(pw[3 * k]["x0"], pw[3 * k + 2]["x1"]) for k in range(len(prices) // 3)],
+                                              hdr_lines, pw[0]["top"])
+                                  or (not any(t < pw[0]["top"] for t, _ in hdr_lines)) and recall_x(x_memory, [(pw[3 * k + 2]["x0"] + pw[3 * k + 2]["x1"]) / 2
+                                                         for k in range(len(prices) // 3)])))):
+                    # grup (sarana, pelayanan, total) per kelas; judul kelas dibaca dari posisi kolom
+                    pairs = [(c, prices[3 * k + 2]) for k, c in enumerate(xl)]
+                    flags += ["dari_kolom_kelas", "kelas_dari_posisi"]
+                    x_memory.append((tuple((pw[3 * k + 2]["x0"] + pw[3 * k + 2]["x1"]) / 2
+                                           for k in range(len(prices) // 3)), list(xl)))
                     if class_order_odd(pairs):
                         flags.append("urutan_kelas_aneh")
                 elif (len(prices) >= 6 and len(prices) % 3 == 0 and sum_ok(prices)
@@ -490,6 +659,16 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                 elif (len(prices) == 4 and _close(prices[0] + prices[1], prices[2])
                       and prices[2] <= prices[3] <= prices[2] * 1.05 + 1000):
                     pairs = [(kelas or "Non-kelas", prices[3])]  # sarana, pelayanan, jumlah, tarif dibulatkan
+                elif (3 <= len(prices) <= 8 and not sum_ok(prices) and not total_first(prices)
+                      and (pw := price_words(lw, len(prices)))
+                      and (xl := (labels_by_x([(w["x0"], w["x1"]) for w in pw], hdr_lines, pw[0]["top"])
+                                  or (not any(t < pw[0]["top"] for t, _ in hdr_lines)
+                                      and recall_x(x_memory, [(w["x0"] + w["x1"]) / 2 for w in pw]))))):
+                    pairs = list(zip(xl, prices))
+                    flags += ["dari_kolom_kelas", "kelas_dari_posisi"]
+                    x_memory.append((tuple((w["x0"] + w["x1"]) / 2 for w in pw), list(xl)))
+                    if class_order_odd(pairs):
+                        flags.append("urutan_kelas_aneh")
                 elif (4 <= len(prices) <= 8 and not sum_ok(prices) and not total_first(prices)
                       and (prices == sorted(prices) or prices == sorted(prices, reverse=True))):
                     # harga per kelas berjajar tanpa judul kelas yang terbaca: simpan semua kolom
