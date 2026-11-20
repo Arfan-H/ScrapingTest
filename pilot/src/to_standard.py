@@ -135,17 +135,21 @@ def clean_name(name):
     name = re.sub(r"\b(I[lI1]{2})\b", "III", name)
     name = re.sub(r"\b(I[l1])\b", "II", name)
     name = re.sub(r"\s+per\s+(tindakan|hari|kali|pemeriksaan|jam|paket|orang|lembar|sesi|unit)\s*$", "", name, flags=re.I)
-    return re.sub(r"\s+", " ", name).strip(" :-.;")
+    return re.sub(r"\s+", " ", name).strip(" :-.;,")
 
 
 DOUBLED = re.compile(r"(?:([A-Za-z])\1){3,}")
 
 
 def lines_by_overlap(page):
+    return lines_from_words(page.extract_words(x_tolerance=1.5, y_tolerance=3, keep_blank_chars=False))
+
+
+def lines_from_words(words):
     """Susun baris dari kata: kata masuk baris yang sama bila kotaknya tumpang-tindih vertikal >= 50% dari tinggi
     kata yang lebih pendek. Angka yang tercetak sedikit naik/turun (mis. kolom total 3 pt lebih tinggi) tetap satu
     baris dengan namanya, padahal extract_text bawaan (toleransi posisi atas 3 pt) memisahkannya."""
-    words = page.extract_words(x_tolerance=1.5, y_tolerance=3, keep_blank_chars=False)
+    words = list(words)
     words.sort(key=lambda w: ((w["top"] + w["bottom"]) / 2, w["x0"]))
     num = re.compile(r"^(?:Rp\.?)?[\d.,:;\-]+$", re.I)
     lines = []  # [top, bottom, [words], semua_angka]
@@ -174,6 +178,44 @@ def lines_by_overlap(page):
         ws.sort(key=lambda w: w["x0"])
         out.append((" ".join(w["text"] for w in ws), ws))
     return out
+
+
+def garble(text):
+    """Skor kerusakan teks OCR: proporsi token satu huruf, simbol aneh, atau huruf-angka bercampur."""
+    toks = re.findall(r"\S+", text)
+    if len(toks) < 20:
+        return 0.0
+    alpha = [t for t in toks if re.search(r"[A-Za-z]", t)]
+    single = sum(1 for t in alpha if len(re.sub(r"[^A-Za-z]", "", t)) == 1)
+    sym = sum(1 for t in toks if re.search(r"[«»~`^_{}\\]|[a-z][A-Z][a-z]|[A-Za-z]\d[A-Za-z]", t))
+    return (single + sym) / len(toks)
+
+
+OCR_CACHE = os.environ.get("OCR_CACHE", os.path.join(os.path.dirname(__file__), "..", "out", "bpk", "ocr_ulang"))
+
+
+def load_ocr(pdf_path):
+    """Kotak teks hasil ocr_ulang.py untuk file ini: {halaman: [kata]} (kosong bila tidak ada)."""
+    import gzip
+    import json
+    f = os.path.join(OCR_CACHE, os.path.basename(pdf_path) + ".json.gz")
+    if not os.path.exists(f):
+        return {}
+    with gzip.open(f, "rt", encoding="utf-8") as h:
+        return {int(k): v for k, v in json.load(h).items()}
+
+
+def choose_ocr(text_lines, ocr_words):
+    """Pakai baris OCR ulang bila teksnya jelas lebih bersih dan angka harganya tidak banyak hilang."""
+    if not ocr_words:
+        return None
+    ocr_lines = lines_from_words([w for w in ocr_words if w.get("score", 1) >= 0.5])
+    t_old = "\n".join(t for t, _ in text_lines)
+    t_new = "\n".join(t for t, _ in ocr_lines)
+    n_old, n_new = len(PRICE_TOK.findall(t_old)), len(PRICE_TOK.findall(t_new))
+    if garble(t_new) + 0.02 < garble(t_old) and n_new >= 0.8 * n_old:
+        return ocr_lines
+    return None
 
 
 def page_lines(page):
@@ -435,13 +477,20 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
     np_titles = []  # judul (baris tanpa harga) sejak baris berharga terakhir
     np_run = []  # baris tanpa harga sejak baris berharga terakhir (judul tabel bisa terbelah beberapa baris)
     rows_at_hdr = 0  # jumlah baris saat judul kelas terakhir dibaca (judul bertingkat tidak saling menghapus)
+    ocr = load_ocr(pdf_path)
     with pdfplumber.open(pdf_path) as pdf:
         if not start_page:
             start_page = find_annex_page(pdf)
         for pno in range(start_page - 1, len(pdf.pages)):
             kelas_ctx = ""  # konteks kelas tidak menyeberang halaman
             hdr_lines = []  # [(top, kata)] baris tanpa harga yang memuat kata kelas, untuk membaca judul per kolom
-            for raw, lw in page_lines(pdf.pages[pno]):
+            plines = page_lines(pdf.pages[pno])
+            metode = "pdf_teks"
+            if (pno + 1) in ocr:
+                alt = choose_ocr(plines, ocr[pno + 1])
+                if alt:
+                    plines, metode = alt, "ocr_ulang"
+            for raw, lw in plines:
                 line = fix_numbers(raw.strip())
                 if not line:
                     continue
@@ -685,7 +734,7 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                         dokumen_id=dok_id, halaman=pno + 1, kategori_asli=category,
                         nama_asli=nama, kelas=(kel or "Non-kelas").strip(), komponen="total",
                         n_kolom_harga=len(prices), harga=harga, sumber_harga="langsung",
-                        golongan="", paket_id="", metode_ekstraksi="pdf_teks",
+                        golongan="", paket_id="", metode_ekstraksi=metode,
                         _blok=block["id"], _flags=list(flags), baris_mentah=raw.strip()))
     # Status BHP: catatan "Komponen tarif ... kelas X ..." bisa muncul di akhir bagian,
     # sesudah tabel lain. Terapkan ke blok terdekat sebelumnya dengan kelas X di bagian yang sama.
