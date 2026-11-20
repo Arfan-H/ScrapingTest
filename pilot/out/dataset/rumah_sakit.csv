@@ -1,0 +1,344 @@
+rs_id,nama_rs,kab_kota,provinsi,nama_generik,n_dokumen
+RS-BHAYANGKARA-TINGKAT-II-SARTIKA-ASIH-BANDUNG,RS Bhayangkara Tingkat II Sartika Asih Bandung,,,False,1
+RS-BHAYANGKARA-TINGKAT-III-BANJARMASIN,RS Bhayangkara Tingkat III Banjarmasin,,,False,1
+RS-BHAYANGKARA-TINGKAT-III-PUSDIK-BRIMOB-WATUKOSEK,RS Bhayangkara Tingkat III Pusdik Brimob Watukosek,,,False,1
+RS-BHAYANGKARA-TINGKAT-IV-BANDA-ACEH,RS Bhayangkara Tingkat IV Banda Aceh,,,False,1
+RS-DI-LINGKUNGAN-KEMENTERIAN-KESEHATAN-BANYAK-RS,RS di lingkungan Kementerian Kesehatan (banyak RS),,,True,2
+RS-DR-RADEN-SOEDJATI-SOEMODIARDJO-KABUPATEN-GROBOGAN,RS Dr. Raden Soedjati Soemodiardjo Kabupaten Grobogan,Kabupaten Grobogan,Jawa Tengah,False,1
+RS-GIGI-DAN-MULUT-GUSTI-HASAN-AMAN-KALIMANTAN-SELATAN,RS Gigi dan Mulut Gusti Hasan Aman,,Kalimantan Selatan,False,2
+RS-KHUSUS-BERSALIN-PANTI-NUGROHO-KABUPATEN-PURBALINGGA,RS Khusus Bersalin Daerah Panti Nugroho,Kabupaten Purbalingga,Jawa Tengah,False,1
+RS-KHUSUS-BERSALIN-SAYANG-IBU-KOTA-BALIKPAPAN,"RS Khusus Bersalin Sayang IBU ""Kelas B"" Kota Balikpapan",Kota Balikpapan,Kalimantan Timur,False,1
+RS-KHUSUS-MATA-MASYARAKAT-SUMATERA-SELATAN,RS Khusus Mata Masyarakat Provinsi Sumatera Selatan,,Sumatera Selatan,False,3
+RS-KHUSUS-MATA-PURWOKERTO-KABUPATEN-BANYUMAS,RS Khusus Mata Purwokerto,Kabupaten Banyumas,Jawa Tengah,False,1
+RS-KHUSUS-PARU-KABUPATEN-KARAWANG,RS Khusus Paru Karawang,Kabupaten Karawang,Jawa Barat,False,1
+RS-KHUSUS-PARU-PARU-SUMATERA-SELATAN,RS Khusus Paru-Paru Provinsi Sumatera Selatan,,Sumatera Selatan,False,1
+RS-KOTA-TANGERANG-SELATAN,RS Kota Tangerang Selatan,Kota Tangerang Selatan,Banten,False,1
+RS-MANDALIKA-NUSA-TENGGARA-BARAT,RS Mandalika,,Nusa Tenggara Barat,False,1
+RS-MATA-KALIMANTAN-TIMUR,RS Mata Provinsi Kalimantan Timur,,Kalimantan Timur,False,1
+RS-MATA-MANDARA-BALI,RS Mata Bali Mandara,,Bali,False,1
+RS-MATA-MASYARAKAT-JAWA-TIMUR,RS Mata Masyarakat Jawa Timur,,Jawa Timur,False,1
+RS-PARU-DR-ARIO-WIRAWAN-SALATIGA,RS Paru Dr. Ario Wirawan Salatiga,,,False,1
+RS-PARU-RESPIRA-DI-YOGYAKARTA,RS Paru Respira,,Di Yogyakarta,False,1
+RS-PRATAMA-KABUPATEN-KOTAWARINGIN-TIMUR,RS Kelas D Pratama,Kabupaten Kotawaringin Timur,Kalimantan Tengah,False,1
+RS-PRATAMA-KABUPATEN-NUNUKAN,RS Kelas D Pratama Kabupaten Nunukan,Kabupaten Nunukan,Kalimantan Utara,False,1
+RS-PUSAT-ANGKATAN-DARAT-GATOT-SOEBROTO,RS Pusat Angkatan Darat Gatot Soebroto,,,False,1
+RS-PUSAT-ANGKATAN-UDARA-DR-SUHARDI-HARDJOLUKITO,RS Pusat Angkatan Udara dr. Suhardi Hardjolukito,,,False,1
+RS-PUSAT-OTAK-NASIONAL,RS Pusat Otak Nasional,,,False,1
+RS-RSUD-SANGATTA-KABUPATEN-KUTAI-TIMUR,RS Blud RSUD Sangatta,Kabupaten Kutai Timur,Kalimantan Timur,False,2
+RS-SINGAPARNA-MEDIKA-CITRAUTAMA-KABUPATEN-TASIKMALAYA,RS Singaparna Medika Citrautama,Kabupaten Tasikmalaya,Jawa Barat,False,1
+RS-TINGKAT-II-TINGKAT-III-DAN-TINGKAT-IV,"RS Tingkat Ii, Tingkat Iii, dan Tingkat IV",,,False,1
+RSJ-ATMA-HUSADA-MAHAKAM-KALIMANTAN-TIMUR,RSJ Daerah Atma Husada Mahakam,,Kalimantan Timur,False,1
+RSJ-GRHASIA-DI-YOGYAKARTA,RSJ Grhasia,,Di Yogyakarta,False,3
+RSJ-JAMBI,RSJ Daerah Provinsi Jambi,,Jambi,False,3
+RSJ-LAMPUNG,RSJ Daerah Provinsi Lampung,,Lampung,False,2
+RSJ-MENUR-JAWA-TIMUR,RSJ Menur,,Jawa Timur,False,1
+RSJ-MUTIARA-SUKMA-NUSA-TENGGARA-BARAT,RSJ Mutiara Sukma,,Nusa Tenggara Barat,False,1
+RSJ-PROF-DR-V-L-RATUMBUYSANG-SULAWESI-UTARA,RSJ Prof. DR. V. L. Ratumbuysang Provinsi Sulawesi Utara,,Sulawesi Utara,False,2
+RSJ-SAMBANG-LIHUM-KALIMANTAN-SELATAN,RSJ Sambang Lihum Provinsi Kalimantan Selatan,,Kalimantan Selatan,False,2
+RSJ-SULAWESI-TENGGARA,RSJ Provinsi Sulawesi Tenggara,,Sulawesi Tenggara,False,1
+RSJ-TAMPAN-RIAU,RSJ Tampan,,Riau,False,1
+RSU-ADHYAKSA-PADA-KEJAKSAAN-AGUNG-REPUBLIK-INDONESIA,RSU Adhyaksa pada Kejaksaan Agung Republik Indonesia,,,False,1
+RSU-CIBABAT-KOTA-CIMAHI,RSU Cibabat Cimahi,Kota Cimahi,Jawa Barat,False,2
+RSU-CIMACAN-KABUPATEN-CIANJUR,RSU Cimacan Kelas D,Kabupaten Cianjur,Jawa Barat,False,2
+RSU-DARAH-KABUPATEN-INDRAMAYU,RSU Darah Indramayu,Kabupaten Indramayu,Jawa Barat,False,1
+RSU-DEARAH-DR-R-SOETRASNO-KABUPATEN-REMBANG,RSU Dearah dr. R. Soetrasno Kabupaten Rembang,Kabupaten Rembang,Jawa Tengah,False,1
+RSU-DEARAH-K-R-M-T-WONGSONEGORO-KOTA-SEMARANG,RSU Dearah K.R.M.T Wongsonegoro Kota Semarang,Kota Semarang,Jawa Tengah,False,1
+RSU-DR-FERDINAND-LUMBANGTOBING-KOTA-SIBOLGA,RSU Dr. Ferdinand Lumbangtobing Sibolga,Kota Sibolga,Sumatera Utara,False,1
+RSU-DR-SLAMET-KABUPATEN-GARUT,RSU dr. Slamet Kabupaten Garut,Kabupaten Garut,Jawa Barat,False,1
+RSU-DR-WAHIDIN-SUDIRO-HUSODO-KOTA-MOJOKERTO,RSU dr. Wahidin Sudiro Husodo Kota Mojokerto,Kota Mojokerto,Jawa Timur,False,1
+RSU-KABANJAHE-KABUPATEN-KARO,RSU Kabanjahe,Kabupaten Karo,Sumatera Utara,False,2
+RSU-KABUPATEN-BANGLI,RSU Bangli,Kabupaten Bangli,Bali,False,1
+RSU-KABUPATEN-BANYUMAS,RSU Kabupaten Banyumas,Kabupaten Banyumas,Jawa Tengah,False,1
+RSU-KABUPATEN-BELITUNG,RSU Kabupaten Belitung,Kabupaten Belitung,Kepulauan Bangka Belitung,False,1
+RSU-KABUPATEN-BOMBANA,RSU Kabupaten Bombana,Kabupaten Bombana,Sulawesi Tenggara,False,1
+RSU-KABUPATEN-MAGELANG,RSU Kabupaten Magelang,Kabupaten Magelang,Jawa Tengah,False,1
+RSU-KABUPATEN-TANGERANG,RSU Kabupaten Tangerang,Kabupaten Tangerang,Banten,False,3
+RSU-KOTA-BANJAR,RSU Kota Banjar,Kota Banjar,Jawa Barat,False,3
+RSU-KOTA-TARAKAN,RSU Kota Tarakan,Kota Tarakan,Kalimantan Utara,False,2
+RSU-KOTA-TEBING-TINGGI,RSU Kota Tebing Tinggi,Kota Tebing Tinggi,Sumatera Utara,False,1
+RSU-LASINRANG-KABUPATEN-PINRANG,RSU Lasinrang,Kabupaten Pinrang,Sulawesi Selatan,False,1
+RSU-PUSAT-DR-SOERADJI-TIRTONEGORO-KLATEN,RSU Pusat dr. Soeradji Tirtonegoro Klaten,,,False,1
+RSU-SONDOSIA-KABUPATEN-BIMA,RSU Sondosia,Kabupaten Bima,Nusa Tenggara Barat,False,1
+RSU-SULAWESI-TENGGARA,RSU Provinsi Sulawesi Tenggara,,Sulawesi Tenggara,False,1
+RSU-SULTAN-SULAIMAN-KABUPATEN-SERDANG-BEDAGAI,RSU Sultan Sulaiman Serdang Bedagai,Kabupaten Serdang Bedagai,Sumatera Utara,False,1
+RSUD-45-KABUPATEN-KUNINGAN,RSUD 45 Kabupaten Kuningan,Kabupaten Kuningan,Jawa Barat,False,1
+RSUD-A-YANI-DENGAN-PERATURAN-WALIKOTA-KOTA-METRO,RSUD A. Yani dengan Peraturan Walikota,Kota Metro,Lampung,False,1
+RSUD-ABDOEL-WAHAB-SJAHRANIE-KALIMANTAN-TIMUR,RSUD Abdoel Wahab Sjahranie,,Kalimantan Timur,False,1
+RSUD-ADE-MUHAMMAD-DJOEN-KABUPATEN-SINTANG,RSUD Ade Muhammad Djoen Sintang,Kabupaten Sintang,Kalimantan Barat,False,1
+RSUD-AJI-BATARA-AGUNG-DEWA-SAKTI-SAMBOJA-KABUPATEN-KUTAI-KARTANEGARA,RSUD Aji Batara Agung Dewa Sakti Samboja,Kabupaten Kutai Kartanegara,Kalimantan Timur,False,1
+RSUD-AJI-MUHAMMAD-PARIKESIT-KABUPATEN-KUTAI-KARTANEGARA,RSUD Aji Muhammad Parikesit Kabupaten Kutai Kartanegara,Kabupaten Kutai Kartanegara,Kalimantan Timur,False,3
+RSUD-AJIBARANG-KABUPATEN-BANYUMAS,RSUD Ajibarang,Kabupaten Banyumas,Jawa Tengah,False,4
+RSUD-AKHMAD-BERAHIM-KABUPATEN-TANA-TIDUNG,RSUD Akhmad Berahim,Kabupaten Tana Tidung,Kalimantan Utara,False,1
+RSUD-ALIMUDDIN-UMAR-KABUPATEN-LAMPUNG-BARAT,RSUD Alimuddin Umar,Kabupaten Lampung Barat,Lampung,False,3
+RSUD-ANDI-DJEMMA-MASAMBA-KABUPATEN-LUWU-UTARA,RSUD Andi Djemma Masamba,Kabupaten Luwu Utara,Sulawesi Selatan,False,1
+RSUD-ANUNTALOKO-KABUPATEN-PARIGI-MOUTONG,RSUD Anuntaloko Kabupaten Parigi Moutong,Kabupaten Parigi Moutong,Sulawesi Tengah,False,1
+RSUD-AR-ROZY-KOTA-PROBOLINGGO,RSUD AR Rozy,Kota Probolinggo,Jawa Timur,False,1
+RSUD-ARGA-MAKMUR-KABUPATEN-BENGKULU-UTARA,RSUD Arga Makmur Kabupaten Bengkulu Utara,Kabupaten Bengkulu Utara,Bengkulu,False,1
+RSUD-ASY-SYIFA-KABUPATEN-SUMBAWA-BARAT,RSUD Asy-Syifa’ Sumbawa Barat,Kabupaten Sumbawa Barat,Nusa Tenggara Barat,False,1
+RSUD-AWET-MUDA-NARMADA-KABUPATEN-LOMBOK-BARAT,RSUD Awet Muda Narmada Kabupaten Lombok Barat,Kabupaten Lombok Barat,Nusa Tenggara Barat,False,1
+RSUD-BAHTERAMAS-SULAWESI-TENGGARA,RSUD Bahteramas Provinsi Sulawesi Tenggara,,Sulawesi Tenggara,False,1
+RSUD-BAJAWA-KABUPATEN-NGADA,RSUD Bajawa,Kabupaten Ngada,Nusa Tenggara Timur,False,2
+RSUD-BANDAR-NEGARA-HUSADA-LAMPUNG,RSUD Bandar Negara Husada Provinsi Lampung,,Lampung,False,1
+RSUD-BANGIL-KABUPATEN-PASURUAN,RSUD Bangil Kabupaten Pasuruan,Kabupaten Pasuruan,Jawa Timur,False,2
+RSUD-BANGKINANG-KABUPATEN-KAMPAR,RSUD Bangkinang,Kabupaten Kampar,Riau,False,1
+RSUD-BANYUDONO-KABUPATEN-BOYOLALI,RSUD Banyudono Kabupaten Boyolali,Kabupaten Boyolali,Jawa Tengah,False,3
+RSUD-BARI-KOTA-PALEMBANG,RSUD Palembang Bari,Kota Palembang,Sumatera Selatan,False,3
+RSUD-BATARA-GURU-BELO-KABUPATEN-LUWU,RSUD Batara Guru Beloра,Kabupaten Luwu,Sulawesi Selatan,False,1
+RSUD-BAYUNG-LENCIR-KABUPATEN-MUSI-BANYUASIN,RSUD Bayung Lencir Kabupaten Musi Banyuasin,Kabupaten Musi Banyuasin,Sumatera Selatan,False,1
+RSUD-BAYUNG-LENCIR-PADA-PERATURAN-NOMOR-8-TAHUN-2023-TENTANG-PAJAK-DAN-RETRIBUSI-KABUPATEN-MUSI-BANYUASIN,RSUD Bayung Lencir Pada Peraturan Daerah Nomor 8 Tahun 2023 Tentang Pajak Daerah Dan Retribusi Daerah,Kabupaten Musi Banyuasin,Sumatera Selatan,False,1
+RSUD-BENDAN-KOTA-PEKALONGAN,RSUD Bendan Kota Pekalongan,Kota Pekalongan,Jawa Tengah,False,13
+RSUD-BENYAMIN-GULUH-KABUPATEN-KOLAKA,RSUD Benyamin Guluh Kabupaten Kolaka,Kabupaten Kolaka,Sulawesi Tenggara,False,1
+RSUD-BESEMAH-KOTA-PAGAR-ALAM,RSUD Besemah Kota Pagar Alam,Kota Pagar Alam,Sumatera Selatan,False,1
+RSUD-BLAMBANGAN-KABUPATEN-BANYUWANGI,RSUD Blambangan Kabupaten Banyuwangi,Kabupaten Banyuwangi,Jawa Timur,False,1
+RSUD-BRIGJEND-H-HASAN-BASRY-KANDANGAN-KABUPATEN-HULU-SUNGAI-SELATAN,RSUD Brigjend. H.Hasan Basry Kandangan,Kabupaten Hulu Sungai Selatan,Kalimantan Selatan,False,2
+RSUD-BUKIT-KERMAN-BADAN-LAYANAN-UMUM-UNIT-PELAKSANA-TEKNIS-PUSAT-KESEHATAN-MASYARAKAT-DAN-BADAN-LAYANAN-UMUM-UNIT-PELAKSANA-TEKNIS-LABORATORIUM-KESEHATAN-KABUPATEN-KERINCI,"RSUD Bukit Kerman, Badan Layanan Umum Daerah Unit Pelaksana Teknis Daerah Pusat Kesehatan Masyarakat Dan Badan Layanan Umum Daerah Unit Pelaksana Teknis Daerah Laboratorium Kesehatan Daerah Kabupaten Kerinci",Kabupaten Kerinci,Jambi,False,1
+RSUD-BUNG-KARNO-KOTA-SURAKARTA,RSUD Bung Karno Kota Surakarta,Kota Surakarta,Jawa Tengah,False,1
+RSUD-CABANGBUNGIN-KABUPATEN-BEKASI,RSUD Cabangbungin Kabupaten Bekasi,Kabupaten Bekasi,Jawa Barat,False,1
+RSUD-CAMPURDARAT-KABUPATEN-TULUNGAGUNG,RSUD Campurdarat,Kabupaten Tulungagung,Jawa Timur,False,1
+RSUD-CIAWI-DAN-RSUD-CIBINONG-KABUPATEN-BOGOR,RSUD Ciawi DAN RSUD Cibinong,Kabupaten Bogor,Jawa Barat,False,1
+RSUD-CIAWI-KABUPATEN-BOGOR,RSUD Ciawi,Kabupaten Bogor,Jawa Barat,False,2
+RSUD-CIBABAT-KOTA-CIMAHI,RSUD Cibabat Kota Cimahi,Kota Cimahi,Jawa Barat,False,1
+RSUD-CIBINONG-KABUPATEN-BOGOR,RSUD Cibinong,Kabupaten Bogor,Jawa Barat,False,2
+RSUD-CILEUNGSI-KABUPATEN-BOGOR,RSUD Cileungsi,Kabupaten Bogor,Jawa Barat,False,1
+RSUD-DAERAH-KHUSUS-IBUKOTA-JAKARTA,RSUD Provinsi Daerah Khusus Ibukota Jakarta,,Daerah Khusus Ibukota Jakarta,True,2
+RSUD-DAHA-SEJAHTERA-KABUPATEN-HULU-SUNGAI-SELATAN,RSUD Daha Sejahtera Kabupaten Hulu Sungai Selatan,Kabupaten Hulu Sungai Selatan,Kalimantan Selatan,False,2
+RSUD-DAN-RS-DAERAH-KHUSUS-IBUKOTA-JAKARTA,RSUD dan RS Khusus Daerah,,Daerah Khusus Ibukota Jakarta,False,1
+RSUD-DAN-RSJ-JAWA-TENGAH,RSUD dan RSJ Daerah Provinsi Jawa Tengah,,Jawa Tengah,False,1
+RSUD-DATU-SANGGUL-RANTAU-KABUPATEN-TAPIN,RSUD Datu Sanggul Rantau,Kabupaten Tapin,Kalimantan Selatan,False,6
+RSUD-DAYAKU-RAJA-KABUPATEN-KUTAI-KARTANEGARA,RSUD Dayaku Raja,Kabupaten Kutai Kartanegara,Kalimantan Timur,False,1
+RSUD-DEMANG-SEPULAU-RAYA-KABUPATEN-LAMPUNG-TENGAH,RSUD Demang Sepulau Raya Kabupaten Lampung Tengah,Kabupaten Lampung Tengah,Lampung,False,1
+RSUD-DENGAN-POLA-PENGELOLAAN-KEUANGAN-BADAN-LAYANAN-UMUM-KOTA-BOGOR,RSUD Kota Bogor Dengan Pola Pengelolaan Keuangan Badan Layanan Umum Daerah,Kota Bogor,Jawa Barat,False,1
+RSUD-DEPATI-BAHRIN-KABUPATEN-BANGKA,RSUD Depati Bahrin Kabupaten Bangka,Kabupaten Bangka,Kepulauan Bangka Belitung,False,1
+RSUD-DI-KABUPATEN-BOGOR,RSUD Di Kabupaten Bogor,Kabupaten Bogor,Jawa Barat,False,1
+RSUD-DI-KABUPATEN-CIANJUR,RSUD Kelas C di Kabupaten Cianjur,Kabupaten Cianjur,Jawa Barat,False,1
+RSUD-DI-KABUPATEN-EMPAT-LAWANG,RSUD di Kabupaten Empat Lawang,Kabupaten Empat Lawang,Sumatera Selatan,False,1
+RSUD-DI-KABUPATEN-KEBUMEN,RSUD di Kabupaten Kebumen,Kabupaten Kebumen,Jawa Tengah,False,1
+RSUD-DI-KABUPATEN-OGAN-KOMERING-ILIR,RSUD Di Kabupaten Ogan Komering Ilir,Kabupaten Ogan Komering Ilir,Sumatera Selatan,False,1
+RSUD-DI-KABUPATEN-SAMBAS,RSUD Di Kabupaten Sambas,Kabupaten Sambas,Kalimantan Barat,False,1
+RSUD-DI-WILAYAH-KABUPATEN-CIAMIS,RSUD Di Wilayah Kabupaten Ciamis,Kabupaten Ciamis,Jawa Barat,False,1
+RSUD-DOKTER-AGOESDJAM-KABUPATEN-KETAPANG,RSUD Dokter Agoesdjam Kabupaten Ketapang,Kabupaten Ketapang,Kalimantan Barat,False,1
+RSUD-DOKTER-MOHAMAD-SOEWANDHIE-DALAM-MELAKUKAN-KERJA-SAMA-DENGAN-PIHAK-LAIN-KOTA-SURABAYA,RSUD Dokter Mohamad Soewandhie Kota Surabaya Dalam Melakukan Kerja Sama Dengan Pihak Lain,Kota Surabaya,Jawa Timur,False,1
+RSUD-DOKTER-SOEDARSO-KALIMANTAN-BARAT,RSUD Dokter Soedarso Provinsi Kalimantan Barat,,Kalimantan Barat,False,1
+RSUD-DR-A-DADI-TJOKRODIPO-KOTA-BANDAR-LAMPUNG,RSUD Dr. A Dadi Tjokrodipo Kota Bandar Lampung,Kota Bandar Lampung,Lampung,False,1
+RSUD-DR-ABDUL-AZIZ-KOTA-SINGKAWANG,RSUD dr. Abdul Aziz Kelas B Singkawang,Kota Singkawang,Kalimantan Barat,False,2
+RSUD-DR-ALBERTH-H-TOREY-KABUPATEN-TELUK-WONDAMA,RSUD Dr. Alberth H. Torey Kabupaten Teluk Wondama,Kabupaten Teluk Wondama,Papua Barat,False,1
+RSUD-DR-DJASAMEN-SARAGIH-KOTA-PEMATANG-SIANTAR,RSUD Dr. Djasamen Saragih,Kota Pematang Siantar,Sumatera Utara,False,1
+RSUD-DR-DORIS-SYLVANUS-KALIMANTAN-TENGAH,RSUD Dr. Doris Sylvanus,,Kalimantan Tengah,False,1
+RSUD-DR-EKO-MAULANA-ALI-KABUPATEN-BANGKA,RSUD Dr.Eko Maulana Ali,Kabupaten Bangka,Kepulauan Bangka Belitung,False,1
+RSUD-DR-H-ABDUL-MOELOEK-LAMPUNG,RSUD Dr. H. Abdul Moeloek Provinsi Lampung,,Lampung,False,3
+RSUD-DR-H-ANDI-ABDURRAHMAN-NOOR-KABUPATEN-TANAH-BUMBU,"RSUD dr, H. Andi Abdurrahman Noor",Kabupaten Tanah Bumbu,Kalimantan Selatan,False,1
+RSUD-DR-H-KUMPULAN-PANE-KOTA-TEBING-TINGGI,RSUD Dr. H. Kumpulan Pane Kota Tebing Tinggi,Kota Tebing Tinggi,Sumatera Utara,False,3
+RSUD-DR-H-MOCH-ANSARI-SALEH-BANJARMASIN-KALIMANTAN-SELATAN,RSUD dr.H. Moch. Ansari Saleh Banjarmasin,,Kalimantan Selatan,False,1
+RSUD-DR-H-SLAMET-MARTODIRDJO-KABUPATEN-PAMEKASAN,RSUD dr.H. Slamet Martodirdjo,Kabupaten Pamekasan,Jawa Timur,False,3
+RSUD-DR-H-SOEWONDO-KABUPATEN-KENDAL,RSUD Dr. H. Soewondo Kabupaten Kendal,Kabupaten Kendal,Jawa Tengah,False,1
+RSUD-DR-H-YULIDDIN-AWAY-TAPAKTUAN-KABUPATEN-ACEH-SELATAN,RSUD Dr. H. Yuliddin Away Tapaktuan,Kabupaten Aceh Selatan,Aceh,False,1
+RSUD-DR-HADRIANUS-SINAGA-PANGURURAN-KABUPATEN-SAMOSIR,RSUD Dr. Hadrianus Sinaga Pangururan Kabupaten Samosir,Kabupaten Samosir,Sumatera Utara,False,3
+RSUD-DR-HASRI-AINUN-HABIBIE-GORONTALO,RSUD dr. Hasri Ainun Habibie,,Gorontalo,False,1
+RSUD-DR-LOEKMONO-HADI-KABUPATEN-KUDUS,RSUD dr. Loekmono Hadi,Kabupaten Kudus,Jawa Tengah,False,3
+RSUD-DR-M-ASHARI-KABUPATEN-PEMALANG,RSUD Dr. M. Ashari Kabupaten Pemalang,Kabupaten Pemalang,Jawa Tengah,False,1
+RSUD-DR-M-YUNUS-BENGKULU,RSUD dr. M. Yunus Bengkulu,,Bengkulu,False,1
+RSUD-DR-R-GOETOENG-TAROENADIBRATA-KABUPATEN-PURBALINGGA,RSUD dr. R. Goetoeng Taroenadibrata Kabupaten Purbalingga,Kabupaten Purbalingga,Jawa Tengah,False,2
+RSUD-DR-R-M-DJOELHAM-KOTA-BINJAI,RSUD Dr. R.M. Djoelham Binjai,Kota Binjai,Sumatera Utara,False,1
+RSUD-DR-R-SOEDARSONO-KOTA-PASURUAN,RSUD dr. R. Soedarsono Kota Pasuruan,Kota Pasuruan,Jawa Timur,False,3
+RSUD-DR-R-SOEDJATI-SOEMODIARDJO-PURWODADI-KABUPATEN-GROBOGAN,RSUD Dr. R. Soedjati Soemodiardjo Purwodadi,Kabupaten Grobogan,Jawa Tengah,False,1
+RSUD-DR-R-SOEDJONO-SELONG-KABUPATEN-LOMBOK-TIMUR,RSUD Dr. R. Soedjono Selong,Kabupaten Lombok Timur,Nusa Tenggara Barat,False,1
+RSUD-DR-R-SOETRASNO-KABUPATEN-REMBANG,RSUD dr. R. Soetrasno Rembang,Kabupaten Rembang,Jawa Tengah,False,3
+RSUD-DR-S-JACOBUS-LUNA-M-SI-KABUPATEN-BENGKAYANG,"RSUD Drs. Jacobus Luna, M.Si. Kabupaten Bengkayang",Kabupaten Bengkayang,Kalimantan Barat,False,1
+RSUD-DR-SLAMET-DENGAN-STATUS-POLA-PENGELOLAAN-KEUANGAN-BADAN-LAYANAN-UMUM-PPK-PENUH-KABUPATEN-GARUT,RSUD dr. Slamet Garut Dengan Status Pola Pengelolaan Keuangan Badan Layanan Umum Daerah (Ppk-Blud) Penuh,Kabupaten Garut,Jawa Barat,False,1
+RSUD-DR-SOEDIRAN-MANGUN-SUMARSO-KABUPATEN-WONOGIRI,RSUD dr. Soediran Mangun Sumarso Kabupaten Wonogiri,Kabupaten Wonogiri,Jawa Tengah,False,2
+RSUD-DR-SOEDOMO-KABUPATEN-TRENGGALEK,RSUD dr. Soedomo Kabupaten Trenggalek,Kabupaten Trenggalek,Jawa Timur,False,1
+RSUD-DR-SOEKARDJO-KOTA-TASIKMALAYA,RSUD dr. Soekardjo Kota Tasikmalaya,Kota Tasikmalaya,Jawa Barat,False,4
+RSUD-DR-T-C-HILLERS-MAUMERA-KABUPATEN-SIKKA,RSUD dr.T.C.Hillers Maumera,Kabupaten Sikka,Nusa Tenggara Timur,False,1
+RSUD-DUMAI-PADA-PERATURAN-DUMAI-NOMOR-1-TAHUN-2024-TENTANG-PAJAK-DAN-RETRIBUSI-KOTA-D-U-M-A-I,RSUD Kota Dumai Pada Peraturan Daerah Kota Dumai Nomor 1 Tahun 2024 tentang Pajak Daerah dan Retribusi Daerah,Kota D U M A I,Riau,False,1
+RSUD-DUNGUS-JAWA-TIMUR,RSUD Dungus,,Jawa Timur,False,1
+RSUD-FAK-FAK-KABUPATEN-FAKFAK,RSUD Kabupaten Fak-Fak,Kabupaten Fakfak,Papua Barat,False,1
+RSUD-GEMOLONG-KABUPATEN-SRAGEN,RSUD Gemolong Kabupaten Sragen,Kabupaten Sragen,Jawa Tengah,False,1
+RSUD-GENTENG-KABUPATEN-BANYUWANGI,RSUD Genteng Kabupaten Banyuwangi,Kabupaten Banyuwangi,Jawa Timur,False,1
+RSUD-GRATI-KABUPATEN-PASURUAN,RSUD Grati Kabupaten Pasuruan,Kabupaten Pasuruan,Jawa Timur,False,2
+RSUD-GUNUNG-JATI-KOTA-CIREBON,RSUD Gunung Jati Kota Cirebon,Kota Cirebon,Jawa Barat,False,2
+RSUD-H-ABDUL-AZIZ-MARABAHAN-KABUPATEN-BARITO-KUALA,RSUD H. Abdul Aziz Marabahan,Kabupaten Barito Kuala,Kalimantan Selatan,False,1
+RSUD-H-BADARUDDIN-KASIM-KABUPATEN-TABALONG,RSUD H. Badaruddin Kasim,Kabupaten Tabalong,Kalimantan Selatan,False,1
+RSUD-HAJI-ABDOEL-MADJID-BATOE-KABUPATEN-BATANG-HARI,RSUD Haji Abdoel Madjid Batoe Kabupaten Batang Hari,Kabupaten Batang Hari,Jambi,False,2
+RSUD-HAJI-JAWA-TIMUR,RSUD Haji,,Jawa Timur,False,1
+RSUD-HJ-ANNA-LASMANAH-KABUPATEN-BANJARNEGARA,RSUD Hj. Anna Lasmanah Banjarnegara,Kabupaten Banjarnegara,Jawa Tengah,False,4
+RSUD-IR-SOEKARNO-KABUPATEN-SUKOHARJO,RSUD Ir. Soekarno,Kabupaten Sukoharjo,Jawa Tengah,False,1
+RSUD-JAMPANG-KULON-SUKABUMI-JAWA-BARAT,RSUD Jampang Kulon Sukabumi Provinsi Jawa Barat,,Jawa Barat,False,1
+RSUD-JAWA-TENGAH,RSUD Provinsi Jawa Tengah,,Jawa Tengah,True,3
+RSUD-JENDERAL-AHMAD-YANI-KOTA-METRO,RSUD Jenderal Ahmad Yani Kota Metro,Kota Metro,Lampung,False,1
+RSUD-K-R-M-T-WONGSONEGORO-KOTA-SEMARANG,RSUD K.R.M.T Wongsonegoro Kota Semarang,Kota Semarang,Jawa Tengah,False,1
+RSUD-KABUPATEN-ACEH-BESAR,RSUD Kabupaten Aceh Besar,Kabupaten Aceh Besar,Aceh,False,1
+RSUD-KABUPATEN-BALANGAN,RSUD Balangan,Kabupaten Balangan,Kalimantan Selatan,False,1
+RSUD-KABUPATEN-BANDUNG,RSUD Kabupaten Bandung,Kabupaten Bandung,Jawa Barat,True,2
+RSUD-KABUPATEN-BANGKA-TENGAH,RSUD Bangka Tengah,Kabupaten Bangka Tengah,Kepulauan Bangka Belitung,False,2
+RSUD-KABUPATEN-BANJARNEGARA,RSUD Kabupaten Banjarnegara,Kabupaten Banjarnegara,Jawa Tengah,True,2
+RSUD-KABUPATEN-BANTAENG,RSUD Kabupaten Bantaeng,Kabupaten Bantaeng,Sulawesi Selatan,True,1
+RSUD-KABUPATEN-BANYUMAS,RSUD Banyumas,Kabupaten Banyumas,Jawa Tengah,False,1
+RSUD-KABUPATEN-BEKASI,RSUD Kabupaten Bekasi,Kabupaten Bekasi,Jawa Barat,False,1
+RSUD-KABUPATEN-BELITUNG,RSUD Kabupaten Belitung,Kabupaten Belitung,Kepulauan Bangka Belitung,False,1
+RSUD-KABUPATEN-BENGKAYANG,RSUD Kabupaten Bengkayang,Kabupaten Bengkayang,Kalimantan Barat,False,1
+RSUD-KABUPATEN-BLORA,RSUD Kabupaten Blora,Kabupaten Blora,Jawa Tengah,False,4
+RSUD-KABUPATEN-BONE,RSUD Kabupaten Bone,Kabupaten Bone,Sulawesi Selatan,False,1
+RSUD-KABUPATEN-CIANJUR,RSUD Kabupaten Cianjur,Kabupaten Cianjur,Jawa Barat,True,3
+RSUD-KABUPATEN-DHARMASRAYA,RSUD Kab. Dharmasraya,Kabupaten Dharmasraya,Sumatera Barat,False,1
+RSUD-KABUPATEN-EMPAT-LAWANG,RSUD Kabupaten Empat Lawang,Kabupaten Empat Lawang,Sumatera Selatan,False,1
+RSUD-KABUPATEN-INDRAMAYU,RSUD Indramayu,Kabupaten Indramayu,Jawa Barat,False,3
+RSUD-KABUPATEN-JOMBANG,RSUD Kabupaten Jombang,Kabupaten Jombang,Jawa Timur,False,3
+RSUD-KABUPATEN-KARANGANYAR,RSUD Kabupaten Karanganyar,Kabupaten Karanganyar,Jawa Tengah,False,1
+RSUD-KABUPATEN-KEBUMEN,RSUD Kabupaten Kebumen,Kabupaten Kebumen,Jawa Tengah,False,4
+RSUD-KABUPATEN-KEPULAUAN-MERANTI,RSUD Kabupaten Kepulauan Meranti,Kabupaten Kepulauan Meranti,Riau,False,1
+RSUD-KABUPATEN-KLUNGKUNG,RSUD Kabupaten Klungkung,Kabupaten Klungkung,Bali,False,1
+RSUD-KABUPATEN-KONAWE,RSUD Kabupaten Konawe,Kabupaten Konawe,Sulawesi Tenggara,True,1
+RSUD-KABUPATEN-KONAWE-KEPULAUAN,RSUD Kabupaten Konawe Kepulauan,Kabupaten Konawe Kepulauan,Sulawesi Tenggara,False,1
+RSUD-KABUPATEN-KONAWE-SELATAN,RSUD Kabupaten Konawe Selatan,Kabupaten Konawe Selatan,Sulawesi Tenggara,False,1
+RSUD-KABUPATEN-KUBU-RAYA,RSUD Kabupaten Kubu Raya,Kabupaten Kubu Raya,Kalimantan Barat,False,1
+RSUD-KABUPATEN-KUDUS,RSUD Kabupaten Kudus,Kabupaten Kudus,Jawa Tengah,False,1
+RSUD-KABUPATEN-KUNINGAN,RSUD Kabupaten Kuningan,Kabupaten Kuningan,Jawa Barat,True,1
+RSUD-KABUPATEN-LAHAT,RSUD Lahat,Kabupaten Lahat,Sumatera Selatan,False,1
+RSUD-KABUPATEN-LANDAK,RSUD Kabupaten Landak,Kabupaten Landak,Kalimantan Barat,False,1
+RSUD-KABUPATEN-MAJALENGKA,RSUD Kabupaten Majalengka,Kabupaten Majalengka,Jawa Barat,False,1
+RSUD-KABUPATEN-MAJENE,RSUD Kabupaten Majene,Kabupaten Majene,Sulawesi Barat,True,2
+RSUD-KABUPATEN-MALINAU,RSUD Malinau,Kabupaten Malinau,Kalimantan Utara,False,1
+RSUD-KABUPATEN-MALUKU-TENGGARA,RSUD Kabupaten Maluku Tenggara,Kabupaten Maluku Tenggara,Maluku,True,1
+RSUD-KABUPATEN-MAMUJU,RSUD Mamuju,Kabupaten Mamuju,Sulawesi Barat,False,1
+RSUD-KABUPATEN-MAMUJU-TENGAH,RSUD Mamuju Tengah,Kabupaten Mamuju Tengah,Sulawesi Barat,False,1
+RSUD-KABUPATEN-MANOKWARI,RSUD Kabupaten Manokwari,Kabupaten Manokwari,Papua Barat,False,1
+RSUD-KABUPATEN-MIMIKA,RSUD Kabupaten Mimika,Kabupaten Mimika,Papua,False,1
+RSUD-KABUPATEN-MUNA,RSUD Kabupaten Muna,Kabupaten Muna,Sulawesi Tenggara,True,2
+RSUD-KABUPATEN-NATUNA,RSUD Kabupaten Natuna,Kabupaten Natuna,Kepulauan Riau,False,1
+RSUD-KABUPATEN-NUNUKAN,RSUD Kabupaten Nunukan,Kabupaten Nunukan,Kalimantan Utara,False,2
+RSUD-KABUPATEN-PENAJAM-PASER-UTARA,RSUD Kabupaten Penajam Paser Utara,Kabupaten Penajam Paser Utara,Kalimantan Timur,False,2
+RSUD-KABUPATEN-PESAWARAN,RSUD Pesawaran Kabupaten Pesawaran,Kabupaten Pesawaran,Lampung,False,1
+RSUD-KABUPATEN-POHUWATO,RSUD Kabupaten Pohuwato,Kabupaten Pohuwato,Gorontalo,False,1
+RSUD-KABUPATEN-POLEWALI-MANDAR,RSUD Polewali,Kabupaten Polewali Mandar,Sulawesi Barat,False,1
+RSUD-KABUPATEN-PRINGSEWU,RSUD Pringsewu,Kabupaten Pringsewu,Lampung,False,1
+RSUD-KABUPATEN-PULANG-PISAU,RSUD Pulang Pisau,Kabupaten Pulang Pisau,Kalimantan Tengah,False,1
+RSUD-KABUPATEN-PURBALINGGA,RSUD Kabupaten Purbalingga,Kabupaten Purbalingga,Jawa Tengah,False,1
+RSUD-KABUPATEN-PURWOREJO,RSUD Kabupaten Purworejo,Kabupaten Purworejo,Jawa Tengah,False,1
+RSUD-KABUPATEN-SEKADAU,RSUD Kabupaten Sekadau,Kabupaten Sekadau,Kalimantan Barat,False,2
+RSUD-KABUPATEN-SIDENRENG-RAPPANG,RSUD Kabupaten Sidenreng Rappang,Kabupaten Sidenreng Rappang,Sulawesi Selatan,True,1
+RSUD-KABUPATEN-SIDOARJO,RSUD Kabupaten Sidoarjo,Kabupaten Sidoarjo,Jawa Timur,False,3
+RSUD-KABUPATEN-SINJAI,RSUD Kabupaten Sinjai,Kabupaten Sinjai,Sulawesi Selatan,False,2
+RSUD-KABUPATEN-SITUBONDO,RSUD Kelas D Kabupaten Situbondo,Kabupaten Situbondo,Jawa Timur,False,1
+RSUD-KABUPATEN-SOLOK-SELATAN,RSUD Solok Selatan,Kabupaten Solok Selatan,Sumatera Barat,False,1
+RSUD-KABUPATEN-SORONG,RSUD Kelas C Kabupaten Sorong,Kabupaten Sorong,Papua Barat,False,1
+RSUD-KABUPATEN-SUBANG,RSUD Subang,Kabupaten Subang,Jawa Barat,False,1
+RSUD-KABUPATEN-SUKOHARJO,RSUD Kabupaten Sukoharjo,Kabupaten Sukoharjo,Jawa Tengah,False,1
+RSUD-KABUPATEN-SUMBAWA,RSUD Sumbawa,Kabupaten Sumbawa,Nusa Tenggara Barat,False,1
+RSUD-KABUPATEN-SUMEDANG,RSUD Kabupaten Sumedang,Kabupaten Sumedang,Jawa Barat,False,2
+RSUD-KABUPATEN-TABANAN,RSUD Tabanan,Kabupaten Tabanan,Bali,False,1
+RSUD-KABUPATEN-TASIKMALAYA,RSUD Kabupaten Tasikmalaya,Kabupaten Tasikmalaya,Jawa Barat,True,1
+RSUD-KABUPATEN-TEMANGGUNG,RSUD Kabupaten Temanggung,Kabupaten Temanggung,Jawa Tengah,False,4
+RSUD-KABUPATEN-WAKATOBI,RSUD Kabupaten Wakatobi,Kabupaten Wakatobi,Sulawesi Tenggara,True,1
+RSUD-KABUPATEN-WONOGIRI,RSUD Kabupaten Wonogiri,Kabupaten Wonogiri,Jawa Tengah,False,1
+RSUD-KAJEN-KABUPATEN-PEKALONGAN,RSUD Kajen Kabupaten Pekalongan,Kabupaten Pekalongan,Jawa Tengah,False,1
+RSUD-KALIANDA-KABUPATEN-LAMPUNG-SELATAN,RSUD Kalianda Kabupaten Lampung Selatan,Kabupaten Lampung Selatan,Lampung,False,1
+RSUD-KALIMANTAN-BARAT,RSUD Provinsi Kalimantan Barat,,Kalimantan Barat,True,1
+RSUD-KALIMANTAN-UTARA,RSUD Provinsi Kalimantan Utara,,Kalimantan Utara,True,1
+RSUD-KANJURUHAN-KABUPATEN-MALANG,RSUD Kanjuruhan Kabupaten Malang,Kabupaten Malang,Jawa Timur,False,1
+RSUD-KAYEN-KABUPATEN-PATI,RSUD Kayen,Kabupaten Pati,Jawa Tengah,False,5
+RSUD-KESESI-KABUPATEN-PEKALONGAN,RSUD Kesesi Kabupaten Pekalongan,Kabupaten Pekalongan,Jawa Tengah,False,1
+RSUD-KORPRI-KALIMANTAN-TIMUR,RSUD Korpri Provinsi Kalimantan Timur,,Kalimantan Timur,False,1
+RSUD-KOTA-BAUBAU,RSUD Kota Baubau,Kota Baubau,Sulawesi Tenggara,False,1
+RSUD-KOTA-BEKASI,RSUD Kelas D Kota Bekasi,Kota Bekasi,Jawa Barat,False,1
+RSUD-KOTA-BOGOR,RSUD Kota Bogor,Kota Bogor,Jawa Barat,False,1
+RSUD-KOTA-DEPOK,RSUD Kota Depok,Kota Depok,Jawa Barat,False,2
+RSUD-KOTA-KENDARI,RSUD Kota Kendari,Kota Kendari,Sulawesi Tenggara,False,1
+RSUD-KOTA-MADIUN,RSUD Kota Madiun,Kota Madiun,Jawa Timur,False,1
+RSUD-KOTA-MALANG,RSUD Kota Malang,Kota Malang,Jawa Timur,False,1
+RSUD-KOTA-SALATIGA,RSUD Kota Salatiga,Kota Salatiga,Jawa Tengah,True,1
+RSUD-KOTA-SEMARANG,RSUD Kota Semarang,Kota Semarang,Jawa Tengah,False,2
+RSUD-KOTA-SERANG,RSUD Kota Serang,Kota Serang,Banten,False,1
+RSUD-KOTA-SINGKAWANG,RSUD Kota Singkawang,Kota Singkawang,Kalimantan Barat,False,1
+RSUD-KOTA-SURAKARTA,RSUD Kota Surakarta,Kota Surakarta,Jawa Tengah,False,2
+RSUD-KOTA-TANGERANG,RSUD Kota Tangerang,Kota Tangerang,Banten,False,1
+RSUD-KOTA-TASIKMALAYA,RSUD Kelas B Non Pendidikan Kota Tasikmalaya,Kota Tasikmalaya,Jawa Barat,False,1
+RSUD-KOTA-TIDORE-KEPULAUAN,RSUD Kota Tidore Kepulauan,Kota Tidore Kepulauan,Maluku Utara,True,1
+RSUD-KOTABARU-KABUPATEN-KOTA-BARU,RSUD Kotabaru,Kabupaten Kota Baru,Kalimantan Selatan,False,3
+RSUD-KRATON-KABUPATEN-PEKALONGAN,RSUD Kraton Kabupaten Pekalongan,Kabupaten Pekalongan,Jawa Tengah,False,5
+RSUD-KUALA-KURUN-KABUPATEN-GUNUNG-MAS,RSUD Kuala Kurun,Kabupaten Gunung Mas,Kalimantan Tengah,False,2
+RSUD-KUDUNGGA-KABUPATEN-KUTAI-TIMUR,RSUD Kudungga,Kabupaten Kutai Timur,Kalimantan Timur,False,2
+RSUD-LA-TEMMAMALA-KABUPATEN-SOPPENG,RSUD LA Temmamala,Kabupaten Soppeng,Sulawesi Selatan,False,1
+RSUD-LAGITA-KABUPATEN-BENGKULU-UTARA,RSUD Lagita,Kabupaten Bengkulu Utara,Bengkulu,False,1
+RSUD-LAKIPADADA-KABUPATEN-TANA-TORAJA,RSUD Lakipadada,Kabupaten Tana Toraja,Sulawesi Selatan,False,3
+RSUD-LAMADDUKKELLENG-KABUPATEN-WAJO,RSUD Lamaddukkelleng,Kabupaten Wajo,Sulawesi Selatan,False,1
+RSUD-LAMPUNG,RSUD Provinsi Lampung,,Lampung,True,1
+RSUD-LAWANG-KABUPATEN-MALANG,RSUD Lawang Kabupaten Malang,Kabupaten Malang,Jawa Timur,False,1
+RSUD-LEUWILIANG-KABUPATEN-BOGOR,RSUD Leuwiliang,Kabupaten Bogor,Jawa Barat,False,1
+RSUD-LIMPUNG-KABUPATEN-BATANG,RSUD Limpung,Kabupaten Batang,Jawa Tengah,False,1
+RSUD-LINGGAJATI-KABUPATEN-KUNINGAN,RSUD Linggajati Kabupaten Kuningan,Kabupaten Kuningan,Jawa Barat,False,1
+RSUD-LUBUK-SIKAPING-KABUPATEN-PASAMAN,RSUD Lubuk Sikaping,Kabupaten Pasaman,Sumatera Barat,False,3
+RSUD-M-TH-DJAMAN-KABUPATEN-SANGGAU,RSUD M.Th. Djaman Kab. Sanggau,Kabupaten Sanggau,Kalimantan Barat,False,1
+RSUD-MADANI-KOTA-PEKANBARU,RSUD Madani Kota Pekanbaru,Kota Pekanbaru,Riau,False,1
+RSUD-MADANI-SULAWESI-TENGAH,RSUD Madani Provinsi Sulawesi Tengah,,Sulawesi Tengah,False,1
+RSUD-MAJENANG-KABUPATEN-CILACAP,RSUD Majenang Kabupaten Cilacap,Kabupaten Cilacap,Jawa Tengah,False,3
+RSUD-MAS-AMSYAR-KABUPATEN-KATINGAN,RSUD Mas Amsyar Kabupaten Katingan,Kabupaten Katingan,Kalimantan Tengah,False,1
+RSUD-MENGGALA-TULANG-BAWANG-KABUPATEN-TULANGBAWANG,RSUD Menggala Kabupaten Tulang Bawang,Kabupaten Tulangbawang,Lampung,False,2
+RSUD-MUNTILAN-KABUPATEN-MAGELANG,RSUD Muntilan Kabupaten Magelang,Kabupaten Magelang,Jawa Tengah,False,1
+RSUD-MURSID-IBNU-SYAFIUDDIN-KRANGKENG-KABUPATEN-INDRAMAYU,RSUD Mursid Ibnu Syafiuddin Krangkeng Kabupaten Indramayu,Kabupaten Indramayu,Jawa Barat,False,1
+RSUD-NGIMBANG-KABBUPATEN-KABUPATEN-LAMONGAN,RSUD Ngimbang Kabbupaten Lamongan,Kabupaten Lamongan,Jawa Timur,False,1
+RSUD-NYITDAH-KABUPATEN-TABANAN,RSUD Nyitdah,Kabupaten Tabanan,Bali,False,1
+RSUD-OKU-KABUPATEN-OGAN-KOMERING-ULU-TIMUR,RSUD OKU Timur,Kabupaten Ogan Komering Ulu Timur,Sumatera Selatan,False,1
+RSUD-PAGELARAN-KABUPATEN-CIANJUR,RSUD Pagelaran Kabupaten Cianjur,Kabupaten Cianjur,Jawa Barat,False,2
+RSUD-PAMBALAH-BATUNG-KABUPATEN-HULU-SUNGAI-UTARA,RSUD Pambalah Batung,Kabupaten Hulu Sungai Utara,Kalimantan Selatan,False,2
+RSUD-PAMEUNGPEUK-GARUT-JAWA-BARAT,RSUD Pameungpeuk Garut,,Jawa Barat,False,1
+RSUD-PANDAN-ARANG-KABUPATEN-BOYOLALI,RSUD Pandan Arang Kabupaten Boyolali,Kabupaten Boyolali,Jawa Tengah,False,6
+RSUD-PANDAN-KABUPATEN-TAPANULI-TENGAH,RSUD Pandan,Kabupaten Tapanuli Tengah,Sumatera Utara,False,1
+RSUD-PANGLIMA-SEBAYA-KABUPATEN-PASER,RSUD Panglima Sebaya Kabupaten Paser,Kabupaten Paser,Kalimantan Timur,False,1
+RSUD-PAPUA-BARAT,RSUD Provinsi Papua Barat,,Papua Barat,False,1
+RSUD-PATUT-PATUH-PATJU-KABUPATEN-LOMBOK-BARAT,RSUD Patut Patuh Patju Kabupaten Lombok Barat,Kabupaten Lombok Barat,Nusa Tenggara Barat,False,2
+RSUD-PETALA-BUMI-RIAU,RSUD Petala Bumi Provinsi Riau,,Riau,False,1
+RSUD-PIRU-KABUPATEN-SERAM-BAGIAN-BARAT,RSUD Piru Kabupaten Seram Bagian Barat,Kabupaten Seram Bagian Barat,Maluku,False,1
+RSUD-PPK-KABUPATEN-KONAWE,RSUD Ppk-Blud Kabupaten Konawe,Kabupaten Konawe,Sulawesi Tenggara,False,1
+RSUD-PRAMBANAN-KABUPATEN-SLEMAN,RSUD Prambanan Kabupaten Sleman,Kabupaten Sleman,Di Yogyakarta,False,1
+RSUD-PRATAMA-KABUPATEN-HULU-SUNGAI-SELATAN,RSUD Kelas D Pratama Kabupaten Hulu Sungai Selatan,Kabupaten Hulu Sungai Selatan,Kalimantan Selatan,False,1
+RSUD-PREMBUN-KABUPATEN-KEBUMEN,RSUD Prembun,Kabupaten Kebumen,Jawa Tengah,False,1
+RSUD-PROF-DR-H-ALOEI-SABOE-KOTA-GORONTALO,RSUD Prof. Dr. H. Aloei Saboe Kota Gorontalo,Kota Gorontalo,Gorontalo,False,1
+RSUD-PROF-DR-H-M-ANWAR-MAKKATUTU-KABUPATEN-BANTAENG,RSUD PROF.Dr.H.M.ANWAR Makkatutu,Kabupaten Bantaeng,Sulawesi Selatan,False,3
+RSUD-PROF-DR-W-Z-JOHANNES-KUPANG-NUSA-TENGGARA-TIMUR,RSUD Prof. Dr. W. Z. Johannes Kupang,,Nusa Tenggara Timur,False,3
+RSUD-PURUK-CAHU-KABUPATEN-MURUNG-RAYA,RSUD Puruk Cahu,Kabupaten Murung Raya,Kalimantan Tengah,False,2
+RSUD-PUSKESMAS-DAN-JARINGANNYA-DI-KABUPATEN-BUTON-UTARA,"Rsud, Puskesmas dan Jaringannya di Kabupaten Buton Utara",Kabupaten Buton Utara,Sulawesi Tenggara,False,1
+RSUD-R-ALI-MANSYUR-KABUPATEN-TUBAN,RSUD R. ALI Mansyur Kabupaten Tuban,Kabupaten Tuban,Jawa Timur,False,1
+RSUD-RAA-SOEWONDO-KABUPATEN-PATI,RSUD RAA Soewondo Pati,Kabupaten Pati,Jawa Tengah,False,3
+RSUD-RADEN-MATTAHER-JAMBI,RSUD Raden Mattaher Jambi,,Jambi,False,3
+RSUD-RAGAB-BEGAWE-CARAM-KABUPATEN-MESUJI,RSUD Ragab Begawe Caram,Kabupaten Mesuji,Lampung,False,1
+RSUD-RAJA-AHMAD-TABIB-KEPULAUAN-RIAU,RSUD Raja Ahmad Tabib,,Kepulauan Riau,False,1
+RSUD-RATU-ZALECHA-MARTAPURA-KABUPATEN-BANJAR,RSUD Ratu Zalecha Martapura,Kabupaten Banjar,Kalimantan Selatan,False,1
+RSUD-RSD-MAYJEN-HM-RYACUDU-KOTABUMI-KABUPATEN-LAMPUNG-UTARA,RSUD (Rsd) Mayjen HM. Ryacudu Kotabumi Kabupaten Lampung Utara,Kabupaten Lampung Utara,Lampung,False,1
+RSUD-SAMUEL-KRISTIAN-LERIK-KOTA-KUPANG,RSUD Samuel Kristian Lerik,Kota Kupang,Nusa Tenggara Timur,False,2
+RSUD-SANANA-KABUPATEN-KEPULAUAN-SULA,RSUD Sanana,Kabupaten Kepulauan Sula,Maluku Utara,False,1
+RSUD-SANGKULIRANG-KABUPATEN-KUTAI-TIMUR,RSUD Sangkulirang,Kabupaten Kutai Timur,Kalimantan Timur,False,1
+RSUD-SAYANG-KABUPATEN-CIANJUR,RSUD Sayang,Kabupaten Cianjur,Jawa Barat,False,1
+RSUD-SEJIRAN-SETASON-KABUPATEN-BANGKA-BARAT,RSUD Sejiran Setason Kabupaten Bangka Barat,Kabupaten Bangka Barat,Kepulauan Bangka Belitung,False,2
+RSUD-SIMO-KABUPATEN-BOYOLALI,RSUD Simo Kabupaten Boyolali,Kabupaten Boyolali,Jawa Tengah,False,4
+RSUD-SITI-FATIMAH-SUMATERA-SELATAN,RSUD Siti Fatimah Provinsi Sumatera Selatan,,Sumatera Selatan,False,1
+RSUD-SJAFRIE-RACHMAN-KABUPATEN-BANGKA,RSUD Sjafrie Rachman,Kabupaten Bangka,Kepulauan Bangka Belitung,False,1
+RSUD-SOE-KABUPATEN-TIMOR-TENGAH-SELATAN,RSUD Soe Kabupaten TImor Tengah Selatan,Kabupaten Timor Tengah Selatan,Nusa Tenggara Timur,False,1
+RSUD-SUKADANA-KABUPATEN-LAMPUNG-TIMUR,RSUD Sukadana,Kabupaten Lampung Timur,Lampung,False,1
+RSUD-SUKDANA-KABUPATEN-LAMPUNG-TIMUR,RSUD Sukdana Kabupaten Lampung Timur,Kabupaten Lampung Timur,Lampung,False,1
+RSUD-SULAWESI-BARAT,RSUD Provinsi Sulawesi Barat,,Sulawesi Barat,True,2
+RSUD-SULAWESI-TENGGARA,RSUD Provinsi Sulawesi Tenggara,,Sulawesi Tenggara,True,1
+RSUD-SULTAN-FATAH-KABUPATEN-DEMAK,RSUD Sultan Fatah Kabupaten Demak,Kabupaten Demak,Jawa Tengah,False,2
+RSUD-SULTAN-IMANUDDIN-PANGKALAN-BUN-KABUPATEN-KOTAWARINGIN-BARAT,RSUD Sultan Imanuddin Pangkalan Bun,Kabupaten Kotawaringin Barat,Kalimantan Tengah,False,1
+RSUD-SULTAN-MUHAMMAD-JAMALUDIN-I-KABUPATEN-KAYONG-UTARA,RSUD Sultan Muhammad Jamaludin I Kabupaten Kayong Utara,Kabupaten Kayong Utara,Kalimantan Barat,False,1
+RSUD-SULTAN-SURIANSYAH-KOTA-BANJARMASIN,RSUD Sultan Suriansyah Kota Banjarmasin,Kota Banjarmasin,Kalimantan Selatan,False,2
+RSUD-SULTAN-SYARIF-MOHAMAD-ALKADRIE-KOTA-PONTIANAK,RSUD Sultan Syarif Mohamad Alkadrie Kota Pontianak,Kota Pontianak,Kalimantan Barat,False,1
+RSUD-SUNAN-KALIJAGA-KABUPATEN-DEMAK,RSUD Sunan Kalijaga Kabupaten Demak,Kabupaten Demak,Jawa Tengah,False,4
+RSUD-SUNGAI-DAREH-KABUPATEN-DHARMASRAYA,RSUD Sungai Dareh,Kabupaten Dharmasraya,Sumatera Barat,False,1
+RSUD-SURADADI-KABUPATEN-TEGAL,RSUD Suradadi Kabupaten Tegal,Kabupaten Tegal,Jawa Tengah,False,1
+RSUD-SYARIFAH-AMBAMI-RATO-EBU-KABUPATEN-BANGKALAN,RSUD Syarifah Ambami Rato EBU,Kabupaten Bangkalan,Jawa Timur,False,1
+RSUD-TALANG-UBI-KABUPATEN-PENUKAL-ABAB-LEMATANG-ILIR,RSUD Talang Ubi Kabupaten Penukal Abab Lematang Ilir,Kabupaten Penukal Abab Lematang Ilir,Sumatera Selatan,False,1
+RSUD-TGK-ABDULLAH-SYAFII-BEUREUNUEN-KABUPATEN-PIDIE,RSUD TGK Abdullah Syafii Beureunuen Kabupaten Pidie,Kabupaten Pidie,Aceh,False,1
+RSUD-TIDAR-KOTA-MAGELANG,RSUD Tidar Kota Magelang,Kota Magelang,Jawa Tengah,False,2
+RSUD-TIPE-D-SUMBERSARI-BANTUL-KOTA-METRO,RSUD Tipe D Sumbersari Bantul,Kota Metro,Lampung,False,1
+RSUD-TORA-BELO-KABUPATEN-SIGI,RSUD Tora Belo,Kabupaten Sigi,Sulawesi Tengah,False,1
+RSUD-TOTO-KABILA-KABUPATEN-BONE-BOLANGO,RSUD Toto Kabila,Kabupaten Bone Bolango,Gorontalo,False,1
+RSUD-TYPE-D-KABUPATEN-MALUKU-TENGAH,RSUD Type D,Kabupaten Maluku Tengah,Maluku,False,1
+RSUD-ULIN-BANJARMASIN-KALIMANTAN-SELATAN,RSUD Ulin Banjarmasin,,Kalimantan Selatan,False,1
+RSUD-UMBU-RARA-MEHA-WAINGAPU-KABUPATEN-SUMBA-TIMUR,RSUD Umbu Rara Meha Waingapu Kabupaten Sumba Timur,Kabupaten Sumba Timur,Nusa Tenggara Timur,False,1
+RSUD-UNDATA-SULAWESI-TENGAH,RSUD Undata Provinsi Sulawesi Tengah,,Sulawesi Tengah,False,1
+RSUD-UNTUK-KELAS-I-KELAS-UTAMA-DAN-KELAS-VIP-KABUPATEN-MOJOKERTO,"RSUD untuk Kelas I, Kelas Utama dan Kelas VIP",Kabupaten Mojokerto,Jawa Timur,False,1
+RSUD-WARAS-WIRIS-KABUPATEN-BOYOLALI,RSUD Waras Wiris Kabupaten Boyolali,Kabupaten Boyolali,Jawa Tengah,False,2
+RSUD-WATES-KABUPATEN-KULON-PROGO,RSUD Wates,Kabupaten Kulon Progo,Di Yogyakarta,False,1
+RSUD-WONOMULYO-KABUPATEN-POLEWALI-MANDAR,RSUD Kelas D Wonomulyo,Kabupaten Polewali Mandar,Sulawesi Barat,False,1
+RSUD-WONOSARI-KABUPATEN-GUNUNG-KIDUL,RSUD Wonosari,Kabupaten Gunung Kidul,Di Yogyakarta,False,1
+RSUD-YOWARI-KABUPATEN-JAYAPURA,RSUD Yowari,Kabupaten Jayapura,Papua,False,1
