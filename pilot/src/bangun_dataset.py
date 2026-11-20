@@ -262,7 +262,7 @@ def main():
     T.loc[dup, "flags"] = (T.loc[dup, "flags"] + "|duplikat").str.strip("|")
     T["flag_qc"] = T["flags"].replace("", "ok").str.replace("|", ";", regex=False)
     PROBLEM = {"nama_terpotong", "komponen_tidak_jumlah", "kolom_harga_tak_dikenal", "kelas_grup_tanpa_judul",
-               "kelas_kolom_tanpa_judul", "harga_ambigu", "urutan_kelas_aneh"}
+               "kelas_kolom_tanpa_judul", "harga_ambigu", "urutan_kelas_aneh", "label_kelas_tak_jelas"}
     T["qc_masalah"] = T["flags"].map(lambda f: bool(set(f.split("|")) & PROBLEM))
     # harga harus tertulis di baris PDF sumber (dibaca ulang terpisah dari konverter)
     from verifikasi_harga import check

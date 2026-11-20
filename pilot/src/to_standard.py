@@ -136,7 +136,7 @@ def clean_name(name):
     name = re.sub(r"\b(I[lI1]{2})\b", "III", name)
     name = re.sub(r"\b(I[l1])\b", "II", name)
     name = re.sub(r"\s+per\s+(tindakan|hari|kali|pemeriksaan|jam|paket|orang|lembar|sesi|unit)\s*$", "", name, flags=re.I)
-    name = re.sub(r"(^|\s)/\s*(tindakan|hari|kali|pemeriksaan|jam|paket|orang|lembar|sesi|unit)\b", " ", name, flags=re.I)
+    name = re.sub(r"(^|\s)/\s*tindakan\b", " ", name, flags=re.I)
     return re.sub(r"\s+", " ", name).strip(" :-.;,")
 
 
@@ -369,7 +369,21 @@ COMP_PREFIX = re.compile(r"(?i)^(?P<k>jasa\s*(rumah\s*sakit|rsud|rs|sarana|pelay
 # baris judul kolom (bukan judul item): "ELEKTIF CYTO", "TARIF (Rp)", "KELAS III II I"
 COL_HEAD_LINE = re.compile(r"(?i)^((elektif|cito|cyto|reguler|eksekutif|non|paviliun|pagi|sore|malam|tarif|tarip|harga|rp\.?|"
                            r"\(rp\.?\)|kelas|[ivx]+|vip|vvip|utama|tanpa|dengan|kontras|total|jumlah)[\s/&,-]*)+$")
+CLASS_LIST = re.compile(r"(?i)\s*(tarif\s*)?(kelas\s*)?((iii|ii|i|vip|vvip|utama|super\s*vip|icu|hcu|nicu|picu|iccu|odc|igd|"
+                        r"isolasi|paviliun|[abc]|kelas)[\s,/&.-]*(dan\s*)?)+")
+ROOM_NAME = re.compile(r"(?i)\b(suite|room)\b|^(utama|vip|vvip|super\s*vip)\s*(i{1,3}|[ab]|\d)?$")
 CONNECT_END = re.compile(r"(&/|[/&,(+\-]|\b(dan|dengan|atau|untuk|pada|di|ke|tanpa|serta|per|yang|non))\s*$", re.I)
+
+
+def tight_split(lw):
+    """Angka terpecah oleh spasi karakter renggang ('1' + '50.000' menempel, jarak ~0): satu angka 150.000."""
+    ws = sorted(lw or [], key=lambda w: w["x0"])
+    for a, b in zip(ws, ws[1:]):
+        if re.fullmatch(r"\d{1,2}", a["text"]) and re.fullmatch(r"\d{1,2}(?:[.,]\d{3})+(?:,-|,00)?", b["text"]):
+            cw = (b["x1"] - b["x0"]) / max(len(b["text"]), 1)
+            if b["x0"] - a["x1"] < 0.35 * cw:
+                return True
+    return False
 
 
 def num_aligned(lw):
@@ -654,11 +668,20 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
     block = dict(id=0, kelas="", text="", top=True, section=0)
     blocks.append(block)
     category, pending, parent, head_ctx = "", None, "", ""
-    bd_item, np_item, comp_ctx = None, None, None  # tabel rincian komponen: nama layanan induk, judul item, komponen aktif
+    bd_item, np_item, comp_ctx = None, None, None
+    parent_np = ""  # nama induk terakhir dari judul tanpa harga (bukan dari baris berharga)
+    grp2, item_x, grp_rows = "", None, []  # tabel dua kolom nama: kolom grup ("C. Praktik Klinik /") + kolom item bernomor ("1. SLTA")  # tabel rincian komponen: nama layanan induk, judul item, komponen aktif
     cls_header, grp_header = [], []
     x_memory = []  # [(pusat x kolom, label kelas)] yang pernah terbaca di dokumen ini, untuk tabel bersambung
     x2_memory = []  # [(pusat x 2 kolom harga, judul kolom)] untuk tabel 2 kolom yang bersambung ke halaman berikutnya
     tail = None  # baris harga terakhir + baris teks tanpa nomor sesudahnya (calon lanjutan nama)
+
+    def regroup():
+        """Teks kolom grup bertambah (baris lanjutan): perbarui nama baris-baris grup yang sudah dibuat."""
+        g = re.sub(r"\s+", " ", grp2).strip(" /")
+        for a, b, it in grp_rows:
+            for r in rows[a:b]:
+                r["nama_asli"] = f"{g} - {it}"
 
     def apply_tail(k):
         """k baris teks pertama -> lanjutan nama baris harga di atasnya (P); sisanya dikembalikan untuk baris Q.
@@ -684,6 +707,7 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
             kelas_ctx = ""  # konteks kelas tidak menyeberang halaman
             hdr_lines = []  # [(top, kata)] baris tanpa harga yang memuat kata kelas, untuk membaca judul per kolom
             hist = []  # [(top, bottom, kata, pusat harga | None)] semua baris halaman ini, untuk membaca judul kolom
+            item_x = None
             if tail is not None and (k := tail_owner(tail, None, None)):
                 apply_tail(k)
             tail = None
@@ -720,7 +744,7 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                 merged = SPLIT_NUM.sub(r"\1\2", line)
                 if merged != line:
                     m2, p2, _ = parse_prices(merged)
-                    if p2 and (lead0 or (sum_ok(p2) and not sum_ok(prices)) or len(p2) > len(prices) + 1
+                    if p2 and (lead0 or (sum_ok(p2) and not sum_ok(prices)) or len(p2) > len(prices) + 1 or tight_split(lw)
                                or (cls_header and len(p2) == len(cls_header) != len(prices))):
                         line, m, prices = merged, m2, p2
                 # angka cacat ("6028.890", "1,400000"): baca ulang semua digit; dipakai hanya bila baris jadi konsisten
@@ -743,13 +767,25 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                     pws = [w for w in lw if PRICE_WORD.match(w["text"].strip(".-:;|"))] if (m and prices) else None
                     hist.append((min(w["top"] for w in lw), max(w["bottom"] for w in lw), lw,
                                  [(w["x0"] + w["x1"]) / 2 for w in pws] if pws else None))
+                if not m and item_x is not None and lw:
+                    if (max(w["x1"] for w in lw) < item_x - 5 and not TABLE_HEAD.search(line) and "|" not in line
+                            and (grp2 or re.match(r"^[A-Z]\.\s", line))):
+                        gt = re.sub(r"^[A-Z]\.\s*", "", line).strip()
+                        if re.match(r"^[A-Z]\.\s", line):
+                            grp2, grp_rows = gt, []
+                        else:
+                            grp2 = f"{grp2} {gt}".strip()
+                            regroup()
+                    elif TABLE_HEAD.search(line) or MAJOR.match(line):
+                        item_x = None
                 if not m:
                     if tail is not None:
                         tb = HEAD_NUM.sub("", PAREN_NUM.sub("", NUMBERING.sub("", line))).strip(" :.")
                         numbered_l = bool(NUMBERING.match(line) or HEAD_NUM.match(line) or PAREN_NUM.match(line)
                                           or re.match(r"^[A-Za-z]\s+[A-Z]", line) or re.search(r"\d{3}", tb)
                                 or re.match(r"^[A-Za-z0-9]{1,3}(\.\d+)+\.?\s", line)
-                                or sum(len(w) == 1 for w in tb.split()) > 0.3 * len(tb.split()))
+                                or sum(len(w) == 1 for w in tb.split()) > 0.3 * len(tb.split())
+                                or len(re.sub(r"[^A-Za-z]", "", tb)) < 0.6 * len(tb.replace(" ", "")))
                         upper_ok = tail["name"].isupper() or not is_header(tb)
                         if (lw and not numbered_l and len(tail["texts"]) < 3 and upper_ok
                                 and max(w["x1"] for w in lw) <= tail["px0"] + 2 and min(w["x0"] for w in lw) >= tail["nx0"] - 15
@@ -817,14 +853,40 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                             and not re.match(KELAS_W, body, re.I) and not KELAS_ROW.match(body)
                             and not re.fullmatch(r"(tarif|jumlah|keterangan|total|harga)( \(rp\.?\))?", body, re.I)):
                         if FRAGMENT.match(body) and head_ctx:
-                            parent = f"{head_ctx} - {body}"
+                            parent = parent_np = f"{head_ctx} - {body}"
                         else:
-                            head_ctx = parent = np_item = body
+                            head_ctx = parent = np_item = parent_np = body
                     continue
                 name = clean_name(NUMBERING.sub("", clean_name(line[: m.start()])).strip(" :-."))
                 name = PAREN_NUM.sub("", name).strip(" :-.")
                 if not prices:
                     continue
+                grp_flag = []
+                if lw and prices:
+                    ws_ = sorted(lw, key=lambda w: w["x0"])
+                    px_ = min((w["x0"] for w in ws_ if PRICE_WORD.match(w["text"].strip(".-:;|"))), default=1e9)
+                    inner = next((w for w in ws_ if re.fullmatch(r"\d{1,2}\.", w["text"]) and w["x1"] < px_
+                                  and (w["x0"] - ws_[0]["x0"] > 60 or (item_x is not None and abs(w["x0"] - item_x) < 15))), None)
+                    if inner is not None and (item_x is not None or ws_[0] is not inner):
+                        left = " ".join(w["text"] for w in ws_ if w["x1"] <= inner["x0"])
+                        item_t = clean_name(" ".join(w["text"] for w in ws_ if inner["x1"] <= w["x0"] and w["x1"] <= px_))
+                        if KELAS_ROW.match(item_t) or re.match(KELAS_W, item_t, re.I) or "|" in left:
+                            item_t = ""
+                        elif left and not (grp2 or re.match(r"^[A-Z]\.\s", left)):
+                            item_t = ""  # grup hanya dimulai dari penomoran huruf ("C. Praktik Klinik /")
+                        if left and item_t:
+                            gt = re.sub(r"^[A-Z]\.\s*", "", left).strip()
+                            if re.match(r"^[A-Z]\.\s", left):
+                                grp2, grp_rows = gt, []
+                            else:
+                                grp2 = f"{grp2} {gt}".strip()
+                                regroup()
+                        if item_t and grp2:
+                            item_x = inner["x0"]
+                            name = f"{re.sub(r'\s+', ' ', grp2).strip(' /')} - {item_t}"
+                            grp_flag = [("nama_dari_judul", item_t)]
+                    elif item_x is not None and not (inner is not None):
+                        item_x = None
                 tail_flag = []
                 if not re.search(r"[A-Za-z]", name):
                     name = ""  # sisa nomor urut ("14") tanpa nama
@@ -862,7 +924,7 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                 pending = None
                 if len(re.sub(r"[^A-Za-z]", "", name)) < 3:
                     continue
-                flags = list(pre_flags) + (["nama_digabung"] if joined else []) + tail_flag
+                flags = list(pre_flags) + (["nama_digabung"] if joined else []) + tail_flag + [g[0] for g in grp_flag]
                 kelas = kelas_ctx or block["kelas"]
                 nama = name
                 if KELAS_ROW.match(re.sub(r"[()]", "", name)):
@@ -872,7 +934,8 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                         nama = parent
                         flags.append("nama_dari_judul_tabel")
                     elif parent:
-                        nama = parent
+                        # induk dari baris tipe kamar ("Utama Suite Room") -> pakai judul layanan di atasnya
+                        nama = parent_np if (ROOM_NAME.search(parent) and parent_np) else parent
                         flags.append("nama_dari_baris_atas")
                     else:
                         flags.append("nama_terpotong")
@@ -888,7 +951,12 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                     if FRAGMENT.match(name) and head_ctx:
                         nama = f"{head_ctx} - {name}"
                         flags.append("nama_dari_judul")
-                    parent = nama
+                    if ROOM_NAME.search(name) and kelas_ctx and parent_np and not KELAS_ROW.match(parent_np):
+                        # baris tipe kamar di bawah "Kelas Utama": layanan = judul di atasnya, kelas = kelas + tipe kamar
+                        kelas, nama = f"{kelas_ctx} - {name}", parent_np
+                        flags.append("nama_dari_baris_atas")
+                    else:
+                        parent = nama
                 # tabel rincian komponen (baris = komponen biaya suatu layanan)
                 komp = "total"
                 nm = re.sub(r"\s*\*+$", "", nama).strip()
@@ -1027,6 +1095,8 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                     if how and how[0] == "kelas":
                         pairs = [(how[1][0], prices[0]), (how[1][1], prices[1])]
                         flags += ["dari_kolom_kelas", "kelas_dari_posisi"]
+                        if not all(CLASS_LIST.fullmatch(lb) or col_label(lb) == lb for lb in how[1]):
+                            flags.append("label_kelas_tak_jelas")  # judul kelas terbaca rusak (OCR)
                     elif how and how[0] == "varian":
                         pairs = [(k0, prices[0], how[1][0]), (k0, prices[1], how[1][1])]
                         flags.append("varian_dari_judul_kolom")
@@ -1059,6 +1129,8 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                         n_kolom_harga=len(prices), harga=harga, sumber_harga="langsung",
                         golongan="", paket_id="", metode_ekstraksi=metode,
                         _blok=block["id"], _flags=list(flags), baris_mentah=raw.strip()))
+                if grp_flag and len(rows) > i_start:
+                    grp_rows.append((i_start, len(rows), grp_flag[0][1]))
                 pw_t = [w for w in lw if PRICE_WORD.match(w["text"].strip(".-:;|"))] if lw else []
                 nw_t = [w for w in lw if not PRICE_WORD.match(w["text"].strip(".-:;|"))] if lw else []
                 if pw_t and nw_t and len(rows) > i_start and not KELAS_ROW.match(re.sub(r"[()]", "", name)):

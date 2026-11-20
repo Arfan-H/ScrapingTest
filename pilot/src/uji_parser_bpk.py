@@ -20,7 +20,7 @@ warnings.filterwarnings("ignore")
 
 
 PROBLEM = {"nama_terpotong", "komponen_tidak_jumlah", "kolom_harga_tak_dikenal", "kelas_grup_tanpa_judul",
-           "kelas_kolom_tanpa_judul", "harga_ambigu", "urutan_kelas_aneh"}
+           "kelas_kolom_tanpa_judul", "harga_ambigu", "urutan_kelas_aneh", "label_kelas_tak_jelas"}
 
 
 def run_one(args):
