@@ -83,6 +83,10 @@ KELAS_STD = {"iii": "III", "ii": "II", "i": "I", "kelas iii": "III", "kelas ii":
              "picu": "PICU", "semua kelas": "Semua kelas"}
 
 
+# penomoran judul yang tidak tertangkap NUMBERING: "II Rawat Jalan", "A.1.1.4.1 TMO ..."
+HEAD_NUM = re.compile(r"^\s*(?:[IVX]{1,4}|[A-Z](?:\.\d+)+\.?)\s+(?=[A-Za-z(])")
+
+
 def std_kelas(s):
     t = re.sub(r"\s+", " ", s.strip().lower())
     t = re.sub(rf"^{KELAS_W}\b", "kelas", t)
@@ -296,6 +300,9 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                     elif len(hc) >= 2:
                         cls_header, grp_header, rows_at_hdr = hc, [], len(rows)
                     body = NUMBERING.sub("", line).strip(" :-.")
+                    numbered = bool(NUMBERING.match(line) or HEAD_NUM.match(line))
+                    if HEAD_NUM.match(line):
+                        body = HEAD_NUM.sub("", line).strip(" :-.")
                     if TABLE_HEAD.search(line) or MAJOR.match(line):
                         kelas_ctx = ""
                     if KELAS_ROW.match(body) and re.match(KELAS_W, body, re.I):
@@ -309,7 +316,7 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                     hdr_like = (TABLE_HEAD.search(line) or len(hc) >= 2 or header_groups(line)
                                 or re.search(r"\b(jasa|sarana|komponen)\b", line, re.I))
                     if (not hdr_like and len(re.sub(r"[^A-Za-z]", "", body)) >= 4 and len(body) <= 90
-                            and (NUMBERING.match(line) or is_header(body) or line.rstrip().endswith(":"))
+                            and (numbered or is_header(body) or line.rstrip().endswith(":"))
                             and not re.search(r"\b(adalah|sebagaimana|dikenakan|ditetapkan|ayat|pasal|rp)\b", body, re.I)
                             and not re.match(KELAS_W, body, re.I) and not KELAS_ROW.match(body)
                             and not re.fullmatch(r"(tarif|jumlah|keterangan|total|harga)( \(rp\.?\))?", body, re.I)):
