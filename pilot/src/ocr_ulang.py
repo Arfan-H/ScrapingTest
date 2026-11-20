@@ -53,8 +53,10 @@ def run_file(args):
     if pages:
         ocr = RapidOCR()
         doc = pymupdf.open(path)
-        z = 200 / 72
         for i in pages:
+            # 200 dpi, tapi sisi terpanjang dibatasi 3.500 px (ada scan dengan ukuran halaman salah, mis. 37x56 inci)
+            r = doc[i].rect
+            z = min(200 / 72, 3500 / max(r.width, r.height))
             pix = doc[i].get_pixmap(matrix=pymupdf.Matrix(z, z))
             img = np.frombuffer(pix.samples, dtype=np.uint8).reshape(pix.height, pix.width, pix.n)[:, :, :3]
             boxes, _ = ocr(img)
