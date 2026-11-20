@@ -52,8 +52,8 @@ for i, r in s.iterrows():
     ImageDraw.Draw(canvas).text((4, 2), lab, fill="red")
     crops.append(canvas)
     info.append(f"\n#{i + 1} {r.dokumen_id} hlm {r.halaman}  [{'' if hits else 'POSISI TIDAK KETEMU'}]\n"
-                f"   DATASET: nama={r.nama_asli!r} kelas={r.kelas!r} harga={r.harga:,.0f} flag={r.flag_qc} verif={r.verifikasi_harga}\n"
-                f"   baris yg sama -> {list(zip(same.kelas, same.harga.map(lambda h: f'{h:,.0f}')))[:8]}\n"
+                f"   DATASET: nama={r.nama_asli!r} kelas={r.kelas!r} varian={getattr(r, 'varian', '')!r} komponen={getattr(r, 'komponen', '')!r} harga={r.harga:,.0f} flag={r.flag_qc} verif={r.verifikasi_harga}\n"
+                f"   baris yg sama -> {list(zip(same.kelas, same.get('varian', same.kelas).fillna(''), same.komponen, same.harga.map(lambda h: f'{h:,.0f}')))[:8]}\n"
                 + ("".join(f"     | {l[:140]}\n" for l in L[max(0, j - 6):j]) + f"   >>| {L[j][:140]}" if j is not None else
                    f"   (baris teks tak ketemu) {str(r.baris_mentah)[:140]}"))
 # lembar kontak per 5 potongan

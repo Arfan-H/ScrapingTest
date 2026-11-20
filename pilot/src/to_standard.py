@@ -136,6 +136,7 @@ def clean_name(name):
     name = re.sub(r"\b(I[lI1]{2})\b", "III", name)
     name = re.sub(r"\b(I[l1])\b", "II", name)
     name = re.sub(r"\s+per\s+(tindakan|hari|kali|pemeriksaan|jam|paket|orang|lembar|sesi|unit)\s*$", "", name, flags=re.I)
+    name = re.sub(r"(^|\s)/\s*(tindakan|hari|kali|pemeriksaan|jam|paket|orang|lembar|sesi|unit)\b", " ", name, flags=re.I)
     return re.sub(r"\s+", " ", name).strip(" :-.;,")
 
 
@@ -375,7 +376,7 @@ def num_aligned(lw):
     """Nomor urut di awal baris sejajar (puncak sama) dengan kata pertama nama -> sel tabel rata atas."""
     ws = sorted(lw or [], key=lambda w: w["x0"])
     if len(ws) >= 2 and re.fullmatch(r"\(?(\d{1,3}|[A-Za-z])[.)]?", ws[0]["text"]) and re.search(r"[A-Za-z]{2}", ws[1]["text"]):
-        return abs(ws[0]["top"] - ws[1]["top"]) < 1.5
+        return abs(ws[0]["top"] - ws[1]["top"]) < 1.5 and ws[1]["x0"] - ws[0]["x1"] < 40
     return False
 
 
@@ -389,7 +390,10 @@ def tail_owner(tail, q_top, q_name, q_aligned=False):
     if q_name is not None and KELAS_ROW.match(re.sub(r"[()]", "", q_name)):
         return None  # judul tabel per kelas berikutnya, bukan lanjutan
     txt = " ".join(t for _, _, t in T)
-    p_open = CONNECT_END.search(tail["name"]) or tail["name"].count("(") > tail["name"].count(")") or re.match(r"^[a-z(]", txt)
+    pw0 = (tail["name"].lower().split() or [""])[0]
+    if len(pw0) >= 3 and txt.lower().split()[0] == pw0:
+        return 0 if q_name is not None and not (q_name.lower().split() or [""])[0] == pw0 else None  # item saudara
+    p_open = CONNECT_END.search(tail["name"]) or tail["name"].count("(") > tail["name"].count(")") or re.match(r"^[a-z(/]", txt)
     q_open = CONNECT_END.search(txt) or txt.count("(") > txt.count(")")
     if p_open and not q_open:
         return len(T)
@@ -499,6 +503,8 @@ def classify_two(labels):
     if t1 and not k1 and not t2 and k2:
         return None
     v1, v2 = _var_label(l1), _var_label(l2)
+    if (header_classes(l1) or header_classes(l2)) and v1.lower() != v2.lower():
+        return "kelas", [v1, v2]  # judul memuat kelas tetapi bukan satu kelas tunggal ("Kelas III, II, I")
     if len(re.sub(r"[^A-Za-z]", "", v1)) >= 2 and len(re.sub(r"[^A-Za-z]", "", v2)) >= 2 and v1.lower() != v2.lower():
         return "varian", [v1, v2]
     return None
@@ -742,6 +748,7 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                         tb = HEAD_NUM.sub("", PAREN_NUM.sub("", NUMBERING.sub("", line))).strip(" :.")
                         numbered_l = bool(NUMBERING.match(line) or HEAD_NUM.match(line) or PAREN_NUM.match(line)
                                           or re.match(r"^[A-Za-z]\s+[A-Z]", line) or re.search(r"\d{3}", tb)
+                                or re.match(r"^[A-Za-z0-9]{1,3}(\.\d+)+\.?\s", line)
                                 or sum(len(w) == 1 for w in tb.split()) > 0.3 * len(tb.split()))
                         upper_ok = tail["name"].isupper() or not is_header(tb)
                         if (lw and not numbered_l and len(tail["texts"]) < 3 and upper_ok
