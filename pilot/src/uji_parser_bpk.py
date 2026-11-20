@@ -3,7 +3,7 @@
 Keluaran:
   <out_dir>/uji_parser_per_dokumen.csv : metrik per dokumen
   <out_dir>/uji_parser_baris.csv.gz    : semua baris tarif hasil ekstraksi
-Status BHP di sini hanya dari catatan lampiran (tanpa status pasal per dokumen).
+Status BHP di sini hanya dari catatan lampiran; status dari pasal ditambahkan oleh bhp_pasal.py + terapkan_bhp.py.
 
 Pemakaian: python -I pilot/src/uji_parser_bpk.py bpk_v3/klasifikasi.csv bpk_v3 <out_dir> [proses]
 """
