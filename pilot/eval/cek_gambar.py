@@ -44,7 +44,10 @@ for i, r in s.iterrows():
             y0, y1 = hits[0]["top"], hits[0]["bottom"]
             x0b, y0b, x1b, y1b = pg.bbox
             box = (x0b, max(y0b, y0 - 70), x1b, min(y1b, y1 + 6))
-            im = pg.crop(box).to_image(resolution=100).original.convert("RGB")
+            try:
+                im = pg.crop(box).to_image(resolution=100).original.convert("RGB")
+            except Exception:  # noqa: BLE001  halaman gagal dirender
+                im = Image.new("RGB", (int(pg.width * 100 / 72), 40), "white")
         else:
             im = Image.new("RGB", (int(pg.width * 100 / 72), 40), "white")
     lab = f"#{i + 1} {r.dokumen_id} hlm {r.halaman}" + (" [OCR]" if ocr else "")

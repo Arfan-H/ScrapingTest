@@ -133,6 +133,7 @@ def clean_name(name):
     name = re.sub(r"^\s*[a-z],\s+(?=[A-Za-z])", "", name)  # penomoran "b, Jasa medis"
     name = PRICE_TOK.sub(" ", name)
     name = re.sub(r"\bRp\.?\s*$", " ", name)
+    name = re.sub(r"(?<![A-Za-z])R[pPo]\.?(?![A-Za-z])", " ", name)  # sisa 'Rp'/'RP' dari kolom harga
     name = re.sub(r"\b(I[lI1]{2})\b", "III", name)
     name = re.sub(r"\b(I[l1])\b", "II", name)
     name = re.sub(r"\s+per\s+(tindakan|hari|kali|pemeriksaan|jam|paket|orang|lembar|sesi|unit)\s*$", "", name, flags=re.I)
@@ -410,7 +411,12 @@ def tail_owner(tail, q_top, q_name, q_aligned=False):
     p_open = CONNECT_END.search(tail["name"]) or tail["name"].count("(") > tail["name"].count(")") or re.match(r"^[a-z(/]", txt)
     q_open = CONNECT_END.search(txt) or txt.count("(") > txt.count(")")
     if p_open and not q_open:
-        return len(T)
+        # baris pertama lanjutan nama atas; baris berikutnya ikut hanya bila jelas lanjutan, sisanya awal nama Q
+        k = 1
+        while k < len(T) and (re.match(r"^[a-z(/]", T[k][2]) or CONNECT_END.search(T[k - 1][2])
+                              or T[k - 1][2].count("(") > T[k - 1][2].count(")")):
+            k += 1
+        return k if (k == len(T) or q_name is not None) else k
     if q_open and not p_open and q_name is not None:
         return 0
     h = max(tail["bottom"] - tail["top"], 4)
@@ -422,8 +428,26 @@ def tail_owner(tail, q_top, q_name, q_aligned=False):
             k += 1
         return k or None
     gaps.append(q_top - T[-1][1])
+    # baris yang bertumpuk vertikal (jarak < -1) melekat ke sel di sisinya (sel rata tengah)
+    if gaps[0] < -1 or gaps[-1] < -1:
+        if gaps[0] < -1 and gaps[-1] < -1:
+            if len(T) == 1:
+                return None
+            inner = range(1, len(T))
+            return max(inner, key=lambda i: gaps[i])
+        if gaps[0] < -1:  # bertumpuk dengan P: baris yang bertumpuk berantai ikut P, sisanya awal nama Q
+            k = 1
+            while k < len(T) and gaps[k] < -1:
+                k += 1
+            return k if (k == len(T) or q_name is not None) else None
+        if q_name is None:
+            return None
+        k = len(T)  # bertumpuk dengan Q: baris terakhir (berantai) ikut Q
+        while k > 1 and gaps[k - 1] < -1:
+            k -= 1
+        return k - 1
     big = max(range(len(gaps)), key=lambda i: gaps[i])
-    if min(gaps) > -1 and all(gaps[big] >= g + tol for i, g in enumerate(gaps) if i != big):
+    if all(gaps[big] >= g + tol for i, g in enumerate(gaps) if i != big):
         return big if (big == len(T) or q_name is not None) else None
     if tail.get("aligned") and q_aligned and not q_open:
         return len(T)  # sel rata atas di kedua baris bernomor: teks di antaranya lanjutan nama di atas
@@ -517,6 +541,13 @@ def classify_two(labels):
     if t1 and not k1 and not t2 and k2:
         return None
     v1, v2 = _var_label(l1), _var_label(l2)
+    # kata awal yang sama di kedua judul = judul grup/tabel ("Persalinan Normal Persalinan ...") -> buang
+    a_, b_ = v1.split(), v2.split()
+    k_ = 0
+    while k_ < min(len(a_), len(b_)) - 1 and a_[k_].lower() == b_[k_].lower():
+        k_ += 1
+    if k_:
+        v1, v2 = " ".join(a_[k_:]), " ".join(b_[k_:])
     if (header_classes(l1) or header_classes(l2)) and v1.lower() != v2.lower():
         return "kelas", [v1, v2]  # judul memuat kelas tetapi bukan satu kelas tunggal ("Kelas III, II, I")
     if len(re.sub(r"[^A-Za-z]", "", v1)) >= 2 and len(re.sub(r"[^A-Za-z]", "", v2)) >= 2 and v1.lower() != v2.lower():
@@ -785,7 +816,10 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                                           or re.match(r"^[A-Za-z]\s+[A-Z]", line) or re.search(r"\d{3}", tb)
                                 or re.match(r"^[A-Za-z0-9]{1,3}(\.\d+)+\.?\s", line)
                                 or sum(len(w) == 1 for w in tb.split()) > 0.3 * len(tb.split())
-                                or len(re.sub(r"[^A-Za-z]", "", tb)) < 0.6 * len(tb.replace(" ", "")))
+                                or len(re.sub(r"[^A-Za-z]", "", tb)) < 0.6 * len(re.sub(r"[^A-Za-z0-9]", "", tb))
+                                or len(re.sub(r"[A-Za-z0-9\s()/\-.,&+:%<>=']", "", tb)) > 0.2 * len(tb.replace(" ", ""))
+                                or re.search(r"(?i)termasuk|catatan|keterangan|\*\)|^ket\b", tb)
+                                or (re.fullmatch(r"[A-Z]{3,}( [A-Z]{2,}){0,2}", tb) and not tail["name"].isupper()))
                         upper_ok = tail["name"].isupper() or not is_header(tb)
                         if (lw and not numbered_l and len(tail["texts"]) < 3 and upper_ok
                                 and max(w["x1"] for w in lw) <= tail["px0"] + 2 and min(w["x0"] for w in lw) >= tail["nx0"] - 15
@@ -812,7 +846,9 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                             and not re.fullmatch(r"(?i)(pratama|madya|utama|vip|vvip|&|dan|\s)+", t_body)
                             and sum(len(w) == 1 for w in t_body.split()) <= 0.3 * len(t_body.split())
                             and len(re.sub(r"[^A-Za-z]", "", t_body)) >= 0.5 * len(t_body.replace(" ", ""))
-                            and not re.search(r"\b(adalah|sebagaimana|dikenakan|ditetapkan|ayat|pasal|rp)\b", t_body, re.I)):
+                            and not re.search(r"\b(adalah|sebagaimana|dikenakan|ditetapkan|ayat|pasal|rp)\b", t_body, re.I)
+                            and not COL_HEAD_LINE.match(t_body) and not CONNECT_END.search(t_body)
+                            and not (len(t_body.split()) >= 2 and all(FRAGMENT.match(w) for w in t_body.split()))):
                         np_titles.append(t_body)
                     # judul tabel baru tanpa kelas -> lupakan judul kelas sebelumnya
                     if TABLE_HEAD.search(line):
@@ -887,6 +923,8 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                             grp_flag = [("nama_dari_judul", item_t)]
                     elif item_x is not None and not (inner is not None):
                         item_x = None
+                if re.search(r"(?i)\b(tahun|nomor|tanggal|tangoal|tgl)\b", line) and all(1990 <= p_ <= 2035 for p_ in prices):
+                    continue  # kepala lampiran "NOMOR 24 TAHUN 2017", bukan tarif
                 tail_flag = []
                 if not re.search(r"[A-Za-z]", name):
                     name = ""  # sisa nomor urut ("14") tanpa nama
@@ -1120,6 +1158,8 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                         flags.append("komponen_tidak_jumlah")
                     elif len(prices) >= 4 and not sum_ok(prices):
                         flags.append("kolom_harga_tak_dikenal")
+                if any(re.search(r"\(\d\)$", str(pr[0])) for pr in pairs):
+                    flags.append("label_kelas_tak_jelas")  # judul kelas ganda ("I (1)", "I (2)"): judul tak terbaca utuh
                 for pr in pairs:
                     kel, harga = pr[0], pr[1]
                     rows.append(dict(
