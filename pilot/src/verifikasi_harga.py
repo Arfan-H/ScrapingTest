@@ -4,6 +4,7 @@ Untuk tiap baris tarif, semua angka harga di baris_mentah dibaca ulang secara in
 (titik/koma ribuan, ",00", ",-", angka terpecah spasi seperti "1 4,453,125"). Harga dinyatakan:
   cocok_langsung : harga sama dengan salah satu angka di baris sumber
   cocok_gabungan : harga cocok setelah angka yang terpecah spasi digabung ("2 ,929,688" -> 2.929.688)
+  cocok_digit_pemisah_dibetulkan : digit sama dengan token di PDF, pemisah ribuan dibetulkan ("6028.890" -> 6.028.890)
   tidak_cocok    : harga tidak ditemukan di baris sumber -> perlu dicek manual
 
 Pemakaian: python -I pilot/src/verifikasi_harga.py pilot/out/dataset/tarif.csv.gz pilot/out/dataset/verifikasi_harga.csv
@@ -35,6 +36,10 @@ def check(raw, harga):
     fixed = re.sub(r"(?<![\d.,])(\d) (\d{1,2}(?:[.,]\d{3})+)(?!\d)", r"\1\2", fixed)
     if h in numbers(fixed):
         return "cocok_gabungan"
+    # digit sama persis dengan satu token di PDF, hanya pemisah ribuan yang salah ("6028.890" -> 6.028.890)
+    for tok in re.findall(r"\d[\d.,]*\d", raw):
+        if int(re.sub(r"\D", "", re.sub(r"(,00|,-)$", "", tok))) == h:
+            return "cocok_digit_pemisah_dibetulkan"
     return "tidak_cocok"
 
 

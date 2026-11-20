@@ -233,6 +233,36 @@ def sum_ok(p):
     return len(p) >= 6 and len(p) % 3 == 0 and all(_close(p[i] + p[i + 1], p[i + 2]) for i in range(0, len(p), 3))
 
 
+# "1.025000": pemisah ribuan kedua hilang -> hanya satu bacaan wajar (1.025.000)
+MISSING_SEP = re.compile(r"(?<![\d.,])\d{1,3}(?:[.,]\d{3})*[.,]\d{6}(?:,00|,-)?(?![\d])")
+# "6028.890": 4+ digit sebelum pemisah -> bisa titik hilang (6.028.890) atau digit ganda; perlu bukti dari baris
+LONG_HEAD = re.compile(r"(?<![\d.,])\d{4,}[.,]\d{3}(?:[.,]\d{3})*(?:,00|,-)?(?![\d])")
+
+
+def _fmt(mm):
+    d = re.sub(r"\D", "", re.sub(r"(,00|,-)$", "", mm.group(0)))
+    return f"{int(d):,}".replace(",", ".")
+
+
+def repair_missing_sep(line):
+    return MISSING_SEP.sub(_fmt, line)
+
+
+def repair_malformed(line):
+    """'6028.890' -> '6.028.890' (semua digit dipertahankan, pemisah ribuan dibetulkan)."""
+    return LONG_HEAD.sub(_fmt, line)
+
+
+def classes_plausible(p):
+    """Harga per kelas berjajar: naik (atau turun) bertahap, tiap langkah <= 1,6x."""
+    if len(p) < 4:
+        return False
+    for seq in (p, p[::-1]):
+        if all(a <= b <= a * 1.6 for a, b in zip(seq, seq[1:])):
+            return True
+    return False
+
+
 def parse_prices(line):
     m = TRAIL_PRICES.search(line)
     if not m:
@@ -291,6 +321,22 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                     if p2 and (lead0 or (sum_ok(p2) and not sum_ok(prices))
                                or (cls_header and len(p2) == len(cls_header) != len(prices))):
                         line, m, prices = merged, m2, p2
+                # angka cacat ("6028.890", "1,400000"): baca ulang semua digit; dipakai hanya bila baris jadi konsisten
+                pre_flags = []
+                ms_fixed = repair_missing_sep(line)
+                if ms_fixed != line:
+                    m4, p4, _ = parse_prices(ms_fixed)
+                    if p4:
+                        line, m, prices = ms_fixed, m4, p4
+                        pre_flags.append("harga_diperbaiki")
+                fixed = repair_malformed(line)
+                if fixed != line:
+                    m3, p3, _ = parse_prices(fixed)
+                    if p3 and not sum_ok(prices) and (sum_ok(p3) or total_first(p3) or classes_plausible(p3)):
+                        line, m, prices = fixed, m3, p3
+                        pre_flags.append("harga_diperbaiki")
+                    elif m:
+                        pre_flags.append("harga_ambigu")
                 if not m:
                     np_run = (np_run + [line])[-6:]
                     # judul tabel baru tanpa kelas -> lupakan judul kelas sebelumnya
@@ -346,7 +392,7 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                 pending = None
                 if len(re.sub(r"[^A-Za-z]", "", name)) < 3:
                     continue
-                flags = []
+                flags = list(pre_flags)
                 kelas = kelas_ctx or block["kelas"]
                 nama = name
                 if KELAS_ROW.match(re.sub(r"[()]", "", name)):
