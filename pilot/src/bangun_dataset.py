@@ -256,7 +256,9 @@ def main():
     T["nama_norm"] = T.nama_asli.astype(str).map(norm_name)
     T["kategori_std"] = [std_category(k if isinstance(k, str) else "", n) for k, n in zip(T.kategori_asli, T.nama_norm)]
     T["flags"] = T["flags"].fillna("")
-    dup = T.duplicated(["dokumen_id", "nama_norm", "kelas", "harga"], keep="first")
+    T["varian"] = T["varian"].fillna("") if "varian" in T else ""
+    T["komponen"] = T["komponen"].fillna("total")
+    dup = T.duplicated(["dokumen_id", "nama_norm", "kelas", "varian", "komponen", "harga"], keep="first")
     T.loc[dup, "flags"] = (T.loc[dup, "flags"] + "|duplikat").str.strip("|")
     T["flag_qc"] = T["flags"].replace("", "ok").str.replace("|", ";", regex=False)
     PROBLEM = {"nama_terpotong", "komponen_tidak_jumlah", "kolom_harga_tak_dikenal", "kelas_grup_tanpa_judul",
@@ -274,7 +276,7 @@ def main():
     T["rs_id"] = T.dokumen_id.map(dict(zip(doc.dokumen_id, doc.rs_id)))
     T["status_bpk"] = T.dokumen_id.map(dict(zip(doc.dokumen_id, doc.status_bpk)))
     cols = ["tarif_id", "dokumen_id", "rs_id", "tahun", "status_bpk", "file", "halaman", "kategori_asli", "nama_asli",
-            "nama_norm", "kategori_std", "kelas", "komponen", "harga", "termasuk_bhp", "sumber_bhp", "n_kolom_harga",
+            "nama_norm", "kategori_std", "kelas", "varian", "komponen", "harga", "termasuk_bhp", "sumber_bhp", "n_kolom_harga",
             "sumber_harga", "metode_ekstraksi", "flag_qc", "qc_masalah", "verifikasi_harga", "baris_mentah"]
     T[cols].to_csv(os.path.join(OUT, "tarif.csv.gz"), index=False)
 
