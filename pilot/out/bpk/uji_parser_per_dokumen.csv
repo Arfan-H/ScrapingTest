@@ -1,515 +1,515 @@
 dokumen_id,baris,item_teks_triase,detik,error,nama_unik,cakupan,pct_ok,pct_bermasalah,pct_dari_kolom_kelas,pct_komponen_tidak_jumlah,pct_kolom_tak_dikenal,pct_nama_terpotong,pct_bhp_terbaca,harga_median,pct_bhp_terbaca_akhir,bhp_dokumen_auto
 100103_PERWA NO. 26 TAHUN 2018.pdf,42,42,0.2,,26,1.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,850000.0,0.0,tidak_jelas
-100730_Perda No. 18 Tahun 2007.pdf,1272,1266,4.8,,479,0.95,94.6,2.1,0.0,2.1,0.0,0.0,0.0,81250.0,0.0,tidak_jelas
-101937_PERGUB-20-2017_SALINAN.pdf,132,61,2.8,,73,1.33,87.9,0.0,4.5,0.0,0.0,0.0,0.0,157500.0,0.0,tidak_jelas
-102349_22No.4 THN 2017 jdih.pdf,627,621,2.8,,618,1.01,100.0,0.0,0.0,0.0,0.0,0.0,0.0,303000.0,0.0,tidak_jelas
-102427_200910004.pdf,209,26,1.4,,190,7.69,69.9,25.4,0.0,3.8,15.8,0.0,0.0,37000.0,8.6,tidak_jelas
-103074_PERBUP 20-2017.pdf,139,131,2.2,,121,0.98,69.8,0.7,0.0,0.7,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
-103247_Peraturan Daerah (PERDA) Kabupaten Tulang Bawang No 02 Tahun 2009.pdf,715,490,2.3,,253,0.88,43.2,40.6,2.1,2.5,0.0,0.0,0.0,112000.0,0.0,tidak_jelas
-103340_2018 Perda KAB. BOYOLALI 011.pdf,1679,1674,6.6,,742,0.79,72.4,27.3,0.0,22.5,4.2,0.0,0.0,86000.0,100.0,ya
-103348_2018 Perda KAB. BOYOLALI 012.pdf,478,456,4.8,,412,1.03,94.6,4.6,0.0,0.6,4.0,0.0,0.0,39500.0,0.0,tidak_jelas
-103703_No_141_Tahun_2018.pdf,1020,1019,0.9,,894,1.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
-104097_Perda 5_2016 Tarif Pelayanan RSJD Prov Lampung.pdf,425,172,2.2,,409,2.46,99.3,0.0,0.0,0.0,0.0,0.0,0.0,55000.0,100.0,ya
-104533_PERDA NO 10 TAHUN 2018.pdf,3623,3574,22.1,,871,0.76,99.7,0.0,0.2,0.0,0.0,0.0,0.0,75000.0,61.0,tidak_jelas
-106047_PERDA 7 2018.pdf,492,483,3.3,,457,1.02,99.0,0.0,0.0,0.0,0.0,0.0,100.0,150000.0,100.0,ya
-107430_PERBUP Bone Bolango No 52 th 2011 ttg Penetapan Tarif Layanan Kesehatan Pada RSUD TOTO Kabila-ocr.pdf,1204,845,5.7,,836,1.01,42.6,14.4,43.4,11.8,0.6,0.0,0.0,200000.0,100.0,ya
-109340_PERBUP-7-2015-TARIF-LAYANAN-KESEHATAN-RSUD.pdf,191,188,3.5,,187,1.01,99.0,1.0,0.0,1.0,0.0,0.0,0.0,143000.0,100.0,ya
-109565_21-PERBUP-JENIS-LAYANAN-BARU-2013.pdf,42,37,0.6,,38,1.03,90.5,9.5,0.0,0.0,0.0,0.0,0.0,97500.0,0.0,tidak_jelas
-110457_Perbup 13 tahun 2018.pdf,1399,1392,3.6,,1314,1.0,98.5,0.2,0.0,0.2,0.0,0.0,0.0,325000.0,100.0,ya
-110626_802. PERBUP NOMOR 74 TAHUN 2015.pdf,457,456,1.9,,389,0.99,91.0,1.1,0.0,1.1,0.0,0.0,0.0,50000.0,0.0,tidak_jelas
-111639_30.pdf,277,343,1.3,,256,0.78,98.6,0.0,0.0,0.0,0.0,0.0,0.0,75000.0,0.0,tidak_jelas
-111672_21.pdf,80,79,0.5,,43,0.96,87.5,0.0,0.0,0.0,0.0,0.0,0.0,418700.0,0.0,tidak_jelas
-114038_Perda 5_2016 Tarif Pelayanan RSJD Prov Lampung.pdf,425,172,2.5,,409,2.46,99.3,0.0,0.0,0.0,0.0,0.0,0.0,55000.0,100.0,ya
-114295_21.pdf,80,79,0.3,,43,0.96,87.5,0.0,0.0,0.0,0.0,0.0,0.0,418700.0,0.0,tidak_jelas
+100730_Perda No. 18 Tahun 2007.pdf,1272,1266,5.0,,479,0.95,94.6,2.1,0.0,2.1,0.0,0.0,0.0,81250.0,0.0,tidak_jelas
+101937_PERGUB-20-2017_SALINAN.pdf,132,61,3.0,,73,1.33,87.1,0.0,4.5,0.0,0.0,0.0,0.0,157500.0,0.0,tidak_jelas
+102349_22No.4 THN 2017 jdih.pdf,627,621,3.1,,617,1.01,90.4,0.0,0.0,0.0,0.0,0.0,0.0,303000.0,0.0,tidak_jelas
+102427_200910004.pdf,209,26,1.4,,189,7.69,68.9,25.4,0.0,3.8,15.8,0.0,0.0,37000.0,7.7,tidak_jelas
+103074_PERBUP 20-2017.pdf,139,131,2.1,,122,0.98,67.6,0.7,0.0,0.7,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
+103247_Peraturan Daerah (PERDA) Kabupaten Tulang Bawang No 02 Tahun 2009.pdf,715,490,2.4,,253,0.88,42.9,40.6,2.1,2.5,0.0,0.0,0.0,112000.0,0.0,tidak_jelas
+103340_2018 Perda KAB. BOYOLALI 011.pdf,1679,1674,7.4,,741,0.79,72.3,27.3,0.0,22.5,4.2,0.0,0.0,86000.0,100.0,ya
+103348_2018 Perda KAB. BOYOLALI 012.pdf,478,456,5.1,,412,1.03,94.6,4.6,0.0,0.6,4.0,0.0,0.0,39500.0,0.0,tidak_jelas
+103703_No_141_Tahun_2018.pdf,1020,1019,1.2,,891,1.0,99.6,0.0,0.0,0.0,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
+104097_Perda 5_2016 Tarif Pelayanan RSJD Prov Lampung.pdf,425,172,2.5,,409,2.46,98.8,0.0,0.0,0.0,0.0,0.0,0.0,55000.0,100.0,ya
+104533_PERDA NO 10 TAHUN 2018.pdf,3623,3574,22.6,,869,0.76,99.5,0.0,0.2,0.0,0.0,0.0,0.0,75000.0,61.0,tidak_jelas
+106047_PERDA 7 2018.pdf,492,483,3.4,,457,1.02,99.0,0.0,0.0,0.0,0.0,0.0,100.0,150000.0,100.0,ya
+107430_PERBUP Bone Bolango No 52 th 2011 ttg Penetapan Tarif Layanan Kesehatan Pada RSUD TOTO Kabila-ocr.pdf,1204,845,5.9,,836,1.01,42.3,14.4,43.4,11.8,0.6,0.0,0.0,200000.0,100.0,ya
+109340_PERBUP-7-2015-TARIF-LAYANAN-KESEHATAN-RSUD.pdf,191,188,3.9,,187,1.01,99.0,1.0,0.0,1.0,0.0,0.0,0.0,143000.0,100.0,ya
+109565_21-PERBUP-JENIS-LAYANAN-BARU-2013.pdf,42,37,0.4,,38,1.03,90.5,9.5,0.0,0.0,0.0,0.0,0.0,97500.0,0.0,tidak_jelas
+110457_Perbup 13 tahun 2018.pdf,1399,1392,4.6,,1311,1.0,98.1,0.2,0.0,0.2,0.0,0.0,0.0,325000.0,100.0,ya
+110626_802. PERBUP NOMOR 74 TAHUN 2015.pdf,457,456,2.1,,382,0.99,91.0,1.1,0.0,1.1,0.0,0.0,0.0,50000.0,0.0,tidak_jelas
+111639_30.pdf,272,343,1.3,,251,0.77,98.5,0.0,0.0,0.0,0.0,0.0,0.0,70000.0,0.0,tidak_jelas
+111672_21.pdf,80,79,0.3,,41,0.96,87.5,0.0,0.0,0.0,0.0,0.0,0.0,418700.0,0.0,tidak_jelas
+114038_Perda 5_2016 Tarif Pelayanan RSJD Prov Lampung.pdf,425,172,2.6,,409,2.46,98.8,0.0,0.0,0.0,0.0,0.0,0.0,55000.0,100.0,ya
+114295_21.pdf,80,79,0.4,,41,0.96,87.5,0.0,0.0,0.0,0.0,0.0,0.0,418700.0,0.0,tidak_jelas
 114416_Peraturan Daerah (PERDA) Kabupaten Lampung Timur No 10 Tahun 2018.pdf,366,443,2.1,,325,0.81,98.1,1.9,0.0,1.9,0.0,0.0,0.0,62000.0,100.0,ya
-114618_perbup 106 tahun 2018.pdf,1449,1440,2.8,,1369,1.0,98.3,0.5,0.0,0.5,0.0,0.0,0.0,340000.0,0.0,tidak_jelas
-115151_Peraturan Bupati (PERBUP) Kabupaten Tulang Bawang No 07 Tahun 2011.pdf,26,16,0.3,,7,1.12,50.0,50.0,46.2,3.8,0.0,0.0,0.0,84000.0,0.0,tidak_jelas
+114618_perbup 106 tahun 2018.pdf,1449,1440,2.8,,1366,1.0,98.1,0.5,0.0,0.5,0.0,0.0,0.0,340000.0,0.0,tidak_jelas
+115151_Peraturan Bupati (PERBUP) Kabupaten Tulang Bawang No 07 Tahun 2011.pdf,26,16,0.2,,7,1.12,50.0,50.0,46.2,3.8,0.0,0.0,0.0,84000.0,0.0,tidak_jelas
 115257_PERDA LAMPURA 03.2011 RETRIBUSI DI RSD RYACUDU.pdf,212,209,1.9,,107,0.94,100.0,0.0,0.0,0.0,0.0,0.0,0.0,35000.0,100.0,ya
-115346_Perda_2012_9_Retribusi Pelayanan Kesehatan RSUD.pdf,165,197,1.4,,165,0.83,90.3,9.1,0.0,3.0,5.5,0.0,0.0,45000.0,100.0,ya
-11610_PERDA NOMOR 1 TAHUN 2016 TENTANG RETRIBUSI PELAYANAN KESEHATAN.pdf,682,676,4.2,,384,0.99,1.0,3.8,0.0,3.8,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
-11730_PERDA NOMOR 3 TAHUN 2015 TENTANG RETRIBUSI JASA KESEHATAN PADA RSGM HASAN AMAN.pdf,618,621,5.1,,294,0.97,11.7,0.3,0.0,0.3,0.0,0.0,0.0,200000.0,0.0,tidak_jelas
+115346_Perda_2012_9_Retribusi Pelayanan Kesehatan RSUD.pdf,165,197,1.3,,165,0.83,90.3,9.1,0.0,3.0,5.5,0.0,0.0,45000.0,100.0,ya
+11610_PERDA NOMOR 1 TAHUN 2016 TENTANG RETRIBUSI PELAYANAN KESEHATAN.pdf,682,676,4.2,,383,0.99,1.0,3.8,0.0,3.8,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
+11730_PERDA NOMOR 3 TAHUN 2015 TENTANG RETRIBUSI JASA KESEHATAN PADA RSGM HASAN AMAN.pdf,618,621,4.6,,296,0.97,11.7,0.3,0.0,0.3,0.0,0.0,0.0,200000.0,0.0,tidak_jelas
 118026_Perbup Nomor 1 Tahun 2006.pdf,221,125,2.4,,115,1.09,41.6,58.4,0.0,0.9,6.8,0.0,0.0,30000.0,0.0,tidak_jelas
-118449_PERBUP NO. 6 TAHUN 2014.pdf,377,373,2.6,,367,1.01,97.1,2.9,0.0,0.3,2.7,0.0,0.0,50000.0,100.0,ya
-119368_Perbup No.36 Tahun 2018 ttg Tarif Pelayanan BLU RSUD ocr.pdf,942,1411,7.4,,941,0.67,98.9,1.0,0.0,0.7,0.0,0.0,0.0,250000.0,0.0,tidak_jelas
-12300_Perda HSS No 4 Tahun 2016 - Retribusi RSUD Pratama.pdf,78,77,1.3,,77,1.01,100.0,0.0,0.0,0.0,0.0,0.0,0.0,30000.0,0.0,tidak_jelas
-125100_PERBUP KOBAR NO 24 THN 2019 TTG TARIF PELAYANAN PADA BLUD.pdf,213,210,1.1,,179,0.99,81.2,0.9,0.0,0.9,0.0,0.0,79.8,100000.0,79.8,tidak_jelas
-125231_no 1 (2).pdf,591,524,6.1,,524,1.1,95.3,4.7,0.0,0.0,0.0,0.0,0.0,80000.0,100.0,ya
-125749_Perwako No 29 Tahun 2018.pdf,845,786,1.2,,660,0.95,52.1,47.7,0.0,1.2,38.2,0.0,0.0,140000.0,0.0,tidak_jelas
-126155_PERBUP-NO-18-2016.pdf,123,121,2.0,,106,0.94,65.0,1.6,0.0,0.8,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
-127147_PerBupKaro039_2018.pdf,354,348,3.2,,260,0.97,55.1,44.9,0.0,2.0,42.9,0.0,0.0,96000.0,0.0,tidak_jelas
-128027_40~PMK.05~2019Per.pdf,63,23,0.6,,57,2.3,92.1,0.0,0.0,0.0,0.0,0.0,0.0,455000.0,0.0,tidak_jelas
-128163_133~PMK.05~2019Per.pdf,311,172,1.5,,271,1.41,99.0,0.0,0.0,0.0,0.0,0.0,0.0,1300000.0,0.0,tidak_jelas
-131667_PERBUP-NO-40-TAHUN-2018.pdf,687,528,2.4,,616,1.22,87.5,10.5,0.0,0.4,2.5,0.0,0.0,75000.0,0.0,tidak_jelas
-135292_Perwal 20 2019.pdf,1847,1838,3.4,,1717,0.99,99.8,0.0,0.0,0.0,0.0,0.0,0.0,589600.0,0.0,tidak_jelas
-137578_P_JAMBI_2_2011.pdf,642,625,4.2,,611,1.0,98.9,0.0,0.0,0.0,0.0,0.0,0.0,429000.0,100.0,ya
-137579_P_JAMBI_3_2011.pdf,106,103,1.2,,99,1.03,99.1,0.0,0.0,0.0,0.0,0.0,0.0,15000.0,100.0,ya
-137974_PERBUP Gunung Mas Nomor 23 Tahun 2015.pdf,645,263,1.5,,247,1.0,19.2,78.4,0.0,0.2,0.0,0.0,0.0,39000.0,100.0,ya
-138159_7b709-perwa-no.-4-tahun-2020.pdf,26,23,0.3,,22,1.09,100.0,0.0,0.0,0.0,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
-138539_75bdf-perwa-no.-9-tahun-2020.pdf,65,61,0.2,,38,0.97,100.0,0.0,0.0,0.0,0.0,0.0,0.0,1150000.0,0.0,tidak_jelas
-138847_Pergub Bengkulu 2018-50 Tarif Pelayanan Badan Layanan Umum Daerah Rumah Sakit Umum Daerah dr.M.Yunus Bengkulu.pdf,9604,3203,10.0,,2459,0.91,15.7,6.9,77.4,0.1,0.1,0.0,0.0,5600000.0,100.0,ya
-139026_Peraturan JDIH Sumedang - Tarif Pelayanan Pada Rumah Sakit Umum Daerah Kabupaten Sumedang.pdf,701,696,3.0,,416,0.79,99.6,0.0,0.0,0.0,0.0,0.0,0.0,390000.0,0.0,tidak_jelas
-139293_LAMPIRAN PERBUP NAIK.pdf,2867,1155,2.7,,1001,0.98,20.2,4.9,79.5,0.0,0.0,0.0,0.0,490000.0,0.0,tidak_jelas
-139582_Pergub No. 3 Tahun 2020 ttg Perubahan Tarif Retribusi Pelayanan Kesehatan.pdf,1584,899,5.3,,836,0.97,29.2,6.9,63.1,4.9,0.6,0.0,0.0,225000.0,0.0,tidak_jelas
-140026_PERBUP 03 TAHUN 2020-02.pdf,401,395,1.2,,352,1.01,95.5,0.0,0.0,0.0,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
-140444_KOTA_TARAKAN_41_2019 TTG TARIF LAYANAN KESEHATAN PADA BADAN LAYANAN UMUM DAERAH RUMAH SAKIT UMUM KOTA TARAKAN.pdf,715,711,0.9,,693,1.0,99.6,0.0,0.0,0.0,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
-141331_PERBUP 9 2020.pdf,430,408,2.6,,389,0.99,88.4,5.8,0.0,0.0,0.0,0.0,0.0,85000.0,100.0,ya
-143272_uu-1579666226 wis.pdf,1586,1530,3.8,,1161,0.95,87.6,0.1,0.0,0.0,0.0,0.0,0.0,180000.0,0.0,tidak_jelas
-144408_Perbup Lahat Nomor 41 Tahun 2017.pdf,767,919,3.1,,728,0.82,99.3,0.0,0.0,0.0,0.0,0.0,0.0,255000.0,0.0,tidak_jelas
+118449_PERBUP NO. 6 TAHUN 2014.pdf,377,373,2.7,,362,1.01,95.0,2.9,0.0,0.3,2.7,0.0,0.0,50000.0,100.0,ya
+119368_Perbup No.36 Tahun 2018 ttg Tarif Pelayanan BLU RSUD ocr.pdf,942,1411,6.8,,941,0.67,98.8,1.0,0.0,0.7,0.0,0.0,0.0,250000.0,0.0,tidak_jelas
+12300_Perda HSS No 4 Tahun 2016 - Retribusi RSUD Pratama.pdf,78,77,1.1,,77,1.01,100.0,0.0,0.0,0.0,0.0,0.0,0.0,30000.0,0.0,tidak_jelas
+125100_PERBUP KOBAR NO 24 THN 2019 TTG TARIF PELAYANAN PADA BLUD.pdf,213,210,1.1,,199,0.99,63.4,0.9,0.0,0.9,0.0,0.0,79.8,100000.0,79.8,tidak_jelas
+125231_no 1 (2).pdf,591,524,5.7,,524,1.1,95.3,4.7,0.0,0.0,0.0,0.0,0.0,80000.0,100.0,ya
+125749_Perwako No 29 Tahun 2018.pdf,845,786,1.3,,660,0.95,52.0,47.7,0.0,1.2,38.2,0.0,0.0,140000.0,0.0,tidak_jelas
+126155_PERBUP-NO-18-2016.pdf,123,121,1.9,,107,0.94,63.4,1.6,0.0,0.8,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
+127147_PerBupKaro039_2018.pdf,354,348,3.1,,260,0.97,55.1,44.9,0.0,2.0,42.9,0.0,0.0,96000.0,0.0,tidak_jelas
+128027_40~PMK.05~2019Per.pdf,63,23,0.6,,57,2.3,90.5,0.0,0.0,0.0,0.0,0.0,0.0,455000.0,0.0,tidak_jelas
+128163_133~PMK.05~2019Per.pdf,311,172,1.4,,271,1.41,97.7,0.0,0.0,0.0,0.0,0.0,0.0,1300000.0,0.0,tidak_jelas
+131667_PERBUP-NO-40-TAHUN-2018.pdf,687,528,2.3,,614,1.22,87.5,10.5,0.0,0.4,2.5,0.0,0.0,75000.0,0.0,tidak_jelas
+135292_Perwal 20 2019.pdf,1847,1838,3.8,,1713,0.99,99.1,0.0,0.0,0.0,0.0,0.0,0.0,589600.0,0.0,tidak_jelas
+137578_P_JAMBI_2_2011.pdf,642,625,3.7,,611,1.0,98.9,0.0,0.0,0.0,0.0,0.0,0.0,429000.0,100.0,ya
+137579_P_JAMBI_3_2011.pdf,106,103,0.7,,99,1.03,99.1,0.0,0.0,0.0,0.0,0.0,0.0,15000.0,100.0,ya
+137974_PERBUP Gunung Mas Nomor 23 Tahun 2015.pdf,645,263,1.5,,244,1.0,19.2,78.4,0.0,0.2,0.0,0.0,0.0,39000.0,100.0,ya
+138159_7b709-perwa-no.-4-tahun-2020.pdf,26,23,0.4,,24,1.09,88.5,0.0,0.0,0.0,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
+138539_75bdf-perwa-no.-9-tahun-2020.pdf,65,61,0.3,,38,0.97,100.0,0.0,0.0,0.0,0.0,0.0,0.0,1150000.0,0.0,tidak_jelas
+138847_Pergub Bengkulu 2018-50 Tarif Pelayanan Badan Layanan Umum Daerah Rumah Sakit Umum Daerah dr.M.Yunus Bengkulu.pdf,9604,3203,9.8,,2459,0.91,15.7,6.9,77.4,0.1,0.1,0.0,0.0,5600000.0,100.0,ya
+139026_Peraturan JDIH Sumedang - Tarif Pelayanan Pada Rumah Sakit Umum Daerah Kabupaten Sumedang.pdf,701,696,3.1,,416,0.79,99.1,0.0,0.0,0.0,0.0,0.0,0.0,390000.0,0.0,tidak_jelas
+139293_LAMPIRAN PERBUP NAIK.pdf,2867,1155,3.0,,1001,0.98,20.1,4.9,79.5,0.0,0.0,0.0,0.0,490000.0,0.0,tidak_jelas
+139582_Pergub No. 3 Tahun 2020 ttg Perubahan Tarif Retribusi Pelayanan Kesehatan.pdf,1584,899,5.2,,836,0.97,29.0,6.9,63.1,4.9,0.6,0.0,0.0,225000.0,0.0,tidak_jelas
+140026_PERBUP 03 TAHUN 2020-02.pdf,401,395,1.3,,353,1.01,94.5,0.0,0.0,0.0,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
+140444_KOTA_TARAKAN_41_2019 TTG TARIF LAYANAN KESEHATAN PADA BADAN LAYANAN UMUM DAERAH RUMAH SAKIT UMUM KOTA TARAKAN.pdf,715,711,0.9,,693,1.0,99.4,0.0,0.0,0.0,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
+141331_PERBUP 9 2020.pdf,430,408,2.7,,388,0.99,88.4,5.8,0.0,0.0,0.0,0.0,0.0,85000.0,100.0,ya
+143272_uu-1579666226 wis.pdf,1586,1530,3.5,,1153,0.95,86.6,0.1,0.0,0.0,0.0,0.0,0.0,180000.0,0.0,tidak_jelas
+144408_Perbup Lahat Nomor 41 Tahun 2017.pdf,767,919,3.4,,727,0.82,99.2,0.0,0.0,0.0,0.0,0.0,0.0,255000.0,0.0,tidak_jelas
 144706_PERWAL 14A.pdf,233,222,4.5,,210,1.0,94.8,1.7,0.0,1.7,0.0,0.0,0.0,130000.0,0.0,tidak_jelas
-145618_PMK 76_PMK.05_2016.pdf,81,79,0.4,,80,0.97,80.2,0.0,0.0,0.0,0.0,0.0,0.0,200000.0,0.0,tidak_jelas
-146079_PMK 244_PMK.05_2016.pdf,154,118,0.7,,127,1.2,95.5,0.0,0.0,0.0,0.0,0.0,0.0,267500.0,0.0,tidak_jelas
+145618_PMK 76_PMK.05_2016.pdf,81,79,0.6,,80,0.97,79.0,0.0,0.0,0.0,0.0,0.0,0.0,200000.0,0.0,tidak_jelas
+146079_PMK 244_PMK.05_2016.pdf,154,118,0.5,,127,1.2,93.5,0.0,0.0,0.0,0.0,0.0,0.0,267500.0,0.0,tidak_jelas
 146165_PERWAL 26 2016.pdf,15,13,0.3,,13,1.08,100.0,0.0,0.0,0.0,0.0,0.0,0.0,3500.0,0.0,tidak_jelas
-147033_40._Perbup_40_TH_2020_.pdf,113,110,0.6,,68,1.01,100.0,0.0,0.0,0.0,0.0,0.0,0.0,3025000.0,0.0,tidak_jelas
-147125_Perbup No. 7 Tahun 2020_Tarif Pelayanan Kesehatan.pdf,462,442,4.0,,386,0.99,2.6,11.5,4.3,5.0,6.5,0.0,0.0,98000.0,0.0,tidak_jelas
+147033_40._Perbup_40_TH_2020_.pdf,113,110,0.5,,68,1.01,100.0,0.0,0.0,0.0,0.0,0.0,0.0,3025000.0,0.0,tidak_jelas
+147125_Perbup No. 7 Tahun 2020_Tarif Pelayanan Kesehatan.pdf,457,442,3.9,,384,0.98,2.6,10.9,4.4,5.0,5.9,0.0,0.0,90000.0,0.0,tidak_jelas
 147167_PERWAL 33 2016.pdf,2,37,0.5,,1,0.03,100.0,0.0,0.0,0.0,0.0,0.0,0.0,2016.0,0.0,tidak_jelas
-147403_PERBUP NOMOR 5 TAHUN 2020.pdf,552,491,5.2,,454,1.04,93.5,0.9,0.0,0.9,0.0,0.0,0.0,115000.0,100.0,ya
-148647_PMK Nomor 104 Tahun 2014.pdf,182,168,0.5,,88,1.05,97.8,0.0,0.0,0.0,0.0,0.0,0.0,77500.0,0.0,tidak_jelas
-149356_158_PMK.05_2020.pdf,56,52,0.5,,54,1.08,94.6,0.0,0.0,0.0,0.0,0.0,0.0,66000.0,0.0,tidak_jelas
-149513_Perda No 3 Tahun 2012.pdf,648,608,3.6,,527,0.98,89.5,1.7,7.4,0.5,0.0,0.0,0.0,60000.0,100.0,ya
-151227_Perbup 88-2016.pdf,615,529,2.0,,511,1.06,18.9,21.0,8.3,7.6,13.2,0.0,88.9,48000.0,88.9,tidak_jelas
-151894_175_PMK.06_2020.pdf,98,96,0.5,,76,0.96,91.8,0.0,0.0,0.0,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
-152003_PB-25-2016.pdf,601,591,1.6,,434,0.88,67.4,4.7,0.0,0.5,0.0,0.0,61.4,150000.0,61.4,tidak_jelas
-152486_Perbup No. 48 Tahun 2019 edit searchable.pdf,1477,1411,1.9,,1237,1.0,99.9,0.0,0.0,0.0,0.0,0.0,0.0,162000.0,0.0,tidak_jelas
-154322_PERWALI 7. Peraturan walikota Depok Nomor 7 thn 2016 ttg penetapan tarif layanan kesehatan non kelas III RSUD.pdf,3787,1522,4.8,,1381,1.01,14.0,83.4,2.5,0.3,6.1,0.0,0.0,700000.0,0.0,tidak_jelas
-154666_PERDA 4 TAHUN 2006.pdf,349,304,1.3,,255,0.99,80.2,0.3,16.0,0.3,0.0,0.0,0.0,40000.0,0.0,tidak_jelas
-154667_PERDA 5 TAHUN 2006.pdf,380,334,2.1,,284,1.0,80.8,3.9,12.1,0.3,0.0,0.0,0.0,40000.0,100.0,ya
-155776_PERDA 16 TAHUN 2008.pdf,471,419,1.9,,359,0.99,82.8,8.3,6.8,0.2,0.0,0.0,0.0,50000.0,100.0,ya
-155809_perda no 17 tahun 2010.pdf,618,592,2.7,,505,0.98,92.9,1.1,4.5,0.5,0.0,0.0,0.0,52500.0,100.0,ya
-155837_perda no 12 tahun 2011.pdf,425,426,2.1,,394,0.98,99.8,0.0,0.0,0.0,0.0,0.0,0.0,70000.0,100.0,ya
-156907_PERBUP NO 45 THN 2020.pdf,55,49,0.4,,31,1.12,78.2,0.0,0.0,0.0,0.0,0.0,0.0,137000.0,0.0,tidak_jelas
+147403_PERBUP NOMOR 5 TAHUN 2020.pdf,552,491,6.3,,460,1.04,92.2,0.9,0.0,0.9,0.0,0.0,0.0,115000.0,100.0,ya
+148647_PMK Nomor 104 Tahun 2014.pdf,182,168,0.6,,88,1.05,97.8,0.0,0.0,0.0,0.0,0.0,0.0,77500.0,0.0,tidak_jelas
+149356_158_PMK.05_2020.pdf,56,52,0.5,,53,1.08,92.9,0.0,0.0,0.0,0.0,0.0,0.0,66000.0,0.0,tidak_jelas
+149513_Perda No 3 Tahun 2012.pdf,648,608,3.6,,525,0.98,89.0,1.7,7.4,0.5,0.0,0.0,0.0,60000.0,100.0,ya
+151227_Perbup 88-2016.pdf,613,529,2.5,,508,1.06,18.9,21.0,8.3,7.7,13.2,0.0,89.2,48000.0,89.2,tidak_jelas
+151894_175_PMK.06_2020.pdf,98,96,0.7,,78,0.96,86.7,0.0,0.0,0.0,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
+152003_PB-25-2016.pdf,601,591,1.5,,408,0.88,66.9,4.7,0.0,0.5,0.0,0.0,61.4,150000.0,61.4,tidak_jelas
+152486_Perbup No. 48 Tahun 2019 edit searchable.pdf,1477,1411,2.0,,1240,1.0,99.5,0.0,0.0,0.0,0.0,0.0,0.0,162000.0,0.0,tidak_jelas
+154322_PERWALI 7. Peraturan walikota Depok Nomor 7 thn 2016 ttg penetapan tarif layanan kesehatan non kelas III RSUD.pdf,3787,1522,5.0,,1382,1.01,14.0,83.4,2.5,0.3,6.1,0.0,0.0,700000.0,0.0,tidak_jelas
+154666_PERDA 4 TAHUN 2006.pdf,349,304,1.4,,256,0.99,79.7,0.3,16.0,0.3,0.0,0.0,0.0,40000.0,0.0,tidak_jelas
+154667_PERDA 5 TAHUN 2006.pdf,380,334,2.1,,284,1.0,80.3,3.9,12.1,0.3,0.0,0.0,0.0,40000.0,100.0,ya
+155776_PERDA 16 TAHUN 2008.pdf,471,419,2.4,,354,0.99,81.3,8.3,6.8,0.2,0.0,0.0,0.0,50000.0,100.0,ya
+155809_perda no 17 tahun 2010.pdf,618,592,2.7,,503,0.98,92.4,1.1,4.5,0.5,0.0,0.0,0.0,52500.0,100.0,ya
+155837_perda no 12 tahun 2011.pdf,427,426,2.4,,395,0.99,99.3,0.0,0.0,0.0,0.0,0.0,0.0,70000.0,100.0,ya
+156907_PERBUP NO 45 THN 2020.pdf,55,49,0.7,,29,1.12,40.0,0.0,0.0,0.0,0.0,0.0,0.0,137000.0,0.0,tidak_jelas
 16108_Perda Kab.Kulon Progo No.3 Tahun 2012 ttg Tarif Pelayanan Kesehatan Kelas III dI Rumah Sakit Umum Daerah Wates.pdf,324,36,2.9,,309,9.0,99.1,0.0,0.0,0.0,0.0,0.0,0.0,79250.0,0.0,tidak_jelas
-161748_48 TAHUN 2014 (RETRIBUSI RSUD LINGGAJATI) (Repaired).pdf,1075,773,6.2,,467,1.13,75.1,10.1,12.1,0.0,5.0,0.0,0.0,80000.0,0.0,tidak_jelas
-16238_Perda Wakatobi No. 03 Tahun 2013.pdf,48,22,1.7,,24,1.14,100.0,0.0,0.0,0.0,0.0,0.0,0.0,2000.0,0.0,tidak_jelas
-16304_Perda Konawe No.06 Tahun 2010.pdf,265,232,1.2,,218,1.07,79.6,15.8,0.0,0.0,9.8,0.0,0.0,30000.0,0.0,tidak_jelas
-164861_Perbup Nomor 1 Tahun 2021 tentang Tarif Pelayanan Kesehatan RSUD Kanjuruhan.pdf,5398,1167,17.4,,995,0.96,5.6,1.0,93.1,0.0,0.0,0.0,0.0,370500.0,100.0,ya
-166138_Perda No 3 Tahun 2020 Kab.Pasuruan.pdf,2456,2601,12.2,,1137,0.64,99.9,0.1,0.0,0.1,0.0,0.0,0.0,105000.0,100.0,ya
-16635_Perwako No. 03 th 2014 ttg Pelaksanaan Pola Tarif INA CBGs Bagi Pasien JKN di RSUD Prof. Dr. H. Aloei Saboe Kota Gto.pdf,773,595,2.3,,458,1.05,49.4,32.1,0.0,6.6,0.1,0.0,0.0,285900.0,100.0,ya
-167301_84._Perbup_84_TH_2020_.pdf,1246,1238,2.9,,448,0.87,100.0,0.0,0.0,0.0,0.0,0.0,0.0,125000.0,0.0,tidak_jelas
+161748_48 TAHUN 2014 (RETRIBUSI RSUD LINGGAJATI) (Repaired).pdf,1074,773,6.2,,465,1.12,75.1,10.1,12.1,0.0,5.0,0.0,0.0,80200.0,0.0,tidak_jelas
+16238_Perda Wakatobi No. 03 Tahun 2013.pdf,48,22,2.1,,24,1.14,100.0,0.0,0.0,0.0,0.0,0.0,0.0,2000.0,0.0,tidak_jelas
+16304_Perda Konawe No.06 Tahun 2010.pdf,265,232,1.1,,215,1.07,74.3,15.8,0.0,0.0,9.8,0.0,0.0,30000.0,0.0,tidak_jelas
+164861_Perbup Nomor 1 Tahun 2021 tentang Tarif Pelayanan Kesehatan RSUD Kanjuruhan.pdf,5398,1167,16.6,,1013,0.96,5.6,1.0,93.1,0.0,0.0,0.0,0.0,370500.0,100.0,ya
+166138_Perda No 3 Tahun 2020 Kab.Pasuruan.pdf,2456,2601,11.6,,1136,0.64,99.8,0.1,0.0,0.1,0.0,0.0,0.0,105000.0,100.0,ya
+16635_Perwako No. 03 th 2014 ttg Pelaksanaan Pola Tarif INA CBGs Bagi Pasien JKN di RSUD Prof. Dr. H. Aloei Saboe Kota Gto.pdf,773,595,2.3,,450,1.05,49.4,32.1,0.0,6.6,0.1,0.0,0.0,285900.0,100.0,ya
+167301_84._Perbup_84_TH_2020_.pdf,1246,1238,3.2,,448,0.87,100.0,0.0,0.0,0.0,0.0,0.0,0.0,125000.0,0.0,tidak_jelas
 167525_PerBupKaro033_2020.pdf,220,214,1.6,,215,1.0,70.9,27.7,1.4,12.3,13.6,0.0,0.0,91000.0,0.0,tidak_jelas
-167834_PERWAL NOMOR 5 TAHUN 2021 TTG PERUBAHAN KEDUA ATAS PERATURAN WALI KOTA BANJAR NOMOR 13.pdf,249,242,3.7,,197,0.95,60.2,0.8,0.0,0.8,0.0,0.0,0.0,350000.0,0.0,tidak_jelas
-16785_Perda Konawe Selatan No. 17 Tahun 2011.pdf,400,235,0.8,,216,1.04,44.0,52.2,0.0,0.2,8.0,0.0,0.0,30000.0,0.0,tidak_jelas
-167864_PERATURAN-BUPATI-DHARMASRAYA-NOMOR-31-TAHUN_020321093242.pdf,622,625,1.4,,517,0.99,88.1,0.0,0.0,0.0,0.0,0.0,0.0,150000.0,100.0,ya
-168935_PB2021-17.pdf,2180,2189,18.4,,2144,0.99,99.6,0.1,0.0,0.0,0.1,0.0,0.0,2023875.0,0.0,tidak_jelas
-169701_Perbup Kukar 72-2020 ttg Perubahan Ketiga atas Perbup Kukar 57-2015 ttg Tarif Pelayanan Kesehatan Pada Badan Layanan Umum Da.pdf,205,207,1.1,,176,0.99,95.6,0.0,0.0,0.0,0.0,0.0,0.0,250000.0,0.0,tidak_jelas
-169702_Perbup Kukar 73-2020 ttg Perubahan atas Perbup Kukar 22-2018 ttg Tarif Pelayanan Kesehatan Pada Badan Layanan Umum Daerah Ru.pdf,143,153,0.4,,130,0.93,90.2,0.0,0.0,0.0,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
-170218_Nomor 6 Perbup Tarif New.pdf,200,198,3.3,,192,0.99,80.5,0.0,0.0,0.0,0.0,0.0,0.0,317500.0,0.0,tidak_jelas
-17088_Perda Kota Baubau No. 04 Tahun 2007.pdf,235,34,1.3,,195,6.41,69.4,14.0,2.6,10.6,0.0,0.0,0.0,89476.0,100.0,ya
-171036_perwali Kota Kupang no. 71 tahun 2020.pdf,1120,1149,4.4,,1100,0.97,98.9,1.0,0.0,1.0,0.0,0.0,0.0,381000.0,100.0,ya
-172533_PERBUP GUNUNG MAS NO 3 TAHUN 2021.pdf,752,381,1.5,,349,1.0,30.6,65.4,0.4,0.0,0.0,0.0,0.0,51722.5,100.0,ya
-172648_PERWAL102021_910.pdf,486,287,5.4,,289,1.36,94.9,1.4,0.0,0.4,0.2,0.0,0.0,130000.0,0.0,tidak_jelas
+167834_PERWAL NOMOR 5 TAHUN 2021 TTG PERUBAHAN KEDUA ATAS PERATURAN WALI KOTA BANJAR NOMOR 13.pdf,249,242,3.6,,233,0.95,59.0,0.8,0.0,0.8,0.0,0.0,0.0,350000.0,0.0,tidak_jelas
+16785_Perda Konawe Selatan No. 17 Tahun 2011.pdf,400,235,0.8,,214,1.04,42.0,52.2,0.0,0.2,8.0,0.0,0.0,30000.0,0.0,tidak_jelas
+167864_PERATURAN-BUPATI-DHARMASRAYA-NOMOR-31-TAHUN_020321093242.pdf,620,625,1.5,,516,0.98,86.6,0.0,0.0,0.0,0.0,0.0,0.0,150000.0,100.0,ya
+168935_PB2021-17.pdf,2180,2189,19.3,,2144,0.99,99.6,0.1,0.0,0.0,0.1,0.0,0.0,2023875.0,0.0,tidak_jelas
+169701_Perbup Kukar 72-2020 ttg Perubahan Ketiga atas Perbup Kukar 57-2015 ttg Tarif Pelayanan Kesehatan Pada Badan Layanan Umum Da.pdf,205,207,1.1,,176,0.99,95.1,0.0,0.0,0.0,0.0,0.0,0.0,250000.0,0.0,tidak_jelas
+169702_Perbup Kukar 73-2020 ttg Perubahan atas Perbup Kukar 22-2018 ttg Tarif Pelayanan Kesehatan Pada Badan Layanan Umum Daerah Ru.pdf,143,153,0.5,,129,0.93,88.8,0.0,0.0,0.0,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
+170218_Nomor 6 Perbup Tarif New.pdf,200,198,3.5,,194,0.99,78.5,0.0,0.0,0.0,0.0,0.0,0.0,317500.0,0.0,tidak_jelas
+17088_Perda Kota Baubau No. 04 Tahun 2007.pdf,235,34,2.3,,193,6.41,64.3,14.0,2.6,10.6,0.0,0.0,0.0,89476.0,100.0,ya
+171036_perwali Kota Kupang no. 71 tahun 2020.pdf,1120,1149,3.9,,1100,0.97,98.8,1.0,0.0,1.0,0.0,0.0,0.0,381000.0,100.0,ya
+172533_PERBUP GUNUNG MAS NO 3 TAHUN 2021.pdf,752,381,1.6,,345,1.0,30.5,65.4,0.4,0.0,0.0,0.0,0.0,51722.5,100.0,ya
+172648_PERWAL102021_910.pdf,486,287,5.9,,288,1.36,94.2,1.4,0.0,0.4,0.2,0.0,0.0,130000.0,0.0,tidak_jelas
 173092_6-2021.pdf,26,24,0.2,,26,1.08,100.0,0.0,0.0,0.0,0.0,0.0,0.0,65000.0,0.0,tidak_jelas
-173660_PERBUP-39-2020-PERUB1-TARIF-BLUD.pdf,385,325,4.9,,284,1.1,77.9,7.3,0.0,0.3,0.0,0.0,0.0,110000.0,0.0,tidak_jelas
-173762_perbup_no._25_tahun_2020_tentang_tarif_pelayanan_ambulans_dan_kereta_merta_pada_rumah_sakit_umum_daerah_di_kabupaten_bogor.pdf,23,15,0.6,,9,1.53,8.7,87.0,0.0,26.1,60.9,0.0,0.0,300000.0,0.0,tidak_jelas
-174064_PERBUP 02 TAHUN 2021 edit searchable.pdf,1045,1044,3.9,,862,0.98,94.3,0.0,0.0,0.0,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
-174393_pergub 95 tahun 2017.pdf,927,923,3.2,,542,0.68,87.4,1.2,0.0,1.2,0.0,0.0,0.0,150000.0,100.0,ya
-175530_Pergub Sumsel No 11 Tahun 2021.pdf,2250,1933,14.8,,2228,1.16,98.8,1.1,0.0,0.3,0.0,0.0,0.0,900000.0,0.0,tidak_jelas
-175534_Pergub Sumsel No 14 Tahun 2021.pdf,179,141,3.0,,172,1.23,90.5,9.5,1.7,0.6,1.7,0.0,0.0,234000.0,0.0,tidak_jelas
-177966_PB2019-55.pdf,186,185,1.1,,136,0.94,48.4,0.0,0.0,0.0,0.0,0.0,0.0,400000.0,0.0,tidak_jelas
+173660_PERBUP-39-2020-PERUB1-TARIF-BLUD.pdf,385,325,4.6,,284,1.1,77.9,7.3,0.0,0.3,0.0,0.0,0.0,110000.0,0.0,tidak_jelas
+173762_perbup_no._25_tahun_2020_tentang_tarif_pelayanan_ambulans_dan_kereta_merta_pada_rumah_sakit_umum_daerah_di_kabupaten_bogor.pdf,23,15,0.5,,9,1.53,8.7,87.0,0.0,26.1,60.9,0.0,0.0,300000.0,0.0,tidak_jelas
+174064_PERBUP 02 TAHUN 2021 edit searchable.pdf,1045,1044,3.8,,866,0.98,92.9,0.0,0.0,0.0,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
+174393_pergub 95 tahun 2017.pdf,929,923,3.4,,539,0.69,86.5,1.2,0.0,1.2,0.0,0.0,0.0,150000.0,100.0,ya
+175530_Pergub Sumsel No 11 Tahun 2021.pdf,2250,1933,15.1,,2228,1.16,98.5,1.1,0.0,0.3,0.0,0.0,0.0,900000.0,0.0,tidak_jelas
+175534_Pergub Sumsel No 14 Tahun 2021.pdf,179,141,2.8,,172,1.23,90.5,9.5,1.7,0.6,1.7,0.0,0.0,234000.0,0.0,tidak_jelas
+177966_PB2019-55.pdf,186,185,1.2,,136,0.94,48.4,0.0,0.0,0.0,0.0,0.0,0.0,400000.0,0.0,tidak_jelas
 178147_Perwa 66.pdf,184,182,1.2,,144,0.86,77.2,0.0,0.0,0.0,0.0,0.0,0.0,100900.0,0.0,tidak_jelas
-179777_Perwal_No__16_Tahun_2021.pdf,1535,1529,9.3,,1411,1.0,98.7,0.1,0.0,0.1,0.0,0.0,0.0,125000.0,0.0,tidak_jelas
-181585_PERBUP 2 TAHUN 2021.pdf,2558,788,14.7,,741,0.97,7.6,0.2,92.3,0.0,0.0,0.0,0.0,312559.0,100.0,ya
-182066_7509333b9f5740f6620d9ecc4e2e9f28.pdf,818,867,4.8,,266,0.7,100.0,0.0,0.0,0.0,0.0,0.0,0.0,49000.0,0.0,tidak_jelas
-182167_PERBUP NO.30 TAHUN 2021 ocr.pdf,1014,1017,5.9,,987,0.98,95.0,1.2,0.0,1.2,0.0,0.0,0.0,185000.0,100.0,ya
-18385_Pergub Sultra No.69 Tahun 2009.pdf,60,65,0.2,,45,0.89,80.0,5.0,0.0,1.7,0.0,0.0,0.0,262500.0,100.0,ya
+179777_Perwal_No__16_Tahun_2021.pdf,1535,1529,9.4,,1411,1.0,98.6,0.1,0.0,0.1,0.0,0.0,0.0,125000.0,0.0,tidak_jelas
+181585_PERBUP 2 TAHUN 2021.pdf,2558,788,14.4,,741,0.97,7.6,0.2,92.3,0.0,0.0,0.0,0.0,312559.0,100.0,ya
+182066_7509333b9f5740f6620d9ecc4e2e9f28.pdf,818,867,4.7,,265,0.7,99.8,0.0,0.0,0.0,0.0,0.0,0.0,49000.0,0.0,tidak_jelas
+182167_PERBUP NO.30 TAHUN 2021 ocr.pdf,1014,1017,6.4,,987,0.98,95.0,1.2,0.0,1.2,0.0,0.0,0.0,185000.0,100.0,ya
+18385_Pergub Sultra No.69 Tahun 2009.pdf,60,65,0.2,,44,0.89,63.3,5.0,0.0,1.7,0.0,0.0,0.0,262500.0,100.0,ya
 184832_PERBUP_62_2020_TARIF LAYANAN PEMERIKSAAN LABORATORIUM COVID 19_T.pdf,13,12,0.2,,6,0.58,76.9,0.0,0.0,0.0,0.0,0.0,0.0,35000.0,0.0,tidak_jelas
-185057_pergub_21_2018.pdf,157,155,1.3,,91,0.86,92.4,6.4,0.0,0.0,0.0,0.0,0.0,50000.0,0.0,tidak_jelas
-185142_PERWAKO-20-2021.pdf,2642,2632,10.9,,2464,0.99,99.3,0.0,0.0,0.0,0.0,0.0,0.0,500000.0,0.0,tidak_jelas
-185240_Peraturan_Bupati_Cilacap_Nomor_198_Tahun_2019.pdf,162,160,3.0,,136,1.0,80.9,1.9,0.0,1.9,0.0,0.0,3.7,57500.0,100.0,ya
-185293_60 th 2021.pdf,1647,697,2.4,,672,1.03,12.1,78.0,9.7,0.3,11.4,0.0,0.0,43000.0,0.0,tidak_jelas
-185716_12__PERBUP_NO_12_TAHUN_2021.pdf,773,308,1.8,,295,1.02,19.8,10.1,69.3,0.0,0.5,0.0,0.0,50000.0,0.0,tidak_jelas
-186454_perbup-no-88-tahun-2019 demak.pdf,437,429,2.4,,315,0.99,95.0,0.2,2.7,0.0,0.0,0.0,0.0,216000.0,0.0,tidak_jelas
-186751_2019 - PERBUP KOTABARU NOMOR 56 edit searchable.pdf,506,500,1.2,,445,0.94,100.0,0.0,0.0,0.0,0.0,0.0,0.0,50000.0,0.0,tidak_jelas
-187886_PERGUB.38.2020.pdf,77,78,0.6,,55,0.92,49.4,0.0,0.0,0.0,0.0,0.0,0.0,102500.0,0.0,tidak_jelas
-187983_PERBUP NGADA NO 95 TAHUN 2019.PDF,235,224,1.7,,233,1.04,97.9,2.1,0.0,2.1,0.0,0.0,0.0,80000.0,0.0,tidak_jelas
-188212_PERBUP SUMBAWA NOMOR 15 TAHUN 2021.pdf,2143,2158,5.4,,2000,0.97,98.5,0.1,0.0,0.1,0.0,0.0,0.0,287000.0,0.0,tidak_jelas
+185057_pergub_21_2018.pdf,157,155,1.2,,91,0.86,92.4,6.4,0.0,0.0,0.0,0.0,0.0,50000.0,0.0,tidak_jelas
+185142_PERWAKO-20-2021.pdf,2642,2632,11.2,,2463,0.99,99.2,0.0,0.0,0.0,0.0,0.0,0.0,500000.0,0.0,tidak_jelas
+185240_Peraturan_Bupati_Cilacap_Nomor_198_Tahun_2019.pdf,162,160,2.2,,144,1.0,75.3,1.9,0.0,1.9,0.0,0.0,3.7,57500.0,100.0,ya
+185293_60 th 2021.pdf,1647,697,2.2,,672,1.03,12.1,78.0,9.7,0.3,11.4,0.0,0.0,43000.0,0.0,tidak_jelas
+185716_12__PERBUP_NO_12_TAHUN_2021.pdf,773,308,1.8,,293,1.02,19.4,10.1,69.3,0.0,0.5,0.0,0.0,50000.0,0.0,tidak_jelas
+186454_perbup-no-88-tahun-2019 demak.pdf,437,429,2.3,,313,0.99,93.8,0.2,2.7,0.0,0.0,0.0,0.0,216000.0,0.0,tidak_jelas
+186751_2019 - PERBUP KOTABARU NOMOR 56 edit searchable.pdf,506,500,2.4,,445,0.94,100.0,0.0,0.0,0.0,0.0,0.0,0.0,50000.0,0.0,tidak_jelas
+187886_PERGUB.38.2020.pdf,77,78,0.5,,55,0.92,49.4,0.0,0.0,0.0,0.0,0.0,0.0,102500.0,0.0,tidak_jelas
+187983_PERBUP NGADA NO 95 TAHUN 2019.PDF,235,224,1.6,,233,1.04,97.9,2.1,0.0,2.1,0.0,0.0,0.0,80000.0,0.0,tidak_jelas
+188212_PERBUP SUMBAWA NOMOR 15 TAHUN 2021.pdf,2143,2158,4.2,,1995,0.97,98.2,0.1,0.0,0.1,0.0,0.0,0.0,287000.0,0.0,tidak_jelas
 188402_perbup-no-96-tahun-2020 demak.pdf,14,14,0.3,,7,1.0,85.7,0.0,0.0,0.0,0.0,0.0,0.0,47500.0,0.0,tidak_jelas
-188433_Perwali No.32 Tahun 2020.pdf,216,215,0.6,,215,1.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,81250.0,0.0,tidak_jelas
-188868_Perbup Katingan No.21 Tahun 2020 ttg Tarif Pelayanan Kesehatan Pada BLUD RSUD Mas Amsyar Kab. Katingan.pdf,521,511,2.2,,463,1.0,82.3,0.0,0.0,0.0,0.0,0.0,0.0,80000.0,0.0,tidak_jelas
-189047_2020 PERDA KAB. BOYOLALI 18_1.pdf,666,654,1.6,,607,0.99,98.6,0.0,0.0,0.0,0.0,0.0,0.0,67250.0,100.0,ya
+188433_Perwali No.32 Tahun 2020.pdf,216,215,0.4,,213,1.0,98.6,0.0,0.0,0.0,0.0,0.0,0.0,81250.0,0.0,tidak_jelas
+188868_Perbup Katingan No.21 Tahun 2020 ttg Tarif Pelayanan Kesehatan Pada BLUD RSUD Mas Amsyar Kab. Katingan.pdf,521,511,2.3,,466,1.0,79.8,0.0,0.0,0.0,0.0,0.0,0.0,80000.0,0.0,tidak_jelas
+189047_2020 PERDA KAB. BOYOLALI 18_1.pdf,666,654,1.6,,607,0.99,98.5,0.0,0.0,0.0,0.0,0.0,0.0,67250.0,100.0,ya
 189143_No__24_PERBUP_NOMOR_24_TH_2021_TENTANG_PERUBAHAN_ATAS_PERBUP_NOMOR_21_TAHUN_2020_TENTANG_TARIF_PELAYANAN_KESEHATAN_BLUD_TH_2021_sign.pdf,52,46,1.6,,50,1.13,98.1,0.0,0.0,0.0,0.0,0.0,0.0,158750.0,0.0,tidak_jelas
 189450_No__38_PERBUP_NOMOR_38_TAHUN_2021_TENTANG_PERUBAHAN_KEDUA_ATAS_PERBUP_NO_21_TAHUN_2020_TENTANG_TARIF_PELAYANAN_PADA_BLUD_(1)_sign.pdf,21,21,0.8,,21,1.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,160000.0,0.0,tidak_jelas
-189475_PERBUP NGADA NO 51 TAHUN 2018.PDF,385,381,2.4,,375,1.01,99.0,1.0,0.0,0.8,0.0,0.0,0.0,95000.0,0.0,tidak_jelas
-189537_Perbup_Nomor_40_Tahun_2021.pdf,197,184,0.7,,197,1.07,99.5,0.5,0.0,0.0,0.0,0.0,0.0,111000.0,0.0,tidak_jelas
-189749_Pergub Kaltim 76-2019.pdf,32,10,6.0,,32,3.2,87.5,6.2,0.0,6.2,0.0,0.0,0.0,50000.0,0.0,tidak_jelas
+189475_PERBUP NGADA NO 51 TAHUN 2018.PDF,385,381,2.3,,375,1.01,99.0,1.0,0.0,0.8,0.0,0.0,0.0,95000.0,0.0,tidak_jelas
+189537_Perbup_Nomor_40_Tahun_2021.pdf,197,184,0.8,,197,1.07,98.0,0.5,0.0,0.0,0.0,0.0,0.0,111000.0,0.0,tidak_jelas
+189749_Pergub Kaltim 76-2019.pdf,32,10,5.4,,32,3.2,87.5,6.2,0.0,6.2,0.0,0.0,0.0,50000.0,0.0,tidak_jelas
 190463_Pergub No. 7 Tahun 2021 ttg Perubahan Pergub 51 th 2019 ttg Tarif RSJ.pdf,854,845,3.4,,759,0.96,73.3,26.2,0.0,26.2,0.0,0.0,0.0,150000.0,100.0,ya
-19048_Perbup Konawe No. 10 Tahun 2012.pdf,415,292,0.9,,257,0.96,57.8,42.2,0.0,0.0,7.5,0.0,0.0,30000.0,0.0,tidak_jelas
+19048_Perbup Konawe No. 10 Tahun 2012.pdf,415,292,1.7,,256,0.96,55.9,42.2,0.0,0.0,7.5,0.0,0.0,30000.0,0.0,tidak_jelas
 190695_18__PERBUP_NO__18_TAHUN_2019_TENTANG_TARIF_PELAYANAN_KESEHATAN_PADA_RSUD_KAYEN_(1).pdf,700,233,2.0,,217,1.03,11.9,11.1,77.1,0.0,0.6,0.0,0.0,50000.0,100.0,ya
 190863_39__PERBUP_NO__39_TAHUN_2019_TENTANG_PERUB_PERBUP_NO__18_TH_2019_TTG_TARIF_KAYEN1.pdf,71,12,0.2,,15,1.25,5.6,94.4,0.0,0.0,1.4,0.0,0.0,20000.0,0.0,tidak_jelas
-190933_20pbkabtegal079.pdf,726,509,2.2,,135,0.66,39.0,9.8,51.2,0.1,0.0,0.0,0.0,82179.0,100.0,tidak
-190942_2020 PERBUP KAB. BOYOLALI 57.pdf,1695,725,2.0,,625,1.02,8.5,87.6,3.2,0.2,17.8,0.0,0.0,25000.0,0.0,tidak_jelas
-190944_49__PERBUP_NO__49_TAHUN_2019_TENTANG_PERUB_PERBUP_NO__93_TAHUN_2018_(Combine).pdf,3230,1512,7.1,,1360,0.99,29.3,1.4,70.3,0.0,0.0,0.0,0.0,500000.0,0.0,tidak_jelas
-191039_PERBUP LOMBOK TIMUR NOMOR 43 TAHUN 2021.pdf,1504,1642,2.4,,1451,0.86,99.5,0.0,0.0,0.0,0.0,0.0,0.0,358750.0,0.0,tidak_jelas
-191251_PB2021-49.pdf,415,416,2.7,,402,1.0,99.0,1.0,0.0,0.2,0.7,0.0,0.0,295000.0,0.0,tidak_jelas
-19168_LAMPIRAN.pdf,472,446,2.5,,290,0.9,25.8,55.9,0.0,4.2,45.3,0.0,0.0,15000.0,0.0,tidak_jelas
-192046_5. perubahan-atas-peraturan-bupati-sukoharjo-nomor-84-tahun-2017-tentang-tarif-pelayanan-kesehatan-rumah-sakit-umum-daerah-kabupaten-sukoharjo-2020-5a.pdf,504,490,2.1,,164,0.98,66.9,0.8,0.0,0.8,0.0,0.0,0.0,70500.0,0.0,tidak_jelas
+190933_20pbkabtegal079.pdf,726,509,2.1,,135,0.66,39.0,9.8,51.2,0.1,0.0,0.0,0.0,82179.0,100.0,tidak
+190942_2020 PERBUP KAB. BOYOLALI 57.pdf,1695,725,2.2,,625,1.02,8.5,87.6,3.2,0.2,17.8,0.0,0.0,25000.0,0.0,tidak_jelas
+190944_49__PERBUP_NO__49_TAHUN_2019_TENTANG_PERUB_PERBUP_NO__93_TAHUN_2018_(Combine).pdf,3230,1512,7.7,,1360,0.99,29.2,1.4,70.3,0.0,0.0,0.0,0.0,500000.0,0.0,tidak_jelas
+191039_PERBUP LOMBOK TIMUR NOMOR 43 TAHUN 2021.pdf,1504,1642,3.0,,1449,0.86,99.3,0.0,0.0,0.0,0.0,0.0,0.0,358750.0,0.0,tidak_jelas
+191251_PB2021-49.pdf,415,416,3.3,,402,1.0,99.0,1.0,0.0,0.2,0.7,0.0,0.0,295000.0,0.0,tidak_jelas
+19168_LAMPIRAN.pdf,472,446,2.3,,290,0.9,25.8,55.9,0.0,4.2,45.3,0.0,0.0,15000.0,0.0,tidak_jelas
+192046_5. perubahan-atas-peraturan-bupati-sukoharjo-nomor-84-tahun-2017-tentang-tarif-pelayanan-kesehatan-rumah-sakit-umum-daerah-kabupaten-sukoharjo-2020-5a.pdf,504,490,2.3,,149,0.98,66.9,0.8,0.0,0.8,0.0,0.0,0.0,70500.0,0.0,tidak_jelas
 192319_Perwal Pekalongan 21A 2020.pdf,16,15,0.4,,16,1.07,93.8,6.2,0.0,0.0,6.2,0.0,100.0,525000.0,100.0,tidak_jelas
-192334_Perwal Pekalongan 37 2020.pdf,756,712,2.8,,628,1.0,84.9,2.2,0.0,1.5,0.7,0.0,28.6,115812.5,28.6,tidak_jelas
-192352_Perwal Pekalongan 58 2020.pdf,931,887,2.8,,763,0.97,87.2,1.2,2.6,0.8,0.4,0.0,0.0,110000.0,0.0,tidak_jelas
-192468_51 Lampiran TARIF PELAYANAN PADA RUMAH SAKIT UMUM DAERAH PANGLIMA SEBAYA KABUPATEN PASER.pdf,602,603,1.5,,590,1.0,90.7,7.1,0.0,0.2,0.0,0.0,100.0,140000.0,100.0,tidak_jelas
-193492_perwal49_2017_1.pdf,303,291,2.0,,182,1.0,95.7,0.0,0.0,0.0,0.0,0.0,21.1,100000.0,100.0,tidak
-193574_47.PERBUP HSU TAHUN-2020-NO.47-TTG-TARIF-PELAYANAN-BLUD-RSUD.pdf,1447,1445,5.6,,1360,0.99,99.0,0.0,0.0,0.0,0.0,0.0,0.0,125000.0,0.0,tidak_jelas
-194000_Perbup Banjarnegara 21_2019.pdf,91,90,0.9,,84,1.01,100.0,0.0,0.0,0.0,0.0,0.0,0.0,227500.0,0.0,tidak_jelas
+192334_Perwal Pekalongan 37 2020.pdf,756,712,3.2,,627,1.0,84.1,2.2,0.0,1.5,0.7,0.0,28.6,115812.5,28.6,tidak_jelas
+192352_Perwal Pekalongan 58 2020.pdf,931,887,2.9,,763,0.97,85.4,1.2,2.6,0.8,0.4,0.0,0.0,110000.0,0.0,tidak_jelas
+192468_51 Lampiran TARIF PELAYANAN PADA RUMAH SAKIT UMUM DAERAH PANGLIMA SEBAYA KABUPATEN PASER.pdf,602,603,1.6,,590,1.0,90.5,7.1,0.0,0.2,0.0,0.0,100.0,140000.0,100.0,tidak_jelas
+193492_perwal49_2017_1.pdf,303,291,2.5,,184,1.0,79.5,0.0,0.0,0.0,0.0,0.0,21.1,100000.0,100.0,tidak
+193574_47.PERBUP HSU TAHUN-2020-NO.47-TTG-TARIF-PELAYANAN-BLUD-RSUD.pdf,1447,1445,4.8,,1360,0.99,99.0,0.0,0.0,0.0,0.0,0.0,0.0,125000.0,0.0,tidak_jelas
+194000_Perbup Banjarnegara 21_2019.pdf,91,90,1.0,,84,1.01,100.0,0.0,0.0,0.0,0.0,0.0,0.0,227500.0,0.0,tidak_jelas
 19422_LAMPIRAN.pdf,444,425,2.4,,270,0.91,27.5,52.3,0.0,4.5,44.6,0.0,0.0,15500.0,0.0,tidak_jelas
-194760_PERWAL382015.pdf,1299,1290,10.5,,563,0.9,81.3,11.9,0.0,1.9,9.9,0.0,0.0,354600.0,100.0,ya
-19501_Perbup No. 4 Tahun 2016.pdf,236,223,1.1,,228,1.05,99.6,0.4,0.0,0.4,0.0,0.0,0.0,35000.0,100.0,tidak
+194760_PERWAL382015.pdf,1299,1290,10.1,,565,0.9,81.1,11.9,0.0,1.9,9.9,0.0,0.0,354600.0,100.0,ya
+19501_Perbup No. 4 Tahun 2016.pdf,236,223,1.1,,228,1.05,98.7,0.4,0.0,0.4,0.0,0.0,0.0,35000.0,100.0,tidak
 195129_PERDA 12 TAHUN 2020.pdf,51,49,1.2,,50,1.04,31.4,0.0,0.0,0.0,0.0,0.0,0.0,87500.0,0.0,tidak_jelas
-196446_PERWAKO-30-2021.pdf,2639,2634,10.8,,2462,0.99,99.4,0.0,0.0,0.0,0.0,0.0,0.0,500000.0,0.0,tidak_jelas
+196446_PERWAKO-30-2021.pdf,2639,2634,10.9,,2461,0.99,99.3,0.0,0.0,0.0,0.0,0.0,0.0,500000.0,0.0,tidak_jelas
 19780_Peraturan-Bupati-Tangerang-Nomor-05-Tahun-2012-tentang-Tarif-Layanan-Rumah-Sakit-Badan-Layanan-Umum-Daerah-pada-Rumah-Sakit-Umum-Kabupaten-Tangerang.p.pdf,134,14,1.1,,58,4.14,26.9,2.2,70.9,2.2,0.0,0.0,0.0,73250.0,100.0,ya
-198121_1644-PERBUP NOMOR 2 TAHUN 2020.pdf,557,556,2.0,,457,1.0,85.5,0.0,0.0,0.0,0.0,0.0,0.0,155000.0,0.0,tidak_jelas
-198171_6596_perwal_nomor_43_tahun_2019.pdf,443,426,2.4,,397,1.02,87.1,5.9,0.0,2.3,2.7,0.0,100.0,45000.0,100.0,tidak_jelas
-19832_Lampiran Tarif Kelas III RSUD Banyudono-fix.pdf,78,76,0.1,,75,1.03,97.4,2.6,0.0,0.0,0.0,0.0,0.0,34500.0,0.0,tidak_jelas
+198121_1644-PERBUP NOMOR 2 TAHUN 2020.pdf,557,556,2.2,,457,1.0,85.5,0.0,0.0,0.0,0.0,0.0,0.0,155000.0,0.0,tidak_jelas
+198171_6596_perwal_nomor_43_tahun_2019.pdf,443,426,2.1,,397,1.02,86.7,5.9,0.0,2.3,2.7,0.0,100.0,45000.0,100.0,tidak_jelas
+19832_Lampiran Tarif Kelas III RSUD Banyudono-fix.pdf,78,76,0.2,,75,1.03,97.4,2.6,0.0,0.0,0.0,0.0,0.0,34500.0,0.0,tidak_jelas
 19832_Penjelasan Perda Tarif.pdf,78,76,0.1,,75,1.03,97.4,2.6,0.0,0.0,0.0,0.0,0.0,34500.0,0.0,tidak_jelas
 198921_2021perwal3375042.pdf,24,20,0.1,,24,1.2,100.0,0.0,0.0,0.0,0.0,0.0,0.0,118055.5,0.0,tidak_jelas
-199045_PERBUP-35-2021-PERUB2-TARIF-BLUD-RSUD.pdf,537,411,5.6,,331,1.09,79.9,6.5,0.0,2.0,0.0,0.0,0.0,80000.0,0.0,tidak_jelas
-199175_Perda-No.-15-Tahun-2011-Tentang-Retribusi-Pelayanan-Kesehatan-Pada-Fasilitas-Pelayanan-Kesehatan-Milik-Pemerintah-Daerah-di-Luar-Rumah-Sakit.pdf,535,521,1.8,,511,1.02,100.0,0.0,0.0,0.0,0.0,0.0,0.0,30000.0,0.0,tidak_jelas
-199743_Pergub 115 Tahun 2021 tentang Tarif Pelayanan Kesehatan pada BLUD RSUD Bangil Kabupaten Pasuruan.pdf,6324,6924,32.4,,1477,0.65,98.4,1.6,0.0,1.6,0.0,0.0,0.0,125000.0,100.0,ya
+199045_PERBUP-35-2021-PERUB2-TARIF-BLUD-RSUD.pdf,537,411,5.6,,327,1.09,79.7,6.5,0.0,2.0,0.0,0.0,0.0,80000.0,0.0,tidak_jelas
+199175_Perda-No.-15-Tahun-2011-Tentang-Retribusi-Pelayanan-Kesehatan-Pada-Fasilitas-Pelayanan-Kesehatan-Milik-Pemerintah-Daerah-di-Luar-Rumah-Sakit.pdf,535,521,1.9,,511,1.02,100.0,0.0,0.0,0.0,0.0,0.0,0.0,30000.0,0.0,tidak_jelas
+199743_Pergub 115 Tahun 2021 tentang Tarif Pelayanan Kesehatan pada BLUD RSUD Bangil Kabupaten Pasuruan.pdf,6324,6924,29.2,,1476,0.65,98.3,1.6,0.0,1.6,0.0,0.0,0.0,125000.0,100.0,ya
 201215_Lampiran I_5.pdf,3,88,0.3,,3,0.03,100.0,0.0,0.0,0.0,0.0,0.0,0.0,250000.0,0.0,tidak_jelas
 201594_PERBUP 2016 - 26.pdf,14,11,0.2,,6,1.18,71.4,0.0,0.0,0.0,0.0,0.0,100.0,650000.0,100.0,tidak_jelas
-203747_5112PERWALI_NO_10-B_TAHUN_2013.pdf,133,119,2.4,,105,1.09,76.7,3.8,0.0,0.0,0.8,0.0,0.0,35000.0,0.0,tidak_jelas
-203819_087_Nomor 6 Tahun 2008_Peraturan Daerah Kota Cimahi tentang .pdf,555,21,1.7,,499,24.67,100.0,0.0,0.0,0.0,0.0,0.0,0.0,35000.0,0.0,tidak_jelas
-203894_Perbup-10-2021.pdf,4098,4047,6.2,,4024,1.01,99.8,0.2,0.0,0.0,0.0,0.0,1.0,880000.0,1.0,tidak_jelas
-204137_6 TAHUN 2010.pdf,762,702,5.0,,290,1.01,92.0,0.0,5.5,0.0,0.0,0.0,0.0,98750.0,0.0,tidak_jelas
-205138_PERBUP-54-2019-TARIF-BLUD-RSUD.pdf,413,314,4.0,,276,1.11,67.1,18.9,2.9,0.2,0.0,0.0,0.0,120000.0,100.0,ya
-205952_BD 19 (TARIF LAYANAN KESEHATAN NON KELAS III).pdf,72,69,1.1,,70,1.03,98.6,1.4,0.0,1.4,0.0,0.0,0.0,52650.0,0.0,tidak_jelas
-206437_perwal20_2022(ketik).pdf,358,329,2.3,,165,0.93,75.1,0.3,0.0,0.3,0.0,0.0,48.6,138500.0,100.0,tidak
-206674_Perbup 22 022.pdf,1202,1209,2.0,,965,0.97,89.7,0.0,0.0,0.0,0.0,0.0,64.9,75000.0,64.9,tidak_jelas
-206751_PB-02-2011.pdf,246,199,1.2,,144,0.87,29.3,56.1,10.6,0.8,6.9,0.0,0.0,25000.0,0.0,tidak_jelas
-207069_PB-70-2020.pdf,30,33,0.4,,20,0.88,83.3,0.0,0.0,0.0,0.0,0.0,0.0,70000.0,0.0,tidak_jelas
-207111_PB.2-2014.pdf,243,296,0.6,,213,0.75,79.8,2.1,9.9,0.8,0.0,0.0,44.4,40000.0,44.4,tidak_jelas
-207233_PB.21-2013.pdf,505,630,1.4,,383,0.62,76.0,7.1,3.6,0.0,0.0,0.0,36.8,52500.0,36.8,tidak_jelas
-207283_PB-30-2013.pdf,125,165,0.7,,124,0.76,99.2,0.8,0.0,0.8,0.0,0.0,0.0,18000.0,0.0,tidak_jelas
-208668_PERBUP-95-2010.pdf,511,449,4.5,,139,0.74,36.8,19.0,0.0,0.4,0.2,0.0,0.0,37500.0,0.0,tidak_jelas
-209622_perwal no 7 tahun 2011.pdf,447,447,0.9,,197,0.88,66.9,0.0,0.0,0.0,0.0,0.0,0.0,50000.0,100.0,tidak
-210250_perwal no 23a tahun 2010.pdf,225,83,0.7,,69,1.01,16.0,7.6,76.4,0.4,0.0,0.0,0.0,60000.0,100.0,tidak
-210643_49 TARIF LAYANAN PADA RSUD.pdf,299,271,3.2,,175,0.99,39.1,7.7,0.0,0.0,0.0,0.0,0.0,65000.0,0.0,tidak_jelas
-210731_Perbup 3 Th 2010 ttg Perubahan Besaran Tarif RSUD.pdf,480,472,2.1,,154,0.54,54.2,0.0,0.0,0.0,0.0,0.0,0.0,75000.0,0.0,tidak_jelas
-210772_jdih_230522033417628b4709acb79.pdf,231,224,2.8,,179,1.02,81.0,0.0,0.0,0.0,0.0,0.0,0.0,47500.0,0.0,tidak_jelas
+203747_5112PERWALI_NO_10-B_TAHUN_2013.pdf,133,119,2.0,,103,1.09,71.4,3.8,0.0,0.0,0.8,0.0,0.0,35000.0,0.0,tidak_jelas
+203819_087_Nomor 6 Tahun 2008_Peraturan Daerah Kota Cimahi tentang .pdf,555,21,1.8,,499,24.67,100.0,0.0,0.0,0.0,0.0,0.0,0.0,35000.0,0.0,tidak_jelas
+203894_Perbup-10-2021.pdf,4098,4047,5.6,,4024,1.01,99.8,0.2,0.0,0.0,0.0,0.0,1.0,880000.0,1.0,tidak_jelas
+204137_6 TAHUN 2010.pdf,762,702,5.4,,290,1.01,92.0,0.0,5.5,0.0,0.0,0.0,0.0,98750.0,0.0,tidak_jelas
+205138_PERBUP-54-2019-TARIF-BLUD-RSUD.pdf,413,314,3.9,,277,1.11,67.1,18.9,2.9,0.2,0.0,0.0,0.0,120000.0,100.0,ya
+205952_BD 19 (TARIF LAYANAN KESEHATAN NON KELAS III).pdf,72,69,1.0,,70,1.03,98.6,1.4,0.0,1.4,0.0,0.0,0.0,52650.0,0.0,tidak_jelas
+206437_perwal20_2022(ketik).pdf,358,329,2.4,,234,0.93,68.2,0.3,0.0,0.3,0.0,0.0,48.6,138500.0,100.0,tidak
+206674_Perbup 22 022.pdf,1202,1209,1.8,,957,0.97,89.2,0.0,0.0,0.0,0.0,0.0,64.9,75000.0,64.9,tidak_jelas
+206751_PB-02-2011.pdf,246,199,1.1,,139,0.87,29.3,56.1,10.6,0.8,6.9,0.0,0.0,25000.0,0.0,tidak_jelas
+207069_PB-70-2020.pdf,30,33,0.4,,20,0.88,80.0,0.0,0.0,0.0,0.0,0.0,0.0,70000.0,0.0,tidak_jelas
+207111_PB.2-2014.pdf,243,296,0.8,,213,0.75,79.8,2.1,9.9,0.8,0.0,0.0,44.4,40000.0,44.4,tidak_jelas
+207233_PB.21-2013.pdf,504,630,1.2,,372,0.61,75.8,7.1,3.6,0.0,0.0,0.0,36.9,52250.0,36.9,tidak_jelas
+207283_PB-30-2013.pdf,125,165,0.8,,124,0.76,99.2,0.8,0.0,0.8,0.0,0.0,0.0,18000.0,0.0,tidak_jelas
+208668_PERBUP-95-2010.pdf,511,449,4.8,,139,0.74,36.0,19.0,0.0,0.4,0.2,0.0,0.0,37500.0,0.0,tidak_jelas
+209622_perwal no 7 tahun 2011.pdf,447,447,1.0,,190,0.88,63.1,0.0,0.0,0.0,0.0,0.0,0.0,50000.0,100.0,tidak
+210250_perwal no 23a tahun 2010.pdf,225,83,0.6,,64,1.01,12.4,7.6,76.4,0.4,0.0,0.0,0.0,60000.0,100.0,tidak
+210643_49 TARIF LAYANAN PADA RSUD.pdf,299,271,3.0,,88,0.99,38.8,7.7,0.0,0.0,0.0,0.0,0.0,65000.0,0.0,tidak_jelas
+210731_Perbup 3 Th 2010 ttg Perubahan Besaran Tarif RSUD.pdf,480,472,2.0,,150,0.54,32.3,0.0,0.0,0.0,0.0,0.0,0.0,75000.0,0.0,tidak_jelas
+210772_jdih_230522033417628b4709acb79.pdf,231,224,2.8,,206,1.02,70.1,0.0,0.0,0.0,0.0,0.0,0.0,47500.0,0.0,tidak_jelas
 210847_PERBUP_NOMOR_9_TAHUN_2022-Tarif_Pelayanan_Kesehata_d.pdf,457,441,1.9,,448,1.02,97.8,0.7,1.3,0.4,0.2,0.0,0.0,300000.0,100.0,ya
-21187_Pergub No.10 Tahun 2011.pdf,1584,879,6.3,,537,0.89,40.6,58.8,0.0,0.0,0.7,0.0,0.0,4200000.0,100.0,ya
-212394_Perbub Nomor 67 Tahun 2011 Tentang Restribusi Pelayanan Kesehatan RSUD Gemolong_105620032012-1.pdf,491,238,2.1,,137,0.96,10.6,54.2,29.3,0.8,16.7,0.0,0.0,36000.0,100.0,ya
-212676_58Perwal No. 29 Tahun 2015.pdf,361,324,2.4,,356,1.11,69.0,6.1,0.0,5.8,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
-21326_Peraturan-Daerah-Kabupaten-Fak-Fak-No.-33-Tahun-2008-tentang-Tarif-Retribusi-Pelayanan-Kesehatan-RSUD-Kab.-Fak-Fak.pdf,197,225,2.8,,92,0.79,92.4,0.5,0.0,0.5,0.0,0.0,0.0,40000.0,100.0,ya
-213363_Salinan Perwal No 22 Tahun 2021 Ttg Perubahan Atas Perwal Nomor 7 Tahun 2020.pdf,716,674,2.2,,552,1.0,80.7,0.0,6.3,0.0,0.0,0.0,0.0,172050.0,0.0,tidak_jelas
-213658_Peraturan Bupati Karanganyar Tahun 2016 Nomor 56.pdf,557,437,2.4,,274,0.93,31.6,31.6,23.5,2.7,16.0,0.0,0.0,130501.0,100.0,ya
-214144_pb172021.pdf,696,682,3.5,,695,1.02,100.0,0.0,0.0,0.0,0.0,0.0,0.0,45000.0,0.0,tidak_jelas
-21496_Perbup 3 - 2016 Lampiran.pdf,486,485,0.9,,440,0.99,99.6,0.0,0.0,0.0,0.0,0.0,0.0,175000.0,0.0,tidak_jelas
-215608_PB2022-39.pdf,32,31,0.5,,32,1.03,93.8,6.2,0.0,6.2,0.0,0.0,0.0,520000.0,0.0,tidak_jelas
-215642_perbupkkunomor17tahun2021tentangtariflayananbadanlayananumumdaerahrumahsakitumumdaerahsultanmuhammadjamaludinikabupatenkayongutara.pdf,2281,1241,5.4,,1097,0.98,38.9,3.0,60.5,0.0,0.0,0.0,0.0,340000.0,0.0,tidak_jelas
-216628_PERATURAN BUPATI PIDIE NOMOR 21 TAHUN 2021.pdf,1937,1930,4.5,,1646,0.93,99.1,0.0,0.0,0.0,0.0,0.0,0.0,200000.0,0.0,tidak_jelas
-216671_perbup-5-2022.pdf,484,448,4.0,,361,1.03,98.3,1.7,0.0,1.0,0.6,0.0,0.0,382000.0,100.0,ya
-216793_perbup-21-2022.pdf,587,548,4.4,,438,1.02,88.1,7.2,0.0,2.7,4.4,0.0,0.0,440000.0,100.0,ya
+21187_Pergub No.10 Tahun 2011.pdf,1584,879,6.3,,536,0.89,40.5,58.8,0.0,0.0,0.7,0.0,0.0,4200000.0,100.0,ya
+212394_Perbub Nomor 67 Tahun 2011 Tentang Restribusi Pelayanan Kesehatan RSUD Gemolong_105620032012-1.pdf,486,238,2.1,,133,0.94,10.3,54.7,29.6,0.8,16.9,0.0,0.0,34800.0,100.0,ya
+212676_58Perwal No. 29 Tahun 2015.pdf,360,324,2.3,,355,1.11,68.9,6.1,0.0,5.8,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
+21326_Peraturan-Daerah-Kabupaten-Fak-Fak-No.-33-Tahun-2008-tentang-Tarif-Retribusi-Pelayanan-Kesehatan-RSUD-Kab.-Fak-Fak.pdf,197,225,3.0,,88,0.79,88.8,0.5,0.0,0.5,0.0,0.0,0.0,40000.0,100.0,ya
+213363_Salinan Perwal No 22 Tahun 2021 Ttg Perubahan Atas Perwal Nomor 7 Tahun 2020.pdf,716,674,2.3,,570,1.0,73.3,0.0,6.3,0.0,0.0,0.0,0.0,172050.0,0.0,tidak_jelas
+213658_Peraturan Bupati Karanganyar Tahun 2016 Nomor 56.pdf,557,437,2.2,,258,0.93,31.6,31.6,23.5,2.7,16.0,0.0,0.0,130501.0,100.0,ya
+214144_pb172021.pdf,696,682,3.2,,695,1.02,100.0,0.0,0.0,0.0,0.0,0.0,0.0,45000.0,0.0,tidak_jelas
+21496_Perbup 3 - 2016 Lampiran.pdf,486,485,0.7,,440,0.99,99.6,0.0,0.0,0.0,0.0,0.0,0.0,175000.0,0.0,tidak_jelas
+215608_PB2022-39.pdf,32,31,1.0,,32,1.03,93.8,6.2,0.0,6.2,0.0,0.0,0.0,520000.0,0.0,tidak_jelas
+215642_perbupkkunomor17tahun2021tentangtariflayananbadanlayananumumdaerahrumahsakitumumdaerahsultanmuhammadjamaludinikabupatenkayongutara.pdf,2281,1241,5.4,,1097,0.98,38.8,3.0,60.5,0.0,0.0,0.0,0.0,340000.0,0.0,tidak_jelas
+216628_PERATURAN BUPATI PIDIE NOMOR 21 TAHUN 2021.pdf,1937,1930,4.7,,1646,0.93,99.1,0.0,0.0,0.0,0.0,0.0,0.0,200000.0,0.0,tidak_jelas
+216671_perbup-5-2022.pdf,484,448,3.9,,371,1.03,92.8,1.7,0.0,1.0,0.6,0.0,0.0,382000.0,100.0,ya
+216793_perbup-21-2022.pdf,587,548,6.6,,442,1.02,82.6,7.2,0.0,2.7,4.4,0.0,0.0,440000.0,100.0,ya
 216798_Perwali.52-2021 Rubah Kedua 10-2021.pdf,28,26,0.6,,26,1.04,100.0,0.0,0.0,0.0,0.0,0.0,0.0,250000.0,0.0,tidak_jelas
-217929_PERDA MALTENG NO. 14 TAHUN 2022.pdf,276,271,1.4,,241,1.01,95.7,1.8,0.0,0.4,1.4,0.0,0.0,50000.0,0.0,tidak_jelas
-219258_1228. PERBUP NOMOR 40 TAHUN 2021.pdf,376,374,1.8,,369,1.01,95.7,2.7,0.0,2.7,0.0,0.0,0.0,95000.0,100.0,ya
-219795_Peraturan Gubernur Papua Barat Nomor 2 Tahun 2022 Tentang TARIF LAYANAN BADAN LAYANAN UMUM DAERAH RUMAH SAKIT UMUM DAERAH PROVINSI PAPUA BARAT.pdf,981,407,5.2,,481,1.18,96.9,2.2,0.0,2.2,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
-219835_1614204886-perda-3-tahun-2005-retribusi-pelayanan-kesehatan-rsu.pdf,220,47,2.0,,167,3.7,63.6,32.3,1.4,4.5,3.2,0.0,0.0,13500.0,0.0,tidak_jelas
-220317_PERBUP NO. 53 TAHUN 2020.pdf,119,109,1.1,,106,1.07,96.6,3.4,0.0,2.5,0.0,0.0,0.0,25000.0,0.0,tidak_jelas
-220678_49.pdf,702,703,1.0,,676,1.0,97.0,1.1,0.0,1.1,0.0,0.0,0.0,68000.0,100.0,ya
-220738_perbupnomor7tahun2022tentangtarifpelayanankesehatanpadabadanlayananumumdaerahrumahsakitumumdaerah.pdf,350,355,6.9,,321,0.98,90.6,2.6,0.0,2.6,0.0,0.0,0.0,145000.0,100.0,ya
-220763_Peraturan Bupati (PERBUP) Kabupaten Lampung Barat No 60 Tahun 2021.pdf,672,672,1.2,,650,1.0,98.1,0.4,0.0,0.4,0.0,0.0,0.0,75000.0,0.0,tidak_jelas
-221065_Perda-Nomor-05-Tahun-2014_tentang_Pelayanan_Kesehatan_Dan_Retribusi_Pelayanan_Kesehatan_Pada_Rumah_Sakit_Khusus_Bersalin_Daerah_Panti_Nugroho.pdf,350,342,3.0,,316,1.0,88.3,2.9,0.0,0.9,0.6,0.0,32.6,18250.0,32.6,tidak_jelas
-221144_PB2022-65.pdf,585,591,3.1,,367,0.94,69.4,2.1,0.0,1.5,0.0,0.0,0.0,115000.0,100.0,ya
-221243_745467645-perbup-4-2012-tarif-pelayanan-kesehatan-pada-badan-layanan-umum-daerah-rumah-sakit-umum-daerah-muntilan-kabupaten-magelang.pdf,77,79,4.9,,35,0.92,58.4,0.0,0.0,0.0,0.0,0.0,0.0,15000.0,0.0,tidak_jelas
-221310_PERBUP 24 TAHUN 2021 edit searchable.pdf,1058,1055,2.6,,865,0.97,94.0,0.0,0.0,0.0,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
-223533_PERBUP 92 -2021 ttg Perubahan Ketiga atas Perbup No. 26 Tahun 2018 ttg Tarif Layanan BLUD RSUD Kudungga.pdf,1162,1133,1.1,,1090,1.02,99.7,0.0,0.0,0.0,0.0,0.0,100.0,147500.0,100.0,tidak_jelas
+217929_PERDA MALTENG NO. 14 TAHUN 2022.pdf,276,271,1.6,,241,1.01,95.7,1.8,0.0,0.4,1.4,0.0,0.0,50000.0,0.0,tidak_jelas
+219258_1228. PERBUP NOMOR 40 TAHUN 2021.pdf,376,374,2.2,,369,1.01,95.7,2.7,0.0,2.7,0.0,0.0,0.0,95000.0,100.0,ya
+219795_Peraturan Gubernur Papua Barat Nomor 2 Tahun 2022 Tentang TARIF LAYANAN BADAN LAYANAN UMUM DAERAH RUMAH SAKIT UMUM DAERAH PROVINSI PAPUA BARAT.pdf,981,407,5.2,,479,1.18,96.5,2.2,0.0,2.2,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
+219835_1614204886-perda-3-tahun-2005-retribusi-pelayanan-kesehatan-rsu.pdf,220,47,1.8,,167,3.7,63.6,32.3,1.4,4.5,3.2,0.0,0.0,13500.0,0.0,tidak_jelas
+220317_PERBUP NO. 53 TAHUN 2020.pdf,119,109,1.1,,107,1.07,95.0,3.4,0.0,2.5,0.0,0.0,0.0,25000.0,0.0,tidak_jelas
+220678_49.pdf,708,703,0.9,,677,1.0,96.2,1.1,0.0,1.1,0.0,0.0,0.0,69000.0,100.0,ya
+220738_perbupnomor7tahun2022tentangtarifpelayanankesehatanpadabadanlayananumumdaerahrumahsakitumumdaerah.pdf,350,355,6.6,,318,0.98,88.3,2.6,0.0,2.6,0.0,0.0,0.0,145000.0,100.0,ya
+220763_Peraturan Bupati (PERBUP) Kabupaten Lampung Barat No 60 Tahun 2021.pdf,677,672,1.0,,649,1.0,96.8,0.4,0.0,0.4,0.0,0.0,0.0,75000.0,0.0,tidak_jelas
+221065_Perda-Nomor-05-Tahun-2014_tentang_Pelayanan_Kesehatan_Dan_Retribusi_Pelayanan_Kesehatan_Pada_Rumah_Sakit_Khusus_Bersalin_Daerah_Panti_Nugroho.pdf,353,342,3.2,,311,1.01,85.8,2.8,0.0,0.8,0.6,0.0,33.1,19000.0,33.1,tidak_jelas
+221144_PB2022-65.pdf,585,591,2.7,,381,0.94,60.3,2.1,0.0,1.5,0.0,0.0,0.0,115000.0,100.0,ya
+221243_745467645-perbup-4-2012-tarif-pelayanan-kesehatan-pada-badan-layanan-umum-daerah-rumah-sakit-umum-daerah-muntilan-kabupaten-magelang.pdf,77,79,2.1,,35,0.92,58.4,0.0,0.0,0.0,0.0,0.0,0.0,15000.0,0.0,tidak_jelas
+221310_PERBUP 24 TAHUN 2021 edit searchable.pdf,1058,1055,2.3,,869,0.97,92.6,0.0,0.0,0.0,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
+223533_PERBUP 92 -2021 ttg Perubahan Ketiga atas Perbup No. 26 Tahun 2018 ttg Tarif Layanan BLUD RSUD Kudungga.pdf,1162,1133,1.1,,1087,1.02,99.3,0.0,0.0,0.0,0.0,0.0,100.0,147500.0,100.0,tidak_jelas
 224324_Salinan_2021_PERDA_KAB__BOYOLALI_10.pdf,804,736,2.4,,754,1.09,68.3,30.8,0.0,27.0,3.9,0.0,0.0,100000.0,100.0,ya
-224791_Perbup Nomor 54 Tahun 2021 tentang Penetapan Tarif Pelayanan Kesehatan pada RSUD (BD 1029) Penetapan Tanggal 16 Februari 2021.pdf,368,365,2.0,,248,0.98,78.8,0.0,0.0,0.0,0.0,0.0,0.0,82500.0,100.0,ya
-225087_peraturan_daerah_perda_no__13_tahun_2008_tentang_retribusi_pelayanan_kesehatan_pada_rumah_sakit_umum_daerah_kabupaten_wonogiri_1568086963718.pdf,861,847,5.7,,475,1.01,96.4,0.0,0.0,0.0,0.0,0.0,0.0,52800.0,100.0,ya
-225642_PERBUP 39 2021.pdf,1606,760,4.9,,725,1.01,94.6,0.1,0.0,0.1,0.0,0.0,0.0,102000.0,0.0,tidak_jelas
-226117_perda_4_th_2003.pdf,741,727,6.7,,504,0.95,98.0,0.4,0.0,0.3,0.0,0.0,0.0,10500.0,0.0,tidak_jelas
-226123_perda_5_th_2003.pdf,2671,2577,12.1,,1272,0.94,66.5,5.8,0.1,4.2,1.4,0.0,0.0,30000.0,0.0,tidak_jelas
-226208_PERBUP 43 2022.pdf,15,14,1.9,,15,1.07,100.0,0.0,0.0,0.0,0.0,0.0,0.0,35000.0,100.0,ya
-227260_PERBUP 25 - 2020 ttg Perubahan Kedua Atas Peraturan Bupati Kutai Timur Nomor 26.pdf,996,1004,2.9,,986,0.76,100.0,0.0,0.0,0.0,0.0,0.0,0.3,134000.0,0.3,tidak_jelas
-228085_Perbup NO 93 ttg TARIF PELAYANAN RSUD H ABDUL AZIZ MARABAHAN 2022.pdf,1088,1004,6.7,,853,1.01,86.3,2.5,3.7,2.0,0.5,0.0,0.0,70000.0,0.0,tidak_jelas
-228131_pergub no.43 th.2017_compressed.pdf,307,258,2.4,,247,0.98,76.2,23.5,0.0,0.0,0.0,0.0,100.0,50000.0,100.0,tidak_jelas
-228310_PERBUP NO 66 TAHUN 2021.pdf,750,728,1.2,,716,1.01,96.8,3.2,0.0,0.5,0.4,0.0,0.0,120000.0,0.0,tidak_jelas
-229921_perda 11 th 2013.pdf,201,209,1.9,,183,0.91,89.6,0.5,0.0,0.5,0.0,0.0,8.5,24500.0,8.5,tidak_jelas
-229953_perda 12 th 2013.pdf,482,480,2.5,,425,0.99,93.4,0.0,0.0,0.0,0.0,0.0,1.9,151000.0,1.9,tidak_jelas
-230198_perbup_6_2022.pdf,1262,1261,7.1,,1140,0.99,99.0,0.2,0.0,0.2,0.0,0.0,0.0,86400.0,100.0,ya
-230421_Perbub No 18 Tahun 2021.pdf,651,652,3.2,,570,0.93,95.9,0.2,0.0,0.2,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
-231027_Salinan Perbup Nomor 73 Tahun 2021 ttg Tarif Pelayanan Kesehatan dan Pelayanan Lainnya pada RSK Mata Pwt.pdf,115,114,2.2,,102,1.0,84.3,0.0,0.0,0.0,0.0,0.0,73.0,82500.0,73.0,tidak_jelas
-231159_2020perwal3375089.pdf,27,23,0.2,,26,1.17,100.0,0.0,0.0,0.0,0.0,0.0,0.0,188000.0,0.0,tidak_jelas
-231265_932019-0050.pdf,887,781,3.6,,759,1.05,82.8,9.6,0.0,3.9,1.1,0.0,0.0,115000.0,0.0,tidak_jelas
-231492_LAMPIRAN PERDA KAB. GARUT NO 2 TAHUN 2007.pdf,259,254,2.0,,69,0.72,43.2,0.8,0.0,0.8,0.0,0.0,0.0,75000.0,0.0,tidak_jelas
-231738_2021perwal3375025.pdf,27,21,0.5,,25,1.29,100.0,0.0,0.0,0.0,0.0,0.0,0.0,140000.0,0.0,tidak_jelas
-231763_LAMPIRAN PERBUP KAB. GARUT NO 764 TAHUN 2011.pdf,287,286,1.2,,101,0.69,47.7,0.7,0.0,0.7,0.0,0.0,0.0,75000.0,0.0,tidak_jelas
-231814_Perbup No 5 Tahun 2022.pdf,5389,1334,19.1,,2139,1.8,17.4,0.6,82.2,0.0,0.4,0.0,0.0,244200.0,100.0,ya
-232109_Perbup 58-2022.pdf,1253,633,4.2,,303,0.94,3.8,64.6,0.0,0.5,3.4,0.0,0.0,37500.0,0.0,tidak_jelas
-232200_PERWA NO 8 TAHUN 2022 TENTANG BADAN LAYANAN UMUM DAERAH RUMAH SAKIT DAERAH MADANI KOTA PEKANBARU (SALINAN).pdf,376,369,1.9,,361,1.02,91.5,1.1,0.0,1.1,0.0,0.0,0.0,140000.0,0.0,tidak_jelas
-232505_Perbup Pekalongan No 43 Tahun 2022.pdf,354,354,2.6,,299,0.99,90.4,1.7,0.0,1.7,0.0,0.0,0.0,90000.0,0.0,tidak_jelas
-232930_Pergub Jateng No 10 Tahun 2014.pdf,25,23,0.2,,21,0.96,100.0,0.0,0.0,0.0,0.0,0.0,0.0,125000.0,0.0,tidak_jelas
-232987_PERDA NO 18 TH 2009 RETRIBUSI PELAYANAN KESEHATAN DI RUMAH SAKIT UMUM DAERAH-KAYEN.pdf,556,187,3.1,,149,1.01,12.4,83.3,0.0,2.9,1.1,0.0,0.0,38000.0,100.0,ya
-233871_41.tarifpelayananpadarsud.pdf,368,232,2.2,,368,1.58,98.1,1.9,0.0,0.0,0.0,0.0,0.0,110000.0,100.0,ya
-234834_Perbup Pkl 45_2022.pdf,872,843,6.2,,836,1.01,93.7,5.8,0.3,2.8,0.5,0.0,0.0,187500.0,0.0,tidak_jelas
-235584_Perbup Empat Lawang Nomor 68 Tahun 2022.pdf,209,206,1.3,,184,1.01,91.4,1.4,0.0,0.5,1.0,0.0,0.0,70000.0,0.0,tidak_jelas
-23709_Peraturan Daerah Nomor 5 Tahun 2009 gabungan.pdf,433,430,2.4,,328,0.88,73.7,0.0,0.0,0.0,0.0,0.0,0.0,60000.0,100.0,tidak
-238684_KAB_BANYUMAS_4_2009 s.pdf,1307,49,5.7,,855,23.14,79.2,19.7,0.2,5.7,0.4,0.0,0.0,28000.0,0.0,tidak_jelas
-238702_File0003.PDF,16,14,1.6,,16,1.14,93.8,0.0,0.0,0.0,0.0,0.0,0.0,500000.0,0.0,tidak_jelas
-238714_PERBUP NO 58 TH 2011.PDF,1801,539,2.1,,472,0.99,6.6,1.1,93.3,0.0,0.0,0.0,0.0,360000.0,100.0,ya
-238746_PERBUP NO 4 TH 2012.PDF,540,120,1.5,,110,1.02,1.5,0.9,96.5,0.0,0.0,0.0,94.3,30000.0,100.0,ya
-240307_PERDA Kab. Bandung No.18 Tahun 2001.pdf,195,190,1.1,,190,1.01,100.0,0.0,0.0,0.0,0.0,0.0,0.0,15000.0,0.0,tidak_jelas
-242230_Perbup Empat Lawang No 72 Tahun 2022.pdf,1463,1421,6.7,,1146,0.96,86.0,1.9,0.0,1.6,0.0,0.0,0.1,125000.0,0.1,tidak_jelas
-242811_LD 2 SERI E (TARIF PELAYANAN KESEHATAN KELAS III) PDF.pdf,301,275,2.9,,200,1.02,80.4,12.3,0.0,0.3,4.0,0.0,0.0,15800.0,0.0,tidak_jelas
-243423_Perbup Byl 62_2022.pdf,385,375,2.1,,332,1.02,89.1,0.8,0.0,0.8,0.0,0.0,0.0,88000.0,0.0,tidak_jelas
-245099_Perda_Pbg_10_2022.pdf,564,559,3.8,,366,0.91,90.4,1.2,0.0,1.2,0.0,0.0,22.3,32500.0,22.3,tidak_jelas
+224791_Perbup Nomor 54 Tahun 2021 tentang Penetapan Tarif Pelayanan Kesehatan pada RSUD (BD 1029) Penetapan Tanggal 16 Februari 2021.pdf,368,365,2.0,,254,0.98,67.4,0.0,0.0,0.0,0.0,0.0,0.0,82500.0,100.0,ya
+225087_peraturan_daerah_perda_no__13_tahun_2008_tentang_retribusi_pelayanan_kesehatan_pada_rumah_sakit_umum_daerah_kabupaten_wonogiri_1568086963718.pdf,861,847,5.1,,467,1.01,95.0,0.0,0.0,0.0,0.0,0.0,0.0,52800.0,100.0,ya
+225642_PERBUP 39 2021.pdf,1606,760,5.5,,724,1.01,94.6,0.1,0.0,0.1,0.0,0.0,0.0,102000.0,0.0,tidak_jelas
+226117_perda_4_th_2003.pdf,741,727,6.2,,498,0.95,98.0,0.4,0.0,0.3,0.0,0.0,0.0,10500.0,0.0,tidak_jelas
+226123_perda_5_th_2003.pdf,2671,2577,11.8,,1277,0.94,56.8,5.8,0.1,4.2,1.4,0.0,0.0,30000.0,0.0,tidak_jelas
+226208_PERBUP 43 2022.pdf,15,14,1.8,,15,1.07,100.0,0.0,0.0,0.0,0.0,0.0,0.0,35000.0,100.0,ya
+227260_PERBUP 25 - 2020 ttg Perubahan Kedua Atas Peraturan Bupati Kutai Timur Nomor 26.pdf,996,1004,3.0,,986,0.76,100.0,0.0,0.0,0.0,0.0,0.0,0.3,134000.0,0.3,tidak_jelas
+228085_Perbup NO 93 ttg TARIF PELAYANAN RSUD H ABDUL AZIZ MARABAHAN 2022.pdf,1088,1004,6.4,,851,1.01,85.8,2.5,3.7,2.0,0.5,0.0,0.0,70000.0,0.0,tidak_jelas
+228131_pergub no.43 th.2017_compressed.pdf,307,258,1.8,,247,0.98,75.9,23.5,0.0,0.0,0.0,0.0,100.0,50000.0,100.0,tidak_jelas
+228310_PERBUP NO 66 TAHUN 2021.pdf,750,728,1.1,,716,1.01,96.8,3.2,0.0,0.5,0.4,0.0,0.0,120000.0,0.0,tidak_jelas
+229921_perda 11 th 2013.pdf,201,209,2.1,,178,0.91,85.6,0.5,0.0,0.5,0.0,0.0,8.5,24500.0,8.5,tidak_jelas
+229953_perda 12 th 2013.pdf,482,480,2.3,,463,0.99,79.3,0.0,0.0,0.0,0.0,0.0,1.9,151000.0,1.9,tidak_jelas
+230198_perbup_6_2022.pdf,1262,1261,7.7,,1138,0.99,98.6,0.2,0.0,0.2,0.0,0.0,0.0,86400.0,100.0,ya
+230421_Perbub No 18 Tahun 2021.pdf,651,652,3.6,,564,0.93,94.9,0.2,0.0,0.2,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
+231027_Salinan Perbup Nomor 73 Tahun 2021 ttg Tarif Pelayanan Kesehatan dan Pelayanan Lainnya pada RSK Mata Pwt.pdf,115,114,1.8,,108,1.0,67.8,0.0,0.0,0.0,0.0,0.0,73.0,82500.0,73.0,tidak_jelas
+231159_2020perwal3375089.pdf,27,23,0.1,,26,1.17,100.0,0.0,0.0,0.0,0.0,0.0,0.0,188000.0,0.0,tidak_jelas
+231265_932019-0050.pdf,887,781,3.2,,755,1.05,82.0,9.6,0.0,3.9,1.1,0.0,0.0,115000.0,0.0,tidak_jelas
+231492_LAMPIRAN PERDA KAB. GARUT NO 2 TAHUN 2007.pdf,259,254,1.7,,68,0.72,25.9,0.8,0.0,0.8,0.0,0.0,0.0,75000.0,0.0,tidak_jelas
+231738_2021perwal3375025.pdf,27,21,0.3,,25,1.29,100.0,0.0,0.0,0.0,0.0,0.0,0.0,140000.0,0.0,tidak_jelas
+231763_LAMPIRAN PERBUP KAB. GARUT NO 764 TAHUN 2011.pdf,287,286,1.5,,100,0.69,32.4,0.7,0.0,0.7,0.0,0.0,0.0,75000.0,0.0,tidak_jelas
+231814_Perbup No 5 Tahun 2022.pdf,5389,1334,17.2,,2139,1.8,17.4,0.6,82.2,0.0,0.4,0.0,0.0,244200.0,100.0,ya
+232109_Perbup 58-2022.pdf,1253,633,4.5,,305,0.94,3.8,64.6,0.0,0.5,3.4,0.0,0.0,37500.0,0.0,tidak_jelas
+232200_PERWA NO 8 TAHUN 2022 TENTANG BADAN LAYANAN UMUM DAERAH RUMAH SAKIT DAERAH MADANI KOTA PEKANBARU (SALINAN).pdf,376,369,1.7,,354,1.02,91.5,1.1,0.0,1.1,0.0,0.0,0.0,140000.0,0.0,tidak_jelas
+232505_Perbup Pekalongan No 43 Tahun 2022.pdf,354,354,2.6,,319,0.99,81.9,1.7,0.0,1.7,0.0,0.0,0.0,90000.0,0.0,tidak_jelas
+232930_Pergub Jateng No 10 Tahun 2014.pdf,25,23,0.4,,21,0.96,100.0,0.0,0.0,0.0,0.0,0.0,0.0,125000.0,0.0,tidak_jelas
+232987_PERDA NO 18 TH 2009 RETRIBUSI PELAYANAN KESEHATAN DI RUMAH SAKIT UMUM DAERAH-KAYEN.pdf,556,187,3.0,,144,1.01,12.2,83.3,0.0,2.9,1.1,0.0,0.0,38000.0,100.0,ya
+233871_41.tarifpelayananpadarsud.pdf,368,232,2.5,,368,1.58,98.1,1.9,0.0,0.0,0.0,0.0,0.0,110000.0,100.0,ya
+234834_Perbup Pkl 45_2022.pdf,872,843,5.9,,836,1.01,93.7,5.8,0.3,2.8,0.5,0.0,0.0,187500.0,0.0,tidak_jelas
+235584_Perbup Empat Lawang Nomor 68 Tahun 2022.pdf,209,206,1.2,,185,1.01,90.4,1.4,0.0,0.5,1.0,0.0,0.0,70000.0,0.0,tidak_jelas
+23709_Peraturan Daerah Nomor 5 Tahun 2009 gabungan.pdf,433,430,2.7,,323,0.88,72.3,0.0,0.0,0.0,0.0,0.0,0.0,60000.0,100.0,tidak
+238684_KAB_BANYUMAS_4_2009 s.pdf,1307,49,5.5,,852,23.14,78.4,19.7,0.2,5.7,0.4,0.0,0.0,28000.0,0.0,tidak_jelas
+238702_File0003.PDF,16,14,1.9,,16,1.14,87.5,0.0,0.0,0.0,0.0,0.0,0.0,500000.0,0.0,tidak_jelas
+238714_PERBUP NO 58 TH 2011.PDF,1801,539,2.4,,472,0.99,6.5,1.1,93.3,0.0,0.0,0.0,0.0,360000.0,100.0,ya
+238746_PERBUP NO 4 TH 2012.PDF,540,120,1.2,,110,1.02,1.5,0.9,96.5,0.0,0.0,0.0,94.3,30000.0,100.0,ya
+240307_PERDA Kab. Bandung No.18 Tahun 2001.pdf,195,190,1.4,,190,1.01,100.0,0.0,0.0,0.0,0.0,0.0,0.0,15000.0,0.0,tidak_jelas
+242230_Perbup Empat Lawang No 72 Tahun 2022.pdf,1463,1421,7.2,,1114,0.96,86.0,1.9,0.0,1.6,0.0,0.0,0.1,125000.0,0.1,tidak_jelas
+242811_LD 2 SERI E (TARIF PELAYANAN KESEHATAN KELAS III) PDF.pdf,301,275,2.6,,200,1.02,80.4,12.3,0.0,0.3,4.0,0.0,0.0,15800.0,0.0,tidak_jelas
+243423_Perbup Byl 62_2022.pdf,385,375,2.0,,335,1.02,84.9,0.8,0.0,0.8,0.0,0.0,0.0,88000.0,0.0,tidak_jelas
+245099_Perda_Pbg_10_2022.pdf,565,559,3.8,,367,0.91,86.9,1.2,0.0,1.2,0.0,0.0,22.3,32500.0,22.3,tidak_jelas
 24517_PerBup2010_13.pdf,12,12,0.1,,8,1.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,175000.0,0.0,tidak_jelas
-246033_Perbup Majene Nomor 32 Tahun 2022.pdf,918,916,5.3,,719,0.99,99.6,0.4,0.0,0.4,0.0,0.0,0.0,252500.0,100.0,ya
-246528_2023pmkeuangan024.pdf,108,18,1.5,,78,3.78,96.3,0.9,0.0,0.0,0.0,0.0,0.0,557500.0,0.0,tidak_jelas
-246532_2023pmkeuangan028.pdf,36,17,1.0,,30,1.88,61.1,2.8,0.0,0.0,0.0,0.0,0.0,500000.0,0.0,tidak_jelas
-246535_2023pmkeuangan031.pdf,68,33,1.3,,66,1.73,0.0,100.0,0.0,100.0,0.0,0.0,0.0,822000.0,0.0,tidak_jelas
-247241_Perbup Belitung No. 4 Tahun 2023.pdf,1334,1323,6.6,,1254,1.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,390000.0,0.0,tidak_jelas
-248411_Perbup_30_2022 Salinan.pdf,777,776,1.7,,763,1.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,125000.0,100.0,ya
-"248500_PERUBAHAN ATAS PERATURAN GUBERNUR LAMPUNG NOMOR 6 TAHUN 2019 TENTANG TARIF PELAYANAN KESEHATAN RAWAT JALAN, INSTALASI GAWAT DARURAT, KELAS II, KELAS K.pdf",179,170,1.0,,101,0.94,94.4,2.8,0.0,2.8,0.0,0.0,0.0,9658000.0,0.0,tidak_jelas
-249025_PERBUP NOMOR 48 TAHUN 2022 TENTANG TARIF LAYANAN PADA BADAN LAYANAN UMUM DAERAH RUMAH SAKIT UMUM DAERAH CAMPURDARAT.pdf,622,666,17.1,,618,0.93,100.0,0.0,0.0,0.0,0.0,0.0,0.0,114000.0,15.3,tidak_jelas
-249214_PERBUP 236 TARIF JASA LAYANAN BLUD RSUD.pdf,803,788,3.6,,722,0.99,98.3,0.0,0.0,0.0,0.0,0.0,0.0,1900000.0,0.0,tidak_jelas
-249545_PERWAL NO 22 TAHUN 2021.pdf,736,722,1.6,,668,0.99,97.7,0.0,0.0,0.0,0.0,0.0,0.0,120000.0,100.0,ya
-252148_40-TH-2022-PERBUP-Penyesuaian-Tarif-Kelas-III-RSUD.pdf,1251,1318,4.3,,1047,0.84,99.3,0.5,0.0,0.5,0.0,0.0,0.0,1276200.0,0.0,tidak_jelas
-252150_41-TH-2022-Penyesuaian-Tarif-RSUD.pdf,3551,1909,9.8,,1682,1.0,25.1,69.3,5.5,0.1,0.0,0.0,0.0,2587725.0,0.0,tidak_jelas
-25286_Perda-04-Tahun-2009.pdf,281,267,3.6,,213,1.03,44.8,13.2,0.0,2.8,10.3,0.0,0.0,64000.0,0.0,tidak_jelas
-254257_2.1. Perbup No 134 Th 2022 - Tarif Pelayanan Pada Rumah Sakit Umum Daerah.pdf,352,327,3.0,,300,1.01,85.8,1.1,3.4,1.1,0.0,0.0,2.6,50000.0,2.6,tidak_jelas
+246033_Perbup Majene Nomor 32 Tahun 2022.pdf,918,916,4.9,,719,0.99,99.6,0.4,0.0,0.4,0.0,0.0,0.0,252500.0,100.0,ya
+246528_2023pmkeuangan024.pdf,108,18,0.7,,79,3.78,93.5,0.9,0.0,0.0,0.0,0.0,0.0,557500.0,0.0,tidak_jelas
+246532_2023pmkeuangan028.pdf,36,17,1.3,,30,1.88,58.3,2.8,0.0,0.0,0.0,0.0,0.0,500000.0,0.0,tidak_jelas
+246535_2023pmkeuangan031.pdf,68,33,1.0,,66,1.73,0.0,100.0,0.0,100.0,0.0,0.0,0.0,822000.0,0.0,tidak_jelas
+247241_Perbup Belitung No. 4 Tahun 2023.pdf,1334,1323,6.7,,1252,1.0,99.4,0.0,0.0,0.0,0.0,0.0,0.0,390000.0,0.0,tidak_jelas
+248411_Perbup_30_2022 Salinan.pdf,777,776,2.2,,763,1.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,125000.0,100.0,ya
+"248500_PERUBAHAN ATAS PERATURAN GUBERNUR LAMPUNG NOMOR 6 TAHUN 2019 TENTANG TARIF PELAYANAN KESEHATAN RAWAT JALAN, INSTALASI GAWAT DARURAT, KELAS II, KELAS K.pdf",179,170,1.0,,101,0.94,93.9,2.8,0.0,2.8,0.0,0.0,0.0,9658000.0,0.0,tidak_jelas
+249025_PERBUP NOMOR 48 TAHUN 2022 TENTANG TARIF LAYANAN PADA BADAN LAYANAN UMUM DAERAH RUMAH SAKIT UMUM DAERAH CAMPURDARAT.pdf,622,666,14.0,,618,0.93,100.0,0.0,0.0,0.0,0.0,0.0,0.0,114000.0,15.3,tidak_jelas
+249214_PERBUP 236 TARIF JASA LAYANAN BLUD RSUD.pdf,800,788,3.6,,720,0.99,98.6,0.0,0.0,0.0,0.0,0.0,0.0,1934765.5,0.0,tidak_jelas
+249545_PERWAL NO 22 TAHUN 2021.pdf,733,722,1.7,,664,0.98,97.7,0.0,0.0,0.0,0.0,0.0,0.0,120000.0,100.0,ya
+252148_40-TH-2022-PERBUP-Penyesuaian-Tarif-Kelas-III-RSUD.pdf,1251,1318,4.4,,1046,0.84,99.1,0.5,0.0,0.5,0.0,0.0,0.0,1276200.0,0.0,tidak_jelas
+252150_41-TH-2022-Penyesuaian-Tarif-RSUD.pdf,3551,1909,10.5,,1677,1.0,24.9,69.3,5.5,0.1,0.0,0.0,0.0,2587725.0,0.0,tidak_jelas
+25286_Perda-04-Tahun-2009.pdf,281,267,4.0,,208,1.03,43.4,13.2,0.0,2.8,10.3,0.0,0.0,64000.0,0.0,tidak_jelas
+254257_2.1. Perbup No 134 Th 2022 - Tarif Pelayanan Pada Rumah Sakit Umum Daerah.pdf,353,327,3.0,,304,1.01,82.7,1.1,3.4,1.1,0.0,0.0,2.5,50000.0,2.5,tidak_jelas
 254450_PERBUP 13 2023.pdf,3085,1241,3.1,,1237,1.02,20.5,76.0,3.5,0.1,0.1,0.0,0.0,260000.0,100.0,ya
-254570_Salinan Perbup No. 48 Tahun 2022 ttg Tarif Pelayanan Kesehatan Pada Badan Layanan Umum Daerah Rumah Sakit Umum Daerah Depati Bahrin Kabupaten Bangka.p.pdf,1831,814,5.8,,791,1.01,27.1,72.9,0.0,0.1,0.0,0.0,0.0,5871000.0,0.0,tidak_jelas
-255075_PERBUP 35 TAHUN 2021.pdf,1019,1016,1.4,,853,0.98,96.1,0.0,0.0,0.0,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
-256559_Perbup TTS_No 24 Tahun 2021.pdf,183,574,9.1,,182,0.32,100.0,0.0,0.0,0.0,0.0,0.0,0.0,155000.0,0.0,tidak_jelas
-256570_Perda Majene Nomor 5 Tahun 2008.pdf,195,167,2.4,,123,1.01,78.5,19.5,0.0,0.5,3.1,0.0,0.0,24000.0,0.0,tidak_jelas
-257089_Perbup No 8.1 Tahun 2012 ocr.pdf,585,574,2.3,,452,0.99,94.2,0.9,0.0,0.9,0.0,0.0,78.8,24000.0,78.8,tidak_jelas
-257346_PERBUP NOMOR 10 TAHUN 2023.pdf,247,739,19.4,,241,0.33,98.8,0.4,0.0,0.0,0.0,0.0,0.0,300000.0,100.0,ya
-258599_Pergub No 1 Tahun 2023 Salin.pdf,745,745,5.2,,659,0.98,98.3,0.0,0.0,0.0,0.0,0.0,87.4,187500.0,87.4,tidak_jelas
-259494_pb152022.pdf,24,22,0.4,,18,1.09,100.0,0.0,0.0,0.0,0.0,0.0,0.0,175000.0,0.0,tidak_jelas
-260070_Salinan Perbup No. 65 Tahun 2020 ttg Tarif Layanan Badan Umum Daerah Rumah Sakit Umum Daerah Sjafrie Rachman.pdf,1408,834,7.0,,666,0.94,41.3,34.7,23.9,0.6,1.4,0.0,0.0,70000.0,0.0,tidak_jelas
-260073_Salinan Perbup No. 66 Tahun 2020 ttg Tarif Layanan Badan Layanan Umum Daerah Rumah Sakit Umum Daerah DR. Eko Maulana ALI.pdf,1323,770,6.9,,610,0.94,40.6,34.4,24.9,0.6,0.8,0.0,13.2,71500.0,13.2,tidak_jelas
-260227_Pergub Sulbar Nomor 31 Tahun 2022.pdf,9860,3946,42.2,,3082,0.86,19.9,15.1,64.6,0.2,0.0,0.0,0.0,9635417.0,0.0,tidak_jelas
-260388_Perbup Pemalang No 49 Tahun 2011.pdf,302,301,7.3,,61,0.89,68.2,17.5,0.0,0.0,0.0,0.0,0.0,50000.0,100.0,ya
-260422_Perwal Nomor 22 Tahun 2023.pdf,1338,1298,7.3,,327,0.97,94.2,4.4,0.0,4.4,0.0,0.0,0.0,350000.0,0.0,tidak_jelas
-260462_PERDA NOMOR 19 TAHUN 2002.pdf,65,62,1.8,,34,1.02,38.5,4.6,0.0,4.6,0.0,0.0,0.0,23500.0,0.0,tidak_jelas
-261284_1684482367_PERATURAN BUPATI NOMOR 2 TAHUN 2019.pdf,549,542,5.7,,484,0.98,98.0,0.7,0.0,0.0,0.0,0.0,0.0,131000.0,0.0,tidak_jelas
-261610_ph001216-peraturan-bupati-no-94-tahun-2016.pdf,1674,1695,2.3,,375,0.82,25.6,0.0,0.0,0.0,0.0,0.0,0.0,77500.0,100.0,ya
-261984_perbupno71tahun2020.pdf,526,524,3.6,,477,1.0,97.5,0.0,0.0,0.0,0.0,0.0,0.0,170000.0,0.0,tidak_jelas
-262229_Pergub NTT No. 4 Tahun 2023.pdf,878,917,1.6,,863,0.94,100.0,0.0,0.0,0.0,0.0,0.0,0.0,250000.0,0.0,tidak_jelas
-263188_PERBUP Rmbg 16_ 2023.pdf,1196,1118,7.4,,664,1.03,91.9,2.9,1.5,1.0,0.3,0.0,89.3,44500.0,89.3,tidak_jelas
-264072_Pergub NTT No. 36 Tahun 2021.pdf,606,784,1.2,,605,0.77,99.8,0.2,0.0,0.0,0.0,0.0,0.0,274500.0,0.0,tidak_jelas
-264573_Pergub NTT No. 88 Tahun 2021.pdf,1211,1633,3.2,,1210,0.74,100.0,0.0,0.0,0.0,0.0,0.0,0.0,492000.0,0.0,tidak_jelas
-264923_Perda Grobogan 11 Tahun 2009.pdf,302,302,1.9,,68,0.72,43.0,0.7,0.0,0.7,0.0,0.0,0.0,50000.0,0.0,tidak_jelas
-265916_40 tahun 2022.pdf,377,349,3.2,,346,0.95,92.8,0.0,0.0,0.0,0.0,0.0,0.0,230000.0,100.0,ya
-267125_Tarif Pelayanan Pada Badan Laynan Umum Daerah Rumah Sakit Jiwa.pdf,192,191,2.1,,192,1.01,99.0,0.5,0.0,0.0,0.0,0.0,0.0,52500.0,100.0,ya
-26718_Perda_Kab_Bangka Barat_2009_12.pdf,231,178,0.9,,179,1.01,71.9,0.0,28.1,0.0,0.0,0.0,0.0,10000.0,0.0,tidak_jelas
-267437_2023pg00350028.pdf,682,640,4.0,,585,0.99,92.8,7.2,0.0,0.1,0.0,0.0,0.0,356000.0,100.0,ya
-267642_2023pg00350032.pdf,919,924,4.0,,876,0.97,100.0,0.0,0.0,0.0,0.0,0.0,0.0,175000.0,100.0,ya
-268033_PERWALI KOTA PALEMBANG_NO_14_TH_2023.pdf,2599,2700,3.8,,2444,0.94,99.3,0.0,0.0,0.0,0.0,0.0,0.0,500000.0,0.0,tidak_jelas
-268465_PERGUB_KEPRI_NOMOR_60_TAHUN_2022.pdf,912,910,4.7,,741,0.95,95.5,1.2,0.0,1.2,0.0,0.0,0.0,156000.0,0.0,tidak_jelas
-268933_2023pg00350047.pdf,565,564,3.0,,526,0.99,100.0,0.0,0.0,0.0,0.0,0.0,0.0,92000.0,100.0,ya
-268990_Perbup Nomor 10 Tahun 2023.pdf,2,317,1.5,,2,0.01,100.0,0.0,0.0,0.0,0.0,0.0,0.0,2022.0,0.0,tidak_jelas
-269215_PERBUP NO 22 TAHUN 2023.pdf,751,701,6.6,,729,1.05,94.3,5.7,0.0,1.7,0.5,0.0,0.0,95000.0,100.0,ya
-269300_PERGUB NO 2 TAHUN 2023.pdf,626,615,2.1,,485,0.99,85.5,2.2,0.0,2.2,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
-269303_PERGUB NO 3 TAHUN 2023.pdf,26,16,1.6,,21,1.31,100.0,0.0,0.0,0.0,0.0,0.0,0.0,11550.0,0.0,tidak_jelas
-269535_38 Tahun 2004.pdf,313,277,1.3,,212,0.9,80.2,1.3,17.9,0.0,0.0,0.0,0.0,35000.0,0.0,tidak_jelas
-269765_Perbup Polewali Mandar Nomor 48 Tahun 2022.pdf,850,817,2.5,,620,1.0,94.2,3.1,0.0,2.6,0.0,0.0,0.0,250000.0,0.0,tidak_jelas
-269888_Perbup Polewali Mandar Nomor 54 Tahun 2022.pdf,843,840,2.3,,723,0.99,96.6,1.2,0.0,0.2,0.0,0.0,0.0,75000.0,0.0,tidak_jelas
-270144_2023pg00350055.pdf,2203,2171,9.2,,2157,1.0,98.7,1.1,0.2,0.0,0.0,0.0,0.0,450000.0,100.0,ya
-270170_Perbup Musi Banyuasin No 42 Tahun 2023.pdf,712,695,2.6,,555,0.98,94.5,2.1,0.0,2.1,0.0,0.0,0.0,204500.0,100.0,ya
-270289_Perbup Boyolali Tahun 2012 No 22.pdf,328,475,20.6,,219,0.47,42.4,36.6,23.8,2.7,13.7,0.0,0.0,12000.0,100.0,ya
-270634_Perbup Boyolali Tahun 2011 No 40.pdf,130,739,17.0,,103,0.15,62.3,35.4,0.0,1.5,12.3,0.0,0.0,22555.5,100.0,ya
-271764_PERBUP_NO_106_TAHUN_2021_TENTANG_TARIF_LAYANAN_UMUM_DAERAH_RSUD_KAB_TEMANGGUNG_ocr.pdf,4113,4095,16.6,,2136,0.99,81.9,17.7,0.1,0.7,0.5,0.0,0.0,1550100.0,100.0,ya
-27176_Perda_Kab_Bangka_Barat_2007_13.pdf,185,138,2.8,,138,1.01,67.6,2.2,32.4,0.0,0.0,0.0,0.0,7500.0,100.0,ya
-272161_PERWAL 5 TAHUN 2023-.pdf,2956,2939,10.7,,2695,0.98,67.9,32.1,0.0,0.1,2.4,0.0,0.0,763000.0,100.0,ya
-272269_PG Th 2021 No 048.pdf,559,543,1.3,,470,0.98,99.6,0.0,0.0,0.0,0.0,0.0,0.0,160000.0,0.0,tidak_jelas
-272310_PG Th 2021 No 082.pdf,1598,1544,3.0,,1241,0.94,88.9,1.9,8.0,1.1,0.0,0.0,0.0,238500.0,0.0,tidak_jelas
-272412_PG Th 2022 022.pdf,556,580,1.6,,496,0.91,92.4,0.0,0.0,0.0,0.0,0.0,0.0,425000.0,0.0,tidak_jelas
-273006_Perbup Kab. Grobogan Tahun 2021 No 40_ocr.pdf,583,573,2.9,,184,0.95,19.9,3.6,0.0,0.2,2.7,0.0,0.0,75000.0,100.0,ya
-273351_PG Th 2023 No 062.pdf,220,222,1.2,,179,0.94,98.2,0.0,0.0,0.0,0.0,0.0,0.0,96500.0,0.0,tidak_jelas
-275370_PERBUP_NOMOR_14_TAHUN_2013_comp1_ocr.pdf,391,338,4.9,,229,0.89,50.1,39.4,5.4,12.3,3.8,0.0,0.0,40000.0,100.0,ya
-275865_PERDA_kab__No_21_Tahun_2001_tentang_RETRIBUSI_PELAYANAN_KESEHATAN_PADA_RUMAH_SAKIT_UMUM_DAERAH_KABUPATEN_TEMANGGUNG_compressed_ocr.pdf,121,114,2.0,,87,1.04,93.4,1.7,0.0,0.8,0.0,0.0,0.0,10000.0,0.0,tidak_jelas
-276431_PERDA_kab__No_13_Tahun_2009_tentang_RETRIBUSI_PELAYANAN_KESEHATAN_PADA_RUMAH_SAKIT_UMUM_DAERAH_KABUPATEN_TEMANGGUNG_ocr.pdf,364,223,2.9,,87,0.99,32.1,34.1,30.8,10.2,1.9,0.0,0.0,30000.0,100.0,ya
-277202_PERBUP NOMOR 30 TAHUN 2023 TTG PENETAPAN TARIF RSUD_.pdf,74,72,0.6,,65,1.03,100.0,0.0,0.0,0.0,0.0,0.0,0.0,487500.0,0.0,tidak_jelas
+254570_Salinan Perbup No. 48 Tahun 2022 ttg Tarif Pelayanan Kesehatan Pada Badan Layanan Umum Daerah Rumah Sakit Umum Daerah Depati Bahrin Kabupaten Bangka.p.pdf,1831,814,6.5,,795,1.01,26.7,72.9,0.0,0.1,0.0,0.0,0.0,5871000.0,0.0,tidak_jelas
+255075_PERBUP 35 TAHUN 2021.pdf,1019,1016,1.2,,856,0.98,94.6,0.0,0.0,0.0,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
+256559_Perbup TTS_No 24 Tahun 2021.pdf,183,574,9.7,,182,0.32,100.0,0.0,0.0,0.0,0.0,0.0,0.0,155000.0,0.0,tidak_jelas
+256570_Perda Majene Nomor 5 Tahun 2008.pdf,195,167,1.9,,123,1.01,78.5,19.5,0.0,0.5,3.1,0.0,0.0,24000.0,0.0,tidak_jelas
+257089_Perbup No 8.1 Tahun 2012 ocr.pdf,585,574,2.7,,445,0.99,93.7,0.9,0.0,0.9,0.0,0.0,78.8,24000.0,78.8,tidak_jelas
+257346_PERBUP NOMOR 10 TAHUN 2023.pdf,247,739,18.9,,241,0.33,98.4,0.4,0.0,0.0,0.0,0.0,0.0,300000.0,100.0,ya
+258599_Pergub No 1 Tahun 2023 Salin.pdf,745,745,5.4,,659,0.98,98.3,0.0,0.0,0.0,0.0,0.0,87.4,187500.0,87.4,tidak_jelas
+259494_pb152022.pdf,24,22,0.2,,17,1.09,91.7,0.0,0.0,0.0,0.0,0.0,0.0,175000.0,0.0,tidak_jelas
+260070_Salinan Perbup No. 65 Tahun 2020 ttg Tarif Layanan Badan Umum Daerah Rumah Sakit Umum Daerah Sjafrie Rachman.pdf,1408,834,6.6,,665,0.94,41.2,34.7,23.9,0.6,1.4,0.0,0.0,70000.0,0.0,tidak_jelas
+260073_Salinan Perbup No. 66 Tahun 2020 ttg Tarif Layanan Badan Layanan Umum Daerah Rumah Sakit Umum Daerah DR. Eko Maulana ALI.pdf,1323,770,7.7,,609,0.94,40.4,34.4,24.9,0.6,0.8,0.0,13.2,71500.0,13.2,tidak_jelas
+260227_Pergub Sulbar Nomor 31 Tahun 2022.pdf,9860,3946,42.4,,3074,0.86,19.8,15.1,64.6,0.2,0.0,0.0,0.0,9635417.0,0.0,tidak_jelas
+260388_Perbup Pemalang No 49 Tahun 2011.pdf,302,301,7.7,,60,0.89,67.5,17.5,0.0,0.0,0.0,0.0,0.0,50000.0,100.0,ya
+260422_Perwal Nomor 22 Tahun 2023.pdf,1338,1298,7.9,,327,0.97,94.1,4.4,0.0,4.4,0.0,0.0,0.0,350000.0,0.0,tidak_jelas
+260462_PERDA NOMOR 19 TAHUN 2002.pdf,65,62,1.8,,31,1.02,38.5,4.6,0.0,4.6,0.0,0.0,0.0,23500.0,0.0,tidak_jelas
+261284_1684482367_PERATURAN BUPATI NOMOR 2 TAHUN 2019.pdf,549,542,5.4,,484,0.98,98.0,0.7,0.0,0.0,0.0,0.0,0.0,131000.0,0.0,tidak_jelas
+261610_ph001216-peraturan-bupati-no-94-tahun-2016.pdf,1695,1695,2.1,,258,0.83,25.1,0.0,0.0,0.0,0.0,0.0,0.0,79000.0,100.0,ya
+261984_perbupno71tahun2020.pdf,526,524,3.3,,477,1.0,97.5,0.0,0.0,0.0,0.0,0.0,0.0,170000.0,0.0,tidak_jelas
+262229_Pergub NTT No. 4 Tahun 2023.pdf,878,917,2.0,,863,0.94,100.0,0.0,0.0,0.0,0.0,0.0,0.0,250000.0,0.0,tidak_jelas
+263188_PERBUP Rmbg 16_ 2023.pdf,1196,1118,7.0,,663,1.03,91.7,2.9,1.5,1.0,0.3,0.0,89.3,44500.0,89.3,tidak_jelas
+264072_Pergub NTT No. 36 Tahun 2021.pdf,606,784,1.3,,605,0.77,99.8,0.2,0.0,0.0,0.0,0.0,0.0,274500.0,0.0,tidak_jelas
+264573_Pergub NTT No. 88 Tahun 2021.pdf,1211,1633,2.7,,1210,0.74,99.7,0.0,0.0,0.0,0.0,0.0,0.0,492000.0,0.0,tidak_jelas
+264923_Perda Grobogan 11 Tahun 2009.pdf,302,302,2.2,,67,0.72,43.0,0.7,0.0,0.7,0.0,0.0,0.0,50000.0,0.0,tidak_jelas
+265916_40 tahun 2022.pdf,377,349,2.9,,343,0.95,90.7,0.0,0.0,0.0,0.0,0.0,0.0,230000.0,100.0,ya
+267125_Tarif Pelayanan Pada Badan Laynan Umum Daerah Rumah Sakit Jiwa.pdf,192,191,1.9,,192,1.01,99.0,0.5,0.0,0.0,0.0,0.0,0.0,52500.0,100.0,ya
+26718_Perda_Kab_Bangka Barat_2009_12.pdf,231,178,0.7,,179,1.01,71.4,0.0,28.1,0.0,0.0,0.0,0.0,10000.0,0.0,tidak_jelas
+267437_2023pg00350028.pdf,682,640,4.4,,585,0.99,92.8,7.2,0.0,0.1,0.0,0.0,0.0,356000.0,100.0,ya
+267642_2023pg00350032.pdf,919,924,4.0,,876,0.97,99.3,0.0,0.0,0.0,0.0,0.0,0.0,175000.0,100.0,ya
+268033_PERWALI KOTA PALEMBANG_NO_14_TH_2023.pdf,2599,2700,3.8,,2443,0.94,99.3,0.0,0.0,0.0,0.0,0.0,0.0,500000.0,0.0,tidak_jelas
+268465_PERGUB_KEPRI_NOMOR_60_TAHUN_2022.pdf,912,910,4.6,,740,0.95,94.8,1.2,0.0,1.2,0.0,0.0,0.0,156000.0,0.0,tidak_jelas
+268933_2023pg00350047.pdf,565,564,2.9,,523,0.99,99.3,0.0,0.0,0.0,0.0,0.0,0.0,92000.0,100.0,ya
+268990_Perbup Nomor 10 Tahun 2023.pdf,2,317,1.6,,2,0.01,100.0,0.0,0.0,0.0,0.0,0.0,0.0,2022.0,0.0,tidak_jelas
+269215_PERBUP NO 22 TAHUN 2023.pdf,751,701,6.7,,729,1.05,94.3,5.7,0.0,1.7,0.5,0.0,0.0,95000.0,100.0,ya
+269300_PERGUB NO 2 TAHUN 2023.pdf,626,615,1.8,,486,0.99,84.3,2.2,0.0,2.2,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
+269303_PERGUB NO 3 TAHUN 2023.pdf,26,16,1.7,,21,1.31,96.2,0.0,0.0,0.0,0.0,0.0,0.0,11550.0,0.0,tidak_jelas
+269535_38 Tahun 2004.pdf,313,277,1.2,,213,0.9,79.2,1.3,17.9,0.0,0.0,0.0,0.0,35000.0,0.0,tidak_jelas
+269765_Perbup Polewali Mandar Nomor 48 Tahun 2022.pdf,850,817,2.2,,620,1.0,94.0,3.1,0.0,2.6,0.0,0.0,0.0,250000.0,0.0,tidak_jelas
+269888_Perbup Polewali Mandar Nomor 54 Tahun 2022.pdf,843,840,2.5,,719,0.99,95.8,1.2,0.0,0.2,0.0,0.0,0.0,75000.0,0.0,tidak_jelas
+270144_2023pg00350055.pdf,2203,2171,9.6,,2156,1.0,98.6,1.1,0.2,0.0,0.0,0.0,0.0,450000.0,100.0,ya
+270170_Perbup Musi Banyuasin No 42 Tahun 2023.pdf,712,695,2.7,,487,0.98,75.0,2.1,0.0,2.1,0.0,0.0,0.0,204500.0,100.0,ya
+270289_Perbup Boyolali Tahun 2012 No 22.pdf,328,475,21.5,,219,0.47,42.4,36.6,23.8,2.7,13.7,0.0,0.0,12000.0,100.0,ya
+270634_Perbup Boyolali Tahun 2011 No 40.pdf,129,739,16.1,,102,0.14,62.8,35.7,0.0,1.6,12.4,0.0,0.0,20111.0,100.0,ya
+271764_PERBUP_NO_106_TAHUN_2021_TENTANG_TARIF_LAYANAN_UMUM_DAERAH_RSUD_KAB_TEMANGGUNG_ocr.pdf,4113,4095,17.0,,2136,0.99,81.5,17.7,0.1,0.7,0.5,0.0,0.0,1550100.0,100.0,ya
+27176_Perda_Kab_Bangka_Barat_2007_13.pdf,185,138,2.9,,138,1.01,67.0,2.2,32.4,0.0,0.0,0.0,0.0,7500.0,100.0,ya
+272161_PERWAL 5 TAHUN 2023-.pdf,2956,2939,11.2,,2691,0.98,67.8,32.1,0.0,0.1,2.4,0.0,0.0,763000.0,100.0,ya
+272269_PG Th 2021 No 048.pdf,559,543,1.3,,467,0.98,98.9,0.0,0.0,0.0,0.0,0.0,0.0,160000.0,0.0,tidak_jelas
+272310_PG Th 2021 No 082.pdf,1598,1544,3.1,,1241,0.94,88.5,1.9,8.0,1.1,0.0,0.0,0.0,238500.0,0.0,tidak_jelas
+272412_PG Th 2022 022.pdf,556,580,1.5,,496,0.91,88.8,0.0,0.0,0.0,0.0,0.0,0.0,425000.0,0.0,tidak_jelas
+273006_Perbup Kab. Grobogan Tahun 2021 No 40_ocr.pdf,583,573,2.9,,187,0.95,18.9,3.6,0.0,0.2,2.7,0.0,0.0,75000.0,100.0,ya
+273351_PG Th 2023 No 062.pdf,220,222,0.8,,179,0.94,98.2,0.0,0.0,0.0,0.0,0.0,0.0,96500.0,0.0,tidak_jelas
+275370_PERBUP_NOMOR_14_TAHUN_2013_comp1_ocr.pdf,388,338,4.3,,219,0.88,47.2,39.7,5.4,12.4,3.9,0.0,0.0,42625.0,100.0,ya
+275865_PERDA_kab__No_21_Tahun_2001_tentang_RETRIBUSI_PELAYANAN_KESEHATAN_PADA_RUMAH_SAKIT_UMUM_DAERAH_KABUPATEN_TEMANGGUNG_compressed_ocr.pdf,121,114,2.2,,89,1.04,78.5,1.7,0.0,0.8,0.0,0.0,0.0,10000.0,0.0,tidak_jelas
+276431_PERDA_kab__No_13_Tahun_2009_tentang_RETRIBUSI_PELAYANAN_KESEHATAN_PADA_RUMAH_SAKIT_UMUM_DAERAH_KABUPATEN_TEMANGGUNG_ocr.pdf,362,223,4.4,,82,0.98,26.5,34.3,30.9,10.2,1.9,0.0,0.0,30000.0,100.0,ya
+277202_PERBUP NOMOR 30 TAHUN 2023 TTG PENETAPAN TARIF RSUD_.pdf,74,72,0.2,,65,1.03,100.0,0.0,0.0,0.0,0.0,0.0,0.0,487500.0,0.0,tidak_jelas
 278314_Perwal nomor 20 tahun 2008.PDF,50,53,0.7,,42,0.94,100.0,0.0,0.0,0.0,0.0,0.0,0.0,225000.0,0.0,tidak_jelas
-278706_40 TAHUN 2021 ( TARIF BADAN LAYANAN UMUM DAERAH FIX.pdf,784,771,12.3,,721,1.01,11.2,0.5,0.0,0.5,0.0,0.0,0.0,361000.0,0.0,tidak_jelas
-278810_Perbup Kab Kebumen Tahun 2013 No 39_ocr.pdf,1243,647,4.6,,304,0.93,5.1,63.8,0.0,0.4,3.5,0.0,0.0,37000.0,0.0,tidak_jelas
-278952_Peraturan Bupati Musi Banyuasin Nomor 12 Tahun 2024.pdf,902,863,1.5,,715,0.97,92.9,0.1,4.3,0.1,0.0,0.0,0.0,223250.0,0.0,tidak_jelas
-279607_Perda 20 Tahun 2007.pdf,590,596,2.6,,140,0.34,19.2,0.0,0.0,0.0,0.0,0.0,0.0,6000.0,0.0,tidak_jelas
-281339_PERGUB NOMOR 4 TAHUN 2021.pdf,11020,3029,27.5,,2796,1.03,10.9,16.7,72.3,0.0,0.0,0.0,0.0,11718750.0,100.0,ya
-281748_Perda Kab Kebumen Tahun 2011 No 18_ocr.pdf,454,450,4.8,,221,0.5,90.7,0.0,0.0,0.0,0.0,0.0,0.0,41600.0,100.0,ya
-282089_Perwali No. 25 Tahun 2023.pdf,1150,1123,3.6,,1119,1.01,99.0,1.0,0.0,1.0,0.0,0.0,0.0,372000.0,0.0,tidak_jelas
-282685_Perda Kab Kebumen Tahun 2004 No 42_ocr.pdf,443,336,2.2,,256,1.0,79.0,8.1,11.3,2.0,0.0,0.0,0.0,13000.0,0.0,tidak_jelas
-282701_Perda Nomor 14 Tahun 2007 ttg Retribusi Pelayanan Kesehatan pada Rumah Sakit Daerah Kabupaten Bekasi.pdf,769,757,5.0,,457,1.01,81.4,2.7,0.0,2.3,0.3,0.0,0.0,50000.0,0.0,tidak_jelas
+278706_40 TAHUN 2021 ( TARIF BADAN LAYANAN UMUM DAERAH FIX.pdf,784,771,12.1,,721,1.01,11.2,0.5,0.0,0.5,0.0,0.0,0.0,361000.0,0.0,tidak_jelas
+278810_Perbup Kab Kebumen Tahun 2013 No 39_ocr.pdf,1243,647,4.5,,304,0.93,4.3,63.8,0.0,0.4,3.5,0.0,0.0,37000.0,0.0,tidak_jelas
+278952_Peraturan Bupati Musi Banyuasin Nomor 12 Tahun 2024.pdf,899,863,1.5,,670,0.97,80.8,0.1,4.0,0.1,0.0,0.0,0.0,228000.0,0.0,tidak_jelas
+279607_Perda 20 Tahun 2007.pdf,595,596,2.7,,136,0.34,19.0,0.0,0.0,0.0,0.0,0.0,0.0,6000.0,0.0,tidak_jelas
+281339_PERGUB NOMOR 4 TAHUN 2021.pdf,11020,3029,28.4,,2788,1.03,10.9,16.7,72.3,0.0,0.0,0.0,0.0,11718750.0,100.0,ya
+281748_Perda Kab Kebumen Tahun 2011 No 18_ocr.pdf,454,450,4.5,,225,0.5,90.7,0.0,0.0,0.0,0.0,0.0,0.0,41600.0,100.0,ya
+282089_Perwali No. 25 Tahun 2023.pdf,1150,1123,4.0,,1119,1.01,98.9,1.0,0.0,1.0,0.0,0.0,0.0,372000.0,0.0,tidak_jelas
+282685_Perda Kab Kebumen Tahun 2004 No 42_ocr.pdf,443,336,2.6,,256,1.0,79.0,8.1,11.3,2.0,0.0,0.0,0.0,13000.0,0.0,tidak_jelas
+282701_Perda Nomor 14 Tahun 2007 ttg Retribusi Pelayanan Kesehatan pada Rumah Sakit Daerah Kabupaten Bekasi.pdf,769,757,5.4,,457,1.01,81.4,2.7,0.0,2.3,0.3,0.0,0.0,50000.0,0.0,tidak_jelas
 28359_PERBUP 09 TAHUN 2013 (LAMP-1).pdf,52,48,0.2,,52,1.08,23.1,76.9,0.0,76.9,0.0,0.0,0.0,40000.0,0.0,tidak_jelas
 28359_PERBUP 09 TAHUN 2013 (LAMP-10a).pdf,68,10,0.3,,68,6.8,2.9,97.1,0.0,0.0,97.1,0.0,0.0,19000.0,0.0,tidak_jelas
 28359_PERBUP 09 TAHUN 2013 (LAMP-14).pdf,11,10,0.0,,11,1.1,100.0,0.0,0.0,0.0,0.0,0.0,0.0,5000.0,0.0,tidak_jelas
 28359_PERBUP 09 TAHUN 2013 (LAMP-15).pdf,11,10,0.0,,11,1.1,100.0,0.0,0.0,0.0,0.0,0.0,0.0,5000.0,0.0,tidak_jelas
 28359_PERBUP 09 TAHUN 2013 (LAMP-2).pdf,52,48,0.2,,52,1.08,23.1,76.9,0.0,76.9,0.0,0.0,0.0,40000.0,0.0,tidak_jelas
 28359_PERBUP 09 TAHUN 2013 (LAMP-6).pdf,26,25,0.1,,26,1.04,100.0,0.0,0.0,0.0,0.0,0.0,0.0,77500.0,0.0,tidak_jelas
-28359_PERBUP 09 TAHUN 2013 (LAMP-9).pdf,25,19,0.1,,25,1.32,100.0,0.0,0.0,0.0,0.0,0.0,0.0,45000.0,0.0,tidak_jelas
+28359_PERBUP 09 TAHUN 2013 (LAMP-9).pdf,25,19,1.2,,25,1.32,100.0,0.0,0.0,0.0,0.0,0.0,0.0,45000.0,0.0,tidak_jelas
 284275_pergub diy nomor 9 tahun 2024.pdf,22,22,0.6,,22,1.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,115000.0,0.0,tidak_jelas
-285022_Perbup Kab. Banyumas Tahun 2013 No 13_ocr.pdf,274,297,2.1,,240,0.9,90.1,0.4,0.0,0.4,0.0,0.0,1.8,31300.0,1.8,tidak_jelas
-285701_Perbup Kab. Demak Tahun 2013 No 21_ocr.pdf,179,175,1.0,,137,0.96,97.8,0.0,0.0,0.0,0.0,0.0,0.0,60000.0,0.0,tidak_jelas
-285746_Perbup Kab. Demak Tahun 2013 No 22_ocr.pdf,466,461,1.8,,240,0.89,89.1,0.0,0.0,0.0,0.0,0.0,0.0,78500.0,0.0,tidak_jelas
-286647_PERWAL NO 19 TAHUN 2024.pdf,1305,1248,4.5,,1114,0.98,95.6,1.8,0.0,0.6,0.9,0.0,0.0,195000.0,100.0,ya
-287669_pergub diy nomor 15 tahun 2024.pdf,74,73,0.8,,65,1.01,100.0,0.0,0.0,0.0,0.0,0.0,0.0,176500.0,0.0,tidak_jelas
-287987_Perbub Aceh Selatan No 9 Tahun 20230001.pdf,1686,1758,3.1,,1498,0.85,98.2,0.9,0.0,0.7,0.0,0.0,0.0,239000.0,0.0,tidak_jelas
-288656_perda-no-9-tahun-2009-OCR.pdf,773,773,3.3,,216,0.72,84.2,0.3,0.0,0.3,0.0,0.0,100.0,30000.0,100.0,ya
-28925_Perwa.7-2015.Rubah Tarif Retribusi Pelyn. Kesehatan Pd. RSUD.pdf,668,664,3.2,,578,0.99,98.7,0.9,0.0,0.4,0.4,0.0,0.0,45000.0,0.0,tidak_jelas
-289857_Perwal Magelang Tahun 2009 No 13_ocr.pdf,321,309,2.4,,266,1.03,97.5,0.0,0.0,0.0,0.0,0.0,0.0,50000.0,0.0,tidak_jelas
-290035_Perwal Magelang Tahun 2010 No 27_ocr.pdf,179,195,2.1,,178,0.86,91.1,8.9,0.0,8.9,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
-290627_2023 perwal 28.pdf,1174,1218,8.5,,1168,0.96,94.0,6.0,0.0,4.9,0.0,0.0,0.0,400000.0,0.0,tidak_jelas
-292301_Peraturan-Nomor-79-Tahun-2011-tentang-peraturan-bupati-banyumas-nomor-79-tahun-2011-tentang-tarif-pelayanan-pada-rumah-sakit-umum-daerah-ajibarang-OCR.pdf,1669,294,1.2,,130,0.98,0.8,82.8,16.2,0.0,0.1,0.0,0.0,11000.0,0.0,tidak_jelas
-292317_Bup 47-OCR.pdf,280,293,2.7,,223,0.96,96.4,3.6,0.0,0.0,3.6,0.0,0.0,29950.0,0.0,tidak_jelas
-292386_Perbup Lombok Barat Nomor 31 Tahun 2023.pdf,107,121,0.7,,107,0.88,100.0,0.0,0.0,0.0,0.0,0.0,0.0,185000.0,0.0,tidak_jelas
-292400_PERBUP NOMOR 36 TAHUN 2017.pdf,250,180,3.4,,179,1.03,52.0,2.0,0.0,2.0,0.0,0.0,0.0,160000.0,0.0,tidak_jelas
-292424_2024pmkeuangan035.pdf,6204,6221,39.7,,874,0.5,100.0,0.0,0.0,0.0,0.0,0.0,0.0,288000.0,0.0,tidak_jelas
-292673_Bup 24-OCR.pdf,1108,1121,17.4,,396,0.77,56.5,0.8,0.0,0.5,0.0,0.0,0.0,114500.0,0.0,tidak_jelas
-293266_PERBUP KABUPATEN TELUK WONDAMA NO 14 TAHUN 2023.pdf,1241,781,5.0,,321,0.66,12.7,6.1,81.0,0.0,0.0,0.0,0.0,4152800.0,0.0,tidak_jelas
-294529_Perda No. 14 Tarif Yankes RSUD.pdf,125,121,1.4,,60,0.99,48.8,0.0,0.0,0.0,0.0,0.0,0.0,55000.0,0.0,tidak_jelas
-295095_2009perwal3375007-OCR.pdf,627,357,3.9,,237,0.97,18.8,60.0,9.6,4.1,8.6,0.0,0.0,88000.0,100.0,ya
-295200_2009perwal3375021-OCR.pdf,708,438,2.4,,268,0.88,18.2,56.2,7.3,0.6,11.4,0.0,0.0,84000.0,0.0,tidak_jelas
-295398_PERBUP NOMOR 56 TAHUN 2022.pdf,1262,1355,3.2,,1092,0.84,97.7,0.0,0.0,0.0,0.0,0.0,0.0,150000.0,100.0,ya
-295552_2011perwal3375027-OCR.pdf,1512,1423,4.1,,528,0.89,39.6,13.2,0.3,0.4,1.8,0.0,0.0,76125.0,100.0,ya
-295921_Perwali Kota Surabaya No 67 Tahun 2024.pdf,45,40,0.6,,40,1.07,100.0,0.0,0.0,0.0,0.0,0.0,0.0,130000.0,0.0,tidak_jelas
-297308_PerBup KTT 01-2023.pdf,229,268,1.7,,151,0.79,66.8,0.0,0.0,0.0,0.0,0.0,0.0,75000.0,0.0,tidak_jelas
-297404_PERBUP NOMOR 8 TAHUN 2023.pdf,929,923,1.9,,806,0.96,97.2,0.0,0.0,0.0,0.0,0.0,0.0,60000.0,0.0,tidak_jelas
-297907_2008PD327826018_PERUBAHAN_TARIF_RSU.pdf,323,257,3.4,,141,1.17,45.2,0.0,0.0,0.0,0.0,0.0,0.0,65000.0,0.0,tidak_jelas
-29998_PERBUP 08 TAHUN 2014.pdf,93,91,1.5,,93,1.02,100.0,0.0,0.0,0.0,0.0,0.0,0.0,45000.0,0.0,tidak_jelas
-300154_Perbup Murung Raya No.16 Tahun 2023.pdf,193,1148,49.4,,156,0.15,98.4,1.0,0.0,1.0,0.0,0.0,0.0,339955.0,100.0,ya
-306134_pb482023.pdf,803,796,4.1,,801,1.01,100.0,0.0,0.0,0.0,0.0,0.0,0.0,50000.0,0.0,tidak_jelas
-306269_Perbup Kbm 5_2024.pdf,538,343,5.8,,237,1.0,53.7,43.3,0.0,0.6,0.4,0.0,0.0,256000.0,0.0,tidak_jelas
-306946_Perbup Kotawaringin Timur No. 47 Tahun 2024.pdf,414,413,1.2,,400,1.0,1.4,0.5,0.0,0.5,0.0,0.0,0.0,50000.0,0.0,tidak_jelas
-308582_2023perwal3375098- OCR.pdf,48,58,3.6,,37,0.74,97.9,0.0,0.0,0.0,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
-308640_Perbup Bima Nomor 16 Tahun 2023.pdf,839,729,3.2,,648,0.98,54.8,38.7,20.4,0.7,22.3,0.0,0.0,60000.0,0.0,tidak_jelas
-308793_Perbup OKUT Nomor 31 Tahun 2024.pdf,1322,905,7.9,,1036,1.05,86.0,13.9,0.0,0.8,0.5,0.0,0.0,78900.0,100.0,tidak
-309048_PB 13 MSJ 2023.pdf,1325,1290,4.8,,1233,1.02,99.9,0.1,0.0,0.0,0.0,0.0,0.0,125000.0,0.0,tidak_jelas
-310004_pergub diy nomor 70 tahun 2024.pdf,79,78,0.5,,75,1.01,100.0,0.0,0.0,0.0,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
-310870_Peraturan Bupati Nomor 5 Tahun 2023 tentang Tarif Layanan Pada Badan Layanan Umum Daerah Rumah Sakit Umum Daerah Pesawaran Kabupaten Pesawaran.pdf,881,853,3.8,,785,1.02,91.4,1.0,0.0,0.9,0.0,0.0,0.0,100000.0,100.0,ya
-311432_94 th 2024.pdf,3661,3664,13.2,,3304,0.97,98.9,0.0,0.0,0.0,0.0,0.0,0.0,390000.0,0.0,tidak_jelas
-311726_2024pg0033034.pdf,4451,292,12.3,,2834,14.51,95.8,1.7,0.0,0.3,0.0,0.0,64.1,245000.0,64.1,tidak_jelas
-311739_Pergub No 39 Tahun 2023 Salinan_ok.pdf,956,944,3.3,,590,0.91,97.5,0.0,0.0,0.0,0.0,0.0,0.0,80000.0,0.0,tidak_jelas
-312308_Perda Kabupaten Boyolali N0.14 Tahun 2011_ocr.pdf,293,244,2.0,,263,1.14,92.2,7.2,0.0,2.4,2.0,0.0,0.0,27550.0,0.0,tidak_jelas
-312369_Perda Kabupaten Boyolali N0.19 Tahun 2011_ocr.pdf,285,222,4.0,,190,1.04,51.6,30.9,8.1,6.3,10.5,0.0,0.0,15000.0,0.0,tidak_jelas
-312388_Perda Kabupaten Boyolali N0.20 Tahun 2011_ocr.pdf,360,361,2.7,,201,0.82,35.3,40.3,0.0,4.4,35.8,0.0,0.0,15000.0,100.0,ya
-312717_Perda Nunukan 07-2021.pdf,246,246,2.9,,243,1.0,94.3,3.3,0.0,3.3,0.0,0.0,0.0,60000.0,0.0,tidak_jelas
-313083_Peraturan Walikota Kendari Nomor 34 Tahun 2024 Tentang Penyusunan Detail Rincian Objek Retribusi Atas Pelayanan Kesehatan Badan Layanan Umum Daerah RS.pdf,29,38,0.5,,29,0.76,96.6,0.0,0.0,0.0,0.0,0.0,0.0,300000.0,0.0,tidak_jelas
-316426_Perbup No. 98 Tarif Yankes RSUDDSR  fix_63e9d669362f1.pdf,621,608,7.5,,564,1.0,93.7,5.3,0.0,0.3,5.0,0.0,0.0,200000.0,100.0,ya
-316688_Perbup Kabupaten Lombok Barat Nomor 31 Tahun 2024.pdf,1299,1177,5.8,,831,0.77,100.0,0.0,0.0,0.0,0.0,0.0,0.0,7634000.0,0.0,tidak_jelas
-316727_Perbup Kabupaten Lombok Barat Nomor 33 Tahun 2024.pdf,366,364,1.4,,333,1.01,100.0,0.0,0.0,0.0,0.0,0.0,0.0,4909000.0,0.0,tidak_jelas
-317431_Perbup Kab. OKI No 2 Tahun 2025.pdf,1796,1734,4.5,,1739,1.03,66.4,0.8,0.0,0.4,0.2,0.0,0.0,418600.0,0.0,tidak_jelas
-317768_Peraturan Walikota Surakarta Nomor 140 Tahun 2024_OCR.pdf,705,693,5.9,,621,1.0,98.4,0.1,0.0,0.1,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
-318812_syscom462.pdf,101,96,0.9,,101,1.03,90.1,1.0,0.0,1.0,0.0,0.0,0.0,110500.0,100.0,ya
-319012_syscom5064.pdf,649,558,31.1,,626,1.15,85.2,10.2,1.4,9.7,0.2,0.0,0.0,180000.0,13.3,tidak_jelas
-319556_Pw No. 7 Tahun 2021 ttg Tarif Pelayanan Kesehatan Pada Rumah Sakit Umum Daerah Tipe D Sumbersari Ban_opt.pdf,1185,1282,3.2,,1161,0.85,99.1,0.9,0.0,0.7,0.0,0.0,0.0,1000000.0,0.0,tidak_jelas
-319562_Pw No. 15 Tahun 2021 ttg Tarif Pelayanan Kesehatan Pada RSUD Jenderal A. Yani Metro_opt_opt.pdf,5553,5579,11.6,,3668,0.95,98.9,1.1,0.1,1.0,0.0,0.0,0.0,4500000.0,100.0,ya
-320170_Perbup Pulpis No. 9 Tahun 2024.pdf,1035,1024,4.7,,881,0.97,99.9,0.0,0.0,0.0,0.0,0.0,0.0,100000.0,100.0,ya
-320318_Pw No. 37 Tahun 2011 ttg Tarif Pelayanan Kesehatan pada RSUD Jend A. Yani Komet.pdf,933,333,2.9,,308,1.0,19.0,63.5,17.6,0.0,0.0,0.0,0.0,75000.0,0.0,tidak_jelas
-320738_Perwali Tarakan 03-2025.pdf,1455,1452,6.1,,1325,1.0,94.4,0.1,0.0,0.1,0.0,0.0,0.0,220000.0,100.0,ya
-321216_PERBUP NOMOR 30 TAHUN 2018.pdf,451,457,1.2,,362,0.95,99.3,0.0,0.0,0.0,0.0,0.0,0.0,97000.0,100.0,ya
-32135_Perda-No.5-Th-2009-final.pdf,122,89,1.1,,84,1.02,82.0,7.4,8.2,7.4,0.0,0.0,0.0,27500.0,100.0,ya
-322023_Perbup Cianjur Nomor 3 Tahun 2025.pdf,814,849,2.8,,659,0.93,84.2,0.6,0.0,0.6,0.0,0.0,87.6,150000.0,87.6,tidak_jelas
+285022_Perbup Kab. Banyumas Tahun 2013 No 13_ocr.pdf,274,297,1.3,,240,0.9,90.1,0.4,0.0,0.4,0.0,0.0,1.8,31300.0,1.8,tidak_jelas
+285701_Perbup Kab. Demak Tahun 2013 No 21_ocr.pdf,179,175,0.9,,137,0.96,95.5,0.0,0.0,0.0,0.0,0.0,0.0,60000.0,0.0,tidak_jelas
+285746_Perbup Kab. Demak Tahun 2013 No 22_ocr.pdf,466,461,1.8,,225,0.89,82.0,0.0,0.0,0.0,0.0,0.0,0.0,78500.0,0.0,tidak_jelas
+286647_PERWAL NO 19 TAHUN 2024.pdf,1305,1248,4.2,,1114,0.98,95.2,1.8,0.0,0.6,0.9,0.0,0.0,195000.0,100.0,ya
+287669_pergub diy nomor 15 tahun 2024.pdf,74,73,0.7,,65,1.01,100.0,0.0,0.0,0.0,0.0,0.0,0.0,176500.0,0.0,tidak_jelas
+287987_Perbub Aceh Selatan No 9 Tahun 20230001.pdf,1684,1758,3.4,,1495,0.85,98.0,1.0,0.0,0.7,0.0,0.0,0.0,239000.0,0.0,tidak_jelas
+288656_perda-no-9-tahun-2009-OCR.pdf,773,773,3.2,,213,0.72,82.9,0.3,0.0,0.3,0.0,0.0,100.0,30000.0,100.0,ya
+28925_Perwa.7-2015.Rubah Tarif Retribusi Pelyn. Kesehatan Pd. RSUD.pdf,668,664,2.9,,577,0.99,98.1,0.9,0.0,0.4,0.4,0.0,0.0,45000.0,0.0,tidak_jelas
+289857_Perwal Magelang Tahun 2009 No 13_ocr.pdf,321,309,2.5,,262,1.03,88.5,0.0,0.0,0.0,0.0,0.0,0.0,50000.0,0.0,tidak_jelas
+290035_Perwal Magelang Tahun 2010 No 27_ocr.pdf,179,195,1.9,,178,0.86,89.9,8.9,0.0,8.9,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
+290627_2023 perwal 28.pdf,1174,1218,8.7,,1168,0.96,94.0,6.0,0.0,4.9,0.0,0.0,0.0,400000.0,0.0,tidak_jelas
+292301_Peraturan-Nomor-79-Tahun-2011-tentang-peraturan-bupati-banyumas-nomor-79-tahun-2011-tentang-tarif-pelayanan-pada-rumah-sakit-umum-daerah-ajibarang-OCR.pdf,1669,294,1.2,,125,0.98,0.2,82.8,16.2,0.0,0.1,0.0,0.0,11000.0,0.0,tidak_jelas
+292317_Bup 47-OCR.pdf,280,293,3.0,,223,0.96,96.4,3.6,0.0,0.0,3.6,0.0,0.0,29950.0,0.0,tidak_jelas
+292386_Perbup Lombok Barat Nomor 31 Tahun 2023.pdf,107,121,0.6,,107,0.88,100.0,0.0,0.0,0.0,0.0,0.0,0.0,185000.0,0.0,tidak_jelas
+292400_PERBUP NOMOR 36 TAHUN 2017.pdf,250,180,3.2,,178,1.03,50.4,2.0,0.0,2.0,0.0,0.0,0.0,160000.0,0.0,tidak_jelas
+292424_2024pmkeuangan035.pdf,12407,6221,36.5,,874,0.5,0.0,0.0,100.0,0.0,0.0,0.0,0.0,301500.0,0.0,tidak_jelas
+292673_Bup 24-OCR.pdf,1108,1121,17.4,,403,0.77,54.7,0.8,0.0,0.5,0.0,0.0,0.0,114500.0,0.0,tidak_jelas
+293266_PERBUP KABUPATEN TELUK WONDAMA NO 14 TAHUN 2023.pdf,1241,781,4.8,,321,0.66,12.7,6.1,81.0,0.0,0.0,0.0,0.0,4152800.0,0.0,tidak_jelas
+294529_Perda No. 14 Tarif Yankes RSUD.pdf,125,121,1.5,,64,0.99,40.8,0.0,0.0,0.0,0.0,0.0,0.0,55000.0,0.0,tidak_jelas
+295095_2009perwal3375007-OCR.pdf,627,357,2.0,,235,0.97,17.5,60.0,9.6,4.1,8.6,0.0,0.0,88000.0,100.0,ya
+295200_2009perwal3375021-OCR.pdf,708,438,2.4,,269,0.88,16.2,56.2,7.3,0.6,11.4,0.0,0.0,84000.0,0.0,tidak_jelas
+295398_PERBUP NOMOR 56 TAHUN 2022.pdf,1261,1355,5.1,,1075,0.84,92.9,0.0,0.0,0.0,0.0,0.0,0.0,150000.0,100.0,ya
+295552_2011perwal3375027-OCR.pdf,1512,1423,4.6,,530,0.89,38.3,13.2,0.3,0.4,1.8,0.0,0.0,76125.0,100.0,ya
+295921_Perwali Kota Surabaya No 67 Tahun 2024.pdf,45,40,0.7,,39,1.07,97.8,0.0,0.0,0.0,0.0,0.0,0.0,130000.0,0.0,tidak_jelas
+297308_PerBup KTT 01-2023.pdf,229,268,1.8,,150,0.79,63.8,0.0,0.0,0.0,0.0,0.0,0.0,75000.0,0.0,tidak_jelas
+297404_PERBUP NOMOR 8 TAHUN 2023.pdf,929,923,2.1,,806,0.96,96.9,0.0,0.0,0.0,0.0,0.0,0.0,60000.0,0.0,tidak_jelas
+297907_2008PD327826018_PERUBAHAN_TARIF_RSU.pdf,323,257,2.9,,85,1.17,44.9,0.0,0.0,0.0,0.0,0.0,0.0,65000.0,0.0,tidak_jelas
+29998_PERBUP 08 TAHUN 2014.pdf,93,91,1.6,,93,1.02,100.0,0.0,0.0,0.0,0.0,0.0,0.0,45000.0,0.0,tidak_jelas
+300154_Perbup Murung Raya No.16 Tahun 2023.pdf,193,1148,47.8,,156,0.15,98.4,1.0,0.0,1.0,0.0,0.0,0.0,339955.0,100.0,ya
+306134_pb482023.pdf,803,796,4.8,,801,1.01,100.0,0.0,0.0,0.0,0.0,0.0,0.0,50000.0,0.0,tidak_jelas
+306269_Perbup Kbm 5_2024.pdf,538,343,5.7,,237,1.0,53.7,43.3,0.0,0.6,0.4,0.0,0.0,256000.0,0.0,tidak_jelas
+306946_Perbup Kotawaringin Timur No. 47 Tahun 2024.pdf,414,413,1.5,,400,1.0,1.4,0.5,0.0,0.5,0.0,0.0,0.0,50000.0,0.0,tidak_jelas
+308582_2023perwal3375098- OCR.pdf,48,58,4.2,,37,0.74,95.8,0.0,0.0,0.0,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
+308640_Perbup Bima Nomor 16 Tahun 2023.pdf,839,729,2.9,,648,0.98,54.8,38.7,20.4,0.7,22.3,0.0,0.0,60000.0,0.0,tidak_jelas
+308793_Perbup OKUT Nomor 31 Tahun 2024.pdf,1322,905,7.6,,1034,1.05,85.6,13.9,0.0,0.8,0.5,0.0,0.0,78900.0,100.0,tidak
+309048_PB 13 MSJ 2023.pdf,1325,1290,4.6,,1233,1.02,99.9,0.1,0.0,0.0,0.0,0.0,0.0,125000.0,0.0,tidak_jelas
+310004_pergub diy nomor 70 tahun 2024.pdf,79,78,0.7,,75,1.01,100.0,0.0,0.0,0.0,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
+310870_Peraturan Bupati Nomor 5 Tahun 2023 tentang Tarif Layanan Pada Badan Layanan Umum Daerah Rumah Sakit Umum Daerah Pesawaran Kabupaten Pesawaran.pdf,881,853,3.4,,785,1.02,91.4,1.0,0.0,0.9,0.0,0.0,0.0,100000.0,100.0,ya
+311432_94 th 2024.pdf,3661,3664,13.6,,3303,0.97,98.6,0.0,0.0,0.0,0.0,0.0,0.0,390000.0,0.0,tidak_jelas
+311726_2024pg0033034.pdf,4451,292,12.7,,3560,14.51,73.1,1.7,0.0,0.3,0.0,0.0,64.1,245000.0,64.1,tidak_jelas
+311739_Pergub No 39 Tahun 2023 Salinan_ok.pdf,956,944,1.5,,589,0.91,97.0,0.0,0.0,0.0,0.0,0.0,0.0,80000.0,0.0,tidak_jelas
+312308_Perda Kabupaten Boyolali N0.14 Tahun 2011_ocr.pdf,293,244,1.9,,263,1.14,91.8,7.2,0.0,2.4,2.0,0.0,0.0,27550.0,0.0,tidak_jelas
+312369_Perda Kabupaten Boyolali N0.19 Tahun 2011_ocr.pdf,285,222,3.7,,189,1.04,51.6,30.9,8.1,6.3,10.5,0.0,0.0,15000.0,0.0,tidak_jelas
+312388_Perda Kabupaten Boyolali N0.20 Tahun 2011_ocr.pdf,360,361,2.5,,201,0.82,35.3,40.3,0.0,4.4,35.8,0.0,0.0,15000.0,100.0,ya
+312717_Perda Nunukan 07-2021.pdf,246,246,1.9,,242,1.0,93.1,3.3,0.0,3.3,0.0,0.0,0.0,60000.0,0.0,tidak_jelas
+313083_Peraturan Walikota Kendari Nomor 34 Tahun 2024 Tentang Penyusunan Detail Rincian Objek Retribusi Atas Pelayanan Kesehatan Badan Layanan Umum Daerah RS.pdf,29,38,0.4,,29,0.76,96.6,0.0,0.0,0.0,0.0,0.0,0.0,300000.0,0.0,tidak_jelas
+316426_Perbup No. 98 Tarif Yankes RSUDDSR  fix_63e9d669362f1.pdf,621,608,7.5,,562,1.0,93.1,5.3,0.0,0.3,5.0,0.0,0.0,200000.0,100.0,ya
+316688_Perbup Kabupaten Lombok Barat Nomor 31 Tahun 2024.pdf,1299,1177,6.3,,831,0.77,100.0,0.0,0.0,0.0,0.0,0.0,0.0,7634000.0,0.0,tidak_jelas
+316727_Perbup Kabupaten Lombok Barat Nomor 33 Tahun 2024.pdf,366,364,1.3,,333,1.01,100.0,0.0,0.0,0.0,0.0,0.0,0.0,4909000.0,0.0,tidak_jelas
+317431_Perbup Kab. OKI No 2 Tahun 2025.pdf,1796,1734,4.3,,1739,1.03,66.4,0.8,0.0,0.4,0.2,0.0,0.0,418600.0,0.0,tidak_jelas
+317768_Peraturan Walikota Surakarta Nomor 140 Tahun 2024_OCR.pdf,705,693,5.2,,621,1.0,97.2,0.1,0.0,0.1,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
+318812_syscom462.pdf,101,96,0.8,,101,1.03,90.1,1.0,0.0,1.0,0.0,0.0,0.0,110500.0,100.0,ya
+319012_syscom5064.pdf,649,558,29.7,,626,1.15,85.2,10.2,1.4,9.7,0.2,0.0,0.0,180000.0,13.3,tidak_jelas
+319556_Pw No. 7 Tahun 2021 ttg Tarif Pelayanan Kesehatan Pada Rumah Sakit Umum Daerah Tipe D Sumbersari Ban_opt.pdf,1185,1282,3.6,,1161,0.85,99.1,0.9,0.0,0.7,0.0,0.0,0.0,1000000.0,0.0,tidak_jelas
+319562_Pw No. 15 Tahun 2021 ttg Tarif Pelayanan Kesehatan Pada RSUD Jenderal A. Yani Metro_opt_opt.pdf,5553,5579,11.3,,3668,0.95,98.8,1.1,0.1,1.0,0.0,0.0,0.0,4500000.0,100.0,ya
+320170_Perbup Pulpis No. 9 Tahun 2024.pdf,1035,1024,4.2,,881,0.97,99.7,0.0,0.0,0.0,0.0,0.0,0.0,100000.0,100.0,ya
+320318_Pw No. 37 Tahun 2011 ttg Tarif Pelayanan Kesehatan pada RSUD Jend A. Yani Komet.pdf,933,333,2.5,,308,1.0,19.0,63.5,17.6,0.0,0.0,0.0,0.0,75000.0,0.0,tidak_jelas
+320738_Perwali Tarakan 03-2025.pdf,1455,1452,5.9,,1325,1.0,94.4,0.1,0.0,0.1,0.0,0.0,0.0,220000.0,100.0,ya
+321216_PERBUP NOMOR 30 TAHUN 2018.pdf,451,457,1.0,,362,0.95,98.7,0.0,0.0,0.0,0.0,0.0,0.0,97000.0,100.0,ya
+32135_Perda-No.5-Th-2009-final.pdf,122,89,1.0,,84,1.02,82.0,7.4,8.2,7.4,0.0,0.0,0.0,27500.0,100.0,ya
+322023_Perbup Cianjur Nomor 3 Tahun 2025.pdf,814,849,2.5,,653,0.93,83.8,0.6,0.0,0.6,0.0,0.0,87.6,150000.0,87.6,tidak_jelas
 323633_PERGUB BALI NO 7 TH 2025.pdf,45,44,0.6,,45,1.02,100.0,0.0,0.0,0.0,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
-32371_Perda-No.1-Th-2009-final.pdf,2995,884,8.5,,802,1.01,13.7,28.5,61.5,0.2,0.0,0.0,0.0,671000.0,100.0,ya
-323827_media_peraturan_2024_2024perbup006_opt.pdf,5453,85,29.8,,5431,64.09,95.9,4.1,0.0,1.1,0.0,0.0,0.0,430000.0,0.0,tidak_jelas
-324175_Peraturan Bupati Luwu 44 2024.pdf,2122,2104,4.1,,1159,0.98,98.7,0.6,0.0,0.4,0.0,0.0,0.0,111000.0,0.0,tidak_jelas
-324698_PERBUP NO. 26 TAHUN 2024 TARIF LAYANAN PADA BADAN LAYANAN UMUM DAERAH RUMAH SAKIT UMUM DAERAH PROF.Dr.H.M.ANWAR MAKKATUTU.pdf,945,934,3.3,,831,1.0,98.6,0.1,0.0,0.1,0.0,0.0,0.0,115000.0,0.0,tidak_jelas
-324774_2025pergub027.pdf,1490,1488,8.7,,1035,1.0,97.0,0.5,0.0,0.5,0.0,0.0,0.0,799100.0,0.0,tidak_jelas
-325888_PERBUP NO 19 TAHUN 2018.pdf,447,444,2.2,,404,0.99,99.3,0.0,0.0,0.0,0.0,0.0,0.0,60000.0,0.0,tidak_jelas
-326187_PERBUP SAMOSIR NOMOR 19 TAHUN 2020.pdf,700,654,2.1,,633,1.01,91.0,7.0,0.0,0.1,0.6,0.0,3.3,75300.0,3.3,tidak_jelas
-326825_PERBUP NO. 2 TAHUN 2021.pdf,422,418,2.1,,384,1.0,95.3,2.4,0.0,2.4,0.0,0.0,0.0,40000.0,0.0,tidak_jelas
-32705_9 Tahun 2012.pdf,179,198,2.5,,76,0.81,63.1,0.0,0.0,0.0,0.0,0.0,0.0,26500.0,100.0,ya
-327120_PERWALI PEMATANG SIANTAR NO 13 TAHUN 2025..pdf,14597,14478,24.2,,4112,0.66,81.7,17.2,0.9,0.0,0.0,0.0,0.0,4800000.0,0.0,tidak_jelas
-327552_PERBUP NO. 45 TAHUN 2021.pdf,984,973,3.7,,705,0.92,98.2,0.9,0.0,0.0,0.1,0.0,0.0,95000.0,0.0,tidak_jelas
-328674_PERGUB_NO_117_TAHUN_2012.pdf,1423,1566,2.6,,1385,0.9,99.8,0.1,0.0,0.1,0.0,0.0,0.0,250000.0,0.0,tidak_jelas
-329092_Perwal Bogor 29 2022 ocr.pdf,1537,1374,2.4,,1222,0.95,81.2,0.5,18.2,0.5,0.0,0.0,55.4,350000.0,100.0,ya
+32371_Perda-No.1-Th-2009-final.pdf,2995,884,8.5,,801,1.01,13.6,28.5,61.5,0.2,0.0,0.0,0.0,671000.0,100.0,ya
+323827_media_peraturan_2024_2024perbup006_opt.pdf,5453,85,28.1,,5431,64.09,95.9,4.1,0.0,1.1,0.0,0.0,0.0,430000.0,0.0,tidak_jelas
+324175_Peraturan Bupati Luwu 44 2024.pdf,2122,2104,4.4,,1165,0.98,97.9,0.6,0.0,0.4,0.0,0.0,0.0,111000.0,0.0,tidak_jelas
+324698_PERBUP NO. 26 TAHUN 2024 TARIF LAYANAN PADA BADAN LAYANAN UMUM DAERAH RUMAH SAKIT UMUM DAERAH PROF.Dr.H.M.ANWAR MAKKATUTU.pdf,945,934,2.9,,831,1.0,98.6,0.1,0.0,0.1,0.0,0.0,0.0,115000.0,0.0,tidak_jelas
+324774_2025pergub027.pdf,1490,1488,7.6,,965,1.0,73.5,0.5,0.0,0.5,0.0,0.0,0.0,799100.0,0.0,tidak_jelas
+325888_PERBUP NO 19 TAHUN 2018.pdf,447,444,2.3,,404,0.99,99.3,0.0,0.0,0.0,0.0,0.0,0.0,60000.0,0.0,tidak_jelas
+326187_PERBUP SAMOSIR NOMOR 19 TAHUN 2020.pdf,700,654,2.1,,630,1.01,90.9,7.0,0.0,0.1,0.6,0.0,3.3,75300.0,3.3,tidak_jelas
+326825_PERBUP NO. 2 TAHUN 2021.pdf,422,418,2.3,,384,1.0,95.3,2.4,0.0,2.4,0.0,0.0,0.0,40000.0,0.0,tidak_jelas
+32705_9 Tahun 2012.pdf,179,198,0.4,,75,0.81,62.6,0.0,0.0,0.0,0.0,0.0,0.0,26500.0,100.0,ya
+327120_PERWALI PEMATANG SIANTAR NO 13 TAHUN 2025..pdf,14597,14478,25.3,,4108,0.66,81.6,17.2,0.9,0.0,0.0,0.0,0.0,4800000.0,0.0,tidak_jelas
+327552_PERBUP NO. 45 TAHUN 2021.pdf,984,973,3.3,,703,0.92,97.9,0.9,0.0,0.0,0.1,0.0,0.0,95000.0,0.0,tidak_jelas
+328674_PERGUB_NO_117_TAHUN_2012.pdf,1423,1566,2.7,,1385,0.9,99.8,0.1,0.0,0.1,0.0,0.0,0.0,250000.0,0.0,tidak_jelas
+329092_Perwal Bogor 29 2022 ocr.pdf,1537,1374,2.8,,1222,0.95,81.1,0.5,18.2,0.5,0.0,0.0,55.4,350000.0,100.0,ya
 33247_Peraturan Bupati Mamuju Tengah No 19 Tahun 2015 tentang Retribusi Pelayanan Kesehatan pada RSUD Mateng.pdf,113,153,1.5,,107,0.74,90.3,5.3,0.0,5.3,0.0,0.0,0.0,50000.0,0.0,tidak_jelas
-333926_Perbup. Sumba Timur No. 8 Tahun 2025.pdf,1091,1150,3.9,,1035,0.94,98.7,0.8,0.0,0.7,0.0,0.0,0.0,800000.0,100.0,ya
-333929_74 th 2025.pdf,100,99,0.8,,45,1.01,99.0,0.0,0.0,0.0,0.0,0.0,0.0,4523500.0,0.0,tidak_jelas
-336640_PERBUP NOMOR 3 TAHUN 2025 TENTANG DETAIL TARIF RSUD LAMADDUKELLENG.pdf,355,351,1.6,,345,1.01,100.0,0.0,0.0,0.0,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
-336924_Perda No. 25 Tahun 2011 ttg Retribusi RSU Lasinrang.pdf,375,240,2.8,,313,1.55,96.5,0.8,0.0,0.5,0.3,0.0,0.0,30000.0,100.0,ya
-337001_Perbup Tarif Layanan RSUD 2024.pdf,2227,2209,15.8,,1491,0.96,98.4,0.8,0.0,0.2,0.0,0.0,0.0,250000.0,100.0,ya
-33801_Perda_Kab Belitung_2005_13.Pdf,1401,577,2.4,,231,0.82,23.9,32.9,44.6,0.0,0.0,0.0,0.0,50000.0,0.0,tidak_jelas
-338309_PERGUB NO 221 TAHUN 2015.pdf,956,954,1.9,,837,0.97,100.0,0.0,0.0,0.0,0.0,0.0,0.0,80000.0,0.0,tidak_jelas
-338731_2021pb3301103_OCR.pdf,29,28,0.8,,28,1.04,44.8,41.4,0.0,41.4,0.0,0.0,0.0,50000.0,27.6,tidak_jelas
-338830_2016pb3301115_OCR.pdf,243,237,1.4,,226,1.0,89.7,8.6,0.0,2.9,2.5,0.0,2.9,25000.0,2.9,tidak_jelas
-342329_PERWALI_NO_8_TAHUN_2025.pdf,1375,1365,9.3,,1095,0.93,98.3,1.6,0.0,1.5,0.1,0.0,0.0,70000.0,0.0,tidak_jelas
-342949_PERBUP NO.38 TAHUN 2025.pdf,641,571,3.9,,422,0.91,79.9,11.4,8.7,0.0,6.4,0.0,0.0,99000.0,0.0,tidak_jelas
-344600_PERGUB NO. 38 TAHUN 2025.pdf,1126,1106,2.4,,965,0.95,91.0,0.0,0.0,0.0,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
-345619_Perbup Indramayu Nomor 1 Tahun 2026.pdf,62,61,0.6,,62,1.02,100.0,0.0,0.0,0.0,0.0,0.0,0.0,300000.0,0.0,tidak_jelas
-348022_PERBUP NO 1 TAHUN 2026.pdf,2420,2394,3.8,,2173,1.01,97.2,2.5,0.0,0.3,0.0,0.0,0.4,550000.0,100.0,ya
+333926_Perbup. Sumba Timur No. 8 Tahun 2025.pdf,1091,1150,3.3,,1035,0.94,98.7,0.8,0.0,0.7,0.0,0.0,0.0,800000.0,100.0,ya
+333929_74 th 2025.pdf,100,99,1.0,,45,1.01,99.0,0.0,0.0,0.0,0.0,0.0,0.0,4523500.0,0.0,tidak_jelas
+336640_PERBUP NOMOR 3 TAHUN 2025 TENTANG DETAIL TARIF RSUD LAMADDUKELLENG.pdf,355,351,1.3,,345,1.01,100.0,0.0,0.0,0.0,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
+336924_Perda No. 25 Tahun 2011 ttg Retribusi RSU Lasinrang.pdf,375,240,3.1,,313,1.55,96.5,0.8,0.0,0.5,0.3,0.0,0.0,30000.0,100.0,ya
+337001_Perbup Tarif Layanan RSUD 2024.pdf,2227,2209,15.1,,1491,0.96,98.4,0.8,0.0,0.2,0.0,0.0,0.0,250000.0,100.0,ya
+33801_Perda_Kab Belitung_2005_13.Pdf,1401,577,2.1,,231,0.82,23.9,32.9,44.6,0.0,0.0,0.0,0.0,50000.0,0.0,tidak_jelas
+338309_PERGUB NO 221 TAHUN 2015.pdf,956,954,1.8,,837,0.97,99.8,0.0,0.0,0.0,0.0,0.0,0.0,80000.0,0.0,tidak_jelas
+338731_2021pb3301103_OCR.pdf,29,28,0.5,,26,1.04,44.8,41.4,0.0,41.4,0.0,0.0,0.0,50000.0,27.6,tidak_jelas
+338830_2016pb3301115_OCR.pdf,243,237,1.5,,226,1.0,89.7,8.6,0.0,2.9,2.5,0.0,2.9,25000.0,2.9,tidak_jelas
+342329_PERWALI_NO_8_TAHUN_2025.pdf,1375,1365,9.1,,1092,0.93,98.1,1.6,0.0,1.5,0.1,0.0,0.0,70000.0,0.0,tidak_jelas
+342949_PERBUP NO.38 TAHUN 2025.pdf,641,571,3.9,,416,0.91,73.9,11.4,8.7,0.0,6.4,0.0,0.0,99000.0,0.0,tidak_jelas
+344600_PERGUB NO. 38 TAHUN 2025.pdf,1126,1106,2.3,,965,0.95,91.0,0.0,0.0,0.0,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
+345619_Perbup Indramayu Nomor 1 Tahun 2026.pdf,62,61,0.5,,62,1.02,100.0,0.0,0.0,0.0,0.0,0.0,0.0,300000.0,0.0,tidak_jelas
+348022_PERBUP NO 1 TAHUN 2026.pdf,2420,2394,3.9,,2173,1.01,97.2,2.5,0.0,0.3,0.0,0.0,0.4,550000.0,100.0,ya
 349383_Perbup 11 Tahun 2020.pdf,62,36,0.2,,28,0.97,48.4,45.2,6.5,0.0,0.0,0.0,0.0,73000.0,0.0,tidak_jelas
-34985_29. PERBUP TAHUN 2013 NO.29 TTG TARIF KESEHATAN BLUD RSUD PB.pdf,878,844,4.7,,660,0.98,92.9,0.0,4.6,0.0,0.0,0.0,0.0,70000.0,0.0,tidak_jelas
-350449_PERWALI 52 TAHUN 2025 TARIF LAYANAN KESEHATAN PADA RSD TIKEP.pdf,2303,2296,8.0,,1898,0.94,100.0,0.0,0.0,0.0,0.0,0.0,0.0,225000.0,0.0,tidak_jelas
-351358_PERATU~4.PDF,1,16,32.3,,1,0.06,100.0,0.0,0.0,0.0,0.0,0.0,0.0,2026.0,0.0,tidak_jelas
-352080_Perbup  Nomor  11 Thn 2026.pdf,40,101,3.2,,23,0.29,100.0,0.0,0.0,0.0,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
+34985_29. PERBUP TAHUN 2013 NO.29 TTG TARIF KESEHATAN BLUD RSUD PB.pdf,878,844,4.8,,660,0.98,91.7,0.0,4.6,0.0,0.0,0.0,0.0,70000.0,0.0,tidak_jelas
+350449_PERWALI 52 TAHUN 2025 TARIF LAYANAN KESEHATAN PADA RSD TIKEP.pdf,2303,2296,7.1,,1897,0.94,99.9,0.0,0.0,0.0,0.0,0.0,0.0,225000.0,0.0,tidak_jelas
+351358_PERATU~4.PDF,1,16,31.3,,1,0.06,100.0,0.0,0.0,0.0,0.0,0.0,0.0,2026.0,0.0,tidak_jelas
+352080_Perbup  Nomor  11 Thn 2026.pdf,40,101,3.5,,23,0.29,100.0,0.0,0.0,0.0,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
 353157_PERBUP NOMOR 23 TAHUN 2026.pdf,28,25,0.2,,28,1.12,96.4,3.6,0.0,3.6,0.0,0.0,0.0,212500.0,0.0,tidak_jelas
-353420_Perwali Kota Pekalongan Tahun 2025 No 25.pdf,35,31,9.3,,24,0.87,97.1,2.9,0.0,0.0,0.0,0.0,0.0,60000.0,0.0,tidak_jelas
-353654_Perbup Sukoharjo Tahun 2024 No 17.pdf,24,13,7.6,,19,1.54,87.5,0.0,0.0,0.0,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
-353759_Perbup 10 Tahun 2023.pdf,1824,674,1.8,,645,1.0,20.6,51.4,28.0,1.0,0.8,0.0,0.0,105000.0,0.0,tidak_jelas
-356505_74_PRW_25.pdf,304,348,2.6,,291,0.87,94.1,5.6,0.0,4.9,0.3,0.0,0.0,245000.0,0.0,tidak_jelas
+353420_Perwali Kota Pekalongan Tahun 2025 No 25.pdf,35,31,8.8,,24,0.87,97.1,2.9,0.0,0.0,0.0,0.0,0.0,60000.0,0.0,tidak_jelas
+353654_Perbup Sukoharjo Tahun 2024 No 17.pdf,24,13,8.1,,19,1.54,79.2,0.0,0.0,0.0,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
+353759_Perbup 10 Tahun 2023.pdf,1824,674,1.6,,643,1.0,20.5,51.4,28.0,1.0,0.8,0.0,0.0,105000.0,0.0,tidak_jelas
+356505_74_PRW_25.pdf,304,348,2.3,,291,0.87,94.1,5.6,0.0,4.9,0.3,0.0,0.0,245000.0,0.0,tidak_jelas
 36693_PERGUB 60 TAHUN 2014.pdf,14,11,0.6,,14,1.27,100.0,0.0,0.0,0.0,0.0,0.0,0.0,50000.0,0.0,tidak_jelas
-37336_PERGUB NO.38 THN 2010.pdf,38,35,0.2,,38,1.09,100.0,0.0,0.0,0.0,0.0,0.0,0.0,15000.0,0.0,tidak_jelas
-37769_PERDA NO.16 THN 2008.pdf,224,122,0.8,,126,1.03,9.8,17.0,73.2,0.0,2.7,0.0,0.0,15000.0,0.0,tidak_jelas
-40561_01 Perbup 2015 edit searchable.pdf,500,497,2.0,,378,0.89,100.0,0.0,0.0,0.0,0.0,0.0,0.0,41000.0,0.0,tidak_jelas
-40801_50 Perbup 2015 edit searchable.pdf,650,642,2.9,,546,0.93,100.0,0.0,0.0,0.0,0.0,0.0,0.0,60000.0,0.0,tidak_jelas
-40880_Lamp.I.Pergub_14_2015 ttg Tarif Layanan Badan Layanan Umum Daerah  Rumah Sakit Umum Daerah Dr. Doris Sylvanus.pdf,460,457,4.8,,448,1.0,97.2,0.0,0.0,0.0,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
-45247_PERWALI-NO-10-TAHUN-2014-TTG-TATA CARA PEMUNGUTAN RETRIBUSI PELAYANAN KESEHATAN.pdf,181,83,2.8,,79,1.02,29.3,70.7,0.0,0.0,0.0,0.0,0.0,260000.0,0.0,tidak_jelas
-48154_PERBUP-NO-14-TAHUN-2014-TTG-RETRIBUSI PELAYANAN KESEHATAN PADA RSUD SINTANG.pdf,14,22,3.2,,14,0.64,100.0,0.0,0.0,0.0,0.0,0.0,0.0,2014.0,0.0,tidak_jelas
-50217_7095PergubNo.17pdf.pdf,242,238,2.5,,226,1.0,98.8,0.0,0.0,0.0,0.0,0.0,0.0,40000.0,0.0,tidak_jelas
-50593_Perda No. 2 Tahun 2015.pdf,8,235,1.3,,5,0.02,100.0,0.0,0.0,0.0,0.0,0.0,0.0,51006.0,0.0,tidak_jelas
-50634_96 TARIF PELAYANAN KESEHATAN DI RSUD NGIMBANG.pdf,8668,2062,4.1,,1831,0.94,3.4,20.3,78.0,0.0,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
-51035_Perbup Butur No.08 Tahun 2017.pdf,162,299,3.0,,150,0.54,90.1,4.9,1.9,2.5,2.5,0.0,0.0,4000000.0,100.0,ya
-53305_Perbup Nomor 14 Tahun 2016.pdf,176,165,0.8,,159,1.01,13.1,86.4,0.0,20.5,58.0,0.0,0.0,22000.0,0.0,tidak_jelas
+37336_PERGUB NO.38 THN 2010.pdf,38,35,0.4,,38,1.09,100.0,0.0,0.0,0.0,0.0,0.0,0.0,15000.0,0.0,tidak_jelas
+37769_PERDA NO.16 THN 2008.pdf,224,122,0.4,,126,1.03,9.8,17.0,73.2,0.0,2.7,0.0,0.0,15000.0,0.0,tidak_jelas
+40561_01 Perbup 2015 edit searchable.pdf,500,497,1.8,,378,0.89,100.0,0.0,0.0,0.0,0.0,0.0,0.0,41000.0,0.0,tidak_jelas
+40801_50 Perbup 2015 edit searchable.pdf,650,642,3.1,,546,0.93,100.0,0.0,0.0,0.0,0.0,0.0,0.0,60000.0,0.0,tidak_jelas
+40880_Lamp.I.Pergub_14_2015 ttg Tarif Layanan Badan Layanan Umum Daerah  Rumah Sakit Umum Daerah Dr. Doris Sylvanus.pdf,460,457,5.7,,448,1.0,97.2,0.0,0.0,0.0,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
+45247_PERWALI-NO-10-TAHUN-2014-TTG-TATA CARA PEMUNGUTAN RETRIBUSI PELAYANAN KESEHATAN.pdf,181,83,2.5,,79,1.02,29.3,70.7,0.0,0.0,0.0,0.0,0.0,260000.0,0.0,tidak_jelas
+48154_PERBUP-NO-14-TAHUN-2014-TTG-RETRIBUSI PELAYANAN KESEHATAN PADA RSUD SINTANG.pdf,14,22,3.3,,14,0.64,100.0,0.0,0.0,0.0,0.0,0.0,0.0,2014.0,0.0,tidak_jelas
+50217_7095PergubNo.17pdf.pdf,242,238,2.4,,226,1.0,98.8,0.0,0.0,0.0,0.0,0.0,0.0,40000.0,0.0,tidak_jelas
+50593_Perda No. 2 Tahun 2015.pdf,8,235,1.5,,5,0.02,100.0,0.0,0.0,0.0,0.0,0.0,0.0,51006.0,0.0,tidak_jelas
+50634_96 TARIF PELAYANAN KESEHATAN DI RSUD NGIMBANG.pdf,8668,2062,4.3,,1831,0.94,3.4,20.3,78.0,0.0,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
+51035_Perbup Butur No.08 Tahun 2017.pdf,162,299,3.0,,149,0.54,89.5,4.9,1.9,2.5,2.5,0.0,0.0,4000000.0,100.0,ya
+53305_Perbup Nomor 14 Tahun 2016.pdf,176,165,0.7,,159,1.01,13.1,86.4,0.0,20.5,58.0,0.0,0.0,22000.0,0.0,tidak_jelas
 53722_Lamp I PERWAKO_2016_2.pdf,287,383,4.2,,257,0.67,79.4,14.3,6.3,0.0,1.7,0.0,0.0,163842.0,0.0,tidak_jelas
-53722_Lamp V PERWAKO_2016_2.pdf,32,31,0.1,,32,1.03,90.6,9.4,0.0,9.4,0.0,0.0,0.0,481000.0,0.0,tidak_jelas
-53788_Perda No. 2 Tahun 2012.pdf,8,235,1.2,,5,0.02,100.0,0.0,0.0,0.0,0.0,0.0,0.0,51006.0,0.0,tidak_jelas
-54743_2015-12 Perbup.pdf,117,24,8.6,,17,0.75,16.2,83.8,0.0,0.0,0.0,0.0,92.3,100000.0,100.0,tidak
-58133_Lampiran.pdf,1087,1092,1.5,,648,0.84,95.8,0.5,0.0,0.0,0.0,0.0,0.0,84500.0,0.0,tidak_jelas
-58308_Perda Provinsi Nomor 14 Tahun 2017.pdf,312,346,2.9,,306,0.86,97.8,0.6,0.0,0.6,0.0,0.0,0.0,56000.0,100.0,ya
-59470_perbup no 27 th 2015 ttg perub perbup no 30 th 2014 tarif pelay kesehatan.pdf,611,599,4.8,,513,1.01,89.0,10.0,0.8,0.3,8.8,0.0,0.0,75000.0,0.0,tidak_jelas
-60513_Perda_Kab_Bangka_Tengah_2008_32.pdf,857,626,3.6,,535,0.98,55.2,12.5,29.2,0.2,4.1,0.0,0.0,38500.0,0.0,tidak_jelas
-62748_PERBUP NOMOR 22 TAHUN 2015-TARIF PELAYANAN KESEHATAN BADAN LAYANAN UMUM DAERAH RUMAH SAKIT UMUM DAERAH dr. H. SLAMET MARTODIRDJO.pdf,157,119,1.6,,119,1.0,46.5,32.5,21.0,0.6,19.1,0.0,0.0,265000.0,100.0,ya
-62922_PERWAL NOMOR 13 TAHUN 2015 TTG TARIF PELAYANAN KESEHATAN DAN FASILITAS LAINNYA PADA BLU RSU.pdf,1602,741,6.7,,369,0.89,13.5,0.6,65.5,0.6,0.0,0.0,0.0,144000.0,0.0,tidak_jelas
-62930_Peraturan-Bupati-Nomor-1-Tahun-2015-tentang-Tarif-Layanan-RSUD-BLUD.pdf,187,185,2.5,,156,0.96,72.7,1.6,0.0,1.6,0.0,0.0,0.0,60000.0,8.0,tidak_jelas
-63064_PERWAL NOMOR 12 TAHUN 2016 TTG TARIF PELAYANAN KESEHATAN DAN FASILITAS LAINNYA PADA BLU RSU.pdf,469,475,6.0,,129,0.82,26.0,0.0,0.0,0.0,0.0,0.0,0.0,310000.0,0.0,tidak_jelas
-63272_Perwal Kota Bogor No. 25 Tahun 2014.pdf,865,794,1.7,,648,0.9,84.4,13.9,0.0,0.0,0.0,0.0,0.0,130000.0,100.0,ya
-63986_PERBUP NO. 42 TAHUN 2017.pdf,1786,1014,3.6,,1177,1.17,49.4,1.3,49.9,0.6,0.1,0.0,0.0,4273450.0,0.0,tidak_jelas
-64172_PERWAL SIBOLGA NO. 26 TAHUN 2016_compare.pdf,466,466,3.4,,433,0.98,95.1,2.8,0.0,1.9,0.0,0.0,0.0,80000.0,0.0,tidak_jelas
-64530_Pergub Sulteng 2016_15.pdf,287,286,2.5,,240,0.95,99.0,0.0,0.0,0.0,0.0,0.0,0.0,45000.0,100.0,ya
-65616_Pergub DIY No. 4 Tahun 2017 ttg Tarif Layanan Pada Rumah Sakit Jiwa Grhasia.pdf,911,906,2.5,,812,0.99,94.4,5.4,0.0,3.3,0.0,0.0,0.0,50000.0,100.0,ya
-66925_PERDA TAPANULI TENGAH NO. 15 TAHUN 2011.pdf,116,111,1.8,,79,0.96,87.1,12.9,0.0,1.7,0.9,0.0,0.0,25000.0,0.0,tidak_jelas
-69031_perda tebing tinggi no. 4 thn 2007_compare.pdf,89,54,1.1,,70,1.3,77.5,22.5,0.0,4.5,2.2,0.0,0.0,13000.0,100.0,ya
-69665_PERBUP NO.1 THN 2016.pdf,129,142,1.4,,124,0.89,87.6,10.1,0.0,10.1,0.0,0.0,0.0,55000.0,0.0,tidak_jelas
-70829_4. PERDA NOMOR 4 TAHUN 2017 TENTANG TARIF RETRIBUSI PELAYANAN KESEHATAN DI RUMAH SAKIT UMUM DAERAH ASY-SYIFA’ SUMBAWA BARAT.pdf,485,479,3.0,,426,0.98,94.4,3.1,0.0,3.1,0.0,0.0,0.0,75000.0,100.0,ya
-71090_Perda Kabupaten Jayapura nomor 5 tahun 2008.pdf,275,190,1.5,,152,1.07,41.8,46.9,0.0,11.3,1.5,0.0,0.0,65000.0,100.0,ya
+53722_Lamp V PERWAKO_2016_2.pdf,32,31,0.3,,32,1.03,90.6,9.4,0.0,9.4,0.0,0.0,0.0,481000.0,0.0,tidak_jelas
+53788_Perda No. 2 Tahun 2012.pdf,8,235,1.0,,5,0.02,100.0,0.0,0.0,0.0,0.0,0.0,0.0,51006.0,0.0,tidak_jelas
+54743_2015-12 Perbup.pdf,117,24,9.3,,17,0.75,16.2,83.8,0.0,0.0,0.0,0.0,92.3,100000.0,100.0,tidak
+58133_Lampiran.pdf,1087,1092,1.4,,648,0.84,95.8,0.5,0.0,0.0,0.0,0.0,0.0,84500.0,0.0,tidak_jelas
+58308_Perda Provinsi Nomor 14 Tahun 2017.pdf,312,346,2.8,,307,0.86,96.8,0.6,0.0,0.6,0.0,0.0,0.0,56000.0,100.0,ya
+59470_perbup no 27 th 2015 ttg perub perbup no 30 th 2014 tarif pelay kesehatan.pdf,611,599,4.7,,511,1.01,86.7,10.0,0.8,0.3,8.8,0.0,0.0,75000.0,0.0,tidak_jelas
+60513_Perda_Kab_Bangka_Tengah_2008_32.pdf,857,626,3.2,,535,0.98,54.8,12.5,29.2,0.2,4.1,0.0,0.0,38500.0,0.0,tidak_jelas
+62748_PERBUP NOMOR 22 TAHUN 2015-TARIF PELAYANAN KESEHATAN BADAN LAYANAN UMUM DAERAH RUMAH SAKIT UMUM DAERAH dr. H. SLAMET MARTODIRDJO.pdf,157,119,1.5,,119,1.0,46.5,32.5,21.0,0.6,19.1,0.0,0.0,265000.0,100.0,ya
+62922_PERWAL NOMOR 13 TAHUN 2015 TTG TARIF PELAYANAN KESEHATAN DAN FASILITAS LAINNYA PADA BLU RSU.pdf,1602,741,6.6,,358,0.89,13.5,0.6,65.5,0.6,0.0,0.0,0.0,144000.0,0.0,tidak_jelas
+62930_Peraturan-Bupati-Nomor-1-Tahun-2015-tentang-Tarif-Layanan-RSUD-BLUD.pdf,187,185,2.4,,156,0.96,72.7,1.6,0.0,1.6,0.0,0.0,0.0,60000.0,8.0,tidak_jelas
+63064_PERWAL NOMOR 12 TAHUN 2016 TTG TARIF PELAYANAN KESEHATAN DAN FASILITAS LAINNYA PADA BLU RSU.pdf,469,475,6.3,,109,0.82,26.0,0.0,0.0,0.0,0.0,0.0,0.0,310000.0,0.0,tidak_jelas
+63272_Perwal Kota Bogor No. 25 Tahun 2014.pdf,865,794,2.2,,648,0.9,83.9,13.9,0.0,0.0,0.0,0.0,0.0,130000.0,100.0,ya
+63986_PERBUP NO. 42 TAHUN 2017.pdf,1786,1014,3.0,,1177,1.17,49.4,1.3,49.9,0.6,0.1,0.0,0.0,4273450.0,0.0,tidak_jelas
+64172_PERWAL SIBOLGA NO. 26 TAHUN 2016_compare.pdf,466,466,0.9,,433,0.98,95.1,2.8,0.0,1.9,0.0,0.0,0.0,80000.0,0.0,tidak_jelas
+64530_Pergub Sulteng 2016_15.pdf,287,286,2.2,,238,0.95,96.2,0.0,0.0,0.0,0.0,0.0,0.0,45000.0,100.0,ya
+65616_Pergub DIY No. 4 Tahun 2017 ttg Tarif Layanan Pada Rumah Sakit Jiwa Grhasia.pdf,911,906,2.2,,810,0.99,93.7,5.4,0.0,3.3,0.0,0.0,0.0,50000.0,100.0,ya
+66925_PERDA TAPANULI TENGAH NO. 15 TAHUN 2011.pdf,116,111,1.7,,79,0.96,87.1,12.9,0.0,1.7,0.9,0.0,0.0,25000.0,0.0,tidak_jelas
+69031_perda tebing tinggi no. 4 thn 2007_compare.pdf,89,54,1.0,,70,1.3,77.5,22.5,0.0,4.5,2.2,0.0,0.0,13000.0,100.0,ya
+69665_PERBUP NO.1 THN 2016.pdf,129,142,1.5,,124,0.89,87.6,10.1,0.0,10.1,0.0,0.0,0.0,55000.0,0.0,tidak_jelas
+70829_4. PERDA NOMOR 4 TAHUN 2017 TENTANG TARIF RETRIBUSI PELAYANAN KESEHATAN DI RUMAH SAKIT UMUM DAERAH ASY-SYIFA’ SUMBAWA BARAT.pdf,485,479,2.8,,425,0.98,92.8,3.1,0.0,3.1,0.0,0.0,0.0,75000.0,100.0,ya
+71090_Perda Kabupaten Jayapura nomor 5 tahun 2008.pdf,275,190,1.4,,152,1.07,41.8,46.9,0.0,11.3,1.5,0.0,0.0,65000.0,100.0,ya
 71145_Peraturan Bupati No. 17 tahun 2016 tentang Tarif Pelayanan Kesehatan pada RSUD kelas C Kabupaten Sorong.pdf,802,814,5.1,,566,0.78,66.7,32.7,0.0,32.7,0.0,0.0,0.0,520693.0,0.0,tidak_jelas
-71514_PERATURAN WALIKOTA BANDAR LAMPUNG NOMOR 02 TAHUN 2015 PENAMBAHAN JENIS PELYN. DAN PERUBHN. TARIF RETRIBUSI PADA BLUD RSUD TJOKRODIPO BL.pdf,196,103,1.0,,195,1.89,99.5,0.5,0.0,0.0,0.0,0.0,0.0,45000.0,100.0,ya
-73503_Peraturan Bupati No. 2 Thn 2017.pdf,155,158,4.1,,79,0.94,81.9,0.0,0.0,0.0,0.0,0.0,0.0,112000.0,100.0,tidak
+71514_PERATURAN WALIKOTA BANDAR LAMPUNG NOMOR 02 TAHUN 2015 PENAMBAHAN JENIS PELYN. DAN PERUBHN. TARIF RETRIBUSI PADA BLUD RSUD TJOKRODIPO BL.pdf,196,103,1.0,,195,1.89,99.0,0.5,0.0,0.0,0.0,0.0,0.0,45000.0,100.0,ya
+73503_Peraturan Bupati No. 2 Thn 2017.pdf,155,158,4.1,,99,0.94,63.9,0.0,0.0,0.0,0.0,0.0,0.0,112000.0,100.0,tidak
 73764_Perda no. 10-2007 ttg retribusi pelayanan kesehatan pada rumah sakit jiwa.pdf,305,303,1.2,,140,0.94,69.5,0.3,0.0,0.3,0.0,0.0,0.0,24000.0,0.0,tidak_jelas
-74196_perbup 24 2017-Perubahan atas Perbup No.23 Tahun 2014 ttg Retribusi Pelayanan Kesehatan Pada RSUD Kab. Bengkayang ocr.pdf,3811,2553,12.9,,1515,1.06,57.5,4.3,25.8,1.3,2.1,0.0,0.0,550000.0,0.0,tidak_jelas
-75562_PERBUB NO 15 TAHUN 2017 ttg Pola Tarif Jasa Pelayanan Kesehatan pada Badan Layanan Umum Daerah Rumah Sakit Umum Daerah Lubuk Sikaping.pdf,413,526,1.9,,315,0.56,65.9,32.7,1.5,3.1,1.9,0.0,0.0,55000.0,0.0,tidak_jelas
-75900_PERBUP NO 15 TAHUN 2016 TENTANG PERUBAHAN ATAS PERBUP NO 57 TH 2015 TENTANG TARIF LAYANAN KESEHATAN PADA BLUD RSUD AJI MUHAMMAD PARIKESIT.pdf,101,162,0.8,,92,0.62,85.1,5.0,0.0,0.0,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
-76038_KAB_SERDANG BEDAGAI_13_2008_ok.pdf,664,563,2.8,,533,1.08,84.6,9.2,0.0,2.4,0.2,0.0,0.0,53750.0,100.0,ya
-76196_PERBUP NO 39 TAHUN 2017 ttg Penetapan Pola Tarif Layanan Pada Badan Layanan Umum Rumah Sakit Umum Daerah Solok Selatan.pdf,1177,821,1.9,,641,0.95,48.8,19.9,28.5,0.0,5.9,0.0,0.0,40000.0,0.0,tidak_jelas
-76354_PERBUP-NO-18-2017.pdf,518,502,1.4,,489,1.03,95.8,0.4,0.0,0.4,0.0,0.0,4.4,75000.0,4.4,tidak_jelas
+74196_perbup 24 2017-Perubahan atas Perbup No.23 Tahun 2014 ttg Retribusi Pelayanan Kesehatan Pada RSUD Kab. Bengkayang ocr.pdf,3811,2553,13.3,,1549,1.06,55.5,4.3,25.8,1.3,2.1,0.0,0.0,550000.0,0.0,tidak_jelas
+75562_PERBUB NO 15 TAHUN 2017 ttg Pola Tarif Jasa Pelayanan Kesehatan pada Badan Layanan Umum Daerah Rumah Sakit Umum Daerah Lubuk Sikaping.pdf,413,526,1.9,,315,0.56,65.6,32.7,1.5,3.1,1.9,0.0,0.0,55000.0,0.0,tidak_jelas
+75900_PERBUP NO 15 TAHUN 2016 TENTANG PERUBAHAN ATAS PERBUP NO 57 TH 2015 TENTANG TARIF LAYANAN KESEHATAN PADA BLUD RSUD AJI MUHAMMAD PARIKESIT.pdf,101,162,0.6,,92,0.62,85.1,5.0,0.0,0.0,0.0,0.0,0.0,150000.0,0.0,tidak_jelas
+76038_KAB_SERDANG BEDAGAI_13_2008_ok.pdf,664,563,2.7,,533,1.08,84.6,9.2,0.0,2.4,0.2,0.0,0.0,53750.0,100.0,ya
+76196_PERBUP NO 39 TAHUN 2017 ttg Penetapan Pola Tarif Layanan Pada Badan Layanan Umum Rumah Sakit Umum Daerah Solok Selatan.pdf,1177,821,1.8,,641,0.95,48.6,12.1,36.3,0.0,5.9,0.0,0.0,40000.0,0.0,tidak_jelas
+76354_PERBUP-NO-18-2017.pdf,518,502,1.3,,486,1.03,95.6,0.4,0.0,0.4,0.0,0.0,4.4,75000.0,4.4,tidak_jelas
 76415_BD 42 Perubahan Tarif Non Kelas III RSUD.pdf,52,50,0.9,,45,1.04,100.0,0.0,0.0,0.0,0.0,0.0,0.0,35000.0,0.0,tidak_jelas
-76532_PERBUP NO. 01 TH. 2017_PERUBAHAN TARIF PENYESUAIAN.pdf,57,26,0.4,,15,1.08,26.3,66.7,0.0,0.0,5.3,0.0,100.0,50000.0,100.0,tidak_jelas
-77349_27. PERBUP_NO_27_TH_2017_TTG_TARIF_LAYANAN_BLUD_RSUD_SUNAN_KALIJAGA_KAB_DEMAK-.pdf,442,432,3.1,,297,0.94,89.1,0.7,8.8,0.0,0.0,0.0,0.0,212500.0,0.0,tidak_jelas
-78945_PERBUP THN 2015 NMR 43  PERUBAHAN ATAS PERBUP NMR 50 TAHUN 2011 TTG PENETAPAN POLA TARIF PELAYANAN KESEHATAN RSUD AJI BAT~1.pdf,504,492,1.3,,486,1.01,75.0,24.8,0.0,22.4,0.0,0.0,0.0,100000.0,100.0,ya
-78964_PERBUP THN 2015 NMR 57  TARIF PELAYANAN KESEHATAN PD BADAN LAYANAN UMUM DAERAH RSUD AM PARIKESIT.pdf,86,65,0.8,,75,1.28,98.8,0.0,0.0,0.0,0.0,0.0,0.0,162250.0,0.0,tidak_jelas
+76532_PERBUP NO. 01 TH. 2017_PERUBAHAN TARIF PENYESUAIAN.pdf,57,26,0.4,,13,1.08,21.1,66.7,0.0,0.0,5.3,0.0,100.0,50000.0,100.0,tidak_jelas
+77349_27. PERBUP_NO_27_TH_2017_TTG_TARIF_LAYANAN_BLUD_RSUD_SUNAN_KALIJAGA_KAB_DEMAK-.pdf,442,432,3.1,,295,0.94,87.6,0.7,8.8,0.0,0.0,0.0,0.0,212500.0,0.0,tidak_jelas
+78945_PERBUP THN 2015 NMR 43  PERUBAHAN ATAS PERBUP NMR 50 TAHUN 2011 TTG PENETAPAN POLA TARIF PELAYANAN KESEHATAN RSUD AJI BAT~1.pdf,504,492,1.1,,485,1.01,74.8,24.8,0.0,22.4,0.0,0.0,0.0,100000.0,100.0,ya
+78964_PERBUP THN 2015 NMR 57  TARIF PELAYANAN KESEHATAN PD BADAN LAYANAN UMUM DAERAH RSUD AM PARIKESIT.pdf,86,65,0.8,,75,1.28,96.5,0.0,0.0,0.0,0.0,0.0,0.0,162250.0,0.0,tidak_jelas
 82636_PERDA NO 8 2009 TTG Retribusi Yankes RSUD Prakarsa DPRD Ldk.pdf,246,244,1.4,,202,0.93,89.4,2.0,0.0,2.0,0.0,0.0,0.0,90000.0,100.0,ya
 84504_Pergub Kaltim 39-2016 ttg BLUD RSJD Atma Husada.pdf,258,210,1.0,,245,1.18,96.5,0.0,0.0,0.0,0.0,0.0,0.0,100000.0,0.0,tidak_jelas
-85490_Perda 10 tahun 2004.pdf,72,36,1.0,,30,1.08,34.7,58.3,6.9,1.4,6.9,0.0,0.0,45500.0,0.0,tidak_jelas
-86016_PERBUP 56 THN 2017.pdf,2757,1913,7.1,,1570,1.01,42.2,21.8,35.2,0.4,2.1,0.0,0.0,519600.0,0.0,tidak_jelas
-86117_PERBUP_14_TH_2017.pdf,4436,4405,15.5,,2071,0.94,99.1,0.2,0.6,0.0,0.0,0.0,0.0,275000.0,100.0,ya
-86440_PERWALI 123-2017 TTG TARIF LAYANAN PADA RUMAH SAKIT UMUM dr. WAHIDN SUDIRO HUSODO KOTA MOJOKERTO.pdf,1903,2021,3.1,,1717,0.89,98.9,1.1,0.0,0.0,0.0,0.0,0.0,250000.0,8.0,tidak_jelas
-86757_PERBUP 37-2017 ttg Pola Tarif BLUD RSUD Sangkulirang.pdf,279,278,1.1,,276,1.0,95.7,2.9,0.0,2.9,0.0,0.0,0.0,70000.0,100.0,tidak
-87099_PERBUP 23 - 2013 ttg Tarif Layanan Rumah Sakit Badan Layanan Umum Daerah Rumah Sakit Umum Daerah Sangatta.pdf,547,491,1.0,,535,1.11,98.9,0.9,0.0,0.9,0.0,0.0,0.9,75000.0,100.0,ya
-87189_PERBUP_31_2012.pdf,320,322,2.2,,280,0.98,92.2,2.5,0.0,1.6,0.9,0.0,0.0,45000.0,100.0,ya
-88199_PERBUP NOMOR. 25 2017 TARIF RESTRIBUSI CT SCAN & ANALISA GAS DARAH.pdf,17,13,0.3,,16,1.23,82.4,17.6,0.0,0.0,17.6,0.0,0.0,1135000.0,0.0,tidak_jelas
-88626_PERBUP 54-2015 ttg Perubahan Kedua Lampiran Peraturan Bupati Kutai Timur Nomor 23 Tahun 2013 Tentang Tarif Layanan Rumah Sakit BLUD RSUD Sangatta.pdf,593,593,0.8,,578,0.99,99.5,0.0,0.0,0.0,0.0,0.0,100.0,90000.0,100.0,tidak_jelas
-91707_Perbup Sleman No. 2 Tahun 2018 ttg Tarif Layanan Badan Layanan Umum Daerah Rumah Sakit Umum Daerah Prambanan Kabupaten Sleman_Lampiran 2.pdf,759,422,1.4,,405,1.04,17.7,78.1,8.6,0.0,1.1,0.0,0.0,93300.0,0.0,tidak_jelas
-92536_1.pdf,1109,617,4.9,,255,0.94,3.2,59.0,0.0,1.4,5.1,0.0,0.0,32000.0,100.0,ya
-93998_2018 - PERBUP 22 TARIF LAYANAN PADA BLUD edit.pdf,1697,1691,3.3,,1574,0.99,99.6,0.0,0.0,0.0,0.0,0.0,0.0,1900000.0,100.0,ya
+85490_Perda 10 tahun 2004.pdf,72,36,1.1,,30,1.08,34.7,58.3,6.9,1.4,6.9,0.0,0.0,45500.0,0.0,tidak_jelas
+86016_PERBUP 56 THN 2017.pdf,2757,1913,6.9,,1570,1.01,42.0,21.8,35.2,0.4,2.1,0.0,0.0,519600.0,0.0,tidak_jelas
+86117_PERBUP_14_TH_2017.pdf,4436,4405,14.0,,2071,0.94,99.1,0.2,0.6,0.0,0.0,0.0,0.0,275000.0,100.0,ya
+86440_PERWALI 123-2017 TTG TARIF LAYANAN PADA RUMAH SAKIT UMUM dr. WAHIDN SUDIRO HUSODO KOTA MOJOKERTO.pdf,1903,2021,3.3,,1717,0.89,98.9,1.1,0.0,0.0,0.0,0.0,0.0,250000.0,8.0,tidak_jelas
+86757_PERBUP 37-2017 ttg Pola Tarif BLUD RSUD Sangkulirang.pdf,279,278,1.2,,276,1.0,95.7,2.9,0.0,2.9,0.0,0.0,0.0,70000.0,100.0,tidak
+87099_PERBUP 23 - 2013 ttg Tarif Layanan Rumah Sakit Badan Layanan Umum Daerah Rumah Sakit Umum Daerah Sangatta.pdf,547,491,1.2,,532,1.11,97.6,0.9,0.0,0.9,0.0,0.0,0.9,75000.0,100.0,ya
+87189_PERBUP_31_2012.pdf,320,322,2.2,,276,0.98,91.2,2.5,0.0,1.6,0.9,0.0,0.0,45000.0,100.0,ya
+88199_PERBUP NOMOR. 25 2017 TARIF RESTRIBUSI CT SCAN & ANALISA GAS DARAH.pdf,17,13,0.2,,16,1.23,82.4,17.6,0.0,0.0,17.6,0.0,0.0,1135000.0,0.0,tidak_jelas
+88626_PERBUP 54-2015 ttg Perubahan Kedua Lampiran Peraturan Bupati Kutai Timur Nomor 23 Tahun 2013 Tentang Tarif Layanan Rumah Sakit BLUD RSUD Sangatta.pdf,593,593,0.9,,575,0.99,98.7,0.0,0.0,0.0,0.0,0.0,100.0,90000.0,100.0,tidak_jelas
+91707_Perbup Sleman No. 2 Tahun 2018 ttg Tarif Layanan Badan Layanan Umum Daerah Rumah Sakit Umum Daerah Prambanan Kabupaten Sleman_Lampiran 2.pdf,759,422,0.8,,405,1.04,17.4,78.1,8.6,0.0,1.1,0.0,0.0,93300.0,0.0,tidak_jelas
+92536_1.pdf,1106,617,4.8,,248,0.94,3.2,59.0,0.0,1.2,5.2,0.0,0.0,32000.0,100.0,ya
+93998_2018 - PERBUP 22 TARIF LAYANAN PADA BLUD edit.pdf,1697,1691,3.5,,1570,0.99,98.9,0.0,0.0,0.0,0.0,0.0,0.0,1900000.0,100.0,ya
 94147_Perwa.45-2017.Rubah No.7-2015.Rubah Tarif Retribusi Pelyn. Kesehatan Pd. RSUD.pdf,1656,1337,4.5,,1412,1.04,86.1,13.8,0.0,0.0,0.1,0.0,0.0,435000.0,0.0,tidak_jelas
-94587_perwali 13.pdf,266,210,1.1,,164,1.06,55.3,44.0,0.0,5.6,20.7,0.0,0.0,7900.0,0.0,tidak_jelas
-95045_perwal 12 2017 penetapan tarif layanban BLUD RSUD kota madiun.pdf,518,410,5.2,,345,0.98,46.1,46.1,6.9,1.5,9.1,0.0,0.0,120000.0,0.0,tidak_jelas
-95850_LAMPTARIF_Per__Bu__12_2018_Tarif_RSUD-sign.pdf,603,601,2.1,,152,0.92,99.0,0.0,0.0,0.0,0.0,0.0,0.0,18400.0,0.0,tidak_jelas
-95850_LAMPTARIF_Per__Bu__12_2018_Tarif_RSUD-sign1.pdf,603,601,2.1,,152,0.92,99.0,0.0,0.0,0.0,0.0,0.0,0.0,18400.0,0.0,tidak_jelas
-97360_Perbup No 63 Tahun 2017.pdf,2179,650,4.1,,545,1.0,5.8,21.3,73.1,0.0,0.0,0.0,0.0,1950000.0,0.0,tidak_jelas
-97361_Perbup No 64 Tahun 2017.pdf,435,319,1.5,,186,0.91,42.1,33.6,17.9,0.0,0.9,0.0,0.0,500000.0,0.0,tidak_jelas
-98317_Peraturan Daerah No. 6 Thn 2018.pdf,86,92,7.2,,45,0.9,67.4,4.7,0.0,4.7,0.0,0.0,0.0,115500.0,93.0,tidak_jelas
-99527_Perwako 4.pdf,1050,1057,1.6,,870,0.91,100.0,0.0,0.0,0.0,0.0,0.0,0.0,112000.0,100.0,ya
+94587_perwali 13.pdf,266,210,1.2,,164,1.06,55.3,44.0,0.0,5.6,20.7,0.0,0.0,7900.0,0.0,tidak_jelas
+95045_perwal 12 2017 penetapan tarif layanban BLUD RSUD kota madiun.pdf,518,410,5.6,,367,0.98,40.3,46.1,6.9,1.5,9.1,0.0,0.0,120000.0,0.0,tidak_jelas
+95850_LAMPTARIF_Per__Bu__12_2018_Tarif_RSUD-sign.pdf,603,601,2.0,,152,0.92,99.0,0.0,0.0,0.0,0.0,0.0,0.0,18400.0,0.0,tidak_jelas
+95850_LAMPTARIF_Per__Bu__12_2018_Tarif_RSUD-sign1.pdf,603,601,1.9,,152,0.92,99.0,0.0,0.0,0.0,0.0,0.0,0.0,18400.0,0.0,tidak_jelas
+97360_Perbup No 63 Tahun 2017.pdf,2179,650,4.1,,553,1.0,5.2,21.3,73.1,0.0,0.0,0.0,0.0,1950000.0,0.0,tidak_jelas
+97361_Perbup No 64 Tahun 2017.pdf,435,319,1.6,,190,0.91,38.4,33.6,17.9,0.0,0.9,0.0,0.0,500000.0,0.0,tidak_jelas
+98317_Peraturan Daerah No. 6 Thn 2018.pdf,86,92,6.7,,53,0.9,59.3,4.7,0.0,4.7,0.0,0.0,0.0,115500.0,88.4,tidak_jelas
+99527_Perwako 4.pdf,1050,1057,1.9,,855,0.91,97.9,0.0,0.0,0.0,0.0,0.0,0.0,112000.0,100.0,ya
 99742_Perbup No 8 Tahun 2009 ocr.pdf,523,502,4.0,,453,1.01,95.4,0.0,0.0,0.0,0.0,0.0,0.0,32000.0,0.0,tidak_jelas
