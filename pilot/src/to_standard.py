@@ -64,7 +64,7 @@ KELAS_IN_HEAD = re.compile(r"\bKELAS\s+(III|II|I)\b", re.I)
 # kata "kelas" termasuk salah OCR yang sering muncul (Ketas, Kelss, Klas, Kls)
 KELAS_W = r"(?:kelas|kelss|ketas|kclas|kelaa|klas|kls)"
 KELAS_ROW = re.compile(
-    rf"^({KELAS_W}\s*(iii|ill|ii|i)\s*[ab]?(\s*/\s*(rawat jalan|poli\w*|igd|iii|ii|i))?|({KELAS_W}\s*)?utama|iii|ii|i|"
+    rf"^({KELAS_W}\s*(iii|ill|ii|i)\s*[ab]?(\s*/\s*(rawat jalan|poli\w*|igd|iii|ii|i))?|({KELAS_W}\s*)?utama(\s*(ii|i))?|iii|ii|i|"
     rf"({KELAS_W}\s*)?vvip|({KELAS_W}\s*)?vip(\s*(pratama|madya|utama|a|b))?(\s*&\s*madya)?|"
     r"presiden suite|vvip\s*/\s*presiden suite|icu|hcu|picu|nicu|semua kelas|one day( surgery)?)$", re.I)
 # kelas di ujung nama ("Kecil VIP", "Rawat Inap Kelas II")
@@ -84,6 +84,7 @@ KELAS_STD = {"iii": "III", "ii": "II", "i": "I", "kelas iii": "III", "kelas ii":
 
 
 # penomoran judul yang tidak tertangkap NUMBERING: "II Rawat Jalan", "A.1.1.4.1 TMO ..."
+PAREN_NUM = re.compile(r"^\s*\(?(?:[a-z]|\d{1,3})\)\s+")  # "a) ", "2) ", "(1) "
 HEAD_NUM = re.compile(r"^\s*(?:[IVX]{1,4}|[A-Z](?:\.\d+)+\.?)\s+(?=[A-Za-z(])")
 
 
@@ -100,6 +101,9 @@ def std_kelas(s):
     if m:
         return f"{m.group(1).upper()} {m.group(2).upper()}"
     t = re.sub(r"^kelas\s+(vvip|vip|utama)", r"\1", t)
+    m = re.fullmatch(r"utama\s*(ii|i)", t)
+    if m:
+        return f"Utama {m.group(1).upper()}"
     if t in KELAS_STD:
         return KELAS_STD[t]
     if t.startswith("vip"):
@@ -299,8 +303,8 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                         grp_header, cls_header, rows_at_hdr = header_groups(line), [], len(rows)
                     elif len(hc) >= 2:
                         cls_header, grp_header, rows_at_hdr = hc, [], len(rows)
-                    body = NUMBERING.sub("", line).strip(" :-.")
-                    numbered = bool(NUMBERING.match(line) or HEAD_NUM.match(line))
+                    body = PAREN_NUM.sub("", NUMBERING.sub("", line)).strip(" :-.")
+                    numbered = bool(NUMBERING.match(line) or HEAD_NUM.match(line) or PAREN_NUM.match(line))
                     if HEAD_NUM.match(line):
                         body = HEAD_NUM.sub("", line).strip(" :-.")
                     if TABLE_HEAD.search(line) or MAJOR.match(line):
@@ -326,6 +330,7 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                             head_ctx = parent = body
                     continue
                 name = clean_name(NUMBERING.sub("", clean_name(line[: m.start()])).strip(" :-."))
+                name = PAREN_NUM.sub("", name).strip(" :-.")
                 if not prices:
                     continue
                 # judul kelas multi-baris: dipakai hanya bila jumlah kelasnya cocok dengan jumlah harga baris ini
