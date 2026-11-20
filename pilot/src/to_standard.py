@@ -1077,6 +1077,9 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                         flags.append("kelas_dari_nama")
                         if not NUMBERING.match(line) and (ctx_bare or not kelas_ctx):
                             kelas_ctx, ctx_bare = kelas, True  # kelas grup disebut di tengah grup ("Specialis Kelas III")
+                    if (FRAGMENT.match(name) and titles and not FRAGMENT.match(titles[-1]) and titles[-1] != head_ctx
+                            and not CONNECT_END.search(titles[-1]) and not re.match(r"^[a-z(]", titles[-1])):
+                        head_ctx = titles[-1]  # judul terdekat di atas sub-butir ("Sewa Kamar Operasi" -> "Sedang")
                     if FRAGMENT.match(name) and head_ctx:
                         nama = f"{head_ctx} - {name}"
                         flags.append("nama_dari_judul")
@@ -1127,8 +1130,8 @@ def extract_doc(pdf_path, dok_id, start_page=None, bhp_default=""):
                     continue  # kalimat pasal, bukan item tarif
                 if re.fullmatch(r"(jumlah|sub\s*total|grand\s*total|total)(\s+tarif)?", nama, re.I):
                     continue  # baris jumlah tabel, bukan layanan
-                if FRAGMENT.match(nama):
-                    flags.append("nama_terpotong")
+                if FRAGMENT.match(nama) or re.search(r"(?i)(\b(dengan|dan|atau|untuk|pada|tanpa|serta)|[&(,/])\s*$", nama):
+                    flags.append("nama_terpotong")  # nama berakhir kata penyambung: lanjutan tak terbaca
                 if re.search(r"(^|\s)\.\d{3}", raw):
                     flags.append("harga_ambigu")
                 # tentukan arti kolom harga
