@@ -19,7 +19,7 @@ Setelah penyaringan: 330 RS, 171.006 kombinasi nama x kelas. Yang dimiliki >= 10
 
 ## 2. Besar variasi
 
-Rasio p90/p10 (harga RS di persentil 90 dibagi persentil 10) per grup: median **4,36**, kuartil 3,04-6,74. 76% grup punya rasio >= 3; 41% >= 5. Median koefisien variasi 0,65.
+Rasio p90/p10 (harga RS di persentil 90 dibagi persentil 10) per grup: median **4,36**, kuartil 3,04-6,74. 76% grup punya rasio >= 3; 41% >= 5. Median koefisien variasi 0,65. Catatan metrik: angka ini adalah MEDIAN (antar-grup) dari rasio p90/p10 di dalam grup; berbeda dari metrik pilot (rasio harga antara dua RS), jangan dipertukarkan. Rasio mentah ini belum mengendalikan tahun dokumen (2002-2026); analisis lanjut sebaiknya memakai model campuran log-harga (efek acak layanan; efek tetap tahun, kelas, tipe/kepemilikan RS, wilayah).
 
 ### Per kategori
 
@@ -152,7 +152,7 @@ Indeks = rata-rata geometrik (harga RS / median nasional grupnya) per RS, lalu d
 
 ## 5. Perubahan tarif antar-versi di RS yang sama
 
-63 RS punya versi terbaru dan versi sebelumnya dengan nama+kelas yang sama. Median kenaikan per tahun (rata-rata geometrik per RS, disetahunkan): **3,1%**; median porsi layanan yang naik 28%, tetap 56%, turun 2%. Banyak versi baru adalah perubahan sebagian yang mengulang tarif lama tanpa mengubahnya; penurunan besar di satu RS perlu dicek (bisa beda cakupan atau kesalahan ekstraksi).
+63 RS punya versi terbaru dan versi sebelumnya dengan nama+kelas yang sama. Median kenaikan per tahun (rata-rata geometrik per RS, disetahunkan): **3,1%**; median porsi layanan yang naik 28%, tetap 56%, turun 2%. Banyak versi baru adalah perubahan sebagian yang mengulang tarif lama tanpa mengubahnya; penurunan besar di satu RS perlu dicek (bisa beda cakupan atau kesalahan ekstraksi). Bias seleksi: hanya RS yang punya >= 2 versi di BPK (63 dari 330 RS), jadi angka ini belum mewakili semua RSUD.
 
 | RS | lama | baru | layanan sama | rasio median | % naik | naik/thn % |
 |---|---|---|---|---|---|---|
@@ -180,8 +180,8 @@ Indeks = rata-rata geometrik (harga RS / median nasional grupnya) per RS, lalu d
 ## 6. Langkah berikut
 
 1. Nilai gold set ekstraksi (`pilot/eval/gold/gold_ekstraksi_v1.xlsx`) untuk tahu seberapa besar variasi di atas bisa berasal dari kesalahan ekstraksi.
-2. Sesuaikan harga ke tahun dasar dengan IHK (kelompok kesehatan) BPS.
-3. Nama pendek (1-2 kata) digabung dengan judul bagian (`kategori_asli`) sebelum dikelompokkan; lalu gabungkan sinonim lewat pemetaan kode yang sudah divalidasi (bukan usulan otomatis).
+2. Definisi kelompok dulu (mengubah semua angka): nama pendek (1-2 kata) digabung dengan judul bagian (`kategori_asli`) sebelum dikelompokkan; ini perubahan pada analisis, bukan parser, dan diberi versi.
+3. Sesuaikan harga ke tahun dasar dengan IHK (kelompok kesehatan) BPS (hanya menggeser skala); lalu gabungkan sinonim lewat pemetaan kode yang sudah divalidasi (bukan usulan otomatis).
 4. Cek manual grup dengan variasi terlebar (bagian 2) untuk memisahkan beda cakupan layanan vs kesalahan.
 5. Model penjelas (mis. regresi log-harga ~ tahun + kelas + provinsi + tipe RS + BHP) setelah langkah 1-3.
 

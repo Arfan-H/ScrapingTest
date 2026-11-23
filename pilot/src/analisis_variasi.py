@@ -201,7 +201,11 @@ def main(min_rs=10):
     rep.append(f"Rasio p90/p10 (harga RS di persentil 90 dibagi persentil 10) per grup: median "
                f"**{dec(G.rasio_p90_p10.median())}**, kuartil {dec(G.rasio_p90_p10.quantile(.25))}-{dec(G.rasio_p90_p10.quantile(.75))}. "
                f"{(G.rasio_p90_p10 >= 3).mean()*100:.0f}% grup punya rasio >= 3; {(G.rasio_p90_p10 >= 5).mean()*100:.0f}% >= 5. "
-               f"Median koefisien variasi {dec(G.cv.median())}.\n")
+               f"Median koefisien variasi {dec(G.cv.median())}. Catatan metrik: angka ini adalah MEDIAN (antar-grup) dari "
+               f"rasio p90/p10 di dalam grup; berbeda dari metrik pilot (rasio harga antara dua RS), jangan dipertukarkan. "
+               f"Rasio mentah ini belum mengendalikan tahun dokumen ({int(F.tahun.min())}-{int(F.tahun.max())}); "
+               f"analisis lanjut sebaiknya memakai model campuran log-harga (efek acak layanan; efek tetap tahun, kelas, "
+               f"tipe/kepemilikan RS, wilayah).\n")
     rep.append("### Per kategori\n")
     rep.append(md_table(K, ["kategori_std", "n_grup", "median_n_rs", "median_rasio_p90_p10", "median_cv", "pct_grup_rasio_ge_3"],
                         ["kategori", "grup", "median RS/grup", "median p90/p10", "median CV", "% grup p90/p10 >= 3"]))
@@ -247,14 +251,17 @@ def main(min_rs=10):
                    f"per tahun (rata-rata geometrik per RS, disetahunkan): **{dec(V.kenaikan_per_tahun_pct.median(), 1)}%**; "
                    f"median porsi layanan yang naik {V.pct_naik.median():.0f}%, tetap {V.pct_tetap.median():.0f}%, "
                    f"turun {V.pct_turun.median():.0f}%. Banyak versi baru adalah perubahan sebagian yang mengulang tarif lama tanpa "
-                   f"mengubahnya; penurunan besar di satu RS perlu dicek (bisa beda cakupan atau kesalahan ekstraksi).\n\n")
+                   f"mengubahnya; penurunan besar di satu RS perlu dicek (bisa beda cakupan atau kesalahan ekstraksi). "
+                   f"Bias seleksi: hanya RS yang punya >= 2 versi di BPK ({len(V)} dari {fmt(n_rs_all)} RS), jadi angka ini "
+                   f"belum mewakili semua RSUD.\n\n")
         rep.append(md_table(V.head(20), ["rs_id", "tahun_lama", "tahun_baru", "n_layanan_sama", "rasio_median", "pct_naik", "kenaikan_per_tahun_pct"],
                             ["RS", "lama", "baru", "layanan sama", "rasio median", "% naik", "naik/thn %"]))
     rep.append("\n## 6. Langkah berikut\n")
     rep.append("1. Nilai gold set ekstraksi (`pilot/eval/gold/gold_ekstraksi_v1.xlsx`) untuk tahu seberapa besar variasi "
                "di atas bisa berasal dari kesalahan ekstraksi.\n"
-               "2. Sesuaikan harga ke tahun dasar dengan IHK (kelompok kesehatan) BPS.\n"
-               "3. Nama pendek (1-2 kata) digabung dengan judul bagian (`kategori_asli`) sebelum dikelompokkan; lalu gabungkan sinonim lewat pemetaan kode yang sudah divalidasi (bukan usulan otomatis).\n"
+               "2. Definisi kelompok dulu (mengubah semua angka): nama pendek (1-2 kata) digabung dengan judul bagian "
+               "(`kategori_asli`) sebelum dikelompokkan; ini perubahan pada analisis, bukan parser, dan diberi versi.\n"
+               "3. Sesuaikan harga ke tahun dasar dengan IHK (kelompok kesehatan) BPS (hanya menggeser skala); lalu gabungkan sinonim lewat pemetaan kode yang sudah divalidasi (bukan usulan otomatis).\n"
                "4. Cek manual grup dengan variasi terlebar (bagian 2) untuk memisahkan beda cakupan layanan vs kesalahan.\n"
                "5. Model penjelas (mis. regresi log-harga ~ tahun + kelas + provinsi + tipe RS + BHP) setelah langkah 1-3.\n")
     rep.append("\n## Berkas\n- `variasi_grup.csv`: statistik per nama x kelas\n- `variasi_kategori.csv`\n"

@@ -178,7 +178,7 @@ metrik, hasil_utama, keterbatasan, relevansi_untuk_kita (1-3), dipakai_di_bagian
 | Keputusan | Opsi | Untung | Rugi / risiko | Literatur yang perlu dibandingkan |
 |---|---|---|---|---|
 | **Ekstraksi tabel** | (1) Aturan tata letak + OCR (sekarang) · (2) Model struktur tabel (Table Transformer) · (3) LLM multimodal per halaman | (1) Dapat ditelusuri, murah, deterministik · (2) Umum · (3) Fleksibel terhadap tata letak baru | (1) Ekor pola panjang, butuh banyak aturan · (2) Perlu fine-tune untuk dokumen ID · (3) Mahal, bisa berhalusinasi angka, perlu verifikasi baris sumber | Tema C |
-| **Ukur akurasi ekstraksi** | Cek visual acak (sekarang 40/putaran) · gold set beranotasi (≥300 baris, bertingkat per tipe dokumen) | Gold set memberi angka yang dapat dikutip dengan CI | Butuh waktu anotasi | Tema F |
+| **Ukur akurasi ekstraksi** | Cek visual acak (sekarang 40/putaran) · gold set beranotasi (v2: 60 dokumen, presisi + cakupan, butir kontrol) | Gold set memberi angka yang dapat dikutip dengan CI | Butuh waktu anotasi | Tema F |
 | **Sistem kode prosedur** | ICD-9-CM Vol. 3 (dipakai INA-CBG untuk prosedur) · ICD-10-PCS · SNOMED CT · katalog lokal (Pola Tarif/KMK) | ICD-9-CM relevan untuk Indonesia (klaim JKN) | v32 CMS ≠ ICD-9-CM 2010 edisi Indonesia; banyak layanan tak berkode | Tema B, D |
 | **Tingkat kode** | Kode daun (xx.xx) · kategori 3 digit (xx.x) · 2 digit (xx) | Daun paling spesifik | Akurasi turun di tingkat daun; analisis harga butuh kelompok yang cukup besar | Tema D, G |
 | **Metode pemetaan** | Leksikal (TF-IDF) · embedding zero-shot (e5, sekarang) · SapBERT multilingual · fine-tune dengan pasangan PMIK · LLM re-ranker · hibrida | Hibrida + re-ranker biasanya terbaik | LLM mahal dan perlu kontrol halusinasi; fine-tune butuh label | Tema D |
@@ -196,7 +196,18 @@ metrik, hasil_utama, keterbatasan, relevansi_untuk_kita (1-3), dipakai_di_bagian
   gold set bagian *dev*; akurasi akhir diukur pada bagian *test* yang tidak dipakai memperbaiki.
 - **Gold set dipisah per dokumen/RS**, bukan per baris. Dokumen yang pernah disentuh saat pengembangan (181 dokumen:
   sampel cek visual v3–v10 dan dokumen yang ditelusuri saat debugging) dikecualikan; daftarnya di
-  `../pilot/eval/gold/dokumen_dikecualikan.csv`.
+  `../pilot/eval/gold/dokumen_dikecualikan.csv`. Daftar ini disusun dari berkas dan riwayat sesi, jadi bisa tidak lengkap.
+- **Gold set ekstraksi v2** (`../pilot/eval/gold/gold_ekstraksi_v2.xlsx`; v1 digantikan, ada di `v1_tidak_dipakai/`):
+  60 dokumen x 5 baris (unit efektif = dokumen, jadi CI dihitung dengan bootstrap per dokumen di dalam strata, bukan Wilson
+  per baris); strata sumber teks x bentuk tabel (golongan / per kelas / satu harga; OCR-per-kelas hanya 2 dokumen di
+  seluruh data dan keduanya dikecualikan); dua arah: presisi (data -> PDF, 300 baris) dan cakupan (baris PDF -> data,
+  120 baris, menangkap baris/halaman yang hilang); 30 butir kontrol bernilai sengaja salah untuk mengukur bias jangkar
+  penilai; urutan diacak. Cara menghitung ditetapkan sebelum penilaian: `../pilot/eval/nilai_gold_ekstraksi.py`.
+- **Aturan versi setelah gold set dibuka:** setiap perubahan yang memengaruhi keluaran (parser, atau definisi grup di
+  analisis seperti menggabung judul tabel ke nama) diberi versi/commit dan hanya diukur dengan bagian *test* yang belum
+  dipakai. Bila parser tidak diubah setelah penilaian, dev+test boleh digabung.
+- **Analisis variasi:** definisi kelompok (judul tabel + nama) didahulukan dari penyesuaian IHK; metrik median p90/p10
+  berbeda dari metrik pilot (rasio dua RS); kenaikan antar-versi hanya dari RS yang punya >= 2 versi (bias seleksi).
 - **Verifikasi harga 99,9%** hanya mengukur konsistensi harga dengan teks baris (yang bisa berasal dari OCR), bukan kebenaran
   terhadap gambar halaman.
 - **Jangan menilai reranker LLM dengan label silver buatan AI** (sirkular).
