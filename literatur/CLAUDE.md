@@ -7,7 +7,7 @@ supaya file ini terbaca otomatis. Kode dan data ada di `../pilot/`.
 
 ---
 
-## 1. Ringkasan proyek (angka per 2026-11, dari `../pilot/out/dataset/`)
+## 1. Ringkasan proyek (angka per 2026-11-23, dari `../pilot/out/dataset/`)
 
 **Masalah.** Tarif layanan RSUD ditetapkan lewat Perda/Perbup/Perwali/Pergub (dan PMK untuk RS vertikal), lalu
 dipublikasikan sebagai PDF. Tata letak tabelnya berbeda-beda, banyak berupa hasil scan, dan setiap daerah memakai istilah,
@@ -19,11 +19,11 @@ terbuka dan terstruktur untuk tarif RSUD Indonesia.
 |---|---|
 | Sumber | 514 file PDF / 505 peraturan dari JDIH BPK (peraturan.bpk.go.id), tahun 2001–2026 |
 | Cakupan | 342–343 RS, 34 provinsi |
-| Dataset | 479.738 baris tarif dalam format panjang (1 baris = nama layanan × kelas × varian × komponen × harga), dengan halaman dan teks baris PDF sumber untuk setiap baris |
+| Dataset | 479.733 baris tarif dalam format panjang (1 baris = nama layanan × kelas × varian × komponen × harga), dengan halaman dan teks baris PDF sumber untuk setiap baris |
 | Ekstraksi | Parser berbasis tata letak (pdfplumber: posisi kata, judul kolom bertumpuk, lanjutan nama antar baris), OCR ulang (RapidOCR) untuk halaman scan yang lapisan teksnya rusak, aturan kosakata untuk memilih teks OCR atau teks asli |
-| Kontrol mutu | Setiap harga diverifikasi ulang terhadap baris PDF sumber (99,9% cocok; 451 baris tidak cocok ditandai). Flag masalah per baris (`qc_masalah`, sekitar 14% baris). Cek visual 40 baris acak per putaran (v3: 13 salah tak tertandai → v10: 3–4) |
+| Kontrol mutu | Setiap harga diverifikasi ulang terhadap baris PDF sumber (99,9% cocok; 451 baris tidak cocok ditandai). Flag masalah per baris (`qc_masalah`, sekitar 14% baris). Cek visual 40 baris acak per putaran (v3: 13 salah tak tertandai → v10: 3–4), **tetapi angka ini bias optimistis**: parser diperbaiki dari galat sampel-sampel itu dan pemeriksanya AI yang sama. Angka yang boleh dikutip harus dari gold set held-out (lihat §5a) |
 | Konteks | Status peraturan (berlaku/diubah/dicabut dari relasi BPK), urutan versi per RS, status BHP (termasuk/tidak termasuk bahan habis pakai) dari pasal peraturan, wilayah Kemendagri |
-| Pemetaan kode | 169.803 nama layanan unik → usulan kode: ICD-9-CM Vol. 3 (prosedur, 3.882 kode CMS v32), LOINC (Universal Lab Orders, 1.519 tes), atau "Lokal" (akomodasi, visite, administrasi). Skor = 0,7 × kosinus multilingual-e5-small + 0,3 × kosinus TF-IDF karakter, atas nama ditambah terjemahan istilah medis ID→EN. **Masih usulan dan belum divalidasi PMIK.** Evaluasi silver kecil: ICD-9-CM hit@1 ≈ 0,33, hit@5 ≈ 0,47–0,57; LOINC hit@1 0,6–1,0, hit@5 0,8–1,0 |
+| Pemetaan kode | 169.803 nama layanan unik (perutean heuristik per kategori: ICD-9-CM 77%, LOINC 12%, Lokal 11% nama unik; proporsi "tidak ada padanan" yang sebenarnya belum diketahui sampai ada gold set) → usulan kode: ICD-9-CM Vol. 3 (prosedur, 3.882 kode CMS v32), LOINC (Universal Lab Orders, 1.519 tes), atau "Lokal" (akomodasi, visite, administrasi). Skor = 0,7 × kosinus multilingual-e5-small + 0,3 × kosinus TF-IDF karakter, atas nama ditambah terjemahan istilah medis ID→EN. **Masih usulan dan belum divalidasi PMIK.** Evaluasi silver kecil: ICD-9-CM hit@1 ≈ 0,33, hit@5 ≈ 0,47–0,57; LOINC hit@1 0,6–1,0, hit@5 0,8–1,0 |
 | Graf | Model property graph (NetworkX/GraphML) baru diuji pada pilot 9 dokumen: Dokumen–BERLAKU_UNTUK→RS, Dokumen–TARIF{kelas,komponen,BHP,harga}→Layanan, Layanan→Golongan, Layanan→Kategori, Layanan–USULAN_KODE→Kode, Layanan–SAMA_NAMA/SAMA_DENGAN→Layanan. Belum dibangun untuk 505 peraturan |
 
 **Temuan awal yang perlu diposisikan terhadap literatur:**
@@ -31,7 +31,9 @@ terbuka dan terstruktur untuk tarif RSUD Indonesia.
 - Tarif per kelas, varian (reguler/eksekutif, elektif/cito), dan komponen (jasa sarana/pelayanan, BHP) harus dinormalkan
   sebelum harga bisa dibandingkan.
 - Format golongan tindakan (harga per golongan × kelas, lalu daftar anggota golongan) lebih alami dimodelkan sebagai graf.
-- Kategori standar yang masih kasar: 55% baris jatuh ke "Tindakan Lain". Ini kelemahan untuk menentukan sistem kode.
+- Kategori standar yang masih kasar: 55% **baris** jatuh ke "Tindakan Lain" (ini porsi kategori, bukan porsi layanan tanpa kode).
+  Ini kelemahan untuk menentukan sistem kode.
+- Hit@1 ICD-9-CM ≈ 0,33 berasal dari n=14–15 (≈5 benar), jadi tidak bisa dipakai menyimpulkan penyebab apa pun.
 
 ---
 
@@ -188,12 +190,32 @@ metrik, hasil_utama, keterbatasan, relevansi_untuk_kita (1-3), dipakai_di_bagian
 
 ---
 
+## 5a. Keputusan dan catatan dari diskusi 2026-11-23
+
+- **Parser dibekukan** pada commit `cb968f4` (berkas `pilot/src/to_standard.py`). Perbaikan parser berikutnya hanya dari temuan
+  gold set bagian *dev*; akurasi akhir diukur pada bagian *test* yang tidak dipakai memperbaiki.
+- **Gold set dipisah per dokumen/RS**, bukan per baris. Dokumen yang pernah disentuh saat pengembangan (181 dokumen:
+  sampel cek visual v3–v10 dan dokumen yang ditelusuri saat debugging) dikecualikan; daftarnya di
+  `../pilot/eval/gold/dokumen_dikecualikan.csv`.
+- **Verifikasi harga 99,9%** hanya mengukur konsistensi harga dengan teks baris (yang bisa berasal dari OCR), bukan kebenaran
+  terhadap gambar halaman.
+- **Jangan menilai reranker LLM dengan label silver buatan AI** (sirkular).
+- **Awalan e5:** kode sekarang memakai `query:` di kedua sisi. Untuk tugas simetris (nama pendek ↔ nama pendek) itu sesuai
+  model card; `query:`/`passage:` dijadikan eksperimen, bukan perbaikan bug.
+- **LOINC:** repo private; notice dan langkah sebelum publikasi ada di `../Loinc_2.83/NOTICE_LOINC.md`. `Loinc.csv` 2.83
+  memuat 7.355 istilah dengan `EXTERNAL_COPYRIGHT_NOTICE`, PanelsAndForms 15.711 baris. Untuk prior kepopuleran tes,
+  pakai `COMMON_ORDER_RANK` (tes yang dipesan), bukan `COMMON_TEST_RANK`, sebagai prior kecil yang dibuktikan dengan ablation.
+  Universal Lab Orders jangan jadi batas keras; ukur dulu di gold set berapa kode benar yang ada di luar himpunan itu.
+- **Rujukan dari ulasan lain** (LabBridge, AGASN, GAME arXiv 2502.08547, S-GCN 2105.03701, BioELX 2605.27380, ICD Spanyol
+  2605.30529, Peeters & Bizer 2310.11244, NHI Taiwan 2506.00209, PaddleOCR-VL 2510.14528): status *ditemukan, belum dibaca
+  penuh*. Baca dan catat di katalog sebelum dikutip.
+
 ## 6. Keterbatasan yang wajib diakui di tulisan
 
 - Tarif regulasi ≠ biaya riil atau harga yang dibayar pasien/JKN. Ini daftar tarif resmi, bukan klaim.
 - Cakupan bergantung pada ketersediaan PDF di JDIH BPK. Ada RS tanpa peraturan publik, dan ada peraturan tanpa lampiran.
-- Kesalahan ekstraksi tersisa sekitar 7–10% baris pada sampel cek visual, terutama nama dan label kelas pada dokumen OCR
-  dan tata letak khusus. Angka harga sesuai PDF pada 39–40/40 baris sampel.
+- Kesalahan ekstraksi pada sampel cek visual sekitar 7–10% baris (CI 95% Wilson untuk 3/40: 2,6–19,9%), terutama nama dan
+  label kelas pada dokumen OCR dan tata letak khusus; angka ini bias optimistis (lihat §5a). Angka resmi menunggu gold set.
 - Pemetaan kode masih usulan otomatis yang belum divalidasi. Label evaluasinya silver (dibuat asisten AI) dan berukuran kecil.
 - ICD-9-CM yang dipakai adalah CMS v32, bukan edisi resmi Indonesia.
 - Kategori standar masih kasar (55% "Tindakan Lain").
