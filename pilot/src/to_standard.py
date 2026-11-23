@@ -131,6 +131,13 @@ def clean_name(name):
     name = name.replace("|", " ").replace("{", " ")
     # huruf kode kolom kiri yang menempel: "f 4 Pasang ...", "D 7. Pelayanan ...", "a Sendi Bahu ..."
     name = re.sub(r"^\s*[A-Za-z]\s+(?=\d{1,3}\.?\s)", "", name)
+    # nomor baris hasil OCR di depan nama: "l7l I DEBRI..." (=1711), "tl24 SCALING", "26I8 VASEKTOMI", "2686 REVISI"
+    name = re.sub(r"^\s*[.\-]?(?:(?=[0-9lIOoSst|]*\d)(?=[0-9lIOoSst|]*[lIOoSst|])[0-9lIOoSst|]{2,5}|\d{4})\.?"
+                  r"(?:\s+[0-9lI|]{1,2}(?=\s))?\s+(?=[A-Za-z]{3})", "", name)
+    # sisa OCR di depan nama ("I Ir r,so CABUT ...", "rr,s r CAD WELL LUC"): token pendek huruf-mirip-angka + tanda baca
+    mj = re.match(r"^\s*((?:[IilrRso0-9,.;'|\-]{1,5}\s+)+)(?=[A-Z]{3})", name)
+    if mj and re.search(r"[,;'|]", mj.group(1)):
+        name = name[mj.end():]
     name = re.sub(r"^\s*[a-z]\s+(?=[A-Z])", "", name)
     name = re.sub(r"^\s*[a-z],\s+(?=[A-Za-z])", "", name)  # penomoran "b, Jasa medis"
     name = PRICE_TOK.sub(" ", name)
@@ -424,7 +431,10 @@ def tail_owner(tail, q_top, q_name, q_aligned=False):
         while k < len(T) and (re.match(r"^[a-z(/]", T[k][2]) or CONNECT_END.search(T[k - 1][2])
                               or T[k - 1][2].count("(") > T[k - 1][2].count(")")):
             k += 1
-        return k if (k == len(T) or q_name is not None) else k
+        if k < len(T) and q_name and len(re.sub(r"[^A-Za-z]", "", q_name)) >= 3:
+            # baris bawah punya nama sendiri: sel berharga di baris pertama -> sisa teks juga lanjutan nama atas
+            return len(T)
+        return k
     if q_open and not p_open and q_name is not None:
         if len(T) >= 2:  # "GA" (lanjutan atas) lalu "Uvulorafi/Uvulektomi," (awal nama bawah): belah di jarak terbesar
             ig = [T[i][0] - T[i - 1][1] for i in range(1, len(T))]
