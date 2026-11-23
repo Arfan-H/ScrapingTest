@@ -1,8 +1,11 @@
-# Petunjuk penilaian gold set ekstraksi (gold_ekstraksi_v2.xlsx)
+# Petunjuk penilaian gold set ekstraksi v3
+
+File penilai pertama: `gold_ekstraksi_v3.xlsx`. File penilai kedua: `gold_ekstraksi_v3_penilai2.xlsx`.
+Versi lama (v1, v2) ada di folder `v1_tidak_dipakai/` dan `v2_tidak_dipakai/`; jangan dipakai.
 
 Tujuan: mengukur seberapa benar dan seberapa lengkap data tarif hasil ekstraksi otomatis dibanding PDF aslinya.
 Hasil penilaian ini yang nanti dikutip sebagai akurasi di paper. Tidak perlu keahlian medis; cukup teliti
-membandingkan data dengan gambar PDF. Perkiraan waktu: sekitar 5 jam (dua sheet). Boleh dicicil.
+membandingkan data dengan gambar PDF. Perkiraan waktu penilai pertama: sekitar 5-6 jam (dua sheet). Boleh dicicil.
 
 Ada dua sheet yang dinilai:
 - "nilai_baris": dari DATA ke PDF. Apakah isi data untuk satu baris benar?
@@ -45,18 +48,19 @@ berasal dari baris ini" (semua catatan data yang diambil sistem dari baris PDF i
 3. **harga/nama yang hilang atau salah**: tulis singkat apa yang hilang/salah.
 
 ## Bila gambar tidak cukup
-Buka PDF asli: `bpk_v3/buku_tarif/teks/<file>` di halaman yang tertera (nama file ada di manifest), atau pilih
-"Tidak bisa dinilai".
+Cari ID baris di `gold_ekstraksi_v3_lokasi.csv` (berisi ID, nama file PDF, dan halaman saja), lalu buka
+`bpk_v3/buku_tarif/teks/<file>` di halaman itu. Atau pilih "Tidak bisa dinilai".
 
 ## Hal yang sengaja disembunyikan
-Tanda masalah dari sistem (flag_qc), pembagian dev/test, strata, dan tanda baris yang sengaja diubah tidak ditampilkan
-agar penilaian tidak terpengaruh. Semuanya ada di gold_ekstraksi_v2_manifest.csv dan
-gold_ekstraksi_v2_cakupan_manifest.csv. Jangan membuka manifest sebelum penilaian selesai.
+Dokumen asal, tanda masalah dari sistem (flag_qc), pembagian dev/test, strata, dan tanda baris yang sengaja diubah
+tidak ditampilkan agar penilaian tidak terpengaruh. Semuanya ada di file `*_manifest.csv` dan `*_strata.csv`.
+JANGAN membuka file-file itu, maupun laporan atau ringkasan apa pun tentang isi sampel, sebelum penilaian selesai.
 
 ## Penilai kedua
-Urutan baris sudah diacak lintas dokumen. Bila ada penilai kedua (sebaiknya bukan pengembang proyek), minta ia menilai
-"nilai_baris" no 1-60 dan "cek_baris_pdf" no 1-30 secara terpisah di salinan file, tanpa melihat isian penilai pertama.
+Penilai kedua memakai file sendiri, `gold_ekstraksi_v3_penilai2.xlsx` (150 butir "nilai_baris" termasuk semua butir
+kontrol, dan 30 butir "cek_baris_pdf", dengan ID dan urutan sendiri). Idealnya ia belum pernah melihat kode, laporan,
+atau file penilai pertama. Ketelitian penilai diukur terutama dari penilai kedua.
 
 ## Versi
 Data diambil dari parser commit cb968f4 (dibekukan). Jangan mengubah kolom selain kolom kuning. Skor dihitung dengan
-`python -I pilot/eval/nilai_gold_ekstraksi.py <file_terisi.xlsx> [file_penilai_kedua.xlsx]`.
+`python -I pilot/eval/nilai_gold_ekstraksi.py <gold_ekstraksi_v3_terisi.xlsx> [gold_ekstraksi_v3_penilai2_terisi.xlsx]`.
