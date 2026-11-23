@@ -47,6 +47,12 @@ berasal dari baris ini" (semua catatan data yang diambil sistem dari baris PDF i
    Nama boleh diambil dari baris di atasnya (nama layanan yang panjang sering terbagi dua baris).
 3. **harga/nama yang hilang atau salah**: tulis singkat apa yang hilang/salah.
 
+## Mulai dengan uji coba
+Nilai 10-15 butir pertama di "nilai_baris" dan 5 butir pertama di "cek_baris_pdf", lalu berhenti dan periksa: apakah
+petunjuk cukup jelas (terutama "Non-kelas" dan "varian/komponen"), apakah judul kolom terlihat, dan apakah kotak merah
+tepat pada barisnya. Bila aturan perlu diperjelas, tulis perubahannya di bagian "Riwayat petunjuk" di bawah (dengan
+tanggal dan nomor versi), lalu nilai ULANG butir uji coba itu dengan aturan yang baru sebelum melanjutkan.
+
 ## Bila gambar tidak cukup
 Cari ID baris di `gold_ekstraksi_v3_lokasi.csv` (berisi ID, nama file PDF, dan halaman saja), lalu buka
 `bpk_v3/buku_tarif/teks/<file>` di halaman itu. Atau pilih "Tidak bisa dinilai".
@@ -57,9 +63,12 @@ tidak ditampilkan agar penilaian tidak terpengaruh. Semuanya ada di file `*_mani
 JANGAN membuka file-file itu, maupun laporan atau ringkasan apa pun tentang isi sampel, sebelum penilaian selesai.
 
 ## Penilai kedua
-Penilai kedua memakai file sendiri, `gold_ekstraksi_v3_penilai2.xlsx` (150 butir "nilai_baris" termasuk semua butir
-kontrol, dan 30 butir "cek_baris_pdf", dengan ID dan urutan sendiri). Idealnya ia belum pernah melihat kode, laporan,
+Penilai kedua memakai file sendiri, `gold_ekstraksi_v3_penilai2.xlsx` (153 butir "nilai_baris" = 120 butir biasa +
+33 butir kontrol, dan 30 butir "cek_baris_pdf", dengan ID dan urutan sendiri). Idealnya ia belum pernah melihat kode, laporan,
 atau file penilai pertama. Ketelitian penilai diukur terutama dari penilai kedua.
+
+## Riwayat petunjuk
+- Versi 1 (2026-11-23): versi awal, dikunci di tag git `gold-v3-prereg`.
 
 ## Versi
 Data diambil dari parser commit cb968f4 (dibekukan). Jangan mengubah kolom selain kolom kuning. Skor dihitung dengan

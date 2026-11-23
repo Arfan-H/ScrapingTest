@@ -212,7 +212,7 @@ metrik, hasil_utama, keterbatasan, relevansi_untuk_kita (1-3), dipakai_di_bagian
   - Cakupan (baris PDF -> data): 2 halaman acak dari halaman berkandidat dalam rentang halaman ber-data, 1 baris kandidat
     per halaman; bobot butir = H/k x L_p (dari sisi PDF, bukan jumlah baris data). Batasan: harga < 1.000 tidak pernah
     kandidat; halaman tarif di luar rentang halaman ber-data tidak terjangkau.
-  - Butir kontrol (RNG terpisah) dinilai juga oleh penilai kedua (150 butir presisi termasuk semua kontrol, 30 cakupan).
+  - Butir kontrol (RNG terpisah) dinilai juga oleh penilai kedua (153 butir = 120 presisi + 33 kontrol, dan 30 cakupan; file pertama: 327 butir asli + 33 kontrol, 119 cakupan).
     Ketelitian penilai pertama dibaca dengan catatan bahwa ia sudah tahu desain kontrol.
   - Baris presisi yang dilewati karena baris_mentah tidak ketemu: 0% dari 2.390 baris uji (wajar secara konstruksi) dan
     dicatat per strata di `_strata.csv`. Sebaran flag_qc sampel vs populasi sebanding (qc_masalah 14,3% vs 15,0% di v2).
@@ -220,6 +220,19 @@ metrik, hasil_utama, keterbatasan, relevansi_untuk_kita (1-3), dipakai_di_bagian
     `../pilot/eval/nilai_gold_ekstraksi.py`.
   - Dokumen yang gambarnya dilihat agen dicatat di `dokumen_dilihat_agen.txt` dan dikeluarkan dari pool. Tidak ada laporan
     isi sampel v3 ke penilai sebelum penilaian selesai.
+- **PRA-REGISTRASI gold v3 (dikunci di tag `gold-v3-prereg`; rincian dan hash di
+  `../pilot/eval/gold/PRAREGISTRASI_gold_v3.md`):** parser beku `cb968f4`; data `cd71555` (SHA-256 di manifest);
+  dev+test digabung (60 dokumen); ANGKA UTAMA = akurasi makro per dokumen dengan bobot dokumen eligible dan bootstrap
+  dokumen (target: dokumen baru); hasil per strata setara pentingnya dengan angka gabungan; pendamping = sensus+FPC
+  (dataset ini), berbobot baris, bobot seluruh dataset; "Tidak bisa dinilai" dikeluarkan per kolom, jumlahnya dan
+  skenario terburuk dilaporkan; "semua kolom benar" = salah bila ada satu "Tidak", benar bila keempatnya "Ya",
+  dikeluarkan bila tidak ada "Tidak" tetapi ada kolom tak dinilai; cakupan = recall dalam rentang halaman ber-data,
+  harga >= 1.000. Simulasi: makro bias < 0,1 pp, cakupan CI 88-90% (Kish ~30 dokumen efektif) -> CI = perkiraan kasar.
+  Paparan: 30 dari 60 dokumen v3 pernah muncul di file v1/v2; 11 butir sama persis (dilaporkan + uji sensitivitas).
+- **POOL CADANGAN (aturan untuk agen dan pengembang):** 199 dokumen di `../pilot/eval/gold/pool_cadangan_sesudah.txt`
+  disimpan untuk pengukuran "sesudah" bila parser diubah. JANGAN membuka keluaran ekstraksi per dokumen, gambar PDF,
+  atau baris tarif dokumen-dokumen ini, dan JANGAN memakainya untuk debugging atau contoh. Pemrosesan agregat seluruh
+  dataset (menjalankan rantai, statistik ringkas) tetap boleh, asalkan tidak menampilkan baris dokumen itu.
 - **Aturan versi setelah gold set dibuka:** setiap perubahan yang memengaruhi keluaran (parser, atau definisi grup di
   analisis seperti menggabung judul tabel ke nama) diberi versi/commit dan hanya diukur dengan bagian *test* yang belum
   dipakai. Bila parser tidak diubah setelah penilaian, dev+test boleh digabung.

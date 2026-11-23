@@ -1,27 +1,27 @@
-no_p1,id_p1,split,strata,dokumen_id,file,halaman,baris_pdf,n_data_dari_baris,n_data_harga_sama,tarif_ids,tarif_ids_harga_sama,data_tampil,H_halaman_berkandidat,L_kandidat_halaman,N_kandidat_dokumen,k_halaman_diambil,n_halaman_rentang,n_baris_dok,id_p2,no_p2,versi_parser
-1,C7633,dev,teks_pdf/golongan,PERBUP-PENUKAL-ABAB-LEMATANG-ILIR-45-2020,156907_PERBUP NO 45 THN 2020.pdf,15,Mahasiswa S1 56.250 68.750 125.000,1,0,PERBUP-PENUKAL-ABAB-LEMATANG-ILIR-45-2020-000055,,Mahasiswa S1 | Non-kelas | total | 125.000,3,23,68,2,3,60,,0,cb968f4
+no_p1,id_p1,split,strata,dokumen_id,file,halaman,baris_pdf,n_data_dari_baris,n_data_harga_sama,tarif_ids,tarif_ids_harga_sama,data_tampil,H_halaman_berkandidat,L_kandidat_halaman,N_kandidat_dokumen,k_halaman_diambil,n_halaman_rentang,n_baris_dok,id_p2,no_p2,versi_parser,data_commit,data_sha256
+1,C7633,dev,teks_pdf/golongan,PERBUP-PENUKAL-ABAB-LEMATANG-ILIR-45-2020,156907_PERBUP NO 45 THN 2020.pdf,15,Mahasiswa S1 56.250 68.750 125.000,1,0,PERBUP-PENUKAL-ABAB-LEMATANG-ILIR-45-2020-000055,,Mahasiswa S1 | Non-kelas | total | 125.000,3,23,68,2,3,60,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 2,C1083,dev,teks_pdf/per_kelas,PERBUP-KAYONG-UTARA-17-2021,215642_perbupkkunomor17tahun2021tentangtariflayananbadanlayananumumdaerahrumahsakitumumdaerahsultanmuhammadjamaludinikabupatenkayongutara.pdf,18,4 Visite dokter spesialis Rp 35.000,1,2,PERBUP-KAYONG-UTARA-17-2021-000451,PERBUP-KAYONG-UTARA-17-2021-000456;PERBUP-KAYONG-UTARA-17-2021-000461,"Visite dokter spesialis | Non-kelas | total | 35.000
 [harga sama, dari baris PDF lain] Aff Heacting 5 – 10 jahitan | Non-kelas | total | 35.000
-[harga sama, dari baris PDF lain] Pemasangan Infus Anak | Non-kelas | total | 35.000",39,40,1337,2,39,2490,,0,cb968f4
-3,C1916,dev,teks_pdf/golongan,PERBUP-TANA-TIDUNG-1-2023,297308_PerBup KTT 01-2023.pdf,40,"12 SAFARI 24 Rp 420,000 Ro 192,000",1,0,PERBUP-TANA-TIDUNG-1-2023-000225,,SAFARI 24 | Non-kelas | total | 192.000,15,25,304,2,36,289,,0,cb968f4
-4,C4523,dev,teks_pdf/satu_harga,PERDA-WONOGIRI-13-2008,225087_peraturan_daerah_perda_no__13_tahun_2008_tentang_retribusi_pelayanan_kesehatan_pada_rumah_sakit_umum_daerah_kabupaten_wonogiri_1568086963718.pdf,85,"14 Fungsi Sinus Maksilaris 51,315.00 196,185.00 247,500.00",0,0,,,(TIDAK ADA data yang berasal dari baris ini),55,31,1473,2,55,859,C1933,12,cb968f4
+[harga sama, dari baris PDF lain] Pemasangan Infus Anak | Non-kelas | total | 35.000",39,40,1337,2,39,2490,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+3,C1916,dev,teks_pdf/golongan,PERBUP-TANA-TIDUNG-1-2023,297308_PerBup KTT 01-2023.pdf,40,"12 SAFARI 24 Rp 420,000 Ro 192,000",1,0,PERBUP-TANA-TIDUNG-1-2023-000225,,SAFARI 24 | Non-kelas | total | 192.000,15,25,304,2,36,289,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+4,C4523,dev,teks_pdf/satu_harga,PERDA-WONOGIRI-13-2008,225087_peraturan_daerah_perda_no__13_tahun_2008_tentang_retribusi_pelayanan_kesehatan_pada_rumah_sakit_umum_daerah_kabupaten_wonogiri_1568086963718.pdf,85,"14 Fungsi Sinus Maksilaris 51,315.00 196,185.00 247,500.00",0,0,,,(TIDAK ADA data yang berasal dari baris ini),55,31,1473,2,55,859,C1933,12,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 5,C2169,test,teks_pdf/satu_harga,PERGUB-YOGYAKARTA-15-2024,287669_pergub diy nomor 15 tahun 2024.pdf,11,"4 Program Profesi (Koass, Apt, 1 hari 50,000",1,1,PERGUB-YOGYAKARTA-15-2024-000012,PERGUB-YOGYAKARTA-15-2024-000013,"Program Profesi (Koass, Apt, 1 hari Nurse, dll) | Non-kelas | total | 50.000
-[harga sama, dari baris PDF lain] S2 1 hari | Non-kelas | total | 50.000",5,16,74,2,5,73,,0,cb968f4
+[harga sama, dari baris PDF lain] S2 1 hari | Non-kelas | total | 50.000",5,16,74,2,5,73,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 6,C3187,dev,teks_pdf/satu_harga,PERBUP-LAMPUNG-BARAT-14-2016,53305_Perbup Nomor 14 Tahun 2016.pdf,12,- Colon in loop 2 1.500 68.000 40.500 312.000,3,2,PERBUP-LAMPUNG-BARAT-14-2016-000130;PERBUP-LAMPUNG-BARAT-14-2016-000132;PERBUP-LAMPUNG-BARAT-14-2016-000133,PERBUP-LAMPUNG-BARAT-14-2016-000128;PERBUP-LAMPUNG-BARAT-14-2016-000131,"HSG | Non-kelas | total | 312.000
 OMD | Non-kelas | total | 312.000
 Colon in loop 2 | Non-kelas | total | 312.000
 [harga sama, dari baris PDF lain] Dengan Contras BNO IVP | Non-kelas | total | 312.000
-[harga sama, dari baris PDF lain] Appendicogram ‘ | Non-kelas | total | 312.000",6,30,173,2,6,182,,0,cb968f4
-7,C2931,dev,teks_pdf/golongan,PMK-175-2020,151894_175_PMK.06_2020.pdf,14,"b. Khusus Per Tindakan 6.840.000,00",1,0,PMK-175-2020-000025,,Bedah Mata - Khusus | Non-kelas | total | 6.840.000,12,4,186,2,12,102,C7974,24,cb968f4
+[harga sama, dari baris PDF lain] Appendicogram ‘ | Non-kelas | total | 312.000",6,30,173,2,6,182,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+7,C2931,dev,teks_pdf/golongan,PMK-175-2020,151894_175_PMK.06_2020.pdf,14,"b. Khusus Per Tindakan 6.840.000,00",1,0,PMK-175-2020-000025,,Bedah Mata - Khusus | Non-kelas | total | 6.840.000,12,4,186,2,12,102,C7974,24,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 8,C9890,dev,teks_pdf/satu_harga,PERDA-JAMBI-3-2011,137579_P_JAMBI_3_2011.pdf,14,○ Phenobarbital 60.000 40.000 100.000,1,2,PERDA-JAMBI-3-2011-000103,PERDA-JAMBI-3-2011-000102;PERDA-JAMBI-3-2011-000104,"○ Phenobarbital | Non-kelas | total | 100.000
 [harga sama, dari baris PDF lain] TDM ○ Phenotoin | Non-kelas | total | 100.000
-[harga sama, dari baris PDF lain] ○ Carbamazepine | Non-kelas | total | 100.000",4,26,104,2,4,104,C3939,29,cb968f4
+[harga sama, dari baris PDF lain] ○ Carbamazepine | Non-kelas | total | 100.000",4,26,104,2,4,104,C3939,29,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 9,C6802,test,teks_pdf/per_kelas,PERBUP-SOLOK-SELATAN-39-2017,76196_PERBUP NO 39 TAHUN 2017 ttg Penetapan Pola Tarif Layanan Pada Badan Layanan Umum Rumah Sakit Umum Daerah Solok Selatan.pdf,38,VIP 12.000 8.000 20.000,1,1,PERBUP-SOLOK-SELATAN-39-2017-000642,PERBUP-SOLOK-SELATAN-39-2017-000635,"Keals I | VIP | total | 20.000
-[harga sama, dari baris PDF lain] Diet Khusus | I | total | 20.000",45,22,877,2,45,1235,,0,cb968f4
-10,C9345,dev,teks_pdf/satu_harga,PERBUP-MANOKWARI-236-2022,249214_PERBUP 236 TARIF JASA LAYANAN BLUD RSUD.pdf,25,5. AUDIOMETRI TUTUR 117.000 78.000 195.000,1,0,PERBUP-MANOKWARI-236-2022-000715,,AUDIOMETRI TUTUR | Non-kelas | total | 195.000,25,37,834,2,25,845,,0,cb968f4
-11,C6581,dev,ocr_ulang/golongan,PERGUB-LAMPUNG-10-2015,319012_syscom5064.pdf,114,"3.3 15 4.111 Eksisi Rinofma, A",0,0,,,(TIDAK ADA data yang berasal dari baris ini),122,1,921,2,148,827,,0,cb968f4
-12,C5455,dev,ocr_ulang/golongan,PERGUB-SULAWESI-TENGGARA-3-2023,269303_PERGUB NO 3 TAHUN 2023.pdf,9,b. Aula Kecil 566.100 377.400 943.500,1,0,PERGUB-SULAWESI-TENGGARA-3-2023-000030,,Aula Kecil | Non-kelas | total | 943.500,2,11,41,2,2,30,,0,cb968f4
-13,C9820,test,teks_pdf/satu_harga,PERBUP-CIANJUR-70-2020,207069_PB-70-2020.pdf,7,"4. ICU/NICU/HCU 400.000,-",1,0,PERBUP-CIANJUR-70-2020-000013,,ICU/NICU/HCU | Non-kelas | total | 400.000,2,26,35,2,2,30,,0,cb968f4
+[harga sama, dari baris PDF lain] Diet Khusus | I | total | 20.000",45,22,877,2,45,1235,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+10,C9345,dev,teks_pdf/satu_harga,PERBUP-MANOKWARI-236-2022,249214_PERBUP 236 TARIF JASA LAYANAN BLUD RSUD.pdf,25,5. AUDIOMETRI TUTUR 117.000 78.000 195.000,1,0,PERBUP-MANOKWARI-236-2022-000715,,AUDIOMETRI TUTUR | Non-kelas | total | 195.000,25,37,834,2,25,845,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+11,C6581,dev,ocr_ulang/golongan,PERGUB-LAMPUNG-10-2015,319012_syscom5064.pdf,114,"3.3 15 4.111 Eksisi Rinofma, A",0,0,,,(TIDAK ADA data yang berasal dari baris ini),122,1,921,2,148,827,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+12,C5455,dev,ocr_ulang/golongan,PERGUB-SULAWESI-TENGGARA-3-2023,269303_PERGUB NO 3 TAHUN 2023.pdf,9,b. Aula Kecil 566.100 377.400 943.500,1,0,PERGUB-SULAWESI-TENGGARA-3-2023-000030,,Aula Kecil | Non-kelas | total | 943.500,2,11,41,2,2,30,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+13,C9820,test,teks_pdf/satu_harga,PERBUP-CIANJUR-70-2020,207069_PB-70-2020.pdf,7,"4. ICU/NICU/HCU 400.000,-",1,0,PERBUP-CIANJUR-70-2020-000013,,ICU/NICU/HCU | Non-kelas | total | 400.000,2,26,35,2,2,30,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 14,C8578,test,teks_pdf/per_kelas,PERWALI-MOJOKERTO-123-2017,86440_PERWALI 123-2017 TTG TARIF LAYANAN PADA RUMAH SAKIT UMUM dr. WAHIDN SUDIRO HUSODO KOTA MOJOKERTO.pdf,62,50 Darah Lengkap (Cell Counter) 55.000 75.000,2,6,PERWALI-MOJOKERTO-123-2017-001830;PERWALI-MOJOKERTO-123-2017-001831,PERWALI-MOJOKERTO-123-2017-001798;PERWALI-MOJOKERTO-123-2017-001799;PERWALI-MOJOKERTO-123-2017-001801;PERWALI-MOJOKERTO-123-2017-001808;PERWALI-MOJOKERTO-123-2017-001809;PERWALI-MOJOKERTO-123-2017-001865,"Darah Lengkap (Cell Counter) | Non Paviliun | total | 55.000
 Darah Lengkap (Cell Counter) | Paviliun | total | 75.000
 [harga sama, dari baris PDF lain] Calsium | Non Paviliun | total | 55.000
@@ -29,7 +29,7 @@ Darah Lengkap (Cell Counter) | Paviliun | total | 75.000
 [harga sama, dari baris PDF lain] Cannabinoid | Paviliun | total | 55.000
 [harga sama, dari baris PDF lain] Chlorida | Non Paviliun | total | 55.000
 [harga sama, dari baris PDF lain] Chlorida | Paviliun | total | 75.000
-[harga sama, dari baris PDF lain] Glucose Tolerant Test | Paviliun | total | 55.000",63,45,2144,2,63,2729,C4204,20,cb968f4
+[harga sama, dari baris PDF lain] Glucose Tolerant Test | Paviliun | total | 55.000",63,45,2144,2,63,2729,C4204,20,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 15,C1114,test,teks_pdf/satu_harga,PERDA-PURBALINGGA-10-2022,245099_Perda_Pbg_10_2022.pdf,36,3. Pemeriksaan Awal 15.000 35.000 50.000,1,15,PERDA-PURBALINGGA-10-2022-000520,PERDA-PURBALINGGA-10-2022-000517;PERDA-PURBALINGGA-10-2022-000519;PERDA-PURBALINGGA-10-2022-000521;PERDA-PURBALINGGA-10-2022-000522;PERDA-PURBALINGGA-10-2022-000526;PERDA-PURBALINGGA-10-2022-000527;PERDA-PURBALINGGA-10-2022-000528;PERDA-PURBALINGGA-10-2022-000529;PERDA-PURBALINGGA-10-2022-000530;PERDA-PURBALINGGA-10-2022-000531;PERDA-PURBALINGGA-10-2022-000532;PERDA-PURBALINGGA-10-2022-000533;PERDA-PURBALINGGA-10-2022-000534;PERDA-PURBALINGGA-10-2022-000535;PERDA-PURBALINGGA-10-2022-000537,"Pemeriksaan Awal | Non-kelas | total | 50.000
 [harga sama, dari baris PDF lain] Rawat Inap | Non-kelas | total | 15.000
 [harga sama, dari baris PDF lain] Konseling tingkat kompleks | Non-kelas | total | 50.000
@@ -43,19 +43,19 @@ Darah Lengkap (Cell Counter) | Paviliun | total | 75.000
 [harga sama, dari baris PDF lain] Fisioterapi - Chest Therapi | Non-kelas | total | 15.000
 [harga sama, dari baris PDF lain] Fisioterapi - Massage | Non-kelas | total | 15.000
 [harga sama, dari baris PDF lain] Fisioterapi - Electrical Stimulasi | Non-kelas | total | 15.000
-... (+3 lagi)",24,28,578,2,24,561,,0,cb968f4
-16,C1746,dev,ocr_ulang/satu_harga,PERDA-TANA-TORAJA-21-2016,114295_21.pdf,11,"Kelas HII 30,000",1,0,PERDA-TANA-TORAJA-21-2016-000103,,Kelas HII | Non-kelas | total | 30.000,7,10,110,2,7,106,,0,cb968f4
+... (+3 lagi)",24,28,578,2,24,561,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+16,C1746,dev,ocr_ulang/satu_harga,PERDA-TANA-TORAJA-21-2016,114295_21.pdf,11,"Kelas HII 30,000",1,0,PERDA-TANA-TORAJA-21-2016-000103,,Kelas HII | Non-kelas | total | 30.000,7,10,110,2,7,106,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 17,C1813,test,teks_pdf/satu_harga,PERGUB-RIAU-1-2023,258599_Pergub No 1 Tahun 2023 Salin.pdf,6,"a. Besar 75,000",1,3,PERGUB-RIAU-1-2023-000039,PERGUB-RIAU-1-2023-000035;PERGUB-RIAU-1-2023-000036;PERGUB-RIAU-1-2023-000037,"Tidakan - Besar | Non-kelas | total | 75.000
 [harga sama, dari baris PDF lain] Trepanasi Tindakan | Non-kelas | total | 75.000
 [harga sama, dari baris PDF lain] Kuretase Tindakan | Non-kelas | total | 75.000
-[harga sama, dari baris PDF lain] Pencabutan Gigi Pernanen - Tindakan | Non-kelas | total | 75.000",32,34,765,2,55,759,,0,cb968f4
-18,C1252,dev,ocr_ulang/satu_harga,PERWALI-PEKANBARU-8-2022,232200_PERWA NO 8 TAHUN 2022 TENTANG BADAN LAYANAN UMUM DAERAH RUMAH SAKIT DAERAH MADANI KOTA PEKANBARU (SALINAN).pdf,43,15 Pemakaian Bedside Monitor 90_ooo 22.500 112_500,0,1,,PERWALI-PEKANBARU-8-2022-000640,"[harga sama, dari baris PDF lain] Pemakaian Blue Light 12.OOO | Non-kelas | total | 22.500",23,23,747,2,24,648,,0,cb968f4
+[harga sama, dari baris PDF lain] Pencabutan Gigi Pernanen - Tindakan | Non-kelas | total | 75.000",32,34,765,2,55,759,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+18,C1252,dev,ocr_ulang/satu_harga,PERWALI-PEKANBARU-8-2022,232200_PERWA NO 8 TAHUN 2022 TENTANG BADAN LAYANAN UMUM DAERAH RUMAH SAKIT DAERAH MADANI KOTA PEKANBARU (SALINAN).pdf,43,15 Pemakaian Bedside Monitor 90_ooo 22.500 112_500,0,1,,PERWALI-PEKANBARU-8-2022-000640,"[harga sama, dari baris PDF lain] Pemakaian Blue Light 12.OOO | Non-kelas | total | 22.500",23,23,747,2,24,648,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 19,C4999,dev,teks_pdf/satu_harga,PERDA-LANDAK-8-2009,82636_PERDA NO 8 2009 TTG Retribusi Yankes RSUD Prakarsa DPRD Ldk.pdf,23,e. Sedimen Urine 8.000 2.000 10.000,1,2,PERDA-LANDAK-8-2009-000076,PERDA-LANDAK-8-2009-000086;PERDA-LANDAK-8-2009-000087,"Sedimen Urine | Non-kelas | total | 10.000
 [harga sama, dari baris PDF lain] Cairan Pleura | Non-kelas | total | 8.000
-[harga sama, dari baris PDF lain] Cairan Asites | Non-kelas | total | 8.000",13,26,294,2,13,279,,0,cb968f4
+[harga sama, dari baris PDF lain] Cairan Asites | Non-kelas | total | 8.000",13,26,294,2,13,279,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 20,C5960,dev,teks_pdf/satu_harga,PERBUP-DEMAK-21-2013,285701_Perbup Kab. Demak Tahun 2013 No 21_ocr.pdf,8,"3 Operasi besar 250,000",1,1,PERBUP-DEMAK-21-2013-000079,PERBUP-DEMAK-21-2013-000081,"Operasi besar | Non-kelas | total | 250.000
-[harga sama, dari baris PDF lain] Operasi kecil | Non-kelas | total | 250.000",12,21,184,2,12,185,,0,cb968f4
-21,C7355,dev,teks_pdf/satu_harga,PERGUB-LAMPUNG-26-2021,"248500_PERUBAHAN ATAS PERATURAN GUBERNUR LAMPUNG NOMOR 6 TAHUN 2019 TENTANG TARIF PELAYANAN KESEHATAN RAWAT JALAN, INSTALASI GAWAT DARURAT, KELAS II, KELAS K.pdf",6,"1.1.14.4.5 OtoAcousticEmission(OAE) 180,000 150,000 330,000",1,0,PERGUB-LAMPUNG-26-2021-000022,,OtoAcousticEmission(OAE) | Non-kelas | total | 330.000,13,23,171,2,14,173,,0,cb968f4
+[harga sama, dari baris PDF lain] Operasi kecil | Non-kelas | total | 250.000",12,21,184,2,12,185,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+21,C7355,dev,teks_pdf/satu_harga,PERGUB-LAMPUNG-26-2021,"248500_PERUBAHAN ATAS PERATURAN GUBERNUR LAMPUNG NOMOR 6 TAHUN 2019 TENTANG TARIF PELAYANAN KESEHATAN RAWAT JALAN, INSTALASI GAWAT DARURAT, KELAS II, KELAS K.pdf",6,"1.1.14.4.5 OtoAcousticEmission(OAE) 180,000 150,000 330,000",1,0,PERGUB-LAMPUNG-26-2021-000022,,OtoAcousticEmission(OAE) | Non-kelas | total | 330.000,13,23,171,2,14,173,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 22,C4099,dev,teks_pdf/per_kelas,PERBUP-KAYONG-UTARA-17-2021,215642_perbupkkunomor17tahun2021tentangtariflayananbadanlayananumumdaerahrumahsakitumumdaerahsultanmuhammadjamaludinikabupatenkayongutara.pdf,31,3 Pasang kateter Rp 45.000 Rp 40.000 Rp 35.000 Rp 30.000,4,11,PERBUP-KAYONG-UTARA-17-2021-001551;PERBUP-KAYONG-UTARA-17-2021-001552;PERBUP-KAYONG-UTARA-17-2021-001553;PERBUP-KAYONG-UTARA-17-2021-001554,PERBUP-KAYONG-UTARA-17-2021-001516;PERBUP-KAYONG-UTARA-17-2021-001518;PERBUP-KAYONG-UTARA-17-2021-001543;PERBUP-KAYONG-UTARA-17-2021-001544;PERBUP-KAYONG-UTARA-17-2021-001545;PERBUP-KAYONG-UTARA-17-2021-001548;PERBUP-KAYONG-UTARA-17-2021-001549;PERBUP-KAYONG-UTARA-17-2021-001550;PERBUP-KAYONG-UTARA-17-2021-001556;PERBUP-KAYONG-UTARA-17-2021-001557;PERBUP-KAYONG-UTARA-17-2021-001558,"Pasang kateter | VIP | total | 45.000
 Pasang kateter | I | total | 40.000
 Pasang kateter | II | total | 35.000
@@ -70,7 +70,7 @@ Pasang kateter | III | total | 30.000
 [harga sama, dari baris PDF lain] Pemasangan infus anak/neonatus | III | total | 35.000
 [harga sama, dari baris PDF lain] Perawat luka post operasi | I | total | 45.000
 [harga sama, dari baris PDF lain] Perawat luka post operasi | II | total | 40.000
-[harga sama, dari baris PDF lain] Perawat luka post operasi | III | total | 35.000",39,36,1337,2,39,2490,,0,cb968f4
+[harga sama, dari baris PDF lain] Perawat luka post operasi | III | total | 35.000",39,36,1337,2,39,2490,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 23,C8496,test,ocr_ulang/satu_harga,PERBUP-LAMPUNG-TIMUR-1-2006,118026_Perbup Nomor 1 Tahun 2006.pdf,17,3.3 Visita Dokter Spesialis Jasa Pelayanan 25.000 20.000 15.000 20.000 10.000 5.000,1,8,PERBUP-LAMPUNG-TIMUR-1-2006-000094,PERBUP-LAMPUNG-TIMUR-1-2006-000092;PERBUP-LAMPUNG-TIMUR-1-2006-000095;PERBUP-LAMPUNG-TIMUR-1-2006-000096;PERBUP-LAMPUNG-TIMUR-1-2006-000098;PERBUP-LAMPUNG-TIMUR-1-2006-000099;PERBUP-LAMPUNG-TIMUR-1-2006-000100;PERBUP-LAMPUNG-TIMUR-1-2006-000101;PERBUP-LAMPUNG-TIMUR-1-2006-000102,"Visita Dokter Spesialis | Non-kelas | jasa pelayanan | 5.000
 [harga sama, dari baris PDF lain] Akomodasi | kolom 6/6 (kelas tak terbaca) | jasa sarana | 15.000
 [harga sama, dari baris PDF lain] Konsultasi Dokter Spasialis Jasa Palayanan | Non-kelas | total | 5.000
@@ -79,21 +79,21 @@ Pasang kateter | III | total | 30.000
 [harga sama, dari baris PDF lain] 3.'1 Konsultasi Psikologi | kolom 2/6 (kelas tak terbaca) | jasa pelayanan | 10.000
 [harga sama, dari baris PDF lain] 3.'1 Konsultasi Psikologi | kolom 3/6 (kelas tak terbaca) | jasa pelayanan | 5.000
 [harga sama, dari baris PDF lain] 3.'1 Konsultasi Psikologi | kolom 4/6 (kelas tak terbaca) | jasa pelayanan | 5.000
-[harga sama, dari baris PDF lain] 3.'1 Konsultasi Psikologi | kolom 5/6 (kelas tak terbaca) | jasa pelayanan | 5.000",13,8,146,2,13,279,,0,cb968f4
-24,C3347,dev,ocr_ulang/satu_harga,PERBUP-PARIGI-MOUTONG-1-2016,69665_PERBUP NO.1 THN 2016.pdf,12,lb. Pasien 8aru 4.2W 2.800 7.000,1,0,PERBUP-PARIGI-MOUTONG-1-2016-000031,,lb. Pasien 8aru 4.2W | Non-kelas | total | 7.000,22,9,563,2,25,226,,0,cb968f4
+[harga sama, dari baris PDF lain] 3.'1 Konsultasi Psikologi | kolom 5/6 (kelas tak terbaca) | jasa pelayanan | 5.000",13,8,146,2,13,279,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+24,C3347,dev,ocr_ulang/satu_harga,PERBUP-PARIGI-MOUTONG-1-2016,69665_PERBUP NO.1 THN 2016.pdf,12,lb. Pasien 8aru 4.2W 2.800 7.000,1,0,PERBUP-PARIGI-MOUTONG-1-2016-000031,,lb. Pasien 8aru 4.2W | Non-kelas | total | 7.000,22,9,563,2,25,226,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 25,C8117,dev,teks_pdf/per_kelas,PERDA-SUMATERA-SELATAN-16-2008,37769_PERDA NO.16 THN 2008.pdf,5,3 LOH 25.000 6.000 31.000 23.000 3.500 26.500,2,3,PERDA-SUMATERA-SELATAN-16-2008-000054;PERDA-SUMATERA-SELATAN-16-2008-000055,PERDA-SUMATERA-SELATAN-16-2008-000095;PERDA-SUMATERA-SELATAN-16-2008-000099;PERDA-SUMATERA-SELATAN-16-2008-000107,"LOH | VIP | total | 31.000
 LOH | III | total | 26.500
 [harga sama, dari baris PDF lain] Widal | III | total | 25.000
 [harga sama, dari baris PDF lain] Rheumatoid Faldor | III | total | 25.000
-[harga sama, dari baris PDF lain] RPHA) | III | total | 23.000",4,48,131,2,4,225,,0,cb968f4
-26,C2213,dev,ocr_ulang/satu_harga,PERBUP-PARIGI-MOUTONG-1-2016,69665_PERBUP NO.1 THN 2016.pdf,9,-Pickup dan sejenisnya 2.000 sekali parkir,0,0,,,(TIDAK ADA data yang berasal dari baris ini),22,26,563,2,25,226,,0,cb968f4
-27,C6245,dev,teks_pdf/golongan,PERDA-PENAJAM-PASER-UTARA-6-2018,98317_Peraturan Daerah No. 6 Thn 2018.pdf,24,"1 Kecil Per Tindakan 34,848 58,080 92,928",1,0,PERDA-PENAJAM-PASER-UTARA-6-2018-000065,,Pemeriksaan Diagnostik Elektromedik - Kecil | Non-kelas | total | 92.928,6,14,94,2,6,95,,0,cb968f4
-28,C3359,test,teks_pdf/satu_harga,PERBUP-BANJARNEGARA-19-2018,205952_BD 19 (TARIF LAYANAN KESEHATAN NON KELAS III).pdf,8,5 GV Set 37.500 13.125 50.625,1,0,PERBUP-BANJARNEGARA-19-2018-000044,,GV Set | Non-kelas | total | 50.625,4,27,72,2,4,71,,0,cb968f4
+[harga sama, dari baris PDF lain] RPHA) | III | total | 23.000",4,48,131,2,4,225,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+26,C2213,dev,ocr_ulang/satu_harga,PERBUP-PARIGI-MOUTONG-1-2016,69665_PERBUP NO.1 THN 2016.pdf,9,-Pickup dan sejenisnya 2.000 sekali parkir,0,0,,,(TIDAK ADA data yang berasal dari baris ini),22,26,563,2,25,226,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+27,C6245,dev,teks_pdf/golongan,PERDA-PENAJAM-PASER-UTARA-6-2018,98317_Peraturan Daerah No. 6 Thn 2018.pdf,24,"1 Kecil Per Tindakan 34,848 58,080 92,928",1,0,PERDA-PENAJAM-PASER-UTARA-6-2018-000065,,Pemeriksaan Diagnostik Elektromedik - Kecil | Non-kelas | total | 92.928,6,14,94,2,6,95,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+28,C3359,test,teks_pdf/satu_harga,PERBUP-BANJARNEGARA-19-2018,205952_BD 19 (TARIF LAYANAN KESEHATAN NON KELAS III).pdf,8,5 GV Set 37.500 13.125 50.625,1,0,PERBUP-BANJARNEGARA-19-2018-000044,,GV Set | Non-kelas | total | 50.625,4,27,72,2,4,71,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 29,C5901,dev,ocr_ulang/satu_harga,PERBUP-CIANJUR-30-2013,207283_PB-30-2013.pdf,11,"14. Intubasi 8.000,- 32.000,- 40.000,-",1,2,PERBUP-CIANJUR-30-2013-000133,PERBUP-CIANJUR-30-2013-000121;PERBUP-CIANJUR-30-2013-000156,"Intubasi | Non-kelas | total | 40.000
 [harga sama, dari baris PDF lain] Perawatan luka dengan ja | Non-kelas | total | 40.000
-[harga sama, dari baris PDF lain] RJP | Non-kelas | total | 40.000",7,39,204,2,8,183,,0,cb968f4
-30,C3453,dev,teks_pdf/satu_harga,PERBUP-BANJARNEGARA-47-2015,292317_Bup 47-OCR.pdf,38,41 Scapula 2 Posisi 1x tindakan - 14.200 14.200 28.400,1,0,PERBUP-BANJARNEGARA-47-2015-000155,,Scapula 2 Posisi 1x tindakan | Non-kelas | total | 28.400,24,17,297,2,24,292,,0,cb968f4
-31,C3872,dev,teks_pdf/golongan,PERBUP-PENUKAL-ABAB-LEMATANG-ILIR-45-2020,156907_PERBUP NO 45 THN 2020.pdf,13,3 KELAS VIP 202.000 48.000 250.000,1,0,PERBUP-PENUKAL-ABAB-LEMATANG-ILIR-45-2020-000003,,1 KELASI | VIP | total | 250.000,3,15,68,2,3,60,,0,cb968f4
+[harga sama, dari baris PDF lain] RJP | Non-kelas | total | 40.000",7,39,204,2,8,183,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+30,C3453,dev,teks_pdf/satu_harga,PERBUP-BANJARNEGARA-47-2015,292317_Bup 47-OCR.pdf,38,41 Scapula 2 Posisi 1x tindakan - 14.200 14.200 28.400,1,0,PERBUP-BANJARNEGARA-47-2015-000155,,Scapula 2 Posisi 1x tindakan | Non-kelas | total | 28.400,24,17,297,2,24,292,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+31,C3872,dev,teks_pdf/golongan,PERBUP-PENUKAL-ABAB-LEMATANG-ILIR-45-2020,156907_PERBUP NO 45 THN 2020.pdf,13,3 KELAS VIP 202.000 48.000 250.000,1,0,PERBUP-PENUKAL-ABAB-LEMATANG-ILIR-45-2020-000003,,1 KELASI | VIP | total | 250.000,3,15,68,2,3,60,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 32,C6353,dev,ocr_ulang/satu_harga,PERWALI-SIBOLGA-26-2016,64172_PERWAL SIBOLGA NO. 26 TAHUN 2016_compare.pdf,12,5) Ekstraksi benda asina di orofarina 50.000 20.000 90.000,1,9,PERWALI-SIBOLGA-26-2016-000120,PERWALI-SIBOLGA-26-2016-000114;PERWALI-SIBOLGA-26-2016-000115;PERWALI-SIBOLGA-26-2016-000121;PERWALI-SIBOLGA-26-2016-000122;PERWALI-SIBOLGA-26-2016-000132;PERWALI-SIBOLGA-26-2016-000134;PERWALI-SIBOLGA-26-2016-000138;PERWALI-SIBOLGA-26-2016-000139;PERWALI-SIBOLGA-26-2016-000141,"Ekstraksi benda asina di orofarina | Non-kelas | total | 90.000
 [harga sama, dari baris PDF lain] Tambalan sementara gigi susu | Non-kelas | total | 20.000
 [harga sama, dari baris PDF lain] Tambalan aiai GIC | Non-kelas | total | 50.000
@@ -103,7 +103,7 @@ LOH | III | total | 26.500
 [harga sama, dari baris PDF lain] lmpedansi audiometric | Non-kelas | total | 50.000
 [harga sama, dari baris PDF lain] Blopsi tumor hidunq | Non-kelas | total | 90.000
 [harga sama, dari baris PDF lain] j 24) Biopsi nasofaring secara endoskooi | Non-kelas | total | 90.000
-[harga sama, dari baris PDF lain] ! I 26) Biopsi nasofaring tanpa endoskooi | Non-kelas | total | 90.000",11,57,496,2,11,477,C2256,13,cb968f4
+[harga sama, dari baris PDF lain] ! I 26) Biopsi nasofaring tanpa endoskooi | Non-kelas | total | 90.000",11,57,496,2,11,477,C2256,13,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 33,C5514,test,teks_pdf/per_kelas,PERBUP-PATI-18-2019,190695_18__PERBUP_NO__18_TAHUN_2019_TENTANG_TARIF_PELAYANAN_KESEHATAN_PADA_RSUD_KAYEN_(1).pdf,31,13 LCS/CSF 75.000 80.000 85.000 95.000,4,13,PERBUP-PATI-18-2019-000379;PERBUP-PATI-18-2019-000380;PERBUP-PATI-18-2019-000381;PERBUP-PATI-18-2019-000382,PERBUP-PATI-18-2019-000268;PERBUP-PATI-18-2019-000333;PERBUP-PATI-18-2019-000334;PERBUP-PATI-18-2019-000337;PERBUP-PATI-18-2019-000338;PERBUP-PATI-18-2019-000341;PERBUP-PATI-18-2019-000342;PERBUP-PATI-18-2019-000345;PERBUP-PATI-18-2019-000346;PERBUP-PATI-18-2019-000349;PERBUP-PATI-18-2019-000356;PERBUP-PATI-18-2019-000377;PERBUP-PATI-18-2019-000378,"LCS/CSF | II | total | 75.000
 LCS/CSF | I | total | 80.000
 LCS/CSF | Utama | total | 85.000
@@ -120,8 +120,8 @@ LCS/CSF | VIP | total | 95.000
 [harga sama, dari baris PDF lain] Magnesium | Utama | total | 75.000
 [harga sama, dari baris PDF lain] LDH | I | total | 95.000
 [harga sama, dari baris PDF lain] Cairan Tubuh | Utama | total | 75.000
-... (+1 lagi)",11,36,248,2,11,700,C4578,7,cb968f4
-34,C1197,test,teks_pdf/golongan,PERDA-GARUT-2-2007,231492_LAMPIRAN PERDA KAB. GARUT NO 2 TAHUN 2007.pdf,13,Kelas I 13.000 7.000 20.000,1,0,PERDA-GARUT-2-2007-000215,,Kecil | I | total | 20.000,18,20,278,2,18,259,,0,cb968f4
+... (+1 lagi)",11,36,248,2,11,700,C4578,7,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+34,C1197,test,teks_pdf/golongan,PERDA-GARUT-2-2007,231492_LAMPIRAN PERDA KAB. GARUT NO 2 TAHUN 2007.pdf,13,Kelas I 13.000 7.000 20.000,1,0,PERDA-GARUT-2-2007-000215,,Kecil | I | total | 20.000,18,20,278,2,18,259,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 35,C2827,test,teks_pdf/per_kelas,PERBUP-PATI-4-2012,238746_PERBUP NO 4 TH 2012.PDF,26,1 Dokter 550.000 600.000 700.000 800.000 900.000,5,10,PERBUP-PATI-4-2012-000051;PERBUP-PATI-4-2012-000052;PERBUP-PATI-4-2012-000053;PERBUP-PATI-4-2012-000054;PERBUP-PATI-4-2012-000055,PERBUP-PATI-4-2012-000031;PERBUP-PATI-4-2012-000032;PERBUP-PATI-4-2012-000036;PERBUP-PATI-4-2012-000037;PERBUP-PATI-4-2012-000038;PERBUP-PATI-4-2012-000042;PERBUP-PATI-4-2012-000043;PERBUP-PATI-4-2012-000044;PERBUP-PATI-4-2012-000045;PERBUP-PATI-4-2012-000060,"Dokter | II | total | 550.000
 Dokter | I | total | 600.000
 Dokter | Teladan | total | 700.000
@@ -136,17 +136,17 @@ Dokter | VIP | total | 900.000
 [harga sama, dari baris PDF lain] Tarif Operasi - Sedang | Teladan | total | 700.000
 [harga sama, dari baris PDF lain] Tarif Operasi - Sedang | Utama | total | 800.000
 [harga sama, dari baris PDF lain] Tarif Operasi - Sedang | VIP | total | 900.000
-[harga sama, dari baris PDF lain] Dokter Umum | VIP | total | 600.000",9,7,145,2,9,546,C9746,19,cb968f4
-36,C8537,dev,teks_pdf/per_kelas,PERDA-BANGKA-BARAT-13-2007,27176_Perda_Kab_Bangka_Barat_2007_13.pdf,14,"3. Konservasi Jenazah 134.600,-",1,0,PERDA-BANGKA-BARAT-13-2007-000176,,Konservasi Jenazah | Non-kelas | total | 134.600,5,8,138,2,5,182,,0,cb968f4
+[harga sama, dari baris PDF lain] Dokter Umum | VIP | total | 600.000",9,7,145,2,9,546,C9746,19,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+36,C8537,dev,teks_pdf/per_kelas,PERDA-BANGKA-BARAT-13-2007,27176_Perda_Kab_Bangka_Barat_2007_13.pdf,14,"3. Konservasi Jenazah 134.600,-",1,0,PERDA-BANGKA-BARAT-13-2007-000176,,Konservasi Jenazah | Non-kelas | total | 134.600,5,8,138,2,5,182,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 37,C4146,dev,ocr_ulang/satu_harga,PERWALI-PEKANBARU-8-2022,232200_PERWA NO 8 TAHUN 2022 TENTANG BADAN LAYANAN UMUM DAERAH RUMAH SAKIT DAERAH MADANI KOTA PEKANBARU (SALINAN).pdf,25,10 Kuretase Gingiva 40.000 160.000 200.000,1,4,PERWALI-PEKANBARU-8-2022-000105,PERWALI-PEKANBARU-8-2022-000085;PERWALI-PEKANBARU-8-2022-000094;PERWALI-PEKANBARU-8-2022-000095;PERWALI-PEKANBARU-8-2022-000108,"Kuretase Gingiva | Non-kelas | total | 200.000
 [harga sama, dari baris PDF lain] InsersiFullDenture (GTL) | Non-kelas | total | 200.000
 [harga sama, dari baris PDF lain] Rebasing/Relining | Non-kelas | total | 200.000
 [harga sama, dari baris PDF lain] Reparasi prothesa patah | Non-kelas | total | 200.000
-[harga sama, dari baris PDF lain] Deep scalling dan root planning per Gigi | Non-kelas | total | 200.000",23,31,747,2,24,648,C3968,27,cb968f4
-38,C5670,dev,teks_pdf/golongan,PERGUB-KALIMANTAN-TIMUR-38-2020,187886_PERGUB.38.2020.pdf,12,4 Khusus 594.000,1,0,PERGUB-KALIMANTAN-TIMUR-38-2020-000053,,Tarif Pelayanan Radiologi - Khusus | Non-kelas | total | 594.000,6,19,79,2,6,79,,0,cb968f4
-39,C4697,test,ocr_ulang/satu_harga,PERWALI-PEKALONGAN-58-2020,192352_Perwal Pekalongan 58 2020.pdf,7,12 AUDIOMETRI (THT) 48.000 72.000 120.000,1,0,PERWALI-PEKALONGAN-58-2020-000050,,AUDIOMETRI (THT) | Non-kelas | total | 120.000,34,39,1135,2,34,983,C8915,30,cb968f4
-40,C1919,test,teks_pdf/golongan,PERDA-TULANG-BAWANG-02-2009,103247_Peraturan Daerah (PERDA) Kabupaten Tulang Bawang No 02 Tahun 2009.pdf,39,3.12.3.5 Canggih 140.000 210.000 350.000,1,0,PERDA-TULANG-BAWANG-02-2009-000480,,PemerikManRadioDiagnoatik - Canggih | Non-kelas | total | 350.000,21,7,524,2,21,735,,0,cb968f4
-41,C9922,dev,ocr_ulang/satu_harga,PERDA-TUBAN-1-2019,125231_no 1 (2).pdf,86,AFP Rp 205.000 RP 53.200 Rp. 258.200,1,0,PERDA-TUBAN-1-2019-000501,,AFP | Non-kelas | total | 258.200,24,46,931,2,24,901,,0,cb968f4
+[harga sama, dari baris PDF lain] Deep scalling dan root planning per Gigi | Non-kelas | total | 200.000",23,31,747,2,24,648,C3968,27,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+38,C5670,dev,teks_pdf/golongan,PERGUB-KALIMANTAN-TIMUR-38-2020,187886_PERGUB.38.2020.pdf,12,4 Khusus 594.000,1,0,PERGUB-KALIMANTAN-TIMUR-38-2020-000053,,Tarif Pelayanan Radiologi - Khusus | Non-kelas | total | 594.000,6,19,79,2,6,79,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+39,C4697,test,ocr_ulang/satu_harga,PERWALI-PEKALONGAN-58-2020,192352_Perwal Pekalongan 58 2020.pdf,7,12 AUDIOMETRI (THT) 48.000 72.000 120.000,1,0,PERWALI-PEKALONGAN-58-2020-000050,,AUDIOMETRI (THT) | Non-kelas | total | 120.000,34,39,1135,2,34,983,C8915,30,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+40,C1919,test,teks_pdf/golongan,PERDA-TULANG-BAWANG-02-2009,103247_Peraturan Daerah (PERDA) Kabupaten Tulang Bawang No 02 Tahun 2009.pdf,39,3.12.3.5 Canggih 140.000 210.000 350.000,1,0,PERDA-TULANG-BAWANG-02-2009-000480,,PemerikManRadioDiagnoatik - Canggih | Non-kelas | total | 350.000,21,7,524,2,21,735,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+41,C9922,dev,ocr_ulang/satu_harga,PERDA-TUBAN-1-2019,125231_no 1 (2).pdf,86,AFP Rp 205.000 RP 53.200 Rp. 258.200,1,0,PERDA-TUBAN-1-2019-000501,,AFP | Non-kelas | total | 258.200,24,46,931,2,24,901,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 42,C7544,dev,ocr_ulang/satu_harga,PERWALI-SIBOLGA-26-2016,64172_PERWAL SIBOLGA NO. 26 TAHUN 2016_compare.pdf,16,Reduksi 6.000 3.000 9.000,1,9,PERWALI-SIBOLGA-26-2016-000321,PERWALI-SIBOLGA-26-2016-000308;PERWALI-SIBOLGA-26-2016-000309;PERWALI-SIBOLGA-26-2016-000310;PERWALI-SIBOLGA-26-2016-000311;PERWALI-SIBOLGA-26-2016-000314;PERWALI-SIBOLGA-26-2016-000315;PERWALI-SIBOLGA-26-2016-000322;PERWALI-SIBOLGA-26-2016-000324;PERWALI-SIBOLGA-26-2016-000351,"Reduksi | Non-kelas | total | 9.000
 [harga sama, dari baris PDF lain] Leukosit / WBC | Non-kelas | total | 9.000
 [harga sama, dari baris PDF lain] LED ! BBCI ESR | Non-kelas | total | 9.000
@@ -156,22 +156,22 @@ Dokter | VIP | total | 900.000
 [harga sama, dari baris PDF lain] ABO / Rhesus Factor | Non-kelas | total | 9.000
 [harga sama, dari baris PDF lain] Protein | Non-kelas | total | 9.000
 [harga sama, dari baris PDF lain] Sedimen | Non-kelas | total | 9.000
-[harga sama, dari baris PDF lain] Gamma GT | Non-kelas | total | 3.000",11,56,496,2,11,477,,0,cb968f4
-43,C1465,test,teks_pdf/golongan,PERDA-BANYUMAS-2-2022,210772_jdih_230522033417628b4709acb79.pdf,22,Kelas III 270.000 270.000 540.000,1,0,PERDA-BANYUMAS-2-2022-000113,,Besar | III | total | 540.000,17,18,251,2,17,239,,0,cb968f4
-44,C3998,test,ocr_ulang/satu_harga,PERDA-KEPULAUAN-SULA-9-2012,115346_Perda_2012_9_Retribusi Pelayanan Kesehatan RSUD.pdf,36,21.000 11.700 9.000 32.700 30.000,0,0,,,(TIDAK ADA data yang berasal dari baris ini),24,16,870,2,24,526,,0,cb968f4
-45,C9163,test,teks_pdf/golongan,PERDA-BANYUMAS-2-2022,210772_jdih_230522033417628b4709acb79.pdf,24,Kelas III 8.500 2.600 11.100,1,0,PERDA-BANYUMAS-2-2022-000154,,TINDAKAN KEPERAWATAN DAN KEBIDANAN - Kecil B | III | total | 11.100,17,13,251,2,17,239,,0,cb968f4
+[harga sama, dari baris PDF lain] Gamma GT | Non-kelas | total | 3.000",11,56,496,2,11,477,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+43,C1465,test,teks_pdf/golongan,PERDA-BANYUMAS-2-2022,210772_jdih_230522033417628b4709acb79.pdf,22,Kelas III 270.000 270.000 540.000,1,0,PERDA-BANYUMAS-2-2022-000113,,Besar | III | total | 540.000,17,18,251,2,17,239,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+44,C3998,test,ocr_ulang/satu_harga,PERDA-KEPULAUAN-SULA-9-2012,115346_Perda_2012_9_Retribusi Pelayanan Kesehatan RSUD.pdf,36,21.000 11.700 9.000 32.700 30.000,0,0,,,(TIDAK ADA data yang berasal dari baris ini),24,16,870,2,24,526,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+45,C9163,test,teks_pdf/golongan,PERDA-BANYUMAS-2-2022,210772_jdih_230522033417628b4709acb79.pdf,24,Kelas III 8.500 2.600 11.100,1,0,PERDA-BANYUMAS-2-2022-000154,,TINDAKAN KEPERAWATAN DAN KEBIDANAN - Kecil B | III | total | 11.100,17,13,251,2,17,239,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 46,C4600,dev,teks_pdf/per_kelas,PERBUP-KATINGAN-21-2020,188868_Perbup Katingan No.21 Tahun 2020 ttg Tarif Pelayanan Kesehatan Pada BLUD RSUD Mas Amsyar Kab. Katingan.pdf,23,63 CK 175.000 185.000,0,2,,PERBUP-KATINGAN-21-2020-000126;PERBUP-KATINGAN-21-2020-000127,"[harga sama, dari baris PDF lain] Dengue blood IgG/IgM | VIP VIP | total | 175.000
-[harga sama, dari baris PDF lain] Dengue blood ( NS 1 ) | Kelas I, Ii, Kelas I, Ii, Iii, Igd, Iii, Igd, Icu, Poliklinik | total | 175.000",22,40,656,2,22,660,,0,cb968f4
+[harga sama, dari baris PDF lain] Dengue blood ( NS 1 ) | Kelas I, Ii, Kelas I, Ii, Iii, Igd, Iii, Igd, Icu, Poliklinik | total | 175.000",22,40,656,2,22,660,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 47,C9016,dev,teks_pdf/satu_harga,PERDA-WONOGIRI-13-2008,225087_peraturan_daerah_perda_no__13_tahun_2008_tentang_retribusi_pelayanan_kesehatan_pada_rumah_sakit_umum_daerah_kabupaten_wonogiri_1568086963718.pdf,65,"14 Irigasi Hidung 5.369,00 19.631,00 25.000,00",1,1,PERDA-WONOGIRI-13-2008-000029,PERDA-WONOGIRI-13-2008-000033,"Irigasi Hidung | Non-kelas | total | 25.000
-[harga sama, dari baris PDF lain] Aspirasi Discharge telinga | Non-kelas | total | 25.000",55,36,1473,2,55,859,,0,cb968f4
+[harga sama, dari baris PDF lain] Aspirasi Discharge telinga | Non-kelas | total | 25.000",55,36,1473,2,55,859,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 48,C8638,test,ocr_ulang/satu_harga,PERBUP-ACEH-BESAR-11-2026,352080_Perbup  Nomor  11 Thn 2026.pdf,35,"Gas Medis (Oksigen) 1 (satu) Jam Pertama 20.000,-",1,4,PERBUP-ACEH-BESAR-11-2026-000082,PERBUP-ACEH-BESAR-11-2026-000076;PERBUP-ACEH-BESAR-11-2026-000077;PERBUP-ACEH-BESAR-11-2026-000079;PERBUP-ACEH-BESAR-11-2026-000080,"Gas Medis (Oksigen) 1 (satu) Jam Pertama | Non-kelas | total | 20.000
 [harga sama, dari baris PDF lain] Mendapatkan SIM | Non-kelas | total | 20.000
 [harga sama, dari baris PDF lain] Melamar Pekerjaan | Non-kelas | total | 20.000
 [harga sama, dari baris PDF lain] Keterangan Sakit | Non-kelas | total | 20.000
-[harga sama, dari baris PDF lain] Keterangan Sehat | Non-kelas | total | 20.000",8,11,146,2,26,87,C8420,5,cb968f4
+[harga sama, dari baris PDF lain] Keterangan Sehat | Non-kelas | total | 20.000",8,11,146,2,26,87,C8420,5,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 49,C9423,dev,ocr_ulang/satu_harga,PERBUP-CIANJUR-88-2016,151227_Perbup 88-2016.pdf,4,"a. Paket A (Akper, Rekrutmen 300.000",1,1,PERBUP-CIANJUR-88-2016-000008,PERBUP-CIANJUR-88-2016-000011,"Paket A (Akper, Rekrutmen | Non-kelas | total | 300.000
-[harga sama, dari baris PDF lain] Calon Tenaga Kerja, 500:000 | kolom 1/2 (judul tak terbaca) | total | 300.000",26,14,856,2,27,787,,0,cb968f4
-50,C1340,dev,ocr_ulang/golongan,PERGUB-SULAWESI-TENGGARA-3-2023,269303_PERGUB NO 3 TAHUN 2023.pdf,8,b Banyak per rahang 127.200 84.800 235.00,0,0,,,(TIDAK ADA data yang berasal dari baris ini),2,30,41,2,2,30,,0,cb968f4
+[harga sama, dari baris PDF lain] Calon Tenaga Kerja, 500:000 | kolom 1/2 (judul tak terbaca) | total | 300.000",26,14,856,2,27,787,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+50,C1340,dev,ocr_ulang/golongan,PERGUB-SULAWESI-TENGGARA-3-2023,269303_PERGUB NO 3 TAHUN 2023.pdf,8,b Banyak per rahang 127.200 84.800 235.00,0,0,,,(TIDAK ADA data yang berasal dari baris ini),2,30,41,2,2,30,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 51,C7072,test,teks_pdf/per_kelas,PERBUP-JOMBANG-56-2017,86016_PERBUP 56 THN 2017.pdf,19,"21 ASSESMENT KEKUATAN OTOT 28,700 40,500 69,200",1,9,PERBUP-JOMBANG-56-2017-000452,PERBUP-JOMBANG-56-2017-000450;PERBUP-JOMBANG-56-2017-000451;PERBUP-JOMBANG-56-2017-000453;PERBUP-JOMBANG-56-2017-000454;PERBUP-JOMBANG-56-2017-000455;PERBUP-JOMBANG-56-2017-000456;PERBUP-JOMBANG-56-2017-000457;PERBUP-JOMBANG-56-2017-000458;PERBUP-JOMBANG-56-2017-000459,"ASSESMENT KEKUATAN OTOT | Non-kelas | total | 69.200
 [harga sama, dari baris PDF lain] ASSESMENT INTEGRASI SENSORI-MOTOR | Non-kelas | total | 69.200
 [harga sama, dari baris PDF lain] ASSESMENT KEBUGARAN | Non-kelas | total | 69.200
@@ -181,8 +181,8 @@ Dokter | VIP | total | 900.000
 [harga sama, dari baris PDF lain] ASSESMENT POLA JALAN | Non-kelas | total | 69.200
 [harga sama, dari baris PDF lain] ASSESMENT POSTUR KONTROL | Non-kelas | total | 69.200
 [harga sama, dari baris PDF lain] ASSESMENT SENSIBILITAS | Non-kelas | total | 69.200
-[harga sama, dari baris PDF lain] FITTING DAN CHECK OUT ORTOSIS & PROSTESIS | Non-kelas | total | 69.200",63,10,2028,2,63,2804,C6799,8,cb968f4
-52,C1358,test,teks_pdf/satu_harga,PERBUP-PASAMAN-11-2020,349383_Perbup 11 Tahun 2020.pdf,8,2. Layanan Orientasi Internal (LOI) 250.000 permahasiswa,0,0,,,(TIDAK ADA data yang berasal dari baris ini),3,14,50,2,3,60,,0,cb968f4
+[harga sama, dari baris PDF lain] FITTING DAN CHECK OUT ORTOSIS & PROSTESIS | Non-kelas | total | 69.200",63,10,2028,2,63,2804,C6799,8,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+52,C1358,test,teks_pdf/satu_harga,PERBUP-PASAMAN-11-2020,349383_Perbup 11 Tahun 2020.pdf,8,2. Layanan Orientasi Internal (LOI) 250.000 permahasiswa,0,0,,,(TIDAK ADA data yang berasal dari baris ini),3,14,50,2,3,60,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 53,C8853,test,teks_pdf/per_kelas,PERBUP-PATI-18-2019,190695_18__PERBUP_NO__18_TAHUN_2019_TENTANG_TARIF_PELAYANAN_KESEHATAN_PADA_RSUD_KAYEN_(1).pdf,27,5 Visite dr Umum 15.000 20.000 22.500 25.000 27.000 27.000,6,16,PERBUP-PATI-18-2019-000020;PERBUP-PATI-18-2019-000021;PERBUP-PATI-18-2019-000022;PERBUP-PATI-18-2019-000023;PERBUP-PATI-18-2019-000024;PERBUP-PATI-18-2019-000025,PERBUP-PATI-18-2019-000008;PERBUP-PATI-18-2019-000009;PERBUP-PATI-18-2019-000010;PERBUP-PATI-18-2019-000011;PERBUP-PATI-18-2019-000012;PERBUP-PATI-18-2019-000013;PERBUP-PATI-18-2019-000014;PERBUP-PATI-18-2019-000026;PERBUP-PATI-18-2019-000027;PERBUP-PATI-18-2019-000028;PERBUP-PATI-18-2019-000029;PERBUP-PATI-18-2019-000030;PERBUP-PATI-18-2019-000031;PERBUP-PATI-18-2019-000035;PERBUP-PATI-18-2019-000036;PERBUP-PATI-18-2019-000037,"Visite dr Umum | kolom 1/6 (kelas tak terbaca) | total | 15.000
 Visite dr Umum | kolom 2/6 (kelas tak terbaca) | total | 20.000
 Visite dr Umum | kolom 3/6 (kelas tak terbaca) | total | 22.500
@@ -201,17 +201,17 @@ Visite dr Umum | kolom 6/6 (kelas tak terbaca) | total | 27.000
 [harga sama, dari baris PDF lain] Konsutasi Medis | kolom 3/6 (kelas tak terbaca) | total | 15.000
 [harga sama, dari baris PDF lain] Konsutasi Medis | kolom 4/6 (kelas tak terbaca) | total | 20.000
 [harga sama, dari baris PDF lain] Konsutasi Medis | kolom 5/6 (kelas tak terbaca) | total | 25.000
-... (+4 lagi)",11,11,248,2,11,700,C5380,25,cb968f4
-54,C8748,dev,teks_pdf/golongan,PERBUP-DEMAK-22-2013,285746_Perbup Kab. Demak Tahun 2013 No 22_ocr.pdf,12,1 Asuhan Keperawatan Gawat Darurat 15.000,1,0,PERBUP-DEMAK-22-2013-000089,,Asuhan Keperawatan Gawat Darurat | Non-kelas | total | 15.000,21,16,471,2,21,472,,0,cb968f4
-55,C8192,dev,ocr_ulang/satu_harga,PERDA-JAYAPURA-5-2008,71090_Perda Kabupaten Jayapura nomor 5 tahun 2008.pdf,20,Penuh Lepasan Rahang bawah 200.000 300.000 500.000 1.000.002,1,0,PERDA-JAYAPURA-5-2008-000314,,Penuh Lepasan Rahang bawah | Non-kelas | total | 1.000.002,15,11,225,2,15,337,,0,cb968f4
-56,C5482,test,teks_pdf/golongan,PERDA-TULANG-BAWANG-02-2009,103247_Peraturan Daerah (PERDA) Kabupaten Tulang Bawang No 02 Tahun 2009.pdf,45,"3.12.3.6.4.3 Leher,nasofaring&mastoid 461.200 691.800 1.153.000",1,0,PERDA-TULANG-BAWANG-02-2009-000640,,"Leher,nasofaring&mastoid | Non-kelas | total | 1.153.000",21,26,524,2,21,735,,0,cb968f4
+... (+4 lagi)",11,11,248,2,11,700,C5380,25,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+54,C8748,dev,teks_pdf/golongan,PERBUP-DEMAK-22-2013,285746_Perbup Kab. Demak Tahun 2013 No 22_ocr.pdf,12,1 Asuhan Keperawatan Gawat Darurat 15.000,1,0,PERBUP-DEMAK-22-2013-000089,,Asuhan Keperawatan Gawat Darurat | Non-kelas | total | 15.000,21,16,471,2,21,472,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+55,C8192,dev,ocr_ulang/satu_harga,PERDA-JAYAPURA-5-2008,71090_Perda Kabupaten Jayapura nomor 5 tahun 2008.pdf,20,Penuh Lepasan Rahang bawah 200.000 300.000 500.000 1.000.002,1,0,PERDA-JAYAPURA-5-2008-000314,,Penuh Lepasan Rahang bawah | Non-kelas | total | 1.000.002,15,11,225,2,15,337,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+56,C5482,test,teks_pdf/golongan,PERDA-TULANG-BAWANG-02-2009,103247_Peraturan Daerah (PERDA) Kabupaten Tulang Bawang No 02 Tahun 2009.pdf,45,"3.12.3.6.4.3 Leher,nasofaring&mastoid 461.200 691.800 1.153.000",1,0,PERDA-TULANG-BAWANG-02-2009-000640,,"Leher,nasofaring&mastoid | Non-kelas | total | 1.153.000",21,26,524,2,21,735,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 57,C8491,dev,teks_pdf/per_kelas,PERBUP-TANGERANG-05-2012,19780_Peraturan-Bupati-Tangerang-Nomor-05-Tahun-2012-tentang-Tarif-Layanan-Rumah-Sakit-Badan-Layanan-Umum-Daerah-pada-Rumah-Sakit-Umum-Kabupaten-Tangerang.p.pdf,21,17 INFUS PUMP/ KALI PAKAI Rp 75.000,1,2,PERBUP-TANGERANG-05-2012-000635,PERBUP-TANGERANG-05-2012-000630;PERBUP-TANGERANG-05-2012-000638,"INFUS PUMP/ KALI PAKAI | Non-kelas | total | 75.000
 [harga sama, dari baris PDF lain] DEFRIBILATOR/KALI PAKAI | Non-kelas | total | 75.000
-[harga sama, dari baris PDF lain] MONITOR EKG/ HARI | Non-kelas | total | 75.000",10,13,162,2,10,642,,0,cb968f4
-58,C5516,dev,ocr_ulang/satu_harga,PERDA-TANA-TORAJA-21-2016,114295_21.pdf,5,NICU 300.000,1,0,PERDA-TANA-TORAJA-21-2016-000007,,Kelas IH | NICU | total | 300.000,7,16,110,2,7,106,C6406,14,cb968f4
-59,C4695,dev,teks_pdf/satu_harga,PERGUB-LAMPUNG-26-2021,"248500_PERUBAHAN ATAS PERATURAN GUBERNUR LAMPUNG NOMOR 6 TAHUN 2019 TENTANG TARIF PELAYANAN KESEHATAN RAWAT JALAN, INSTALASI GAWAT DARURAT, KELAS II, KELAS K.pdf",10,"3.1.15.8.12 DiagnosticR-LCatheterisation 2,858,000 13,250,000 16,108,000",1,0,PERGUB-LAMPUNG-26-2021-000073,,DiagnosticR-LCatheterisation | Non-kelas | total | 16.108.000,13,8,171,2,14,173,,0,cb968f4
-60,C4324,dev,ocr_ulang/golongan,PERGUB-LAMPUNG-10-2015,319012_syscom5064.pdf,59,"3.1 16.3 BESARI 1,248,000 9,390.000 10,638,000",1,0,PERGUB-LAMPUNG-10-2015-000270,,16.3 BESARI | Non-kelas | total | 10.638.000,122,2,921,2,148,827,,0,cb968f4
-61,C6350,test,teks_pdf/golongan,PERGUB-KALIMANTAN-UTARA-20-2017,101937_PERGUB-20-2017_SALINAN.pdf,24,"907,500",1,0,PERGUB-KALIMANTAN-UTARA-20-2017-000014,,2 TARIF TINDAKAN MEDIK IGD - BESAR | Non-kelas | total | 907.500,30,15,370,2,31,361,,0,cb968f4
+[harga sama, dari baris PDF lain] MONITOR EKG/ HARI | Non-kelas | total | 75.000",10,13,162,2,10,642,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+58,C5516,dev,ocr_ulang/satu_harga,PERDA-TANA-TORAJA-21-2016,114295_21.pdf,5,NICU 300.000,1,0,PERDA-TANA-TORAJA-21-2016-000007,,Kelas IH | NICU | total | 300.000,7,16,110,2,7,106,C6406,14,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+59,C4695,dev,teks_pdf/satu_harga,PERGUB-LAMPUNG-26-2021,"248500_PERUBAHAN ATAS PERATURAN GUBERNUR LAMPUNG NOMOR 6 TAHUN 2019 TENTANG TARIF PELAYANAN KESEHATAN RAWAT JALAN, INSTALASI GAWAT DARURAT, KELAS II, KELAS K.pdf",10,"3.1.15.8.12 DiagnosticR-LCatheterisation 2,858,000 13,250,000 16,108,000",1,0,PERGUB-LAMPUNG-26-2021-000073,,DiagnosticR-LCatheterisation | Non-kelas | total | 16.108.000,13,8,171,2,14,173,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+60,C4324,dev,ocr_ulang/golongan,PERGUB-LAMPUNG-10-2015,319012_syscom5064.pdf,59,"3.1 16.3 BESARI 1,248,000 9,390.000 10,638,000",1,0,PERGUB-LAMPUNG-10-2015-000270,,16.3 BESARI | Non-kelas | total | 10.638.000,122,2,921,2,148,827,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+61,C6350,test,teks_pdf/golongan,PERGUB-KALIMANTAN-UTARA-20-2017,101937_PERGUB-20-2017_SALINAN.pdf,24,"907,500",1,0,PERGUB-KALIMANTAN-UTARA-20-2017-000014,,2 TARIF TINDAKAN MEDIK IGD - BESAR | Non-kelas | total | 907.500,30,15,370,2,31,361,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 62,C6221,test,ocr_ulang/satu_harga,PERBUP-CIANJUR-21-2013,207233_PB.21-2013.pdf,24,44. Ganti Balutan/Luka Besar 20.000,1,9,PERBUP-CIANJUR-21-2013-000629,PERBUP-CIANJUR-21-2013-000630;PERBUP-CIANJUR-21-2013-000631;PERBUP-CIANJUR-21-2013-000634;PERBUP-CIANJUR-21-2013-000644;PERBUP-CIANJUR-21-2013-000647;PERBUP-CIANJUR-21-2013-000649;PERBUP-CIANJUR-21-2013-000650;PERBUP-CIANJUR-21-2013-000658;PERBUP-CIANJUR-21-2013-000659,"Ganti Balutan/Luka Besar | Non-kelas | total | 20.000
 [harga sama, dari baris PDF lain] Ganti Balutan/Luka Sedang | Non-kelas | total | 20.000
 [harga sama, dari baris PDF lain] Ganti Balutan/Luka Kecil | Non-kelas | total | 20.000
@@ -221,41 +221,41 @@ Visite dr Umum | kolom 6/6 (kelas tak terbaca) | total | 27.000
 [harga sama, dari baris PDF lain] Rectal Touche | Non-kelas | total | 20.000
 [harga sama, dari baris PDF lain] Perawatan Luka Bakar < 5% | Non-kelas | total | 20.000
 [harga sama, dari baris PDF lain] Perawatan tali pusar | Non-kelas | total | 20.000
-[harga sama, dari baris PDF lain] Pengambilan sedimen (darah, feces, urine, sputum) | Non-kelas | total | 20.000",24,51,774,2,24,802,C7942,17,cb968f4
+[harga sama, dari baris PDF lain] Pengambilan sedimen (darah, feces, urine, sputum) | Non-kelas | total | 20.000",24,51,774,2,24,802,C7942,17,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 63,C4415,test,teks_pdf/per_kelas,PERBUP-SOLOK-SELATAN-39-2017,76196_PERBUP NO 39 TAHUN 2017 ttg Penetapan Pola Tarif Layanan Pada Badan Layanan Umum Rumah Sakit Umum Daerah Solok Selatan.pdf,49,2 Inhalasi(Nebu)/hari 16.200 10.800 27.000 18.000 12.000 30.000 19.800 13.200 33.000 23.400 15.600 39.000,4,0,PERBUP-SOLOK-SELATAN-39-2017-001031;PERBUP-SOLOK-SELATAN-39-2017-001032;PERBUP-SOLOK-SELATAN-39-2017-001033;PERBUP-SOLOK-SELATAN-39-2017-001034,,"Inhalasi(Nebu)/hari | III | total | 27.000
 Inhalasi(Nebu)/hari | II | total | 30.000
 Inhalasi(Nebu)/hari | I | total | 33.000
-Inhalasi(Nebu)/hari | VIP | total | 39.000",45,14,877,2,45,1235,C9670,15,cb968f4
-64,C9531,test,ocr_ulang/golongan,PERWALI-SEMARANG-7-2011,209622_perwal no 7 tahun 2011.pdf,17,a. Medik Gigi Canggih I 300.000,1,0,PERWALI-SEMARANG-7-2011-000133,,Medik Gigi Canggih I | Non-kelas | total | 300.000,16,10,448,2,18,448,,0,cb968f4
+Inhalasi(Nebu)/hari | VIP | total | 39.000",45,14,877,2,45,1235,C9670,15,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+64,C9531,test,ocr_ulang/golongan,PERWALI-SEMARANG-7-2011,209622_perwal no 7 tahun 2011.pdf,17,a. Medik Gigi Canggih I 300.000,1,0,PERWALI-SEMARANG-7-2011-000133,,Medik Gigi Canggih I | Non-kelas | total | 300.000,16,10,448,2,18,448,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 65,C6898,dev,ocr_ulang/satu_harga,PERDA-TUBAN-1-2019,125231_no 1 (2).pdf,90,121 HIP ALAR + Obturator Rp 60.000 Rp. 66.500 Rp 126.500,1,1,PERDA-TUBAN-1-2019-000676,PERDA-TUBAN-1-2019-000674,"HIP ALAR + Obturator | Non-kelas | total | 126.500
-[harga sama, dari baris PDF lain] Femur Dewasa AP + LAT | Non-kelas | total | 126.500",24,46,931,2,24,901,,0,cb968f4
-66,C5847,test,ocr_ulang/satu_harga,PERDA-KEPULAUAN-SULA-9-2012,115346_Perda_2012_9_Retribusi Pelayanan Kesehatan RSUD.pdf,35,600.000 700.000 600.000 ,1,0,PERDA-KEPULAUAN-SULA-9-2012-000497,,Tindakan Besar | Non-kelas | total | 600.000,24,18,870,2,24,526,C3612,21,cb968f4
-67,C7861,test,ocr_ulang/satu_harga,PERBUP-TANAH-BUMBU-41-2022,233871_41.tarifpelayananpadarsud.pdf,22,Deluxe (Kelas Il) 220.000,1,0,PERBUP-TANAH-BUMBU-41-2022-000039,,Deluxe (Kelas II) | Non-kelas | total | 220.000,13,53,763,2,13,752,,0,cb968f4
+[harga sama, dari baris PDF lain] Femur Dewasa AP + LAT | Non-kelas | total | 126.500",24,46,931,2,24,901,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+66,C5847,test,ocr_ulang/satu_harga,PERDA-KEPULAUAN-SULA-9-2012,115346_Perda_2012_9_Retribusi Pelayanan Kesehatan RSUD.pdf,35,600.000 700.000 600.000 ,1,0,PERDA-KEPULAUAN-SULA-9-2012-000497,,Tindakan Besar | Non-kelas | total | 600.000,24,18,870,2,24,526,C3612,21,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+67,C7861,test,ocr_ulang/satu_harga,PERBUP-TANAH-BUMBU-41-2022,233871_41.tarifpelayananpadarsud.pdf,22,Deluxe (Kelas Il) 220.000,1,0,PERBUP-TANAH-BUMBU-41-2022-000039,,Deluxe (Kelas II) | Non-kelas | total | 220.000,13,53,763,2,13,752,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 68,C4098,dev,teks_pdf/per_kelas,PERDA-BANGKA-BARAT-13-2007,27176_Perda_Kab_Bangka_Barat_2007_13.pdf,13,"6. Perawatan luka > 20 jahitan 13.000,-",1,5,PERDA-BANGKA-BARAT-13-2007-000142,PERDA-BANGKA-BARAT-13-2007-000149;PERDA-BANGKA-BARAT-13-2007-000150;PERDA-BANGKA-BARAT-13-2007-000151;PERDA-BANGKA-BARAT-13-2007-000152;PERDA-BANGKA-BARAT-13-2007-000159,"Perawatan luka > 20 jahitan | Non-kelas | total | 13.000
 [harga sama, dari baris PDF lain] Punctie Pleura | Non-kelas | total | 13.000
 [harga sama, dari baris PDF lain] Punctie Kandung Kemih | Non-kelas | total | 13.000
 [harga sama, dari baris PDF lain] Punctie Asites | Non-kelas | total | 13.000
 [harga sama, dari baris PDF lain] Resusitasi dengan Endotrcheal | Non-kelas | total | 13.000
-[harga sama, dari baris PDF lain] Perawatan luka bakar > 10 % | Non-kelas | total | 13.000",5,39,138,2,5,182,,0,cb968f4
-69,C1847,dev,ocr_ulang/satu_harga,PERBUP-CIANJUR-30-2013,207283_PB-30-2013.pdf,8,"Film panoramic/ cephalometri 16.000,- 24.OOO,- 40.000,-",1,0,PERBUP-CIANJUR-30-2013-000027,,Film panoramic/ cephalometri 24.OOO | Non-kelas | total | 40.000,7,35,204,2,8,183,,0,cb968f4
+[harga sama, dari baris PDF lain] Perawatan luka bakar > 10 % | Non-kelas | total | 13.000",5,39,138,2,5,182,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+69,C1847,dev,ocr_ulang/satu_harga,PERBUP-CIANJUR-30-2013,207283_PB-30-2013.pdf,8,"Film panoramic/ cephalometri 16.000,- 24.OOO,- 40.000,-",1,0,PERBUP-CIANJUR-30-2013-000027,,Film panoramic/ cephalometri 24.OOO | Non-kelas | total | 40.000,7,35,204,2,8,183,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 70,C2701,dev,teks_pdf/golongan,PERWALI-SALATIGA-13-2017,94587_perwali 13.pdf,25,4) APM 6.000 500 7.900,1,6,PERWALI-SALATIGA-13-2017-000319,PERWALI-SALATIGA-13-2017-000316;PERWALI-SALATIGA-13-2017-000317;PERWALI-SALATIGA-13-2017-000318;PERWALI-SALATIGA-13-2017-000320;PERWALI-SALATIGA-13-2017-000321;PERWALI-SALATIGA-13-2017-000322,"APM 500 | Non-kelas | total | 7.900
 [harga sama, dari baris PDF lain] Tes Inteligensi Umum 500 | Non-kelas | total | 7.900
 [harga sama, dari baris PDF lain] SPM 500 | Non-kelas | total | 7.900
 [harga sama, dari baris PDF lain] CPM 500 | Non-kelas | total | 7.900
 [harga sama, dari baris PDF lain] CFiT 500 | Non-kelas | total | 7.900
 [harga sama, dari baris PDF lain] SSCT 500 | Non-kelas | total | 7.900
-[harga sama, dari baris PDF lain] RMIB 500 | Non-kelas | total | 7.900",22,21,370,2,22,382,,0,cb968f4
-71,C4659,test,teks_pdf/golongan,PERWALI-PONTIANAK-66-2020,178147_Perwa 66.pdf,16,"59.TM Vena Sectie di NICU 48,000 72,000 1 20,000",1,0,PERWALI-PONTIANAK-66-2020-000089,,59.TM Vena Sectie di NICU | Non-kelas | total | 120.000,11,19,223,2,20,213,,0,cb968f4
-72,C5672,test,teks_pdf/satu_harga,PERBUP-CIANJUR-70-2020,207069_PB-70-2020.pdf,6,"500.000,",0,0,,,(TIDAK ADA data yang berasal dari baris ini),2,9,35,2,2,30,,0,cb968f4
+[harga sama, dari baris PDF lain] RMIB 500 | Non-kelas | total | 7.900",22,21,370,2,22,382,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+71,C4659,test,teks_pdf/golongan,PERWALI-PONTIANAK-66-2020,178147_Perwa 66.pdf,16,"59.TM Vena Sectie di NICU 48,000 72,000 1 20,000",1,0,PERWALI-PONTIANAK-66-2020-000089,,59.TM Vena Sectie di NICU | Non-kelas | total | 120.000,11,19,223,2,20,213,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+72,C5672,test,teks_pdf/satu_harga,PERBUP-CIANJUR-70-2020,207069_PB-70-2020.pdf,6,"500.000,",0,0,,,(TIDAK ADA data yang berasal dari baris ini),2,9,35,2,2,30,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 73,C6529,dev,teks_pdf/golongan,PERBUP-DEMAK-22-2013,285746_Perbup Kab. Demak Tahun 2013 No 22_ocr.pdf,19,TMNO Khusus dr Sub/Spesialis 200.000,2,1,PERBUP-DEMAK-22-2013-000258;PERBUP-DEMAK-22-2013-000266,PERBUP-DEMAK-22-2013-000272,"TMNO Khusus dr Sub/Spesialis | I | total | 200.000
 TMNO Khusus dr Sub/Spesialis | Non-kelas | total | 200.000
-[harga sama, dari baris PDF lain] TMNO Besar dr Sub/Spesialis | ICU | total | 200.000",21,35,471,2,21,472,C9800,28,cb968f4
+[harga sama, dari baris PDF lain] TMNO Besar dr Sub/Spesialis | ICU | total | 200.000",21,35,471,2,21,472,C9800,28,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 74,C8125,dev,teks_pdf/satu_harga,PERBUP-LAMPUNG-BARAT-14-2016,53305_Perbup Nomor 14 Tahun 2016.pdf,14,- Khusus (berantakan) 25.000 126.000 45.500,1,2,PERBUP-LAMPUNG-BARAT-14-2016-000182,PERBUP-LAMPUNG-BARAT-14-2016-000174;PERBUP-LAMPUNG-BARAT-14-2016-000178,"Khusus (berantakan) | Non-kelas | total | 45.500
 [harga sama, dari baris PDF lain] — Berat 51 sd 100 | Non-kelas | total | 45.500
-[harga sama, dari baris PDF lain] di kamar mayat - Khusus (berantakan) | Non-kelas | total | 45.500",6,21,173,2,6,182,C5042,6,cb968f4
+[harga sama, dari baris PDF lain] di kamar mayat - Khusus (berantakan) | Non-kelas | total | 45.500",6,21,173,2,6,182,C5042,6,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 75,C6234,dev,teks_pdf/golongan,PERDA-PENAJAM-PASER-UTARA-6-2018,98317_Peraturan Daerah No. 6 Thn 2018.pdf,25,1 Ambulance 4.000 7.200 11.200,1,1,PERDA-PENAJAM-PASER-UTARA-6-2018-000085,PERDA-PENAJAM-PASER-UTARA-6-2018-000086,"Ambulance | Non-kelas | total | 11.200
-[harga sama, dari baris PDF lain] Mobil Jenazah | Non-kelas | total | 11.200",6,16,94,2,6,95,,0,cb968f4
-76,C6524,test,ocr_ulang/satu_harga,PERWALI-PEKALONGAN-58-2020,192352_Perwal Pekalongan 58 2020.pdf,16,28 TROPONIN I 165.200 174.640 132.160 472.000,1,0,PERWALI-PEKALONGAN-58-2020-000354,,TROPONIN I | Non-kelas | total | 472.000,34,49,1135,2,34,983,,0,cb968f4
+[harga sama, dari baris PDF lain] Mobil Jenazah | Non-kelas | total | 11.200",6,16,94,2,6,95,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+76,C6524,test,ocr_ulang/satu_harga,PERWALI-PEKALONGAN-58-2020,192352_Perwal Pekalongan 58 2020.pdf,16,28 TROPONIN I 165.200 174.640 132.160 472.000,1,0,PERWALI-PEKALONGAN-58-2020-000354,,TROPONIN I | Non-kelas | total | 472.000,34,49,1135,2,34,983,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 77,C3604,dev,teks_pdf/satu_harga,PERBUP-MANOKWARI-236-2022,249214_PERBUP 236 TARIF JASA LAYANAN BLUD RSUD.pdf,26,Sepeda Statik 42.000 28.000 70.000,1,9,PERBUP-MANOKWARI-236-2022-000749,PERBUP-MANOKWARI-236-2022-000745;PERBUP-MANOKWARI-236-2022-000746;PERBUP-MANOKWARI-236-2022-000747;PERBUP-MANOKWARI-236-2022-000748;PERBUP-MANOKWARI-236-2022-000750;PERBUP-MANOKWARI-236-2022-000751;PERBUP-MANOKWARI-236-2022-000752;PERBUP-MANOKWARI-236-2022-000753;PERBUP-MANOKWARI-236-2022-000754,"Sepeda Statik | Non-kelas | total | 70.000
 [harga sama, dari baris PDF lain] Infra Red | Non-kelas | total | 70.000
 [harga sama, dari baris PDF lain] Microwave Diathermy | Non-kelas | total | 70.000
@@ -265,65 +265,65 @@ TMNO Khusus dr Sub/Spesialis | Non-kelas | total | 200.000
 [harga sama, dari baris PDF lain] Terapi Latihan | Non-kelas | total | 70.000
 [harga sama, dari baris PDF lain] Terapi Manipulasi/Massage | Non-kelas | total | 70.000
 [harga sama, dari baris PDF lain] Paralel Bar | Non-kelas | total | 70.000
-[harga sama, dari baris PDF lain] Paket Aktinoterapi ( IR ) | Non-kelas | total | 70.000",25,35,834,2,25,845,,0,cb968f4
-78,C3016,test,teks_pdf/per_kelas,PERWALI-MOJOKERTO-123-2017,86440_PERWALI 123-2017 TTG TARIF LAYANAN PADA RUMAH SAKIT UMUM dr. WAHIDN SUDIRO HUSODO KOTA MOJOKERTO.pdf,43,254 Killian 6.600.000 7.950.000,1,0,PERWALI-MOJOKERTO-123-2017-001073,,Killian | Non-kelas | total | 7.950.000,63,30,2144,2,63,2729,,0,cb968f4
+[harga sama, dari baris PDF lain] Paket Aktinoterapi ( IR ) | Non-kelas | total | 70.000",25,35,834,2,25,845,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+78,C3016,test,teks_pdf/per_kelas,PERWALI-MOJOKERTO-123-2017,86440_PERWALI 123-2017 TTG TARIF LAYANAN PADA RUMAH SAKIT UMUM dr. WAHIDN SUDIRO HUSODO KOTA MOJOKERTO.pdf,43,254 Killian 6.600.000 7.950.000,1,0,PERWALI-MOJOKERTO-123-2017-001073,,Killian | Non-kelas | total | 7.950.000,63,30,2144,2,63,2729,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 79,C4428,test,teks_pdf/satu_harga,PERDA-PURBALINGGA-10-2022,245099_Perda_Pbg_10_2022.pdf,24,- Rawat Inap 4.000 11.000 15.000,1,2,PERDA-PURBALINGGA-10-2022-000241,PERDA-PURBALINGGA-10-2022-000239;PERDA-PURBALINGGA-10-2022-000243,"Pelayanan Farmasi Klinik - Rawat Inap | Non-kelas | total | 15.000
 [harga sama, dari baris PDF lain] Pelayanan Resep Racikan | Non-kelas | total | 4.000
-[harga sama, dari baris PDF lain] Rawat Inap | Non-kelas | total | 15.000",24,21,578,2,24,561,,0,cb968f4
+[harga sama, dari baris PDF lain] Rawat Inap | Non-kelas | total | 15.000",24,21,578,2,24,561,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 80,C9339,dev,ocr_ulang/satu_harga,PERBUP-CIANJUR-88-2016,151227_Perbup 88-2016.pdf,22,7 Silas lambung 60.000 24.000 36.000,2,4,PERBUP-CIANJUR-88-2016-000579;PERBUP-CIANJUR-88-2016-000596,PERBUP-CIANJUR-88-2016-000589;PERBUP-CIANJUR-88-2016-000591;PERBUP-CIANJUR-88-2016-000607;PERBUP-CIANJUR-88-2016-000609,"Syringe pump | Non-kelas | total | 60.000
 Silas lambung | Non-kelas | total | 60.000
 [harga sama, dari baris PDF lain] Plebotomi | Non-kelas | total | 60.000
 [harga sama, dari baris PDF lain] Inf us | Non-kelas | total | 24.000
 [harga sama, dari baris PDF lain] Perawatan Iuka bakar >10% | Non-kelas | total | 60.000
-[harga sama, dari baris PDF lain] fraktur | Non-kelas | total | 24.000",26,45,856,2,27,787,,0,cb968f4
-81,C3106,dev,teks_pdf/per_kelas,PERBUP-KATINGAN-21-2020,188868_Perbup Katingan No.21 Tahun 2020 ttg Tarif Pelayanan Kesehatan Pada BLUD RSUD Mas Amsyar Kab. Katingan.pdf,42,6. Seminar Lokakarya 1 Hari 120.000;,0,0,,,(TIDAK ADA data yang berasal dari baris ini),22,31,656,2,22,660,,0,cb968f4
-82,C3863,dev,teks_pdf/golongan,PERGUB-KALIMANTAN-TIMUR-38-2020,187886_PERGUB.38.2020.pdf,11,3 Tindakan Operasi LASIK 18.000.000,1,0,PERGUB-KALIMANTAN-TIMUR-38-2020-000045,,Tindakan Operasi LASIK | Non-kelas | total | 18.000.000,6,12,79,2,6,79,,0,cb968f4
+[harga sama, dari baris PDF lain] fraktur | Non-kelas | total | 24.000",26,45,856,2,27,787,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+81,C3106,dev,teks_pdf/per_kelas,PERBUP-KATINGAN-21-2020,188868_Perbup Katingan No.21 Tahun 2020 ttg Tarif Pelayanan Kesehatan Pada BLUD RSUD Mas Amsyar Kab. Katingan.pdf,42,6. Seminar Lokakarya 1 Hari 120.000;,0,0,,,(TIDAK ADA data yang berasal dari baris ini),22,31,656,2,22,660,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+82,C3863,dev,teks_pdf/golongan,PERGUB-KALIMANTAN-TIMUR-38-2020,187886_PERGUB.38.2020.pdf,11,3 Tindakan Operasi LASIK 18.000.000,1,0,PERGUB-KALIMANTAN-TIMUR-38-2020-000045,,Tindakan Operasi LASIK | Non-kelas | total | 18.000.000,6,12,79,2,6,79,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 83,C7471,test,ocr_ulang/satu_harga,PERGUB-RIAU-39-2023,311739_Pergub No 39 Tahun 2023 Salinan_ok.pdf,16,96 |Evaluasiprosthesislengan 100.000,1,4,PERGUB-RIAU-39-2023-000149,PERGUB-RIAU-39-2023-000147;PERGUB-RIAU-39-2023-000148;PERGUB-RIAU-39-2023-000150;PERGUB-RIAU-39-2023-000151,"Evaluasiprosthesislengan | Non-kelas | total | 100.000
 [harga sama, dari baris PDF lain] Evaluasiprosthesislenganatasdanbahu | Non-kelas | total | 100.000
 [harga sama, dari baris PDF lain] £valuasiprosthesislenganbawahdan siku | Non-kelas | total | 100.000
 [harga sama, dari baris PDF lain] Evaluasiprosthesislututatas | Non-kelas | total | 100.000
-[harga sama, dari baris PDF lain] Evaluasiprosthesikaki | Non-kelas | total | 100.000",21,52,990,2,21,962,,0,cb968f4
-84,C1914,test,teks_pdf/satu_harga,PERBUP-BANJARNEGARA-19-2018,205952_BD 19 (TARIF LAYANAN KESEHATAN NON KELAS III).pdf,6,1 EKG 20.000 30.000 50.000,1,0,PERBUP-BANJARNEGARA-19-2018-000001,,EKG | Non-kelas | total | 50.000,4,21,72,2,4,71,,0,cb968f4
-85,C1576,dev,teks_pdf/golongan,PMK-175-2020,151894_175_PMK.06_2020.pdf,22,"8. Medical Check Up (MCU) Per Paket 210.000,00",1,0,PMK-175-2020-000102,,Medical Check Up (MCU) | Non-kelas | total | 210.000,12,2,186,2,12,102,,0,cb968f4
+[harga sama, dari baris PDF lain] Evaluasiprosthesikaki | Non-kelas | total | 100.000",21,52,990,2,21,962,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+84,C1914,test,teks_pdf/satu_harga,PERBUP-BANJARNEGARA-19-2018,205952_BD 19 (TARIF LAYANAN KESEHATAN NON KELAS III).pdf,6,1 EKG 20.000 30.000 50.000,1,0,PERBUP-BANJARNEGARA-19-2018-000001,,EKG | Non-kelas | total | 50.000,4,21,72,2,4,71,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+85,C1576,dev,teks_pdf/golongan,PMK-175-2020,151894_175_PMK.06_2020.pdf,22,"8. Medical Check Up (MCU) Per Paket 210.000,00",1,0,PMK-175-2020-000102,,Medical Check Up (MCU) | Non-kelas | total | 210.000,12,2,186,2,12,102,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 86,C5062,test,ocr_ulang/satu_harga,PERGUB-RIAU-39-2023,311739_Pergub No 39 Tahun 2023 Salinan_ok.pdf,18,JasaDokterUmum 50.000,1,5,PERGUB-RIAU-39-2023-000245,PERGUB-RIAU-39-2023-000249;PERGUB-RIAU-39-2023-000252;PERGUB-RIAU-39-2023-000256;PERGUB-RIAU-39-2023-000275;PERGUB-RIAU-39-2023-000290,"JasaDokterUmum | Non-kelas | total | 50.000
 [harga sama, dari baris PDF lain] Perawatan Luka Bakar Luka Bakar Ringan 10% | Non-kelas | total | 50.000
 [harga sama, dari baris PDF lain] PengangkatanBendaAsingdi Hidung/Teliga | Non-kelas | total | 50.000
 [harga sama, dari baris PDF lain] LukaBesar | Non-kelas | total | 50.000
 [harga sama, dari baris PDF lain] EKG | Non-kelas | total | 50.000
-[harga sama, dari baris PDF lain] IntensifDetoksifikasi&VisumJiwa | I | total | 50.000",21,51,990,2,21,962,C5740,4,cb968f4
+[harga sama, dari baris PDF lain] IntensifDetoksifikasi&VisumJiwa | I | total | 50.000",21,51,990,2,21,962,C5740,4,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 87,C5355,test,ocr_ulang/satu_harga,PERBUP-LAMPUNG-TIMUR-1-2006,118026_Perbup Nomor 1 Tahun 2006.pdf,15,2 .11 Tilldllkllll Medlk Operant (lldllk tereucanaj/keclt Il 10.000 20.000 30.000,1,1,PERBUP-LAMPUNG-TIMUR-1-2006-000045,PERBUP-LAMPUNG-TIMUR-1-2006-000044,"11 Tilldllkllll Medlk Operant (lldllk tereucanaj/keclt II | Non-kelas | total | 30.000
-[harga sama, dari baris PDF lain] llndakan Medlk Operatif (tidak terencana)/kecill Jahit Luka 1-10 jahitan Ekstirpasi Kuku | Non-kelas | total | 20.000",13,6,146,2,13,279,,0,cb968f4
+[harga sama, dari baris PDF lain] llndakan Medlk Operatif (tidak terencana)/kecill Jahit Luka 1-10 jahitan Ekstirpasi Kuku | Non-kelas | total | 20.000",13,6,146,2,13,279,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 88,C7872,dev,teks_pdf/satu_harga,PERDA-LANDAK-8-2009,82636_PERDA NO 8 2009 TTG Retribusi Yankes RSUD Prakarsa DPRD Ldk.pdf,21,a. 1 s/d 3 (ringan) 15.000 15.000 30.000,1,2,PERDA-LANDAK-8-2009-000041,PERDA-LANDAK-8-2009-000047;PERDA-LANDAK-8-2009-000048,"1 s/d 3 (ringan) | Non-kelas | total | 30.000
 [harga sama, dari baris PDF lain] Observasi di UGD | Non-kelas | total | 30.000
-[harga sama, dari baris PDF lain] Pasang O2 | Non-kelas | total | 15.000",13,29,294,2,13,279,C1736,10,cb968f4
+[harga sama, dari baris PDF lain] Pasang O2 | Non-kelas | total | 15.000",13,29,294,2,13,279,C1736,10,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 89,C1900,test,teks_pdf/satu_harga,PERBUP-BLORA-95-2010,208668_PERBUP-95-2010.pdf,12,"1 WIP 180,000 600,000 300,000 120,000 1,200,000",1,4,PERBUP-BLORA-95-2010-000111,PERBUP-BLORA-95-2010-000109;PERBUP-BLORA-95-2010-000112;PERBUP-BLORA-95-2010-000116;PERBUP-BLORA-95-2010-000117,"Khusus | VIP | total | 1.200.000
 [harga sama, dari baris PDF lain] Kelas Teladan | II | total | 300.000
 [harga sama, dari baris PDF lain] Khusus | VIP | total | 1.200.000
 [harga sama, dari baris PDF lain] Kelas Teladan | II | total | 600.000
-[harga sama, dari baris PDF lain] Kelas Teladan | III | total | 300.000",19,14,462,2,19,511,,0,cb968f4
+[harga sama, dari baris PDF lain] Kelas Teladan | III | total | 300.000",19,14,462,2,19,511,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 90,C7599,test,teks_pdf/satu_harga,PERBUP-PASAMAN-11-2020,349383_Perbup 11 Tahun 2020.pdf,6,NICU 400.000 Perhari,0,2,,PERBUP-PASAMAN-11-2020-000002;PERBUP-PASAMAN-11-2020-000014,"[harga sama, dari baris PDF lain] Punksi Cairan Asites | II | total | 400.000
-[harga sama, dari baris PDF lain] Ventilator/hari | Non-kelas | total | 400.000",3,21,50,2,3,60,,0,cb968f4
+[harga sama, dari baris PDF lain] Ventilator/hari | Non-kelas | total | 400.000",3,21,50,2,3,60,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 91,C4940,dev,teks_pdf/satu_harga,PERDA-JAMBI-3-2011,137579_P_JAMBI_3_2011.pdf,11,c. Terapi Rekreasi 9.000 6.000 15.000,1,4,PERDA-JAMBI-3-2011-000004,PERDA-JAMBI-3-2011-000003;PERDA-JAMBI-3-2011-000005;PERDA-JAMBI-3-2011-000006;PERDA-JAMBI-3-2011-000007,"Terapi Rekreasi | Non-kelas | total | 15.000
 [harga sama, dari baris PDF lain] Terapi Gerak | Non-kelas | total | 15.000
 [harga sama, dari baris PDF lain] Terapi Kelompok | Non-kelas | total | 15.000
 [harga sama, dari baris PDF lain] Terapi Musik | Non-kelas | total | 15.000
-[harga sama, dari baris PDF lain] Terapi Religi | Non-kelas | total | 15.000",4,15,104,2,4,104,,0,cb968f4
+[harga sama, dari baris PDF lain] Terapi Religi | Non-kelas | total | 15.000",4,15,104,2,4,104,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 92,C8608,test,teks_pdf/golongan,PERBUP-NUNUKAN-18-2016,126155_PERBUP-NO-18-2016.pdf,16,D Surat Visum at Repartum 31.000 20.000 231.000,1,1,PERBUP-NUNUKAN-18-2016-000111,PERBUP-NUNUKAN-18-2016-000108,"D Surat Visum at Repartum | Non-kelas | total | 231.000
-[harga sama, dari baris PDF lain] A Surat Kelahiran | Non-kelas | total | 20.000",4,27,130,2,4,131,C7258,9,cb968f4
-93,C4043,dev,teks_pdf/satu_harga,PERBUP-BANJARNEGARA-47-2015,292317_Bup 47-OCR.pdf,27,b. dr.Umum 1x visite - 3.600 4.400 8.000,1,0,PERBUP-BANJARNEGARA-47-2015-000003,,dr.Umum 1x visite | Non-kelas | total | 8.000,24,5,297,2,24,292,,0,cb968f4
+[harga sama, dari baris PDF lain] A Surat Kelahiran | Non-kelas | total | 20.000",4,27,130,2,4,131,C7258,9,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+93,C4043,dev,teks_pdf/satu_harga,PERBUP-BANJARNEGARA-47-2015,292317_Bup 47-OCR.pdf,27,b. dr.Umum 1x visite - 3.600 4.400 8.000,1,0,PERBUP-BANJARNEGARA-47-2015-000003,,dr.Umum 1x visite | Non-kelas | total | 8.000,24,5,297,2,24,292,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 94,C2450,dev,teks_pdf/golongan,PERWALI-SALATIGA-13-2017,94587_perwali 13.pdf,22,b.Obgin 25.000 7.500 2.500 25.000,1,1,PERWALI-SALATIGA-13-2017-000293,PERWALI-SALATIGA-13-2017-000294,"b.Obgin | Non-kelas | total | 25.000
-[harga sama, dari baris PDF lain] c.Mamae | Non-kelas | total | 2.500",22,5,370,2,22,382,,0,cb968f4
+[harga sama, dari baris PDF lain] c.Mamae | Non-kelas | total | 2.500",22,5,370,2,22,382,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 95,C4900,dev,teks_pdf/per_kelas,PERGUB-GORONTALO-3-2020,139582_Pergub No. 3 Tahun 2020 ttg Perubahan Tarif Retribusi Pelayanan Kesehatan.pdf,35,4 | AV Shunt Radial / Cubiti Dengan Pasang Doub ell 13.000.0001 12.000.000| 11.000.000,1,4,PERGUB-GORONTALO-3-2020-001316,PERGUB-GORONTALO-3-2020-001337;PERGUB-GORONTALO-3-2020-001338;PERGUB-GORONTALO-3-2020-001366;PERGUB-GORONTALO-3-2020-001375,"AV Shunt Radial / Cubiti Dengan Pasang Doub ell 1 | Non-kelas | total | 11.000.000
 [harga sama, dari baris PDF lain] Lumbal simpatektomi unilateral | VIP | total | 12.000.000
 [harga sama, dari baris PDF lain] Lumbal simpatektomi unilateral | I-II | total | 11.000.000
 [harga sama, dari baris PDF lain] la ga wr wa M1 | kolom 1/2 (judul tak terbaca) | total | 11.000.000
-[harga sama, dari baris PDF lain] ja Anne ena ea Banana Rpla fiebektomi | Non-kelas | total | 11.000.000",33,53,983,2,42,1632,C8089,1,cb968f4
-96,C5136,test,ocr_ulang/satu_harga,PERBUP-ACEH-BESAR-11-2026,352080_Perbup  Nomor  11 Thn 2026.pdf,13,"I Alergic Test 30.000,- Per Tindakan",0,0,,,(TIDAK ADA data yang berasal dari baris ini),8,22,146,2,26,87,,0,cb968f4
-97,C6622,test,teks_pdf/golongan,PERDA-PURWOREJO-12-2020,195129_PERDA 12 TAHUN 2020.pdf,21,10.500,0,1,,PERDA-PURWOREJO-12-2020-000051,"[harga sama, dari baris PDF lain] KONSULTASI GIZI | Non-kelas | total | 10.500",11,6,51,2,11,52,,0,cb968f4
+[harga sama, dari baris PDF lain] ja Anne ena ea Banana Rpla fiebektomi | Non-kelas | total | 11.000.000",33,53,983,2,42,1632,C8089,1,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+96,C5136,test,ocr_ulang/satu_harga,PERBUP-ACEH-BESAR-11-2026,352080_Perbup  Nomor  11 Thn 2026.pdf,13,"I Alergic Test 30.000,- Per Tindakan",0,0,,,(TIDAK ADA data yang berasal dari baris ini),8,22,146,2,26,87,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+97,C6622,test,teks_pdf/golongan,PERDA-PURWOREJO-12-2020,195129_PERDA 12 TAHUN 2020.pdf,21,10.500,0,1,,PERDA-PURWOREJO-12-2020-000051,"[harga sama, dari baris PDF lain] KONSULTASI GIZI | Non-kelas | total | 10.500",11,6,51,2,11,52,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 98,C2956,test,teks_pdf/golongan,PERBUP-NUNUKAN-18-2016,126155_PERBUP-NO-18-2016.pdf,13,11. Khusus III 1.000.000 1.200.000 2.200.000,1,1,PERBUP-NUNUKAN-18-2016-000034,PERBUP-NUNUKAN-18-2016-000023,"Tindakan Medik Poli Gigi - Khusus III | Non-kelas | total | 2.200.000
-[harga sama, dari baris PDF lain] Tindakan Elektrocauter - Sedang | Non-kelas | total | 1.000.000",4,34,130,2,4,131,,0,cb968f4
+[harga sama, dari baris PDF lain] Tindakan Elektrocauter - Sedang | Non-kelas | total | 1.000.000",4,34,130,2,4,131,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 99,C6759,dev,teks_pdf/golongan,PERBUP-TANA-TIDUNG-1-2023,297308_PerBup KTT 01-2023.pdf,10,a. KELAS lll Rp. 30.000,1,1,PERBUP-TANA-TIDUNG-1-2023-000036,PERBUP-TANA-TIDUNG-1-2023-000037,"KELAS lll | Non-kelas | total | 30.000
-[harga sama, dari baris PDF lain] KELAS lll | II | total | 30.000",15,24,304,2,36,289,C7478,11,cb968f4
+[harga sama, dari baris PDF lain] KELAS lll | II | total | 30.000",15,24,304,2,36,289,C7478,11,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 100,C7138,dev,teks_pdf/per_kelas,PERDA-SUMATERA-SELATAN-16-2008,37769_PERDA NO.16 THN 2008.pdf,6,11 · Protein Bence Jones 4.000 2.000 6.000 4.000 1.500 5.500,2,22,PERDA-SUMATERA-SELATAN-16-2008-000172;PERDA-SUMATERA-SELATAN-16-2008-000173,PERDA-SUMATERA-SELATAN-16-2008-000133;PERDA-SUMATERA-SELATAN-16-2008-000135;PERDA-SUMATERA-SELATAN-16-2008-000137;PERDA-SUMATERA-SELATAN-16-2008-000139;PERDA-SUMATERA-SELATAN-16-2008-000158;PERDA-SUMATERA-SELATAN-16-2008-000159;PERDA-SUMATERA-SELATAN-16-2008-000160;PERDA-SUMATERA-SELATAN-16-2008-000161;PERDA-SUMATERA-SELATAN-16-2008-000162;PERDA-SUMATERA-SELATAN-16-2008-000163;PERDA-SUMATERA-SELATAN-16-2008-000164;PERDA-SUMATERA-SELATAN-16-2008-000165;PERDA-SUMATERA-SELATAN-16-2008-000166;PERDA-SUMATERA-SELATAN-16-2008-000167;PERDA-SUMATERA-SELATAN-16-2008-000168;PERDA-SUMATERA-SELATAN-16-2008-000169;PERDA-SUMATERA-SELATAN-16-2008-000170;PERDA-SUMATERA-SELATAN-16-2008-000171;PERDA-SUMATERA-SELATAN-16-2008-000174;PERDA-SUMATERA-SELATAN-16-2008-000176;PERDA-SUMATERA-SELATAN-16-2008-000178;PERDA-SUMATERA-SELATAN-16-2008-000180,"· Protein Bence Jones | VIP | total | 6.000
 · Protein Bence Jones | III | total | 5.500
 [harga sama, dari baris PDF lain] leukosll | III | total | 6.000
@@ -338,7 +338,7 @@ Silas lambung | Non-kelas | total | 60.000
 [harga sama, dari baris PDF lain] · Bilirubin | III | total | 5.500
 [harga sama, dari baris PDF lain] Proleln Kualltatil | VIP | total | 6.000
 [harga sama, dari baris PDF lain] Proleln Kualltatil | III | total | 5.500
-... (+10 lagi)",4,34,131,2,4,225,,0,cb968f4
+... (+10 lagi)",4,34,131,2,4,225,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 101,C8245,test,ocr_ulang/satu_harga,PERBUP-TANAH-BUMBU-41-2022,233871_41.tarifpelayananpadarsud.pdf,25,23 ElbowJointAP/Lat 110.000,1,10,PERBUP-TANAH-BUMBU-41-2022-000209,PERBUP-TANAH-BUMBU-41-2022-000163;PERBUP-TANAH-BUMBU-41-2022-000165;PERBUP-TANAH-BUMBU-41-2022-000166;PERBUP-TANAH-BUMBU-41-2022-000187;PERBUP-TANAH-BUMBU-41-2022-000189;PERBUP-TANAH-BUMBU-41-2022-000193;PERBUP-TANAH-BUMBU-41-2022-000206;PERBUP-TANAH-BUMBU-41-2022-000207;PERBUP-TANAH-BUMBU-41-2022-000208;PERBUP-TANAH-BUMBU-41-2022-000210,"ElbowJointAP/Lat | Non-kelas | total | 110.000
 [harga sama, dari baris PDF lain] PewarnaanBTA1x | Non-kelas | total | 110.000
 [harga sama, dari baris PDF lain] Pemeriksaanswabvagina | Non-kelas | total | 110.000
@@ -349,29 +349,29 @@ Silas lambung | Non-kelas | total | 60.000
 [harga sama, dari baris PDF lain] Clavicula | Non-kelas | total | 110.000
 [harga sama, dari baris PDF lain] ShoulderJoint | Non-kelas | total | 110.000
 [harga sama, dari baris PDF lain] HumerusAP/Lat | Non-kelas | total | 110.000
-[harga sama, dari baris PDF lain] AntebrachiAP/Lat | Non-kelas | total | 110.000",13,66,763,2,13,752,,0,cb968f4
+[harga sama, dari baris PDF lain] AntebrachiAP/Lat | Non-kelas | total | 110.000",13,66,763,2,13,752,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 102,C9393,dev,teks_pdf/golongan,PERDA-BEKASI-14-2007,282701_Perda Nomor 14 Tahun 2007 ttg Retribusi Pelayanan Kesehatan pada Rumah Sakit Daerah Kabupaten Bekasi.pdf,41,1 Analisa cairan otak 79.000 26.000 105.000,1,1,PERDA-BEKASI-14-2007-000754,PERDA-BEKASI-14-2007-000757,"Analisa cairan otak | Non-kelas | total | 105.000
-[harga sama, dari baris PDF lain] Analisa cairan tubuh lain (Pleura d!1) | Non-kelas | total | 105.000",20,26,786,2,20,774,,0,cb968f4
+[harga sama, dari baris PDF lain] Analisa cairan tubuh lain (Pleura d!1) | Non-kelas | total | 105.000",20,26,786,2,20,774,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 103,C9172,test,teks_pdf/golongan,PERDA-GARUT-2-2007,231492_LAMPIRAN PERDA KAB. GARUT NO 2 TAHUN 2007.pdf,7,Kelas II 30.000 20.000 50.000,1,3,PERDA-GARUT-2-2007-000101,PERDA-GARUT-2-2007-000088;PERDA-GARUT-2-2007-000090;PERDA-GARUT-2-2007-000092,"Audiometri | II | total | 50.000
 [harga sama, dari baris PDF lain] Cardiografi) | III | total | 20.000
 [harga sama, dari baris PDF lain] Cardiografi) | I | total | 50.000
-[harga sama, dari baris PDF lain] Transabdominal | III | total | 30.000",18,20,278,2,18,259,,0,cb968f4
+[harga sama, dari baris PDF lain] Transabdominal | III | total | 30.000",18,20,278,2,18,259,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 104,C5561,test,ocr_ulang/satu_harga,PERWALI-TEBING-TINGGI-4-2020,138159_7b709-perwa-no.-4-tahun-2020.pdf,4,Anak Usia 7-16 Tahun 80.000 48.000 72.000 200.000,1,1,PERWALI-TEBING-TINGGI-4-2020-000014,PERWALI-TEBING-TINGGI-4-2020-000016,"Anak Usia 7-16 Tahun | Non-kelas | total | 200.000
-[harga sama, dari baris PDF lain] Anak dan Remaja | Non-kelas | total | 200.000",1,23,23,1,1,23,,0,cb968f4
+[harga sama, dari baris PDF lain] Anak dan Remaja | Non-kelas | total | 200.000",1,23,23,1,1,23,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 105,C8777,test,ocr_ulang/satu_harga,PERBUP-CIANJUR-21-2013,207233_PB.21-2013.pdf,10,Epidural Labor Analgesia 250.000,1,1,PERBUP-CIANJUR-21-2013-000127,PERBUP-CIANJUR-21-2013-000093,"Epidural Labor Analgesia | Non-kelas | total | 250.000
-[harga sama, dari baris PDF lain] Inferfora | kolom 4/5 (kelas tak terbaca) | total | 250.000",24,24,774,2,24,802,C4513,3,cb968f4
-106,C7266,test,teks_pdf/golongan,PERDA-PURWOREJO-12-2020,195129_PERDA 12 TAHUN 2020.pdf,19,4. KHUSUS 231.000 154.000 385.000,1,0,PERDA-PURWOREJO-12-2020-000039,,TINDAKAN MEDIK NON OPERATIF GIGI DAN MULUT - KHUSUS | Non-kelas | total | 385.000,11,4,51,2,11,52,,0,cb968f4
+[harga sama, dari baris PDF lain] Inferfora | kolom 4/5 (kelas tak terbaca) | total | 250.000",24,24,774,2,24,802,C4513,3,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+106,C7266,test,teks_pdf/golongan,PERDA-PURWOREJO-12-2020,195129_PERDA 12 TAHUN 2020.pdf,19,4. KHUSUS 231.000 154.000 385.000,1,0,PERDA-PURWOREJO-12-2020-000039,,TINDAKAN MEDIK NON OPERATIF GIGI DAN MULUT - KHUSUS | Non-kelas | total | 385.000,11,4,51,2,11,52,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 107,C8306,test,teks_pdf/satu_harga,PERBUP-BLORA-95-2010,208668_PERBUP-95-2010.pdf,13,"Pemasangan tampon anterior hidung 6,250 18,750 25,000",1,1,PERBUP-BLORA-95-2010-000130,PERBUP-BLORA-95-2010-000133,"Pemasangan tampon anterior hidung | Non-kelas | total | 25.000
-[harga sama, dari baris PDF lain] Pengambilan benda asing di tenggorokan | Non-kelas | total | 25.000",19,24,462,2,19,511,C8684,18,cb968f4
+[harga sama, dari baris PDF lain] Pengambilan benda asing di tenggorokan | Non-kelas | total | 25.000",19,24,462,2,19,511,C8684,18,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 108,C9624,dev,teks_pdf/satu_harga,PERBUP-DEMAK-21-2013,285701_Perbup Kab. Demak Tahun 2013 No 21_ocr.pdf,7,1 Asuhan Keperawatan Gawat Darurat 15.000,1,1,PERBUP-DEMAK-21-2013-000055,PERBUP-DEMAK-21-2013-000062,"Asuhan Keperawatan Gawat Darurat | Non-kelas | total | 15.000
-[harga sama, dari baris PDF lain] Konsul dr Gigi | Non-kelas | total | 15.000",12,15,184,2,12,185,,0,cb968f4
-109,C5413,test,teks_pdf/satu_harga,PERGUB-YOGYAKARTA-15-2024,287669_pergub diy nomor 15 tahun 2024.pdf,15,Rp10.000 ),0,1,,PERGUB-YOGYAKARTA-15-2024-000072,"[harga sama, dari baris PDF lain] Sewa mobil ambulans dan 10 Km | Non-kelas | total | 10.000",5,3,74,2,5,73,,0,cb968f4
-110,C6086,test,teks_pdf/golongan,PERGUB-KALIMANTAN-UTARA-20-2017,101937_PERGUB-20-2017_SALINAN.pdf,34,"10,615,000",1,0,PERGUB-KALIMANTAN-UTARA-20-2017-000137,,PEMERIKSAAN EKSHUMASIO (GALI KUBUR) | Non-kelas | total | 10.615.000,30,20,370,2,31,361,C5100,2,cb968f4
+[harga sama, dari baris PDF lain] Konsul dr Gigi | Non-kelas | total | 15.000",12,15,184,2,12,185,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+109,C5413,test,teks_pdf/satu_harga,PERGUB-YOGYAKARTA-15-2024,287669_pergub diy nomor 15 tahun 2024.pdf,15,Rp10.000 ),0,1,,PERGUB-YOGYAKARTA-15-2024-000072,"[harga sama, dari baris PDF lain] Sewa mobil ambulans dan 10 Km | Non-kelas | total | 10.000",5,3,74,2,5,73,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+110,C6086,test,teks_pdf/golongan,PERGUB-KALIMANTAN-UTARA-20-2017,101937_PERGUB-20-2017_SALINAN.pdf,34,"10,615,000",1,0,PERGUB-KALIMANTAN-UTARA-20-2017-000137,,PEMERIKSAAN EKSHUMASIO (GALI KUBUR) | Non-kelas | total | 10.615.000,30,20,370,2,31,361,C5100,2,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 111,C9182,test,teks_pdf/satu_harga,PERGUB-RIAU-1-2023,258599_Pergub No 1 Tahun 2023 Salin.pdf,57,Program S2 dan S3 tanpa seniinar 150.000,1,1,PERGUB-RIAU-1-2023-000745,PERGUB-RIAU-1-2023-000750,"Program S2 dan S3 tanpa seniinar | Non-kelas | total | 150.000
-[harga sama, dari baris PDF lain] Haif day 4 am | Non-kelas | total | 150.000",32,10,765,2,55,759,,0,cb968f4
+[harga sama, dari baris PDF lain] Haif day 4 am | Non-kelas | total | 150.000",32,10,765,2,55,759,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 112,C2433,dev,teks_pdf/golongan,PERDA-BEKASI-14-2007,282701_Perda Nomor 14 Tahun 2007 ttg Retribusi Pelayanan Kesehatan pada Rumah Sakit Daerah Kabupaten Bekasi.pdf,32,2 Besar 250.000 750.000 260.000 1.260.000,1,2,PERDA-BEKASI-14-2007-000300,PERDA-BEKASI-14-2007-000289;PERDA-BEKASI-14-2007-000313,"A Operatif Non Narkosis - Besar | II | total | 1.260.000
 [harga sama, dari baris PDF lain] Anaesthesi - Besar | Non-kelas | total | 260.000
-[harga sama, dari baris PDF lain] Sadie tanpa gigi | Non-kelas | total | 250.000",20,40,786,2,20,774,C8240,22,cb968f4
+[harga sama, dari baris PDF lain] Sadie tanpa gigi | Non-kelas | total | 250.000",20,40,786,2,20,774,C8240,22,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 113,C2361,test,teks_pdf/per_kelas,PERBUP-PATI-4-2012,238746_PERBUP NO 4 TH 2012.PDF,25,1 Asuhan 3.300 3.500 5.000 6.000 7.000,5,5,PERBUP-PATI-4-2012-000011;PERBUP-PATI-4-2012-000012;PERBUP-PATI-4-2012-000013;PERBUP-PATI-4-2012-000014;PERBUP-PATI-4-2012-000015,PERBUP-PATI-4-2012-000016;PERBUP-PATI-4-2012-000018;PERBUP-PATI-4-2012-000019;PERBUP-PATI-4-2012-000022;PERBUP-PATI-4-2012-000023,"Asuhan | II | total | 3.300
 Asuhan | I | total | 3.500
 Asuhan | Teladan | total | 5.000
@@ -381,12 +381,12 @@ Asuhan | VIP | total | 7.000
 [harga sama, dari baris PDF lain] Asuhan Keperawatan Tingkat II | Teladan | total | 6.000
 [harga sama, dari baris PDF lain] Asuhan Keperawatan Tingkat II | Utama | total | 7.000
 [harga sama, dari baris PDF lain] Asuhan Keperawatan Tingkat III | I | total | 5.000
-[harga sama, dari baris PDF lain] Asuhan Keperawatan Tingkat III | Teladan | total | 7.000",9,11,145,2,9,546,C3449,23,cb968f4
-114,C3857,test,teks_pdf/golongan,PERWALI-PONTIANAK-66-2020,178147_Perwa 66.pdf,10,"2.RJ b. pasien lama 3,500 1,500 5 ,000",1,0,PERWALI-PONTIANAK-66-2020-000002,,2.RJ b. pasien lama | Non-kelas | total | 5.000,11,12,223,2,20,213,,0,cb968f4
+[harga sama, dari baris PDF lain] Asuhan Keperawatan Tingkat III | Teladan | total | 7.000",9,11,145,2,9,546,C3449,23,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+114,C3857,test,teks_pdf/golongan,PERWALI-PONTIANAK-66-2020,178147_Perwa 66.pdf,10,"2.RJ b. pasien lama 3,500 1,500 5 ,000",1,0,PERWALI-PONTIANAK-66-2020-000002,,2.RJ b. pasien lama | Non-kelas | total | 5.000,11,12,223,2,20,213,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 115,C2922,dev,teks_pdf/per_kelas,PERGUB-GORONTALO-3-2020,139582_Pergub No. 3 Tahun 2020 ttg Perubahan Tarif Retribusi Pelayanan Kesehatan.pdf,41,|. | Tunggun perjam lanjutan 4.000 1.000 5.000,1,3,PERGUB-GORONTALO-3-2020-001572,PERGUB-GORONTALO-3-2020-001573;PERGUB-GORONTALO-3-2020-001574;PERGUB-GORONTALO-3-2020-001575,"Tunggun perjam lanjutan | Non-kelas | total | 5.000
 [harga sama, dari baris PDF lain] Pelayanan Loundry / kilo | Non-kelas | total | 5.000
 [harga sama, dari baris PDF lain] Pelayanan Adminitrasi Rawat Inap | kolom 1/2 (judul tak terbaca) | total | 5.000
-[harga sama, dari baris PDF lain] Pelayanan Adminitrasi Rawat Inap | kolom 2/2 (judul tak terbaca) | total | 5.000",33,29,983,2,42,1632,,0,cb968f4
+[harga sama, dari baris PDF lain] Pelayanan Adminitrasi Rawat Inap | kolom 2/2 (judul tak terbaca) | total | 5.000",33,29,983,2,42,1632,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 116,C1893,test,teks_pdf/per_kelas,PERBUP-JOMBANG-56-2017,86016_PERBUP 56 THN 2017.pdf,31,"32 FITTING DAN CHECK OUT ORTOSIS & PROSTESIS 28,700 40,500 69,200 38,250 54,000 92,250 51,000 72,000 123,000",3,17,PERBUP-JOMBANG-56-2017-000987;PERBUP-JOMBANG-56-2017-000988;PERBUP-JOMBANG-56-2017-000989,PERBUP-JOMBANG-56-2017-000970;PERBUP-JOMBANG-56-2017-000971;PERBUP-JOMBANG-56-2017-000972;PERBUP-JOMBANG-56-2017-000973;PERBUP-JOMBANG-56-2017-000974;PERBUP-JOMBANG-56-2017-000975;PERBUP-JOMBANG-56-2017-000976;PERBUP-JOMBANG-56-2017-000977;PERBUP-JOMBANG-56-2017-000978;PERBUP-JOMBANG-56-2017-000979;PERBUP-JOMBANG-56-2017-000980;PERBUP-JOMBANG-56-2017-000981;PERBUP-JOMBANG-56-2017-000982;PERBUP-JOMBANG-56-2017-000983;PERBUP-JOMBANG-56-2017-000984;PERBUP-JOMBANG-56-2017-000985;PERBUP-JOMBANG-56-2017-000986,"FITTING DAN CHECK OUT ORTOSIS & PROSTESIS | grup 1 (kelas tak diketahui) | total | 69.200
 FITTING DAN CHECK OUT ORTOSIS & PROSTESIS | grup 2 (kelas tak diketahui) | total | 92.250
 FITTING DAN CHECK OUT ORTOSIS & PROSTESIS | grup 3 (kelas tak diketahui) | total | 123.000
@@ -402,9 +402,9 @@ FITTING DAN CHECK OUT ORTOSIS & PROSTESIS | grup 3 (kelas tak diketahui) | total
 [harga sama, dari baris PDF lain] ASSESMENT MOTORIK HALUS | Non-kelas | total | 123.000
 [harga sama, dari baris PDF lain] ASSESMENT POLA JALAN | Non-kelas | total | 123.000
 [harga sama, dari baris PDF lain] ASSESMENT POSTUR KONTROL | grup 1 (kelas tak diketahui) | total | 69.200
-... (+5 lagi)",63,27,2028,2,63,2804,,0,cb968f4
-117,C5459,test,ocr_ulang/golongan,PERWALI-SEMARANG-7-2011,209622_perwal no 7 tahun 2011.pdf,15,b. Kelas Il 4.500.000,1,0,PERWALI-SEMARANG-7-2011-000101,,Tindakan Medik Canggih | II | total | 4.500.000,16,26,448,2,18,448,C1202,26,cb968f4
-118,C9901,dev,ocr_ulang/satu_harga,PERDA-JAYAPURA-5-2008,71090_Perda Kabupaten Jayapura nomor 5 tahun 2008.pdf,13,"Kelas V.1.p Rp. 80.000,-",1,0,PERDA-JAYAPURA-5-2008-000172,,Kelas V.1.p | III | total | 80.000,15,19,225,2,15,337,,0,cb968f4
+... (+5 lagi)",63,27,2028,2,63,2804,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+117,C5459,test,ocr_ulang/golongan,PERWALI-SEMARANG-7-2011,209622_perwal no 7 tahun 2011.pdf,15,b. Kelas Il 4.500.000,1,0,PERWALI-SEMARANG-7-2011-000101,,Tindakan Medik Canggih | II | total | 4.500.000,16,26,448,2,18,448,C1202,26,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
+118,C9901,dev,ocr_ulang/satu_harga,PERDA-JAYAPURA-5-2008,71090_Perda Kabupaten Jayapura nomor 5 tahun 2008.pdf,13,"Kelas V.1.p Rp. 80.000,-",1,0,PERDA-JAYAPURA-5-2008-000172,,Kelas V.1.p | III | total | 80.000,15,19,225,2,15,337,,0,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa
 119,C5424,dev,teks_pdf/per_kelas,PERBUP-TANGERANG-05-2012,19780_Peraturan-Bupati-Tangerang-Nomor-05-Tahun-2012-tentang-Tarif-Layanan-Rumah-Sakit-Badan-Layanan-Umum-Daerah-pada-Rumah-Sakit-Umum-Kabupaten-Tangerang.p.pdf,18,Rp 100.000 Rp 120.000 130.000 140.000 150.000,10,0,PERBUP-TANGERANG-05-2012-000489;PERBUP-TANGERANG-05-2012-000490;PERBUP-TANGERANG-05-2012-000491;PERBUP-TANGERANG-05-2012-000492;PERBUP-TANGERANG-05-2012-000493;PERBUP-TANGERANG-05-2012-000509;PERBUP-TANGERANG-05-2012-000510;PERBUP-TANGERANG-05-2012-000511;PERBUP-TANGERANG-05-2012-000512;PERBUP-TANGERANG-05-2012-000513,,"FUNGSI LUMBAL ANAK/ BAYI BARU LAHIR' | II | total | 100.000
 FUNGSI LUMBAL ANAK/ BAYI BARU LAHIR' | I | total | 120.000
 FUNGSI LUMBAL ANAK/ BAYI BARU LAHIR' | VIP | total | 130.000
@@ -414,4 +414,4 @@ PASANG KATETER UMBILIKAL (CARDIOGRAFI) | II | total | 100.000
 PASANG KATETER UMBILIKAL (CARDIOGRAFI) | I | total | 120.000
 PASANG KATETER UMBILIKAL (CARDIOGRAFI) | VIP | total | 130.000
 PASANG KATETER UMBILIKAL (CARDIOGRAFI) | HCU | total | 140.000
-PASANG KATETER UMBILIKAL (CARDIOGRAFI) | ICU | total | 150.000",10,17,162,2,10,642,C2179,16,cb968f4
+PASANG KATETER UMBILIKAL (CARDIOGRAFI) | ICU | total | 150.000",10,17,162,2,10,642,C2179,16,cb968f4,cd71555,febb4601665beee661aefe0070b5b7b4ea861a7a72e86aa4a71aafb543e6ddfa

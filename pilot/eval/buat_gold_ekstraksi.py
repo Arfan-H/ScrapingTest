@@ -30,7 +30,9 @@ Desain v3:
 Pemakaian: python -I pilot/eval/buat_gold_ekstraksi.py [jumlah_dokumen=60] [baris_tampil_per_dokumen=6] [halaman_cakupan_per_dokumen=2]
 """
 import glob
+import hashlib
 import os
+import subprocess
 import re
 import sys
 
@@ -392,9 +394,14 @@ def main(n_docs=60, per_doc=6, per_doc_pdf=2):
     for n, i in enumerate(selr, start=1):
         R.loc[i, "id_p2"], R.loc[i, "no_p2"] = f"C{ids2[len(sel2) + n - 1]}", n
 
-    M.drop(columns=["img_h", "img_w"]).assign(versi_parser=PARSER_COMMIT).to_csv(
+    tpath = os.path.join(ROOT, "pilot", "out", "dataset", "tarif.csv.gz")
+    data_sha = hashlib.sha256(open(tpath, "rb").read()).hexdigest()
+    data_commit = subprocess.run(["git", "-C", ROOT, "log", "-1", "--format=%h", "--", "pilot/out/dataset/tarif.csv.gz"],
+                                 capture_output=True, text=True).stdout.strip()
+    ver = dict(versi_parser=PARSER_COMMIT, data_commit=data_commit, data_sha256=data_sha)
+    M.drop(columns=["img_h", "img_w"]).assign(**ver).to_csv(
         os.path.join(OUT, f"gold_ekstraksi_{VER}_manifest.csv"), index=False)
-    R.drop(columns=["img_h", "img_w"]).assign(versi_parser=PARSER_COMMIT).to_csv(
+    R.drop(columns=["img_h", "img_w"]).assign(**ver).to_csv(
         os.path.join(OUT, f"gold_ekstraksi_{VER}_cakupan_manifest.csv"), index=False)
     lok = pd.concat([M[["id_p1", "id_p2", "file", "halaman"]], R[["id_p1", "id_p2", "file", "halaman"]]])
     lok1 = lok[["id_p1", "file", "halaman"]].rename(columns={"id_p1": "id"})
