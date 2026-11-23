@@ -433,8 +433,15 @@ def tail_owner(tail, q_top, q_name, q_aligned=False):
         while k < len(T) and (re.match(r"^[a-z(/]", T[k][2]) or CONNECT_END.search(T[k - 1][2])
                               or T[k - 1][2].count("(") > T[k - 1][2].count(")")):
             k += 1
-        if k < len(T) and q_name and len(re.sub(r"[^A-Za-z]", "", q_name)) >= 3:
-            # baris bawah punya nama sendiri: sel berharga di baris pertama -> sisa teks juga lanjutan nama atas
+        rest = T[k:]
+        if (len(rest) == 1 and len(rest[0][2].split()) == 1 and q_name
+                and len(re.sub(r"[^A-Za-z]", "", q_name)) >= 3 and not re.match(r"^[a-z(]", q_name)
+                and rest[0][2].lower() != (tail["name"].lower().split() or [""])[0]
+                and not re.fullmatch(r"(?i)operasi|tindakan|pemeriksaan|pemasangan|pelepasan|pengambilan|pembuatan|perawatan|"
+                                     r"eksisi|insisi|biopsi|ekstraksi|extraksi|injeksi|konsultasi|visite|foto|paket|jasa|"
+                                     r"pasang|lepas|ganti|terapi|rontgen|ct|mri|usg|ekg", rest[0][2])
+                and min([T[0][0] - tail["bottom"]] + [T[i][0] - T[i - 1][1] for i in range(1, len(T))]) > -1):
+            # satu kata sisa ("Awal") sebelum baris bernama sendiri ("Fiksasi"): ujung nama atas, bukan awal item baru
             return len(T)
         return k
     if q_open and not p_open and q_name is not None:
