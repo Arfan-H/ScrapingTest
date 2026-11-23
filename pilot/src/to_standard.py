@@ -434,12 +434,21 @@ def tail_owner(tail, q_top, q_name, q_aligned=False):
                               or T[k - 1][2].count("(") > T[k - 1][2].count(")")):
             k += 1
         rest = T[k:]
+        p_full = " ".join([tail["name"]] + [t for _, _, t in T[:k]])  # nama atas setelah lanjutan yang pasti
         if (len(rest) == 1 and len(rest[0][2].split()) == 1 and q_name
                 and len(re.sub(r"[^A-Za-z]", "", q_name)) >= 3 and not re.match(r"^[a-z(]", q_name)
                 and rest[0][2].lower() != (tail["name"].lower().split() or [""])[0]
                 and not re.fullmatch(r"(?i)operasi|tindakan|pemeriksaan|pemasangan|pelepasan|pengambilan|pembuatan|perawatan|"
                                      r"eksisi|insisi|biopsi|ekstraksi|extraksi|injeksi|konsultasi|visite|foto|paket|jasa|"
                                      r"pasang|lepas|ganti|terapi|rontgen|ct|mri|usg|ekg", rest[0][2])
+                # nama atas sudah lengkap (berakhir ")" atau kata penutup) -> kata sisa adalah awal item berikutnya
+                and not re.search(r"(?i)(\)|\b(kecil|sedang|besar|ringan|berat|khusus|penyulit|lateral|ga|la|hari|jam|kali|"
+                                  r"lesi|kunjungan))\s*$", p_full)
+                # kata sisa berbentuk nama tindakan/item ("Herniotomy", "Enukleasi", "Tumpatan", "Canggih")
+                and not FRAGMENT.match(rest[0][2])
+                and not re.search(r"(?i)(tomi|tomy|ektomi|ectomy|plasti|plasty|skopi|scopy|grafi|graphy|asi|isi|ksi|logi|anatomi)\W*$",
+                                  re.sub(r"/.*", "", rest[0][2]))
+                and not re.fullmatch(r"(?i)(pe|pem|pen|peng|per|pel|tum)\w+an", rest[0][2])
                 and min([T[0][0] - tail["bottom"]] + [T[i][0] - T[i - 1][1] for i in range(1, len(T))]) > -1):
             # satu kata sisa ("Awal") sebelum baris bernama sendiri ("Fiksasi"): ujung nama atas, bukan awal item baru
             return len(T)
