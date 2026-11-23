@@ -132,8 +132,8 @@ def clean_name(name):
     # huruf kode kolom kiri yang menempel: "f 4 Pasang ...", "D 7. Pelayanan ...", "a Sendi Bahu ..."
     name = re.sub(r"^\s*[A-Za-z]\s+(?=\d{1,3}\.?\s)", "", name)
     # nomor baris hasil OCR di depan nama: "l7l I DEBRI..." (=1711), "tl24 SCALING", "26I8 VASEKTOMI", "2686 REVISI"
-    name = re.sub(r"^\s*[.\-]?(?:(?=[0-9lIOoSst|]*\d)(?=[0-9lIOoSst|]*[lIOoSst|])[0-9lIOoSst|]{2,5}|\d{4}|\d{3}(?=\s+[A-Z]{4}))\.?"
-                  r"(?:\s+[0-9lIrt|)]{1,2}(?=\s))?\s+(?=\S?[A-Za-z]{2})", "", name)
+    name = re.sub(r"^\s*[.\-]?(?:(?=[0-9lIOoSst|]*\d)(?=[0-9lIOoSst|]*[lIOoSst|])[0-9lIOoSst|]{2,5}|\d{4})\.?"
+                  r"(?:\s+[0-9lI|]{1,2}(?=\s))?\s+(?=[A-Za-z]{3})", "", name)
     # sisa OCR di depan nama ("I Ir r,so CABUT ...", "rr,s r CAD WELL LUC"): token pendek huruf-mirip-angka + tanda baca
     mj = re.match(r"^\s*((?:[IilrRso0-9,.;'|\-]{1,5}\s+)+)(?=[A-Z]{3})", name)
     if mj and re.search(r"[,;'|]", mj.group(1)):
